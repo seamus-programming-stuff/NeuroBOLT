@@ -19,4 +19,6 @@ export TORCH_HOME="${M3_SCRATCH}/.cache/torch"
 activate_neurobolt() {
     source "${M3_CONDA}/etc/profile.d/conda.sh"
     conda activate neurobolt
+    # Belt and braces: the env also sets this via an activate.d hook.
+    export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib:${LD_LIBRARY_PATH:-}"
 }

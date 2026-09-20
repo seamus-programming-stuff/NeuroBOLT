@@ -11,7 +11,10 @@
 # Submit from the repo root (slurm_logs/ must already exist):
 #   mkdir -p slurm_logs && sbatch scripts/train_m3.sbatch
 set -euo pipefail
-source "$(dirname "$0")/m3_env.sh"
+# SLURM copies the batch script into a spool dir before running it, so
+# $(dirname "$0") is NOT the repo -- use the submit directory instead.
+REPO_DIR="${SLURM_SUBMIT_DIR:-/projects/hz18/stay0060/NeuroBOLT}"
+source "${REPO_DIR}/scripts/m3_env.sh"
 activate_neurobolt
 
 # utils.init_distributed_mode() takes the SLURM_PROCID branch whenever this is
