@@ -102,7 +102,7 @@ def selected_checkpoint(run_dir):
     return matches[0], best
 
 
-def load_scan(scan_name, dataset_root, highpass):
+def load_scan(scan_name, dataset_root, highpass, window_sec=16):
     """EEG windows and all seven targets for one scan, built as prepare_full_dataloader builds them."""
     sub, scan = (int(x) for x in re.findall(r"\d+", scan_name))
     eeg_raw, fmri, _ = get_datasets.download_vu_dataset(sub, scan, dataset_root, output_eegmneraw=True)
@@ -116,7 +116,8 @@ def load_scan(scan_name, dataset_root, highpass):
     targets = filtfilt(b, a, fmri[[label for label, _ in ROIS]].to_numpy().T, axis=1)
     targets, _ = preproc.normalize_data(targets)
 
-    data_epoch, _ = preproc.epoching_seq2one(eeg_raw, targets, -16, 0, "R149", ifnorm=0, crop=3200)
+    data_epoch, _ = preproc.epoching_seq2one(eeg_raw, targets, -window_sec, 0, "R149", ifnorm=0,
+                                             crop=window_sec * 200)
     return np.stack(data_epoch["eeg"]), np.stack(data_epoch["fmri"])
 
 

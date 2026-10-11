@@ -215,7 +215,8 @@ def get_args():
     parser.add_argument('--epoch_baseline', default='whole', choices=['whole', 'none'],
                         help="subtract each channel's mean over the EEG window ('whole') or not")
     parser.add_argument('--window_sec', default=16, type=int,
-                        help='seconds of EEG before each fMRI frame (at most 16: LaBraM has 16 time embeddings)')
+                        help="seconds of EEG before each fMRI frame; past 16, LaBraM's 16 time embeddings "
+                             "are linearly interpolated")
     parser.add_argument('--mss_fusion', default='sum', choices=['sum', 'softmax'],
                         help='how the spectral encoder combines its four STFT scales')
     parser.add_argument('--early_stop_patience', default=0, type=int,
@@ -324,8 +325,6 @@ def get_dataset(args):
 
 def main(args, ds_init):
     utils.init_distributed_mode(args)
-    if args.window_sec > 16:
-        raise ValueError("--window_sec must be at most 16: LaBraM's time embedding has 16 one-second slots")
     if '|' in args.labels_roi:  # several ROIs -> one model with one output per ROI
         args.nb_roi = len(args.labels_roi.split('|'))
 
@@ -470,6 +469,13 @@ def main(args, ds_init):
             if k in checkpoint_model and checkpoint_model[k].shape != state_dict[k].shape:
                 print(f"Removing key {k} from pretrained checkpoint")
                 del checkpoint_model[k]
+        if 'time_embed' in checkpoint_model and checkpoint_model['time_embed'].shape != state_dict['time_embed'].shape:
+            # --window_sec beyond LaBraM's 16 one-second slots: stretch the learned embedding linearly
+            source = checkpoint_model['time_embed']
+            print(f"Interpolating time_embed {tuple(source.shape)} -> {tuple(state_dict['time_embed'].shape)}")
+            checkpoint_model['time_embed'] = torch.nn.functional.interpolate(
+                source.permute(0, 2, 1), size=state_dict['time_embed'].shape[1], mode='linear',
+                align_corners=True).permute(0, 2, 1)
 
         all_keys = list(checkpoint_model.keys())
         for key in all_keys:
