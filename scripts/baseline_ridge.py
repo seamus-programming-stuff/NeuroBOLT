@@ -16,9 +16,12 @@ import json
 import os
 import sys
 
+import itertools
+
 import numpy as np
 import pandas as pd
 from scipy.signal import welch
+from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.linear_model import Ridge
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -29,6 +32,16 @@ BAND_SETS = {
     "fine": [(f, f + 1) for f in range(1, 45)],  # 1 Hz bins
 }
 ALPHAS = np.logspace(-1, 6, 15)
+HGB_GRID = [  # gradient-boosted trees, to test whether a nonlinear map of the same features helps
+    {"learning_rate": 0.05, "max_iter": iters, "max_leaf_nodes": leaves, "l2_regularization": l2}
+    for iters, leaves, l2 in itertools.product((200, 500), (15, 31), (0.0, 1.0))]
+
+
+def candidate_models(estimator):
+    if estimator == "ridge":
+        return [(f"alpha={a:g}", Ridge(alpha=a)) for a in ALPHAS]
+    return [(" ".join(f"{k}={v}" for k, v in params.items()),
+             HistGradientBoostingRegressor(early_stopping=False, random_state=0, **params)) for params in HGB_GRID]
 
 
 def band_power_features(eeg, bands, sub_windows, fs=200):
@@ -62,6 +75,8 @@ def main():
     parser.add_argument("--per-scan-zscore", action="store_true",
                         help="standardize each feature within each scan (uses only that scan's EEG), "
                              "removing between-subject differences in overall band power")
+    parser.add_argument("--estimator", choices=["ridge", "hgb"], default="ridge",
+                        help="ridge regression, or histogram gradient-boosted trees on the same features")
     args = parser.parse_args()
     bands = BAND_SETS[args.bands]
 
@@ -86,12 +101,12 @@ def main():
     for roi_index, (label, _) in enumerate(ROIS):
         y = {split: targets[:, roi_index] for split, (_, targets, _, _) in data.items()}
         fits = []
-        for alpha in ALPHAS:
-            model = Ridge(alpha=alpha).fit(x["train"], y["train"])
-            fits.append((float(np.mean((model.predict(x["val"]) - y["val"]) ** 2)), alpha, model))
-        _, alpha, model = min(fits, key=lambda f: f[0])
+        for name, model in candidate_models(args.estimator):
+            model.fit(x["train"], y["train"])
+            fits.append((float(np.mean((model.predict(x["val"]) - y["val"]) ** 2)), name, model))
+        _, chosen, model = min(fits, key=lambda f: f[0])
 
-        row, outputs = {"epoch": 0, "alpha": float(alpha)}, {"epoch": 0}
+        row, outputs = {"epoch": 0, "chosen": chosen}, {"epoch": 0}
         for split in ("val", "test"):
             pred = model.predict(x[split])
             corr, mse = scan_scores(pred, y[split], data[split][2])
@@ -105,7 +120,7 @@ def main():
             stream.write(json.dumps(row) + "\n")
         np.savez_compressed(os.path.join(run_dir, "best_predictions.npz"), **outputs, rois=np.array([label]))
         open(os.path.join(run_dir, "done"), "w").close()
-        print(f"{label:30s} alpha={alpha:g}  val R={row['val_corr']:.3f}  test R={row['test_corr']:.3f}")
+        print(f"{label:30s} {chosen}  val R={row['val_corr']:.3f}  test R={row['test_corr']:.3f}")
 
 
 if __name__ == "__main__":
