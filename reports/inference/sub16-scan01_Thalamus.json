@@ -1,0 +1,51 @@
+{
+  "scan": "sub16-scan01",
+  "roi": "Thalamus",
+  "mode": "fullscan-inference",
+  "full_channel": {
+    "channels": [
+      "FP1",
+      "FP2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2",
+      "F7",
+      "F8",
+      "T7",
+      "T8",
+      "P7",
+      "P8",
+      "FPZ",
+      "FZ",
+      "CZ",
+      "PZ",
+      "POZ",
+      "OZ",
+      "FT9",
+      "FT10",
+      "TP9",
+      "TP10"
+    ],
+    "corr": 0.6062546177472816,
+    "mse": 0.22284759526142867
+  },
+  "partial_channel": {
+    "channels": [
+      "FP2",
+      "F4",
+      "C4",
+      "O2",
+      "T8",
+      "P7",
+      "CZ",
+      "POZ"
+    ],
+    "corr": 0.6044840095511528,
+    "mse": 0.22202293465475512
+  }
+}
