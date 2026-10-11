@@ -44,6 +44,20 @@ def candidate_models(estimator):
              HistGradientBoostingRegressor(early_stopping=False, random_state=0, **params)) for params in HGB_GRID]
 
 
+def ridge_path(x_train, y_train, x_eval, alphas):
+    """{alpha: [predictions for each array in x_eval]} for ridge with an intercept, all targets at once.
+
+    One economy SVD of the centred training features, X = U S V', gives every penalty's weights
+    as V diag(S / (S^2 + alpha)) U'y, so a wide feature set costs one decomposition instead of a
+    solve per penalty and ROI. Matches sklearn's Ridge(alpha, fit_intercept=True).
+    """
+    x_mean, y_mean = x_train.mean(axis=0), y_train.mean(axis=0)
+    u, s, vt = np.linalg.svd(x_train - x_mean, full_matrices=False)
+    uty = u.T @ (y_train - y_mean)
+    rotated = [(x - x_mean) @ vt.T for x in x_eval]
+    return {alpha: [r @ ((s / (s ** 2 + alpha))[:, None] * uty) + y_mean for r in rotated] for alpha in alphas}
+
+
 def band_power_features(eeg, bands, sub_windows, fs=200):
     """(windows, channels, samples) -> (windows, channels * bands * sub-windows) log band power."""
     n, channels, samples = eeg.shape
@@ -97,18 +111,27 @@ def main():
 
     mean, std = data["train"][0].mean(axis=0), data["train"][0].std(axis=0) + 1e-8
     x = {split: (feats - mean) / std for split, (feats, _, _, _) in data.items()}
+    if args.estimator == "ridge":  # every penalty for every ROI from one decomposition
+        path = ridge_path(x["train"], data["train"][1], [x["val"], x["test"]], ALPHAS)
 
     for roi_index, (label, _) in enumerate(ROIS):
         y = {split: targets[:, roi_index] for split, (_, targets, _, _) in data.items()}
-        fits = []
-        for name, model in candidate_models(args.estimator):
-            model.fit(x["train"], y["train"])
-            fits.append((float(np.mean((model.predict(x["val"]) - y["val"]) ** 2)), name, model))
-        _, chosen, model = min(fits, key=lambda f: f[0])
+        if args.estimator == "ridge":
+            fits = [(float(np.mean((preds[0][:, roi_index] - y["val"]) ** 2)), f"alpha={alpha:g}",
+                     {"val": preds[0][:, roi_index], "test": preds[1][:, roi_index]})
+                    for alpha, preds in path.items()]
+        else:
+            fits = []
+            for name, model in candidate_models(args.estimator):
+                model.fit(x["train"], y["train"])
+                val_pred = model.predict(x["val"])
+                fits.append((float(np.mean((val_pred - y["val"]) ** 2)), name,
+                             {"val": val_pred, "test": model.predict(x["test"])}))
+        _, chosen, predictions = min(fits, key=lambda f: f[0])
 
         row, outputs = {"epoch": 0, "chosen": chosen}, {"epoch": 0}
         for split in ("val", "test"):
-            pred = model.predict(x[split])
+            pred = predictions[split]
             corr, mse = scan_scores(pred, y[split], data[split][2])
             row.update({f"{split}_mse": float(np.mean(mse)), f"{split}_corr": float(np.mean(corr)),
                         f"{split}_scan_corr": corr, f"{split}_scan_mse": mse})
