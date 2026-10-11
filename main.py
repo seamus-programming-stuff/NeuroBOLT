@@ -214,6 +214,8 @@ def get_args():
                              'none for intrascan, as the loaders always did')
     parser.add_argument('--epoch_baseline', default='whole', choices=['whole', 'none'],
                         help="subtract each channel's mean over the EEG window ('whole') or not")
+    parser.add_argument('--eeg_scan_norm', action='store_true', default=False,
+                        help='rescale every EEG channel to a common robust SD within each scan')
     parser.add_argument('--window_sec', default=16, type=int,
                         help="seconds of EEG before each fMRI frame; past 16, LaBraM's 16 time embeddings "
                              "are linearly interpolated")

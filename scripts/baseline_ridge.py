@@ -59,6 +59,9 @@ def main():
     parser.add_argument("--window-sec", type=int, default=16, help="seconds of EEG history per fMRI frame")
     parser.add_argument("--sub-windows", type=int, default=4, help="consecutive pieces (lags) per window")
     parser.add_argument("--bands", choices=sorted(BAND_SETS), default="classic")
+    parser.add_argument("--per-scan-zscore", action="store_true",
+                        help="standardize each feature within each scan (uses only that scan's EEG), "
+                             "removing between-subject differences in overall band power")
     args = parser.parse_args()
     bands = BAND_SETS[args.bands]
 
@@ -68,7 +71,10 @@ def main():
         feats, targets, names = [], [], []
         for scan in sheet.loc[sheet[split] == 1, "scan_name"]:
             eeg, y = load_scan(scan, args.dataset_root, highpass=not args.no_highpass, window_sec=args.window_sec)
-            feats.append(band_power_features(eeg, bands, args.sub_windows))
+            scan_feats = band_power_features(eeg, bands, args.sub_windows)
+            if args.per_scan_zscore:
+                scan_feats = (scan_feats - scan_feats.mean(axis=0)) / (scan_feats.std(axis=0) + 1e-8)
+            feats.append(scan_feats)
             targets.append(y)
             names.append(scan)
             print(f"{split} {scan}: {len(y)} windows, {feats[-1].shape[1]} features", flush=True)

@@ -10,6 +10,10 @@ where main.py logs per-scan R for each validation and test scan.
 Writes runs.csv (one row per arm x seed x ROI x split x scan) and summary.md. Arms are compared
 on validation scans first: decisions should rest on those, with the six test scans as the
 confirmation, since every arm is scored on the same test scans.
+
+With --aligned, scores are recomputed from each run's best_predictions.npz on the frames every
+arm shares: arms with longer EEG windows lose a few frames at each scan's start, so each scan is
+cut to its last K frames, K being the smallest window count any arm has for that scan.
 """
 import argparse
 import csv
@@ -41,8 +45,8 @@ def read_run(run_dir):
     return {"best": best, "epochs_run": len(rows), "done": os.path.isfile(os.path.join(run_dir, "done"))}
 
 
-def collect(root):
-    records = []
+def finished_runs(root):
+    """(arm, key, seed directory, run) for every finished run under root."""
     for arm in sorted(os.listdir(root)):
         arm_dir = os.path.join(root, arm)
         if not os.path.isdir(arm_dir):
@@ -51,21 +55,56 @@ def collect(root):
             key_dir = os.path.join(arm_dir, key)
             if not os.path.isdir(key_dir):
                 continue
-            roi_indices = list(range(len(ROIS))) if key == "all" else [int(key)]
             for seed_dir in sorted(os.listdir(key_dir)):
                 run = read_run(os.path.join(key_dir, seed_dir))
-                if run is None or not run["done"]:
-                    continue
-                best = run["best"]
-                for split in ("val", "test"):
-                    for s, (corrs, mses) in enumerate(zip(best[f"{split}_scan_corr"], best[f"{split}_scan_mse"])):
-                        for out, roi_index in enumerate(roi_indices):
-                            records.append({
-                                "arm": arm, "seed": seed_dir.removeprefix("seed"), "roi": ROIS[roi_index],
-                                "split": split, "scan": SPLIT_SCANS[split][s], "corr": corrs[out],
-                                "mse": mses[out], "selected_epoch": best["epoch"], "epochs_run": run["epochs_run"],
-                                "shared_model": key == "all"})
-    return records
+                if run is not None and run["done"]:
+                    yield arm, key, os.path.join(key_dir, seed_dir), run
+
+
+def aligned_scores(run_dir, split, keep):
+    """Per-scan (R, MSE) lists per output, scoring each scan's last keep[s] frames."""
+    z = np.load(os.path.join(run_dir, "best_predictions.npz"))
+    pred = z[f"{split}_pred"].reshape(len(z[f"{split}_pred"]), -1)
+    true = z[f"{split}_true"].reshape(len(z[f"{split}_true"]), -1)
+    corr, mse, start = [], [], 0
+    for n, k in zip(z[f"{split}_sizes"], keep):
+        p, t = pred[start + n - k:start + n], true[start + n - k:start + n]
+        start += n
+        corr.append([float(np.corrcoef(p[:, j], t[:, j])[0, 1]) for j in range(p.shape[1])])
+        mse.append([float(np.mean((p[:, j] - t[:, j]) ** 2)) for j in range(p.shape[1])])
+    return corr, mse
+
+
+def collect(root, aligned=False):
+    runs = list(finished_runs(root))
+    keep = {}
+    if aligned:  # frames every run has, per scan
+        missing = [run_dir for _, _, run_dir, _ in runs
+                   if not os.path.isfile(os.path.join(run_dir, "best_predictions.npz"))]
+        for run_dir in missing:
+            print(f"skipping {run_dir}: no best_predictions.npz to rescore")
+        runs = [r for r in runs if r[2] not in missing]
+        for split in ("val", "test"):
+            sizes = [np.load(os.path.join(run_dir, "best_predictions.npz"))[f"{split}_sizes"]
+                     for _, _, run_dir, _ in runs]
+            keep[split] = np.min(sizes, axis=0)
+    records = []
+    for arm, key, run_dir, run in runs:
+        roi_indices = list(range(len(ROIS))) if key == "all" else [int(key)]
+        best = run["best"]
+        for split in ("val", "test"):
+            if aligned:
+                scan_corr, scan_mse = aligned_scores(run_dir, split, keep[split])
+            else:
+                scan_corr, scan_mse = best[f"{split}_scan_corr"], best[f"{split}_scan_mse"]
+            for s, (corrs, mses) in enumerate(zip(scan_corr, scan_mse)):
+                for out, roi_index in enumerate(roi_indices):
+                    records.append({
+                        "arm": arm, "seed": os.path.basename(run_dir).removeprefix("seed"),
+                        "roi": ROIS[roi_index], "split": split, "scan": SPLIT_SCANS[split][s],
+                        "corr": corrs[out], "mse": mses[out], "selected_epoch": best["epoch"],
+                        "epochs_run": run["epochs_run"], "shared_model": key == "all"})
+    return records, {split: [int(k) for k in v] for split, v in keep.items()}
 
 
 def summarize(records, baseline):
@@ -104,14 +143,17 @@ def main():
         "M3_OUT", "/scratch/hz18/stay0060/NeuroBOLT/checkpoints"), "hypotheses"))
     parser.add_argument("--out", default=None, help="directory for runs.csv and summary.md (default: --root)")
     parser.add_argument("--baseline", default="base")
+    parser.add_argument("--aligned", action="store_true",
+                        help="rescore every run on the frames all arms share (see module docstring)")
     args = parser.parse_args()
     out = args.out or args.root
     os.makedirs(out, exist_ok=True)
 
-    records = collect(args.root)
+    records, keep = collect(args.root, aligned=args.aligned)
     if not records:
         raise SystemExit(f"No finished runs under {args.root}")
-    with open(os.path.join(out, "runs.csv"), "w", newline="", encoding="utf-8") as stream:
+    suffix = "_aligned" if args.aligned else ""
+    with open(os.path.join(out, f"runs{suffix}.csv"), "w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=records[0].keys())
         writer.writeheader()
         writer.writerows(records)
@@ -119,12 +161,16 @@ def main():
     lines = ["# Inter-subject hypothesis arms", "",
              "Mean test R per ROI (averaged over seeds and the six held-out scans). Δ columns are paired "
              f"differences from `{args.baseline}` on matched seed, ROI and scan, averaged over ROIs; "
-             "the last column counts seeds whose average improved.", ""]
+             "the last column counts seeds whose average improved."]
+    if args.aligned:
+        lines.append(f"Scored on each scan's last {min(keep['test'])}–{max(keep['test'])} test frames, "
+                     "the frames every arm shares.")
+    lines.append("")
     lines += summarize(records, args.baseline)
-    with open(os.path.join(out, "summary.md"), "w", encoding="utf-8") as stream:
+    with open(os.path.join(out, f"summary{suffix}.md"), "w", encoding="utf-8") as stream:
         stream.write("\n".join(lines) + "\n")
     print("\n".join(lines))
-    print(f"\n{len(records)} rows -> {os.path.join(out, 'runs.csv')}")
+    print(f"\n{len(records)} rows -> {os.path.join(out, f'runs{suffix}.csv')}")
 
 
 if __name__ == "__main__":

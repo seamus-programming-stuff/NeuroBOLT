@@ -79,6 +79,21 @@ def epoch_baseline(args):
     return (None, None) if getattr(args, 'epoch_baseline', 'whole') == 'whole' else None
 
 
+EEG_REFERENCE_SD_UV = 15.0  # typical robust per-channel SD after the 0.5 Hz high-pass (sub16-scan01)
+
+
+def normalize_scan_eeg(eeg_raw):
+    """Rescale every channel to the same robust SD over the whole scan.
+
+    Uses only the scan's own EEG, so it is available at test time; it removes between-subject
+    differences in overall amplitude while keeping the within-scan fluctuations the model reads.
+    """
+    data = eeg_raw.get_data()  # volts, (channels, samples)
+    mad = 1.4826 * np.median(np.abs(data - np.median(data, axis=1, keepdims=True)), axis=1, keepdims=True)
+    scale = EEG_REFERENCE_SD_UV * 1e-6 / (mad + 1e-12)
+    eeg_raw.apply_function(lambda x: x * scale, channel_wise=False)
+
+
 def prepare_onesub_dataloader(args):
     seed_everything(args)
 
@@ -95,6 +110,9 @@ def prepare_onesub_dataloader(args):
     if getattr(args, 'eeg_highpass', None):  # intra-scan has no EEG filter unless asked for
         eeg_raw.load_data()
         eeg_raw.filter(l_freq=args.eeg_highpass, h_freq=None)
+    if getattr(args, 'eeg_scan_norm', False):
+        eeg_raw.load_data()
+        normalize_scan_eeg(eeg_raw)
     fmri_np = fmri.to_numpy().T
     # extract ROI
 
@@ -216,6 +234,8 @@ def prepare_full_dataloader(args):
         eeg_raw.load_data()
         if highpass:
             eeg_raw.filter(l_freq=highpass, h_freq=None)
+        if getattr(args, 'eeg_scan_norm', False):
+            normalize_scan_eeg(eeg_raw)
         fmri_np = fmri.to_numpy().T
 
         # extract ROI
