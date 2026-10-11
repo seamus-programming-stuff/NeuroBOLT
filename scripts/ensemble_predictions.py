@@ -53,12 +53,21 @@ def split_scans(values, sizes, keep):
     return out
 
 
-def score(members_by_arm, roi):
+def common_frames(root, split):
+    """Per-scan frame counts every finished run under root shares (as collect_hypotheses --aligned)."""
+    sizes = [np.load(path)[f"{split}_sizes"]
+             for path in glob.glob(os.path.join(root, "*", "*", "seed*", "best_predictions.npz"))
+             if os.path.isfile(os.path.join(os.path.dirname(path), "done"))]
+    return np.min(sizes, axis=0)
+
+
+def score(members_by_arm, roi, keep=None):
     """Per-scan R of the ensemble for one ROI, or None if an arm has no runs for it."""
     runs = [members_by_arm[arm][roi] for arm in members_by_arm]
     if any(not seeds for seeds in runs):
         return None
-    keep = np.min([sizes for seeds in runs for _, _, sizes in seeds], axis=0)
+    if keep is None:
+        keep = np.min([sizes for seeds in runs for _, _, sizes in seeds], axis=0)
     true = split_scans(runs[0][0][1], runs[0][0][2], keep)
     arm_means = []
     for seeds in runs:
@@ -75,7 +84,10 @@ def main():
     parser.add_argument("--ensemble", action="append", required=True, help="NAME=ARM[,ARM...]")
     parser.add_argument("--split", default="test", choices=["val", "test"])
     parser.add_argument("--out", default=None, help="write ensembles.md here (default: print only)")
+    parser.add_argument("--align-all", action="store_true",
+                        help="score on the frames every run under --root shares, matching collect_hypotheses --aligned")
     args = parser.parse_args()
+    keep = common_frames(args.root, args.split) if args.align_all else None
 
     cache = {}
     lines = [f"| Ensemble ({args.split} scans) | " + " | ".join(SHORT) + " | Avg. R |",
@@ -87,7 +99,7 @@ def main():
             if arm not in cache:
                 cache[arm] = load_arm(args.root, arm, args.split)
             members[arm] = cache[arm]
-        per_roi = [score(members, roi) for roi in ROIS]
+        per_roi = [score(members, roi, keep) for roi in ROIS]
         cells = [f"{np.mean(r):.3f}" if r else "–" for r in per_roi]
         avg = np.mean([np.mean(r) for r in per_roi]) if all(per_roi) else float("nan")
         lines.append(f"| {name} | " + " | ".join(cells) + f" | {avg:.3f} |")
