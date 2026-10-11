@@ -160,7 +160,9 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
 
 
 @torch.no_grad()
-def evaluate(data_loader, model, device, header='Test:', ch_names=None, metrics=['mse'], is_binary=True, spec_chan=None):
+def evaluate(data_loader, model, device, header='Test:', ch_names=None, metrics=['mse'], is_binary=True, spec_chan=None,
+             return_outputs=False):
+    """Metrics over data_loader; with return_outputs, also the concatenated predictions and targets."""
     input_chans = None
     if ch_names is not None:
         input_chans = utils.get_input_chans(ch_names)
@@ -210,10 +212,12 @@ def evaluate(data_loader, model, device, header='Test:', ch_names=None, metrics=
     metric_logger.synchronize_between_processes()
     print('* loss {losses.global_avg:.3f}'
           .format(losses=metric_logger.loss))
+    outputs = (torch.cat(pred, dim=0).numpy(), torch.cat(true, dim=0).numpy())
     if len(true[0]) < 200:  # see if it's testing on whole scan
-        pred = torch.cat(pred, dim=0).numpy()
-        true = torch.cat(true, dim=0).numpy()
+        pred, true = outputs
 
     ret = utils.get_metrics(pred, true, metrics, is_binary)
     ret['loss'] = metric_logger.loss.global_avg
+    if return_outputs:
+        return ret, outputs[0], outputs[1]
     return ret

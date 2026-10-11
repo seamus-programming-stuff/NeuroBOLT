@@ -102,6 +102,7 @@ class MSSEncoder(nn.Module):
             input_length=3200,
             # hop_length=100,
             win_level=3,
+            fusion="sum",
             **kwargs
     ):
         super().__init__()
@@ -110,6 +111,13 @@ class MSSEncoder(nn.Module):
         # self.hop_length = hop_length
         self.input_length = input_length
         self.win_level = win_level
+        # "sum" adds the scale embeddings with equal weight (the paper's design). "softmax" learns
+        # one weight per scale, scaled so that all-equal logits reproduce the plain sum at init.
+        self.fusion = fusion
+        if fusion == "softmax":
+            self.scale_logits = nn.Parameter(torch.zeros(win_level + 1))
+        elif fusion != "sum":
+            raise ValueError(f"Unknown scale fusion {fusion!r}; expected 'sum' or 'softmax'")
         self.patch_embedding = nn.ModuleList([
             PatchFrequencyEmbedding(
                 emb_size=emb_size, n_freq=scale1 * 2 ** i // 2 + 1
@@ -162,7 +170,12 @@ class MSSEncoder(nn.Module):
                 channel_spec_emb_list.append(self.ts_embedding[n](
                     self.patch_embedding[n](
                         self.stft(x[:, i: i + 1, :], n_fft=self.scale1 * (2 ** n)))))
-            channel_spec_emb = torch.sum(torch.stack(channel_spec_emb_list), dim=0)
+            scale_embs = torch.stack(channel_spec_emb_list)
+            if self.fusion == "softmax":
+                weights = torch.softmax(self.scale_logits, dim=0) * scale_embs.shape[0]
+                channel_spec_emb = torch.sum(weights.view(-1, 1, 1, 1) * scale_embs, dim=0)
+            else:
+                channel_spec_emb = torch.sum(scale_embs, dim=0)
             batch_size, ts, _ = channel_spec_emb.shape
             # (batch_size, ts, emb)
             if input_chans is None:

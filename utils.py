@@ -579,6 +579,8 @@ def save_model(args, epoch, model, model_without_ddp, optimizer, loss_scaler, mo
     epoch_name = str(epoch)
     if args.labels_roi == "Heschl’s gyrus":
         label_roi = "Heschl gyrus_smooth_16s"
+    elif '|' in args.labels_roi:  # multi-ROI model; '|' is not a legal filename character everywhere
+        label_roi = f"multi{len(args.labels_roi.split('|'))}_smooth_16s"
     else:
         label_roi = args.labels_roi + "_smooth_16s"
 

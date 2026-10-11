@@ -208,6 +208,21 @@ def get_args():
     parser.add_argument('--split_index_sheet', default='./scan_split.xlsx', type=str,
                         help='Path to the Excel sheet specifying train-test split indices when do cross-subject training')
 
+    # ---- Experiment switches (defaults reproduce the released behaviour) ----
+    parser.add_argument('--eeg_highpass', default=None, type=float,
+                        help='EEG high-pass cutoff in Hz; 0 turns it off. Default: 0.5 for full_test, '
+                             'none for intrascan, as the loaders always did')
+    parser.add_argument('--epoch_baseline', default='whole', choices=['whole', 'none'],
+                        help="subtract each channel's mean over the EEG window ('whole') or not")
+    parser.add_argument('--window_sec', default=16, type=int,
+                        help='seconds of EEG before each fMRI frame (at most 16: LaBraM has 16 time embeddings)')
+    parser.add_argument('--mss_fusion', default='sum', choices=['sum', 'softmax'],
+                        help='how the spectral encoder combines its four STFT scales')
+    parser.add_argument('--early_stop_patience', default=0, type=int,
+                        help='stop after this many epochs without a new validation-MSE minimum (0: never)')
+    parser.add_argument('--save_best_predictions', action='store_true', default=False,
+                        help='write val/test predictions at the min-validation-MSE epoch to best_predictions.npz')
+
     # ---- Dataset specific info ----
     parser.add_argument('--TR', default=2.1, type=float,
                         help='the TR value (Repetition Time) for fMRI collection in seconds')
@@ -253,8 +268,22 @@ def get_models(args):
             use_abs_pos_emb=args.abs_pos_emb,
             init_values=args.layer_scale_init_value,
             qkv_bias=args.qkv_bias,
+            EEG_length=args.window_sec * 200,
+            mss_fusion=args.mss_fusion,
         )
     return model
+
+
+def per_scan_scores(pred, true, scan_sizes):
+    """Pearson R and MSE for each scan (rows) and output ROI (columns), from concatenated outputs."""
+    corr, mse, start = [], [], 0
+    for _, n in scan_sizes:
+        p = pred[start:start + n].reshape(n, -1)
+        t = true[start:start + n].reshape(n, -1)
+        start += n
+        corr.append([float(np.corrcoef(p[:, k], t[:, k])[0, 1]) for k in range(p.shape[1])])
+        mse.append([float(np.mean((p[:, k] - t[:, k]) ** 2)) for k in range(p.shape[1])])
+    return corr, mse
 
 
 def get_dataset(args):
@@ -295,6 +324,10 @@ def get_dataset(args):
 
 def main(args, ds_init):
     utils.init_distributed_mode(args)
+    if args.window_sec > 16:
+        raise ValueError("--window_sec must be at most 16: LaBraM's time embedding has 16 one-second slots")
+    if '|' in args.labels_roi:  # several ROIs -> one model with one output per ROI
+        args.nb_roi = len(args.labels_roi.split('|'))
 
     if ds_init is not None:
         utils.create_ds_config(args)
@@ -548,6 +581,7 @@ def main(args, ds_init):
     max_corr_test = 0.0
     min_mse = 10
     min_mse_test = 0.0
+    best_epoch, best_outputs = args.start_epoch, None
     for epoch in range(args.start_epoch, args.epochs):
         if args.distributed:
             data_loader_train.sampler.set_epoch(epoch)
@@ -572,11 +606,12 @@ def main(args, ds_init):
         #         loss_scaler=loss_scaler, epoch=epoch, model_ema=model_ema, save_ckpt_freq=args.save_ckpt_freq)
 
         if data_loader_val is not None:
-            val_stats = evaluate(data_loader_val, model, device, header='Val:', ch_names=ch_names, metrics=metrics,
-                                 is_binary=args.nb_roi == 1)
+            val_stats, val_pred, val_true = evaluate(data_loader_val, model, device, header='Val:', ch_names=ch_names,
+                                                     metrics=metrics, is_binary=args.nb_roi == 1, return_outputs=True)
             print(f"Correlation of the network on the {len(dataset_val)} val EEG: {val_stats['corr']:.2f}")
-            test_stats = evaluate(data_loader_test, model, device, header='Test:', ch_names=ch_names, metrics=metrics,
-                                  is_binary=args.nb_roi == 1)
+            test_stats, test_pred, test_true = evaluate(data_loader_test, model, device, header='Test:',
+                                                        ch_names=ch_names, metrics=metrics,
+                                                        is_binary=args.nb_roi == 1, return_outputs=True)
             print(f"Correlation of the network on the {len(dataset_test)} test EEG: {test_stats['corr']:.2f}")
             train_corr = train_stats["corr"]
             val_mse = val_stats["mse"]
@@ -588,6 +623,10 @@ def main(args, ds_init):
                 min_mse = val_stats["mse"]
                 max_corr_test = test_stats["corr"]
                 max_test_corr_glb = test_stats["corr"]
+                best_epoch = epoch
+                if args.save_best_predictions:
+                    best_outputs = {"epoch": epoch, "val_pred": val_pred, "val_true": val_true,
+                                    "test_pred": test_pred, "test_true": test_true}
 
                 if args.output_dir and args.save_ckpt and test_corr > 0:
                     utils.save_model(
@@ -616,6 +655,11 @@ def main(args, ds_init):
                          **{f'test_{k}': float(v) for k, v in test_stats.items()},
                          'epoch': epoch,
                          'n_parameters': n_parameters}
+            scan_sizes = getattr(args, 'scan_sizes', None)
+            if scan_sizes:  # full_test: one row per held-out scan, one column per output ROI
+                for split, pred, true in (("val", val_pred, val_true), ("test", test_pred, test_true)):
+                    corr, mse = per_scan_scores(pred, true, scan_sizes[split])
+                    log_stats[f'{split}_scan_corr'], log_stats[f'{split}_scan_mse'] = corr, mse
         else:
             log_stats = {**{f'train_{k}': float(v) for k, v in train_stats.items()},
                          'epoch': epoch,
@@ -626,6 +670,20 @@ def main(args, ds_init):
                 log_writer.flush()
             with open(os.path.join(args.output_dir, "log.txt"), mode="a", encoding="utf-8") as f:
                 f.write(json.dumps(log_stats) + "\n")
+
+        if args.early_stop_patience and data_loader_val is not None \
+                and epoch - best_epoch >= args.early_stop_patience:
+            print(f"Early stop at epoch {epoch}: no validation-MSE improvement since epoch {best_epoch}")
+            break
+
+    if best_outputs is not None and args.output_dir and utils.is_main_process():
+        scan_sizes = getattr(args, 'scan_sizes', None) or {}
+        np.savez_compressed(os.path.join(args.output_dir, "best_predictions.npz"), **best_outputs,
+                            rois=np.array(args.labels_roi.split('|')),
+                            val_scans=np.array([s for s, _ in scan_sizes.get("val", [])]),
+                            val_sizes=np.array([n for _, n in scan_sizes.get("val", [])]),
+                            test_scans=np.array([s for s, _ in scan_sizes.get("test", [])]),
+                            test_sizes=np.array([n for _, n in scan_sizes.get("test", [])]))
 
     total_time = time.time() - start_time
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))

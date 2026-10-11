@@ -48,36 +48,58 @@ def download_vu_dataset(sub, scan, path_to_dataset, output_eegmneraw=True, out_e
     return df_eeg, df_fmri, ROI_labels
 
 
-def convert_to_tensor(data):
-    tensors = [torch.tensor(arr) for arr in data]
+def convert_to_tensor(data, dtype=None):
+    tensors = [torch.tensor(arr, dtype=dtype) for arr in data]
     return torch.stack(tensors, dim=0)
 
 
-def prepare_onesub_dataloader(args):
-    # set random seed
-    seed = 12345
+def seed_everything(args):
+    # main() seeds before loading data; re-seed here so model init and dropout follow --seed.
+    # The loaders used to hardcode 12345, which is still main.py's default.
+    seed = getattr(args, 'seed', 12345)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
     np.random.seed(seed)
 
+
+def roi_labels(args):
+    """--labels_roi is one DiFuMo label, or several joined with '|' for a multi-output model."""
+    labels = args.labels_roi.split('|')
+    return labels[0] if len(labels) == 1 else labels
+
+
+def eeg_window(args):
+    """tmin, tmax and crop (in samples at 200 Hz) for an EEG window ending at each fMRI frame."""
+    window_sec = getattr(args, 'window_sec', 16)
+    return -window_sec, 0, int(window_sec * 200)
+
+
+def epoch_baseline(args):
+    return (None, None) if getattr(args, 'epoch_baseline', 'whole') == 'whole' else None
+
+
+def prepare_onesub_dataloader(args):
+    seed_everything(args)
+
     root = args.dataset_root
     tr = args.TR
     event_sync_name = args.mri_sync_event
 
-    tmin = -16
-    tmax = 0
-    crop = 3200  # 16 * 200
+    tmin, tmax, crop = eeg_window(args)
 
     sub_ind, scan_ind = re.findall(r'\d+', args.dataname)
     sub_ind, scan_ind = int(sub_ind), int(scan_ind)
 
     eeg_raw, fmri, labels_roi_full = download_vu_dataset(sub_ind, scan_ind, root, output_eegmneraw=True)
+    if getattr(args, 'eeg_highpass', None):  # intra-scan has no EEG filter unless asked for
+        eeg_raw.load_data()
+        eeg_raw.filter(l_freq=args.eeg_highpass, h_freq=None)
     fmri_np = fmri.to_numpy().T
     # extract ROI
 
     df = pd.DataFrame(data=fmri_np.T, columns=labels_roi_full)
-    df_filter = df[args.labels_roi]
+    df_filter = df[roi_labels(args)]
     fmri_np = df_filter.to_numpy().T
     if len(fmri_np.shape) < 2:
         fmri_np = fmri_np[np.newaxis, ...]
@@ -96,7 +118,7 @@ def prepare_onesub_dataloader(args):
     # epoching data, and divide them into train, val and test
     data_epoch, eeg_info = preproc.epoching_seq2one(eeg_raw, fmri_norm,
                                                     tmin, tmax, event_sync_name, ifnorm=0,
-                                                    crop=crop)
+                                                    crop=crop, baseline=epoch_baseline(args))
     traincrop = int(0.8 * len(data_epoch["eeg"]))
     valcrop = int(0.1 * len(data_epoch["eeg"])) + traincrop
 
@@ -115,9 +137,10 @@ def prepare_onesub_dataloader(args):
     eeg_test = data_epoch["eeg"][valcrop:]
     fmri_test = data_epoch["fmri"][valcrop:]
 
-    eeg_train_tensor = convert_to_tensor(eeg_train)
-    eeg_val_tensor = convert_to_tensor(eeg_val)
-    eeg_test_tensor = convert_to_tensor(eeg_test)
+    # float32 halves memory; the training loop casts to float32 anyway, so values are unchanged
+    eeg_train_tensor = convert_to_tensor(eeg_train, torch.float32)
+    eeg_val_tensor = convert_to_tensor(eeg_val, torch.float32)
+    eeg_test_tensor = convert_to_tensor(eeg_test, torch.float32)
 
     fmri_train_tensor = convert_to_tensor(fmri_train).squeeze()
     fmri_val_tensor = convert_to_tensor(fmri_val).squeeze()
@@ -159,19 +182,16 @@ def prepare_full_dataloader(args):
         return train_dataset, test_dataset, val_dataset
 
     # set random seed
-    seed = 12345
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    np.random.seed(seed)
+    seed_everything(args)
 
     root = args.dataset_root
     tr = args.TR
     event_sync_name = args.mri_sync_event
 
-    tmin = -16
-    tmax = 0
-    crop = 3200
+    tmin, tmax, crop = eeg_window(args)
+    # None keeps this loader's historical 0.5 Hz EEG high-pass; 0 turns it off
+    highpass = getattr(args, 'eeg_highpass', None)
+    highpass = 0.5 if highpass is None else highpass
 
     scan_sheet = args.split_index_sheet
     sheet_name = 'fold1'
@@ -184,6 +204,8 @@ def prepare_full_dataloader(args):
     # Data containers
     eeg_data = {"train": [], "val": [], "test": []}
     fmri_data = {"train": [], "val": [], "test": []}
+    # (scan name, number of windows) in concatenation order, so metrics can be split per scan
+    scan_sizes = {"train": [], "val": [], "test": []}
 
     for ss in range(len(scans)):
         sub_ind, scan_ind = re.findall(r'\d+', scans[ss])
@@ -192,12 +214,13 @@ def prepare_full_dataloader(args):
         eeg_raw, fmri, labels_roi_full = download_vu_dataset(sub_ind, scan_ind, root, output_eegmneraw=True)
 
         eeg_raw.load_data()
-        eeg_raw.filter(l_freq=0.5, h_freq=None)
+        if highpass:
+            eeg_raw.filter(l_freq=highpass, h_freq=None)
         fmri_np = fmri.to_numpy().T
 
         # extract ROI
         df = pd.DataFrame(data=fmri_np.T, columns=labels_roi_full)
-        df_filter = df[args.labels_roi]
+        df_filter = df[roi_labels(args)]
         fmri_np = df_filter.to_numpy().T
         if len(fmri_np.shape) < 2:
             fmri_np = fmri_np[np.newaxis, ...]
@@ -216,20 +239,18 @@ def prepare_full_dataloader(args):
         # epoching data, and divide them into train, val and test
         data_epoch, eeg_info = preproc.epoching_seq2one(eeg_raw, fmri_norm,
                                                         tmin, tmax, event_sync_name, ifnorm=0,
-                                                        crop=crop)
+                                                        crop=crop, baseline=epoch_baseline(args))
 
-        if ss in train_ind:
-            eeg_data["train"] += data_epoch["eeg"]
-            fmri_data["train"] += data_epoch["fmri"]
-        elif ss in val_ind:
-            eeg_data["val"] += data_epoch["eeg"]
-            fmri_data["val"] += data_epoch["fmri"]
-        elif ss in test_ind:
-            eeg_data["test"] += data_epoch["eeg"]
-            fmri_data["test"] += data_epoch["fmri"]
+        for split, indices in (("train", train_ind), ("val", val_ind), ("test", test_ind)):
+            if ss in indices:
+                eeg_data[split] += data_epoch["eeg"]
+                fmri_data[split] += data_epoch["fmri"]
+                scan_sizes[split].append((scans[ss], len(data_epoch["eeg"])))
+                break
+    args.scan_sizes = scan_sizes
 
-    # convert to tensor
-    eeg_tensors = {key: convert_to_tensor(eeg_data[key]) for key in eeg_data}
+    # convert to tensor; float32 halves memory and the training loop casts to float32 anyway
+    eeg_tensors = {key: convert_to_tensor(eeg_data[key], torch.float32) for key in eeg_data}
     fmri_tensors = {key: convert_to_tensor(fmri_data[key]).squeeze() for key in fmri_data}
 
     # Package data

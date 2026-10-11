@@ -34,7 +34,7 @@ def normalize_data(data, means_stds=None, mode='absmax'):
 
 def epoching_seq2one(eegraw, fmridataset,
                      tmin, tmax, event_name, ifnorm=0, crop=0,
-                     dropfmriframes=0):
+                     dropfmriframes=0, baseline=(None, None)):
     """
     Function for generating paired data of EEG sequences and corresponding single time points of fMRI.
 
@@ -57,6 +57,9 @@ def epoching_seq2one(eegraw, fmridataset,
        - `dropfmriframes`:
          Number of initial fMRI frames to drop (default: 0).
          This is dataset-specific and can be used to account for magnetic stabilization during acquisition.
+       - `baseline`:
+         Passed to `mne.Epochs`. The default `(None, None)` subtracts each channel's mean over the
+         whole window; `None` leaves the EEG uncorrected.
 
     Outputs:
        - `data`: A dictionary containing:
@@ -93,7 +96,7 @@ def epoching_seq2one(eegraw, fmridataset,
     # )
 
     eeg_epoch = mne.Epochs(eegraw, events, event_id=event_id, tmin=tmin, tmax=tmax, preload=True,
-                           baseline=(None, None), reject=reject_criteria)
+                           baseline=baseline, reject=reject_criteria)
 
     eeg_epoch_data = eeg_epoch.get_data(units='uV')
 
