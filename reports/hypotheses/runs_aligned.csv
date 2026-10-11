@@ -1,0 +1,1046 @@
+arm,seed,roi,split,scan,corr,mse,selected_epoch,epochs_run,shared_model
+base,1,Cuneus,val,sub06-scan01,0.5167134217084842,0.226953387260437,3,14,False
+base,1,Cuneus,val,sub13-scan01,0.008603809209459603,0.25365781784057617,3,14,False
+base,1,Cuneus,val,sub13-scan02,0.05633504406068767,0.29276472330093384,3,14,False
+base,1,Cuneus,val,sub15-scan01,0.3789843399797781,0.21973669528961182,3,14,False
+base,1,Cuneus,val,sub22-scan01,0.4477128719756951,0.2466740906238556,3,14,False
+base,1,Cuneus,test,sub07-scan01,0.36567940112144537,0.23702991008758545,3,14,False
+base,1,Cuneus,test,sub07-scan02,0.4027477831842185,0.22607189416885376,3,14,False
+base,1,Cuneus,test,sub11-scan01,0.591680728673321,0.1605091691017151,3,14,False
+base,1,Cuneus,test,sub16-scan01,0.5997083816994164,0.18123368918895721,3,14,False
+base,1,Cuneus,test,sub18-scan01,0.2940285027042914,0.22068803012371063,3,14,False
+base,1,Cuneus,test,sub21-scan01,0.5372240439768784,0.1740385740995407,3,14,False
+base,12345,Cuneus,val,sub06-scan01,0.5203224663736629,0.22855746746063232,4,15,False
+base,12345,Cuneus,val,sub13-scan01,0.020328744563061836,0.2571025788784027,4,15,False
+base,12345,Cuneus,val,sub13-scan02,0.13467929895830164,0.28640925884246826,4,15,False
+base,12345,Cuneus,val,sub15-scan01,0.3301170398619889,0.2325647622346878,4,15,False
+base,12345,Cuneus,val,sub22-scan01,0.5015818213159963,0.24331443011760712,4,15,False
+base,12345,Cuneus,test,sub07-scan01,0.3368287218967559,0.24193938076496124,4,15,False
+base,12345,Cuneus,test,sub07-scan02,0.4112023453569318,0.2240179181098938,4,15,False
+base,12345,Cuneus,test,sub11-scan01,0.545351575462834,0.17242175340652466,4,15,False
+base,12345,Cuneus,test,sub16-scan01,0.6021500373826979,0.18019595742225647,4,15,False
+base,12345,Cuneus,test,sub18-scan01,0.35123596676764685,0.21240215003490448,4,15,False
+base,12345,Cuneus,test,sub21-scan01,0.5219065860691559,0.17969995737075806,4,15,False
+base,1,Heschl’s gyrus,val,sub06-scan01,0.45566203082041384,0.18684269487857819,3,14,False
+base,1,Heschl’s gyrus,val,sub13-scan01,0.22315006392350584,0.24081875383853912,3,14,False
+base,1,Heschl’s gyrus,val,sub13-scan02,0.28510451930813047,0.23187468945980072,3,14,False
+base,1,Heschl’s gyrus,val,sub15-scan01,0.526177349280105,0.20751740038394928,3,14,False
+base,1,Heschl’s gyrus,val,sub22-scan01,0.4680902247284059,0.2014058232307434,3,14,False
+base,1,Heschl’s gyrus,test,sub07-scan01,0.46491983742876986,0.19081328809261322,3,14,False
+base,1,Heschl’s gyrus,test,sub07-scan02,0.5212048939705294,0.19988185167312622,3,14,False
+base,1,Heschl’s gyrus,test,sub11-scan01,0.5377741901905266,0.1612216681241989,3,14,False
+base,1,Heschl’s gyrus,test,sub16-scan01,0.4831543640651971,0.20340706408023834,3,14,False
+base,1,Heschl’s gyrus,test,sub18-scan01,0.4989022746836519,0.16333803534507751,3,14,False
+base,1,Heschl’s gyrus,test,sub21-scan01,0.49197519393744815,0.19649362564086914,3,14,False
+base,12345,Heschl’s gyrus,val,sub06-scan01,0.40240988143553297,0.1982143372297287,8,19,False
+base,12345,Heschl’s gyrus,val,sub13-scan01,0.21277805081122497,0.2414209395647049,8,19,False
+base,12345,Heschl’s gyrus,val,sub13-scan02,0.3326837365118235,0.22025898098945618,8,19,False
+base,12345,Heschl’s gyrus,val,sub15-scan01,0.4755029261880704,0.21601450443267822,8,19,False
+base,12345,Heschl’s gyrus,val,sub22-scan01,0.4666179852755822,0.1977999061346054,8,19,False
+base,12345,Heschl’s gyrus,test,sub07-scan01,0.4890395062914083,0.18671664595603943,8,19,False
+base,12345,Heschl’s gyrus,test,sub07-scan02,0.5382173202096685,0.1971459686756134,8,19,False
+base,12345,Heschl’s gyrus,test,sub11-scan01,0.5628832841455599,0.15697021782398224,8,19,False
+base,12345,Heschl’s gyrus,test,sub16-scan01,0.5175389300713674,0.1943684071302414,8,19,False
+base,12345,Heschl’s gyrus,test,sub18-scan01,0.5749622963199505,0.14606794714927673,8,19,False
+base,12345,Heschl’s gyrus,test,sub21-scan01,0.4678703573627951,0.20288029313087463,8,19,False
+base,1,Middle frontal gyrus anterior,val,sub06-scan01,0.39836500909344125,0.20408493280410767,5,16,False
+base,1,Middle frontal gyrus anterior,val,sub13-scan01,0.17530090817393126,0.2650474011898041,5,16,False
+base,1,Middle frontal gyrus anterior,val,sub13-scan02,0.12317462774971077,0.2587038576602936,5,16,False
+base,1,Middle frontal gyrus anterior,val,sub15-scan01,0.32589497627768105,0.23712514340877533,5,16,False
+base,1,Middle frontal gyrus anterior,val,sub22-scan01,0.33193621682000757,0.2496311515569687,5,16,False
+base,1,Middle frontal gyrus anterior,test,sub07-scan01,0.5483984360103064,0.20993925631046295,5,16,False
+base,1,Middle frontal gyrus anterior,test,sub07-scan02,0.5168026582451263,0.21141603589057922,5,16,False
+base,1,Middle frontal gyrus anterior,test,sub11-scan01,0.4200718694239088,0.19915315508842468,5,16,False
+base,1,Middle frontal gyrus anterior,test,sub16-scan01,0.434347766237909,0.21922677755355835,5,16,False
+base,1,Middle frontal gyrus anterior,test,sub18-scan01,0.33011528472501334,0.23842036724090576,5,16,False
+base,1,Middle frontal gyrus anterior,test,sub21-scan01,0.3772714490643171,0.21485452353954315,5,16,False
+base,12345,Middle frontal gyrus anterior,val,sub06-scan01,0.41379425231849126,0.20354191958904266,5,16,False
+base,12345,Middle frontal gyrus anterior,val,sub13-scan01,0.16523852730060704,0.26732495427131653,5,16,False
+base,12345,Middle frontal gyrus anterior,val,sub13-scan02,0.12736595740338763,0.2595846951007843,5,16,False
+base,12345,Middle frontal gyrus anterior,val,sub15-scan01,0.29305908970494476,0.24234215915203094,5,16,False
+base,12345,Middle frontal gyrus anterior,val,sub22-scan01,0.2872265237998117,0.2564464509487152,5,16,False
+base,12345,Middle frontal gyrus anterior,test,sub07-scan01,0.5575178815484517,0.2102416604757309,5,16,False
+base,12345,Middle frontal gyrus anterior,test,sub07-scan02,0.5412386531386117,0.21063902974128723,5,16,False
+base,12345,Middle frontal gyrus anterior,test,sub11-scan01,0.4113776465564082,0.20049583911895752,5,16,False
+base,12345,Middle frontal gyrus anterior,test,sub16-scan01,0.45524489225623427,0.21636800467967987,5,16,False
+base,12345,Middle frontal gyrus anterior,test,sub18-scan01,0.306068350567799,0.24270503222942352,5,16,False
+base,12345,Middle frontal gyrus anterior,test,sub21-scan01,0.351318804872648,0.21958757936954498,5,16,False
+base,1,Precuneus anterior,val,sub06-scan01,0.5421211449157606,0.20902054011821747,3,14,False
+base,1,Precuneus anterior,val,sub13-scan01,0.21572533888272338,0.28926143050193787,3,14,False
+base,1,Precuneus anterior,val,sub13-scan02,0.11904720050994246,0.269618421792984,3,14,False
+base,1,Precuneus anterior,val,sub15-scan01,0.3713268270163622,0.27403247356414795,3,14,False
+base,1,Precuneus anterior,val,sub22-scan01,0.48536179554238884,0.22818000614643097,3,14,False
+base,1,Precuneus anterior,test,sub07-scan01,0.5532518956305048,0.19356009364128113,3,14,False
+base,1,Precuneus anterior,test,sub07-scan02,0.5355783247610745,0.18463781476020813,3,14,False
+base,1,Precuneus anterior,test,sub11-scan01,0.48113386432092503,0.18998831510543823,3,14,False
+base,1,Precuneus anterior,test,sub16-scan01,0.6317101471222786,0.16771656274795532,3,14,False
+base,1,Precuneus anterior,test,sub18-scan01,0.32353852354975804,0.22510549426078796,3,14,False
+base,1,Precuneus anterior,test,sub21-scan01,0.4831982533370758,0.2097821831703186,3,14,False
+base,12345,Precuneus anterior,val,sub06-scan01,0.5432419592346015,0.20623350143432617,4,15,False
+base,12345,Precuneus anterior,val,sub13-scan01,0.2042857531546699,0.2915061414241791,4,15,False
+base,12345,Precuneus anterior,val,sub13-scan02,0.10663246445311875,0.2743721902370453,4,15,False
+base,12345,Precuneus anterior,val,sub15-scan01,0.3466088641800932,0.2780163586139679,4,15,False
+base,12345,Precuneus anterior,val,sub22-scan01,0.5075876159764257,0.2210599184036255,4,15,False
+base,12345,Precuneus anterior,test,sub07-scan01,0.5428603292526065,0.19621092081069946,4,15,False
+base,12345,Precuneus anterior,test,sub07-scan02,0.5342859992411122,0.18333718180656433,4,15,False
+base,12345,Precuneus anterior,test,sub11-scan01,0.4805359545126765,0.19238832592964172,4,15,False
+base,12345,Precuneus anterior,test,sub16-scan01,0.6460593186592453,0.16147586703300476,4,15,False
+base,12345,Precuneus anterior,test,sub18-scan01,0.3148979174084535,0.22782067954540253,4,15,False
+base,12345,Precuneus anterior,test,sub21-scan01,0.4749968436665403,0.2136930227279663,4,15,False
+base,12345,Putamen,val,sub06-scan01,0.30734635325568543,0.19742947816848755,6,17,False
+base,12345,Putamen,val,sub13-scan01,0.25212469300255586,0.23421643674373627,6,17,False
+base,12345,Putamen,val,sub13-scan02,0.25856943898528506,0.22091659903526306,6,17,False
+base,12345,Putamen,val,sub15-scan01,0.21711146729113606,0.2304375320672989,6,17,False
+base,12345,Putamen,val,sub22-scan01,0.2953828596619543,0.2519887685775757,6,17,False
+base,12345,Putamen,test,sub07-scan01,0.4219404723080327,0.2224300503730774,6,17,False
+base,12345,Putamen,test,sub07-scan02,0.39593219511648026,0.26444128155708313,6,17,False
+base,12345,Putamen,test,sub11-scan01,0.2835513034691046,0.23356233537197113,6,17,False
+base,12345,Putamen,test,sub16-scan01,0.1819346551001868,0.2665105164051056,6,17,False
+base,12345,Putamen,test,sub18-scan01,0.5453664245751684,0.18236297369003296,6,17,False
+base,12345,Putamen,test,sub21-scan01,0.16555202036196473,0.2579018175601959,6,17,False
+base,1,Thalamus,val,sub06-scan01,0.3114120134749095,0.25732892751693726,3,14,False
+base,1,Thalamus,val,sub13-scan01,0.17009460717303418,0.2746709883213043,3,14,False
+base,1,Thalamus,val,sub13-scan02,0.1577350717485287,0.2682391405105591,3,14,False
+base,1,Thalamus,val,sub15-scan01,0.356995523922546,0.23722581565380096,3,14,False
+base,1,Thalamus,val,sub22-scan01,0.5969195838521523,0.18132628500461578,3,14,False
+base,1,Thalamus,test,sub07-scan01,0.4490271947552403,0.2142452746629715,3,14,False
+base,1,Thalamus,test,sub07-scan02,0.5043378904585842,0.19981501996517181,3,14,False
+base,1,Thalamus,test,sub11-scan01,0.44493274378844333,0.20145902037620544,3,14,False
+base,1,Thalamus,test,sub16-scan01,0.6340705184960653,0.1582651436328888,3,14,False
+base,1,Thalamus,test,sub18-scan01,0.3416754008804703,0.25107112526893616,3,14,False
+base,1,Thalamus,test,sub21-scan01,0.39897705604917466,0.22199679911136627,3,14,False
+base,12345,Thalamus,val,sub06-scan01,0.306031651440234,0.25919419527053833,4,15,False
+base,12345,Thalamus,val,sub13-scan01,0.12374252453913118,0.2855081558227539,4,15,False
+base,12345,Thalamus,val,sub13-scan02,0.1403874232325458,0.27698370814323425,4,15,False
+base,12345,Thalamus,val,sub15-scan01,0.39091850395578737,0.23090766370296478,4,15,False
+base,12345,Thalamus,val,sub22-scan01,0.6031533977036125,0.17712298035621643,4,15,False
+base,12345,Thalamus,test,sub07-scan01,0.4737014776259472,0.2095719873905182,4,15,False
+base,12345,Thalamus,test,sub07-scan02,0.49128407557507325,0.20182476937770844,4,15,False
+base,12345,Thalamus,test,sub11-scan01,0.44556104894729326,0.20587076246738434,4,15,False
+base,12345,Thalamus,test,sub16-scan01,0.6262970855471703,0.16103124618530273,4,15,False
+base,12345,Thalamus,test,sub18-scan01,0.31673673704308297,0.2607979476451874,4,15,False
+base,12345,Thalamus,test,sub21-scan01,0.428499519286052,0.21365879476070404,4,15,False
+base,12345,global signal clean,val,sub06-scan01,0.5639352974858662,0.17865747213363647,6,17,False
+base,12345,global signal clean,val,sub13-scan01,0.14973264804978886,0.2753693759441376,6,17,False
+base,12345,global signal clean,val,sub13-scan02,0.16960492899155913,0.27710095047950745,6,17,False
+base,12345,global signal clean,val,sub15-scan01,0.41726530705386133,0.235765740275383,6,17,False
+base,12345,global signal clean,val,sub22-scan01,0.5285555402124019,0.18713214993476868,6,17,False
+base,12345,global signal clean,test,sub07-scan01,0.6190516001147385,0.1571156531572342,6,17,False
+base,12345,global signal clean,test,sub07-scan02,0.589249747669788,0.17320512235164642,6,17,False
+base,12345,global signal clean,test,sub11-scan01,0.6029985223811174,0.15542876720428467,6,17,False
+base,12345,global signal clean,test,sub16-scan01,0.6744793903175837,0.1488305926322937,6,17,False
+base,12345,global signal clean,test,sub18-scan01,0.391710471559583,0.22310420870780945,6,17,False
+base,12345,global signal clean,test,sub21-scan01,0.4631753754093124,0.2084086537361145,6,17,False
+hgb_bandpower,0,Cuneus,val,sub06-scan01,0.42787774360837416,0.26365222756728834,0,1,False
+hgb_bandpower,0,Cuneus,val,sub13-scan01,-0.07681157131124755,0.2727473545600977,0,1,False
+hgb_bandpower,0,Cuneus,val,sub13-scan02,0.012984345239183973,0.3052905897763525,0,1,False
+hgb_bandpower,0,Cuneus,val,sub15-scan01,0.33442510584900154,0.2587902809212973,0,1,False
+hgb_bandpower,0,Cuneus,val,sub22-scan01,0.5544730520363654,0.2172573586744952,0,1,False
+hgb_bandpower,0,Cuneus,test,sub07-scan01,0.3525862229075992,0.2384608822046257,0,1,False
+hgb_bandpower,0,Cuneus,test,sub07-scan02,0.3093811682363208,0.24888762968664208,0,1,False
+hgb_bandpower,0,Cuneus,test,sub11-scan01,0.5035313599932977,0.17896110269614862,0,1,False
+hgb_bandpower,0,Cuneus,test,sub16-scan01,0.5962942149247594,0.18022292486471223,0,1,False
+hgb_bandpower,0,Cuneus,test,sub18-scan01,0.3816389845896112,0.21244421666481372,0,1,False
+hgb_bandpower,0,Cuneus,test,sub21-scan01,0.5108121783471442,0.17771670218413796,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,val,sub06-scan01,0.33082982577230274,0.24406961659288015,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,val,sub13-scan01,0.21301205230359857,0.23930381644869947,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,val,sub13-scan02,0.2694952570850964,0.23082681214316714,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,val,sub15-scan01,0.4900803216519004,0.21390781664217987,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,val,sub22-scan01,0.6009034213701874,0.16529878741876622,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,test,sub07-scan01,0.5499063069393237,0.17479153081781895,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,test,sub07-scan02,0.556151910890447,0.19348167593880006,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,test,sub11-scan01,0.39295854945019776,0.1915474098692717,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,test,sub16-scan01,0.5941077112157148,0.1721217550322246,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,test,sub18-scan01,0.5336386512741056,0.1618954733929288,0,1,False
+hgb_bandpower,0,Heschl’s gyrus,test,sub21-scan01,0.41484361420858795,0.2147016900045311,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,val,sub06-scan01,0.26470562708234574,0.22599531847525875,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,val,sub13-scan01,0.15357067831526391,0.2792212658485311,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,val,sub13-scan02,0.17683137850020178,0.2718181997554565,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,val,sub15-scan01,0.28013580109959985,0.2448957884170083,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,val,sub22-scan01,0.3310414754525763,0.24741859528885482,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,test,sub07-scan01,0.4827331137371537,0.2219404315543087,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,test,sub07-scan02,0.4107404186227988,0.24917171806010335,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,test,sub11-scan01,0.1944990565817326,0.24819190844419298,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,test,sub16-scan01,0.47359132423755074,0.2099893565404494,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,test,sub18-scan01,0.4069593969652898,0.22936797226052355,0,1,False
+hgb_bandpower,0,Middle frontal gyrus anterior,test,sub21-scan01,0.286889464754437,0.2337832964445825,0,1,False
+hgb_bandpower,0,Precuneus anterior,val,sub06-scan01,0.41864745514574764,0.22519474914060036,0,1,False
+hgb_bandpower,0,Precuneus anterior,val,sub13-scan01,0.18826223695811561,0.29327347120130276,0,1,False
+hgb_bandpower,0,Precuneus anterior,val,sub13-scan02,0.06974931198655225,0.2769798482715463,0,1,False
+hgb_bandpower,0,Precuneus anterior,val,sub15-scan01,0.3650491596919403,0.2694160483342283,0,1,False
+hgb_bandpower,0,Precuneus anterior,val,sub22-scan01,0.5200289067394784,0.21394065464282536,0,1,False
+hgb_bandpower,0,Precuneus anterior,test,sub07-scan01,0.5843192980386933,0.18391483298330005,0,1,False
+hgb_bandpower,0,Precuneus anterior,test,sub07-scan02,0.4752493765061607,0.19943570098728322,0,1,False
+hgb_bandpower,0,Precuneus anterior,test,sub11-scan01,0.3913554045078902,0.19942583883944248,0,1,False
+hgb_bandpower,0,Precuneus anterior,test,sub16-scan01,0.5768701834330284,0.1758221603479417,0,1,False
+hgb_bandpower,0,Precuneus anterior,test,sub18-scan01,0.40004938288268466,0.19465069333106233,0,1,False
+hgb_bandpower,0,Precuneus anterior,test,sub21-scan01,0.40513011583648123,0.21793578461093122,0,1,False
+hgb_bandpower,0,Putamen,val,sub06-scan01,0.1814660277379683,0.22541268423539534,0,1,False
+hgb_bandpower,0,Putamen,val,sub13-scan01,0.1803557995450179,0.24179728913857487,0,1,False
+hgb_bandpower,0,Putamen,val,sub13-scan02,0.2335830115078405,0.22350746441162372,0,1,False
+hgb_bandpower,0,Putamen,val,sub15-scan01,0.12949160322071282,0.24667089271383702,0,1,False
+hgb_bandpower,0,Putamen,val,sub22-scan01,0.24696769149728265,0.2587926745945534,0,1,False
+hgb_bandpower,0,Putamen,test,sub07-scan01,0.08501915963878401,0.2715794313120753,0,1,False
+hgb_bandpower,0,Putamen,test,sub07-scan02,0.03802381066723159,0.31737456135151154,0,1,False
+hgb_bandpower,0,Putamen,test,sub11-scan01,0.0842266599880099,0.26566843592150163,0,1,False
+hgb_bandpower,0,Putamen,test,sub16-scan01,0.16198278939251573,0.2762367704076616,0,1,False
+hgb_bandpower,0,Putamen,test,sub18-scan01,0.44899571516963155,0.1991429132239102,0,1,False
+hgb_bandpower,0,Putamen,test,sub21-scan01,0.23738078988580913,0.2585329616155589,0,1,False
+hgb_bandpower,0,Thalamus,val,sub06-scan01,0.18960302011609897,0.29676192408277335,0,1,False
+hgb_bandpower,0,Thalamus,val,sub13-scan01,0.03340009248602334,0.2757131220087059,0,1,False
+hgb_bandpower,0,Thalamus,val,sub13-scan02,0.08600962415205288,0.2611449274276174,0,1,False
+hgb_bandpower,0,Thalamus,val,sub15-scan01,0.2902530423835972,0.26213641764966245,0,1,False
+hgb_bandpower,0,Thalamus,val,sub22-scan01,0.5985722910502946,0.1831324290448594,0,1,False
+hgb_bandpower,0,Thalamus,test,sub07-scan01,0.30933947567827597,0.24382820466598545,0,1,False
+hgb_bandpower,0,Thalamus,test,sub07-scan02,0.43591357395170566,0.22439599301809326,0,1,False
+hgb_bandpower,0,Thalamus,test,sub11-scan01,0.2292586852130962,0.24899844305699137,0,1,False
+hgb_bandpower,0,Thalamus,test,sub16-scan01,0.5965373601541798,0.17198239595804374,0,1,False
+hgb_bandpower,0,Thalamus,test,sub18-scan01,0.3707572132606317,0.23303523988481475,0,1,False
+hgb_bandpower,0,Thalamus,test,sub21-scan01,0.35609454244407174,0.24529987380941118,0,1,False
+hgb_bandpower,0,global signal clean,val,sub06-scan01,0.38892824283743255,0.22539305434814536,0,1,False
+hgb_bandpower,0,global signal clean,val,sub13-scan01,0.21719038510202907,0.2639027610354438,0,1,False
+hgb_bandpower,0,global signal clean,val,sub13-scan02,0.24126858360143902,0.26621555774144584,0,1,False
+hgb_bandpower,0,global signal clean,val,sub15-scan01,0.3986437256721216,0.23825578096121258,0,1,False
+hgb_bandpower,0,global signal clean,val,sub22-scan01,0.5421151897983909,0.18936505046799548,0,1,False
+hgb_bandpower,0,global signal clean,test,sub07-scan01,0.5986343555102517,0.16474457068427045,0,1,False
+hgb_bandpower,0,global signal clean,test,sub07-scan02,0.46770359577552306,0.20402112068860895,0,1,False
+hgb_bandpower,0,global signal clean,test,sub11-scan01,0.5026577209748321,0.1792181486124546,0,1,False
+hgb_bandpower,0,global signal clean,test,sub16-scan01,0.6738851179103527,0.14759829397133478,0,1,False
+hgb_bandpower,0,global signal clean,test,sub18-scan01,0.4591687531312425,0.20414225572505795,0,1,False
+hgb_bandpower,0,global signal clean,test,sub21-scan01,0.4578258512620914,0.19504271123428946,0,1,False
+hgb_w32_sub16,0,Cuneus,val,sub06-scan01,0.5420427369964802,0.22309335234189898,0,1,False
+hgb_w32_sub16,0,Cuneus,val,sub13-scan01,-0.01281283048123777,0.2528815913848232,0,1,False
+hgb_w32_sub16,0,Cuneus,val,sub13-scan02,0.0327322626273348,0.29319438963603484,0,1,False
+hgb_w32_sub16,0,Cuneus,val,sub15-scan01,0.44147338579529827,0.2129920836481429,0,1,False
+hgb_w32_sub16,0,Cuneus,val,sub22-scan01,0.6220492589526554,0.1927892965935071,0,1,False
+hgb_w32_sub16,0,Cuneus,test,sub07-scan01,0.39086409642708747,0.22976372033464795,0,1,False
+hgb_w32_sub16,0,Cuneus,test,sub07-scan02,0.4048796728539182,0.22756470562806336,0,1,False
+hgb_w32_sub16,0,Cuneus,test,sub11-scan01,0.5827471519240728,0.15833963476637794,0,1,False
+hgb_w32_sub16,0,Cuneus,test,sub16-scan01,0.6290793691999034,0.16674093504380438,0,1,False
+hgb_w32_sub16,0,Cuneus,test,sub18-scan01,0.3915275030020127,0.20076739979693464,0,1,False
+hgb_w32_sub16,0,Cuneus,test,sub21-scan01,0.6057216973147083,0.15287505432216145,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,val,sub06-scan01,0.42838724469439404,0.19582977101309648,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,val,sub13-scan01,0.15307440787953222,0.24852518217075825,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,val,sub13-scan02,0.23421679921724925,0.23737121564183472,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,val,sub15-scan01,0.5025507645534119,0.2106034120530228,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,val,sub22-scan01,0.6243684931950345,0.16091151385904284,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,test,sub07-scan01,0.5392539236106664,0.17815919246965417,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,test,sub07-scan02,0.5647491288577862,0.19551635889423966,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,test,sub11-scan01,0.3794982090240794,0.19405699193985296,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,test,sub16-scan01,0.6247848148232441,0.16508772355107162,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,test,sub18-scan01,0.5560198128305271,0.1515277051341621,0,1,False
+hgb_w32_sub16,0,Heschl’s gyrus,test,sub21-scan01,0.4988074594182881,0.19516475949449585,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,val,sub06-scan01,0.37461661589357403,0.20731030900260553,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,val,sub13-scan01,0.19620186876501886,0.26649141003989407,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,val,sub13-scan02,0.0950490943677608,0.26972124736628034,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,val,sub15-scan01,0.2860451350291398,0.24268536398703217,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,val,sub22-scan01,0.3273184424889193,0.24832798331035313,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5244753195703792,0.21413542651043546,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5013990499891054,0.22108475179989487,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,test,sub11-scan01,0.3277113672579546,0.2178444150149609,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,test,sub16-scan01,0.46702002433755097,0.21302428333033133,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,test,sub18-scan01,0.38226164426966086,0.2299713348597442,0,1,False
+hgb_w32_sub16,0,Middle frontal gyrus anterior,test,sub21-scan01,0.378458006874965,0.21468437991748424,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,val,sub06-scan01,0.5483635011456689,0.20313396182595855,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,val,sub13-scan01,0.1914468058479729,0.2941124033646881,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,val,sub13-scan02,0.0025563160039949627,0.289733981945589,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,val,sub15-scan01,0.40574768266189304,0.26141633449082147,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,val,sub22-scan01,0.5577682475031633,0.2069303369473856,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,test,sub07-scan01,0.6342777037405685,0.1720322766122755,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,test,sub07-scan02,0.5536865855407805,0.18405785605743147,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,test,sub11-scan01,0.4437035933191943,0.18820576601002934,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,test,sub16-scan01,0.6186163479223323,0.16418788417876956,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,test,sub18-scan01,0.41476284700487387,0.19191146991725694,0,1,False
+hgb_w32_sub16,0,Precuneus anterior,test,sub21-scan01,0.5282768810899913,0.18693929822506578,0,1,False
+hgb_w32_sub16,0,Putamen,val,sub06-scan01,0.2933929404994184,0.20065839929837875,0,1,False
+hgb_w32_sub16,0,Putamen,val,sub13-scan01,0.1476815294916418,0.25036342016314267,0,1,False
+hgb_w32_sub16,0,Putamen,val,sub13-scan02,0.1279780811178662,0.24175829302241372,0,1,False
+hgb_w32_sub16,0,Putamen,val,sub15-scan01,0.1546793495961056,0.24011581841605595,0,1,False
+hgb_w32_sub16,0,Putamen,val,sub22-scan01,0.29566636058006895,0.2501533207333696,0,1,False
+hgb_w32_sub16,0,Putamen,test,sub07-scan01,0.236634453864292,0.24914106338744646,0,1,False
+hgb_w32_sub16,0,Putamen,test,sub07-scan02,0.14174388190656842,0.3011448274204502,0,1,False
+hgb_w32_sub16,0,Putamen,test,sub11-scan01,0.15128955644497197,0.25800232758880787,0,1,False
+hgb_w32_sub16,0,Putamen,test,sub16-scan01,0.23202690126098652,0.2655303586680111,0,1,False
+hgb_w32_sub16,0,Putamen,test,sub18-scan01,0.49803391080033976,0.1862469611895154,0,1,False
+hgb_w32_sub16,0,Putamen,test,sub21-scan01,0.28301248068414037,0.2463379007807869,0,1,False
+hgb_w32_sub16,0,Thalamus,val,sub06-scan01,0.1815920449734845,0.2883013361556835,0,1,False
+hgb_w32_sub16,0,Thalamus,val,sub13-scan01,-0.05379302594537142,0.28331270061337543,0,1,False
+hgb_w32_sub16,0,Thalamus,val,sub13-scan02,0.08579188902734271,0.2605464305513441,0,1,False
+hgb_w32_sub16,0,Thalamus,val,sub15-scan01,0.2763658806900585,0.255767760380043,0,1,False
+hgb_w32_sub16,0,Thalamus,val,sub22-scan01,0.6286044138390734,0.1833512292544679,0,1,False
+hgb_w32_sub16,0,Thalamus,test,sub07-scan01,0.34800215751089475,0.23523011998086507,0,1,False
+hgb_w32_sub16,0,Thalamus,test,sub07-scan02,0.410757168474994,0.22663322386817392,0,1,False
+hgb_w32_sub16,0,Thalamus,test,sub11-scan01,0.24480629817800878,0.24602419485639834,0,1,False
+hgb_w32_sub16,0,Thalamus,test,sub16-scan01,0.5983151949077913,0.17061004740781477,0,1,False
+hgb_w32_sub16,0,Thalamus,test,sub18-scan01,0.32068246120397814,0.24100121068351096,0,1,False
+hgb_w32_sub16,0,Thalamus,test,sub21-scan01,0.34520317223326247,0.2393784193764891,0,1,False
+hgb_w32_sub16,0,global signal clean,val,sub06-scan01,0.5599494807602269,0.18631777831542384,0,1,False
+hgb_w32_sub16,0,global signal clean,val,sub13-scan01,0.214603574210014,0.2762216825628991,0,1,False
+hgb_w32_sub16,0,global signal clean,val,sub13-scan02,0.10167786554756292,0.295813657699936,0,1,False
+hgb_w32_sub16,0,global signal clean,val,sub15-scan01,0.49960269321335404,0.22062714917761156,0,1,False
+hgb_w32_sub16,0,global signal clean,val,sub22-scan01,0.6268316640886609,0.15944768297138862,0,1,False
+hgb_w32_sub16,0,global signal clean,test,sub07-scan01,0.6000321285585751,0.16511439262583494,0,1,False
+hgb_w32_sub16,0,global signal clean,test,sub07-scan02,0.5504786093500013,0.18966705317592628,0,1,False
+hgb_w32_sub16,0,global signal clean,test,sub11-scan01,0.5016409761510078,0.17858358024440063,0,1,False
+hgb_w32_sub16,0,global signal clean,test,sub16-scan01,0.6769228111408642,0.14683045808884945,0,1,False
+hgb_w32_sub16,0,global signal clean,test,sub18-scan01,0.4802633912690686,0.20255879091713372,0,1,False
+hgb_w32_sub16,0,global signal clean,test,sub21-scan01,0.5043770298399843,0.18422299225588054,0,1,False
+ridge_bandpower,0,Cuneus,val,sub06-scan01,0.5278564331208825,0.24357673333223157,0,1,False
+ridge_bandpower,0,Cuneus,val,sub13-scan01,0.048290807229018747,0.25276645496344063,0,1,False
+ridge_bandpower,0,Cuneus,val,sub13-scan02,0.1798326888488837,0.2843112823686061,0,1,False
+ridge_bandpower,0,Cuneus,val,sub15-scan01,0.4564345502212311,0.21827224274854876,0,1,False
+ridge_bandpower,0,Cuneus,val,sub22-scan01,0.5068315516332729,0.23869055878823223,0,1,False
+ridge_bandpower,0,Cuneus,test,sub07-scan01,0.3349571742553792,0.24453735766604012,0,1,False
+ridge_bandpower,0,Cuneus,test,sub07-scan02,0.37823179271447377,0.230371726995534,0,1,False
+ridge_bandpower,0,Cuneus,test,sub11-scan01,0.5808075098762512,0.16325660602540376,0,1,False
+ridge_bandpower,0,Cuneus,test,sub16-scan01,0.6171615560507948,0.17958734778960622,0,1,False
+ridge_bandpower,0,Cuneus,test,sub18-scan01,0.39577741252694676,0.20895132862924054,0,1,False
+ridge_bandpower,0,Cuneus,test,sub21-scan01,0.5143140895181543,0.17698204899017309,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,val,sub06-scan01,0.4476704732387515,0.20096686481461923,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,val,sub13-scan01,0.24860861366141446,0.23499396144375773,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,val,sub13-scan02,0.37312081603345726,0.21898262060517726,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,val,sub15-scan01,0.539496280675545,0.20831697724182882,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,val,sub22-scan01,0.5473286538473733,0.18534291487129828,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,test,sub07-scan01,0.5056108477537702,0.18609823264505887,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,test,sub07-scan02,0.5200319159804963,0.19976131949692402,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,test,sub11-scan01,0.5661606825053626,0.15634940339876457,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,test,sub16-scan01,0.5981861450729845,0.17266643698031664,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,test,sub18-scan01,0.5565184763692955,0.15034183091718234,0,1,False
+ridge_bandpower,0,Heschl’s gyrus,test,sub21-scan01,0.4716846826460133,0.20144557792855408,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,val,sub06-scan01,0.31456642058758477,0.21529198749257006,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,val,sub13-scan01,0.12329110807262184,0.2711061695247044,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,val,sub13-scan02,0.1543100887838986,0.25892004834870147,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,val,sub15-scan01,0.35996272324829487,0.23954635991083711,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,val,sub22-scan01,0.31574399287985083,0.2526195324213372,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5507065946179968,0.21671864935014382,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,test,sub07-scan02,0.531568580759183,0.21843668834118313,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,test,sub11-scan01,0.39228506126880264,0.20623507713166014,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,test,sub16-scan01,0.4539774657708696,0.21770031474493637,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,test,sub18-scan01,0.36330056821625656,0.23236695682686878,0,1,False
+ridge_bandpower,0,Middle frontal gyrus anterior,test,sub21-scan01,0.3780309095507117,0.2169206666306503,0,1,False
+ridge_bandpower,0,Precuneus anterior,val,sub06-scan01,0.4934198686689886,0.2139689126060426,0,1,False
+ridge_bandpower,0,Precuneus anterior,val,sub13-scan01,0.11418697810506806,0.31196407353069966,0,1,False
+ridge_bandpower,0,Precuneus anterior,val,sub13-scan02,0.06369435893413758,0.2861142579850436,0,1,False
+ridge_bandpower,0,Precuneus anterior,val,sub15-scan01,0.43040009649614686,0.26320190151787815,0,1,False
+ridge_bandpower,0,Precuneus anterior,val,sub22-scan01,0.5463020198263641,0.21683922934301952,0,1,False
+ridge_bandpower,0,Precuneus anterior,test,sub07-scan01,0.5661558606217209,0.19274684314663226,0,1,False
+ridge_bandpower,0,Precuneus anterior,test,sub07-scan02,0.5122902896306074,0.1917363308322774,0,1,False
+ridge_bandpower,0,Precuneus anterior,test,sub11-scan01,0.4989843193925426,0.17819348579142638,0,1,False
+ridge_bandpower,0,Precuneus anterior,test,sub16-scan01,0.6315427470282983,0.164687979269458,0,1,False
+ridge_bandpower,0,Precuneus anterior,test,sub18-scan01,0.37184696769390785,0.20040091165870688,0,1,False
+ridge_bandpower,0,Precuneus anterior,test,sub21-scan01,0.45300981695809706,0.21410446982444178,0,1,False
+ridge_bandpower,0,Putamen,val,sub06-scan01,0.21527555252802008,0.20873989576197455,0,1,False
+ridge_bandpower,0,Putamen,val,sub13-scan01,0.2877838834337969,0.23049051619170052,0,1,False
+ridge_bandpower,0,Putamen,val,sub13-scan02,0.32037635932796227,0.21508539566780438,0,1,False
+ridge_bandpower,0,Putamen,val,sub15-scan01,0.17894707596806944,0.2340721922147366,0,1,False
+ridge_bandpower,0,Putamen,val,sub22-scan01,0.25136482056792625,0.2576753884494695,0,1,False
+ridge_bandpower,0,Putamen,test,sub07-scan01,0.41738918025556554,0.22359837519990908,0,1,False
+ridge_bandpower,0,Putamen,test,sub07-scan02,0.3619410863041566,0.26747568934109095,0,1,False
+ridge_bandpower,0,Putamen,test,sub11-scan01,0.2872153600569824,0.2336393853479026,0,1,False
+ridge_bandpower,0,Putamen,test,sub16-scan01,0.18964862914225122,0.26515943465043545,0,1,False
+ridge_bandpower,0,Putamen,test,sub18-scan01,0.5044883436421085,0.18667738525257144,0,1,False
+ridge_bandpower,0,Putamen,test,sub21-scan01,0.20200475984645805,0.2521989326879746,0,1,False
+ridge_bandpower,0,Thalamus,val,sub06-scan01,0.21188061034374198,0.26815794475669286,0,1,False
+ridge_bandpower,0,Thalamus,val,sub13-scan01,0.2028468197174326,0.26147442869379656,0,1,False
+ridge_bandpower,0,Thalamus,val,sub13-scan02,0.27318348967390865,0.24511199598879257,0,1,False
+ridge_bandpower,0,Thalamus,val,sub15-scan01,0.3330708688514021,0.25311201211190726,0,1,False
+ridge_bandpower,0,Thalamus,val,sub22-scan01,0.5795776160872363,0.20293756943187397,0,1,False
+ridge_bandpower,0,Thalamus,test,sub07-scan01,0.450370365267274,0.21842450528361998,0,1,False
+ridge_bandpower,0,Thalamus,test,sub07-scan02,0.48249134903806135,0.21164954699515437,0,1,False
+ridge_bandpower,0,Thalamus,test,sub11-scan01,0.4236704680534337,0.2055230983115559,0,1,False
+ridge_bandpower,0,Thalamus,test,sub16-scan01,0.639889198858443,0.16519030777321686,0,1,False
+ridge_bandpower,0,Thalamus,test,sub18-scan01,0.3566378273349016,0.24447535706470452,0,1,False
+ridge_bandpower,0,Thalamus,test,sub21-scan01,0.3806536803639529,0.22795869264336302,0,1,False
+ridge_bandpower,0,global signal clean,val,sub06-scan01,0.4988739226625709,0.20134726169576203,0,1,False
+ridge_bandpower,0,global signal clean,val,sub13-scan01,0.2818814394720673,0.27071166041004,0,1,False
+ridge_bandpower,0,global signal clean,val,sub13-scan02,0.28953457417249673,0.2727803506192134,0,1,False
+ridge_bandpower,0,global signal clean,val,sub15-scan01,0.518169364247885,0.22717449305410828,0,1,False
+ridge_bandpower,0,global signal clean,val,sub22-scan01,0.5533082351651833,0.1938169435093693,0,1,False
+ridge_bandpower,0,global signal clean,test,sub07-scan01,0.6081662579520283,0.1715927654430598,0,1,False
+ridge_bandpower,0,global signal clean,test,sub07-scan02,0.5641956683653463,0.1908215674670404,0,1,False
+ridge_bandpower,0,global signal clean,test,sub11-scan01,0.5640517293618281,0.16904749363520005,0,1,False
+ridge_bandpower,0,global signal clean,test,sub16-scan01,0.6453678372585162,0.16746182061672182,0,1,False
+ridge_bandpower,0,global signal clean,test,sub18-scan01,0.43232248521713534,0.21288571519991428,0,1,False
+ridge_bandpower,0,global signal clean,test,sub21-scan01,0.46262206198527117,0.1985023451800149,0,1,False
+ridge_fine,0,Cuneus,val,sub06-scan01,0.5298368965133473,0.2516557253011382,0,1,False
+ridge_fine,0,Cuneus,val,sub13-scan01,0.09552824778845789,0.2474353498675453,0,1,False
+ridge_fine,0,Cuneus,val,sub13-scan02,0.22512102343432538,0.27971018048387264,0,1,False
+ridge_fine,0,Cuneus,val,sub15-scan01,0.46886851588949574,0.21163012123023486,0,1,False
+ridge_fine,0,Cuneus,val,sub22-scan01,0.5616966385988692,0.23025724582195806,0,1,False
+ridge_fine,0,Cuneus,test,sub07-scan01,0.35029201811950456,0.24460957708916442,0,1,False
+ridge_fine,0,Cuneus,test,sub07-scan02,0.4533205984082462,0.22302075124838583,0,1,False
+ridge_fine,0,Cuneus,test,sub11-scan01,0.6039988481631051,0.15499298570973571,0,1,False
+ridge_fine,0,Cuneus,test,sub16-scan01,0.6317449640216738,0.17528149549746583,0,1,False
+ridge_fine,0,Cuneus,test,sub18-scan01,0.40044618347443905,0.219085691754661,0,1,False
+ridge_fine,0,Cuneus,test,sub21-scan01,0.5766951920871802,0.17226184608223066,0,1,False
+ridge_fine,0,Heschl’s gyrus,val,sub06-scan01,0.48852923714385144,0.20514870528747908,0,1,False
+ridge_fine,0,Heschl’s gyrus,val,sub13-scan01,0.2777432940404224,0.2338497847218799,0,1,False
+ridge_fine,0,Heschl’s gyrus,val,sub13-scan02,0.3917189080487614,0.21972646194075993,0,1,False
+ridge_fine,0,Heschl’s gyrus,val,sub15-scan01,0.5707727463101281,0.20125532067988053,0,1,False
+ridge_fine,0,Heschl’s gyrus,val,sub22-scan01,0.6135132586410422,0.17208754664035528,0,1,False
+ridge_fine,0,Heschl’s gyrus,test,sub07-scan01,0.5365511027897488,0.18540899304998415,0,1,False
+ridge_fine,0,Heschl’s gyrus,test,sub07-scan02,0.5874096397578608,0.20072382238773911,0,1,False
+ridge_fine,0,Heschl’s gyrus,test,sub11-scan01,0.6354647039327165,0.1390275362509873,0,1,False
+ridge_fine,0,Heschl’s gyrus,test,sub16-scan01,0.6002205252246847,0.1723050166230986,0,1,False
+ridge_fine,0,Heschl’s gyrus,test,sub18-scan01,0.5573553540474483,0.1604215726894117,0,1,False
+ridge_fine,0,Heschl’s gyrus,test,sub21-scan01,0.5134104965708812,0.19117010083495645,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,val,sub06-scan01,0.3704055055032887,0.20929820552114822,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,val,sub13-scan01,0.15180107896923006,0.27139813475068864,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,val,sub13-scan02,0.2022199416820424,0.25766418851618955,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,val,sub15-scan01,0.38538875846513354,0.23704159231744082,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,val,sub22-scan01,0.3613283124517281,0.24976077536007868,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5774540225110567,0.21940285056630895,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,test,sub07-scan02,0.58358897933367,0.21951075116485394,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,test,sub11-scan01,0.47210924531803905,0.19604989641466808,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,test,sub16-scan01,0.4618025751955622,0.21832852335404263,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,test,sub18-scan01,0.34488312369051766,0.24054526164366521,0,1,False
+ridge_fine,0,Middle frontal gyrus anterior,test,sub21-scan01,0.40986243769150915,0.21221709663834024,0,1,False
+ridge_fine,0,Precuneus anterior,val,sub06-scan01,0.5205845779096645,0.21588245281019733,0,1,False
+ridge_fine,0,Precuneus anterior,val,sub13-scan01,0.14807606440237972,0.3101425752674028,0,1,False
+ridge_fine,0,Precuneus anterior,val,sub13-scan02,0.14734901391571012,0.2780668727108613,0,1,False
+ridge_fine,0,Precuneus anterior,val,sub15-scan01,0.4711597462397534,0.2675322353342074,0,1,False
+ridge_fine,0,Precuneus anterior,val,sub22-scan01,0.5556454153479141,0.2303684084852016,0,1,False
+ridge_fine,0,Precuneus anterior,test,sub07-scan01,0.5952058543783051,0.20168151886726562,0,1,False
+ridge_fine,0,Precuneus anterior,test,sub07-scan02,0.5840000655235228,0.19713359546124143,0,1,False
+ridge_fine,0,Precuneus anterior,test,sub11-scan01,0.5385737591915274,0.17565920025209386,0,1,False
+ridge_fine,0,Precuneus anterior,test,sub16-scan01,0.6379335774343281,0.17659722173645084,0,1,False
+ridge_fine,0,Precuneus anterior,test,sub18-scan01,0.36988389594863325,0.20870158589623955,0,1,False
+ridge_fine,0,Precuneus anterior,test,sub21-scan01,0.49010012220870797,0.20544776750011612,0,1,False
+ridge_fine_w32,0,Cuneus,val,sub06-scan01,0.4913433091177396,0.23907588744216368,0,1,False
+ridge_fine_w32,0,Cuneus,val,sub13-scan01,0.07381311032619904,0.24614180673237876,0,1,False
+ridge_fine_w32,0,Cuneus,val,sub13-scan02,0.23800185210313476,0.27339105509352346,0,1,False
+ridge_fine_w32,0,Cuneus,val,sub15-scan01,0.48979107364123436,0.20316287084304083,0,1,False
+ridge_fine_w32,0,Cuneus,val,sub22-scan01,0.628541832025792,0.20336744802063916,0,1,False
+ridge_fine_w32,0,Cuneus,test,sub07-scan01,0.41652152609623827,0.22495341108430603,0,1,False
+ridge_fine_w32,0,Cuneus,test,sub07-scan02,0.41104973073779005,0.22602635731927131,0,1,False
+ridge_fine_w32,0,Cuneus,test,sub11-scan01,0.7369399681220389,0.11230358289650276,0,1,False
+ridge_fine_w32,0,Cuneus,test,sub16-scan01,0.6237448502040723,0.1711217766078863,0,1,False
+ridge_fine_w32,0,Cuneus,test,sub18-scan01,0.3703455813908796,0.21473645060161428,0,1,False
+ridge_fine_w32,0,Cuneus,test,sub21-scan01,0.6106009104947944,0.15188670984304636,0,1,False
+ridge_nohp,0,Cuneus,val,sub06-scan01,0.5313444950141255,0.24298301586733248,0,1,False
+ridge_nohp,0,Cuneus,val,sub13-scan01,0.03893685041113891,0.25322670511735246,0,1,False
+ridge_nohp,0,Cuneus,val,sub13-scan02,0.17957805406266886,0.2841286989815676,0,1,False
+ridge_nohp,0,Cuneus,val,sub15-scan01,0.45478215808079553,0.21881906473295626,0,1,False
+ridge_nohp,0,Cuneus,val,sub22-scan01,0.50847488900573,0.23809918627314683,0,1,False
+ridge_nohp,0,Cuneus,test,sub07-scan01,0.33615100551940597,0.24429735648753528,0,1,False
+ridge_nohp,0,Cuneus,test,sub07-scan02,0.37509411297318257,0.23093148248536194,0,1,False
+ridge_nohp,0,Cuneus,test,sub11-scan01,0.5824330428645801,0.16276159384541278,0,1,False
+ridge_nohp,0,Cuneus,test,sub16-scan01,0.6159826009984167,0.1801288491041868,0,1,False
+ridge_nohp,0,Cuneus,test,sub18-scan01,0.39070767265858264,0.20842124278558297,0,1,False
+ridge_nohp,0,Cuneus,test,sub21-scan01,0.5142443987342581,0.1764986579676135,0,1,False
+ridge_nohp,0,Heschl’s gyrus,val,sub06-scan01,0.4495027348349934,0.20047016054075387,0,1,False
+ridge_nohp,0,Heschl’s gyrus,val,sub13-scan01,0.24735137681193867,0.2350846699303446,0,1,False
+ridge_nohp,0,Heschl’s gyrus,val,sub13-scan02,0.3754288257012959,0.2187103079093054,0,1,False
+ridge_nohp,0,Heschl’s gyrus,val,sub15-scan01,0.5408882423105699,0.20813121926753422,0,1,False
+ridge_nohp,0,Heschl’s gyrus,val,sub22-scan01,0.549639455534712,0.18492517617454043,0,1,False
+ridge_nohp,0,Heschl’s gyrus,test,sub07-scan01,0.504873508784194,0.18599397913412197,0,1,False
+ridge_nohp,0,Heschl’s gyrus,test,sub07-scan02,0.5158678272065782,0.2006454171998942,0,1,False
+ridge_nohp,0,Heschl’s gyrus,test,sub11-scan01,0.5666782007896132,0.15636534233894928,0,1,False
+ridge_nohp,0,Heschl’s gyrus,test,sub16-scan01,0.5964610061545298,0.1733485694826814,0,1,False
+ridge_nohp,0,Heschl’s gyrus,test,sub18-scan01,0.5524762934010649,0.1510812167837864,0,1,False
+ridge_nohp,0,Heschl’s gyrus,test,sub21-scan01,0.4745444275341841,0.20079968788719876,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,val,sub06-scan01,0.31548405029287224,0.21513112269363924,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,val,sub13-scan01,0.12417602292916907,0.2713225070127471,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,val,sub13-scan02,0.15280890185965404,0.25948745271813956,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,val,sub15-scan01,0.35797864497853454,0.24010285342894838,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,val,sub22-scan01,0.31207913848709107,0.2530199923907709,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5527319555412222,0.21632085685310387,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5332682646070716,0.21818293100274166,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,test,sub11-scan01,0.39391843680442196,0.20601897064860927,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,test,sub16-scan01,0.4557895735605329,0.21748998989809115,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,test,sub18-scan01,0.3617931416719886,0.23265113497435402,0,1,False
+ridge_nohp,0,Middle frontal gyrus anterior,test,sub21-scan01,0.3748684293494263,0.21766343077364886,0,1,False
+ridge_nohp,0,Precuneus anterior,val,sub06-scan01,0.4943866473070778,0.21385827128918597,0,1,False
+ridge_nohp,0,Precuneus anterior,val,sub13-scan01,0.11241413430014127,0.31258166702467016,0,1,False
+ridge_nohp,0,Precuneus anterior,val,sub13-scan02,0.06294864589691837,0.2867504422899336,0,1,False
+ridge_nohp,0,Precuneus anterior,val,sub15-scan01,0.43151205889507915,0.2632575204233163,0,1,False
+ridge_nohp,0,Precuneus anterior,val,sub22-scan01,0.544963361304501,0.21717487404749367,0,1,False
+ridge_nohp,0,Precuneus anterior,test,sub07-scan01,0.5679878325142823,0.1924084582290175,0,1,False
+ridge_nohp,0,Precuneus anterior,test,sub07-scan02,0.5130564598309827,0.19191122402990735,0,1,False
+ridge_nohp,0,Precuneus anterior,test,sub11-scan01,0.5007964264052784,0.17777177132688288,0,1,False
+ridge_nohp,0,Precuneus anterior,test,sub16-scan01,0.630632867721966,0.165354143165206,0,1,False
+ridge_nohp,0,Precuneus anterior,test,sub18-scan01,0.3723927687383397,0.20013094074635115,0,1,False
+ridge_nohp,0,Precuneus anterior,test,sub21-scan01,0.4546491227826526,0.21378114608117205,0,1,False
+ridge_nohp,0,Putamen,val,sub06-scan01,0.21577462714958598,0.20864927517123308,0,1,False
+ridge_nohp,0,Putamen,val,sub13-scan01,0.2892129214257197,0.230431531359309,0,1,False
+ridge_nohp,0,Putamen,val,sub13-scan02,0.31846037561880547,0.21533515273271847,0,1,False
+ridge_nohp,0,Putamen,val,sub15-scan01,0.17799311354156708,0.23414992786557443,0,1,False
+ridge_nohp,0,Putamen,val,sub22-scan01,0.24996769721666479,0.2577208039600292,0,1,False
+ridge_nohp,0,Putamen,test,sub07-scan01,0.41805291921876714,0.22342435275821143,0,1,False
+ridge_nohp,0,Putamen,test,sub07-scan02,0.3557537775887535,0.2683030458789361,0,1,False
+ridge_nohp,0,Putamen,test,sub11-scan01,0.28664755109069884,0.2336568740633035,0,1,False
+ridge_nohp,0,Putamen,test,sub16-scan01,0.1903646648259535,0.26493540223223694,0,1,False
+ridge_nohp,0,Putamen,test,sub18-scan01,0.5040502058240415,0.18685695360885712,0,1,False
+ridge_nohp,0,Putamen,test,sub21-scan01,0.20449125607878024,0.25171179297495305,0,1,False
+ridge_nohp,0,Thalamus,val,sub06-scan01,0.2110280255256824,0.2682655366625627,0,1,False
+ridge_nohp,0,Thalamus,val,sub13-scan01,0.2032767508920125,0.2614016721642811,0,1,False
+ridge_nohp,0,Thalamus,val,sub13-scan02,0.27109927365021486,0.24528871579183775,0,1,False
+ridge_nohp,0,Thalamus,val,sub15-scan01,0.33025169635718515,0.25335698892272873,0,1,False
+ridge_nohp,0,Thalamus,val,sub22-scan01,0.5831106852414175,0.20236155947518306,0,1,False
+ridge_nohp,0,Thalamus,test,sub07-scan01,0.4511078298848046,0.21848107178481707,0,1,False
+ridge_nohp,0,Thalamus,test,sub07-scan02,0.48267950452842856,0.2119413621818198,0,1,False
+ridge_nohp,0,Thalamus,test,sub11-scan01,0.42346795615832605,0.20556092813319438,0,1,False
+ridge_nohp,0,Thalamus,test,sub16-scan01,0.6378332898360967,0.16619707803801,0,1,False
+ridge_nohp,0,Thalamus,test,sub18-scan01,0.36055572884571724,0.24303681523213344,0,1,False
+ridge_nohp,0,Thalamus,test,sub21-scan01,0.38050426509381197,0.22692058662025824,0,1,False
+ridge_nohp,0,global signal clean,val,sub06-scan01,0.5010117900449139,0.20102263516948127,0,1,False
+ridge_nohp,0,global signal clean,val,sub13-scan01,0.2781476064102331,0.2713227984729501,0,1,False
+ridge_nohp,0,global signal clean,val,sub13-scan02,0.29041589304542453,0.2728844242566815,0,1,False
+ridge_nohp,0,global signal clean,val,sub15-scan01,0.5177827110464656,0.22723464356231804,0,1,False
+ridge_nohp,0,global signal clean,val,sub22-scan01,0.5513639418725286,0.19412725076851226,0,1,False
+ridge_nohp,0,global signal clean,test,sub07-scan01,0.6095867208373369,0.1713651034608524,0,1,False
+ridge_nohp,0,global signal clean,test,sub07-scan02,0.56284522278435,0.19118423065530646,0,1,False
+ridge_nohp,0,global signal clean,test,sub11-scan01,0.5655496022981976,0.16879550815095218,0,1,False
+ridge_nohp,0,global signal clean,test,sub16-scan01,0.6450286767602953,0.16790828808201824,0,1,False
+ridge_nohp,0,global signal clean,test,sub18-scan01,0.43131819964188073,0.21272489942320502,0,1,False
+ridge_nohp,0,global signal clean,test,sub21-scan01,0.46395986664675737,0.1980260455443104,0,1,False
+ridge_scanz,0,Cuneus,val,sub06-scan01,0.4664362429353407,0.24084181918915756,0,1,False
+ridge_scanz,0,Cuneus,val,sub13-scan01,0.12232192867922458,0.24223369231866734,0,1,False
+ridge_scanz,0,Cuneus,val,sub13-scan02,0.261445358409722,0.2661628847969256,0,1,False
+ridge_scanz,0,Cuneus,val,sub15-scan01,0.441461638429278,0.2096940686190966,0,1,False
+ridge_scanz,0,Cuneus,val,sub22-scan01,0.5239478499813518,0.2287288899261564,0,1,False
+ridge_scanz,0,Cuneus,test,sub07-scan01,0.35881422800657864,0.23651048803859687,0,1,False
+ridge_scanz,0,Cuneus,test,sub07-scan02,0.3524574088768932,0.23501235862009034,0,1,False
+ridge_scanz,0,Cuneus,test,sub11-scan01,0.597908524701838,0.16263527233432845,0,1,False
+ridge_scanz,0,Cuneus,test,sub16-scan01,0.5765042956564874,0.1907285102189863,0,1,False
+ridge_scanz,0,Cuneus,test,sub18-scan01,0.3300956624151016,0.2107846451785292,0,1,False
+ridge_scanz,0,Cuneus,test,sub21-scan01,0.4853398255491774,0.1810794271972048,0,1,False
+ridge_scanz,0,Heschl’s gyrus,val,sub06-scan01,0.3838173788058669,0.19961332936987333,0,1,False
+ridge_scanz,0,Heschl’s gyrus,val,sub13-scan01,0.2789359938168525,0.23189873386112367,0,1,False
+ridge_scanz,0,Heschl’s gyrus,val,sub13-scan02,0.4044261959601607,0.20731937495321345,0,1,False
+ridge_scanz,0,Heschl’s gyrus,val,sub15-scan01,0.5037163377734656,0.20433923859143993,0,1,False
+ridge_scanz,0,Heschl’s gyrus,val,sub22-scan01,0.5416681102278527,0.17956478673192833,0,1,False
+ridge_scanz,0,Heschl’s gyrus,test,sub07-scan01,0.48475710695354296,0.18664097580386502,0,1,False
+ridge_scanz,0,Heschl’s gyrus,test,sub07-scan02,0.488231182118345,0.20567456518534996,0,1,False
+ridge_scanz,0,Heschl’s gyrus,test,sub11-scan01,0.5300523738705681,0.16366459105585562,0,1,False
+ridge_scanz,0,Heschl’s gyrus,test,sub16-scan01,0.6039918614096884,0.17131473108392245,0,1,False
+ridge_scanz,0,Heschl’s gyrus,test,sub18-scan01,0.5394070033169179,0.15543890703562577,0,1,False
+ridge_scanz,0,Heschl’s gyrus,test,sub21-scan01,0.45337349645388886,0.20613513731382163,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,val,sub06-scan01,0.29603309669165273,0.21763437406995426,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,val,sub13-scan01,0.12786553357022667,0.26939894258803676,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,val,sub13-scan02,0.20308312083752786,0.25006361503028385,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,val,sub15-scan01,0.3576254397925375,0.23492342576143188,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,val,sub22-scan01,0.29531348047901035,0.25446852681849197,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5631487612438186,0.21681081775171498,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5147875643175371,0.22021699238269363,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,test,sub11-scan01,0.3717913961750374,0.21129075605864792,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,test,sub16-scan01,0.4458012746628937,0.2215820950608172,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,test,sub18-scan01,0.3352378785527257,0.23898914607904787,0,1,False
+ridge_scanz,0,Middle frontal gyrus anterior,test,sub21-scan01,0.3757713550968891,0.21874427440005623,0,1,False
+ridge_scanz,0,Precuneus anterior,val,sub06-scan01,0.49488119733761926,0.21505688496021344,0,1,False
+ridge_scanz,0,Precuneus anterior,val,sub13-scan01,0.11049547070114818,0.30683056708522305,0,1,False
+ridge_scanz,0,Precuneus anterior,val,sub13-scan02,0.0941664410247635,0.2801746543861713,0,1,False
+ridge_scanz,0,Precuneus anterior,val,sub15-scan01,0.41448821226380594,0.25821483660993333,0,1,False
+ridge_scanz,0,Precuneus anterior,val,sub22-scan01,0.5493392409848398,0.20735958361492818,0,1,False
+ridge_scanz,0,Precuneus anterior,test,sub07-scan01,0.5395772561060591,0.1943303817979105,0,1,False
+ridge_scanz,0,Precuneus anterior,test,sub07-scan02,0.43995248660697045,0.20226431507944098,0,1,False
+ridge_scanz,0,Precuneus anterior,test,sub11-scan01,0.4777642283499485,0.18182197070283154,0,1,False
+ridge_scanz,0,Precuneus anterior,test,sub16-scan01,0.6070744053598085,0.16933407107571644,0,1,False
+ridge_scanz,0,Precuneus anterior,test,sub18-scan01,0.35990389519006677,0.20161353189622633,0,1,False
+ridge_scanz,0,Precuneus anterior,test,sub21-scan01,0.43984669691128947,0.2099322698004857,0,1,False
+ridge_scanz,0,Putamen,val,sub06-scan01,0.20545288742484835,0.20827604736659242,0,1,False
+ridge_scanz,0,Putamen,val,sub13-scan01,0.28579212891986017,0.2283101288013743,0,1,False
+ridge_scanz,0,Putamen,val,sub13-scan02,0.29927096797799596,0.2142878639284822,0,1,False
+ridge_scanz,0,Putamen,val,sub15-scan01,0.1609940149246555,0.23665451513364952,0,1,False
+ridge_scanz,0,Putamen,val,sub22-scan01,0.22975460497174485,0.2594991878886188,0,1,False
+ridge_scanz,0,Putamen,test,sub07-scan01,0.4165725302150517,0.2247056588395996,0,1,False
+ridge_scanz,0,Putamen,test,sub07-scan02,0.37277430020787644,0.26578439678231375,0,1,False
+ridge_scanz,0,Putamen,test,sub11-scan01,0.21975932618185526,0.241579215058802,0,1,False
+ridge_scanz,0,Putamen,test,sub16-scan01,0.1710472875947424,0.26713275996577607,0,1,False
+ridge_scanz,0,Putamen,test,sub18-scan01,0.49727379714446224,0.19642973514313394,0,1,False
+ridge_scanz,0,Putamen,test,sub21-scan01,0.19367023597366953,0.2506641497571106,0,1,False
+ridge_scanz,0,Thalamus,val,sub06-scan01,0.20400502126046294,0.2672540710293309,0,1,False
+ridge_scanz,0,Thalamus,val,sub13-scan01,0.21497583260517292,0.2531376124371551,0,1,False
+ridge_scanz,0,Thalamus,val,sub13-scan02,0.24595607785483786,0.23759972816845185,0,1,False
+ridge_scanz,0,Thalamus,val,sub15-scan01,0.30684717603392325,0.24662716585691005,0,1,False
+ridge_scanz,0,Thalamus,val,sub22-scan01,0.5626918683260402,0.20163424731116192,0,1,False
+ridge_scanz,0,Thalamus,test,sub07-scan01,0.4398830668932181,0.22261239559679288,0,1,False
+ridge_scanz,0,Thalamus,test,sub07-scan02,0.4819761563449341,0.21595188560533451,0,1,False
+ridge_scanz,0,Thalamus,test,sub11-scan01,0.4043223810793409,0.20948575878883932,0,1,False
+ridge_scanz,0,Thalamus,test,sub16-scan01,0.6713724577197397,0.16891363215405739,0,1,False
+ridge_scanz,0,Thalamus,test,sub18-scan01,0.32777359563508196,0.23888795822731357,0,1,False
+ridge_scanz,0,Thalamus,test,sub21-scan01,0.3780948458261812,0.21765755839000325,0,1,False
+ridge_scanz,0,global signal clean,val,sub06-scan01,0.5021256349135865,0.19891098511997543,0,1,False
+ridge_scanz,0,global signal clean,val,sub13-scan01,0.3018811156437341,0.24658115535421357,0,1,False
+ridge_scanz,0,global signal clean,val,sub13-scan02,0.3214105227519967,0.24854036775270558,0,1,False
+ridge_scanz,0,global signal clean,val,sub15-scan01,0.502911702580514,0.2164299040917907,0,1,False
+ridge_scanz,0,global signal clean,val,sub22-scan01,0.5716312411804122,0.1783708226314624,0,1,False
+ridge_scanz,0,global signal clean,test,sub07-scan01,0.5501271627840013,0.1748372502241282,0,1,False
+ridge_scanz,0,global signal clean,test,sub07-scan02,0.4510765070530359,0.20485068999854877,0,1,False
+ridge_scanz,0,global signal clean,test,sub11-scan01,0.5473125333935656,0.17029935959216153,0,1,False
+ridge_scanz,0,global signal clean,test,sub16-scan01,0.6225124864107232,0.16838191804189998,0,1,False
+ridge_scanz,0,global signal clean,test,sub18-scan01,0.3762884790827243,0.22211000182605328,0,1,False
+ridge_scanz,0,global signal clean,test,sub21-scan01,0.4389834173651916,0.19919906718433122,0,1,False
+ridge_scanz_fine,0,Cuneus,val,sub06-scan01,0.5127390410715357,0.22431453103301416,0,1,False
+ridge_scanz_fine,0,Cuneus,val,sub13-scan01,0.1421157170460257,0.24135999026623023,0,1,False
+ridge_scanz_fine,0,Cuneus,val,sub13-scan02,0.26647218825257957,0.26538815854363124,0,1,False
+ridge_scanz_fine,0,Cuneus,val,sub15-scan01,0.4491505997211205,0.20580860987441604,0,1,False
+ridge_scanz_fine,0,Cuneus,val,sub22-scan01,0.5731283917088353,0.21273114693318046,0,1,False
+ridge_scanz_fine,0,Cuneus,test,sub07-scan01,0.3419327728458904,0.24274626189541437,0,1,False
+ridge_scanz_fine,0,Cuneus,test,sub07-scan02,0.39659392121967174,0.22600696425471742,0,1,False
+ridge_scanz_fine,0,Cuneus,test,sub11-scan01,0.6142282957815709,0.15203608187107331,0,1,False
+ridge_scanz_fine,0,Cuneus,test,sub16-scan01,0.5943272656559737,0.18129870678077273,0,1,False
+ridge_scanz_fine,0,Cuneus,test,sub18-scan01,0.3573540800167952,0.2065687846247254,0,1,False
+ridge_scanz_fine,0,Cuneus,test,sub21-scan01,0.5330915328783421,0.16885149331835325,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,val,sub06-scan01,0.4525158979368659,0.18624422116883335,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,val,sub13-scan01,0.3130611732382934,0.2255123134739786,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,val,sub13-scan02,0.42616967726507926,0.20444061726553273,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,val,sub15-scan01,0.5451601392260217,0.19451460306510457,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,val,sub22-scan01,0.6069575529597421,0.1633622491333907,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,test,sub07-scan01,0.5130426735536083,0.17956907645336337,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,test,sub07-scan02,0.5651297629906175,0.18919130348486096,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,test,sub11-scan01,0.5929548306859669,0.14741891109244415,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,test,sub16-scan01,0.605027231796426,0.16996357464375636,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,test,sub18-scan01,0.5401090497105306,0.15409710016330205,0,1,False
+ridge_scanz_fine,0,Heschl’s gyrus,test,sub21-scan01,0.5017510842344919,0.19394967096407498,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,val,sub06-scan01,0.3505892810879229,0.2076329829242103,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,val,sub13-scan01,0.1777821794407218,0.2653783335459713,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,val,sub13-scan02,0.23925967381328458,0.24604864969205853,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,val,sub15-scan01,0.384260740347895,0.22740670624404752,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,val,sub22-scan01,0.34289308504595295,0.24526285191523822,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,test,sub07-scan01,0.547192441706682,0.2052072004409825,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5717232340682789,0.20116923086901423,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,test,sub11-scan01,0.4528644690392699,0.193142697236351,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,test,sub16-scan01,0.46823823557596383,0.2111730366376957,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,test,sub18-scan01,0.3198867625517942,0.2404142688285249,0,1,False
+ridge_scanz_fine,0,Middle frontal gyrus anterior,test,sub21-scan01,0.4098073742950643,0.20912983338892926,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,val,sub06-scan01,0.5524051423299141,0.19464081278912068,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,val,sub13-scan01,0.13947061526499588,0.3039913797043476,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,val,sub13-scan02,0.16854052134295183,0.2703171338895019,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,val,sub15-scan01,0.4677742991547141,0.244516962633855,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,val,sub22-scan01,0.5793223589613791,0.19618312359951173,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,test,sub07-scan01,0.511295180775003,0.1966091638163101,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,test,sub07-scan02,0.5082713471327169,0.1874458678005691,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,test,sub11-scan01,0.5294373348132573,0.16837286124030867,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,test,sub16-scan01,0.5728007837528155,0.1770721889176789,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,test,sub18-scan01,0.34673399886040274,0.20457044297127117,0,1,False
+ridge_scanz_fine,0,Precuneus anterior,test,sub21-scan01,0.47910067182204263,0.19967332674586047,0,1,False
+ridge_scanz_fine,0,Putamen,val,sub06-scan01,0.29092051074463116,0.19903435007663225,0,1,False
+ridge_scanz_fine,0,Putamen,val,sub13-scan01,0.313079970975469,0.2245009464184133,0,1,False
+ridge_scanz_fine,0,Putamen,val,sub13-scan02,0.3443733364364514,0.20831760870315708,0,1,False
+ridge_scanz_fine,0,Putamen,val,sub15-scan01,0.14674080002541434,0.23906848031976957,0,1,False
+ridge_scanz_fine,0,Putamen,val,sub22-scan01,0.3092826157887097,0.24920701013200203,0,1,False
+ridge_scanz_fine,0,Putamen,test,sub07-scan01,0.4556660611846809,0.21590561401021274,0,1,False
+ridge_scanz_fine,0,Putamen,test,sub07-scan02,0.37288447240739725,0.26266093128088636,0,1,False
+ridge_scanz_fine,0,Putamen,test,sub11-scan01,0.37609097362447336,0.22059471501045344,0,1,False
+ridge_scanz_fine,0,Putamen,test,sub16-scan01,0.23497640216190266,0.2589791748500821,0,1,False
+ridge_scanz_fine,0,Putamen,test,sub18-scan01,0.5010080300272716,0.19096809266119472,0,1,False
+ridge_scanz_fine,0,Putamen,test,sub21-scan01,0.2051683244236074,0.25106473005710594,0,1,False
+ridge_scanz_w32,0,Cuneus,val,sub06-scan01,0.48070861638033385,0.23526469209073173,0,1,False
+ridge_scanz_w32,0,Cuneus,val,sub13-scan01,0.09353470288890797,0.24757076323011742,0,1,False
+ridge_scanz_w32,0,Cuneus,val,sub13-scan02,0.25540066672066447,0.2671219953369327,0,1,False
+ridge_scanz_w32,0,Cuneus,val,sub15-scan01,0.45432627290082017,0.20452787426765764,0,1,False
+ridge_scanz_w32,0,Cuneus,val,sub22-scan01,0.5707285585974894,0.2113914255650601,0,1,False
+ridge_scanz_w32,0,Cuneus,test,sub07-scan01,0.3828851912560315,0.23210486198625518,0,1,False
+ridge_scanz_w32,0,Cuneus,test,sub07-scan02,0.352888621315768,0.23495996941161917,0,1,False
+ridge_scanz_w32,0,Cuneus,test,sub11-scan01,0.6824148226239807,0.13980191385077548,0,1,False
+ridge_scanz_w32,0,Cuneus,test,sub16-scan01,0.5930871538037223,0.18176236218516253,0,1,False
+ridge_scanz_w32,0,Cuneus,test,sub18-scan01,0.3143440406217626,0.21369546702313125,0,1,False
+ridge_scanz_w32,0,Cuneus,test,sub21-scan01,0.5598688245687143,0.16167476449824852,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,val,sub06-scan01,0.471914114130147,0.1841466808634789,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,val,sub13-scan01,0.25379270512470686,0.23521231071509832,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,val,sub13-scan02,0.38350222426365427,0.21124210714430822,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,val,sub15-scan01,0.5392455542143741,0.19788878799411888,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,val,sub22-scan01,0.5567485349989908,0.17678003057939312,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,test,sub07-scan01,0.5239900701771978,0.1775497577468832,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,test,sub07-scan02,0.494265774150472,0.20454332767247668,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,test,sub11-scan01,0.5927075366254513,0.151416220175768,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,test,sub16-scan01,0.6009883626302157,0.17234416368719518,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,test,sub18-scan01,0.5688108784613906,0.1491398247442255,0,1,False
+ridge_scanz_w32,0,Heschl’s gyrus,test,sub21-scan01,0.4910479385830114,0.19663815037210292,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,val,sub06-scan01,0.2925605255545861,0.21723270245543744,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,val,sub13-scan01,0.16892594262684182,0.2651492464425024,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,val,sub13-scan02,0.19833135764659737,0.2508818988403356,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,val,sub15-scan01,0.40106615254417516,0.22702179047378682,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,val,sub22-scan01,0.3123448405740058,0.2508938728358732,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5816693545522162,0.20902871100283357,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5463314674935761,0.21358559160336613,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,test,sub11-scan01,0.3814051115027779,0.20721862556473547,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,test,sub16-scan01,0.46440985818545183,0.21412749089859442,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,test,sub18-scan01,0.3253566256897708,0.2399677916302661,0,1,False
+ridge_scanz_w32,0,Middle frontal gyrus anterior,test,sub21-scan01,0.3482633056290017,0.22028621116883607,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,val,sub06-scan01,0.5259566846805419,0.2088137526682432,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,val,sub13-scan01,0.122509186569844,0.3035231325111653,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,val,sub13-scan02,0.03474794175417061,0.29034754460168016,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,val,sub15-scan01,0.46110665486936686,0.2489346806580214,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,val,sub22-scan01,0.5244871129243647,0.21224182603626407,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,test,sub07-scan01,0.5949137546829735,0.181178036641872,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,test,sub07-scan02,0.5003345351746343,0.19245493227222774,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,test,sub11-scan01,0.48519269814991206,0.17923857083291045,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,test,sub16-scan01,0.6064831306500434,0.16833826844281005,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,test,sub18-scan01,0.36279603983826775,0.20113528203022965,0,1,False
+ridge_scanz_w32,0,Precuneus anterior,test,sub21-scan01,0.4804865684810458,0.19922926134660804,0,1,False
+ridge_scanz_w32,0,Putamen,val,sub06-scan01,0.30505587858449273,0.19946530941216584,0,1,False
+ridge_scanz_w32,0,Putamen,val,sub13-scan01,0.2794180001266731,0.23031965179308797,0,1,False
+ridge_scanz_w32,0,Putamen,val,sub13-scan02,0.2139180010683563,0.22421477205110804,0,1,False
+ridge_scanz_w32,0,Putamen,val,sub15-scan01,0.22497415921894146,0.22989244802121117,0,1,False
+ridge_scanz_w32,0,Putamen,val,sub22-scan01,0.251925634645556,0.2570881241419103,0,1,False
+ridge_scanz_w32,0,Putamen,test,sub07-scan01,0.46259056627753015,0.2185298738925911,0,1,False
+ridge_scanz_w32,0,Putamen,test,sub07-scan02,0.3791640179997028,0.2651959525430021,0,1,False
+ridge_scanz_w32,0,Putamen,test,sub11-scan01,0.3022054172388775,0.23279812853801954,0,1,False
+ridge_scanz_w32,0,Putamen,test,sub16-scan01,0.18154614381783832,0.26556911705841063,0,1,False
+ridge_scanz_w32,0,Putamen,test,sub18-scan01,0.5162755728537046,0.19448999071083647,0,1,False
+ridge_scanz_w32,0,Putamen,test,sub21-scan01,0.17583445831890016,0.25331726946579003,0,1,False
+ridge_scanz_w32,0,Thalamus,val,sub06-scan01,0.18794545634471913,0.2695633610909952,0,1,False
+ridge_scanz_w32,0,Thalamus,val,sub13-scan01,0.19072441274728358,0.25686191261501135,0,1,False
+ridge_scanz_w32,0,Thalamus,val,sub13-scan02,0.21888831773300468,0.2415364710531226,0,1,False
+ridge_scanz_w32,0,Thalamus,val,sub15-scan01,0.2900757807884245,0.24900210712665316,0,1,False
+ridge_scanz_w32,0,Thalamus,val,sub22-scan01,0.5149138924822928,0.20880286216982633,0,1,False
+ridge_scanz_w32,0,Thalamus,test,sub07-scan01,0.41340554824137205,0.22606054591902416,0,1,False
+ridge_scanz_w32,0,Thalamus,test,sub07-scan02,0.4657469451649965,0.21654978946544207,0,1,False
+ridge_scanz_w32,0,Thalamus,test,sub11-scan01,0.3567578112898342,0.21640225991050985,0,1,False
+ridge_scanz_w32,0,Thalamus,test,sub16-scan01,0.62714845554411,0.1776908464731043,0,1,False
+ridge_scanz_w32,0,Thalamus,test,sub18-scan01,0.307373699913607,0.24243716018349198,0,1,False
+ridge_scanz_w32,0,Thalamus,test,sub21-scan01,0.37192381062372576,0.21881025553910263,0,1,False
+ridge_scanz_w32,0,global signal clean,val,sub06-scan01,0.49859243727979785,0.19648854943061855,0,1,False
+ridge_scanz_w32,0,global signal clean,val,sub13-scan01,0.2995121247840551,0.24722157605752879,0,1,False
+ridge_scanz_w32,0,global signal clean,val,sub13-scan02,0.26689872038710655,0.259299458904511,0,1,False
+ridge_scanz_w32,0,global signal clean,val,sub15-scan01,0.543720708140124,0.20401539897066884,0,1,False
+ridge_scanz_w32,0,global signal clean,val,sub22-scan01,0.5682829788358403,0.1751479722238507,0,1,False
+ridge_scanz_w32,0,global signal clean,test,sub07-scan01,0.550281096397362,0.17300893135232484,0,1,False
+ridge_scanz_w32,0,global signal clean,test,sub07-scan02,0.4755021662085777,0.19916875448865057,0,1,False
+ridge_scanz_w32,0,global signal clean,test,sub11-scan01,0.5856787293133427,0.15848641730912935,0,1,False
+ridge_scanz_w32,0,global signal clean,test,sub16-scan01,0.6288442976247982,0.16311594923185796,0,1,False
+ridge_scanz_w32,0,global signal clean,test,sub18-scan01,0.3776474531900504,0.22217664300752726,0,1,False
+ridge_scanz_w32,0,global signal clean,test,sub21-scan01,0.4505741160403881,0.20062303566598766,0,1,False
+ridge_w32,0,Cuneus,val,sub06-scan01,0.4853949127926101,0.2437655031368727,0,1,False
+ridge_w32,0,Cuneus,val,sub13-scan01,0.06918986977556373,0.24974653178864295,0,1,False
+ridge_w32,0,Cuneus,val,sub13-scan02,0.21163854685833403,0.27971038858913,0,1,False
+ridge_w32,0,Cuneus,val,sub15-scan01,0.4651361788502759,0.2137819248321127,0,1,False
+ridge_w32,0,Cuneus,val,sub22-scan01,0.5721284483963243,0.22382113608940138,0,1,False
+ridge_w32,0,Cuneus,test,sub07-scan01,0.39093400176346155,0.2305641114059981,0,1,False
+ridge_w32,0,Cuneus,test,sub07-scan02,0.40418755328241135,0.22984618913736274,0,1,False
+ridge_w32,0,Cuneus,test,sub11-scan01,0.7049004982346531,0.13614028641270792,0,1,False
+ridge_w32,0,Cuneus,test,sub16-scan01,0.6137075131586816,0.17810785976904486,0,1,False
+ridge_w32,0,Cuneus,test,sub18-scan01,0.3801166505320195,0.20767950572886112,0,1,False
+ridge_w32,0,Cuneus,test,sub21-scan01,0.5751094045406286,0.15887557959583826,0,1,False
+ridge_w32,0,Heschl’s gyrus,val,sub06-scan01,0.5050048879770301,0.18466547612234263,0,1,False
+ridge_w32,0,Heschl’s gyrus,val,sub13-scan01,0.26431670997876455,0.23825743592362095,0,1,False
+ridge_w32,0,Heschl’s gyrus,val,sub13-scan02,0.3871629846063257,0.2210546198513204,0,1,False
+ridge_w32,0,Heschl’s gyrus,val,sub15-scan01,0.5492100232192866,0.2033868072774058,0,1,False
+ridge_w32,0,Heschl’s gyrus,val,sub22-scan01,0.5404508887683385,0.1824572467267309,0,1,False
+ridge_w32,0,Heschl’s gyrus,test,sub07-scan01,0.5223121172657704,0.17766683437460157,0,1,False
+ridge_w32,0,Heschl’s gyrus,test,sub07-scan02,0.5055997477207549,0.2028350378575164,0,1,False
+ridge_w32,0,Heschl’s gyrus,test,sub11-scan01,0.6108826582532794,0.1436442289573534,0,1,False
+ridge_w32,0,Heschl’s gyrus,test,sub16-scan01,0.6234727020837746,0.1644741394336755,0,1,False
+ridge_w32,0,Heschl’s gyrus,test,sub18-scan01,0.5899480216872591,0.14967876276326098,0,1,False
+ridge_w32,0,Heschl’s gyrus,test,sub21-scan01,0.49691466702535764,0.19970169536329477,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,val,sub06-scan01,0.2814554065192346,0.22031628066960984,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,val,sub13-scan01,0.17245333380961766,0.26628786791809794,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,val,sub13-scan02,0.18585319673772907,0.2544861738209624,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,val,sub15-scan01,0.409332308061625,0.2347836031457821,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,val,sub22-scan01,0.3260980061256589,0.25209269890593944,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5824541589120813,0.21932749639354104,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5612400398903408,0.2225368118600412,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,test,sub11-scan01,0.41614679782479413,0.20278477365247904,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,test,sub16-scan01,0.46515988044796164,0.21724476128792472,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,test,sub18-scan01,0.3511886597359748,0.23538412928684374,0,1,False
+ridge_w32,0,Middle frontal gyrus anterior,test,sub21-scan01,0.33097582125198666,0.22323373410806985,0,1,False
+ridge_w32,0,Precuneus anterior,val,sub06-scan01,0.4419546581055181,0.22504821895198043,0,1,False
+ridge_w32,0,Precuneus anterior,val,sub13-scan01,0.11325417632246754,0.3067530217474128,0,1,False
+ridge_w32,0,Precuneus anterior,val,sub13-scan02,0.0005596627008180914,0.2867771251253317,0,1,False
+ridge_w32,0,Precuneus anterior,val,sub15-scan01,0.4706484448599522,0.2580412715244786,0,1,False
+ridge_w32,0,Precuneus anterior,val,sub22-scan01,0.5280718277916948,0.218910815073721,0,1,False
+ridge_w32,0,Precuneus anterior,test,sub07-scan01,0.6087141866416595,0.18610149308111712,0,1,False
+ridge_w32,0,Precuneus anterior,test,sub07-scan02,0.5457631629625922,0.19275473392966672,0,1,False
+ridge_w32,0,Precuneus anterior,test,sub11-scan01,0.5102680269841559,0.1735087062785446,0,1,False
+ridge_w32,0,Precuneus anterior,test,sub16-scan01,0.6010805972965186,0.1713645589135979,0,1,False
+ridge_w32,0,Precuneus anterior,test,sub18-scan01,0.37037050478572214,0.20090251557044703,0,1,False
+ridge_w32,0,Precuneus anterior,test,sub21-scan01,0.45142966437724535,0.2065722918552595,0,1,False
+ridge_w32,0,Putamen,val,sub06-scan01,0.2936406980190445,0.19966652068995858,0,1,False
+ridge_w32,0,Putamen,val,sub13-scan01,0.2756324584731989,0.2351776125505929,0,1,False
+ridge_w32,0,Putamen,val,sub13-scan02,0.2219215605721546,0.22672372852679673,0,1,False
+ridge_w32,0,Putamen,val,sub15-scan01,0.2137533664778789,0.23148105670393124,0,1,False
+ridge_w32,0,Putamen,val,sub22-scan01,0.24756065261779647,0.2579012815470197,0,1,False
+ridge_w32,0,Putamen,test,sub07-scan01,0.451549915685204,0.22085633217972958,0,1,False
+ridge_w32,0,Putamen,test,sub07-scan02,0.3931146000665334,0.26523134191688236,0,1,False
+ridge_w32,0,Putamen,test,sub11-scan01,0.31018094732454954,0.23095927103418246,0,1,False
+ridge_w32,0,Putamen,test,sub16-scan01,0.2070677959737599,0.2633648548002208,0,1,False
+ridge_w32,0,Putamen,test,sub18-scan01,0.5113246375055692,0.1882812192029035,0,1,False
+ridge_w32,0,Putamen,test,sub21-scan01,0.17331657500918857,0.25621413819985495,0,1,False
+ridge_w32,0,Thalamus,val,sub06-scan01,0.21558467435918513,0.26608807291160175,0,1,False
+ridge_w32,0,Thalamus,val,sub13-scan01,0.202703067069983,0.2587824066456573,0,1,False
+ridge_w32,0,Thalamus,val,sub13-scan02,0.24235415768601545,0.24587479573739432,0,1,False
+ridge_w32,0,Thalamus,val,sub15-scan01,0.3201015761920772,0.25337665188362335,0,1,False
+ridge_w32,0,Thalamus,val,sub22-scan01,0.5226343205226283,0.21901315464638355,0,1,False
+ridge_w32,0,Thalamus,test,sub07-scan01,0.444208420888673,0.223718430033153,0,1,False
+ridge_w32,0,Thalamus,test,sub07-scan02,0.5194016480318211,0.21255849693837725,0,1,False
+ridge_w32,0,Thalamus,test,sub11-scan01,0.3795170798930774,0.2151858060596802,0,1,False
+ridge_w32,0,Thalamus,test,sub16-scan01,0.6302052995669432,0.17782955070939832,0,1,False
+ridge_w32,0,Thalamus,test,sub18-scan01,0.34880852311561955,0.23785273161638015,0,1,False
+ridge_w32,0,Thalamus,test,sub21-scan01,0.35735125537438633,0.22737912778520902,0,1,False
+ridge_w32,0,global signal clean,val,sub06-scan01,0.4459155347550013,0.20964459153929146,0,1,False
+ridge_w32,0,global signal clean,val,sub13-scan01,0.27614417127534163,0.2707497690182678,0,1,False
+ridge_w32,0,global signal clean,val,sub13-scan02,0.24015918829765526,0.27618977564934577,0,1,False
+ridge_w32,0,global signal clean,val,sub15-scan01,0.5639535806761463,0.21510691794577147,0,1,False
+ridge_w32,0,global signal clean,val,sub22-scan01,0.5751871402631649,0.17985943075745775,0,1,False
+ridge_w32,0,global signal clean,test,sub07-scan01,0.5814905966270388,0.17109147830948276,0,1,False
+ridge_w32,0,global signal clean,test,sub07-scan02,0.5576788821310846,0.19293526010002512,0,1,False
+ridge_w32,0,global signal clean,test,sub11-scan01,0.617528550213425,0.15025892927377568,0,1,False
+ridge_w32,0,global signal clean,test,sub16-scan01,0.6294481481286295,0.16457179212958403,0,1,False
+ridge_w32,0,global signal clean,test,sub18-scan01,0.41557503569310983,0.21725533084474158,0,1,False
+ridge_w32,0,global signal clean,test,sub21-scan01,0.434628707083792,0.20652767351133594,0,1,False
+ridge_w32_sub16,0,Cuneus,val,sub06-scan01,0.5018329611709904,0.24191949142016056,0,1,False
+ridge_w32_sub16,0,Cuneus,val,sub13-scan01,0.07310398817347734,0.2529357608995768,0,1,False
+ridge_w32_sub16,0,Cuneus,val,sub13-scan02,0.20198509411579446,0.2818025963113933,0,1,False
+ridge_w32_sub16,0,Cuneus,val,sub15-scan01,0.48220645074095,0.20880969759824686,0,1,False
+ridge_w32_sub16,0,Cuneus,val,sub22-scan01,0.5917837419133581,0.21364641568128478,0,1,False
+ridge_w32_sub16,0,Cuneus,test,sub07-scan01,0.40322318122143413,0.2276422673917026,0,1,False
+ridge_w32_sub16,0,Cuneus,test,sub07-scan02,0.41359846300054914,0.22593006870006535,0,1,False
+ridge_w32_sub16,0,Cuneus,test,sub11-scan01,0.7289677015515779,0.12137952834239216,0,1,False
+ridge_w32_sub16,0,Cuneus,test,sub16-scan01,0.616543146530636,0.17313812006252097,0,1,False
+ridge_w32_sub16,0,Cuneus,test,sub18-scan01,0.3984226000655988,0.20778252133471084,0,1,False
+ridge_w32_sub16,0,Cuneus,test,sub21-scan01,0.5781815426246103,0.15660606466273516,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,val,sub06-scan01,0.4960105508794696,0.18336437809327044,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,val,sub13-scan01,0.2555576295812898,0.23971655812241638,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,val,sub13-scan02,0.37730982490532317,0.22263581164969934,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,val,sub15-scan01,0.5485199809575112,0.20663328304859274,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,val,sub22-scan01,0.5794514678778757,0.1776810597705119,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,test,sub07-scan01,0.5397085511612165,0.17551663279506383,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,test,sub07-scan02,0.5220777664691577,0.2019254240417284,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,test,sub11-scan01,0.6573378775370499,0.13297413867124763,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,test,sub16-scan01,0.6053386465914476,0.16984037111821249,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,test,sub18-scan01,0.600364562580321,0.14590107560898347,0,1,False
+ridge_w32_sub16,0,Heschl’s gyrus,test,sub21-scan01,0.5098132263287655,0.19361726861798473,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,val,sub06-scan01,0.3054387763457815,0.21727163711197212,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,val,sub13-scan01,0.16663864891670055,0.26762180679773323,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,val,sub13-scan02,0.16083224550471845,0.25726032709798785,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,val,sub15-scan01,0.42686323785759356,0.2311421850553435,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,val,sub22-scan01,0.36134460285061987,0.24562727851407892,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5941247006848696,0.21127421004875335,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5664074780922942,0.2161499602344624,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,test,sub11-scan01,0.445078938500931,0.19584138122394415,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,test,sub16-scan01,0.45634263828566723,0.2147185410087292,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,test,sub18-scan01,0.3701991129717488,0.231872207442114,0,1,False
+ridge_w32_sub16,0,Middle frontal gyrus anterior,test,sub21-scan01,0.3419522203086497,0.2210926345985522,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,val,sub06-scan01,0.471280661663196,0.2184601317023463,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,val,sub13-scan01,0.12282769532894093,0.3088535866888621,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,val,sub13-scan02,-0.033372471960661634,0.29476934799541943,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,val,sub15-scan01,0.46252477584153034,0.2565571873832249,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,val,sub22-scan01,0.5455652289531701,0.2117607828837461,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,test,sub07-scan01,0.6257998599009852,0.1780227182754049,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,test,sub07-scan02,0.5472832143597919,0.1895721144058477,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,test,sub11-scan01,0.534464786300669,0.16678903445875057,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,test,sub16-scan01,0.6063723951299806,0.16736447084032746,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,test,sub18-scan01,0.3898208920864328,0.1975202984513596,0,1,False
+ridge_w32_sub16,0,Precuneus anterior,test,sub21-scan01,0.45588899512324904,0.20584282224891357,0,1,False
+ridge_w32_sub16,0,Putamen,val,sub06-scan01,0.3274098234568784,0.19884969372341219,0,1,False
+ridge_w32_sub16,0,Putamen,val,sub13-scan01,0.25773409667655406,0.23849138549507884,0,1,False
+ridge_w32_sub16,0,Putamen,val,sub13-scan02,0.19749001941711944,0.22931063799721993,0,1,False
+ridge_w32_sub16,0,Putamen,val,sub15-scan01,0.21231194328769273,0.23284853398933505,0,1,False
+ridge_w32_sub16,0,Putamen,val,sub22-scan01,0.26914400475773625,0.2570812629239686,0,1,False
+ridge_w32_sub16,0,Putamen,test,sub07-scan01,0.47198396085664107,0.2211639773139407,0,1,False
+ridge_w32_sub16,0,Putamen,test,sub07-scan02,0.40216929389401845,0.26629929279944886,0,1,False
+ridge_w32_sub16,0,Putamen,test,sub11-scan01,0.3556958257723792,0.22697007541254025,0,1,False
+ridge_w32_sub16,0,Putamen,test,sub16-scan01,0.174906454522372,0.2673209923798325,0,1,False
+ridge_w32_sub16,0,Putamen,test,sub18-scan01,0.5268570858201396,0.19015097059850278,0,1,False
+ridge_w32_sub16,0,Putamen,test,sub21-scan01,0.18273196749161355,0.25331587985051546,0,1,False
+ridge_w32_sub16,0,Thalamus,val,sub06-scan01,0.21348688218610898,0.26648524085012265,0,1,False
+ridge_w32_sub16,0,Thalamus,val,sub13-scan01,0.19602595732800396,0.25925650095186276,0,1,False
+ridge_w32_sub16,0,Thalamus,val,sub13-scan02,0.23762768008215177,0.24555171185583038,0,1,False
+ridge_w32_sub16,0,Thalamus,val,sub15-scan01,0.308085498418196,0.2547746523456848,0,1,False
+ridge_w32_sub16,0,Thalamus,val,sub22-scan01,0.5722067633673319,0.20633948575420646,0,1,False
+ridge_w32_sub16,0,Thalamus,test,sub07-scan01,0.4596774403212928,0.21806306645809967,0,1,False
+ridge_w32_sub16,0,Thalamus,test,sub07-scan02,0.5024123557968284,0.21183598873346943,0,1,False
+ridge_w32_sub16,0,Thalamus,test,sub11-scan01,0.3903678155648102,0.2124902765548373,0,1,False
+ridge_w32_sub16,0,Thalamus,test,sub16-scan01,0.6371507463345655,0.16872155011016993,0,1,False
+ridge_w32_sub16,0,Thalamus,test,sub18-scan01,0.35319784282987143,0.23830942327949328,0,1,False
+ridge_w32_sub16,0,Thalamus,test,sub21-scan01,0.3897551097288926,0.22269026929560176,0,1,False
+ridge_w32_sub16,0,global signal clean,val,sub06-scan01,0.487901314638237,0.20090701434348296,0,1,False
+ridge_w32_sub16,0,global signal clean,val,sub13-scan01,0.27530026729248747,0.2768070693076056,0,1,False
+ridge_w32_sub16,0,global signal clean,val,sub13-scan02,0.21535094906027907,0.2844726148086296,0,1,False
+ridge_w32_sub16,0,global signal clean,val,sub15-scan01,0.5651422958439749,0.21126127496566216,0,1,False
+ridge_w32_sub16,0,global signal clean,val,sub22-scan01,0.5960301647413074,0.1721070827209204,0,1,False
+ridge_w32_sub16,0,global signal clean,test,sub07-scan01,0.6079219251740289,0.16149699692501518,0,1,False
+ridge_w32_sub16,0,global signal clean,test,sub07-scan02,0.5619082821234099,0.18883667334619292,0,1,False
+ridge_w32_sub16,0,global signal clean,test,sub11-scan01,0.6573192154115124,0.13701455260797457,0,1,False
+ridge_w32_sub16,0,global signal clean,test,sub16-scan01,0.6324926743221774,0.16215065512797508,0,1,False
+ridge_w32_sub16,0,global signal clean,test,sub18-scan01,0.43291181269679196,0.21448169455299268,0,1,False
+ridge_w32_sub16,0,global signal clean,test,sub21-scan01,0.4411048604453186,0.2073426276299452,0,1,False
+ridge_w32_sub32,0,Cuneus,val,sub06-scan01,0.46042456975931706,0.2468127105535616,0,1,False
+ridge_w32_sub32,0,Cuneus,val,sub13-scan01,0.0426377252998615,0.25065443417076766,0,1,False
+ridge_w32_sub32,0,Cuneus,val,sub13-scan02,0.2185384675194925,0.2783543518401006,0,1,False
+ridge_w32_sub32,0,Cuneus,val,sub15-scan01,0.43295547853942706,0.21598316738721857,0,1,False
+ridge_w32_sub32,0,Cuneus,val,sub22-scan01,0.5873087318720952,0.22350145304973068,0,1,False
+ridge_w32_sub32,0,Cuneus,test,sub07-scan01,0.40675062146424895,0.22880812063115272,0,1,False
+ridge_w32_sub32,0,Cuneus,test,sub07-scan02,0.4563663478584557,0.2244066121469346,0,1,False
+ridge_w32_sub32,0,Cuneus,test,sub11-scan01,0.759180659369106,0.12471459947076147,0,1,False
+ridge_w32_sub32,0,Cuneus,test,sub16-scan01,0.610226482289294,0.18008314259729175,0,1,False
+ridge_w32_sub32,0,Cuneus,test,sub18-scan01,0.3943607267731362,0.20565365566052193,0,1,False
+ridge_w32_sub32,0,Cuneus,test,sub21-scan01,0.5955632159279187,0.15521083785334497,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,val,sub06-scan01,0.44181637904702503,0.19349485191869287,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,val,sub13-scan01,0.2129681770195841,0.24320782151091655,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,val,sub13-scan02,0.3036150459493371,0.23140931774647347,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,val,sub15-scan01,0.46648495357625447,0.21486908331864263,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,val,sub22-scan01,0.5383765341372985,0.18362635574596056,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,test,sub07-scan01,0.5441638835537419,0.1747983932475704,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,test,sub07-scan02,0.5064795691483865,0.2054799884996552,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,test,sub11-scan01,0.66295211511455,0.13149960597546625,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,test,sub16-scan01,0.5880851150244444,0.17444996444193497,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,test,sub18-scan01,0.5961872614238829,0.14557073597207873,0,1,False
+ridge_w32_sub32,0,Heschl’s gyrus,test,sub21-scan01,0.5100930412977004,0.19587535709081158,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,val,sub06-scan01,0.2620063927812229,0.220553247550408,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,val,sub13-scan01,0.16120334450096527,0.2675166289569358,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,val,sub13-scan02,0.14206133269223678,0.259449147824911,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,val,sub15-scan01,0.3717798228917309,0.23248956668045814,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,val,sub22-scan01,0.3375845482748745,0.24777319456034722,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5816272255452141,0.21227970413595004,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5292306592765336,0.21907664251652323,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,test,sub11-scan01,0.4852093557211422,0.18775925959320494,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,test,sub16-scan01,0.4488866079931861,0.21561763368977468,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,test,sub18-scan01,0.3689085303316578,0.23183551175125194,0,1,False
+ridge_w32_sub32,0,Middle frontal gyrus anterior,test,sub21-scan01,0.34543994298469977,0.22094843615662788,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,val,sub06-scan01,0.47950417007639734,0.22030437745079537,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,val,sub13-scan01,0.12607271796132963,0.30487558753313665,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,val,sub13-scan02,-0.010854706100118591,0.2881169544642811,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,val,sub15-scan01,0.3783876202877172,0.27136484638051483,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,val,sub22-scan01,0.5185834213813431,0.22389882044802487,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,test,sub07-scan01,0.6427092260053047,0.1850876309783334,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,test,sub07-scan02,0.550086275156174,0.19536683256603632,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,test,sub11-scan01,0.5569427108701891,0.16538521450526775,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,test,sub16-scan01,0.6073107157824501,0.17174883484723125,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,test,sub18-scan01,0.37677265477772837,0.20030839801514125,0,1,False
+ridge_w32_sub32,0,Precuneus anterior,test,sub21-scan01,0.4589598008421408,0.20585312884023632,0,1,False
+ridge_w48_sub24,0,Cuneus,val,sub06-scan01,0.48741509601337146,0.24009741943478802,0,1,False
+ridge_w48_sub24,0,Cuneus,val,sub13-scan01,0.06946238222276134,0.2455934682081768,0,1,False
+ridge_w48_sub24,0,Cuneus,val,sub13-scan02,0.21367688795171513,0.27396297349879983,0,1,False
+ridge_w48_sub24,0,Cuneus,val,sub15-scan01,0.46285481163500813,0.21114613710397384,0,1,False
+ridge_w48_sub24,0,Cuneus,val,sub22-scan01,0.6127289240770112,0.20761062335167596,0,1,False
+ridge_w48_sub24,0,Cuneus,test,sub07-scan01,0.4026390376745781,0.22723245730052374,0,1,False
+ridge_w48_sub24,0,Cuneus,test,sub07-scan02,0.4303963001400347,0.22272414046339864,0,1,False
+ridge_w48_sub24,0,Cuneus,test,sub11-scan01,0.7520348712780702,0.11037569256352373,0,1,False
+ridge_w48_sub24,0,Cuneus,test,sub16-scan01,0.5853158484122012,0.18178279278323453,0,1,False
+ridge_w48_sub24,0,Cuneus,test,sub18-scan01,0.38537227150532305,0.2023092779978048,0,1,False
+ridge_w48_sub24,0,Cuneus,test,sub21-scan01,0.5903915844341385,0.1557869621821931,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,val,sub06-scan01,0.4870394947276495,0.1835589465363533,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,val,sub13-scan01,0.2436878397016107,0.2367593868029933,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,val,sub13-scan02,0.3732967845944721,0.2194584779257446,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,val,sub15-scan01,0.533751051065858,0.20889697081372854,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,val,sub22-scan01,0.5712588021113856,0.17795635663769604,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,test,sub07-scan01,0.5370245715379138,0.1747522551664821,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,test,sub07-scan02,0.5014955481694843,0.2060358804871866,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,test,sub11-scan01,0.6604649367156857,0.131095718440338,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,test,sub16-scan01,0.6051841315444818,0.17108777204941725,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,test,sub18-scan01,0.5876122679861916,0.1459546344514809,0,1,False
+ridge_w48_sub24,0,Heschl’s gyrus,test,sub21-scan01,0.5121692576896257,0.19463821795082728,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,val,sub06-scan01,0.3196856195694784,0.21394192847250898,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,val,sub13-scan01,0.1717718453794801,0.26494290699687967,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,val,sub13-scan02,0.18348141865178377,0.25261281113079337,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,val,sub15-scan01,0.4256540418034366,0.2314252327982566,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,val,sub22-scan01,0.35669956631244737,0.2455328255344193,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5909398115093087,0.20606959994090937,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,test,sub07-scan02,0.5564561253347083,0.21409424727685247,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,test,sub11-scan01,0.4003215907478411,0.20247450225863073,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,test,sub16-scan01,0.4666886213843899,0.2112378036445173,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,test,sub18-scan01,0.33712100450846216,0.23757152264127784,0,1,False
+ridge_w48_sub24,0,Middle frontal gyrus anterior,test,sub21-scan01,0.31821024547719484,0.22688788397489149,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,val,sub06-scan01,0.4481785753540911,0.2205621522094158,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,val,sub13-scan01,0.1318893789938664,0.3009112248033082,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,val,sub13-scan02,-0.001449871202824438,0.2855705387163326,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,val,sub15-scan01,0.4309907492976177,0.2623872923299082,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,val,sub22-scan01,0.533971342863932,0.21253820241792376,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,test,sub07-scan01,0.6299639056186346,0.17363516132959755,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,test,sub07-scan02,0.5413137512142728,0.18912120011707442,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,test,sub11-scan01,0.5498783870787658,0.16316462092207437,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,test,sub16-scan01,0.6164157002584952,0.16346262802332073,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,test,sub18-scan01,0.3627205924609522,0.20189580075384608,0,1,False
+ridge_w48_sub24,0,Precuneus anterior,test,sub21-scan01,0.4438957917048132,0.21478290863593602,0,1,False
+ridge_w48_sub24,0,Putamen,val,sub06-scan01,0.3181198521062615,0.19930265057191648,0,1,False
+ridge_w48_sub24,0,Putamen,val,sub13-scan01,0.23684071145973074,0.23840603636529364,0,1,False
+ridge_w48_sub24,0,Putamen,val,sub13-scan02,0.20253568606503755,0.22736146113388758,0,1,False
+ridge_w48_sub24,0,Putamen,val,sub15-scan01,0.21900836225545978,0.23166069083655869,0,1,False
+ridge_w48_sub24,0,Putamen,val,sub22-scan01,0.2279341826661738,0.26068249145721717,0,1,False
+ridge_w48_sub24,0,Putamen,test,sub07-scan01,0.4633915470085842,0.2207555573773818,0,1,False
+ridge_w48_sub24,0,Putamen,test,sub07-scan02,0.3921139284845613,0.2666780868764009,0,1,False
+ridge_w48_sub24,0,Putamen,test,sub11-scan01,0.3741723295435807,0.22311438581298895,0,1,False
+ridge_w48_sub24,0,Putamen,test,sub16-scan01,0.19513597954259404,0.26466200496621695,0,1,False
+ridge_w48_sub24,0,Putamen,test,sub18-scan01,0.5171280461809253,0.19049243902579382,0,1,False
+ridge_w48_sub24,0,Putamen,test,sub21-scan01,0.14030949846226137,0.26060444483887235,0,1,False
+ridge_w48_sub24,0,Thalamus,val,sub06-scan01,0.25529973348416757,0.2601462642140964,0,1,False
+ridge_w48_sub24,0,Thalamus,val,sub13-scan01,0.19162058264692697,0.25693620291211006,0,1,False
+ridge_w48_sub24,0,Thalamus,val,sub13-scan02,0.20410904571068947,0.24515660950320536,0,1,False
+ridge_w48_sub24,0,Thalamus,val,sub15-scan01,0.2816533738102487,0.2591030002984855,0,1,False
+ridge_w48_sub24,0,Thalamus,val,sub22-scan01,0.5253162564188045,0.21006920026004092,0,1,False
+ridge_w48_sub24,0,Thalamus,test,sub07-scan01,0.44288665999538734,0.22102063134141234,0,1,False
+ridge_w48_sub24,0,Thalamus,test,sub07-scan02,0.5000220811626342,0.2142173316847533,0,1,False
+ridge_w48_sub24,0,Thalamus,test,sub11-scan01,0.3803516109440864,0.2164025168589255,0,1,False
+ridge_w48_sub24,0,Thalamus,test,sub16-scan01,0.6315171875799241,0.16947814746775586,0,1,False
+ridge_w48_sub24,0,Thalamus,test,sub18-scan01,0.3514647554785485,0.23769743997606418,0,1,False
+ridge_w48_sub24,0,Thalamus,test,sub21-scan01,0.373350584547183,0.22967340380283294,0,1,False
+ridge_w48_sub24,0,global signal clean,val,sub06-scan01,0.4779014745146134,0.20203320957797208,0,1,False
+ridge_w48_sub24,0,global signal clean,val,sub13-scan01,0.29852403696742247,0.2569553393484293,0,1,False
+ridge_w48_sub24,0,global signal clean,val,sub13-scan02,0.23290913061399138,0.26778328587923356,0,1,False
+ridge_w48_sub24,0,global signal clean,val,sub15-scan01,0.5386658347013277,0.21619899803258297,0,1,False
+ridge_w48_sub24,0,global signal clean,val,sub22-scan01,0.5944759080475709,0.1713964005512739,0,1,False
+ridge_w48_sub24,0,global signal clean,test,sub07-scan01,0.5894363767768195,0.163899466652565,0,1,False
+ridge_w48_sub24,0,global signal clean,test,sub07-scan02,0.5451959470560386,0.1901270484801841,0,1,False
+ridge_w48_sub24,0,global signal clean,test,sub11-scan01,0.6711902775441371,0.13210617838561364,0,1,False
+ridge_w48_sub24,0,global signal clean,test,sub16-scan01,0.6299665384583426,0.1629642145420084,0,1,False
+ridge_w48_sub24,0,global signal clean,test,sub18-scan01,0.3914422369213969,0.2197057365779557,0,1,False
+ridge_w48_sub24,0,global signal clean,test,sub21-scan01,0.4403578177023564,0.21883210197975606,0,1,False
+ridge_w64_sub32,0,Cuneus,val,sub06-scan01,0.507448322503165,0.23070422512453262,0,1,False
+ridge_w64_sub32,0,Cuneus,val,sub13-scan01,0.09421139437500448,0.24319433742860788,0,1,False
+ridge_w64_sub32,0,Cuneus,val,sub13-scan02,0.2080792524569061,0.2741919443674421,0,1,False
+ridge_w64_sub32,0,Cuneus,val,sub15-scan01,0.4665707662402092,0.21078453065013256,0,1,False
+ridge_w64_sub32,0,Cuneus,val,sub22-scan01,0.6034020606287086,0.21005249749974333,0,1,False
+ridge_w64_sub32,0,Cuneus,test,sub07-scan01,0.41011735834223767,0.22560367617765145,0,1,False
+ridge_w64_sub32,0,Cuneus,test,sub07-scan02,0.4304508595263788,0.22207332182011874,0,1,False
+ridge_w64_sub32,0,Cuneus,test,sub11-scan01,0.7499224396671111,0.10916641894864197,0,1,False
+ridge_w64_sub32,0,Cuneus,test,sub16-scan01,0.5895430596050447,0.18101381172915415,0,1,False
+ridge_w64_sub32,0,Cuneus,test,sub18-scan01,0.3771560831142849,0.20365298724231784,0,1,False
+ridge_w64_sub32,0,Cuneus,test,sub21-scan01,0.5942819593712534,0.15590266909900694,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,val,sub06-scan01,0.4661047834386924,0.18408620457068053,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,val,sub13-scan01,0.2546897303190935,0.23428031325876872,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,val,sub13-scan02,0.36336787248944447,0.21892514742335814,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,val,sub15-scan01,0.5316127454562002,0.20928399213203028,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,val,sub22-scan01,0.59280694633093,0.17278943937554522,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,test,sub07-scan01,0.5524743638774691,0.17111997857847328,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,test,sub07-scan02,0.49487241012973043,0.20691341196563415,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,test,sub11-scan01,0.6792164141652314,0.1260911610193583,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,test,sub16-scan01,0.6060156070726783,0.17264300638902963,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,test,sub18-scan01,0.5835813285975758,0.14603337108490497,0,1,False
+ridge_w64_sub32,0,Heschl’s gyrus,test,sub21-scan01,0.5325737541015262,0.19011189416654922,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,val,sub06-scan01,0.3279587121302642,0.21285587209832554,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,val,sub13-scan01,0.16825987576525323,0.26497723507572524,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,val,sub13-scan02,0.18404418074204767,0.2521496464667192,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,val,sub15-scan01,0.42369224333279426,0.23133778383961678,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,val,sub22-scan01,0.3317839889288182,0.24913796673331104,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,test,sub07-scan01,0.5945763088843216,0.20301471531226645,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,test,sub07-scan02,0.551042647847673,0.2126773323003238,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,test,sub11-scan01,0.3975599293193521,0.20314503445853968,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,test,sub16-scan01,0.4729467895626337,0.20991169265452853,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,test,sub18-scan01,0.34244437550698564,0.23703361163234687,0,1,False
+ridge_w64_sub32,0,Middle frontal gyrus anterior,test,sub21-scan01,0.3211899839190297,0.2280010672709498,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,val,sub06-scan01,0.44465922725270174,0.22053947862872852,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,val,sub13-scan01,0.1468310727457529,0.29721974881970004,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,val,sub13-scan02,0.008982387927421741,0.282541980318102,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,val,sub15-scan01,0.42411118733790654,0.2637184528640287,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,val,sub22-scan01,0.5374407839370491,0.21148092929016168,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,test,sub07-scan01,0.6438738504833607,0.16869163397982004,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,test,sub07-scan02,0.5324212580671585,0.1881924289168338,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,test,sub11-scan01,0.5525047610959811,0.1640389076669882,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,test,sub16-scan01,0.6212320992774752,0.1614307665955765,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,test,sub18-scan01,0.37621887098502643,0.20131077628570204,0,1,False
+ridge_w64_sub32,0,Precuneus anterior,test,sub21-scan01,0.4566734557043608,0.21850436597933076,0,1,False
+ridge_w64_sub32,0,Putamen,val,sub06-scan01,0.3054581215634425,0.19955389689657146,0,1,False
+ridge_w64_sub32,0,Putamen,val,sub13-scan01,0.22935435811838253,0.23786190242656796,0,1,False
+ridge_w64_sub32,0,Putamen,val,sub13-scan02,0.20011228795875663,0.22653078134767085,0,1,False
+ridge_w64_sub32,0,Putamen,val,sub15-scan01,0.23722372364961536,0.22998499908236486,0,1,False
+ridge_w64_sub32,0,Putamen,val,sub22-scan01,0.2018664259649387,0.2629998680706737,0,1,False
+ridge_w64_sub32,0,Putamen,test,sub07-scan01,0.4646587182360523,0.21949332583993644,0,1,False
+ridge_w64_sub32,0,Putamen,test,sub07-scan02,0.3837126729756748,0.2664267387388274,0,1,False
+ridge_w64_sub32,0,Putamen,test,sub11-scan01,0.3711502033515287,0.22227788280695257,0,1,False
+ridge_w64_sub32,0,Putamen,test,sub16-scan01,0.20902348336356952,0.2625956523523386,0,1,False
+ridge_w64_sub32,0,Putamen,test,sub18-scan01,0.5280454909390707,0.187209238431206,0,1,False
+ridge_w64_sub32,0,Putamen,test,sub21-scan01,0.141625240235191,0.26224796561604596,0,1,False
+ridge_w64_sub32,0,Thalamus,val,sub06-scan01,0.2781756443938318,0.25658177695419165,0,1,False
+ridge_w64_sub32,0,Thalamus,val,sub13-scan01,0.18228227426168497,0.2566755251419685,0,1,False
+ridge_w64_sub32,0,Thalamus,val,sub13-scan02,0.1762917421576953,0.2462003586768576,0,1,False
+ridge_w64_sub32,0,Thalamus,val,sub15-scan01,0.28814348069272744,0.2578534263252246,0,1,False
+ridge_w64_sub32,0,Thalamus,val,sub22-scan01,0.46567742167868564,0.2188007791300481,0,1,False
+ridge_w64_sub32,0,Thalamus,test,sub07-scan01,0.45651476618384773,0.21838778028835198,0,1,False
+ridge_w64_sub32,0,Thalamus,test,sub07-scan02,0.5153814727207703,0.2121687084712103,0,1,False
+ridge_w64_sub32,0,Thalamus,test,sub11-scan01,0.390244679334195,0.21462520348280545,0,1,False
+ridge_w64_sub32,0,Thalamus,test,sub16-scan01,0.6278842004478956,0.17091831784194275,0,1,False
+ridge_w64_sub32,0,Thalamus,test,sub18-scan01,0.3436885422801403,0.2404457799100157,0,1,False
+ridge_w64_sub32,0,Thalamus,test,sub21-scan01,0.3039940234489324,0.24456534444006403,0,1,False

@@ -100,9 +100,19 @@ def inline(text):
     return re.sub(r"\[(.+?)\]\((https?://[^)]+)\)", r'<a href="\2">\1</a>', text)
 
 
+def table_html(lines):
+    """A pipe table (header, separator, body rows) as a scrollable HTML table."""
+    rows = [[cell.strip() for cell in line.strip().strip("|").split("|")] for line in lines]
+    left = ' class="left"'
+    head = "".join(f"<th{left if i == 0 else ''}>{inline(c)}</th>" for i, c in enumerate(rows[0]))
+    body = "".join("<tr>" + "".join(f"<td{left if i == 0 else ''}>{inline(c)}</td>"
+                                    for i, c in enumerate(row)) + "</tr>" for row in rows[2:])
+    return f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
+
+
 def markdown_to_html(text):
-    """The subset findings.md uses: ### headings, - bullets, paragraphs, **bold**, `code`, links."""
-    out, para, items = [], [], []
+    """The subset findings.md uses: ### headings, - bullets, pipe tables, paragraphs, **bold**, `code`, links."""
+    out, para, items, table = [], [], [], []
 
     def flush():
         if para:
@@ -111,9 +121,16 @@ def markdown_to_html(text):
         if items:
             out.append("<ul>" + "".join(f"<li>{inline(i)}</li>" for i in items) + "</ul>")
             items.clear()
+        if table:
+            out.append(table_html(table))
+            table.clear()
     for line in text.splitlines():
         stripped = line.strip()
-        if not stripped:
+        if stripped.startswith("|"):
+            if para or items:
+                flush()
+            table.append(stripped)
+        elif not stripped:
             flush()
         elif stripped.startswith("### "):
             flush()
