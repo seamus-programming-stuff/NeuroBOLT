@@ -24,6 +24,21 @@ THEMES = {  # same tokens as summarize_reproduction.py
              "grid": "#2c2c2a", "axis": "#383835", "neural": "#3987e5", "linear": "#d95926"},
 }
 N_ROIS = 7
+LABELS = {  # readable names for the arms; unknown arms fall back to their directory name
+    "base": "NeuroBOLT (baseline)", "multi7": "NeuroBOLT · one model for 7 ROIs",
+    "nohp": "NeuroBOLT · no EEG high-pass", "softmax": "NeuroBOLT · learned scale weights",
+    "beta099": "NeuroBOLT · AdamW β₂ 0.99", "nobaseline": "NeuroBOLT · no window baseline",
+    "win8": "NeuroBOLT · 8 s window", "win24": "NeuroBOLT · 24 s window", "lr1e4": "NeuroBOLT · lr 1e-4",
+    "ridge_bandpower": "Ridge · 5 bands · 16 s / 4 lags", "ridge_nohp": "Ridge · 5 bands · no high-pass",
+    "ridge_scanz": "Ridge · per-scan z-scored", "ridge_scanz_w32": "Ridge · per-scan z · 32 s / 8 lags",
+    "ridge_scanz_fine": "Ridge · per-scan z · 1 Hz bins", "ridge_w32": "Ridge · 5 bands · 32 s / 8 lags",
+    "ridge_w32_sub16": "Ridge · 5 bands · 32 s / 16 lags", "ridge_w32_sub32": "Ridge · 5 bands · 32 s / 32 lags",
+    "ridge_w48_sub24": "Ridge · 5 bands · 48 s / 24 lags", "ridge_w64_sub32": "Ridge · 5 bands · 64 s / 32 lags",
+    "ridge_fine": "Ridge · 1 Hz bins · 16 s / 4 lags", "ridge_fine_w32": "Ridge · 1 Hz bins · 32 s / 8 lags",
+    "ridge_fine_w32_sub16": "Ridge · 1 Hz bins · 32 s / 16 lags",
+    "ridge_fine_w32_sub32": "Ridge · 1 Hz bins · 32 s / 32 lags",
+    "hgb_bandpower": "Boosted trees · 16 s / 4 lags", "hgb_w32_sub16": "Boosted trees · 32 s / 16 lags",
+}
 
 
 def arm_seed_means(path, split="test"):
@@ -42,7 +57,7 @@ def arm_seed_means(path, split="test"):
 
 def draw(per_seed, path, c, baseline="base", labels=None):
     arms = sorted(per_seed, key=lambda a: np.mean(list(per_seed[a].values())))
-    fig, ax = plt.subplots(figsize=(8.5, 0.42 * len(arms) + 1.4), facecolor=c["surface"])
+    fig, ax = plt.subplots(figsize=(9.5, 0.42 * len(arms) + 1.4), facecolor=c["surface"])
     ax.set_facecolor(c["surface"])
     for i, arm in enumerate(arms):
         color = c["linear"] if arm.startswith(("ridge", "hgb")) else c["neural"]
@@ -50,7 +65,9 @@ def draw(per_seed, path, c, baseline="base", labels=None):
         ax.plot([min(values), max(values)], [i, i], color=color, linewidth=2, alpha=0.35, solid_capstyle="round")
         ax.scatter(values, [i] * len(values), s=22, color=color, alpha=0.6, linewidths=0, zorder=3)
         ax.scatter([np.mean(values)], [i], s=60, color=color, edgecolors=c["surface"], linewidths=1.5, zorder=4)
-        ax.text(max(values) + 0.002, i, f"{np.mean(values):.3f}", va="center", fontsize=8.5, color=c["ink_2"])
+        seeds = f"  ({len(values)} seeds)" if len(values) > 1 else ""
+        ax.text(max(values) + 0.002, i, f"{np.mean(values):.3f}{seeds}", va="center", fontsize=8.5,
+                color=c["ink_2"])
     if baseline in per_seed:
         ax.axvline(np.mean(list(per_seed[baseline].values())), color=c["muted"], linewidth=1, zorder=1)
     ax.set_yticks(range(len(arms)), [(labels or {}).get(a, a) for a in arms], fontsize=9, color=c["ink"])
@@ -79,7 +96,7 @@ def main():
     os.makedirs(args.out, exist_ok=True)
     per_seed = arm_seed_means(args.runs)
     for theme, suffix in (("light", ""), ("dark", "_dark")):
-        draw(per_seed, os.path.join(args.out, f"arms_overview{suffix}.png"), THEMES[theme])
+        draw(per_seed, os.path.join(args.out, f"arms_overview{suffix}.png"), THEMES[theme], labels=LABELS)
     for arm in sorted(per_seed, key=lambda a: -np.mean(list(per_seed[a].values()))):
         values = per_seed[arm]
         print(f"{arm:20s} mean {np.mean(list(values.values())):.4f}  seeds " +
