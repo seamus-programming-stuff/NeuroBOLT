@@ -268,10 +268,14 @@ class NeuroBOLTransformer(nn.Module):
                  attn_drop_rate=0.,
                  drop_path_rate=0., norm_layer=nn.LayerNorm, init_values=None,
                  use_abs_pos_emb=True, use_rel_pos_bias=False, use_shared_rel_pos_bias=False,
-                 use_mean_pooling=True, init_scale=0.001, mss_fusion="sum", mss_log=False, **kwargs):
+                 use_mean_pooling=True, init_scale=0.001, mss_fusion="sum", mss_log=False, branch="both",
+                 **kwargs):
         super().__init__()
         self.num_roi = num_roi
         self.num_features = self.embed_dim = embed_dim  # num_features for consistency with other models
+        if branch not in ("both", "temporal", "spectral"):
+            raise ValueError(f"Unknown branch {branch!r}; expected 'both', 'temporal' or 'spectral'")
+        self.branch = branch  # ablation: use the LaBraM temporal branch, the spectral branch, or both
 
         # To identify whether it is neural tokenizer or neural decoder.
         # For the neural decoder, use linear projection (PatchEmbed) to project codebook dimension to hidden dimension.
@@ -403,9 +407,13 @@ class NeuroBOLTransformer(nn.Module):
         x: [batch size, number of electrodes, number of patches, patch size]
         For example, for an EEG sample of 16 seconds with 64 electrodes, x will be [batch size, 64, 16, 200]
         '''
-        x_tmp = self.forward_ts_features(x, input_chans=input_chans, return_patch_tokens=return_patch_tokens,
-                                         return_all_tokens=return_all_tokens, **kwargs)
-        x_mss = self.mss_module(rearrange(x, 'B N A T -> B N (A T)'), input_chans=input_chans_spect)
+        x_tmp = 0
+        if self.branch != "spectral":
+            x_tmp = self.forward_ts_features(x, input_chans=input_chans, return_patch_tokens=return_patch_tokens,
+                                             return_all_tokens=return_all_tokens, **kwargs)
+        x_mss = 0
+        if self.branch != "temporal":
+            x_mss = self.mss_module(rearrange(x, 'B N A T -> B N (A T)'), input_chans=input_chans_spect)
         x = self.head(self.head_act(x_mss + x_tmp)) # here adding activation function is optional, you can also directly add x_mss and x_tmp
         return x
 

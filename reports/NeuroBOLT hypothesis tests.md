@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 12 Oct 2026, 16:53 AEDT. Done: 12 NeuroBOLT arms (per-region and shared-model), intra-scan transfer, 18 band-power variants. Running: 32 s window (per region and shared model) and the shared model with a 24 s window and no high-pass.*
+*Updated 12 Oct 2026, 18:54 AEDT. Done: 15 NeuroBOLT arms, intra-scan transfer, 18 band-power variants. Running: shared model with 20 s and 28 s windows, single-branch ablations and no pretraining; ridge refit on training plus validation scans.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -18,6 +18,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Ridge · 5 bands · 48 s / 24 lags | 1 | 0.524 | 0.567 | 0.445 | 0.524 | 0.347 | 0.447 | 0.545 | 0.486 | 0.339 | +0.019 (-0.008 to +0.047) | +0.014 |
 | NeuroBOLT · 24 s window | 3 | 0.490 | 0.509 | 0.448 | 0.527 | 0.366 | 0.449 | 0.580 | 0.481 | 0.338 | +0.015 (-0.004 to +0.034) | +0.013 |
 | Shared model · 24 s window | 3 | 0.474 | 0.542 | 0.474 | 0.529 | 0.368 | 0.407 | 0.575 | 0.481 | 0.340 | +0.019 (-0.005 to +0.042) | +0.009 |
+| Shared model · 24 s window, no high-pass | 3 | 0.470 | 0.548 | 0.474 | 0.527 | 0.358 | 0.418 | 0.569 | 0.481 | 0.335 | +0.018 (-0.006 to +0.042) | +0.004 |
 | Ridge · 5 bands · 32 s / 8 lags | 1 | 0.511 | 0.558 | 0.451 | 0.515 | 0.341 | 0.447 | 0.539 | 0.480 | 0.338 | +0.014 (-0.002 to +0.031) | +0.013 |
 | Ridge · per-scan z · 1 Hz bins | 1 | 0.473 | 0.553 | 0.462 | 0.491 | 0.358 | 0.451 | 0.533 | 0.474 | 0.379 | +0.008 (-0.008 to +0.024) | +0.054 |
 | Shared model · no EEG high-pass | 3 | 0.454 | 0.519 | 0.458 | 0.520 | 0.347 | 0.448 | 0.556 | 0.472 | 0.330 | +0.009 (-0.006 to +0.025) | -0.002 |
@@ -32,9 +33,11 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Shared model · lr 1e-4 | 3 | 0.442 | 0.497 | 0.447 | 0.508 | 0.350 | 0.437 | 0.544 | 0.461 | 0.340 | -0.002 (-0.013 to +0.009) | +0.008 |
 | Boosted trees · 32 s / 16 lags | 1 | 0.501 | 0.527 | 0.430 | 0.532 | 0.257 | 0.378 | 0.552 | 0.454 | 0.306 | -0.012 (-0.073 to +0.048) | -0.019 |
 | Ridge · per-scan z-scored | 1 | 0.450 | 0.517 | 0.434 | 0.477 | 0.312 | 0.451 | 0.498 | 0.448 | 0.337 | -0.018 (-0.041 to +0.005) | +0.012 |
+| Shared model · 32 s window | 3 | 0.476 | 0.512 | 0.436 | 0.503 | 0.333 | 0.317 | 0.551 | 0.447 | 0.310 | -0.016 (-0.047 to +0.016) | -0.022 |
 | Shared model · log spectra | 3 | 0.404 | 0.485 | 0.439 | 0.489 | 0.337 | 0.420 | 0.516 | 0.441 | 0.337 | -0.021 (-0.046 to +0.003) | +0.006 |
 | Boosted trees · 16 s / 4 lags | 1 | 0.442 | 0.507 | 0.376 | 0.472 | 0.176 | 0.383 | 0.527 | 0.412 | 0.282 | -0.054 (-0.128 to +0.019) | -0.043 |
 | Shared model · 8 s window | 3 | 0.354 | 0.414 | 0.330 | 0.378 | 0.277 | 0.378 | 0.404 | 0.362 | 0.243 | -0.100 (-0.130 to -0.071) | -0.088 |
+| NeuroBOLT · 32 s window | 1 | 0.473 | 0.482 | 0.445 | – | – | – | – | – | – | – | – |
 
 Δ is paired by ROI and held-out scan, against the per-ROI NeuroBOLT baseline (shared-model arms: against the shared 7-ROI baseline); its 95% CI is a t-interval over the six held-out scans. Rows with a dash in any ROI are still running.
 
@@ -51,10 +54,14 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 - A 24 s window (pretrained time embedding stretched from 16 to 24 slots) raises per-region NeuroBOLT from 0.466 to 0.481 on the held-out scans and from 0.325 to 0.338 on validation, with all three seeds better. The 95% interval over the six held-out scans runs from −0.004 to +0.034.
 - One shared model with seven outputs scores 0.462, against 0.466 for seven separate models, at a seventh of the training cost. The changes below therefore ran on the shared model and are compared with it.
 - Shortening the window to 8 s costs 0.10, and lengthening it to 24 s gains 0.019, so EEG history is the one setting that matters. Six other changes move the score by 0.009 or less in either direction. Log-compressing the spectral branch's input, the change that band-power ridge suggested, hurts on the held-out scans.
+- Unlike ridge, NeuroBOLT does not keep improving with more history. A 32 s window drops the shared model to 0.447, below even the 16 s baseline, and the per-region 32 s runs that finished trail their 24 s counterparts. Stretching LaBraM's 16 pretrained time slots twofold may distort them, and 833 tokens per window is a lot to fit from 13 people. The per-region 32 s arm was stopped there, and 20 s and 28 s windows are running to pin down the optimum.
+- Dropping the high-pass on top of the 24 s window adds nothing (0.481 either way).
 
 | Shared 7-region NeuroBOLT, 3 seeds | Δ test R | Δ validation R | Seeds better (test) |
 |---|---|---|---|
 | 24 s window | **+0.019** | +0.009 | 3 of 3 |
+| 24 s window, no EEG high-pass | +0.018 | +0.004 | 3 of 3 |
+| 32 s window | −0.016 | −0.022 | 1 of 3 |
 | No EEG high-pass | +0.009 | −0.002 | 3 of 3 |
 | AdamW β₂ 0.99 (paper's Table 5) | +0.002 | +0.000 | 2 of 3 |
 | No window baseline correction | +0.000 | +0.000 | 3 of 3 |
@@ -63,7 +70,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Log-compressed spectra | −0.021 | +0.006 | 0 of 3 |
 | 8 s window | **−0.100** | −0.088 | 0 of 3 |
 
-- Running next: a 32 s window, both per region and on the shared model, and the 24 s window combined with no high-pass.
+- Running next on the shared model: 20 s and 28 s windows; each branch on its own (LaBraM temporal branch or multiscale spectral branch), to see which part of NeuroBOLT does the work; and training from scratch, to see what LaBraM pretraining contributes. On CPU, the best ridge refit on training plus validation scans tests whether more people help.
 
 ### Ensembles: NeuroBOLT adds little to the best ridge
 

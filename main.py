@@ -223,6 +223,10 @@ def get_args():
                         help='how the spectral encoder combines its four STFT scales')
     parser.add_argument('--mss_log', action='store_true', default=False,
                         help='feed the spectral encoder log1p STFT magnitudes instead of raw magnitudes')
+    parser.add_argument('--branch', default='both', choices=['both', 'temporal', 'spectral'],
+                        help='ablation: LaBraM temporal branch, multiscale spectral branch, or both')
+    parser.add_argument('--no_pretrained', action='store_true', default=False,
+                        help='ignore --finetune and train from random initialization')
     parser.add_argument('--early_stop_patience', default=0, type=int,
                         help='stop after this many epochs without a new validation-MSE minimum (0: never)')
     parser.add_argument('--save_best_predictions', action='store_true', default=False,
@@ -276,6 +280,7 @@ def get_models(args):
             EEG_length=args.window_sec * 200,
             mss_fusion=args.mss_fusion,
             mss_log=args.mss_log,
+            branch=args.branch,
         )
     return model
 
@@ -332,6 +337,8 @@ def main(args, ds_init):
     utils.init_distributed_mode(args)
     if '|' in args.labels_roi:  # several ROIs -> one model with one output per ROI
         args.nb_roi = len(args.labels_roi.split('|'))
+    if args.no_pretrained:
+        args.finetune = ''
 
     if ds_init is not None:
         utils.create_ds_config(args)

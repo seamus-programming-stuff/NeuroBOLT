@@ -9,10 +9,14 @@
 - A 24 s window (pretrained time embedding stretched from 16 to 24 slots) raises per-region NeuroBOLT from 0.466 to 0.481 on the held-out scans and from 0.325 to 0.338 on validation, with all three seeds better. The 95% interval over the six held-out scans runs from −0.004 to +0.034.
 - One shared model with seven outputs scores 0.462, against 0.466 for seven separate models, at a seventh of the training cost. The changes below therefore ran on the shared model and are compared with it.
 - Shortening the window to 8 s costs 0.10, and lengthening it to 24 s gains 0.019, so EEG history is the one setting that matters. Six other changes move the score by 0.009 or less in either direction. Log-compressing the spectral branch's input, the change that band-power ridge suggested, hurts on the held-out scans.
+- Unlike ridge, NeuroBOLT does not keep improving with more history. A 32 s window drops the shared model to 0.447, below even the 16 s baseline, and the per-region 32 s runs that finished trail their 24 s counterparts. Stretching LaBraM's 16 pretrained time slots twofold may distort them, and 833 tokens per window is a lot to fit from 13 people. The per-region 32 s arm was stopped there, and 20 s and 28 s windows are running to pin down the optimum.
+- Dropping the high-pass on top of the 24 s window adds nothing (0.481 either way).
 
 | Shared 7-region NeuroBOLT, 3 seeds | Δ test R | Δ validation R | Seeds better (test) |
 |---|---|---|---|
 | 24 s window | **+0.019** | +0.009 | 3 of 3 |
+| 24 s window, no EEG high-pass | +0.018 | +0.004 | 3 of 3 |
+| 32 s window | −0.016 | −0.022 | 1 of 3 |
 | No EEG high-pass | +0.009 | −0.002 | 3 of 3 |
 | AdamW β₂ 0.99 (paper's Table 5) | +0.002 | +0.000 | 2 of 3 |
 | No window baseline correction | +0.000 | +0.000 | 3 of 3 |
@@ -21,7 +25,7 @@
 | Log-compressed spectra | −0.021 | +0.006 | 0 of 3 |
 | 8 s window | **−0.100** | −0.088 | 0 of 3 |
 
-- Running next: a 32 s window, both per region and on the shared model, and the 24 s window combined with no high-pass.
+- Running next on the shared model: 20 s and 28 s windows; each branch on its own (LaBraM temporal branch or multiscale spectral branch), to see which part of NeuroBOLT does the work; and training from scratch, to see what LaBraM pretraining contributes. On CPU, the best ridge refit on training plus validation scans tests whether more people help.
 
 ### Ensembles: NeuroBOLT adds little to the best ridge
 

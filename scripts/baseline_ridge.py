@@ -99,6 +99,9 @@ def main():
                              "removing between-subject differences in overall band power")
     parser.add_argument("--estimator", choices=["ridge", "hgb"], default="ridge",
                         help="ridge regression, or histogram gradient-boosted trees on the same features")
+    parser.add_argument("--refit-train-val", action="store_true",
+                        help="ridge only: choose the penalty on validation, then refit on training + validation "
+                             "scans before scoring the test scans (validation scores stay from the training-only fit)")
     args = parser.parse_args()
     bands = BAND_SETS[args.bands]
 
@@ -121,12 +124,16 @@ def main():
     x = {split: (feats - mean) / std for split, (feats, _, _, _) in data.items()}
     if args.estimator == "ridge":  # every penalty for every ROI from one decomposition
         path = ridge_path(x["train"], data["train"][1], [x["val"], x["test"]], ALPHAS)
+        if args.refit_train_val:
+            refit = ridge_path(np.concatenate([x["train"], x["val"]]),
+                               np.concatenate([data["train"][1], data["val"][1]]), [x["test"]], ALPHAS)
 
     for roi_index, (label, _) in enumerate(ROIS):
         y = {split: targets[:, roi_index] for split, (_, targets, _, _) in data.items()}
         if args.estimator == "ridge":
             fits = [(float(np.mean((preds[0][:, roi_index] - y["val"]) ** 2)), f"alpha={alpha:g}",
-                     {"val": preds[0][:, roi_index], "test": preds[1][:, roi_index]})
+                     {"val": preds[0][:, roi_index],
+                      "test": (refit[alpha][0] if args.refit_train_val else preds[1])[:, roi_index]})
                     for alpha, preds in path.items()]
         else:
             fits = []
