@@ -73,6 +73,9 @@ def arm_seed_means(path, split="test"):
     return per_seed
 
 
+AXIS_FLOOR = 0.33  # arms scoring below this are drawn as off-scale markers at the left edge
+
+
 def draw(per_seed, path, c, baseline="base", labels=None):
     arms = sorted(per_seed, key=lambda a: np.mean(list(per_seed[a].values())))
     fig, ax = plt.subplots(figsize=(9.5, 0.42 * len(arms) + 1.4), facecolor=c["surface"])
@@ -80,12 +83,19 @@ def draw(per_seed, path, c, baseline="base", labels=None):
     for i, arm in enumerate(arms):
         color = c["linear"] if arm.startswith(("ridge", "hgb")) else c["neural"]
         values = list(per_seed[arm].values())
+        seeds = f"  ({len(values)} seeds)" if len(values) > 1 else ""
+        if np.mean(values) < AXIS_FLOOR:
+            ax.scatter([AXIS_FLOOR + 0.004], [i], s=60, marker="<", color=color, zorder=4)
+            ax.annotate(f"{np.mean(values):.3f}{seeds}, off scale", (AXIS_FLOOR + 0.004, i), xytext=(8, 0),
+                        textcoords="offset points", va="center", fontsize=8.5, color=c["ink_2"])
+            continue
         ax.plot([min(values), max(values)], [i, i], color=color, linewidth=2, alpha=0.35, solid_capstyle="round")
         ax.scatter(values, [i] * len(values), s=22, color=color, alpha=0.6, linewidths=0, zorder=3)
         ax.scatter([np.mean(values)], [i], s=60, color=color, edgecolors=c["surface"], linewidths=1.5, zorder=4)
-        seeds = f"  ({len(values)} seeds)" if len(values) > 1 else ""
-        ax.text(max(values) + 0.002, i, f"{np.mean(values):.3f}{seeds}", va="center", fontsize=8.5,
-                color=c["ink_2"])
+        ax.annotate(f"{np.mean(values):.3f}{seeds}", (max(values), i), xytext=(7, 0), textcoords="offset points",
+                    va="center", fontsize=8.5, color=c["ink_2"])
+    top = max(max(v.values()) for v in per_seed.values())
+    ax.set_xlim(AXIS_FLOOR, top + 0.035)
     if baseline in per_seed:
         ax.axvline(np.mean(list(per_seed[baseline].values())), color=c["muted"], linewidth=1, zorder=1)
     ax.set_yticks(range(len(arms)), [(labels or {}).get(a, a) for a in arms], fontsize=9, color=c["ink"])
