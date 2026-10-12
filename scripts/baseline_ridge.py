@@ -20,6 +20,7 @@ import itertools
 
 import numpy as np
 import pandas as pd
+import torch
 from scipy.signal import welch
 from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.linear_model import Ridge
@@ -50,12 +51,19 @@ def ridge_path(x_train, y_train, x_eval, alphas):
     One economy SVD of the centred training features, X = U S V', gives every penalty's weights
     as V diag(S / (S^2 + alpha)) U'y, so a wide feature set costs one decomposition instead of a
     solve per penalty and ROI. Matches sklearn's Ridge(alpha, fit_intercept=True).
+
+    The algebra runs in torch: the M3 env's numpy links single-threaded reference LAPACK, while
+    torch uses MKL across every core SLURM grants.
     """
-    x_mean, y_mean = x_train.mean(axis=0), y_train.mean(axis=0)
-    u, s, vt = np.linalg.svd(x_train - x_mean, full_matrices=False)
-    uty = u.T @ (y_train - y_mean)
-    rotated = [(x - x_mean) @ vt.T for x in x_eval]
-    return {alpha: [r @ ((s / (s ** 2 + alpha))[:, None] * uty) + y_mean for r in rotated] for alpha in alphas}
+    torch.set_num_threads(int(os.environ.get("SLURM_CPUS_PER_TASK", torch.get_num_threads())))
+    as_tensor = lambda a: torch.from_numpy(np.ascontiguousarray(a, dtype=np.float32))  # noqa: E731
+    x, y = as_tensor(x_train), as_tensor(y_train)
+    x_mean, y_mean = x.mean(dim=0), y.mean(dim=0)
+    u, s, vt = torch.linalg.svd(x - x_mean, full_matrices=False)
+    uty = u.T @ (y - y_mean)
+    rotated = [(as_tensor(e) - x_mean) @ vt.T for e in x_eval]
+    return {alpha: [(r @ ((s / (s ** 2 + alpha))[:, None] * uty) + y_mean).numpy() for r in rotated]
+            for alpha in alphas}
 
 
 def band_power_features(eeg, bands, sub_windows, fs=200):
