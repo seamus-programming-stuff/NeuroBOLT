@@ -22,7 +22,7 @@ from collections import defaultdict
 import numpy as np
 from scipy import stats
 
-from plot_hypotheses import LABELS
+from plot_hypotheses import LABELS, baseline_for
 
 ROIS = ["Cuneus", "Heschl’s gyrus", "Middle frontal gyrus anterior", "Precuneus anterior",
         "Putamen", "Thalamus", "global signal clean"]
@@ -49,16 +49,17 @@ def arm_rows(cells, seeds, baseline):
             return float(np.mean(values)) if len(values) == len(scans[split]) else None
         per_roi = {split: [roi_mean(split, roi) for roi in ROIS] for split in ("val", "test")}
         complete = all(v is not None for v in per_roi["test"])
+        reference = baseline_for(arm, baseline)
         row = {"arm": arm, "label": LABELS.get(arm, arm), "seeds": len(seeds[arm]), "complete": complete,
                "test": per_roi["test"], "avg_test": float(np.mean(per_roi["test"])) if complete else None,
                "avg_val": float(np.mean(per_roi["val"])) if all(v is not None for v in per_roi["val"]) else None,
-               "delta": None, "ci": None, "delta_val": None}
-        if complete and arm != baseline and (baseline, "test", ROIS[0], scans["test"][0]) in cells:
+               "delta": None, "ci": None, "delta_val": None, "reference": LABELS.get(reference, reference)}
+        if complete and arm != reference and (reference, "test", ROIS[0], scans["test"][0]) in cells:
             for split in ("test", "val"):
                 per_scan = []
                 for s in scans[split]:
-                    diffs = [np.mean(cells[(arm, split, roi, s)]) - np.mean(cells[(baseline, split, roi, s)])
-                             for roi in ROIS if (baseline, split, roi, s) in cells and (arm, split, roi, s) in cells]
+                    diffs = [np.mean(cells[(arm, split, roi, s)]) - np.mean(cells[(reference, split, roi, s)])
+                             for roi in ROIS if (reference, split, roi, s) in cells and (arm, split, roi, s) in cells]
                     if len(diffs) == len(ROIS):
                         per_scan.append(np.mean(diffs))
                 if len(per_scan) == len(scans[split]):
@@ -82,7 +83,7 @@ def fmt(v, digits=3, signed=False):
 
 def markdown_table(rows, baseline):
     head = ("| Arm | Seeds | " + " | ".join(SHORT) + " | Avg. test R | Avg. val R | "
-            f"Δ test vs baseline (95% CI) | Δ val |")
+            f"Δ test vs reference (95% CI) | Δ val |")
     lines = [head, "|---|---|" + "---|" * (len(SHORT) + 4)]
     for r in rows:
         ci = f" ({r['ci'][0]:+.3f} to {r['ci'][1]:+.3f})" if r["ci"] else ""
@@ -149,7 +150,7 @@ def markdown_to_html(text):
 
 def html_table(rows, baseline):
     head = ("<tr><th class=\"left\">Arm</th><th>Seeds</th>" + "".join(f"<th>{s}</th>" for s in SHORT)
-            + "<th>Avg. test R</th><th>Avg. val R</th><th>Δ test vs baseline (95% CI)</th><th>Δ val</th></tr>")
+            + "<th>Avg. test R</th><th>Avg. val R</th><th>Δ test vs reference (95% CI)</th><th>Δ val</th></tr>")
     body = []
     for r in rows:
         kind = "base" if r["arm"] == baseline else ("linear" if r["arm"].startswith(("ridge", "hgb")) else "neural")
@@ -188,7 +189,7 @@ def main():
           "share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.", "",
           "![Every arm's average test R](hypotheses/arms_overview.png)", "",
           markdown_table(rows, args.baseline), "",
-          "Δ is paired by ROI and held-out scan; its 95% CI is a t-interval over the six held-out scans. "
+          "Δ is paired by ROI and held-out scan, against the per-ROI NeuroBOLT baseline (shared-model arms: against the shared 7-ROI baseline); its 95% CI is a t-interval over the six held-out scans. "
           "Rows with a dash in any ROI are still running.", "", "## Findings so far", "", findings]
     with open(os.path.join(REPO, "reports", "NeuroBOLT hypothesis tests.md"), "w", encoding="utf-8") as stream:
         stream.write("\n".join(md) + "\n")

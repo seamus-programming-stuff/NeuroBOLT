@@ -263,7 +263,8 @@ def prepare_full_dataloader(args):
 
         for split, indices in (("train", train_ind), ("val", val_ind), ("test", test_ind)):
             if ss in indices:
-                eeg_data[split] += data_epoch["eeg"]
+                # float32 per scan keeps peak memory near the final tensors' size; values are unchanged
+                eeg_data[split] += [epoch.astype(np.float32) for epoch in data_epoch["eeg"]]
                 fmri_data[split] += data_epoch["fmri"]
                 scan_sizes[split].append((scans[ss], len(data_epoch["eeg"])))
                 break

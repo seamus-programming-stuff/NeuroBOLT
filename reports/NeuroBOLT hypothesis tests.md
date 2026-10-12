@@ -1,15 +1,15 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 12 Oct 2026, 14:03 AEDT. Done: NeuroBOLT baseline and 24 s window (3 seeds each), intra-scan transfer runs, 17 band-power variants. Running next: one shared 7-region model, 32 s window, then 6 more NeuroBOLT arms (about 15 GPU-hours).*
+*Updated 12 Oct 2026, 14:26 AEDT. Done: per-region baseline, 24 s window and shared 7-region baseline (3 seeds each), intra-scan transfer, 17 band-power variants. Running: 8 shared-model changes (24 runs, about 3 hours), then the 32 s window per region.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
 ![Every arm's average test R](hypotheses/arms_overview.png)
 
-| Arm | Seeds | Cuneus | Heschl's | Mid. frontal | Precuneus | Putamen | Thalamus | Global | Avg. test R | Avg. val R | Δ test vs baseline (95% CI) | Δ val |
+| Arm | Seeds | Cuneus | Heschl's | Mid. frontal | Precuneus | Putamen | Thalamus | Global | Avg. test R | Avg. val R | Δ test vs reference (95% CI) | Δ val |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Ridge · 1 Hz bins · 32 s / 16 lags | 1 | 0.538 | 0.609 | 0.498 | 0.567 | 0.395 | 0.472 | 0.597 | 0.525 | 0.371 | +0.059 (+0.023 to +0.095) | +0.046 |
-| ridge_fine_w24_sub12 | 1 | 0.534 | 0.606 | 0.510 | 0.566 | 0.402 | 0.458 | 0.597 | 0.525 | 0.385 | +0.058 (+0.034 to +0.082) | +0.060 |
+| Ridge · 1 Hz bins · 24 s / 12 lags | 1 | 0.534 | 0.606 | 0.510 | 0.566 | 0.402 | 0.458 | 0.597 | 0.525 | 0.385 | +0.058 (+0.034 to +0.082) | +0.060 |
 | Ridge · 1 Hz bins · 32 s / 8 lags | 1 | 0.528 | 0.602 | 0.493 | 0.559 | 0.390 | 0.451 | 0.587 | 0.516 | 0.365 | +0.049 (+0.018 to +0.081) | +0.040 |
 | Ridge · 1 Hz bins · 16 s / 4 lags | 1 | 0.503 | 0.572 | 0.475 | 0.536 | 0.373 | 0.450 | 0.570 | 0.497 | 0.374 | +0.031 (+0.020 to +0.041) | +0.049 |
 | Ridge · 5 bands · 32 s / 32 lags | 1 | 0.537 | 0.568 | 0.460 | 0.532 | 0.350 | 0.458 | 0.557 | 0.495 | 0.316 | +0.028 (-0.006 to +0.062) | -0.009 |
@@ -23,11 +23,12 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Ridge · 5 bands · no high-pass | 1 | 0.469 | 0.535 | 0.445 | 0.507 | 0.327 | 0.456 | 0.546 | 0.469 | 0.336 | +0.003 (-0.015 to +0.022) | +0.011 |
 | NeuroBOLT (baseline) | 3 | 0.468 | 0.520 | 0.436 | 0.502 | 0.327 | 0.460 | 0.551 | 0.466 | 0.325 | reference |  |
 | Ridge · per-scan z · 32 s / 8 lags | 1 | 0.481 | 0.545 | 0.441 | 0.505 | 0.336 | 0.424 | 0.511 | 0.463 | 0.342 | -0.003 (-0.021 to +0.016) | +0.017 |
+| NeuroBOLT · one model for 7 ROIs | 3 | 0.443 | 0.501 | 0.449 | 0.507 | 0.351 | 0.445 | 0.543 | 0.462 | 0.332 | -0.004 (-0.024 to +0.017) | +0.007 |
 | Boosted trees · 32 s / 16 lags | 1 | 0.501 | 0.527 | 0.430 | 0.532 | 0.257 | 0.378 | 0.552 | 0.454 | 0.306 | -0.012 (-0.073 to +0.048) | -0.019 |
 | Ridge · per-scan z-scored | 1 | 0.450 | 0.517 | 0.434 | 0.477 | 0.312 | 0.451 | 0.498 | 0.448 | 0.337 | -0.018 (-0.041 to +0.005) | +0.012 |
 | Boosted trees · 16 s / 4 lags | 1 | 0.442 | 0.507 | 0.376 | 0.472 | 0.176 | 0.383 | 0.527 | 0.412 | 0.282 | -0.054 (-0.128 to +0.019) | -0.043 |
 
-Δ is paired by ROI and held-out scan; its 95% CI is a t-interval over the six held-out scans. Rows with a dash in any ROI are still running.
+Δ is paired by ROI and held-out scan, against the per-ROI NeuroBOLT baseline (shared-model arms: against the shared 7-ROI baseline); its 95% CI is a t-interval over the six held-out scans. Rows with a dash in any ROI are still running.
 
 ## Findings so far
 
@@ -41,6 +42,11 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 
 - A 24 s window (pretrained time embedding stretched from 16 to 24 slots) raises NeuroBOLT from 0.466 to 0.481 on the held-out scans and from 0.325 to 0.338 on validation, and all three seeds improve. It is the first NeuroBOLT change that helps, matching what history does for ridge.
 - The gain is small next to ridge's lead: its 95% interval over the six held-out scans runs from −0.004 to +0.034. A 32 s NeuroBOLT arm, where ridge's gains level off, runs next.
+
+### One shared model does as well as seven separate ones
+
+- A single NeuroBOLT with seven outputs, one per region, scores 0.462 on the held-out scans against 0.466 for seven separate models, and 0.007 higher on validation, at a seventh of the training cost. It does better for the middle frontal gyrus and putamen and worse for the cuneus and Heschl's gyrus.
+- Because it is seven times cheaper, the remaining NeuroBOLT changes (log spectra, no high-pass, learned scale weights, lower learning rate, AdamW β₂ 0.99, no window baseline, 8 s and 24 s windows) now run on the shared model, compared with this shared baseline. The 32 s window still runs per region, to extend the 24 s result.
 
 ### Ensembles: NeuroBOLT adds little to the best ridge
 

@@ -38,7 +38,17 @@ LABELS = {  # readable names for the arms; unknown arms fall back to their direc
     "ridge_fine_w32_sub16": "Ridge · 1 Hz bins · 32 s / 16 lags",
     "ridge_fine_w32_sub32": "Ridge · 1 Hz bins · 32 s / 32 lags",
     "hgb_bandpower": "Boosted trees · 16 s / 4 lags", "hgb_w32_sub16": "Boosted trees · 32 s / 16 lags",
+    "ridge_fine_w24_sub12": "Ridge · 1 Hz bins · 24 s / 12 lags", "win32": "NeuroBOLT · 32 s window",
+    "msslog": "NeuroBOLT · log spectra",
 }
+# Shared 7-ROI model arms (m7_*) reuse the single-ROI change names
+LABELS.update({f"m7_{arm}": "Shared model · " + LABELS[arm].split(" · ", 1)[1]
+               for arm in ("nohp", "softmax", "beta099", "nobaseline", "win8", "win24", "lr1e4", "msslog", "win32")})
+
+
+def baseline_for(arm, baseline="base"):
+    """Shared-model arms compare with the shared baseline, everything else with the per-ROI one."""
+    return "multi7" if arm.startswith("m7_") else baseline
 
 
 def arm_seed_means(path, split="test"):

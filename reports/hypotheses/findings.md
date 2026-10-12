@@ -9,6 +9,11 @@
 - A 24 s window (pretrained time embedding stretched from 16 to 24 slots) raises NeuroBOLT from 0.466 to 0.481 on the held-out scans and from 0.325 to 0.338 on validation, and all three seeds improve. It is the first NeuroBOLT change that helps, matching what history does for ridge.
 - The gain is small next to ridge's lead: its 95% interval over the six held-out scans runs from −0.004 to +0.034. A 32 s NeuroBOLT arm, where ridge's gains level off, runs next.
 
+### One shared model does as well as seven separate ones
+
+- A single NeuroBOLT with seven outputs, one per region, scores 0.462 on the held-out scans against 0.466 for seven separate models, and 0.007 higher on validation, at a seventh of the training cost. It does better for the middle frontal gyrus and putamen and worse for the cuneus and Heschl's gyrus.
+- Because it is seven times cheaper, the remaining NeuroBOLT changes (log spectra, no high-pass, learned scale weights, lower learning rate, AdamW β₂ 0.99, no window baseline, 8 s and 24 s windows) now run on the shared model, compared with this shared baseline. The 32 s window still runs per region, to extend the 24 s result.
+
 ### Ensembles: NeuroBOLT adds little to the best ridge
 
 | Predictions averaged (z-scored per scan) | Validation R | Test R |
