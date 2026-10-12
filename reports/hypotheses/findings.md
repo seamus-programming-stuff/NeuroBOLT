@@ -4,15 +4,24 @@
 - The gain comes from two things NeuroBOLT does not exploit across people. 1 Hz bins alone take ridge from 0.469 to 0.497, and 32 s of history alone takes it to 0.493. Going to 48 s or 64 s adds nothing (0.486 and 0.488), so the useful history matches the slow tail of the haemodynamic response.
 - With the same 16 s window and five classic bands, ridge already matches NeuroBOLT (0.469 against 0.466 on test, 0.337 against 0.335 on validation). The transformer's extra capacity buys nothing measurable across people.
 
-### NeuroBOLT gains a little from a longer window
+### For NeuroBOLT, only the window length matters
 
-- A 24 s window (pretrained time embedding stretched from 16 to 24 slots) raises NeuroBOLT from 0.466 to 0.481 on the held-out scans and from 0.325 to 0.338 on validation, and all three seeds improve. It is the first NeuroBOLT change that helps, matching what history does for ridge.
-- The gain is small next to ridge's lead: its 95% interval over the six held-out scans runs from −0.004 to +0.034. A 32 s NeuroBOLT arm, where ridge's gains level off, runs next.
+- A 24 s window (pretrained time embedding stretched from 16 to 24 slots) raises per-region NeuroBOLT from 0.466 to 0.481 on the held-out scans and from 0.325 to 0.338 on validation, with all three seeds better. The 95% interval over the six held-out scans runs from −0.004 to +0.034.
+- One shared model with seven outputs scores 0.462, against 0.466 for seven separate models, at a seventh of the training cost. The changes below therefore ran on the shared model and are compared with it.
+- Shortening the window to 8 s costs 0.10, and lengthening it to 24 s gains 0.019, so EEG history is the one setting that matters. Six other changes move the score by 0.009 or less in either direction. Log-compressing the spectral branch's input, the change that band-power ridge suggested, hurts on the held-out scans.
 
-### One shared model does as well as seven separate ones
+| Shared 7-region NeuroBOLT, 3 seeds | Δ test R | Δ validation R | Seeds better (test) |
+|---|---|---|---|
+| 24 s window | **+0.019** | +0.009 | 3 of 3 |
+| No EEG high-pass | +0.009 | −0.002 | 3 of 3 |
+| AdamW β₂ 0.99 (paper's Table 5) | +0.002 | +0.000 | 2 of 3 |
+| No window baseline correction | +0.000 | +0.000 | 3 of 3 |
+| Learned scale weights | −0.000 | −0.001 | 1 of 3 |
+| Learning rate 1e-4 | −0.002 | +0.008 | 1 of 3 |
+| Log-compressed spectra | −0.021 | +0.006 | 0 of 3 |
+| 8 s window | **−0.100** | −0.088 | 0 of 3 |
 
-- A single NeuroBOLT with seven outputs, one per region, scores 0.462 on the held-out scans against 0.466 for seven separate models, and 0.007 higher on validation, at a seventh of the training cost. It does better for the middle frontal gyrus and putamen and worse for the cuneus and Heschl's gyrus.
-- Because it is seven times cheaper, the remaining NeuroBOLT changes (log spectra, no high-pass, learned scale weights, lower learning rate, AdamW β₂ 0.99, no window baseline, 8 s and 24 s windows) now run on the shared model, compared with this shared baseline. The 32 s window still runs per region, to extend the 24 s result.
+- Running next: a 32 s window, both per region and on the shared model, and the 24 s window combined with no high-pass.
 
 ### Ensembles: NeuroBOLT adds little to the best ridge
 

@@ -44,6 +44,7 @@ LABELS = {  # readable names for the arms; unknown arms fall back to their direc
 # Shared 7-ROI model arms (m7_*) reuse the single-ROI change names
 LABELS.update({f"m7_{arm}": "Shared model · " + LABELS[arm].split(" · ", 1)[1]
                for arm in ("nohp", "softmax", "beta099", "nobaseline", "win8", "win24", "lr1e4", "msslog", "win32")})
+LABELS["m7_win24_nohp"] = "Shared model · 24 s window, no high-pass"
 
 
 def baseline_for(arm, baseline="base"):
