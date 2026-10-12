@@ -41,7 +41,11 @@ def read_run(run_dir):
     rows = [r for r in rows if "test_scan_corr" in r]
     if not rows:
         return None
-    best = min(rows, key=lambda r: r["val_mse"])
+    extra = os.path.join(run_dir, "extra_args.txt")
+    if os.path.isfile(extra) and "--train_on_val" in open(extra, encoding="utf-8").read():
+        best = rows[-1]  # validation scans were trained on, so the run stops at a preset epoch
+    else:
+        best = min(rows, key=lambda r: r["val_mse"])
     return {"best": best, "epochs_run": len(rows), "done": os.path.isfile(os.path.join(run_dir, "done"))}
 
 

@@ -230,6 +230,11 @@ def get_args():
     parser.add_argument('--tmp_norm', default='none', choices=['none', 'batchnorm'],
                         help="standardize the LaBraM branch's pooled embedding across samples before the "
                              "branches are added")
+    parser.add_argument('--train_on_val', action='store_true', default=False,
+                        help='full_test: also train on the validation scans. Validation scores become '
+                             'in-sample, so stop at a fixed --stop_epoch taken from a training-only run')
+    parser.add_argument('--stop_epoch', default=None, type=int,
+                        help='stop after this epoch (inclusive) without changing the LR schedule')
     parser.add_argument('--early_stop_patience', default=0, type=int,
                         help='stop after this many epochs without a new validation-MSE minimum (0: never)')
     parser.add_argument('--save_best_predictions', action='store_true', default=False,
@@ -641,8 +646,9 @@ def main(args, ds_init):
             test_mse = test_stats["mse"]
             test_corr = test_stats["corr"]
             epochname = f"{epoch}" + f"-trcorr{train_corr:.2f}-valmse{val_mse:.4f}-valcorr{val_corr:.4f}-testmse{test_mse:.4f}-testcorr{test_corr:.4f}"
-            if min_mse > val_stats["mse"]:
-                min_mse = val_stats["mse"]
+            # with in-sample validation scans, keep the latest epoch instead of the min-val-MSE one
+            if min_mse > val_stats["mse"] or args.train_on_val:
+                min_mse = min(min_mse, val_stats["mse"])
                 max_corr_test = test_stats["corr"]
                 max_test_corr_glb = test_stats["corr"]
                 best_epoch = epoch
@@ -696,6 +702,9 @@ def main(args, ds_init):
         if args.early_stop_patience and data_loader_val is not None \
                 and epoch - best_epoch >= args.early_stop_patience:
             print(f"Early stop at epoch {epoch}: no validation-MSE improvement since epoch {best_epoch}")
+            break
+        if args.stop_epoch is not None and epoch >= args.stop_epoch:
+            print(f"Stopping after epoch {epoch} (--stop_epoch)")
             break
 
     if best_outputs is not None and args.output_dir and utils.is_main_process():

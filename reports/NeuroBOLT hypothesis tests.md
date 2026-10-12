@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 12 Oct 2026, 21:27 AEDT. Done: 20 NeuroBOLT arms, intra-scan transfer, 19 band-power variants. Running: BatchNorm on NeuroBOLT's LaBraM branch, with both branches and with the LaBraM branch alone.*
+*Updated 12 Oct 2026, 22:37 AEDT. Done: 22 NeuroBOLT arms, intra-scan transfer, 19 band-power variants. Running: three LaBraM-branch diagnostics, and NeuroBOLT trained on training plus validation scans.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -33,6 +33,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Ridge · per-scan z · 32 s / 8 lags | 1 | 0.481 | 0.545 | 0.441 | 0.505 | 0.336 | 0.424 | 0.511 | 0.463 | 0.342 | -0.003 (-0.021 to +0.016) | +0.017 |
 | Shared model · no window baseline | 3 | 0.443 | 0.501 | 0.449 | 0.507 | 0.351 | 0.446 | 0.543 | 0.463 | 0.332 | +0.000 (-0.000 to +0.001) | +0.000 |
 | NeuroBOLT · one model for 7 ROIs | 3 | 0.443 | 0.501 | 0.449 | 0.507 | 0.351 | 0.445 | 0.543 | 0.462 | 0.332 | -0.004 (-0.024 to +0.017) | +0.007 |
+| Shared model · BatchNorm on LaBraM branch | 3 | 0.438 | 0.508 | 0.448 | 0.508 | 0.355 | 0.436 | 0.543 | 0.462 | 0.331 | -0.000 (-0.009 to +0.009) | -0.000 |
 | Shared model · learned scale weights | 3 | 0.442 | 0.500 | 0.449 | 0.506 | 0.351 | 0.445 | 0.542 | 0.462 | 0.331 | -0.000 (-0.001 to +0.000) | -0.001 |
 | Shared model · spectral branch only | 3 | 0.450 | 0.501 | 0.445 | 0.502 | 0.349 | 0.446 | 0.536 | 0.461 | 0.331 | -0.001 (-0.014 to +0.012) | -0.001 |
 | Shared model · lr 1e-4 | 3 | 0.442 | 0.497 | 0.447 | 0.508 | 0.350 | 0.437 | 0.544 | 0.461 | 0.340 | -0.002 (-0.013 to +0.009) | +0.008 |
@@ -43,6 +44,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Boosted trees · 16 s / 4 lags | 1 | 0.442 | 0.507 | 0.376 | 0.472 | 0.176 | 0.383 | 0.527 | 0.412 | 0.282 | -0.054 (-0.128 to +0.019) | -0.043 |
 | Shared model · 8 s window | 3 | 0.354 | 0.414 | 0.330 | 0.378 | 0.277 | 0.378 | 0.404 | 0.362 | 0.243 | -0.100 (-0.130 to -0.071) | -0.088 |
 | Shared model · LaBraM branch only | 3 | 0.070 | 0.103 | -0.007 | 0.003 | -0.044 | 0.021 | 0.027 | 0.024 | 0.030 | -0.438 (-0.484 to -0.392) | -0.302 |
+| Shared model · LaBraM branch only, BatchNorm | 3 | 0.111 | 0.010 | -0.026 | 0.060 | -0.034 | 0.008 | 0.024 | 0.022 | 0.011 | -0.440 (-0.490 to -0.391) | -0.320 |
 | NeuroBOLT · 32 s window | 1 | 0.473 | 0.482 | 0.445 | – | – | – | – | – | – | – | – |
 
 Δ is paired by ROI and held-out scan, against the per-ROI NeuroBOLT baseline (shared-model arms: against the shared 7-ROI baseline); its 95% CI is a t-interval over the six held-out scans. Rows with a dash in any ROI are still running.
@@ -83,19 +85,23 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 ### All of NeuroBOLT's skill comes from its spectral branch
 
 - With the LaBraM temporal branch removed, the shared model scores 0.461, the same as the full model (0.462). With only the temporal branch it scores 0.024: it never learns at all, and its training correlation stays at 0.00 for every epoch. Training from scratch, without LaBraM's pretrained weights, also changes nothing (0.464).
-- The reason is scale. In the authors' trained Thalamus model, the LaBraM branch's pooled embedding varies between windows by only 2% of its size, against 91% for the spectral branch. Averaging 416 tokens and then applying LayerNorm leaves an almost constant vector. Its small variations do carry information (ridge on them predicts the thalamus at R = 0.42 within a scan, against 0.62 for the spectral features), but the prediction head cannot use them at that scale.
-- Running now: the same model with a BatchNorm on the LaBraM embedding, which rescales its window-to-window variation. In a short local check, the temporal branch on its own then learns.
+- The LaBraM branch's pooled embedding barely varies between windows. In the authors' trained Thalamus model it varies by only 2% of its size, against 91% for the spectral branch, because averaging 416 tokens and applying LayerNorm leaves an almost constant vector.
+- Scale is not the whole story, though. A BatchNorm that rescales that embedding before the branches are added changes nothing: the LaBraM branch alone still never learns (0.022), and the full model is unchanged (0.462). Ridge on the trained model's LaBraM features does predict the thalamus within one scan (R = 0.42), but that most likely tracks slow drift within the scan rather than an EEG–BOLD relation that holds across people.
+- Running now: whether the LaBraM branch can learn at all, without the layer-wise learning-rate decay that leaves its lower blocks under 1% of the head's learning rate, and from random initialization.
 
 | Shared 7-region NeuroBOLT, 3 seeds | Test R | Δ test R | Δ validation R |
 |---|---|---|---|
 | Both branches (shared baseline) | 0.462 | | |
 | Spectral branch only | 0.461 | −0.001 | −0.001 |
 | No LaBraM pretraining | 0.464 | +0.002 | −0.012 |
+| BatchNorm on the LaBraM embedding | 0.462 | +0.000 | +0.000 |
 | **LaBraM temporal branch only** | **0.024** | **−0.438** | **−0.302** |
+| LaBraM branch only, with BatchNorm | 0.022 | −0.440 | −0.320 |
 
 ### More people help
 
 - Refitting the best ridge on the training and validation scans together (17 people instead of 13), with the penalty still chosen on validation, raises it from 0.525 to 0.537 on the held-out scans. With 13 training people, data is a real limit.
+- Running now: the same test for NeuroBOLT. The shared model, at 16 s and at 24 s, trains on the validation scans too and stops at the epoch its training-only runs chose (4 and 5).
 
 ### Ensembles: NeuroBOLT adds little to the best ridge
 

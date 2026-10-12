@@ -264,9 +264,12 @@ def prepare_full_dataloader(args):
         for split, indices in (("train", train_ind), ("val", val_ind), ("test", test_ind)):
             if ss in indices:
                 # float32 per scan keeps peak memory near the final tensors' size; values are unchanged
-                eeg_data[split] += [epoch.astype(np.float32) for epoch in data_epoch["eeg"]]
-                fmri_data[split] += data_epoch["fmri"]
-                scan_sizes[split].append((scans[ss], len(data_epoch["eeg"])))
+                eeg_scan = [epoch.astype(np.float32) for epoch in data_epoch["eeg"]]
+                targets = (split, "train") if split == "val" and getattr(args, 'train_on_val', False) else (split,)
+                for target in targets:  # --train_on_val: validation scans also join the training set
+                    eeg_data[target] += eeg_scan
+                    fmri_data[target] += data_epoch["fmri"]
+                    scan_sizes[target].append((scans[ss], len(data_epoch["eeg"])))
                 break
     args.scan_sizes = scan_sizes
 
