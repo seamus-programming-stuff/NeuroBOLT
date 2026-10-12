@@ -103,11 +103,14 @@ class MSSEncoder(nn.Module):
             # hop_length=100,
             win_level=3,
             fusion="sum",
+            log_spec=False,
             **kwargs
     ):
         super().__init__()
 
         self.scale1 = scale1
+        # log1p-compress the STFT magnitudes, as band-power models use log power
+        self.log_spec = log_spec
         # self.hop_length = hop_length
         self.input_length = input_length
         self.win_level = win_level
@@ -156,7 +159,8 @@ class MSSEncoder(nn.Module):
             onesided=True,
             return_complex=True,
         )
-        return torch.abs(spectral)
+        magnitude = torch.abs(spectral)
+        return torch.log1p(magnitude) if self.log_spec else magnitude
 
     def forward(self, x, input_chans=None, n_channel_offset=0, perturb=False):
         """

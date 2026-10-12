@@ -221,6 +221,8 @@ def get_args():
                              "are linearly interpolated")
     parser.add_argument('--mss_fusion', default='sum', choices=['sum', 'softmax'],
                         help='how the spectral encoder combines its four STFT scales')
+    parser.add_argument('--mss_log', action='store_true', default=False,
+                        help='feed the spectral encoder log1p STFT magnitudes instead of raw magnitudes')
     parser.add_argument('--early_stop_patience', default=0, type=int,
                         help='stop after this many epochs without a new validation-MSE minimum (0: never)')
     parser.add_argument('--save_best_predictions', action='store_true', default=False,
@@ -273,6 +275,7 @@ def get_models(args):
             qkv_bias=args.qkv_bias,
             EEG_length=args.window_sec * 200,
             mss_fusion=args.mss_fusion,
+            mss_log=args.mss_log,
         )
     return model
 

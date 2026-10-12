@@ -268,7 +268,7 @@ class NeuroBOLTransformer(nn.Module):
                  attn_drop_rate=0.,
                  drop_path_rate=0., norm_layer=nn.LayerNorm, init_values=None,
                  use_abs_pos_emb=True, use_rel_pos_bias=False, use_shared_rel_pos_bias=False,
-                 use_mean_pooling=True, init_scale=0.001, mss_fusion="sum", **kwargs):
+                 use_mean_pooling=True, init_scale=0.001, mss_fusion="sum", mss_log=False, **kwargs):
         super().__init__()
         self.num_roi = num_roi
         self.num_features = self.embed_dim = embed_dim  # num_features for consistency with other models
@@ -312,7 +312,8 @@ class NeuroBOLTransformer(nn.Module):
         self.head = nn.Linear(embed_dim, num_roi) if num_roi > 0 else nn.Identity()
 
         self.mss_module = MSSEncoder(num_roi=num_roi, emb_size=embed_dim, n_channels=EEG_channel, num_heads=8, scale1=100,
-                                     input_length=EEG_length, win_level=win_level, fusion=mss_fusion)
+                                     input_length=EEG_length, win_level=win_level, fusion=mss_fusion,
+                                     log_spec=mss_log)
         self.head_act = nn.GELU()
 
         if self.pos_embed is not None:
