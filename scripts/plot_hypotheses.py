@@ -58,11 +58,16 @@ LABELS.update({
     "m7_win24_tv": "Shared model · 24 s window · train+val, stop at epoch 5",
     "m7_ld1": "Shared model · no layer-wise LR decay",
     "m7_spectral_win24": "Shared model · spectral branch only · 24 s window",
+    "m7w24_wd05": "Shared 24 s model · weight decay 0.5",
+    "m7w24_drop03": "Shared 24 s model · dropout and drop-path 0.3",
 })
 
 
 def baseline_for(arm, baseline="base"):
-    """Shared-model arms compare with the shared baseline, everything else with the per-ROI one."""
+    """Shared-model arms compare with the shared baseline (m7w24_* with the shared 24 s model),
+    everything else with the per-ROI one."""
+    if arm.startswith("m7w24_"):
+        return "m7_win24"
     return "multi7" if arm.startswith("m7_") else baseline
 
 
