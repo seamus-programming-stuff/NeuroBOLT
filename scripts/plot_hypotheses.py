@@ -51,6 +51,13 @@ LABELS.update({
     "m7_scratch": "Shared model · no pretraining", "m7_tmpbn": "Shared model · BatchNorm on LaBraM branch",
     "m7_temporal_bn": "Shared model · LaBraM branch only, BatchNorm",
     "ridge_fine_w24_sub12_tv": "Ridge · 1 Hz bins · 24 s / 12 lags · train+val",
+    "m7_temporal_ld1": "Shared model · LaBraM branch only, no layer decay",
+    "m7_temporal_scratch": "Shared model · LaBraM branch only, from scratch",
+    "m7_temporal_scratch_bn": "Shared model · LaBraM branch only, scratch + BatchNorm",
+    "m7_tv": "Shared model · train+val, stop at epoch 4",
+    "m7_win24_tv": "Shared model · 24 s window · train+val, stop at epoch 5",
+    "m7_ld1": "Shared model · no layer-wise LR decay",
+    "m7_spectral_win24": "Shared model · spectral branch only · 24 s window",
 })
 
 

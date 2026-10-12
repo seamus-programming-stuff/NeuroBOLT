@@ -70,6 +70,8 @@ def arm_rows(cells, seeds, baseline):
                         row["delta"], row["ci"] = mean, (mean - half, mean + half)
                     else:
                         row["delta_val"] = mean
+        if arm.endswith("_tv"):  # trained on the validation scans, so their scores there are in-sample
+            row["avg_val"] = row["delta_val"] = None
         rows.append(row)
     rows.sort(key=lambda r: (not r["complete"], -(r["avg_test"] or 0)))
     return rows

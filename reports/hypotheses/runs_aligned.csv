@@ -2694,6 +2694,699 @@ m7_temporal_bn,2,Precuneus anterior,test,sub21-scan01,0.2262198416755514,0.25858
 m7_temporal_bn,2,Putamen,test,sub21-scan01,-0.06748774255549327,0.2602407267512583,12,23,True
 m7_temporal_bn,2,Thalamus,test,sub21-scan01,0.031306946431866246,0.2524933882904417,12,23,True
 m7_temporal_bn,2,global signal clean,test,sub21-scan01,0.006325774683818001,0.24674925363177844,12,23,True
+m7_temporal_ld1,1,Cuneus,val,sub06-scan01,0.04954621125232117,0.29624763354626504,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,val,sub06-scan01,0.011040472924232034,0.23408052756704698,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,val,sub06-scan01,-0.041915665517754504,0.23673494633265513,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,val,sub06-scan01,0.005301015247160698,0.2717851360028337,24,30,True
+m7_temporal_ld1,1,Putamen,val,sub06-scan01,0.005197536190722932,0.2175188497850875,24,30,True
+m7_temporal_ld1,1,Thalamus,val,sub06-scan01,0.026773398741293017,0.27831138933079913,24,30,True
+m7_temporal_ld1,1,global signal clean,val,sub06-scan01,0.02257633931020402,0.257825111296797,24,30,True
+m7_temporal_ld1,1,Cuneus,val,sub13-scan01,-0.059434278936436165,0.2413895267708466,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,val,sub13-scan01,-0.0326995386482434,0.25001062082571807,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,val,sub13-scan01,0.03798014005884614,0.27247558944822453,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,val,sub13-scan01,0.03567560225455927,0.30212754245359846,24,30,True
+m7_temporal_ld1,1,Putamen,val,sub13-scan01,-0.054723706995016344,0.24820718816887877,24,30,True
+m7_temporal_ld1,1,Thalamus,val,sub13-scan01,0.004467927685632153,0.2649547499438391,24,30,True
+m7_temporal_ld1,1,global signal clean,val,sub13-scan01,-0.0001665491878833714,0.2716727851124998,24,30,True
+m7_temporal_ld1,1,Cuneus,val,sub13-scan02,-0.03269426082185195,0.28570633606691737,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,val,sub13-scan02,-0.018203669043192042,0.24738336383059228,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,val,sub13-scan02,-0.017714400453680175,0.26083529219591706,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,val,sub13-scan02,-0.0013489104618060546,0.270207892519955,24,30,True
+m7_temporal_ld1,1,Putamen,val,sub13-scan02,-0.07910212251877191,0.23495702500836624,24,30,True
+m7_temporal_ld1,1,Thalamus,val,sub13-scan02,0.014281875234624578,0.2529811413679585,24,30,True
+m7_temporal_ld1,1,global signal clean,val,sub13-scan02,-0.0003908502848847077,0.2772462266964806,24,30,True
+m7_temporal_ld1,1,Cuneus,val,sub15-scan01,0.07726904966183334,0.2536035493088999,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,val,sub15-scan01,0.1264492923869215,0.2684798951007137,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,val,sub15-scan01,0.05626963895193181,0.2628892370120881,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,val,sub15-scan01,0.07277690590978743,0.3072366276968028,24,30,True
+m7_temporal_ld1,1,Putamen,val,sub15-scan01,-0.048435275864711934,0.24206745942258098,24,30,True
+m7_temporal_ld1,1,Thalamus,val,sub15-scan01,-0.014416588231940634,0.27203799891399616,24,30,True
+m7_temporal_ld1,1,global signal clean,val,sub15-scan01,0.1372962755785184,0.2782930964536446,24,30,True
+m7_temporal_ld1,1,Cuneus,val,sub22-scan01,0.12775813704507774,0.3027505778931788,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,val,sub22-scan01,0.01884408682168209,0.2520524823904206,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,val,sub22-scan01,-0.13953716860028226,0.27825617141001263,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,val,sub22-scan01,-0.07265138867902002,0.2878718814918186,24,30,True
+m7_temporal_ld1,1,Putamen,val,sub22-scan01,0.08375492315144145,0.27386565711106203,24,30,True
+m7_temporal_ld1,1,Thalamus,val,sub22-scan01,0.08607076552219332,0.2667348929199882,24,30,True
+m7_temporal_ld1,1,global signal clean,val,sub22-scan01,-0.0164334985120085,0.25829605621899115,24,30,True
+m7_temporal_ld1,1,Cuneus,test,sub07-scan01,0.25578631833057125,0.26797059732556044,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,test,sub07-scan01,0.18477199665797542,0.2424225533464856,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,test,sub07-scan01,0.2013778468895194,0.27537417136388087,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,test,sub07-scan01,0.2472996053136734,0.26277397900944954,24,30,True
+m7_temporal_ld1,1,Putamen,test,sub07-scan01,-0.09795553430988331,0.26069316895271427,24,30,True
+m7_temporal_ld1,1,Thalamus,test,sub07-scan01,0.02307830903224972,0.2671331353553906,24,30,True
+m7_temporal_ld1,1,global signal clean,test,sub07-scan01,0.19415217706081608,0.24532934748157065,24,30,True
+m7_temporal_ld1,1,Cuneus,test,sub07-scan02,0.09808204659606351,0.2676286978047613,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,test,sub07-scan02,0.11017114922239155,0.2662760310410943,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,test,sub07-scan02,0.0727412010545905,0.26824449502493797,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,test,sub07-scan02,0.08873146311279516,0.24873964715181862,24,30,True
+m7_temporal_ld1,1,Putamen,test,sub07-scan02,0.01585032068044927,0.2984524692252921,24,30,True
+m7_temporal_ld1,1,Thalamus,test,sub07-scan02,-0.035991015591680234,0.26521034587279135,24,30,True
+m7_temporal_ld1,1,global signal clean,test,sub07-scan02,0.08679467816705776,0.25647446442331256,24,30,True
+m7_temporal_ld1,1,Cuneus,test,sub11-scan01,0.2805478171014257,0.23311871948148175,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,test,sub11-scan01,0.17006998460771136,0.22523800038722677,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,test,sub11-scan01,0.08509822698419009,0.24041662723705723,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,test,sub11-scan01,0.1057230569163854,0.23245529492665995,24,30,True
+m7_temporal_ld1,1,Putamen,test,sub11-scan01,-0.032312118076802974,0.2538531801468018,24,30,True
+m7_temporal_ld1,1,Thalamus,test,sub11-scan01,0.08659670028790545,0.24737057966899526,24,30,True
+m7_temporal_ld1,1,global signal clean,test,sub11-scan01,0.15884671055131505,0.23674496986145713,24,30,True
+m7_temporal_ld1,1,Cuneus,test,sub16-scan01,0.10853071041405066,0.27491844144657696,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,test,sub16-scan01,0.0812943996098365,0.2651816504738701,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,test,sub16-scan01,0.054634905216451084,0.2682387543371052,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,test,sub16-scan01,0.0054488513248388245,0.2625571079807702,24,30,True
+m7_temporal_ld1,1,Putamen,test,sub16-scan01,0.013672588507564108,0.273378643171227,24,30,True
+m7_temporal_ld1,1,Thalamus,test,sub16-scan01,0.06790760642144432,0.26085648342145296,24,30,True
+m7_temporal_ld1,1,global signal clean,test,sub16-scan01,0.0744127785918275,0.2684547165103049,24,30,True
+m7_temporal_ld1,1,Cuneus,test,sub18-scan01,0.07844756466121017,0.23529685184813207,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,test,sub18-scan01,0.03406881276968283,0.2171542493092341,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,test,sub18-scan01,0.006813333662604144,0.2676635561583858,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,test,sub18-scan01,0.028021024917013585,0.2311457658169901,24,30,True
+m7_temporal_ld1,1,Putamen,test,sub18-scan01,-0.09394053056149723,0.24529615819332687,24,30,True
+m7_temporal_ld1,1,Thalamus,test,sub18-scan01,-0.03066783073722483,0.26802926528796717,24,30,True
+m7_temporal_ld1,1,global signal clean,test,sub18-scan01,0.049959914430333735,0.257497226326196,24,30,True
+m7_temporal_ld1,1,Cuneus,test,sub21-scan01,0.23529412906588099,0.23166762277194541,24,30,True
+m7_temporal_ld1,1,Heschl’s gyrus,test,sub21-scan01,0.10893908674672845,0.2585596771663539,24,30,True
+m7_temporal_ld1,1,Middle frontal gyrus anterior,test,sub21-scan01,0.09721667702557077,0.2499377382351728,24,30,True
+m7_temporal_ld1,1,Precuneus anterior,test,sub21-scan01,0.15516357257008964,0.2570625515263213,24,30,True
+m7_temporal_ld1,1,Putamen,test,sub21-scan01,0.03983523072667957,0.2600845712013524,24,30,True
+m7_temporal_ld1,1,Thalamus,test,sub21-scan01,-0.021524103166996985,0.25280962827717945,24,30,True
+m7_temporal_ld1,1,global signal clean,test,sub21-scan01,0.1764137134904762,0.24417548405881806,24,30,True
+m7_temporal_ld1,12345,Cuneus,val,sub06-scan01,0.18607703643550808,0.29651728288925927,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,val,sub06-scan01,0.09302098683693266,0.23427772705447544,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,val,sub06-scan01,0.045837084172048466,0.23676013852374567,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,val,sub06-scan01,0.0850905789443128,0.2725429595276654,7,18,True
+m7_temporal_ld1,12345,Putamen,val,sub06-scan01,-0.06721297707271326,0.21797031327886016,7,18,True
+m7_temporal_ld1,12345,Thalamus,val,sub06-scan01,0.03583458766093486,0.2786794882566026,7,18,True
+m7_temporal_ld1,12345,global signal clean,val,sub06-scan01,0.11432435833981953,0.2587112276944564,7,18,True
+m7_temporal_ld1,12345,Cuneus,val,sub13-scan01,0.10281726317703752,0.24029401840107378,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,val,sub13-scan01,0.04427286390916373,0.2499157943443769,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,val,sub13-scan01,0.025849132234484172,0.2728434483146858,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,val,sub13-scan01,-0.05546058126636599,0.30308149311184673,7,18,True
+m7_temporal_ld1,12345,Putamen,val,sub13-scan01,-0.06422509874622616,0.24835856598720896,7,18,True
+m7_temporal_ld1,12345,Thalamus,val,sub13-scan01,-0.07194694563792313,0.2651841082256562,7,18,True
+m7_temporal_ld1,12345,global signal clean,val,sub13-scan01,0.09387268717223844,0.2709124996189973,7,18,True
+m7_temporal_ld1,12345,Cuneus,val,sub13-scan02,-0.014817015344480055,0.28607128960465866,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,val,sub13-scan02,0.08150123978343608,0.24724769227765114,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,val,sub13-scan02,0.07775573681210576,0.26060021928212057,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,val,sub13-scan02,0.07133324354348518,0.27004948136641216,7,18,True
+m7_temporal_ld1,12345,Putamen,val,sub13-scan02,-0.08353317196165704,0.2350846420596988,7,18,True
+m7_temporal_ld1,12345,Thalamus,val,sub13-scan02,-0.07035129253899929,0.25326094831269436,7,18,True
+m7_temporal_ld1,12345,global signal clean,val,sub13-scan02,0.05320701068463036,0.2772647451538673,7,18,True
+m7_temporal_ld1,12345,Cuneus,val,sub15-scan01,0.1322853541136274,0.25417988976228245,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,val,sub15-scan01,0.05018267167837808,0.26910007803676916,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,val,sub15-scan01,0.056781734638305534,0.2631897689369544,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,val,sub15-scan01,0.0537086569436513,0.30861048702261523,7,18,True
+m7_temporal_ld1,12345,Putamen,val,sub15-scan01,-0.03982091366534367,0.24246082559076515,7,18,True
+m7_temporal_ld1,12345,Thalamus,val,sub15-scan01,0.05280416368526105,0.2719748955446515,7,18,True
+m7_temporal_ld1,12345,global signal clean,val,sub15-scan01,0.1245822077072374,0.2804447123152358,7,18,True
+m7_temporal_ld1,12345,Cuneus,val,sub22-scan01,0.13174912604079092,0.3033516431461616,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,val,sub22-scan01,0.08343285428872232,0.25193737868067945,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,val,sub22-scan01,-0.0899675317221765,0.27790812193821024,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,val,sub22-scan01,-0.0029738398353503833,0.2871391465442809,7,18,True
+m7_temporal_ld1,12345,Putamen,val,sub22-scan01,0.0851628806916395,0.2738040186491611,7,18,True
+m7_temporal_ld1,12345,Thalamus,val,sub22-scan01,0.11446314634864477,0.2671286308616392,7,18,True
+m7_temporal_ld1,12345,global signal clean,val,sub22-scan01,0.10675749279713015,0.25690751854413785,7,18,True
+m7_temporal_ld1,12345,Cuneus,test,sub07-scan01,0.04702072194774965,0.27118397211708506,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,test,sub07-scan01,-0.04025696032878221,0.24326066736047097,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,test,sub07-scan01,0.003146095359405405,0.2761830177612802,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,test,sub07-scan01,-0.012748751132884277,0.2652935471889317,7,18,True
+m7_temporal_ld1,12345,Putamen,test,sub07-scan01,0.035032575837478666,0.26089959151807735,7,18,True
+m7_temporal_ld1,12345,Thalamus,test,sub07-scan01,0.016172576602909938,0.2674241904929726,7,18,True
+m7_temporal_ld1,12345,global signal clean,test,sub07-scan01,-0.06501906372647658,0.24809521248894134,7,18,True
+m7_temporal_ld1,12345,Cuneus,test,sub07-scan02,0.10385960958445917,0.26785217338566575,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,test,sub07-scan02,0.04834555763897557,0.2664683759897678,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,test,sub07-scan02,0.06377117317472855,0.2682563546300186,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,test,sub07-scan02,0.02393594128050411,0.24908820597026052,7,18,True
+m7_temporal_ld1,12345,Putamen,test,sub07-scan02,-0.08348968283713935,0.29850399668443545,7,18,True
+m7_temporal_ld1,12345,Thalamus,test,sub07-scan02,-0.022524064088700484,0.2650357352532762,7,18,True
+m7_temporal_ld1,12345,global signal clean,test,sub07-scan02,0.05070475260213577,0.2567366625090712,7,18,True
+m7_temporal_ld1,12345,Cuneus,test,sub11-scan01,0.3005976789756459,0.23547174299196727,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,test,sub11-scan01,0.22050487444224506,0.22575324812776187,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,test,sub11-scan01,0.04375488074797318,0.24070916702001874,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,test,sub11-scan01,0.10156811555834945,0.23339559176503463,7,18,True
+m7_temporal_ld1,12345,Putamen,test,sub11-scan01,-0.042593926869077835,0.25396360230468956,7,18,True
+m7_temporal_ld1,12345,Thalamus,test,sub11-scan01,0.1516030579659373,0.24772266589269834,7,18,True
+m7_temporal_ld1,12345,global signal clean,test,sub11-scan01,0.22750814764465335,0.23796981806296127,7,18,True
+m7_temporal_ld1,12345,Cuneus,test,sub16-scan01,0.007184169532575585,0.2755065385037018,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,test,sub16-scan01,0.001461010305698272,0.2653604115282042,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,test,sub16-scan01,-0.010650090786289364,0.26843770594138266,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,test,sub16-scan01,-0.13154360744757215,0.26296603506267524,7,18,True
+m7_temporal_ld1,12345,Putamen,test,sub16-scan01,0.07235705746112056,0.27339460519750675,7,18,True
+m7_temporal_ld1,12345,Thalamus,test,sub16-scan01,0.08007744875577699,0.26104030553930546,7,18,True
+m7_temporal_ld1,12345,global signal clean,test,sub16-scan01,-0.06160525112448316,0.26895308234604837,7,18,True
+m7_temporal_ld1,12345,Cuneus,test,sub18-scan01,0.05113505722966401,0.2366253602056305,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,test,sub18-scan01,0.09552893770097466,0.21729224623749346,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,test,sub18-scan01,0.13687237534483881,0.26758692047176885,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,test,sub18-scan01,0.06230305897143342,0.23211627938440074,7,18,True
+m7_temporal_ld1,12345,Putamen,test,sub18-scan01,-0.07700869431630844,0.24547117294921658,7,18,True
+m7_temporal_ld1,12345,Thalamus,test,sub18-scan01,-0.09655510343723799,0.2680146884083088,7,18,True
+m7_temporal_ld1,12345,global signal clean,test,sub18-scan01,0.08493174938733865,0.25844893246253536,7,18,True
+m7_temporal_ld1,12345,Cuneus,test,sub21-scan01,0.17495377592302835,0.23452127271180592,7,18,True
+m7_temporal_ld1,12345,Heschl’s gyrus,test,sub21-scan01,0.19669013210063913,0.2587564982669008,7,18,True
+m7_temporal_ld1,12345,Middle frontal gyrus anterior,test,sub21-scan01,0.21326337053928418,0.24984408140869774,7,18,True
+m7_temporal_ld1,12345,Precuneus anterior,test,sub21-scan01,0.24842107575545083,0.25784384782206543,7,18,True
+m7_temporal_ld1,12345,Putamen,test,sub21-scan01,-0.09732976274694712,0.2600924475222743,7,18,True
+m7_temporal_ld1,12345,Thalamus,test,sub21-scan01,-0.09283475624252086,0.25296167723449564,7,18,True
+m7_temporal_ld1,12345,global signal clean,test,sub21-scan01,0.25238538508232206,0.24593582444600415,7,18,True
+m7_temporal_ld1,2,Cuneus,val,sub06-scan01,0.32177213829962126,0.2711363492526786,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,val,sub06-scan01,0.3831833845918921,0.2062211274316501,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,val,sub06-scan01,0.2757825912300918,0.22212858291314252,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,val,sub06-scan01,0.39031591659837506,0.23731567342007023,18,29,True
+m7_temporal_ld1,2,Putamen,val,sub06-scan01,0.22913026977973372,0.20896066518375142,18,29,True
+m7_temporal_ld1,2,Thalamus,val,sub06-scan01,0.27567182411627794,0.2633493581642794,18,29,True
+m7_temporal_ld1,2,global signal clean,val,sub06-scan01,0.4245943850515471,0.2196137947970624,18,29,True
+m7_temporal_ld1,2,Cuneus,val,sub13-scan01,0.13488742759965425,0.24033407995083197,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,val,sub13-scan01,0.1952207927096896,0.24405740883744448,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,val,sub13-scan01,0.09958049500097234,0.2748725962465897,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,val,sub13-scan01,0.14699711794238535,0.30055356404288464,18,29,True
+m7_temporal_ld1,2,Putamen,val,sub13-scan01,0.11378801342804745,0.2470017920375318,18,29,True
+m7_temporal_ld1,2,Thalamus,val,sub13-scan01,0.20584469290918547,0.2543764293657233,18,29,True
+m7_temporal_ld1,2,global signal clean,val,sub13-scan01,0.218893263694323,0.26123424944473345,18,29,True
+m7_temporal_ld1,2,Cuneus,val,sub13-scan02,0.06852261633268694,0.2951288915471518,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,val,sub13-scan02,0.3066895509750889,0.22456359273570062,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,val,sub13-scan02,0.1669734554360932,0.2559718555977394,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,val,sub13-scan02,0.12876278951973594,0.2749858655260996,18,29,True
+m7_temporal_ld1,2,Putamen,val,sub13-scan02,0.26334584180281867,0.21882203189802063,18,29,True
+m7_temporal_ld1,2,Thalamus,val,sub13-scan02,0.2966080472603072,0.23396821944045948,18,29,True
+m7_temporal_ld1,2,global signal clean,val,sub13-scan02,0.25558640689384593,0.26162531403383216,18,29,True
+m7_temporal_ld1,2,Cuneus,val,sub15-scan01,0.180056621383153,0.24958971315853434,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,val,sub15-scan01,0.34016717946669645,0.23896308752518292,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,val,sub15-scan01,0.18087487363161298,0.2569221855673072,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,val,sub15-scan01,0.23652567410609063,0.29330692957535204,18,29,True
+m7_temporal_ld1,2,Putamen,val,sub15-scan01,0.17325818620747846,0.23601354110118725,18,29,True
+m7_temporal_ld1,2,Thalamus,val,sub15-scan01,0.13536121248271202,0.2674623413434974,18,29,True
+m7_temporal_ld1,2,global signal clean,val,sub15-scan01,0.28009444372536,0.261217134884832,18,29,True
+m7_temporal_ld1,2,Cuneus,val,sub22-scan01,0.26064104310110314,0.2845071390854256,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,val,sub22-scan01,0.33105308084049767,0.22753194110740516,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,val,sub22-scan01,0.13549958311572602,0.2814195436859528,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,val,sub22-scan01,0.22515546036882647,0.28071840933342285,18,29,True
+m7_temporal_ld1,2,Putamen,val,sub22-scan01,0.20176353354551244,0.2636524622964518,18,29,True
+m7_temporal_ld1,2,Thalamus,val,sub22-scan01,0.10491263654315919,0.26703360955437055,18,29,True
+m7_temporal_ld1,2,global signal clean,val,sub22-scan01,0.3321910144858882,0.23327632480720362,18,29,True
+m7_temporal_ld1,2,Cuneus,test,sub07-scan01,0.27196980873853466,0.25502592043001576,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,test,sub07-scan01,0.44258515147876576,0.199403770962756,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,test,sub07-scan01,0.46349895627591875,0.2247744419315691,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,test,sub07-scan01,0.47553511935868975,0.20955081554218435,18,29,True
+m7_temporal_ld1,2,Putamen,test,sub07-scan01,0.4199035963122607,0.22245987034659417,18,29,True
+m7_temporal_ld1,2,Thalamus,test,sub07-scan01,0.32626082350134433,0.24341997813795202,18,29,True
+m7_temporal_ld1,2,global signal clean,test,sub07-scan01,0.531623643758122,0.182762603570355,18,29,True
+m7_temporal_ld1,2,Cuneus,test,sub07-scan02,0.2916439528894226,0.24928838595852626,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,test,sub07-scan02,0.4117522465829649,0.22704362786697227,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,test,sub07-scan02,0.44797494190220866,0.22362562701276806,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,test,sub07-scan02,0.45984369662642177,0.2024454698091405,18,29,True
+m7_temporal_ld1,2,Putamen,test,sub07-scan02,0.3291433125928256,0.27099999348637516,18,29,True
+m7_temporal_ld1,2,Thalamus,test,sub07-scan02,0.4094287617869178,0.23485861630131244,18,29,True
+m7_temporal_ld1,2,global signal clean,test,sub07-scan02,0.4695679579381508,0.20688617594503392,18,29,True
+m7_temporal_ld1,2,Cuneus,test,sub11-scan01,0.39742615001268317,0.199334823688775,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,test,sub11-scan01,0.3695358919307725,0.19733060179477266,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,test,sub11-scan01,0.280837934747501,0.2230453808297884,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,test,sub11-scan01,0.29461619008781076,0.21785676544993252,18,29,True
+m7_temporal_ld1,2,Putamen,test,sub11-scan01,0.24532507833273368,0.23911722777923644,18,29,True
+m7_temporal_ld1,2,Thalamus,test,sub11-scan01,0.25946800262414643,0.2312471538574823,18,29,True
+m7_temporal_ld1,2,global signal clean,test,sub11-scan01,0.3559336691527334,0.21225216339492026,18,29,True
+m7_temporal_ld1,2,Cuneus,test,sub16-scan01,0.49889821016351565,0.21428598395899257,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,test,sub16-scan01,0.4477871361118364,0.2189062070892024,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,test,sub16-scan01,0.38633524443050293,0.23199216771168898,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,test,sub16-scan01,0.501044836309551,0.20286980831916998,18,29,True
+m7_temporal_ld1,2,Putamen,test,sub16-scan01,0.12646912760724408,0.2779956801672681,18,29,True
+m7_temporal_ld1,2,Thalamus,test,sub16-scan01,0.41090159374276647,0.22605841244017683,18,29,True
+m7_temporal_ld1,2,global signal clean,test,sub16-scan01,0.5790259331733006,0.18711752509778448,18,29,True
+m7_temporal_ld1,2,Cuneus,test,sub18-scan01,0.3909900764785664,0.20881749656155293,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,test,sub18-scan01,0.5220575472704999,0.16801213078898922,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,test,sub18-scan01,0.3748427380549012,0.23596649812480194,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,test,sub18-scan01,0.3573575065498211,0.22138057309067707,18,29,True
+m7_temporal_ld1,2,Putamen,test,sub18-scan01,0.538059274053624,0.1854160767068158,18,29,True
+m7_temporal_ld1,2,Thalamus,test,sub18-scan01,0.3928579673165602,0.23202798989311083,18,29,True
+m7_temporal_ld1,2,global signal clean,test,sub18-scan01,0.42678730077199106,0.2308401936423614,18,29,True
+m7_temporal_ld1,2,Cuneus,test,sub21-scan01,0.5231218360292781,0.173343593428697,18,29,True
+m7_temporal_ld1,2,Heschl’s gyrus,test,sub21-scan01,0.43098800583454144,0.21319506591483672,18,29,True
+m7_temporal_ld1,2,Middle frontal gyrus anterior,test,sub21-scan01,0.34247043688572826,0.2222945503469117,18,29,True
+m7_temporal_ld1,2,Precuneus anterior,test,sub21-scan01,0.44771010522209564,0.20819270855176478,18,29,True
+m7_temporal_ld1,2,Putamen,test,sub21-scan01,0.1395374661868655,0.2632064265940046,18,29,True
+m7_temporal_ld1,2,Thalamus,test,sub21-scan01,0.16417765503419215,0.2477559736048174,18,29,True
+m7_temporal_ld1,2,global signal clean,test,sub21-scan01,0.4481412385203346,0.20211801684223324,18,29,True
+m7_temporal_scratch,1,Cuneus,val,sub06-scan01,0.16397003908687371,0.2978841021043221,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,val,sub06-scan01,0.08541895885599789,0.23468689997955533,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,val,sub06-scan01,-0.05932041272171873,0.2373391751594694,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,val,sub06-scan01,0.014655383001563127,0.2741274175431233,0,11,True
+m7_temporal_scratch,1,Putamen,val,sub06-scan01,-0.002200374623957179,0.21814414205522095,0,11,True
+m7_temporal_scratch,1,Thalamus,val,sub06-scan01,0.015232427143362277,0.27895176416340106,0,11,True
+m7_temporal_scratch,1,global signal clean,val,sub06-scan01,0.06229307680054995,0.26019181878645836,0,11,True
+m7_temporal_scratch,1,Cuneus,val,sub13-scan01,0.019629920084242664,0.24111838395505167,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,val,sub13-scan01,0.009162679553304224,0.25017586966365524,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,val,sub13-scan01,-0.023166154330119912,0.27325186464205886,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,val,sub13-scan01,0.026420959369163846,0.303346105448488,0,11,True
+m7_temporal_scratch,1,Putamen,val,sub13-scan01,-0.07899418420286364,0.24852347426447974,0,11,True
+m7_temporal_scratch,1,Thalamus,val,sub13-scan01,-0.113463494339455,0.2651936822219339,0,11,True
+m7_temporal_scratch,1,global signal clean,val,sub13-scan01,-0.015711467056987456,0.27174087616614584,0,11,True
+m7_temporal_scratch,1,Cuneus,val,sub13-scan02,-0.025440382249356117,0.2864936476283217,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,val,sub13-scan02,-0.035020420622835294,0.247661599795283,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,val,sub13-scan02,-0.07105971451483141,0.26111107466897854,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,val,sub13-scan02,0.04531848554531585,0.2708898033412698,0,11,True
+m7_temporal_scratch,1,Putamen,val,sub13-scan02,-0.03234406374169228,0.2351186923364936,0,11,True
+m7_temporal_scratch,1,Thalamus,val,sub13-scan02,-0.052523001112338416,0.25332359228437634,0,11,True
+m7_temporal_scratch,1,global signal clean,val,sub13-scan02,-0.0585351443283986,0.2781507742478528,0,11,True
+m7_temporal_scratch,1,Cuneus,val,sub15-scan01,-0.01716710977046347,0.2553362294643802,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,val,sub15-scan01,-0.1240532258031662,0.26985908193502156,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,val,sub15-scan01,-0.10025114667458833,0.26385550540757796,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,val,sub15-scan01,-0.03141434388166918,0.3100630608438412,0,11,True
+m7_temporal_scratch,1,Putamen,val,sub15-scan01,-0.06372698747832256,0.2428190997600207,0,11,True
+m7_temporal_scratch,1,Thalamus,val,sub15-scan01,-0.038924008441025344,0.272290732126631,0,11,True
+m7_temporal_scratch,1,global signal clean,val,sub15-scan01,-0.028798145119195123,0.2819897913903498,0,11,True
+m7_temporal_scratch,1,Cuneus,val,sub22-scan01,-0.04029640258408588,0.3038068272695324,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,val,sub22-scan01,-0.06572651722594536,0.2521264594521548,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,val,sub22-scan01,-0.05120797860284016,0.27797311729925867,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,val,sub22-scan01,-0.11023391552827348,0.2879803345186269,0,11,True
+m7_temporal_scratch,1,Putamen,val,sub22-scan01,-0.07047479586196037,0.27407280767521897,0,11,True
+m7_temporal_scratch,1,Thalamus,val,sub22-scan01,-0.012851876004156404,0.2673595279989305,0,11,True
+m7_temporal_scratch,1,global signal clean,val,sub22-scan01,-0.1185322493744424,0.25740493699476785,0,11,True
+m7_temporal_scratch,1,Cuneus,test,sub07-scan01,0.12657898081164837,0.2716819539797944,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,test,sub07-scan01,0.03781005761317984,0.24341756588348348,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,test,sub07-scan01,0.010182878245306573,0.2764916770165106,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,test,sub07-scan01,0.09537748650346048,0.26587935293438775,0,11,True
+m7_temporal_scratch,1,Putamen,test,sub07-scan01,-0.0738999024232061,0.26132315926754957,0,11,True
+m7_temporal_scratch,1,Thalamus,test,sub07-scan01,-0.07719676422354123,0.2677333608015825,0,11,True
+m7_temporal_scratch,1,global signal clean,test,sub07-scan01,0.06333569192359549,0.24854145384693715,0,11,True
+m7_temporal_scratch,1,Cuneus,test,sub07-scan02,0.11449045857981492,0.26820481862817097,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,test,sub07-scan02,0.1695812791574446,0.2660382561087897,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,test,sub07-scan02,0.06144382424151393,0.26844564911628527,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,test,sub07-scan02,0.12062881456744447,0.24941946971789553,0,11,True
+m7_temporal_scratch,1,Putamen,test,sub07-scan02,0.06426103390828672,0.29823751238234997,0,11,True
+m7_temporal_scratch,1,Thalamus,test,sub07-scan02,0.06370987054648339,0.2648517588499871,0,11,True
+m7_temporal_scratch,1,global signal clean,test,sub07-scan02,0.09327029607664246,0.25701942527750016,0,11,True
+m7_temporal_scratch,1,Cuneus,test,sub11-scan01,0.11412010235688161,0.23656376383013658,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,test,sub11-scan01,-0.06401780891440964,0.22638508516431932,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,test,sub11-scan01,-0.0934935432518728,0.2412412376567132,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,test,sub11-scan01,-0.060415916519881985,0.23478451547116166,0,11,True
+m7_temporal_scratch,1,Putamen,test,sub11-scan01,-0.022281987626241166,0.2540718235857207,0,11,True
+m7_temporal_scratch,1,Thalamus,test,sub11-scan01,0.134190512578514,0.24774685473666422,0,11,True
+m7_temporal_scratch,1,global signal clean,test,sub11-scan01,-0.022706030505477405,0.23920229168769006,0,11,True
+m7_temporal_scratch,1,Cuneus,test,sub16-scan01,0.2059282618526562,0.27551053004007997,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,test,sub16-scan01,0.15844403862569068,0.2650252260274687,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,test,sub16-scan01,0.06987445050888147,0.26856013162346193,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,test,sub16-scan01,0.137109700224147,0.2628923003018584,0,11,True
+m7_temporal_scratch,1,Putamen,test,sub16-scan01,0.04120652742601905,0.2734256132978402,0,11,True
+m7_temporal_scratch,1,Thalamus,test,sub16-scan01,0.09334175149548755,0.2610974089183233,0,11,True
+m7_temporal_scratch,1,global signal clean,test,sub16-scan01,0.22448462011657985,0.2686954273189553,0,11,True
+m7_temporal_scratch,1,Cuneus,test,sub18-scan01,0.05775503876178019,0.23739244737634088,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,test,sub18-scan01,0.06958785599618698,0.21754839636206916,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,test,sub18-scan01,0.059288832873470525,0.2682625162993449,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,test,sub18-scan01,0.1315560574890037,0.23318619695798262,0,11,True
+m7_temporal_scratch,1,Putamen,test,sub18-scan01,-0.058970849496057326,0.24567241776945745,0,11,True
+m7_temporal_scratch,1,Thalamus,test,sub18-scan01,0.0838295723923234,0.26784352473598455,0,11,True
+m7_temporal_scratch,1,global signal clean,test,sub18-scan01,0.08516671010706012,0.25935778195512404,0,11,True
+m7_temporal_scratch,1,Cuneus,test,sub21-scan01,0.1752304847646141,0.23537208020271852,0,11,True
+m7_temporal_scratch,1,Heschl’s gyrus,test,sub21-scan01,0.12199443518837849,0.25889406717283414,0,11,True
+m7_temporal_scratch,1,Middle frontal gyrus anterior,test,sub21-scan01,0.0816783218811261,0.25061408733882146,0,11,True
+m7_temporal_scratch,1,Precuneus anterior,test,sub21-scan01,0.07529532849635374,0.25924633061420854,0,11,True
+m7_temporal_scratch,1,Putamen,test,sub21-scan01,0.07561959086784285,0.25980831219505385,0,11,True
+m7_temporal_scratch,1,Thalamus,test,sub21-scan01,0.07561031921782418,0.2527313033089775,0,11,True
+m7_temporal_scratch,1,global signal clean,test,sub21-scan01,0.10201466849230523,0.24710548217493566,0,11,True
+m7_temporal_scratch,12345,Cuneus,val,sub06-scan01,0.37036817164467223,0.2566641585723369,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,val,sub06-scan01,0.3222281853757231,0.21018091805250408,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,val,sub06-scan01,0.24684145065758764,0.22238303833662143,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,val,sub06-scan01,0.3952077116057994,0.23231499352067164,8,19,True
+m7_temporal_scratch,12345,Putamen,val,sub06-scan01,0.19141258678141593,0.2096301330817859,8,19,True
+m7_temporal_scratch,12345,Thalamus,val,sub06-scan01,0.24768173795125112,0.2631550355265232,8,19,True
+m7_temporal_scratch,12345,global signal clean,val,sub06-scan01,0.3950237512110249,0.2176368175490046,8,19,True
+m7_temporal_scratch,12345,Cuneus,val,sub13-scan01,0.09290505617853763,0.24839484048123214,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,val,sub13-scan01,0.06071901250883553,0.26121880640637385,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,val,sub13-scan01,0.0858145048652078,0.2727767487724063,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,val,sub13-scan01,0.003502755708391824,0.31570401094072087,8,19,True
+m7_temporal_scratch,12345,Putamen,val,sub13-scan01,0.1123963894799836,0.24583874425433402,8,19,True
+m7_temporal_scratch,12345,Thalamus,val,sub13-scan01,0.014698886138955595,0.26996888676145003,8,19,True
+m7_temporal_scratch,12345,global signal clean,val,sub13-scan01,0.09973128460075997,0.2779349665241265,8,19,True
+m7_temporal_scratch,12345,Cuneus,val,sub13-scan02,0.07667678501521295,0.29232156960270145,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,val,sub13-scan02,0.17241480459943695,0.24225698003935722,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,val,sub13-scan02,0.04353479055688458,0.2653542035401721,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,val,sub13-scan02,0.06446892298796233,0.27453875022449914,8,19,True
+m7_temporal_scratch,12345,Putamen,val,sub13-scan02,0.10146216498239022,0.23361609310165543,8,19,True
+m7_temporal_scratch,12345,Thalamus,val,sub13-scan02,0.04292175659472275,0.2558482439701355,8,19,True
+m7_temporal_scratch,12345,global signal clean,val,sub13-scan02,0.08607018427659303,0.2837695872761258,8,19,True
+m7_temporal_scratch,12345,Cuneus,val,sub15-scan01,0.30628262859341615,0.23141000021512956,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,val,sub15-scan01,0.2953324871173268,0.2490930845209114,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,val,sub15-scan01,0.17382598002587205,0.2568490296279395,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,val,sub15-scan01,0.1673433233347985,0.30564391045740785,8,19,True
+m7_temporal_scratch,12345,Putamen,val,sub15-scan01,0.09423948841781922,0.24378780136975156,8,19,True
+m7_temporal_scratch,12345,Thalamus,val,sub15-scan01,0.09213745106712767,0.2712768691040567,8,19,True
+m7_temporal_scratch,12345,global signal clean,val,sub15-scan01,0.3003092646686872,0.2579742180786492,8,19,True
+m7_temporal_scratch,12345,Cuneus,val,sub22-scan01,0.21012822237747733,0.29229784670169334,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,val,sub22-scan01,0.16970727251030396,0.24795498317354508,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,val,sub22-scan01,0.04192453780279873,0.2825593356153197,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,val,sub22-scan01,0.1011479599797959,0.2872777606264248,8,19,True
+m7_temporal_scratch,12345,Putamen,val,sub22-scan01,0.10542408643585455,0.2714234039573466,8,19,True
+m7_temporal_scratch,12345,Thalamus,val,sub22-scan01,0.1177007001691654,0.2656868881662261,8,19,True
+m7_temporal_scratch,12345,global signal clean,val,sub22-scan01,0.13495217586544406,0.25943712053050044,8,19,True
+m7_temporal_scratch,12345,Cuneus,test,sub07-scan01,0.31599701893286086,0.24668284802360804,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,test,sub07-scan01,0.3581757631597402,0.21390188594661397,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,test,sub07-scan01,0.3783565633543685,0.24130304721695972,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,test,sub07-scan01,0.42726463139417753,0.22126609945632053,8,19,True
+m7_temporal_scratch,12345,Putamen,test,sub07-scan01,0.18330332797030421,0.25179034261160826,8,19,True
+m7_temporal_scratch,12345,Thalamus,test,sub07-scan01,0.19199753219390991,0.25809224479745163,8,19,True
+m7_temporal_scratch,12345,global signal clean,test,sub07-scan01,0.4180791635255161,0.20665776525192,8,19,True
+m7_temporal_scratch,12345,Cuneus,test,sub07-scan02,0.34820816780468256,0.23747347030542923,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,test,sub07-scan02,0.4926449926643518,0.21249456273360662,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,test,sub07-scan02,0.41505682980667774,0.22924493145879407,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,test,sub07-scan02,0.44787138025773027,0.2051950614005348,8,19,True
+m7_temporal_scratch,12345,Putamen,test,sub07-scan02,0.2556544322109806,0.2822730373490651,8,19,True
+m7_temporal_scratch,12345,Thalamus,test,sub07-scan02,0.3528757409954613,0.24132693547440653,8,19,True
+m7_temporal_scratch,12345,global signal clean,test,sub07-scan02,0.477605980823665,0.20280001243020795,8,19,True
+m7_temporal_scratch,12345,Cuneus,test,sub11-scan01,0.5084661851668998,0.18389018088761566,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,test,sub11-scan01,0.403434478698146,0.19045899389452572,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,test,sub11-scan01,0.2701294218768487,0.22316824056871995,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,test,sub11-scan01,0.3027804574409741,0.2119064007164057,8,19,True
+m7_temporal_scratch,12345,Putamen,test,sub11-scan01,0.1935448887066778,0.2443538456237126,8,19,True
+m7_temporal_scratch,12345,Thalamus,test,sub11-scan01,0.1673198623575958,0.24131321032321715,8,19,True
+m7_temporal_scratch,12345,global signal clean,test,sub11-scan01,0.43610328360537626,0.1944662367287835,8,19,True
+m7_temporal_scratch,12345,Cuneus,test,sub16-scan01,0.47848860317380615,0.2181580489086621,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,test,sub16-scan01,0.5061145828822423,0.20348104830444333,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,test,sub16-scan01,0.3834175606712515,0.23104951749555963,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,test,sub16-scan01,0.44865628505963084,0.21293548821843444,8,19,True
+m7_temporal_scratch,12345,Putamen,test,sub16-scan01,0.1697887905580078,0.26571442968532344,8,19,True
+m7_temporal_scratch,12345,Thalamus,test,sub16-scan01,0.3693064936998872,0.23247612071114074,8,19,True
+m7_temporal_scratch,12345,global signal clean,test,sub16-scan01,0.5778380024389383,0.18734106043956752,8,19,True
+m7_temporal_scratch,12345,Cuneus,test,sub18-scan01,0.223316802210686,0.2443491132242624,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,test,sub18-scan01,0.3201255575013223,0.2146520458832691,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,test,sub18-scan01,0.17317029605345782,0.2700103265718439,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,test,sub18-scan01,0.21484948761297962,0.24326111201699405,8,19,True
+m7_temporal_scratch,12345,Putamen,test,sub18-scan01,0.2588654903254058,0.23172360178656048,8,19,True
+m7_temporal_scratch,12345,Thalamus,test,sub18-scan01,0.2262953341588003,0.25677265549625783,8,19,True
+m7_temporal_scratch,12345,global signal clean,test,sub18-scan01,0.23090366693014672,0.2728081681524362,8,19,True
+m7_temporal_scratch,12345,Cuneus,test,sub21-scan01,0.401285601287326,0.19934239100280365,8,19,True
+m7_temporal_scratch,12345,Heschl’s gyrus,test,sub21-scan01,0.20448083718480933,0.26738200120957245,8,19,True
+m7_temporal_scratch,12345,Middle frontal gyrus anterior,test,sub21-scan01,0.110900825378366,0.2632087982465374,8,19,True
+m7_temporal_scratch,12345,Precuneus anterior,test,sub21-scan01,0.24454593840168418,0.25232843328656385,8,19,True
+m7_temporal_scratch,12345,Putamen,test,sub21-scan01,0.06514292151705965,0.27193808884182197,8,19,True
+m7_temporal_scratch,12345,Thalamus,test,sub21-scan01,0.09227498501968434,0.2552383212097865,8,19,True
+m7_temporal_scratch,12345,global signal clean,test,sub21-scan01,0.21993699361085514,0.26123646958324853,8,19,True
+m7_temporal_scratch,2,Cuneus,val,sub06-scan01,0.2406692371677928,0.2965700115911871,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,val,sub06-scan01,0.15535329150527585,0.23433212016382643,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,val,sub06-scan01,0.026614817709164823,0.23719129812464382,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,val,sub06-scan01,0.16547996889672,0.27329493654067955,0,11,True
+m7_temporal_scratch,2,Putamen,val,sub06-scan01,0.02296059753225109,0.21806547484430827,0,11,True
+m7_temporal_scratch,2,Thalamus,val,sub06-scan01,-0.010602201249569367,0.27893461411366144,0,11,True
+m7_temporal_scratch,2,global signal clean,val,sub06-scan01,0.16979266775258045,0.25903461400887884,0,11,True
+m7_temporal_scratch,2,Cuneus,val,sub13-scan01,0.028520171022398493,0.2407952198495872,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,val,sub13-scan01,-0.016842970191319032,0.2500996500681598,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,val,sub13-scan01,0.051775556156772075,0.27305255026174907,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,val,sub13-scan01,0.07280985071848498,0.30283526534203736,0,11,True
+m7_temporal_scratch,2,Putamen,val,sub13-scan01,0.014942964107434037,0.2483417142653374,0,11,True
+m7_temporal_scratch,2,Thalamus,val,sub13-scan01,-0.039868181268526315,0.26517995626777885,0,11,True
+m7_temporal_scratch,2,global signal clean,val,sub13-scan01,0.1030575624011818,0.27107280551213847,0,11,True
+m7_temporal_scratch,2,Cuneus,val,sub13-scan02,0.016288251983855074,0.2859448677664756,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,val,sub13-scan02,-0.04631243089785867,0.24757896597649096,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,val,sub13-scan02,0.07139258776645481,0.2608982427555942,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,val,sub13-scan02,0.12194894746850717,0.27035851242858194,0,11,True
+m7_temporal_scratch,2,Putamen,val,sub13-scan02,0.03681654313368917,0.2349969340409128,0,11,True
+m7_temporal_scratch,2,Thalamus,val,sub13-scan02,0.015466585632474347,0.2533356310065745,0,11,True
+m7_temporal_scratch,2,global signal clean,val,sub13-scan02,0.05267994612608284,0.2773889588336366,0,11,True
+m7_temporal_scratch,2,Cuneus,val,sub15-scan01,0.10145278114429354,0.2550289936721884,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,val,sub15-scan01,0.01207530187820025,0.26957816164674997,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,val,sub15-scan01,0.024779095934593858,0.26372578696245363,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,val,sub15-scan01,0.05067066927513993,0.3097841322273245,0,11,True
+m7_temporal_scratch,2,Putamen,val,sub15-scan01,0.010594566187664222,0.24265529447986378,0,11,True
+m7_temporal_scratch,2,Thalamus,val,sub15-scan01,0.005163647540416922,0.27205435741214895,0,11,True
+m7_temporal_scratch,2,global signal clean,val,sub15-scan01,0.11759943571216509,0.2815932435944897,0,11,True
+m7_temporal_scratch,2,Cuneus,val,sub22-scan01,0.05205889312272461,0.30345478759085714,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,val,sub22-scan01,-0.13649060194407364,0.2523146561199651,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,val,sub22-scan01,-0.17897642345075018,0.27810900141232,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,val,sub22-scan01,-0.23871301894974623,0.28820919128170086,0,11,True
+m7_temporal_scratch,2,Putamen,val,sub22-scan01,-0.17915620728419612,0.2741536480555883,0,11,True
+m7_temporal_scratch,2,Thalamus,val,sub22-scan01,0.17003674310002978,0.26678868835285857,0,11,True
+m7_temporal_scratch,2,global signal clean,val,sub22-scan01,-0.19605653462359848,0.2580595452973783,0,11,True
+m7_temporal_scratch,2,Cuneus,test,sub07-scan01,0.24727028496034142,0.27075351653640245,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,test,sub07-scan01,0.09209726668269945,0.24327339090703404,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,test,sub07-scan01,0.1408513170932894,0.27629920063626257,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,test,sub07-scan01,0.2238847611430853,0.2653669915692409,0,11,True
+m7_temporal_scratch,2,Putamen,test,sub07-scan01,-0.050930813004849494,0.2611712464292719,0,11,True
+m7_temporal_scratch,2,Thalamus,test,sub07-scan01,-0.052086329838881,0.267614592010204,0,11,True
+m7_temporal_scratch,2,global signal clean,test,sub07-scan01,0.1222459948324345,0.24809731665872087,0,11,True
+m7_temporal_scratch,2,Cuneus,test,sub07-scan02,0.23980661435865835,0.26755096285925895,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,test,sub07-scan02,0.24069005965839693,0.2658808611048347,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,test,sub07-scan02,0.1771935534022857,0.2682974654097848,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,test,sub07-scan02,0.23118430889469238,0.24909815547804398,0,11,True
+m7_temporal_scratch,2,Putamen,test,sub07-scan02,0.07398742673097565,0.29829923551621046,0,11,True
+m7_temporal_scratch,2,Thalamus,test,sub07-scan02,-0.011980545889230967,0.2650246190568627,0,11,True
+m7_temporal_scratch,2,global signal clean,test,sub07-scan02,0.19790896476818484,0.25646771133506935,0,11,True
+m7_temporal_scratch,2,Cuneus,test,sub11-scan01,0.298382001860534,0.2353732853008357,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,test,sub11-scan01,-0.0062823021632295315,0.22622654410718232,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,test,sub11-scan01,-0.04072915279392723,0.24115007597075266,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,test,sub11-scan01,-0.004796424169503823,0.2344950041047793,0,11,True
+m7_temporal_scratch,2,Putamen,test,sub11-scan01,-0.07789920075649708,0.25413151135948836,0,11,True
+m7_temporal_scratch,2,Thalamus,test,sub11-scan01,0.19075583832890874,0.2470465063441632,0,11,True
+m7_temporal_scratch,2,global signal clean,test,sub11-scan01,0.05131795725465991,0.238926698319684,0,11,True
+m7_temporal_scratch,2,Cuneus,test,sub16-scan01,0.1981887808639274,0.27514132377324285,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,test,sub16-scan01,0.22023478715206954,0.2648884783076888,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,test,sub16-scan01,0.13280624473392183,0.26847101532750506,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,test,sub16-scan01,0.009420246643782342,0.2630550598397728,0,11,True
+m7_temporal_scratch,2,Putamen,test,sub16-scan01,0.027786733078767018,0.2734882980981825,0,11,True
+m7_temporal_scratch,2,Thalamus,test,sub16-scan01,0.2689347407734358,0.2605004336574762,0,11,True
+m7_temporal_scratch,2,global signal clean,test,sub16-scan01,0.18222713309808175,0.26847863520007953,0,11,True
+m7_temporal_scratch,2,Cuneus,test,sub18-scan01,0.028595452934191686,0.2370514813627977,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,test,sub18-scan01,0.00712104480304392,0.2175793015395798,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,test,sub18-scan01,-0.05455752672301228,0.2683705449941019,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,test,sub18-scan01,-0.03648316318958497,0.23315004105390724,0,11,True
+m7_temporal_scratch,2,Putamen,test,sub18-scan01,-0.0005180696476861051,0.2455290063960011,0,11,True
+m7_temporal_scratch,2,Thalamus,test,sub18-scan01,0.05910581061946322,0.2676985363874063,0,11,True
+m7_temporal_scratch,2,global signal clean,test,sub18-scan01,-0.03157222391400232,0.25950311460356185,0,11,True
+m7_temporal_scratch,2,Cuneus,test,sub21-scan01,0.3149047967954323,0.2340178355229821,0,11,True
+m7_temporal_scratch,2,Heschl’s gyrus,test,sub21-scan01,0.030787911218865795,0.2591165647876676,0,11,True
+m7_temporal_scratch,2,Middle frontal gyrus anterior,test,sub21-scan01,0.026368657626175372,0.250673108701575,0,11,True
+m7_temporal_scratch,2,Precuneus anterior,test,sub21-scan01,0.07258467558438103,0.25908084302558915,0,11,True
+m7_temporal_scratch,2,Putamen,test,sub21-scan01,-0.026240804354266362,0.2600264194670978,0,11,True
+m7_temporal_scratch,2,Thalamus,test,sub21-scan01,0.1648012922586919,0.25213558913051937,0,11,True
+m7_temporal_scratch,2,global signal clean,test,sub21-scan01,0.07650510798852987,0.2469443537424834,0,11,True
+m7_temporal_scratch_bn,1,Cuneus,val,sub06-scan01,0.36070849972356744,0.2641787723588333,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,val,sub06-scan01,0.29174901615269744,0.21518303641389225,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,val,sub06-scan01,0.21517646472424126,0.22629671097110785,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,val,sub06-scan01,0.3367333723986492,0.24261696875603023,4,15,True
+m7_temporal_scratch_bn,1,Putamen,val,sub06-scan01,0.19011657023343864,0.20957016054353628,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,val,sub06-scan01,0.20059120638057237,0.26678757877804,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,val,sub06-scan01,0.3289979605794163,0.2305191352518185,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,val,sub13-scan01,0.09110572150435262,0.2417577557031353,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,val,sub13-scan01,0.10753692868159839,0.2488785876671546,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,val,sub13-scan01,0.04434356742194414,0.275088452726779,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,val,sub13-scan01,-0.013260516048583772,0.3114065624620545,4,15,True
+m7_temporal_scratch_bn,1,Putamen,val,sub13-scan01,0.04421747546960469,0.24959145829723153,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,val,sub13-scan01,0.030234133955279442,0.2675960040862806,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,val,sub13-scan01,0.12095071655761554,0.27116045973513475,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,val,sub13-scan02,0.05856958773315019,0.2882013253268062,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,val,sub13-scan02,0.22150920261265902,0.23606309519112015,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,val,sub13-scan02,0.13153123571752742,0.25758598053617565,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,val,sub13-scan02,0.11835154839825562,0.26726121733509023,4,15,True
+m7_temporal_scratch_bn,1,Putamen,val,sub13-scan02,0.15508012201654153,0.23055609694325843,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,val,sub13-scan02,0.11935928684582821,0.24982136469418978,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,val,sub13-scan02,0.15732739869431042,0.2731765089271588,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,val,sub15-scan01,0.13654604590542566,0.25773266662533123,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,val,sub15-scan01,0.18276829659885258,0.2710156249898749,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,val,sub15-scan01,0.10608648106612759,0.2715393690441357,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,val,sub15-scan01,0.08998098298904801,0.31339824550353573,4,15,True
+m7_temporal_scratch_bn,1,Putamen,val,sub15-scan01,0.04688818013755806,0.24798329109314246,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,val,sub15-scan01,0.04591268898910815,0.280226261591783,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,val,sub15-scan01,0.15591325736410833,0.28199945663286635,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,val,sub22-scan01,0.304937469309838,0.29023646913332946,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,val,sub22-scan01,0.33278699088911007,0.23987684364110048,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,val,sub22-scan01,0.22069037191911395,0.26993987804804337,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,val,sub22-scan01,0.2547390073071392,0.2734150281510513,4,15,True
+m7_temporal_scratch_bn,1,Putamen,val,sub22-scan01,0.14697678037365394,0.27131329127456777,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,val,sub22-scan01,0.24486081246354247,0.2527929295970974,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,val,sub22-scan01,0.3032910847673399,0.24580293019413268,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,test,sub07-scan01,0.26959880875775055,0.2586062525693684,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,test,sub07-scan01,0.3831538983470016,0.21971795065949487,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,test,sub07-scan01,0.3877171516169668,0.24456148317762672,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,test,sub07-scan01,0.4083165845993497,0.2283618018396871,4,15,True
+m7_temporal_scratch_bn,1,Putamen,test,sub07-scan01,0.3280876070758611,0.23715180770622551,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,test,sub07-scan01,0.3367603337318478,0.24040808465558317,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,test,sub07-scan01,0.411261604856457,0.21454609928301727,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,test,sub07-scan02,0.2752543885885998,0.25771119343194465,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,test,sub07-scan02,0.39874170750813015,0.24316920130957584,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,test,sub07-scan02,0.2762681260198057,0.25490359577440375,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,test,sub07-scan02,0.3266017061230179,0.22951471923768832,4,15,True
+m7_temporal_scratch_bn,1,Putamen,test,sub07-scan02,0.2477662541795104,0.2863306235043117,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,test,sub07-scan02,0.3209731178144986,0.24467528757285967,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,test,sub07-scan02,0.3408720267835412,0.23693932808130025,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,test,sub11-scan01,0.379968491490129,0.21132064309309853,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,test,sub11-scan01,0.2888445091751824,0.22603630751529588,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,test,sub11-scan01,0.24840048347030388,0.23650230563539837,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,test,sub11-scan01,0.2638276529842894,0.22473798659019195,4,15,True
+m7_temporal_scratch_bn,1,Putamen,test,sub11-scan01,0.1909404861425848,0.25136016856718574,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,test,sub11-scan01,0.17229339110648337,0.24591100317787054,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,test,sub11-scan01,0.37491647656050753,0.21515502963301378,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,test,sub16-scan01,0.3937496847273057,0.24526543490513794,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,test,sub16-scan01,0.43474807024871,0.23427788488634904,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,test,sub16-scan01,0.28368855375132,0.2566863384926436,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,test,sub16-scan01,0.4207538505590599,0.22477370795071155,4,15,True
+m7_temporal_scratch_bn,1,Putamen,test,sub16-scan01,0.14138162601215498,0.27709355208638575,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,test,sub16-scan01,0.419643963712041,0.22128730028641175,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,test,sub16-scan01,0.4605991396574776,0.2262925521732831,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,test,sub18-scan01,0.2129261201122903,0.22610231298372654,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,test,sub18-scan01,0.37799356163292247,0.1869814700526171,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,test,sub18-scan01,0.28393702524737086,0.2460502649117344,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,test,sub18-scan01,0.2588469399680542,0.2170390215951239,4,15,True
+m7_temporal_scratch_bn,1,Putamen,test,sub18-scan01,0.2990659270896987,0.22495925267071254,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,test,sub18-scan01,0.2799207462978724,0.24712320724646386,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,test,sub18-scan01,0.28716425509972776,0.2369792438301283,4,15,True
+m7_temporal_scratch_bn,1,Cuneus,test,sub21-scan01,0.39429206483981677,0.20201261874656193,4,15,True
+m7_temporal_scratch_bn,1,Heschl’s gyrus,test,sub21-scan01,0.333242052340947,0.23574700229511295,4,15,True
+m7_temporal_scratch_bn,1,Middle frontal gyrus anterior,test,sub21-scan01,0.24544886428071575,0.23856217750733535,4,15,True
+m7_temporal_scratch_bn,1,Precuneus anterior,test,sub21-scan01,0.3181151120096088,0.23406220929930197,4,15,True
+m7_temporal_scratch_bn,1,Putamen,test,sub21-scan01,0.12850376144307932,0.26294787864406916,4,15,True
+m7_temporal_scratch_bn,1,Thalamus,test,sub21-scan01,0.1766313903693919,0.2499114584049961,4,15,True
+m7_temporal_scratch_bn,1,global signal clean,test,sub21-scan01,0.3292710477185263,0.22251468122849904,4,15,True
+m7_temporal_scratch_bn,12345,Cuneus,val,sub06-scan01,0.2746323721380309,0.29351104668556366,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,val,sub06-scan01,0.18954472238859407,0.23193635198259918,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,val,sub06-scan01,0.0007966348894182043,0.23674229602459795,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,val,sub06-scan01,0.17827380165630738,0.27075119510360585,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,val,sub06-scan01,-0.00962433403924298,0.21784132035944342,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,val,sub06-scan01,-0.04844160270507991,0.27889300525833133,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,val,sub06-scan01,0.18669107546270364,0.2561802645944767,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,val,sub13-scan01,0.00792180569743228,0.24084658716723517,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,val,sub13-scan01,-0.10243627950470573,0.25127154216766734,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,val,sub13-scan01,-0.04774118687911988,0.2729071831246072,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,val,sub13-scan01,-0.014747731347096078,0.30251767761921294,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,val,sub13-scan01,-0.10069935716932998,0.2491743759366252,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,val,sub13-scan01,0.0035676295067829443,0.2649717241831758,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,val,sub13-scan01,-0.0019605662220046984,0.2713976478712119,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,val,sub13-scan02,0.040950520708363976,0.2855128412205445,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,val,sub13-scan02,-0.06690840330183015,0.24824832630645113,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,val,sub13-scan02,0.0503331585450241,0.26061201161923986,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,val,sub13-scan02,0.13737076361865797,0.26919284722187603,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,val,sub13-scan02,-0.062102260359189435,0.23553560102772544,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,val,sub13-scan02,-0.07736718862231093,0.25349642564995006,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,val,sub13-scan02,0.0633665638924541,0.27656797255381693,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,val,sub15-scan01,0.14110862611462788,0.25266659675375636,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,val,sub15-scan01,0.021301318336611228,0.26902082417589424,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,val,sub15-scan01,0.022017090813600478,0.26308894358207047,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,val,sub15-scan01,0.10385055549487773,0.30718305325526246,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,val,sub15-scan01,-0.04104048766942518,0.2428204626993004,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,val,sub15-scan01,0.02365798346423542,0.2717071398149925,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,val,sub15-scan01,0.13897017452246588,0.278449955592831,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,val,sub22-scan01,0.06261909458382035,0.30293715636616636,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,val,sub22-scan01,-0.04247726920711839,0.2532715636514439,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,val,sub22-scan01,-0.16713146606596652,0.278832909494839,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,val,sub22-scan01,-0.1117720646561592,0.28850112484718576,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,val,sub22-scan01,-0.09029331458978117,0.27503829677353986,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,val,sub22-scan01,0.015376417951168566,0.2671395199879395,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,val,sub22-scan01,-0.0850265378830772,0.2593505841666394,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,test,sub07-scan01,0.2042380003633562,0.26718556460088083,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,test,sub07-scan01,0.1240061355703086,0.24098701454328328,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,test,sub07-scan01,0.05290845538440267,0.27576510016185557,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,test,sub07-scan01,0.22858247648652452,0.26211627807722404,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,test,sub07-scan01,-0.0703021266734909,0.26192092316863635,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,test,sub07-scan01,-0.13407629128612916,0.2690126929892896,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,test,sub07-scan01,0.18638795426734345,0.24437866692128843,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,test,sub07-scan02,0.13986373392695609,0.26640102453563,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,test,sub07-scan02,0.16756940329606845,0.26370623065330545,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,test,sub07-scan02,0.11542311335798906,0.26752625644345035,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,test,sub07-scan02,0.169365023832556,0.24748948374886628,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,test,sub07-scan02,0.053723248758465,0.2978109919358529,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,test,sub07-scan02,0.04610896187334762,0.2646004276022784,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,test,sub07-scan02,0.15058538650650927,0.25457024614429585,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,test,sub11-scan01,0.30442843705617534,0.2291000467431166,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,test,sub11-scan01,0.0808536447229544,0.22463973833992218,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,test,sub11-scan01,-0.03186169715741785,0.2411145149578175,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,test,sub11-scan01,0.11778596544582695,0.2318508875305985,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,test,sub11-scan01,-0.029178841836625283,0.25449864422820195,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,test,sub11-scan01,0.10738764525958211,0.24661007820665162,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,test,sub11-scan01,0.1623806566253056,0.23530641815360032,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,test,sub16-scan01,0.19574642066772932,0.27227304118006657,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,test,sub16-scan01,0.1703345783046296,0.2623223289840339,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,test,sub16-scan01,0.04896453910271933,0.26804867776188757,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,test,sub16-scan01,0.04441837957660398,0.26203806160314974,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,test,sub16-scan01,0.017115711463535736,0.2733498536514786,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,test,sub16-scan01,0.13927676341845882,0.259603978259703,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,test,sub16-scan01,0.24203223930013432,0.2644002366892328,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,test,sub18-scan01,0.014543680856505361,0.2368333165321351,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,test,sub18-scan01,0.03278465353591396,0.21713664309067152,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,test,sub18-scan01,-0.03469897308613366,0.26800011176641125,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,test,sub18-scan01,-0.014062197306526488,0.23196964409549276,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,test,sub18-scan01,0.042606289534519934,0.2449924713983659,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,test,sub18-scan01,0.09202203212424932,0.26686374684148234,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,test,sub18-scan01,-0.022881127909584048,0.2591580329909189,0,11,True
+m7_temporal_scratch_bn,12345,Cuneus,test,sub21-scan01,0.300933098407424,0.22922779444260724,0,11,True
+m7_temporal_scratch_bn,12345,Heschl’s gyrus,test,sub21-scan01,0.21190318096510577,0.25519459780161796,0,11,True
+m7_temporal_scratch_bn,12345,Middle frontal gyrus anterior,test,sub21-scan01,0.1776120020398476,0.2492875684239177,0,11,True
+m7_temporal_scratch_bn,12345,Precuneus anterior,test,sub21-scan01,0.21426894691969833,0.25592303657969484,0,11,True
+m7_temporal_scratch_bn,12345,Putamen,test,sub21-scan01,0.1764617542359331,0.2580540827386126,0,11,True
+m7_temporal_scratch_bn,12345,Thalamus,test,sub21-scan01,0.18987629635874528,0.250583522403503,0,11,True
+m7_temporal_scratch_bn,12345,global signal clean,test,sub21-scan01,0.20594864864144857,0.2430115724686794,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,val,sub06-scan01,0.25350168967246917,0.2916679245936231,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,val,sub06-scan01,0.10789123355345806,0.23267602072191904,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,val,sub06-scan01,-0.014955793624973596,0.2368176861002924,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,val,sub06-scan01,0.15928971342883236,0.27005911499018204,0,11,True
+m7_temporal_scratch_bn,2,Putamen,val,sub06-scan01,-0.009262838350995504,0.217656946518708,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,val,sub06-scan01,-0.023544024849675483,0.2788642100383554,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,val,sub06-scan01,0.15456312203146863,0.25518682593466835,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,val,sub13-scan01,0.046139308776997276,0.24084986397983107,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,val,sub13-scan01,0.06993187701997307,0.24948680488633504,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,val,sub13-scan01,0.09825702278195646,0.2719472485732284,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,val,sub13-scan01,0.06638825990090833,0.3018401655561127,0,11,True
+m7_temporal_scratch_bn,2,Putamen,val,sub13-scan01,0.04053198050467872,0.2480006711948806,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,val,sub13-scan01,-0.07803339486383369,0.2657774973026895,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,val,sub13-scan01,0.14621088036017912,0.27039998775262064,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,val,sub13-scan02,0.09835011513676496,0.2847502997966419,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,val,sub13-scan02,0.020580853526047275,0.24748438993681365,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,val,sub13-scan02,0.09151738993342362,0.2604082747908125,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,val,sub13-scan02,0.1397118263460156,0.26924387081095735,0,11,True
+m7_temporal_scratch_bn,2,Putamen,val,sub13-scan02,0.018892777813327415,0.23488721058867293,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,val,sub13-scan02,0.00531219785951727,0.25348159230241485,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,val,sub13-scan02,0.09947131590942335,0.2764943372294263,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,val,sub15-scan01,0.04464173560537614,0.2548365554029318,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,val,sub15-scan01,-0.08221444879686492,0.2708086650445189,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,val,sub15-scan01,-0.04621565029205107,0.26365163037505124,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,val,sub15-scan01,0.04672310384245649,0.3082609842430702,0,11,True
+m7_temporal_scratch_bn,2,Putamen,val,sub15-scan01,-0.0205792006753574,0.2424368136838093,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,val,sub15-scan01,0.008212029136466042,0.2718190982694267,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,val,sub15-scan01,0.05980921005241657,0.28064050810012753,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,val,sub22-scan01,0.04213409408236468,0.30307972264513033,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,val,sub22-scan01,-0.12984428804404108,0.25415031439502644,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,val,sub22-scan01,-0.19030850954071013,0.2792139240406608,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,val,sub22-scan01,-0.2380587037164915,0.2901108522264414,0,11,True
+m7_temporal_scratch_bn,2,Putamen,val,sub22-scan01,-0.13057875858756646,0.27502227391449363,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,val,sub22-scan01,0.1577826867002742,0.26521287299285246,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,val,sub22-scan01,-0.1902490516788655,0.2617338818126219,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,test,sub07-scan01,0.22887765825994616,0.26617505722591134,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,test,sub07-scan01,0.06045017134089452,0.24257872870635216,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,test,sub07-scan01,0.07401921529433342,0.27557915815576317,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,test,sub07-scan01,0.16680549913892748,0.26298421955067414,0,11,True
+m7_temporal_scratch_bn,2,Putamen,test,sub07-scan01,-0.08567334050320556,0.2615638097973194,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,test,sub07-scan01,-0.05952093969258524,0.26819352328024165,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,test,sub07-scan01,0.07964209537640972,0.24678357726695865,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,test,sub07-scan02,0.23459633575876912,0.2641260639804791,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,test,sub07-scan02,0.208155026471568,0.2630677889569512,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,test,sub07-scan02,0.12925292538329644,0.267386790860681,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,test,sub07-scan02,0.21025434965987902,0.24690234499102437,0,11,True
+m7_temporal_scratch_bn,2,Putamen,test,sub07-scan02,0.07035154353013169,0.29779718081646356,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,test,sub07-scan02,-0.00510277911546258,0.265566281254878,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,test,sub07-scan02,0.17821936052742615,0.2537196178548828,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,test,sub11-scan01,0.26665676845081787,0.22734952467006844,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,test,sub11-scan01,-0.035564929494515236,0.22714415779332875,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,test,sub11-scan01,-0.0822086379256488,0.24159473418513353,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,test,sub11-scan01,0.0025229518274464224,0.23391459345482188,0,11,True
+m7_temporal_scratch_bn,2,Putamen,test,sub11-scan01,-0.09708149675817282,0.2549352607375245,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,test,sub11-scan01,0.18889263155273714,0.24395664539736509,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,test,sub11-scan01,0.03826065478241588,0.2387770635154404,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,test,sub16-scan01,0.15026610098437768,0.27305296186733574,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,test,sub16-scan01,0.19606317991918815,0.2621606662214956,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,test,sub16-scan01,0.05614495519096823,0.26794396501150025,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,test,sub16-scan01,-0.03007484444363523,0.26297898811632564,0,11,True
+m7_temporal_scratch_bn,2,Putamen,test,sub16-scan01,-0.01519547887497076,0.27364660873993096,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,test,sub16-scan01,0.285165691221063,0.2576882445395907,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,test,sub16-scan01,0.13678136583705078,0.26625164967362797,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,test,sub18-scan01,0.04535700022023593,0.2359867571527869,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,test,sub18-scan01,0.06218529649463631,0.21652645638353502,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,test,sub18-scan01,-0.024514461513773192,0.26793196079435366,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,test,sub18-scan01,-0.00021622851902568227,0.2316593081653952,0,11,True
+m7_temporal_scratch_bn,2,Putamen,test,sub18-scan01,0.04903241432563931,0.24492360294146814,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,test,sub18-scan01,0.06366410348497101,0.2668805276441921,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,test,sub18-scan01,-0.005381515176764258,0.259246298287059,0,11,True
+m7_temporal_scratch_bn,2,Cuneus,test,sub21-scan01,0.2569837192762387,0.22954708616680422,0,11,True
+m7_temporal_scratch_bn,2,Heschl’s gyrus,test,sub21-scan01,0.015999801540882264,0.2591151128543555,0,11,True
+m7_temporal_scratch_bn,2,Middle frontal gyrus anterior,test,sub21-scan01,0.026421472827863026,0.25026939485351635,0,11,True
+m7_temporal_scratch_bn,2,Precuneus anterior,test,sub21-scan01,0.0522885498988683,0.2582079050350373,0,11,True
+m7_temporal_scratch_bn,2,Putamen,test,sub21-scan01,-0.006520168163282499,0.260170103001355,0,11,True
+m7_temporal_scratch_bn,2,Thalamus,test,sub21-scan01,0.15869502780118797,0.2502383601693439,0,11,True
+m7_temporal_scratch_bn,2,global signal clean,test,sub21-scan01,0.0527430972132848,0.24634789676290686,0,11,True
 m7_tmpbn,1,Cuneus,val,sub06-scan01,0.4757391170370905,0.23418983093212717,5,16,True
 m7_tmpbn,1,Heschl’s gyrus,val,sub06-scan01,0.5047884169527487,0.1752277558790626,5,16,True
 m7_tmpbn,1,Middle frontal gyrus anterior,val,sub06-scan01,0.4164244423291877,0.19751967355970942,5,16,True
@@ -2925,6 +3618,237 @@ m7_tmpbn,2,Precuneus anterior,test,sub21-scan01,0.4781620661476396,0.20330458596
 m7_tmpbn,2,Putamen,test,sub21-scan01,0.24415901762482672,0.24584183957611505,5,16,True
 m7_tmpbn,2,Thalamus,test,sub21-scan01,0.2909572793944355,0.23348256304397813,5,16,True
 m7_tmpbn,2,global signal clean,test,sub21-scan01,0.4932856550699052,0.19033451806008883,5,16,True
+m7_tv,1,Cuneus,val,sub06-scan01,0.5063791383214494,0.23027589679573998,4,5,True
+m7_tv,1,Heschl’s gyrus,val,sub06-scan01,0.5196116617936357,0.17486582483558408,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,val,sub06-scan01,0.4459774310742831,0.19521759587099466,4,5,True
+m7_tv,1,Precuneus anterior,val,sub06-scan01,0.5552838627972146,0.20045056102345904,4,5,True
+m7_tv,1,Putamen,val,sub06-scan01,0.3919316372533952,0.18696784793533616,4,5,True
+m7_tv,1,Thalamus,val,sub06-scan01,0.36703513796185916,0.24280391360715428,4,5,True
+m7_tv,1,global signal clean,val,sub06-scan01,0.5939024651177671,0.1761822580569012,4,5,True
+m7_tv,1,Cuneus,val,sub13-scan01,0.09804314886957512,0.24686784014085356,4,5,True
+m7_tv,1,Heschl’s gyrus,val,sub13-scan01,0.3136366706841515,0.22822992292692248,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,val,sub13-scan01,0.23918248798511413,0.2587424862556142,4,5,True
+m7_tv,1,Precuneus anterior,val,sub13-scan01,0.23560766779779363,0.2870432203814145,4,5,True
+m7_tv,1,Putamen,val,sub13-scan01,0.24456970650662022,0.23563785700656706,4,5,True
+m7_tv,1,Thalamus,val,sub13-scan01,0.30954342491120773,0.24739024156934467,4,5,True
+m7_tv,1,global signal clean,val,sub13-scan01,0.3290390324610231,0.24876379382511626,4,5,True
+m7_tv,1,Cuneus,val,sub13-scan02,0.1651554621622533,0.28197000270268147,4,5,True
+m7_tv,1,Heschl’s gyrus,val,sub13-scan02,0.409642433736342,0.21396254502579173,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,val,sub13-scan02,0.20232236232312342,0.25100652866621426,4,5,True
+m7_tv,1,Precuneus anterior,val,sub13-scan02,0.17588004816921332,0.2631160878509324,4,5,True
+m7_tv,1,Putamen,val,sub13-scan02,0.26781355980794386,0.22095537190330655,4,5,True
+m7_tv,1,Thalamus,val,sub13-scan02,0.3143557136941599,0.23620132341547784,4,5,True
+m7_tv,1,global signal clean,val,sub13-scan02,0.3188386211940066,0.25379696397667195,4,5,True
+m7_tv,1,Cuneus,val,sub15-scan01,0.29883869740717084,0.2320062198872686,4,5,True
+m7_tv,1,Heschl’s gyrus,val,sub15-scan01,0.48945981267422284,0.21549596138934113,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,val,sub15-scan01,0.35949161118753187,0.23393170254736184,4,5,True
+m7_tv,1,Precuneus anterior,val,sub15-scan01,0.436036949008242,0.2594432809873197,4,5,True
+m7_tv,1,Putamen,val,sub15-scan01,0.33538189269582397,0.2181628401555671,4,5,True
+m7_tv,1,Thalamus,val,sub15-scan01,0.4201187543405814,0.23508736975686484,4,5,True
+m7_tv,1,global signal clean,val,sub15-scan01,0.47767611949877925,0.22490759895376702,4,5,True
+m7_tv,1,Cuneus,val,sub22-scan01,0.4939274537061279,0.24111030066087014,4,5,True
+m7_tv,1,Heschl’s gyrus,val,sub22-scan01,0.5124465212799101,0.19142192224527865,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,val,sub22-scan01,0.43442913054391846,0.2322552252041872,4,5,True
+m7_tv,1,Precuneus anterior,val,sub22-scan01,0.5292331299221421,0.21696791809333563,4,5,True
+m7_tv,1,Putamen,val,sub22-scan01,0.33399667352387596,0.24559014800421183,4,5,True
+m7_tv,1,Thalamus,val,sub22-scan01,0.524981476330586,0.20940851269609767,4,5,True
+m7_tv,1,global signal clean,val,sub22-scan01,0.5693481914012609,0.18345466396889265,4,5,True
+m7_tv,1,Cuneus,test,sub07-scan01,0.28520307320584803,0.2513969380992775,4,5,True
+m7_tv,1,Heschl’s gyrus,test,sub07-scan01,0.43446479673387134,0.19810579584468826,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,test,sub07-scan01,0.5135497944928401,0.21634776565794642,4,5,True
+m7_tv,1,Precuneus anterior,test,sub07-scan01,0.5332793704242951,0.19687242433382068,4,5,True
+m7_tv,1,Putamen,test,sub07-scan01,0.4391229956910355,0.21744503031783285,4,5,True
+m7_tv,1,Thalamus,test,sub07-scan01,0.37849996051431795,0.2314323230561408,4,5,True
+m7_tv,1,global signal clean,test,sub07-scan01,0.5882019583420708,0.1675046773419155,4,5,True
+m7_tv,1,Cuneus,test,sub07-scan02,0.4037139563269538,0.2266501457069984,4,5,True
+m7_tv,1,Heschl’s gyrus,test,sub07-scan02,0.5051937934604753,0.20640379944045265,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,test,sub07-scan02,0.5108537581581744,0.2150282359207567,4,5,True
+m7_tv,1,Precuneus anterior,test,sub07-scan02,0.5202500027155118,0.19055978129833365,4,5,True
+m7_tv,1,Putamen,test,sub07-scan02,0.40309335177301503,0.26026047846395195,4,5,True
+m7_tv,1,Thalamus,test,sub07-scan02,0.48292626156709945,0.219469287345564,4,5,True
+m7_tv,1,global signal clean,test,sub07-scan02,0.5942401856007302,0.17730138691553682,4,5,True
+m7_tv,1,Cuneus,test,sub11-scan01,0.48820194612168694,0.18161341406916787,4,5,True
+m7_tv,1,Heschl’s gyrus,test,sub11-scan01,0.5390880738127877,0.16213313317983477,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,test,sub11-scan01,0.4095259165519471,0.2016192190747251,4,5,True
+m7_tv,1,Precuneus anterior,test,sub11-scan01,0.4813243416834746,0.18008038373580293,4,5,True
+m7_tv,1,Putamen,test,sub11-scan01,0.32146219838858997,0.2282188466005346,4,5,True
+m7_tv,1,Thalamus,test,sub11-scan01,0.4331005149168158,0.20508854272056726,4,5,True
+m7_tv,1,global signal clean,test,sub11-scan01,0.5427613811501146,0.16918991973456624,4,5,True
+m7_tv,1,Cuneus,test,sub16-scan01,0.5378869883290998,0.19937938987178497,4,5,True
+m7_tv,1,Heschl’s gyrus,test,sub16-scan01,0.5106697225971095,0.19807364599942165,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,test,sub16-scan01,0.4201690223606767,0.22301902020372003,4,5,True
+m7_tv,1,Precuneus anterior,test,sub16-scan01,0.659147260559534,0.1596954853066531,4,5,True
+m7_tv,1,Putamen,test,sub16-scan01,0.13240059260180453,0.2803195093010251,4,5,True
+m7_tv,1,Thalamus,test,sub16-scan01,0.6170435702018661,0.18267511405110123,4,5,True
+m7_tv,1,global signal clean,test,sub16-scan01,0.6258145133129419,0.16713247433472186,4,5,True
+m7_tv,1,Cuneus,test,sub18-scan01,0.4379906373059139,0.19250396382425622,4,5,True
+m7_tv,1,Heschl’s gyrus,test,sub18-scan01,0.5620561968769583,0.15027115146913647,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,test,sub18-scan01,0.3943821456066525,0.2266201057041398,4,5,True
+m7_tv,1,Precuneus anterior,test,sub18-scan01,0.3992912076285075,0.1949823029481885,4,5,True
+m7_tv,1,Putamen,test,sub18-scan01,0.552672621441836,0.18110992559472802,4,5,True
+m7_tv,1,Thalamus,test,sub18-scan01,0.3997135431682426,0.2266715872485942,4,5,True
+m7_tv,1,global signal clean,test,sub18-scan01,0.4567850241664092,0.20614399848220927,4,5,True
+m7_tv,1,Cuneus,test,sub21-scan01,0.5735402110762735,0.16064014243291824,4,5,True
+m7_tv,1,Heschl’s gyrus,test,sub21-scan01,0.5008022443066664,0.19530364286198748,4,5,True
+m7_tv,1,Middle frontal gyrus anterior,test,sub21-scan01,0.4055115303589931,0.21019608590297748,4,5,True
+m7_tv,1,Precuneus anterior,test,sub21-scan01,0.49652511944165845,0.19594408015273596,4,5,True
+m7_tv,1,Putamen,test,sub21-scan01,0.2561849675086749,0.24598133156236865,4,5,True
+m7_tv,1,Thalamus,test,sub21-scan01,0.33970691581192086,0.2268677437441883,4,5,True
+m7_tv,1,global signal clean,test,sub21-scan01,0.5114020961051682,0.18265648434235604,4,5,True
+m7_tv,12345,Cuneus,val,sub06-scan01,0.4963376307697289,0.23618915444775837,4,5,True
+m7_tv,12345,Heschl’s gyrus,val,sub06-scan01,0.5180874179592854,0.1778040375660022,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,val,sub06-scan01,0.4456112424060492,0.19706998997881509,4,5,True
+m7_tv,12345,Precuneus anterior,val,sub06-scan01,0.5596787112049619,0.20437905546568141,4,5,True
+m7_tv,12345,Putamen,val,sub06-scan01,0.39276080914813977,0.1897727050619756,4,5,True
+m7_tv,12345,Thalamus,val,sub06-scan01,0.3794571979829115,0.24544876568370205,4,5,True
+m7_tv,12345,global signal clean,val,sub06-scan01,0.5990910684811728,0.1808765673084823,4,5,True
+m7_tv,12345,Cuneus,val,sub13-scan01,0.14933333172277746,0.2362828841436045,4,5,True
+m7_tv,12345,Heschl’s gyrus,val,sub13-scan01,0.3066354709302448,0.23240509460534853,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,val,sub13-scan01,0.22275594742607524,0.26342615092708244,4,5,True
+m7_tv,12345,Precuneus anterior,val,sub13-scan01,0.18025339854406638,0.2956587832659293,4,5,True
+m7_tv,12345,Putamen,val,sub13-scan01,0.2584572259592648,0.23886408171523416,4,5,True
+m7_tv,12345,Thalamus,val,sub13-scan01,0.3176055075663038,0.26053566780572684,4,5,True
+m7_tv,12345,global signal clean,val,sub13-scan01,0.33564256462321584,0.24490395363030187,4,5,True
+m7_tv,12345,Cuneus,val,sub13-scan02,0.1831241601871952,0.27625959271261913,4,5,True
+m7_tv,12345,Heschl’s gyrus,val,sub13-scan02,0.4137908550162003,0.2179866574657989,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,val,sub13-scan02,0.19013049699359064,0.2536055042079191,4,5,True
+m7_tv,12345,Precuneus anterior,val,sub13-scan02,0.16490583598714795,0.26602248209079327,4,5,True
+m7_tv,12345,Putamen,val,sub13-scan02,0.22924673911939467,0.22763369226711094,4,5,True
+m7_tv,12345,Thalamus,val,sub13-scan02,0.3049105836306521,0.25317937441937227,4,5,True
+m7_tv,12345,global signal clean,val,sub13-scan02,0.3092947693267122,0.2538270729303881,4,5,True
+m7_tv,12345,Cuneus,val,sub15-scan01,0.2889439173945942,0.23397068591795508,4,5,True
+m7_tv,12345,Heschl’s gyrus,val,sub15-scan01,0.47765581540026925,0.22006156102708585,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,val,sub15-scan01,0.3539283227795944,0.23568411756502858,4,5,True
+m7_tv,12345,Precuneus anterior,val,sub15-scan01,0.40946320353619353,0.2668037405131186,4,5,True
+m7_tv,12345,Putamen,val,sub15-scan01,0.3002765413676418,0.2232641977244052,4,5,True
+m7_tv,12345,Thalamus,val,sub15-scan01,0.38579193975511356,0.2397851313141844,4,5,True
+m7_tv,12345,global signal clean,val,sub15-scan01,0.4525101273855323,0.23319864787448474,4,5,True
+m7_tv,12345,Cuneus,val,sub22-scan01,0.5088601721939742,0.23981615748411733,4,5,True
+m7_tv,12345,Heschl’s gyrus,val,sub22-scan01,0.5303488951345077,0.19027205021112814,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,val,sub22-scan01,0.433969612950227,0.2353744085292469,4,5,True
+m7_tv,12345,Precuneus anterior,val,sub22-scan01,0.5457516638120445,0.2196653293104371,4,5,True
+m7_tv,12345,Putamen,val,sub22-scan01,0.37980252436041595,0.24282103120420456,4,5,True
+m7_tv,12345,Thalamus,val,sub22-scan01,0.5410759617457592,0.21564799622289804,4,5,True
+m7_tv,12345,global signal clean,val,sub22-scan01,0.5782978157102887,0.18344513233278936,4,5,True
+m7_tv,12345,Cuneus,test,sub07-scan01,0.29814987198390897,0.24739411310583162,4,5,True
+m7_tv,12345,Heschl’s gyrus,test,sub07-scan01,0.45189290381816305,0.1961470149339748,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,test,sub07-scan01,0.5306590821598355,0.21894996776073997,4,5,True
+m7_tv,12345,Precuneus anterior,test,sub07-scan01,0.5523285224468946,0.1997631256544687,4,5,True
+m7_tv,12345,Putamen,test,sub07-scan01,0.4647409152108781,0.2175828616909352,4,5,True
+m7_tv,12345,Thalamus,test,sub07-scan01,0.39184711763640717,0.2313043414468821,4,5,True
+m7_tv,12345,global signal clean,test,sub07-scan01,0.6143505727943271,0.16953643403475657,4,5,True
+m7_tv,12345,Cuneus,test,sub07-scan02,0.42322673270905453,0.22668271168945223,4,5,True
+m7_tv,12345,Heschl’s gyrus,test,sub07-scan02,0.5217410985178262,0.20876003415539235,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,test,sub07-scan02,0.5302327114070894,0.2173543474573567,4,5,True
+m7_tv,12345,Precuneus anterior,test,sub07-scan02,0.5418431003689888,0.19309632488434283,4,5,True
+m7_tv,12345,Putamen,test,sub07-scan02,0.42736748358970483,0.260505049356874,4,5,True
+m7_tv,12345,Thalamus,test,sub07-scan02,0.485771314374978,0.22237345474556935,4,5,True
+m7_tv,12345,global signal clean,test,sub07-scan02,0.6110974253695401,0.18275011831901455,4,5,True
+m7_tv,12345,Cuneus,test,sub11-scan01,0.5166299321498935,0.17928133497517315,4,5,True
+m7_tv,12345,Heschl’s gyrus,test,sub11-scan01,0.5472537870355091,0.16158418285474732,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,test,sub11-scan01,0.43683875810270917,0.19741206880187487,4,5,True
+m7_tv,12345,Precuneus anterior,test,sub11-scan01,0.4923986736851779,0.17935809966764846,4,5,True
+m7_tv,12345,Putamen,test,sub11-scan01,0.34017646975724797,0.2246592542559733,4,5,True
+m7_tv,12345,Thalamus,test,sub11-scan01,0.4417692733957298,0.20224593210656547,4,5,True
+m7_tv,12345,global signal clean,test,sub11-scan01,0.5784505426627803,0.16408709231407206,4,5,True
+m7_tv,12345,Cuneus,test,sub16-scan01,0.5580666465968955,0.20043771911507338,4,5,True
+m7_tv,12345,Heschl’s gyrus,test,sub16-scan01,0.49323707610075823,0.20332647718660216,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,test,sub16-scan01,0.42050328026204353,0.22378436352072636,4,5,True
+m7_tv,12345,Precuneus anterior,test,sub16-scan01,0.6657913984734517,0.1664403049140601,4,5,True
+m7_tv,12345,Putamen,test,sub16-scan01,0.15658208875402282,0.2711431119229412,4,5,True
+m7_tv,12345,Thalamus,test,sub16-scan01,0.6242556168667018,0.1865031132311184,4,5,True
+m7_tv,12345,global signal clean,test,sub16-scan01,0.6337290904886401,0.17193653778000598,4,5,True
+m7_tv,12345,Cuneus,test,sub18-scan01,0.43408242334403363,0.1932136957871622,4,5,True
+m7_tv,12345,Heschl’s gyrus,test,sub18-scan01,0.5571210877952466,0.15398801524799738,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,test,sub18-scan01,0.38821788757404724,0.22955827431229145,4,5,True
+m7_tv,12345,Precuneus anterior,test,sub18-scan01,0.39956433630199134,0.19589966084010577,4,5,True
+m7_tv,12345,Putamen,test,sub18-scan01,0.5169530228101732,0.19082144973720835,4,5,True
+m7_tv,12345,Thalamus,test,sub18-scan01,0.36504473450083946,0.23590894181653213,4,5,True
+m7_tv,12345,global signal clean,test,sub18-scan01,0.4540327684573926,0.20591613298760436,4,5,True
+m7_tv,12345,Cuneus,test,sub21-scan01,0.5517351682674606,0.170040368702544,4,5,True
+m7_tv,12345,Heschl’s gyrus,test,sub21-scan01,0.4905321041202496,0.1984851592138929,4,5,True
+m7_tv,12345,Middle frontal gyrus anterior,test,sub21-scan01,0.3887033054011422,0.21312923326441377,4,5,True
+m7_tv,12345,Precuneus anterior,test,sub21-scan01,0.476442705202773,0.20182397272660113,4,5,True
+m7_tv,12345,Putamen,test,sub21-scan01,0.24905592643575444,0.24540586411059387,4,5,True
+m7_tv,12345,Thalamus,test,sub21-scan01,0.3138554413916223,0.22793833335750477,4,5,True
+m7_tv,12345,global signal clean,test,sub21-scan01,0.48213964510415414,0.18999483288177174,4,5,True
+m7_tv,2,Cuneus,val,sub06-scan01,0.47501446540228237,0.23788676760476554,4,5,True
+m7_tv,2,Heschl’s gyrus,val,sub06-scan01,0.4869796521855294,0.18063860008135577,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,val,sub06-scan01,0.42455055972549716,0.19837345433655493,4,5,True
+m7_tv,2,Precuneus anterior,val,sub06-scan01,0.5309947208806679,0.20542801267413346,4,5,True
+m7_tv,2,Putamen,val,sub06-scan01,0.3791400301622098,0.18865178938232968,4,5,True
+m7_tv,2,Thalamus,val,sub06-scan01,0.3559778463626159,0.24457796963514516,4,5,True
+m7_tv,2,global signal clean,val,sub06-scan01,0.5692136226100369,0.18225382992669623,4,5,True
+m7_tv,2,Cuneus,val,sub13-scan01,0.14382315803999032,0.23784819305597846,4,5,True
+m7_tv,2,Heschl’s gyrus,val,sub13-scan01,0.30052633668066897,0.22998152486682621,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,val,sub13-scan01,0.22910728274776176,0.2602054355011518,4,5,True
+m7_tv,2,Precuneus anterior,val,sub13-scan01,0.23474837918780825,0.28723378641062614,4,5,True
+m7_tv,2,Putamen,val,sub13-scan01,0.2617048368677146,0.23573744089662169,4,5,True
+m7_tv,2,Thalamus,val,sub13-scan01,0.34450418010332307,0.2445190843364888,4,5,True
+m7_tv,2,global signal clean,val,sub13-scan01,0.3583988784180461,0.2442602045072937,4,5,True
+m7_tv,2,Cuneus,val,sub13-scan02,0.1635176613897419,0.2789218924256587,4,5,True
+m7_tv,2,Heschl’s gyrus,val,sub13-scan02,0.387555243938919,0.21831335139404776,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,val,sub13-scan02,0.19471877133196724,0.25176523589700345,4,5,True
+m7_tv,2,Precuneus anterior,val,sub13-scan02,0.19483448825260968,0.26036785400431833,4,5,True
+m7_tv,2,Putamen,val,sub13-scan02,0.27398080844228245,0.22212350527226415,4,5,True
+m7_tv,2,Thalamus,val,sub13-scan02,0.34576259278759225,0.2334084865910043,4,5,True
+m7_tv,2,global signal clean,val,sub13-scan02,0.33368418274364964,0.2513954429612233,4,5,True
+m7_tv,2,Cuneus,val,sub15-scan01,0.2682173523583352,0.23637652618481056,4,5,True
+m7_tv,2,Heschl’s gyrus,val,sub15-scan01,0.48432707031530203,0.21595596860542912,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,val,sub15-scan01,0.3535034450011302,0.23490786448453652,4,5,True
+m7_tv,2,Precuneus anterior,val,sub15-scan01,0.43327097866729014,0.2604703781794929,4,5,True
+m7_tv,2,Putamen,val,sub15-scan01,0.3289967179092886,0.21923293527039078,4,5,True
+m7_tv,2,Thalamus,val,sub15-scan01,0.4147221665585375,0.2349932632679397,4,5,True
+m7_tv,2,global signal clean,val,sub15-scan01,0.4532080196989315,0.22952269495316174,4,5,True
+m7_tv,2,Cuneus,val,sub22-scan01,0.5028910771228758,0.23880851265426592,4,5,True
+m7_tv,2,Heschl’s gyrus,val,sub22-scan01,0.5297772569075726,0.18769921079928414,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,val,sub22-scan01,0.42712255200080734,0.23399730737240954,4,5,True
+m7_tv,2,Precuneus anterior,val,sub22-scan01,0.5388367152346367,0.21602271574682058,4,5,True
+m7_tv,2,Putamen,val,sub22-scan01,0.34956747419310463,0.2439448412483768,4,5,True
+m7_tv,2,Thalamus,val,sub22-scan01,0.4798099745554014,0.21462707781003107,4,5,True
+m7_tv,2,global signal clean,val,sub22-scan01,0.5849041522202554,0.17947771520337963,4,5,True
+m7_tv,2,Cuneus,test,sub07-scan01,0.25132184903074384,0.2575274646617456,4,5,True
+m7_tv,2,Heschl’s gyrus,test,sub07-scan01,0.4280243706341798,0.19933622739828746,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,test,sub07-scan01,0.5201368087934045,0.21576321204874346,4,5,True
+m7_tv,2,Precuneus anterior,test,sub07-scan01,0.5307281469203886,0.19765627150482004,4,5,True
+m7_tv,2,Putamen,test,sub07-scan01,0.45899011427116554,0.214706135479608,4,5,True
+m7_tv,2,Thalamus,test,sub07-scan01,0.4162953276018762,0.2246691688873666,4,5,True
+m7_tv,2,global signal clean,test,sub07-scan01,0.5868418513501801,0.16833714355581625,4,5,True
+m7_tv,2,Cuneus,test,sub07-scan02,0.38697280308187326,0.23100849553161049,4,5,True
+m7_tv,2,Heschl’s gyrus,test,sub07-scan02,0.5140546300052687,0.20473355563202206,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,test,sub07-scan02,0.5154096189644305,0.21480983940266904,4,5,True
+m7_tv,2,Precuneus anterior,test,sub07-scan02,0.5313240124756277,0.18885780928100204,4,5,True
+m7_tv,2,Putamen,test,sub07-scan02,0.42865760028004485,0.25693373289458243,4,5,True
+m7_tv,2,Thalamus,test,sub07-scan02,0.5544470365655675,0.20667799645932416,4,5,True
+m7_tv,2,global signal clean,test,sub07-scan02,0.592102729464521,0.17902907205606525,4,5,True
+m7_tv,2,Cuneus,test,sub11-scan01,0.3874703733582982,0.20159891253999096,4,5,True
+m7_tv,2,Heschl’s gyrus,test,sub11-scan01,0.5020386383045987,0.17028253197308163,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,test,sub11-scan01,0.42331852835588685,0.19955072073901378,4,5,True
+m7_tv,2,Precuneus anterior,test,sub11-scan01,0.46193931311468817,0.18430290651877618,4,5,True
+m7_tv,2,Putamen,test,sub11-scan01,0.33777230875341047,0.22561366415277886,4,5,True
+m7_tv,2,Thalamus,test,sub11-scan01,0.44972494575330574,0.2014055599231361,4,5,True
+m7_tv,2,global signal clean,test,sub11-scan01,0.5051563597413412,0.1785241194770855,4,5,True
+m7_tv,2,Cuneus,test,sub16-scan01,0.5046994254864675,0.2073969738768537,4,5,True
+m7_tv,2,Heschl’s gyrus,test,sub16-scan01,0.49053783665661277,0.20291424030190316,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,test,sub16-scan01,0.41915926125081554,0.22272525880497032,4,5,True
+m7_tv,2,Precuneus anterior,test,sub16-scan01,0.6582445070720109,0.15895302388287125,4,5,True
+m7_tv,2,Putamen,test,sub16-scan01,0.13825497702645137,0.27904178820092523,4,5,True
+m7_tv,2,Thalamus,test,sub16-scan01,0.5871549325825933,0.18384469618250796,4,5,True
+m7_tv,2,global signal clean,test,sub16-scan01,0.6101345265267089,0.17124324808923722,4,5,True
+m7_tv,2,Cuneus,test,sub18-scan01,0.41925751618582857,0.1952857198699548,4,5,True
+m7_tv,2,Heschl’s gyrus,test,sub18-scan01,0.5541883817672667,0.15187914668973318,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,test,sub18-scan01,0.38773956102930823,0.22807246702298928,4,5,True
+m7_tv,2,Precuneus anterior,test,sub18-scan01,0.3883786385594082,0.19696670976634553,4,5,True
+m7_tv,2,Putamen,test,sub18-scan01,0.5447496554388729,0.18371138100281378,4,5,True
+m7_tv,2,Thalamus,test,sub18-scan01,0.39181770707613023,0.2274479095883078,4,5,True
+m7_tv,2,global signal clean,test,sub18-scan01,0.44373913266166626,0.2081337163218421,4,5,True
+m7_tv,2,Cuneus,test,sub21-scan01,0.5163299981834949,0.1738283931228319,4,5,True
+m7_tv,2,Heschl’s gyrus,test,sub21-scan01,0.49321381118561364,0.19715524848435206,4,5,True
+m7_tv,2,Middle frontal gyrus anterior,test,sub21-scan01,0.4075211707393702,0.20963323005787285,4,5,True
+m7_tv,2,Precuneus anterior,test,sub21-scan01,0.4930170679549608,0.19671126024306512,4,5,True
+m7_tv,2,Putamen,test,sub21-scan01,0.26114133857815847,0.24495115226806152,4,5,True
+m7_tv,2,Thalamus,test,sub21-scan01,0.310815192034157,0.22978340552935297,4,5,True
+m7_tv,2,global signal clean,test,sub21-scan01,0.5117765305705625,0.1824591929106722,4,5,True
 m7_win20,1,Cuneus,val,sub06-scan01,0.49293340262977753,0.23764000459778672,5,16,True
 m7_win20,1,Heschl’s gyrus,val,sub06-scan01,0.5268824679269754,0.17229740924228915,5,16,True
 m7_win20,1,Middle frontal gyrus anterior,val,sub06-scan01,0.4503956466440388,0.1929892730318312,5,16,True
@@ -3618,6 +4542,237 @@ m7_win24_nohp,2,Precuneus anterior,test,sub21-scan01,0.5056290639849116,0.192552
 m7_win24_nohp,2,Putamen,test,sub21-scan01,0.24297212375994803,0.257486150327017,6,17,True
 m7_win24_nohp,2,Thalamus,test,sub21-scan01,0.31877393876654286,0.2318593124032377,6,17,True
 m7_win24_nohp,2,global signal clean,test,sub21-scan01,0.5009970772197325,0.19655089831788108,6,17,True
+m7_win24_tv,1,Cuneus,val,sub06-scan01,0.5102178685752885,0.21980299681840162,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,val,sub06-scan01,0.5174451738327187,0.17379873382636438,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,val,sub06-scan01,0.44396929968531246,0.19556802550266664,5,6,True
+m7_win24_tv,1,Precuneus anterior,val,sub06-scan01,0.583757725960235,0.1878941034156319,5,6,True
+m7_win24_tv,1,Putamen,val,sub06-scan01,0.4291532486753778,0.19306293570748537,5,6,True
+m7_win24_tv,1,Thalamus,val,sub06-scan01,0.4052144990923654,0.24709515616788938,5,6,True
+m7_win24_tv,1,global signal clean,val,sub06-scan01,0.55977235674841,0.1797716804466393,5,6,True
+m7_win24_tv,1,Cuneus,val,sub13-scan01,0.039864874314462756,0.25248221426505785,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,val,sub13-scan01,0.23976107760112092,0.23583116243735952,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,val,sub13-scan01,0.2678219235829387,0.25762554307895913,5,6,True
+m7_win24_tv,1,Precuneus anterior,val,sub13-scan01,0.20941478419747525,0.28962963850419216,5,6,True
+m7_win24_tv,1,Putamen,val,sub13-scan01,0.23506051395392064,0.2405911139773748,5,6,True
+m7_win24_tv,1,Thalamus,val,sub13-scan01,0.30033781102659574,0.254163209238221,5,6,True
+m7_win24_tv,1,global signal clean,val,sub13-scan01,0.26765590311454807,0.2521035986176952,5,6,True
+m7_win24_tv,1,Cuneus,val,sub13-scan02,0.19423585334138427,0.27576103723709455,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,val,sub13-scan02,0.3577457404879295,0.21984497115000262,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,val,sub13-scan02,0.16365643634494625,0.2549162396745395,5,6,True
+m7_win24_tv,1,Precuneus anterior,val,sub13-scan02,0.07066937825495857,0.2756393190737094,5,6,True
+m7_win24_tv,1,Putamen,val,sub13-scan02,0.14879643287202485,0.23148144136459597,5,6,True
+m7_win24_tv,1,Thalamus,val,sub13-scan02,0.2272478212933319,0.24950027586275578,5,6,True
+m7_win24_tv,1,global signal clean,val,sub13-scan02,0.23672269214290848,0.261626594742438,5,6,True
+m7_win24_tv,1,Cuneus,val,sub15-scan01,0.4207168217490367,0.2095543692563322,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,val,sub15-scan01,0.542712331665116,0.2000458437195862,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,val,sub15-scan01,0.41880769028024273,0.22527456659587797,5,6,True
+m7_win24_tv,1,Precuneus anterior,val,sub15-scan01,0.5150507712974857,0.23755860556601943,5,6,True
+m7_win24_tv,1,Putamen,val,sub15-scan01,0.3006703189828556,0.22722195579745783,5,6,True
+m7_win24_tv,1,Thalamus,val,sub15-scan01,0.42705299321793094,0.23733296136937795,5,6,True
+m7_win24_tv,1,global signal clean,val,sub15-scan01,0.5527188547658076,0.2027334207284288,5,6,True
+m7_win24_tv,1,Cuneus,val,sub22-scan01,0.6052739223091942,0.19503628120918443,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,val,sub22-scan01,0.5850172296553575,0.16681116615687797,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,val,sub22-scan01,0.4087906973872882,0.23376625814218951,5,6,True
+m7_win24_tv,1,Precuneus anterior,val,sub22-scan01,0.557730091733959,0.2006391176273843,5,6,True
+m7_win24_tv,1,Putamen,val,sub22-scan01,0.408176733135788,0.24122505489859922,5,6,True
+m7_win24_tv,1,Thalamus,val,sub22-scan01,0.5334075962219549,0.21562658429773535,5,6,True
+m7_win24_tv,1,global signal clean,val,sub22-scan01,0.6322563712505519,0.15479987764963768,5,6,True
+m7_win24_tv,1,Cuneus,test,sub07-scan01,0.3368701519438191,0.24992010480803048,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,test,sub07-scan01,0.5280960071014217,0.17746681303419973,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,test,sub07-scan01,0.5866304507874203,0.19855248428372863,5,6,True
+m7_win24_tv,1,Precuneus anterior,test,sub07-scan01,0.6014751003489124,0.17510142611721402,5,6,True
+m7_win24_tv,1,Putamen,test,sub07-scan01,0.4447538743934677,0.2245006464994965,5,6,True
+m7_win24_tv,1,Thalamus,test,sub07-scan01,0.3671018350625782,0.2379339918299058,5,6,True
+m7_win24_tv,1,global signal clean,test,sub07-scan01,0.6350029385827872,0.15034469748848245,5,6,True
+m7_win24_tv,1,Cuneus,test,sub07-scan02,0.3599290222913576,0.23704748132815895,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,test,sub07-scan02,0.5033515526694476,0.20061537601279575,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,test,sub07-scan02,0.5131101366465685,0.2088324431147536,5,6,True
+m7_win24_tv,1,Precuneus anterior,test,sub07-scan02,0.49408186041500524,0.18949557924703142,5,6,True
+m7_win24_tv,1,Putamen,test,sub07-scan02,0.40970923328195447,0.2687246494536485,5,6,True
+m7_win24_tv,1,Thalamus,test,sub07-scan02,0.4435818977868334,0.22807399106212065,5,6,True
+m7_win24_tv,1,global signal clean,test,sub07-scan02,0.5581627864364087,0.17764568031467198,5,6,True
+m7_win24_tv,1,Cuneus,test,sub11-scan01,0.6119596888174127,0.152304042772201,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,test,sub11-scan01,0.6689807076277238,0.1292552197525246,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,test,sub11-scan01,0.45145773745187767,0.19842196237325102,5,6,True
+m7_win24_tv,1,Precuneus anterior,test,sub11-scan01,0.4999392218663269,0.194387711273205,5,6,True
+m7_win24_tv,1,Putamen,test,sub11-scan01,0.3077823540620816,0.23073786872622332,5,6,True
+m7_win24_tv,1,Thalamus,test,sub11-scan01,0.38232386758438525,0.21384689225405337,5,6,True
+m7_win24_tv,1,global signal clean,test,sub11-scan01,0.6276845726957863,0.1554428451203587,5,6,True
+m7_win24_tv,1,Cuneus,test,sub16-scan01,0.6195729270224991,0.1730466787231289,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,test,sub16-scan01,0.5869170355619577,0.1787371565955155,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,test,sub16-scan01,0.4808078065292872,0.21196325440442057,5,6,True
+m7_win24_tv,1,Precuneus anterior,test,sub16-scan01,0.6531111441562111,0.15839610973116097,5,6,True
+m7_win24_tv,1,Putamen,test,sub16-scan01,0.20044867535366714,0.2629161365695309,5,6,True
+m7_win24_tv,1,Thalamus,test,sub16-scan01,0.5565468984417958,0.20272453408704305,5,6,True
+m7_win24_tv,1,global signal clean,test,sub16-scan01,0.6856231500045181,0.14911700977180456,5,6,True
+m7_win24_tv,1,Cuneus,test,sub18-scan01,0.35848268372910913,0.20852204919869077,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,test,sub18-scan01,0.5258499366504105,0.1587296884203127,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,test,sub18-scan01,0.37042001217732773,0.2350996550234552,5,6,True
+m7_win24_tv,1,Precuneus anterior,test,sub18-scan01,0.35726310181084353,0.20965472253778775,5,6,True
+m7_win24_tv,1,Putamen,test,sub18-scan01,0.5077698094437346,0.19626231355288415,5,6,True
+m7_win24_tv,1,Thalamus,test,sub18-scan01,0.40020881792393326,0.23313647512781155,5,6,True
+m7_win24_tv,1,global signal clean,test,sub18-scan01,0.41113579527699545,0.2178035104028504,5,6,True
+m7_win24_tv,1,Cuneus,test,sub21-scan01,0.6242957684107983,0.147322177002335,5,6,True
+m7_win24_tv,1,Heschl’s gyrus,test,sub21-scan01,0.5044605052664455,0.20008946095963634,5,6,True
+m7_win24_tv,1,Middle frontal gyrus anterior,test,sub21-scan01,0.39861941084195285,0.2167076028489742,5,6,True
+m7_win24_tv,1,Precuneus anterior,test,sub21-scan01,0.5068429624811998,0.20414004349203363,5,6,True
+m7_win24_tv,1,Putamen,test,sub21-scan01,0.2957342682342039,0.23736322849506278,5,6,True
+m7_win24_tv,1,Thalamus,test,sub21-scan01,0.3364912617435309,0.2240819887994423,5,6,True
+m7_win24_tv,1,global signal clean,test,sub21-scan01,0.513653386741032,0.20151916723826507,5,6,True
+m7_win24_tv,12345,Cuneus,val,sub06-scan01,0.5106495158243215,0.22594902522688937,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,val,sub06-scan01,0.5280287288037762,0.17107294023405137,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,val,sub06-scan01,0.46129438906041537,0.19271115164928326,5,6,True
+m7_win24_tv,12345,Precuneus anterior,val,sub06-scan01,0.5901269125964751,0.18718717213355748,5,6,True
+m7_win24_tv,12345,Putamen,val,sub06-scan01,0.4341292622755008,0.18732824429467856,5,6,True
+m7_win24_tv,12345,Thalamus,val,sub06-scan01,0.42308105487354264,0.24370345726625708,5,6,True
+m7_win24_tv,12345,global signal clean,val,sub06-scan01,0.5983112957835337,0.1710802380123272,5,6,True
+m7_win24_tv,12345,Cuneus,val,sub13-scan01,0.0928074488325707,0.2428607644493102,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,val,sub13-scan01,0.26152520802127377,0.23316138192467317,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,val,sub13-scan01,0.27343613965146785,0.25695249321750735,5,6,True
+m7_win24_tv,12345,Precuneus anterior,val,sub13-scan01,0.18493192388928065,0.2920246494745894,5,6,True
+m7_win24_tv,12345,Putamen,val,sub13-scan01,0.25451109546818185,0.2381902275856247,5,6,True
+m7_win24_tv,12345,Thalamus,val,sub13-scan01,0.26919045794715024,0.2542538565737291,5,6,True
+m7_win24_tv,12345,global signal clean,val,sub13-scan01,0.3247851938799901,0.2454470115327543,5,6,True
+m7_win24_tv,12345,Cuneus,val,sub13-scan02,0.1752430755944606,0.2772141798069871,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,val,sub13-scan02,0.3801396225957708,0.2164007894425622,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,val,sub13-scan02,0.18804449090944478,0.2519814176327003,5,6,True
+m7_win24_tv,12345,Precuneus anterior,val,sub13-scan02,0.1350770413395419,0.26729957021632433,5,6,True
+m7_win24_tv,12345,Putamen,val,sub13-scan02,0.21787639695508162,0.22660893335980462,5,6,True
+m7_win24_tv,12345,Thalamus,val,sub13-scan02,0.3273976380919136,0.23951648508648074,5,6,True
+m7_win24_tv,12345,global signal clean,val,sub13-scan02,0.30729535837636884,0.25215298576596734,5,6,True
+m7_win24_tv,12345,Cuneus,val,sub15-scan01,0.3074234563700744,0.2306906623767186,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,val,sub15-scan01,0.5211479336129823,0.205196945277395,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,val,sub15-scan01,0.37747359047028106,0.23108975001581256,5,6,True
+m7_win24_tv,12345,Precuneus anterior,val,sub15-scan01,0.46839811699350703,0.24845600831915882,5,6,True
+m7_win24_tv,12345,Putamen,val,sub15-scan01,0.31781262673001737,0.22231757179408995,5,6,True
+m7_win24_tv,12345,Thalamus,val,sub15-scan01,0.4122527993930536,0.240548737751144,5,6,True
+m7_win24_tv,12345,global signal clean,val,sub15-scan01,0.4829286712170233,0.2197499841037208,5,6,True
+m7_win24_tv,12345,Cuneus,val,sub22-scan01,0.5820092603005973,0.21372262147249582,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,val,sub22-scan01,0.571912466374044,0.1741449607194847,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,val,sub22-scan01,0.42268253157519675,0.23227541496539586,5,6,True
+m7_win24_tv,12345,Precuneus anterior,val,sub22-scan01,0.5724634201070193,0.2004326505334933,5,6,True
+m7_win24_tv,12345,Putamen,val,sub22-scan01,0.3785056787739111,0.2434901802329758,5,6,True
+m7_win24_tv,12345,Thalamus,val,sub22-scan01,0.4784250820293369,0.22408503608789157,5,6,True
+m7_win24_tv,12345,global signal clean,val,sub22-scan01,0.630031186436107,0.1615739007212559,5,6,True
+m7_win24_tv,12345,Cuneus,test,sub07-scan01,0.2850445778265981,0.2529852569024615,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,test,sub07-scan01,0.47402172636100237,0.18848698710732767,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,test,sub07-scan01,0.5728103416292584,0.2049565219144912,5,6,True
+m7_win24_tv,12345,Precuneus anterior,test,sub07-scan01,0.5811813226212159,0.18082135585879494,5,6,True
+m7_win24_tv,12345,Putamen,test,sub07-scan01,0.47737047868591886,0.21818979303812006,5,6,True
+m7_win24_tv,12345,Thalamus,test,sub07-scan01,0.3980445113370543,0.23415564195261046,5,6,True
+m7_win24_tv,12345,global signal clean,test,sub07-scan01,0.6239926321713234,0.15477999635212647,5,6,True
+m7_win24_tv,12345,Cuneus,test,sub07-scan02,0.3321569223547085,0.23979763013347355,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,test,sub07-scan02,0.49502798549802524,0.20353403080386423,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,test,sub07-scan02,0.5281073112099072,0.2092216827067233,5,6,True
+m7_win24_tv,12345,Precuneus anterior,test,sub07-scan02,0.5296376036457239,0.18211768965000596,5,6,True
+m7_win24_tv,12345,Putamen,test,sub07-scan02,0.42111790742461963,0.26342205202564734,5,6,True
+m7_win24_tv,12345,Thalamus,test,sub07-scan02,0.5099226179461015,0.2239783049383922,5,6,True
+m7_win24_tv,12345,global signal clean,test,sub07-scan02,0.5717489048547848,0.17644099274269198,5,6,True
+m7_win24_tv,12345,Cuneus,test,sub11-scan01,0.5484323856010686,0.1656197323805218,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,test,sub11-scan01,0.6315816024409178,0.13643451486149102,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,test,sub11-scan01,0.4745452126777051,0.18770387262761973,5,6,True
+m7_win24_tv,12345,Precuneus anterior,test,sub11-scan01,0.5057291347408172,0.17468416883911453,5,6,True
+m7_win24_tv,12345,Putamen,test,sub11-scan01,0.3597948355599482,0.2222683883396661,5,6,True
+m7_win24_tv,12345,Thalamus,test,sub11-scan01,0.3929718705879407,0.2122663818037043,5,6,True
+m7_win24_tv,12345,global signal clean,test,sub11-scan01,0.6126411158667233,0.14895708659941226,5,6,True
+m7_win24_tv,12345,Cuneus,test,sub16-scan01,0.5751324327315768,0.18580844275833208,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,test,sub16-scan01,0.5461748189908873,0.18623581888088955,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,test,sub16-scan01,0.4630987004094784,0.2129232446441223,5,6,True
+m7_win24_tv,12345,Precuneus anterior,test,sub16-scan01,0.6698898020142557,0.14870232223113283,5,6,True
+m7_win24_tv,12345,Putamen,test,sub16-scan01,0.1796697770808088,0.2661230900171796,5,6,True
+m7_win24_tv,12345,Thalamus,test,sub16-scan01,0.5504235830286082,0.20526307469769703,5,6,True
+m7_win24_tv,12345,global signal clean,test,sub16-scan01,0.6674804557051965,0.15021471546690202,5,6,True
+m7_win24_tv,12345,Cuneus,test,sub18-scan01,0.4034135826108584,0.19826077028296227,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,test,sub18-scan01,0.5612300847037105,0.15087381465081973,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,test,sub18-scan01,0.4120731688715271,0.22547041137764667,5,6,True
+m7_win24_tv,12345,Precuneus anterior,test,sub18-scan01,0.38823755043098845,0.19659237824698972,5,6,True
+m7_win24_tv,12345,Putamen,test,sub18-scan01,0.5552167955820999,0.1904956517224949,5,6,True
+m7_win24_tv,12345,Thalamus,test,sub18-scan01,0.4213392180329615,0.23079015124523328,5,6,True
+m7_win24_tv,12345,global signal clean,test,sub18-scan01,0.4534941101866695,0.20546349075524822,5,6,True
+m7_win24_tv,12345,Cuneus,test,sub21-scan01,0.5846770196110966,0.15501836342605935,5,6,True
+m7_win24_tv,12345,Heschl’s gyrus,test,sub21-scan01,0.5009171505056571,0.1950181728508258,5,6,True
+m7_win24_tv,12345,Middle frontal gyrus anterior,test,sub21-scan01,0.3948606046109193,0.21155691219956516,5,6,True
+m7_win24_tv,12345,Precuneus anterior,test,sub21-scan01,0.5126824212491118,0.19139870017876312,5,6,True
+m7_win24_tv,12345,Putamen,test,sub21-scan01,0.26121437725336416,0.24314733217529322,5,6,True
+m7_win24_tv,12345,Thalamus,test,sub21-scan01,0.34698698541365297,0.22442630109748005,5,6,True
+m7_win24_tv,12345,global signal clean,test,sub21-scan01,0.5141939008870147,0.18548715263849105,5,6,True
+m7_win24_tv,2,Cuneus,val,sub06-scan01,0.49388853141343025,0.22901812593981838,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,val,sub06-scan01,0.5132278904054614,0.1759043386772077,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,val,sub06-scan01,0.454903150871579,0.19497997956396845,5,6,True
+m7_win24_tv,2,Precuneus anterior,val,sub06-scan01,0.583690531890267,0.1909553321615031,5,6,True
+m7_win24_tv,2,Putamen,val,sub06-scan01,0.4096723460615364,0.19222671140681882,5,6,True
+m7_win24_tv,2,Thalamus,val,sub06-scan01,0.37499703075440904,0.24894290243653405,5,6,True
+m7_win24_tv,2,global signal clean,val,sub06-scan01,0.5832569452630351,0.17611768183424253,5,6,True
+m7_win24_tv,2,Cuneus,val,sub13-scan01,0.07114398984530783,0.2460343287063975,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,val,sub13-scan01,0.25935143239635045,0.23490726459454803,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,val,sub13-scan01,0.25983668779298247,0.25892747087345086,5,6,True
+m7_win24_tv,2,Precuneus anterior,val,sub13-scan01,0.2017239376609968,0.2912443574976783,5,6,True
+m7_win24_tv,2,Putamen,val,sub13-scan01,0.26640738581809853,0.23879032033038783,5,6,True
+m7_win24_tv,2,Thalamus,val,sub13-scan01,0.2880194587453504,0.25860543401815156,5,6,True
+m7_win24_tv,2,global signal clean,val,sub13-scan01,0.2960400339855623,0.2482467070206223,5,6,True
+m7_win24_tv,2,Cuneus,val,sub13-scan02,0.13529185170650168,0.28293301663242615,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,val,sub13-scan02,0.38551803005152807,0.21729099670513322,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,val,sub13-scan02,0.1907419637883514,0.25250136098533743,5,6,True
+m7_win24_tv,2,Precuneus anterior,val,sub13-scan02,0.09367251568543483,0.2743562450692088,5,6,True
+m7_win24_tv,2,Putamen,val,sub13-scan02,0.20692413503142387,0.22800722267804477,5,6,True
+m7_win24_tv,2,Thalamus,val,sub13-scan02,0.29615491645764247,0.24797652891573835,5,6,True
+m7_win24_tv,2,global signal clean,val,sub13-scan02,0.25084406813539256,0.25984559920728734,5,6,True
+m7_win24_tv,2,Cuneus,val,sub15-scan01,0.37387293634004143,0.21936050561684303,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,val,sub15-scan01,0.551945251127839,0.20038571015238413,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,val,sub15-scan01,0.39484544429123036,0.22967013370382627,5,6,True
+m7_win24_tv,2,Precuneus anterior,val,sub15-scan01,0.4942222478399301,0.24421260757647237,5,6,True
+m7_win24_tv,2,Putamen,val,sub15-scan01,0.345070241360031,0.22203627852535462,5,6,True
+m7_win24_tv,2,Thalamus,val,sub15-scan01,0.4091689325452141,0.24078435260324038,5,6,True
+m7_win24_tv,2,global signal clean,val,sub15-scan01,0.5336687687296496,0.2095685425302964,5,6,True
+m7_win24_tv,2,Cuneus,val,sub22-scan01,0.5827018229271023,0.20878639611436423,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,val,sub22-scan01,0.5699435641504726,0.17287909211559005,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,val,sub22-scan01,0.4187252409827576,0.23251371283821956,5,6,True
+m7_win24_tv,2,Precuneus anterior,val,sub22-scan01,0.5605354883356872,0.20163897374290632,5,6,True
+m7_win24_tv,2,Putamen,val,sub22-scan01,0.3525773508947059,0.2472627395732718,5,6,True
+m7_win24_tv,2,Thalamus,val,sub22-scan01,0.48881535387160613,0.22018740945059118,5,6,True
+m7_win24_tv,2,global signal clean,val,sub22-scan01,0.626319554348094,0.16008584298972905,5,6,True
+m7_win24_tv,2,Cuneus,test,sub07-scan01,0.29177830096594853,0.2535771877735674,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,test,sub07-scan01,0.4837531612669141,0.18773287370825736,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,test,sub07-scan01,0.5580713676166361,0.20870355761805567,5,6,True
+m7_win24_tv,2,Precuneus anterior,test,sub07-scan01,0.5730096270418255,0.18399689601135272,5,6,True
+m7_win24_tv,2,Putamen,test,sub07-scan01,0.4601404784580196,0.22307034641361173,5,6,True
+m7_win24_tv,2,Thalamus,test,sub07-scan01,0.37082393949418574,0.2364847649980939,5,6,True
+m7_win24_tv,2,global signal clean,test,sub07-scan01,0.6144743545640222,0.15769989116249605,5,6,True
+m7_win24_tv,2,Cuneus,test,sub07-scan02,0.33086135360543856,0.24030213920827337,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,test,sub07-scan02,0.4758930775031389,0.20790559319466637,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,test,sub07-scan02,0.51527499094291,0.2122264113253013,5,6,True
+m7_win24_tv,2,Precuneus anterior,test,sub07-scan02,0.4972309457203824,0.18938916866280217,5,6,True
+m7_win24_tv,2,Putamen,test,sub07-scan02,0.3888280542654867,0.26926048971949823,5,6,True
+m7_win24_tv,2,Thalamus,test,sub07-scan02,0.44917474591161133,0.22737026360818002,5,6,True
+m7_win24_tv,2,global signal clean,test,sub07-scan02,0.5503407087524399,0.18115906190350026,5,6,True
+m7_win24_tv,2,Cuneus,test,sub11-scan01,0.5635438771518033,0.16216376105333002,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,test,sub11-scan01,0.6188384533415677,0.14103497240925927,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,test,sub11-scan01,0.432690663684758,0.19718263210132775,5,6,True
+m7_win24_tv,2,Precuneus anterior,test,sub11-scan01,0.4755738250795767,0.18574522415287087,5,6,True
+m7_win24_tv,2,Putamen,test,sub11-scan01,0.32643268420641447,0.22739058284605612,5,6,True
+m7_win24_tv,2,Thalamus,test,sub11-scan01,0.3919183075276667,0.21271971753126176,5,6,True
+m7_win24_tv,2,global signal clean,test,sub11-scan01,0.6002643720366021,0.15420310092203363,5,6,True
+m7_win24_tv,2,Cuneus,test,sub16-scan01,0.5817728829497881,0.18368526516561373,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,test,sub16-scan01,0.5451797995255688,0.18743722470425417,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,test,sub16-scan01,0.4560058746319111,0.21564315913158721,5,6,True
+m7_win24_tv,2,Precuneus anterior,test,sub16-scan01,0.6522577329697241,0.1555827396462736,5,6,True
+m7_win24_tv,2,Putamen,test,sub16-scan01,0.145218014637158,0.26889572379448873,5,6,True
+m7_win24_tv,2,Thalamus,test,sub16-scan01,0.5444830182821989,0.2057790069374858,5,6,True
+m7_win24_tv,2,global signal clean,test,sub16-scan01,0.6552654197970592,0.15525287228175474,5,6,True
+m7_win24_tv,2,Cuneus,test,sub18-scan01,0.3932327778664447,0.20024309990552952,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,test,sub18-scan01,0.551879743523677,0.15365683482484593,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,test,sub18-scan01,0.39824307365764594,0.22895489939024144,5,6,True
+m7_win24_tv,2,Precuneus anterior,test,sub18-scan01,0.37901183678243594,0.20161997061276574,5,6,True
+m7_win24_tv,2,Putamen,test,sub18-scan01,0.5425104995960986,0.1953045436661347,5,6,True
+m7_win24_tv,2,Thalamus,test,sub18-scan01,0.39540901936591666,0.2334417979250871,5,6,True
+m7_win24_tv,2,global signal clean,test,sub18-scan01,0.44009757414320266,0.2088788384960327,5,6,True
+m7_win24_tv,2,Cuneus,test,sub21-scan01,0.6239875820979613,0.14411491536143484,5,6,True
+m7_win24_tv,2,Heschl’s gyrus,test,sub21-scan01,0.5194278955660826,0.18979832475445518,5,6,True
+m7_win24_tv,2,Middle frontal gyrus anterior,test,sub21-scan01,0.4041723274803843,0.21011462879678428,5,6,True
+m7_win24_tv,2,Precuneus anterior,test,sub21-scan01,0.5236445892846271,0.1892760811141678,5,6,True
+m7_win24_tv,2,Putamen,test,sub21-scan01,0.25400724576559514,0.24360589296486884,5,6,True
+m7_win24_tv,2,Thalamus,test,sub21-scan01,0.3259112480317657,0.22636293069911892,5,6,True
+m7_win24_tv,2,global signal clean,test,sub21-scan01,0.534567048034879,0.18074301050428906,5,6,True
 m7_win28,1,Cuneus,val,sub06-scan01,0.4089637851108457,0.254787315744691,5,16,True
 m7_win28,1,Heschl’s gyrus,val,sub06-scan01,0.46260422703572546,0.1858156893630213,5,16,True
 m7_win28,1,Middle frontal gyrus anterior,val,sub06-scan01,0.380319049958521,0.20390054426323942,5,16,True
