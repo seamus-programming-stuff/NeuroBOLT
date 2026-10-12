@@ -1,32 +1,29 @@
-### A linear band-power model matches NeuroBOLT
+### The best predictor so far is linear
 
-- Ridge regression on log power in five classic bands, over the same 16 s window NeuroBOLT sees, scores the same as NeuroBOLT's baseline across all three seeds: 0.469 against 0.466 on the held-out scans, and 0.337 against 0.335 on validation.
-- The transformer's extra capacity buys nothing measurable across people. This is the bar every NeuroBOLT change below has to clear.
+- Ridge regression on log EEG power in 1 Hz bins (1–45 Hz), over 32 s of history in sixteen 2 s lag bins, scores 0.525 on the held-out scans and 0.371 on validation. NeuroBOLT scores 0.466 (0.475 when its three seeds are averaged), and the paper reports 0.473.
+- The gain comes from two things NeuroBOLT does not exploit across people. 1 Hz bins alone take ridge from 0.469 to 0.497, and 32 s of history alone takes it to 0.493. Going to 48 s or 64 s adds nothing (0.486 and 0.488), so the useful history matches the slow tail of the haemodynamic response.
+- With the same 16 s window and five classic bands, ridge already matches NeuroBOLT (0.469 against 0.466 on test, 0.337 against 0.335 on validation). The transformer's extra capacity buys nothing measurable across people.
 
-### Two things make the linear model clearly better: frequency detail and history
+### NeuroBOLT gains from a longer window (early result)
 
-- **1 Hz frequency bins** instead of five bands raise ridge from 0.469 to 0.497 at 16 s, and from 0.337 to 0.374 on validation.
-- **32 s of EEG history** in 2 s lag bins raises it to 0.493, and 1 s lag bins to 0.495. Going to 48 s or 64 s adds nothing (0.486 and 0.488), so the useful history matches the slow tail of the haemodynamic response.
-- NeuroBOLT uses a fixed 16 s window and spectral windows of 0.5–4 s. The 24 s NeuroBOLT arm is running now, and a ridge combining 1 Hz bins with 32 s of history is running on CPU.
+- With seed 12345 complete, the 24 s window (pretrained time embedding stretched from 16 to 24 slots) scores 0.478 against the baseline's 0.466, and gains 0.026 on validation. It is the first NeuroBOLT change that helps, matching what history does for ridge. Seeds 1 and 2 are running, and a 32 s NeuroBOLT arm is queued next.
 
-### Combining NeuroBOLT with ridge gives the best predictions so far
-
-- Averaging z-scored predictions from NeuroBOLT's three seeds and two ridge models reaches 0.514 on the held-out scans and 0.381 on validation. NeuroBOLT's own seed ensemble reaches 0.475 and 0.335, and the paper reports 0.473.
-- Almost all of the gain comes from the ridge models: the two ridges together reach 0.513 and 0.380 without NeuroBOLT. NeuroBOLT and ridge make partly different errors, but two ridges with different strengths complement each other as well.
+### Ensembles: NeuroBOLT adds little to the best ridge
 
 | Predictions averaged (z-scored per scan) | Validation R | Test R |
 |---|---|---|
 | NeuroBOLT, 3 seeds | 0.335 | 0.475 |
-| Ridge, 1 Hz bins, 16 s | 0.374 | 0.497 |
-| Ridge, 5 bands, 32 s / 16 lags | 0.344 | 0.493 |
-| NeuroBOLT + ridge 32 s | 0.363 | 0.506 |
-| Ridge 1 Hz + ridge 32 s | 0.380 | 0.513 |
-| **NeuroBOLT + both ridges** | **0.381** | **0.514** |
+| Ridge, 1 Hz bins, 32 s / 16 lags | 0.371 | **0.525** |
+| NeuroBOLT + that ridge | **0.381** | 0.524 |
+| NeuroBOLT + ridge 1 Hz 16 s + ridge 5 bands 32 s | **0.381** | 0.514 |
+
+- Averaging NeuroBOLT with weaker ridge models helps both, so their errors are partly independent. With the strongest ridge, NeuroBOLT still nudges validation up by 0.010 but leaves the held-out scans unchanged.
 
 ### Within a single scan, ridge clearly beats NeuroBOLT
 
-- Ridge on 16 s of band power, trained with NeuroBOLT's exact intra-scan split and scored on the same last 48 frames of each scan, averages 0.493 over the 29 scans and 7 regions. Our NeuroBOLT reproduction averages 0.377 on those frames, and the paper reports 0.531. With 1 Hz bins, ridge reaches 0.505.
+- Ridge on 16 s of band power, trained with NeuroBOLT's exact intra-scan split and scored on the same last 48 frames of each scan, averages 0.493 over the 29 scans and 7 regions, and 0.505 with 1 Hz bins. Our NeuroBOLT reproduction averages 0.377 on those frames, and the paper reports 0.531.
 - Ridge also fails far less often: 0–7% of its runs score below zero, against 13% for NeuroBOLT. With 453 training windows per scan, the transformer has too little data, and its validation-selected epoch is noisy.
+- On the six inter-subject test scans, the cross-subject NeuroBOLT with no fine-tuning (0.579) already beats NeuroBOLT trained on each person's own scan (0.532), while ridge reaches 0.662. Runs starting intra-scan training from the cross-subject model are finishing now.
 
 | Intra-scan, 29 scans | Cuneus | Heschl's | Mid. frontal | Precuneus | Putamen | Thalamus | Global | Avg. |
 |---|---|---|---|---|---|---|---|---|
