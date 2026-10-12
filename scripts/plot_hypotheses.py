@@ -44,7 +44,14 @@ LABELS = {  # readable names for the arms; unknown arms fall back to their direc
 # Shared 7-ROI model arms (m7_*) reuse the single-ROI change names
 LABELS.update({f"m7_{arm}": "Shared model · " + LABELS[arm].split(" · ", 1)[1]
                for arm in ("nohp", "softmax", "beta099", "nobaseline", "win8", "win24", "lr1e4", "msslog", "win32")})
-LABELS["m7_win24_nohp"] = "Shared model · 24 s window, no high-pass"
+LABELS.update({
+    "m7_win24_nohp": "Shared model · 24 s window, no high-pass",
+    "m7_win20": "Shared model · 20 s window", "m7_win28": "Shared model · 28 s window",
+    "m7_temporal": "Shared model · LaBraM branch only", "m7_spectral": "Shared model · spectral branch only",
+    "m7_scratch": "Shared model · no pretraining", "m7_tmpbn": "Shared model · BatchNorm on LaBraM branch",
+    "m7_temporal_bn": "Shared model · LaBraM branch only, BatchNorm",
+    "ridge_fine_w24_sub12_tv": "Ridge · 1 Hz bins · 24 s / 12 lags · train+val",
+})
 
 
 def baseline_for(arm, baseline="base"):

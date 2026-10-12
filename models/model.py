@@ -269,13 +269,19 @@ class NeuroBOLTransformer(nn.Module):
                  drop_path_rate=0., norm_layer=nn.LayerNorm, init_values=None,
                  use_abs_pos_emb=True, use_rel_pos_bias=False, use_shared_rel_pos_bias=False,
                  use_mean_pooling=True, init_scale=0.001, mss_fusion="sum", mss_log=False, branch="both",
-                 **kwargs):
+                 tmp_norm="none", **kwargs):
         super().__init__()
         self.num_roi = num_roi
         self.num_features = self.embed_dim = embed_dim  # num_features for consistency with other models
         if branch not in ("both", "temporal", "spectral"):
             raise ValueError(f"Unknown branch {branch!r}; expected 'both', 'temporal' or 'spectral'")
         self.branch = branch  # ablation: use the LaBraM temporal branch, the spectral branch, or both
+        # The mean-pooled, LayerNormed LaBraM embedding barely varies between windows (about 2% of its
+        # scale), so the head cannot use it next to the spectral branch. "batchnorm" standardizes it
+        # across samples before the two branches are added.
+        if tmp_norm not in ("none", "batchnorm"):
+            raise ValueError(f"Unknown tmp_norm {tmp_norm!r}; expected 'none' or 'batchnorm'")
+        self.tmp_norm = nn.BatchNorm1d(embed_dim) if tmp_norm == "batchnorm" else None
 
         # To identify whether it is neural tokenizer or neural decoder.
         # For the neural decoder, use linear projection (PatchEmbed) to project codebook dimension to hidden dimension.
@@ -411,6 +417,8 @@ class NeuroBOLTransformer(nn.Module):
         if self.branch != "spectral":
             x_tmp = self.forward_ts_features(x, input_chans=input_chans, return_patch_tokens=return_patch_tokens,
                                              return_all_tokens=return_all_tokens, **kwargs)
+            if self.tmp_norm is not None:
+                x_tmp = self.tmp_norm(x_tmp)
         x_mss = 0
         if self.branch != "temporal":
             x_mss = self.mss_module(rearrange(x, 'B N A T -> B N (A T)'), input_chans=input_chans_spect)

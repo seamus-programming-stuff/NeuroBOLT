@@ -227,6 +227,9 @@ def get_args():
                         help='ablation: LaBraM temporal branch, multiscale spectral branch, or both')
     parser.add_argument('--no_pretrained', action='store_true', default=False,
                         help='ignore --finetune and train from random initialization')
+    parser.add_argument('--tmp_norm', default='none', choices=['none', 'batchnorm'],
+                        help="standardize the LaBraM branch's pooled embedding across samples before the "
+                             "branches are added")
     parser.add_argument('--early_stop_patience', default=0, type=int,
                         help='stop after this many epochs without a new validation-MSE minimum (0: never)')
     parser.add_argument('--save_best_predictions', action='store_true', default=False,
@@ -281,6 +284,7 @@ def get_models(args):
             mss_fusion=args.mss_fusion,
             mss_log=args.mss_log,
             branch=args.branch,
+            tmp_norm=args.tmp_norm,
         )
     return model
 
