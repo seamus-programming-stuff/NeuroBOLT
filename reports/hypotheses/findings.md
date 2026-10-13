@@ -1,3 +1,10 @@
+### Bottom line
+
+- **A linear model beats NeuroBOLT.** Across all 22 people (5-fold, subject-grouped cross-validation), ridge regression on EEG band power predicts held-out BOLD better than NeuroBOLT for 19–20 of the 22 people, by 0.045–0.058 R. Even five channel-averaged band powers at 12 lags (60 numbers per window) beat it.
+- **The paper's inter-subject figure comes from an unusually easy split.** Across all 22 people NeuroBOLT averages about 0.32, against the 0.47 reported for the authors' single split.
+- **NeuroBOLT's skill is entirely in its spectral branch.** The pretrained LaBraM transformer contributes nothing. Of 33 changes tested, only a 24 s EEG window helped, and that gain shrinks to +0.013 (not significant) across all people.
+- **What EEG predicts is mostly brain state.** A single vigilance index carries half the predictable signal, and scans whose alpha and theta power fluctuate more are far more predictable. No model recovers a person's connectivity beyond the population average.
+
 ### Across all 22 people, ridge beats NeuroBOLT, and the authors' split is the easiest
 
 - The comparisons below use the authors' single split, whose six held-out scans come from only five people. To test them on everyone, the best ridge and the shared NeuroBOLT (16 s and 24 s windows, three seeds each) were rerun in a 5-fold, subject-grouped cross-validation (`scan_split_cv5.xlsx`). Fold 1 is the authors' split, so all 29 scans and all 22 people are held out exactly once.

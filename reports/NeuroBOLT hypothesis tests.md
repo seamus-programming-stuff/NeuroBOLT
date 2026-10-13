@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 13 Oct 2026, 18:23 AEDT. Done: 5-fold cross-validation over all 22 people, nested vigilance and band-power models, ridge learning curve, predictability analysis, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
+*Updated 13 Oct 2026, 18:25 AEDT. All planned hypotheses done: 5-fold cross-validation over all 22 people, nested vigilance and band-power models, learning curve, predictability analysis, 33 NeuroBOLT arms, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -63,6 +63,13 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 Δ is paired by ROI and held-out scan, against the per-ROI NeuroBOLT baseline (shared-model arms: against the shared 7-ROI baseline); its 95% CI is a t-interval over the six held-out scans. Rows with a dash in any ROI are still running.
 
 ## Findings so far
+
+### Bottom line
+
+- **A linear model beats NeuroBOLT.** Across all 22 people (5-fold, subject-grouped cross-validation), ridge regression on EEG band power predicts held-out BOLD better than NeuroBOLT for 19–20 of the 22 people, by 0.045–0.058 R. Even five channel-averaged band powers at 12 lags (60 numbers per window) beat it.
+- **The paper's inter-subject figure comes from an unusually easy split.** Across all 22 people NeuroBOLT averages about 0.32, against the 0.47 reported for the authors' single split.
+- **NeuroBOLT's skill is entirely in its spectral branch.** The pretrained LaBraM transformer contributes nothing. Of 33 changes tested, only a 24 s EEG window helped, and that gain shrinks to +0.013 (not significant) across all people.
+- **What EEG predicts is mostly brain state.** A single vigilance index carries half the predictable signal, and scans whose alpha and theta power fluctuate more are far more predictable. No model recovers a person's connectivity beyond the population average.
 
 ### Across all 22 people, ridge beats NeuroBOLT, and the authors' split is the easiest
 
