@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 13 Oct 2026, 18:07 AEDT. Done: 5-fold cross-validation over all 22 people, ridge learning curve, predictability analysis, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
+*Updated 13 Oct 2026, 18:23 AEDT. Done: 5-fold cross-validation over all 22 people, nested vigilance and band-power models, ridge learning curve, predictability analysis, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -168,6 +168,19 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Mean alpha power | −0.42 | 0.022 |
 | Mean theta power | +0.11 | 0.565 |
 | 30–45 Hz power (artefact proxy) | +0.04 | 0.819 |
+
+### Sixty numbers per window beat NeuroBOLT; a single vigilance index carries half the signal
+
+- Three nested ridge models were fitted with the same 5-fold, subject-grouped cross-validation. One uses only an EEG vigilance index (channel-averaged alpha power relative to delta and theta power, at each of 12 lags: 12 features). One uses channel-averaged power in the five classic bands at each lag (60 features). The third is the full best model (26 channels × 44 frequency bins × 12 lags).
+- **Five channel-averaged band powers reach 0.354**, 93% of the full model's 0.379. They beat NeuroBOLT across all 22 people (0.32–0.34), with no spatial information at all.
+- **The vigilance index alone reaches 0.210**, more than half of the full model's skill. It carries most of the cortical and global-signal prediction but little for the putamen and thalamus (0.09), which depend on specific bands rather than the vigilance ratio.
+- Spatial detail and fine frequency bins together add only 0.025. Together with the predictability result above, this says the EEG-predictable part of resting BOLD is mostly a slow, brain-wide state signal visible in the overall EEG spectrum.
+
+| Ridge, 5-fold CV, 29 held-out scans | Features | Cuneus | Heschl's | Mid. frontal | Precuneus | Putamen | Thalamus | Global | Avg. R |
+|---|---|---|---|---|---|---|---|---|---|
+| Vigilance index only | 12 | 0.279 | 0.270 | 0.198 | 0.241 | 0.088 | 0.086 | 0.306 | 0.210 |
+| Five band powers, channel-averaged | 60 | 0.361 | 0.428 | 0.309 | 0.371 | 0.249 | 0.328 | 0.430 | **0.354** |
+| Full: channels × 1 Hz bins × lags | 13,728 | 0.399 | 0.459 | 0.339 | 0.394 | 0.266 | 0.339 | 0.455 | 0.379 |
 
 ### What the best ridge model uses
 
