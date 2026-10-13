@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 13 Oct 2026, 13:09 AEDT. Done: 33 NeuroBOLT arms, intra-scan transfer, 19 band-power variants, ridge weight maps, connectivity analysis. Running: low-rank tensor regression on band power (CPU).*
+*Updated 13 Oct 2026, 17:14 AEDT. Done: 5-fold cross-validation over all 22 people, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -13,9 +13,11 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Ridge · 1 Hz bins · 24 s / 12 lags | 1 | 0.534 | 0.606 | 0.510 | 0.566 | 0.402 | 0.458 | 0.597 | 0.525 | 0.385 | +0.058 (+0.034 to +0.082) | +0.060 |
 | Ridge · 1 Hz bins · 32 s / 8 lags | 1 | 0.528 | 0.602 | 0.493 | 0.559 | 0.390 | 0.451 | 0.587 | 0.516 | 0.365 | +0.049 (+0.018 to +0.081) | +0.040 |
 | Ridge · 1 Hz bins · 16 s / 4 lags | 1 | 0.503 | 0.572 | 0.475 | 0.536 | 0.373 | 0.450 | 0.570 | 0.497 | 0.374 | +0.031 (+0.020 to +0.041) | +0.049 |
+| Low-rank tensor · 1 Hz bins · 24 s / 12 lags | 1 | 0.508 | 0.577 | 0.446 | 0.546 | 0.375 | 0.455 | 0.560 | 0.495 | 0.328 | +0.029 (+0.006 to +0.053) | +0.003 |
 | Ridge · 5 bands · 32 s / 32 lags | 1 | 0.537 | 0.568 | 0.460 | 0.532 | 0.350 | 0.458 | 0.557 | 0.495 | 0.316 | +0.028 (-0.006 to +0.062) | -0.009 |
 | Ridge · 5 bands · 32 s / 16 lags | 1 | 0.523 | 0.572 | 0.462 | 0.527 | 0.352 | 0.455 | 0.556 | 0.493 | 0.344 | +0.026 (+0.001 to +0.052) | +0.019 |
 | Ridge · 5 bands · 64 s / 32 lags | 1 | 0.525 | 0.575 | 0.447 | 0.530 | 0.350 | 0.440 | 0.552 | 0.488 | 0.338 | +0.022 (-0.008 to +0.052) | +0.013 |
+| Low-rank tensor · 5 bands · 32 s / 16 lags | 1 | 0.521 | 0.533 | 0.474 | 0.524 | 0.369 | 0.444 | 0.544 | 0.487 | 0.346 | +0.021 (-0.015 to +0.057) | +0.021 |
 | Ridge · 5 bands · 48 s / 24 lags | 1 | 0.524 | 0.567 | 0.445 | 0.524 | 0.347 | 0.447 | 0.545 | 0.486 | 0.339 | +0.019 (-0.008 to +0.047) | +0.014 |
 | Shared 24 s model · weight decay 0.5 | 3 | 0.485 | 0.550 | 0.475 | 0.528 | 0.373 | 0.408 | 0.578 | 0.485 | 0.328 | +0.004 (+0.002 to +0.007) | -0.012 |
 | NeuroBOLT · 24 s window | 3 | 0.490 | 0.509 | 0.448 | 0.527 | 0.366 | 0.449 | 0.580 | 0.481 | 0.338 | +0.015 (-0.004 to +0.034) | +0.013 |
@@ -62,7 +64,28 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 
 ## Findings so far
 
-### The best predictor so far is linear
+### Across all 22 people, ridge beats NeuroBOLT, and the authors' split is the easiest
+
+- The comparisons below use the authors' single split, whose six held-out scans come from only five people. To test them on everyone, the best ridge and the shared NeuroBOLT (16 s and 24 s windows, three seeds each) were rerun in a 5-fold, subject-grouped cross-validation (`scan_split_cv5.xlsx`). Fold 1 is the authors' split, so all 29 scans and all 22 people are held out exactly once.
+- **Ridge beats NeuroBOLT for nearly everyone.** It leads the 24 s NeuroBOLT by 0.045 (95% CI +0.023 to +0.067, 19 of 22 people) and the 16 s NeuroBOLT by 0.058 (+0.037 to +0.080, 20 of 22 people), and it wins in every fold.
+- **The 24 s window's gain is smaller across everyone:** +0.013, with an interval that includes zero (−0.003 to +0.029, 12 of 22 people).
+- **The authors' split is by far the easiest of the five folds.** Its held-out people score 0.46–0.52; the other folds score 0.19–0.40. Averaged over all 22 people, NeuroBOLT reaches about 0.32, well below the 0.473 the paper reports from that one split. Part of the gap may come from each fold's training people, but the paper's inter-subject figure should not be read as typical.
+
+| 5-fold CV, 29 scans, 22 people | Cuneus | Heschl's | Mid. frontal | Precuneus | Putamen | Thalamus | Global | Avg. R over people (95% CI) |
+|---|---|---|---|---|---|---|---|---|
+| **Ridge, 1 Hz bins, 24 s / 12 lags** | 0.402 | 0.463 | 0.339 | 0.398 | 0.270 | 0.342 | 0.453 | **0.381** (0.306 to 0.456) |
+| NeuroBOLT shared model, 24 s | 0.344 | 0.412 | 0.304 | 0.367 | 0.240 | 0.276 | 0.409 | 0.336 (0.266 to 0.405) |
+| NeuroBOLT shared model, 16 s | 0.304 | 0.396 | 0.287 | 0.349 | 0.243 | 0.296 | 0.385 | 0.323 (0.255 to 0.390) |
+
+| Fold | Held-out people | Ridge | NeuroBOLT 24 s | NeuroBOLT 16 s |
+|---|---|---|---|---|
+| 1 (authors' split) | 07, 11, 16, 18, 21 | 0.518 | 0.475 | 0.457 |
+| 2 | 06, 13, 15, 22 | 0.396 | 0.309 | 0.319 |
+| 3 | 01, 02, 03, 04 | 0.325 | 0.309 | 0.273 |
+| 4 | 05, 08, 09, 10 | 0.232 | 0.220 | 0.186 |
+| 5 | 12, 14, 17, 19, 20 | 0.400 | 0.343 | 0.352 |
+
+### On the authors' split, the best predictor is linear
 
 - Ridge regression on log EEG power in 1 Hz bins (1–45 Hz), over 32 s of history in sixteen 2 s lag bins, scores 0.525 on the held-out scans and 0.371 on validation. NeuroBOLT scores 0.466 (0.475 when its three seeds are averaged), and the paper reports 0.473.
 - The gain comes from two things NeuroBOLT does not exploit across people. 1 Hz bins alone take ridge from 0.469 to 0.497, and 32 s of history alone takes it to 0.493. Going to 48 s or 64 s adds nothing (0.486 and 0.488), so the useful history matches the slow tail of the haemodynamic response.
@@ -73,7 +96,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 - A 24 s window (pretrained time embedding stretched from 16 to 24 slots) raises per-region NeuroBOLT from 0.466 to 0.481 on the held-out scans and from 0.325 to 0.338 on validation, with all three seeds better. The 95% interval over the six held-out scans runs from −0.004 to +0.034.
 - One shared model with seven outputs scores 0.462, against 0.466 for seven separate models, at a seventh of the training cost. The changes below therefore ran on the shared model and are compared with it.
 - Shortening the window to 8 s costs 0.10, and lengthening it to 24 s gains 0.019, so EEG history is the one setting that matters. Six other changes move the score by 0.009 or less in either direction. Log-compressing the spectral branch's input, the change that band-power ridge suggested, hurts on the held-out scans.
-- Unlike ridge, NeuroBOLT does not keep improving with more history. A 32 s window drops the shared model to 0.447, below even the 16 s baseline, and the per-region 32 s runs that finished trail their 24 s counterparts. Stretching LaBraM's 16 pretrained time slots twofold may distort them, and 833 tokens per window is a lot to fit from 13 people. The per-region 32 s arm was stopped there, and 20 s and 28 s windows are running to pin down the optimum.
+- Unlike ridge, NeuroBOLT does not keep improving with more history. A 32 s window drops the shared model to 0.447, below even the 16 s baseline, and the per-region 32 s runs that finished trail their 24 s counterparts. Stretching LaBraM's 16 pretrained time slots twofold may distort them, and 833 tokens per window is a lot to fit from 13 people. The per-region 32 s arm was stopped there.
 - Dropping the high-pass on top of the 24 s window adds nothing (0.481 either way).
 
 | Shared 7-region NeuroBOLT, 3 seeds | Δ test R | Δ validation R | Seeds better (test) |
@@ -189,6 +212,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 
 - **Per-scan normalization of the EEG features** lowers ridge from 0.469 to 0.448 with five bands, and from 0.497 to 0.474 with 1 Hz bins. Overall power levels carry information across people, so NeuroBOLT will not get this change.
 - **Boosted trees** on the same features score below ridge (0.412 at 16 s, 0.454 at 32 s). A nonlinear map overfits the 13 training people.
+- **Low-rank tensor regression** (each region's weights as a few channel × spectrum × lag components, 82 parameters per component instead of 13,728 weights) scores 0.495 against ridge's 0.525 on the same features. The ridge weight maps look smooth, but the rank constraint discards signal that full ridge keeps.
 - **Dropping the 0.5 Hz EEG high-pass** changes nothing for ridge (0.469 both ways).
 - **Averaging NeuroBOLT's three seeds** adds only 0.009 (0.466 to 0.475), so seed noise is not what holds it back.
 
