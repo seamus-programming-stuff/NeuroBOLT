@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 13 Oct 2026, 18:04 AEDT. Done: 5-fold cross-validation over all 22 people, a ridge learning curve, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
+*Updated 13 Oct 2026, 18:07 AEDT. Done: 5-fold cross-validation over all 22 people, ridge learning curve, predictability analysis, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -154,6 +154,20 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Fold 3 | 0.289 | 0.315 | 0.316 | 0.323 | 0.325 |
 | Fold 4 | 0.234 | 0.231 | 0.226 | 0.229 | 0.232 |
 | Fold 5 | 0.330 | 0.376 | 0.398 | 0.400 | 0.400 |
+
+### Predictable scans are scans whose brain state fluctuates
+
+- Across the 29 scans, cross-validated ridge R runs from −0.06 to 0.65. It tracks how much each person's EEG rhythms fluctuate during the scan: Spearman ρ = +0.66 with the SD of theta (4–8 Hz) power over time (p < 0.001) and +0.58 with the SD of alpha (8–13 Hz) power (p = 0.001). Scans with lower mean alpha power are also more predictable (ρ = −0.42, p = 0.022). Power at 30–45 Hz, a proxy for residual muscle and scanner artefact, shows no relation (ρ = +0.04).
+- In eyes-closed rest, swings in alpha and theta power mark shifts in vigilance, such as drifting towards sleep. Those shifts drive large, widespread BOLD fluctuations that EEG can see, which matches the established vigilance–BOLD literature. A person who stays in one steady state gives the model little to predict, whatever the model.
+- This is exploratory (29 scans from 22 people, uncorrected), though the two fluctuation effects would survive a correction for the five tests. Raw BOLD amplitude could not be tested, because the released ROI time series are already standardized.
+
+| Scan property, 29 scans | Spearman ρ with ridge R | p |
+|---|---|---|
+| Theta power fluctuation (SD over the scan) | **+0.66** | < 0.001 |
+| Alpha power fluctuation | **+0.58** | 0.001 |
+| Mean alpha power | −0.42 | 0.022 |
+| Mean theta power | +0.11 | 0.565 |
+| 30–45 Hz power (artefact proxy) | +0.04 | 0.819 |
 
 ### What the best ridge model uses
 
