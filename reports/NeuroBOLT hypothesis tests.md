@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 13 Oct 2026, 17:14 AEDT. Done: 5-fold cross-validation over all 22 people, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
+*Updated 13 Oct 2026, 18:04 AEDT. Done: 5-fold cross-validation over all 22 people, a ridge learning curve, 33 NeuroBOLT arms on the authors' split, 21 band-power variants, ridge weight maps, connectivity analysis. No jobs running.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -140,10 +140,20 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | LaBraM branch only, no layer-wise LR decay | 0.177 | −0.286 | −0.237 |
 | LaBraM branch only, random initialization | 0.160 | −0.303 | −0.280 |
 
-### More people help
+### More training people help only a little; who is predicted matters far more
 
-- Refitting the best ridge on the training and validation scans together (17 people instead of 13), with the penalty still chosen on validation, raises it from 0.525 to 0.537 on the held-out scans. With 13 training people, data is a real limit.
-- NeuroBOLT does not gain the same way. Trained on the validation scans too and stopped at the epoch its training-only runs chose, the shared model moves from 0.455 to 0.460 at 16 s and from 0.480 to 0.473 at 24 s, against training-only runs scored at the same fixed epoch. Its limit is not only the number of people.
+- Refitting the best ridge on the authors' training and validation people together (17 instead of 13), with the penalty still chosen on validation, raises it from 0.525 to 0.537 on the held-out scans.
+- Across all five cross-validation folds, a learning curve shows that gain flattening. Within each fold, ridge trained on 9 people beats ridge trained on 3 by 0.029 on average, but 12 people add only 0.003 more, and the fold's full training set (12–14 people) adds nothing further.
+- The folds differ far more than that: from 0.23 to 0.52 at every training size. The people held out in fold 4 (05, 08, 09, 10) stay near 0.23 however many people train the model. More recordings of the same kind would add little; the ceiling is set by how predictable each person's BOLD is from their EEG.
+- NeuroBOLT does not even get the small gain. Trained on the validation scans too and stopped at the epoch its training-only runs chose, the shared model moves from 0.455 to 0.460 at 16 s and from 0.480 to 0.473 at 24 s, against training-only runs scored at the same fixed epoch.
+
+| Ridge, held-out R by training people | 3 | 6 | 9 | 12 | All (12–14) |
+|---|---|---|---|---|---|
+| Fold 1 (authors' split) | 0.475 | 0.475 | 0.518 | 0.516 | 0.518 |
+| Fold 2 | 0.378 | 0.373 | 0.391 | 0.395 | 0.396 |
+| Fold 3 | 0.289 | 0.315 | 0.316 | 0.323 | 0.325 |
+| Fold 4 | 0.234 | 0.231 | 0.226 | 0.229 | 0.232 |
+| Fold 5 | 0.330 | 0.376 | 0.398 | 0.400 | 0.400 |
 
 ### What the best ridge model uses
 
