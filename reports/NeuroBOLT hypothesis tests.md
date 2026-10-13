@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 13 Oct 2026, 10:14 AEDT. Done: 27 NeuroBOLT arms, intra-scan transfer, 19 band-power variants. Running: both branches without layer-wise LR decay, and the spectral branch alone at 24 s.*
+*Updated 13 Oct 2026, 11:57 AEDT. Done: 31 NeuroBOLT arms, intra-scan transfer, 19 band-power variants, ridge weight maps. No jobs running.*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -17,12 +17,15 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Ridge · 5 bands · 32 s / 16 lags | 1 | 0.523 | 0.572 | 0.462 | 0.527 | 0.352 | 0.455 | 0.556 | 0.493 | 0.344 | +0.026 (+0.001 to +0.052) | +0.019 |
 | Ridge · 5 bands · 64 s / 32 lags | 1 | 0.525 | 0.575 | 0.447 | 0.530 | 0.350 | 0.440 | 0.552 | 0.488 | 0.338 | +0.022 (-0.008 to +0.052) | +0.013 |
 | Ridge · 5 bands · 48 s / 24 lags | 1 | 0.524 | 0.567 | 0.445 | 0.524 | 0.347 | 0.447 | 0.545 | 0.486 | 0.339 | +0.019 (-0.008 to +0.047) | +0.014 |
+| Shared 24 s model · weight decay 0.5 | 3 | 0.485 | 0.550 | 0.475 | 0.528 | 0.373 | 0.408 | 0.578 | 0.485 | 0.328 | +0.004 (+0.002 to +0.007) | -0.012 |
 | NeuroBOLT · 24 s window | 3 | 0.490 | 0.509 | 0.448 | 0.527 | 0.366 | 0.449 | 0.580 | 0.481 | 0.338 | +0.015 (-0.004 to +0.034) | +0.013 |
 | Shared model · 24 s window | 3 | 0.474 | 0.542 | 0.474 | 0.529 | 0.368 | 0.407 | 0.575 | 0.481 | 0.340 | +0.019 (-0.005 to +0.042) | +0.009 |
 | Shared model · 28 s window | 3 | 0.479 | 0.550 | 0.472 | 0.525 | 0.375 | 0.396 | 0.571 | 0.481 | 0.304 | +0.018 (-0.009 to +0.046) | -0.028 |
 | Shared model · 24 s window, no high-pass | 3 | 0.470 | 0.548 | 0.474 | 0.527 | 0.358 | 0.418 | 0.569 | 0.481 | 0.335 | +0.018 (-0.006 to +0.042) | +0.004 |
 | Ridge · 5 bands · 32 s / 8 lags | 1 | 0.511 | 0.558 | 0.451 | 0.515 | 0.341 | 0.447 | 0.539 | 0.480 | 0.338 | +0.014 (-0.002 to +0.031) | +0.013 |
 | Shared model · 24 s window · train+val, stop at epoch 5 | 3 | 0.468 | 0.540 | 0.467 | 0.522 | 0.363 | 0.421 | 0.571 | 0.479 | – | +0.016 (-0.007 to +0.040) | – |
+| Shared model · spectral branch only · 24 s window | 3 | 0.475 | 0.538 | 0.467 | 0.520 | 0.369 | 0.410 | 0.568 | 0.478 | 0.330 | +0.016 (+0.001 to +0.031) | -0.002 |
+| Shared 24 s model · dropout and drop-path 0.3 | 3 | 0.467 | 0.542 | 0.467 | 0.526 | 0.367 | 0.399 | 0.573 | 0.477 | 0.339 | -0.004 (-0.011 to +0.003) | -0.001 |
 | Ridge · per-scan z · 1 Hz bins | 1 | 0.473 | 0.553 | 0.462 | 0.491 | 0.358 | 0.451 | 0.533 | 0.474 | 0.379 | +0.008 (-0.008 to +0.024) | +0.054 |
 | Shared model · no EEG high-pass | 3 | 0.454 | 0.519 | 0.458 | 0.520 | 0.347 | 0.448 | 0.556 | 0.472 | 0.330 | +0.009 (-0.006 to +0.025) | -0.002 |
 | Ridge · 5 bands · 16 s / 4 lags | 1 | 0.470 | 0.536 | 0.445 | 0.506 | 0.327 | 0.456 | 0.546 | 0.469 | 0.337 | +0.003 (-0.016 to +0.022) | +0.012 |
@@ -30,6 +33,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Shared model · 20 s window | 3 | 0.442 | 0.514 | 0.457 | 0.518 | 0.367 | 0.418 | 0.562 | 0.468 | 0.341 | +0.006 (-0.014 to +0.026) | +0.010 |
 | NeuroBOLT (baseline) | 3 | 0.468 | 0.520 | 0.436 | 0.502 | 0.327 | 0.460 | 0.551 | 0.466 | 0.325 | reference |  |
 | Shared model · train+val, stop at epoch 4 | 3 | 0.443 | 0.505 | 0.446 | 0.516 | 0.357 | 0.444 | 0.552 | 0.466 | – | +0.004 (-0.015 to +0.022) | – |
+| Shared model · no layer-wise LR decay | 3 | 0.457 | 0.508 | 0.450 | 0.506 | 0.345 | 0.446 | 0.542 | 0.465 | 0.330 | +0.002 (-0.002 to +0.007) | -0.002 |
 | Shared model · no pretraining | 3 | 0.452 | 0.511 | 0.445 | 0.509 | 0.341 | 0.446 | 0.546 | 0.464 | 0.320 | +0.002 (-0.011 to +0.015) | -0.012 |
 | Shared model · AdamW β₂ 0.99 | 3 | 0.449 | 0.503 | 0.450 | 0.506 | 0.350 | 0.448 | 0.544 | 0.464 | 0.332 | +0.002 (-0.001 to +0.004) | +0.000 |
 | Ridge · per-scan z · 32 s / 8 lags | 1 | 0.481 | 0.545 | 0.441 | 0.505 | 0.336 | 0.424 | 0.511 | 0.463 | 0.342 | -0.003 (-0.021 to +0.016) | +0.017 |
@@ -86,6 +90,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | 8 s window | **−0.100** | −0.088 | 0 of 3 |
 
 - The window optimum is 24 s: 20 s gains less, and 28 s matches 24 s on the held-out scans but loses 0.028 on validation.
+- Stronger regularization on top of the 24 s model does not help either. Weight decay 0.5 gives 0.485 on the held-out scans (+0.004) but 0.012 less on validation, and dropout and drop-path of 0.3 give 0.477. The models still peak within the first five epochs.
 
 ### All of NeuroBOLT's skill comes from its spectral branch
 
@@ -93,14 +98,17 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 - The LaBraM branch's pooled embedding barely varies between windows. In the authors' trained Thalamus model it varies by only 2% of its size, against 91% for the spectral branch, because averaging 416 tokens and applying LayerNorm leaves an almost constant vector.
 - Scale is not the whole story, though. A BatchNorm that rescales that embedding before the branches are added changes nothing: the LaBraM branch alone still never learns (0.022), and the full model is unchanged (0.462). Ridge on the trained model's LaBraM features does predict the thalamus within one scan (R = 0.42), but that most likely tracks slow drift within the scan rather than an EEG–BOLD relation that holds across people.
 - The branch can learn, just not under the paper's recipe. Its layer-wise learning-rate decay leaves the pretrained blocks almost frozen, and their pretrained features do not predict BOLD across people. Without the decay the LaBraM branch alone reaches 0.177, and from random initialization 0.160 (0.167 with BatchNorm). It overfits quickly (training correlation 0.58 against 0.16 on validation) and stays far below the spectral branch's 0.461.
-- Running now: both branches without the layer-wise decay, to see whether a freed LaBraM branch adds anything; and the spectral branch alone at the 24 s window, which would make NeuroBOLT a fraction of its size.
+- Freeing the LaBraM branch inside the full model adds nothing (0.465 without the layer-wise decay, against 0.462). And the spectral branch alone at the best 24 s window nearly matches the full 24 s model (0.478 against 0.481), so NeuroBOLT could drop its LaBraM transformer and lose almost nothing.
 
 | Shared 7-region NeuroBOLT, 3 seeds | Test R | Δ test R | Δ validation R |
 |---|---|---|---|
 | Both branches (shared baseline) | 0.462 | | |
 | Spectral branch only | 0.461 | −0.001 | −0.001 |
 | No LaBraM pretraining | 0.464 | +0.002 | −0.012 |
+| No layer-wise LR decay | 0.465 | +0.002 | −0.002 |
 | BatchNorm on the LaBraM embedding | 0.462 | +0.000 | +0.000 |
+| Spectral branch only, 24 s window | 0.478 | +0.016 | −0.002 |
+| Both branches, 24 s window | 0.481 | +0.019 | +0.009 |
 | **LaBraM temporal branch only** | **0.024** | **−0.438** | **−0.302** |
 | LaBraM branch only, with BatchNorm | 0.022 | −0.440 | −0.320 |
 | LaBraM branch only, no layer-wise LR decay | 0.177 | −0.286 | −0.237 |
@@ -110,6 +118,14 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 
 - Refitting the best ridge on the training and validation scans together (17 people instead of 13), with the penalty still chosen on validation, raises it from 0.525 to 0.537 on the held-out scans. With 13 training people, data is a real limit.
 - NeuroBOLT does not gain the same way. Trained on the validation scans too and stopped at the epoch its training-only runs chose, the shared model moves from 0.455 to 0.460 at 16 s and from 0.480 to 0.473 at 24 s, against training-only runs scored at the same fixed epoch. Its limit is not only the number of people.
+
+### What the best ridge model uses
+
+![Ridge weights by frequency and time before the BOLD frame, one map per region](hypotheses/ridge_weights.png)
+
+- For the cuneus, Heschl's gyrus, thalamus and global signal, more alpha (8–13 Hz) and beta (15–25 Hz) power 5–12 s before a frame predicts lower BOLD. This is the long-established inverse coupling between alpha power and BOLD, delayed by the haemodynamic response, so the best model has rediscovered known physiology rather than an artefact.
+- Power in the last few seconds before the frame often carries the opposite sign, so the model partly reads changes in power rather than levels. Neighbouring features are strongly correlated, so single cells should not be over-read; the broad bands of colour are the robust part.
+- The middle frontal gyrus, precuneus and putamen maps are weaker and less structured.
 
 ### Ensembles: NeuroBOLT adds little to the best ridge
 

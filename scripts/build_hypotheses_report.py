@@ -113,8 +113,17 @@ def table_html(lines):
     return f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
 
 
+def figure_html(line):
+    """![alt](hypotheses/name.png) as a light/dark figure; the page publishes images at its top level."""
+    alt, src = re.match(r"!\[(.*?)\]\((.+?)\)", line).groups()
+    name = os.path.basename(src)
+    dark = name.replace(".png", "_dark.png")
+    return (f'<figure><div class="plate"><img class="fig-light" src="{name}" alt="{html.escape(alt)}">'
+            f'<img class="fig-dark" src="{dark}" alt=""></div></figure>')
+
+
 def markdown_to_html(text):
-    """The subset findings.md uses: ### headings, - bullets, pipe tables, paragraphs, **bold**, `code`, links."""
+    """The subset findings.md uses: ### headings, - bullets, pipe tables, images, paragraphs, **bold**, `code`, links."""
     out, para, items, table = [], [], [], []
 
     def flush():
@@ -135,6 +144,9 @@ def markdown_to_html(text):
             table.append(stripped)
         elif not stripped:
             flush()
+        elif stripped.startswith("!["):
+            flush()
+            out.append(figure_html(stripped))
         elif stripped.startswith("### "):
             flush()
             out.append(f"<h3>{inline(stripped[4:])}</h3>")
