@@ -1,6 +1,6 @@
 # NeuroBOLT hypothesis tests
 
-*Updated 13 Oct 2026, 11:57 AEDT. Done: 31 NeuroBOLT arms, intra-scan transfer, 19 band-power variants, ridge weight maps. No jobs running.*
+*Updated 13 Oct 2026, 13:09 AEDT. Done: 33 NeuroBOLT arms, intra-scan transfer, 19 band-power variants, ridge weight maps, connectivity analysis. Running: low-rank tensor regression on band power (CPU).*
 
 Inter-subject prediction on the authors' split (18 training, 5 validation and 6 held-out scans). NeuroBOLT arms train every ROI with three seeds (12345, 1, 2); band-power baselines are deterministic. Every run is scored at its validation-selected point on the frames all arms share. Test R is averaged over the six held-out scans and, for NeuroBOLT, the seeds.
 
@@ -25,8 +25,10 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | Ridge · 5 bands · 32 s / 8 lags | 1 | 0.511 | 0.558 | 0.451 | 0.515 | 0.341 | 0.447 | 0.539 | 0.480 | 0.338 | +0.014 (-0.002 to +0.031) | +0.013 |
 | Shared model · 24 s window · train+val, stop at epoch 5 | 3 | 0.468 | 0.540 | 0.467 | 0.522 | 0.363 | 0.421 | 0.571 | 0.479 | – | +0.016 (-0.007 to +0.040) | – |
 | Shared model · spectral branch only · 24 s window | 3 | 0.475 | 0.538 | 0.467 | 0.520 | 0.369 | 0.410 | 0.568 | 0.478 | 0.330 | +0.016 (+0.001 to +0.031) | -0.002 |
+| Shared 24 s model · trained on all 65 regions | 3 | 0.498 | 0.546 | 0.465 | 0.513 | 0.367 | 0.380 | 0.574 | 0.477 | 0.317 | -0.004 (-0.012 to +0.005) | -0.023 |
 | Shared 24 s model · dropout and drop-path 0.3 | 3 | 0.467 | 0.542 | 0.467 | 0.526 | 0.367 | 0.399 | 0.573 | 0.477 | 0.339 | -0.004 (-0.011 to +0.003) | -0.001 |
 | Ridge · per-scan z · 1 Hz bins | 1 | 0.473 | 0.553 | 0.462 | 0.491 | 0.358 | 0.451 | 0.533 | 0.474 | 0.379 | +0.008 (-0.008 to +0.024) | +0.054 |
+| Shared model · trained on all 65 regions | 3 | 0.480 | 0.528 | 0.456 | 0.511 | 0.345 | 0.435 | 0.559 | 0.473 | 0.329 | +0.011 (-0.009 to +0.031) | -0.003 |
 | Shared model · no EEG high-pass | 3 | 0.454 | 0.519 | 0.458 | 0.520 | 0.347 | 0.448 | 0.556 | 0.472 | 0.330 | +0.009 (-0.006 to +0.025) | -0.002 |
 | Ridge · 5 bands · 16 s / 4 lags | 1 | 0.470 | 0.536 | 0.445 | 0.506 | 0.327 | 0.456 | 0.546 | 0.469 | 0.337 | +0.003 (-0.016 to +0.022) | +0.012 |
 | Ridge · 5 bands · no high-pass | 1 | 0.469 | 0.535 | 0.445 | 0.507 | 0.327 | 0.456 | 0.546 | 0.469 | 0.336 | +0.003 (-0.015 to +0.022) | +0.011 |
@@ -90,6 +92,7 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 | 8 s window | **−0.100** | −0.088 | 0 of 3 |
 
 - The window optimum is 24 s: 20 s gains less, and 28 s matches 24 s on the held-out scans but loses 0.028 on validation.
+- Training one shared model on all 65 regions instead of 7 does not help reliably. At 16 s it gains 0.011 on the held-out scans but nothing on validation; at 24 s it loses 0.004 and 0.024. It does ease the shared models' connectivity inflation (below).
 - Stronger regularization on top of the 24 s model does not help either. Weight decay 0.5 gives 0.485 on the held-out scans (+0.004) but 0.012 less on validation, and dropout and drop-path of 0.3 give 0.477. The models still peak within the first five epochs.
 
 ### All of NeuroBOLT's skill comes from its spectral branch
@@ -126,6 +129,24 @@ Inter-subject prediction on the authors' split (18 training, 5 validation and 6 
 - For the cuneus, Heschl's gyrus, thalamus and global signal, more alpha (8–13 Hz) and beta (15–25 Hz) power 5–12 s before a frame predicts lower BOLD. This is the long-established inverse coupling between alpha power and BOLD, delayed by the haemodynamic response, so the best model has rediscovered known physiology rather than an artefact.
 - Power in the last few seconds before the frame often carries the opposite sign, so the model partly reads changes in power rather than levels. Neighbouring features are strongly correlated, so single cells should not be over-read; the broad bands of colour are the robust part.
 - The middle frontal gyrus, precuneus and putamen maps are weaker and less structured.
+
+### No model recovers individual connectivity
+
+- For each held-out scan, the 7 × 7 connectivity of the predicted time courses was compared with the true connectivity (correlation over the 21 region pairs). The population average, taken from the five validation scans, already matches each held-out scan at 0.625. No model beats it: ridge reaches 0.61–0.65, and NeuroBOLT 0.60–0.61 with separate models per region.
+- The shared NeuroBOLT models inflate connectivity, because their outputs come from one encoder and move together. That drops the 16 s shared model to 0.497, and roughly doubles the mean absolute error (0.29 against 0.15).
+- So the predictions follow each region's own fluctuations, but say nothing about a person's networks beyond the population average. Six scans and 21 pairs make this noisy, but it argues against claiming individual connectivity from these models.
+
+| Connectivity on 6 held-out scans | Similarity (r) | Mean absolute error |
+|---|---|---|
+| Population average (validation scans) | 0.625 ± 0.071 | 0.151 |
+| Ridge, 5 bands, 16 s | 0.650 ± 0.213 | 0.168 |
+| Ridge, 1 Hz bins, 24 s / 12 lags | 0.614 ± 0.153 | 0.169 |
+| NeuroBOLT, per region | 0.607 ± 0.217 | 0.148 |
+| NeuroBOLT, per region, 24 s | 0.597 ± 0.146 | 0.137 |
+| NeuroBOLT, shared model, 24 s | 0.602 ± 0.175 | 0.229 |
+| NeuroBOLT, shared model, 24 s, 65 regions | 0.612 ± 0.163 | 0.220 |
+| NeuroBOLT, shared model, 65 regions | 0.552 ± 0.199 | 0.260 |
+| NeuroBOLT, shared model | 0.497 ± 0.202 | 0.293 |
 
 ### Ensembles: NeuroBOLT adds little to the best ridge
 

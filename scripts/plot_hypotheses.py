@@ -60,6 +60,10 @@ LABELS.update({
     "m7_spectral_win24": "Shared model · spectral branch only · 24 s window",
     "m7w24_wd05": "Shared 24 s model · weight decay 0.5",
     "m7w24_drop03": "Shared 24 s model · dropout and drop-path 0.3",
+    "m7_wholebrain": "Shared model · trained on all 65 regions",
+    "m7w24_wholebrain": "Shared 24 s model · trained on all 65 regions",
+    "cp_fine_w24_sub12": "Low-rank tensor · 1 Hz bins · 24 s / 12 lags",
+    "cp_w32_sub16": "Low-rank tensor · 5 bands · 32 s / 16 lags",
 })
 
 
@@ -93,7 +97,7 @@ def draw(per_seed, path, c, baseline="base", labels=None):
     fig, ax = plt.subplots(figsize=(9.5, 0.42 * len(arms) + 1.4), facecolor=c["surface"])
     ax.set_facecolor(c["surface"])
     for i, arm in enumerate(arms):
-        color = c["linear"] if arm.startswith(("ridge", "hgb")) else c["neural"]
+        color = c["linear"] if arm.startswith(("ridge", "hgb", "cp_")) else c["neural"]
         values = list(per_seed[arm].values())
         seeds = f"  ({len(values)} seeds)" if len(values) > 1 else ""
         if np.mean(values) < AXIS_FLOOR:

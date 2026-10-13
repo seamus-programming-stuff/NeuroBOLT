@@ -167,7 +167,7 @@ def html_table(rows, baseline):
             + "<th>Avg. test R</th><th>Avg. val R</th><th>Δ test vs reference (95% CI)</th><th>Δ val</th></tr>")
     body = []
     for r in rows:
-        kind = "base" if r["arm"] == baseline else ("linear" if r["arm"].startswith(("ridge", "hgb")) else "neural")
+        kind = "base" if r["arm"] == baseline else ("linear" if r["arm"].startswith(("ridge", "hgb", "cp_")) else "neural")
         if r["arm"] == baseline:
             delta = "reference"
         elif r["delta"] is None:

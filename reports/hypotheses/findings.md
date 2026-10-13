@@ -28,6 +28,7 @@
 | 8 s window | **−0.100** | −0.088 | 0 of 3 |
 
 - The window optimum is 24 s: 20 s gains less, and 28 s matches 24 s on the held-out scans but loses 0.028 on validation.
+- Training one shared model on all 65 regions instead of 7 does not help reliably. At 16 s it gains 0.011 on the held-out scans but nothing on validation; at 24 s it loses 0.004 and 0.024. It does ease the shared models' connectivity inflation (below).
 - Stronger regularization on top of the 24 s model does not help either. Weight decay 0.5 gives 0.485 on the held-out scans (+0.004) but 0.012 less on validation, and dropout and drop-path of 0.3 give 0.477. The models still peak within the first five epochs.
 
 ### All of NeuroBOLT's skill comes from its spectral branch
@@ -79,6 +80,8 @@
 | NeuroBOLT, per region | 0.607 ± 0.217 | 0.148 |
 | NeuroBOLT, per region, 24 s | 0.597 ± 0.146 | 0.137 |
 | NeuroBOLT, shared model, 24 s | 0.602 ± 0.175 | 0.229 |
+| NeuroBOLT, shared model, 24 s, 65 regions | 0.612 ± 0.163 | 0.220 |
+| NeuroBOLT, shared model, 65 regions | 0.552 ± 0.199 | 0.260 |
 | NeuroBOLT, shared model | 0.497 ± 0.202 | 0.293 |
 
 ### Ensembles: NeuroBOLT adds little to the best ridge

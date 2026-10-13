@@ -26,7 +26,7 @@ from sklearn.ensemble import HistGradientBoostingRegressor
 from sklearn.linear_model import Ridge
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from eval_inter_per_scan import ROIS, load_scan  # noqa: E402  (same preprocessing as the loader)
+from eval_inter_per_scan import CH_NAMES, ROIS, load_scan  # noqa: E402  (same preprocessing as the loader)
 
 BAND_SETS = {
     "classic": [(1, 4), (4, 8), (8, 13), (13, 30), (30, 45)],  # delta .. gamma, Hz
@@ -43,6 +43,35 @@ def candidate_models(estimator):
         return [(f"alpha={a:g}", Ridge(alpha=a)) for a in ALPHAS]
     return [(" ".join(f"{k}={v}" for k, v in params.items()),
              HistGradientBoostingRegressor(early_stopping=False, random_state=0, **params)) for params in HGB_GRID]
+
+
+CP_RANKS = (1, 2, 3, 5)
+CP_ALPHAS = np.logspace(0, 5, 6)
+
+
+def cp_regression(x_train, y_train, x_eval, rank, alpha, shape, iters=25, seed=0):
+    """Rank-R CP (low-rank tensor) regression on channel x band x lag features, by alternating ridge.
+
+    The weight tensor is sum_r a_r (x) f_r (x) l_r: a channel pattern, a spectrum and a lag profile
+    per component, so a 26 x 44 x 12 map has R * 82 parameters instead of 13,728. Each sweep
+    re-solves one factor by ridge with the other two fixed. Features are standardized, so the
+    intercept is the training mean of y. Returns predictions for each array in x_eval.
+    """
+    gen = torch.Generator().manual_seed(seed)
+    to3d = lambda a: torch.from_numpy(np.ascontiguousarray(a, dtype=np.float32)).reshape(len(a), *shape)  # noqa: E731
+    x, y = to3d(x_train), torch.from_numpy(y_train.astype(np.float32))
+    y_mean = y.mean()
+    yc = y - y_mean
+    factors = [torch.randn(size, rank, generator=gen) * 0.1 for size in shape]
+    specs = ["ncfl,fr,lr->ncr", "ncfl,cr,lr->nfr", "ncfl,cr,fr->nlr"]
+    for _ in range(iters):
+        for k, spec in enumerate(specs):
+            others = [factors[j] for j in range(3) if j != k]
+            z = torch.einsum(spec, x, *others).reshape(len(x), -1)
+            gram = z.T @ z + alpha * torch.eye(z.shape[1])
+            factors[k] = torch.linalg.solve(gram, z.T @ yc).reshape(shape[k], rank)
+    weights = torch.einsum("cr,fr,lr->cfl", *factors)
+    return [(torch.einsum("ncfl,cfl->n", to3d(e), weights) + y_mean).numpy() for e in x_eval]
 
 
 def ridge_path(x_train, y_train, x_eval, alphas):
@@ -97,8 +126,9 @@ def main():
     parser.add_argument("--per-scan-zscore", action="store_true",
                         help="standardize each feature within each scan (uses only that scan's EEG), "
                              "removing between-subject differences in overall band power")
-    parser.add_argument("--estimator", choices=["ridge", "hgb"], default="ridge",
-                        help="ridge regression, or histogram gradient-boosted trees on the same features")
+    parser.add_argument("--estimator", choices=["ridge", "hgb", "cp"], default="ridge",
+                        help="ridge regression, histogram gradient-boosted trees, or low-rank (CP) tensor "
+                             "regression over channel x band x lag, all on the same features")
     parser.add_argument("--refit-train-val", action="store_true",
                         help="ridge only: choose the penalty on validation, then refit on training + validation "
                              "scans before scoring the test scans (validation scores stay from the training-only fit)")
@@ -135,6 +165,15 @@ def main():
                      {"val": preds[0][:, roi_index],
                       "test": (refit[alpha][0] if args.refit_train_val else preds[1])[:, roi_index]})
                     for alpha, preds in path.items()]
+        elif args.estimator == "cp":
+            shape = (len(CH_NAMES), len(bands), args.sub_windows)
+            fits = []
+            for rank in CP_RANKS:
+                for alpha in CP_ALPHAS:
+                    val_pred, test_pred = cp_regression(x["train"], y["train"], [x["val"], x["test"]],
+                                                        rank, alpha, shape)
+                    fits.append((float(np.mean((val_pred - y["val"]) ** 2)), f"rank={rank} alpha={alpha:g}",
+                                 {"val": val_pred, "test": test_pred}))
         else:
             fits = []
             for name, model in candidate_models(args.estimator):
