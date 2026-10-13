@@ -69,6 +69,15 @@ def roi_labels(args):
     return labels[0] if len(labels) == 1 else labels
 
 
+def select_rois(df, args):
+    """Target columns for --labels_roi; 'all' means every region except the raw global signal."""
+    if args.labels_roi == 'all':
+        columns = [c for c in df.columns if c != 'global signal raw']
+        args.nb_roi, args.roi_names = len(columns), columns
+        return df[columns]
+    return df[roi_labels(args)]
+
+
 def eeg_window(args):
     """tmin, tmax and crop (in samples at 200 Hz) for an EEG window ending at each fMRI frame."""
     window_sec = getattr(args, 'window_sec', 16)
@@ -117,7 +126,7 @@ def prepare_onesub_dataloader(args):
     # extract ROI
 
     df = pd.DataFrame(data=fmri_np.T, columns=labels_roi_full)
-    df_filter = df[roi_labels(args)]
+    df_filter = select_rois(df, args)
     fmri_np = df_filter.to_numpy().T
     if len(fmri_np.shape) < 2:
         fmri_np = fmri_np[np.newaxis, ...]
@@ -240,7 +249,7 @@ def prepare_full_dataloader(args):
 
         # extract ROI
         df = pd.DataFrame(data=fmri_np.T, columns=labels_roi_full)
-        df_filter = df[roi_labels(args)]
+        df_filter = select_rois(df, args)
         fmri_np = df_filter.to_numpy().T
         if len(fmri_np.shape) < 2:
             fmri_np = fmri_np[np.newaxis, ...]

@@ -38,6 +38,8 @@ def load_arm(root, arm, split):
         z = np.load(path)
         rois = [str(r) for r in z["rois"]]
         for col, roi in enumerate(rois):
+            if roi not in members:  # whole-brain runs predict regions outside the seven compared here
+                continue
             members[roi].append((z[f"{split}_pred"].reshape(len(z[f"{split}_pred"]), -1)[:, col],
                                  z[f"{split}_true"].reshape(len(z[f"{split}_true"]), -1)[:, col],
                                  z[f"{split}_sizes"]))

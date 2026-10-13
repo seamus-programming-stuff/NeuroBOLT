@@ -710,7 +710,7 @@ def main(args, ds_init):
     if best_outputs is not None and args.output_dir and utils.is_main_process():
         scan_sizes = getattr(args, 'scan_sizes', None) or {}
         np.savez_compressed(os.path.join(args.output_dir, "best_predictions.npz"), **best_outputs,
-                            rois=np.array(args.labels_roi.split('|')),
+                            rois=np.array(getattr(args, 'roi_names', None) or args.labels_roi.split('|')),
                             val_scans=np.array([s for s, _ in scan_sizes.get("val", [])]),
                             val_sizes=np.array([n for _, n in scan_sizes.get("val", [])]),
                             test_scans=np.array([s for s, _ in scan_sizes.get("test", [])]),

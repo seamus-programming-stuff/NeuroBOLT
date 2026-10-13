@@ -94,7 +94,12 @@ def collect(root, aligned=False):
             keep[split] = np.min(sizes, axis=0)
     records = []
     for arm, key, run_dir, run in runs:
-        roi_indices = list(range(len(ROIS))) if key == "all" else [int(key)]
+        if key == "all":  # shared model: map outputs to ROIs by name (whole-brain runs have 65 outputs)
+            npz = os.path.join(run_dir, "best_predictions.npz")
+            names = ([str(r) for r in np.load(npz)["rois"]] if os.path.isfile(npz) else ROIS)
+            outputs = [(i, ROIS.index(n)) for i, n in enumerate(names) if n in ROIS]
+        else:
+            outputs = [(0, int(key))]
         best = run["best"]
         for split in ("val", "test"):
             if aligned:
@@ -102,7 +107,7 @@ def collect(root, aligned=False):
             else:
                 scan_corr, scan_mse = best[f"{split}_scan_corr"], best[f"{split}_scan_mse"]
             for s, (corrs, mses) in enumerate(zip(scan_corr, scan_mse)):
-                for out, roi_index in enumerate(roi_indices):
+                for out, roi_index in outputs:
                     records.append({
                         "arm": arm, "seed": os.path.basename(run_dir).removeprefix("seed"),
                         "roi": ROIS[roi_index], "split": split, "scan": SPLIT_SCANS[split][s],

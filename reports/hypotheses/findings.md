@@ -65,6 +65,22 @@
 - Power in the last few seconds before the frame often carries the opposite sign, so the model partly reads changes in power rather than levels. Neighbouring features are strongly correlated, so single cells should not be over-read; the broad bands of colour are the robust part.
 - The middle frontal gyrus, precuneus and putamen maps are weaker and less structured.
 
+### No model recovers individual connectivity
+
+- For each held-out scan, the 7 × 7 connectivity of the predicted time courses was compared with the true connectivity (correlation over the 21 region pairs). The population average, taken from the five validation scans, already matches each held-out scan at 0.625. No model beats it: ridge reaches 0.61–0.65, and NeuroBOLT 0.60–0.61 with separate models per region.
+- The shared NeuroBOLT models inflate connectivity, because their outputs come from one encoder and move together. That drops the 16 s shared model to 0.497, and roughly doubles the mean absolute error (0.29 against 0.15).
+- So the predictions follow each region's own fluctuations, but say nothing about a person's networks beyond the population average. Six scans and 21 pairs make this noisy, but it argues against claiming individual connectivity from these models.
+
+| Connectivity on 6 held-out scans | Similarity (r) | Mean absolute error |
+|---|---|---|
+| Population average (validation scans) | 0.625 ± 0.071 | 0.151 |
+| Ridge, 5 bands, 16 s | 0.650 ± 0.213 | 0.168 |
+| Ridge, 1 Hz bins, 24 s / 12 lags | 0.614 ± 0.153 | 0.169 |
+| NeuroBOLT, per region | 0.607 ± 0.217 | 0.148 |
+| NeuroBOLT, per region, 24 s | 0.597 ± 0.146 | 0.137 |
+| NeuroBOLT, shared model, 24 s | 0.602 ± 0.175 | 0.229 |
+| NeuroBOLT, shared model | 0.497 ± 0.202 | 0.293 |
+
 ### Ensembles: NeuroBOLT adds little to the best ridge
 
 | Predictions averaged (z-scored per scan) | Validation R | Test R |
