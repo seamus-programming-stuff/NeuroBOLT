@@ -23,6 +23,6 @@ echo "arm=${ARM} extra=${EXTRA:-none}"
 # EXTRA is deliberately unquoted so it splits into separate flags
 python scripts/baseline_ridge.py \
     --dataset-root "${M3_DATA}/" \
-    --split-sheet "${M3_REPO}/scan_split_example.xlsx" \
-    --out "${M3_OUT}/hypotheses/${ARM}" \
+    --split-sheet "${SPLIT_SHEET:-${M3_REPO}/scan_split_example.xlsx}" --split-fold "${FOLD:-fold1}" \
+    --out "${M3_OUT}/${OUT_ROOT:-hypotheses}/${ARM}" \
     ${EXTRA:-}

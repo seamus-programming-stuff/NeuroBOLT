@@ -207,6 +207,8 @@ def get_args():
                         help='intrascan/full_test/full_retainvu/')
     parser.add_argument('--split_index_sheet', default='./scan_split.xlsx', type=str,
                         help='Path to the Excel sheet specifying train-test split indices when do cross-subject training')
+    parser.add_argument('--split_fold', default='fold1', type=str,
+                        help='sheet of --split_index_sheet to use (scan_split_cv5.xlsx has fold1-fold5)')
 
     # ---- Experiment switches (defaults reproduce the released behaviour) ----
     parser.add_argument('--eeg_highpass', default=None, type=float,
@@ -416,9 +418,10 @@ def main(args, ds_init):
 
     if dataset_val is not None:
         if args.dataset == "VU" and args.train_test_mode == 'full_test':
-            bs_val = int(len(dataset_val) / 5)
-            bs_test = int(len(dataset_test) / 6)
-            # modify to adapt other dataset with different number of scans in test/val for printing metrics
+            # one batch per scan; the authors' fold has 5 validation and 6 test scans
+            scan_sizes = getattr(args, 'scan_sizes', None) or {"val": [None] * 5, "test": [None] * 6}
+            bs_val = int(len(dataset_val) / len(scan_sizes["val"]))
+            bs_test = int(len(dataset_test) / len(scan_sizes["test"]))
         else:
             bs_val = len(dataset_val)
             bs_test = len(dataset_test)

@@ -66,8 +66,9 @@ def finished_runs(root):
 
 
 def aligned_scores(run_dir, split, keep):
-    """Per-scan (R, MSE) lists per output, scoring each scan's last keep[s] frames."""
+    """Per-scan (R, MSE) lists per output, scoring each scan's last keep[s] frames, and the scan names."""
     z = np.load(os.path.join(run_dir, "best_predictions.npz"))
+    names = [str(s) for s in z[f"{split}_scans"]] if len(z[f"{split}_scans"]) else SPLIT_SCANS[split]
     pred = z[f"{split}_pred"].reshape(len(z[f"{split}_pred"]), -1)
     true = z[f"{split}_true"].reshape(len(z[f"{split}_true"]), -1)
     corr, mse, start = [], [], 0
@@ -76,7 +77,7 @@ def aligned_scores(run_dir, split, keep):
         start += n
         corr.append([float(np.corrcoef(p[:, j], t[:, j])[0, 1]) for j in range(p.shape[1])])
         mse.append([float(np.mean((p[:, j] - t[:, j]) ** 2)) for j in range(p.shape[1])])
-    return corr, mse
+    return corr, mse, names
 
 
 def collect(root, aligned=False):
@@ -103,14 +104,14 @@ def collect(root, aligned=False):
         best = run["best"]
         for split in ("val", "test"):
             if aligned:
-                scan_corr, scan_mse = aligned_scores(run_dir, split, keep[split])
-            else:
-                scan_corr, scan_mse = best[f"{split}_scan_corr"], best[f"{split}_scan_mse"]
+                scan_corr, scan_mse, names = aligned_scores(run_dir, split, keep[split])
+            else:  # logs carry no scan names; they follow the authors' fold1 order
+                scan_corr, scan_mse, names = best[f"{split}_scan_corr"], best[f"{split}_scan_mse"], SPLIT_SCANS[split]
             for s, (corrs, mses) in enumerate(zip(scan_corr, scan_mse)):
                 for out, roi_index in outputs:
                     records.append({
                         "arm": arm, "seed": os.path.basename(run_dir).removeprefix("seed"),
-                        "roi": ROIS[roi_index], "split": split, "scan": SPLIT_SCANS[split][s],
+                        "roi": ROIS[roi_index], "split": split, "scan": names[s],
                         "corr": corrs[out], "mse": mses[out], "selected_epoch": best["epoch"],
                         "epochs_run": run["epochs_run"], "shared_model": key == "all"})
     return records, {split: [int(k) for k in v] for split, v in keep.items()}

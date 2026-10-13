@@ -40,8 +40,8 @@ else
     RUN_KEY="${ROI_INDEX}/seed${SEED}"
 fi
 
-OUT_DIR="${M3_OUT}/hypotheses/${EXP}/${RUN_KEY}"
-LOG_DIR="${M3_LOG}/hypotheses/${EXP}/${RUN_KEY}"
+OUT_DIR="${M3_OUT}/${OUT_ROOT:-hypotheses}/${EXP}/${RUN_KEY}"  # OUT_ROOT=cv/foldK for cross-validation
+LOG_DIR="${M3_LOG}/${OUT_ROOT:-hypotheses}/${EXP}/${RUN_KEY}"
 if [[ -f "${OUT_DIR}/done" ]]; then
     echo "${OUT_DIR} already finished; skipping"
     exit 0
@@ -59,7 +59,8 @@ env -u SLURM_PROCID python main.py \
     --batch_size 64 --epochs 30 --warmup_epochs 5 --seed "$SEED" \
     --finetune "${M3_REPO}/checkpoints/labram-base.pth" \
     --labels_roi "$ROI" --dataset VU --train_test_mode full_test \
-    --dataset_root "${M3_DATA}/" --split_index_sheet "${M3_REPO}/scan_split_example.xlsx" \
+    --dataset_root "${M3_DATA}/" --split_index_sheet "${SPLIT_SHEET:-${M3_REPO}/scan_split_example.xlsx}" \
+    --split_fold "${FOLD:-fold1}" \
     --output_dir "${OUT_DIR}/" --log_dir "${LOG_DIR}/" --num_workers 8 \
     --no_save_ckpt --save_best_predictions --early_stop_patience 10 \
     ${EXTRA:-}

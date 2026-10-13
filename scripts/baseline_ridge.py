@@ -118,6 +118,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dataset-root", required=True)
     parser.add_argument("--split-sheet", default="./scan_split_example.xlsx")
+    parser.add_argument("--split-fold", default="fold1", help="sheet of --split-sheet to use")
     parser.add_argument("--out", required=True)
     parser.add_argument("--no-highpass", action="store_true", help="skip the loader's 0.5 Hz EEG high-pass")
     parser.add_argument("--window-sec", type=int, default=16, help="seconds of EEG history per fMRI frame")
@@ -135,7 +136,7 @@ def main():
     args = parser.parse_args()
     bands = BAND_SETS[args.bands]
 
-    sheet = pd.read_excel(args.split_sheet, sheet_name="fold1")
+    sheet = pd.read_excel(args.split_sheet, sheet_name=args.split_fold)
     data = {}
     for split in ("train", "val", "test"):
         feats, targets, names = [], [], []

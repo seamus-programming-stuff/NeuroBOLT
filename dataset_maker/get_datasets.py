@@ -221,7 +221,7 @@ def prepare_full_dataloader(args):
     highpass = 0.5 if highpass is None else highpass
 
     scan_sheet = args.split_index_sheet
-    sheet_name = 'fold1'
+    sheet_name = getattr(args, 'split_fold', 'fold1')
     df = pd.read_excel(io=scan_sheet, sheet_name=sheet_name)
     scans = df['scan_name'].values
     train_ind = np.where(df['train'].values == 1)[0]
