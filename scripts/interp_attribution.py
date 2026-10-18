@@ -81,7 +81,12 @@ def main():
     parser.add_argument("--published-dir", default=None)
     parser.add_argument("--dataset-root", required=True)
     parser.add_argument("--split-sheet", default="./scan_split_example.xlsx")
-    parser.add_argument("--repeats", type=int, default=3)
+    parser.add_argument("--repeats", type=int, default=2)
+    parser.add_argument("--channel-repeats", type=int, default=1, help="repeats for single-channel swaps (26 of them)")
+    parser.add_argument("--test-scans", nargs="*", help="only these held-out scans (to split the work across jobs)")
+    parser.add_argument("--skip-surrogate", action="store_true",
+                        help="skip NeuroBOLT on the training scans and the linear surrogate (permutation importance only)")
+    parser.add_argument("--tag", default="", help="suffix for permutation<tag>.csv")
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
     os.makedirs(args.out, exist_ok=True)
@@ -96,14 +101,17 @@ def main():
 
     sheet = pd.read_excel(args.split_sheet, sheet_name="fold1")
     split = {name: sheet.loc[sheet[name] == 1, "scan_name"].tolist() for name in ("train", "val", "test")}
+    if args.test_scans:
+        split["test"] = [s for s in split["test"] if s in args.test_scans]
     feats, targets, nb_preds, test_eeg = {}, {}, {}, {}
     for name, scans in split.items():
         for scan in scans:
             eeg, y = load_scan(scan, args.dataset_root, highpass=True, window_sec=WINDOW_SEC)
             eeg = eeg.astype(np.float32)
             feats[scan], targets[scan] = ridge_features(eeg), y.astype(np.float32)
-            nb_preds[scan] = {m: np.stack([predict(model, eeg, device, input_chans) for model in models], axis=1)
-                              for m, models in model_sets.items()}
+            if name == "test" or not args.skip_surrogate:
+                nb_preds[scan] = {m: np.stack([predict(model, eeg, device, input_chans) for model in models], axis=1)
+                                  for m, models in model_sets.items()}
             if name == "test":
                 test_eeg[scan] = eeg
             print(f"{name} {scan}: {len(y)} windows", flush=True)
@@ -132,7 +140,7 @@ def main():
 
     # 2. Linear surrogates of each NeuroBOLT model set
     rows = []
-    for m in model_sets:
+    for m in (() if args.skip_surrogate else model_sets):
         surrogate, _ = fit_ridge(np.concatenate([nb_preds[s][m] for s in split["train"]]),
                                  np.concatenate([nb_preds[s][m] for s in split["val"]]))
         for scan in split["test"]:
@@ -142,11 +150,12 @@ def main():
                 rows.append({"model": m, "scan": scan, "roi": label, "surrogate_vs_model": c(sur, nb),
                              "ridge_vs_model": c(rd, nb), "model_vs_bold": c(nb, y), "surrogate_vs_bold": c(sur, y),
                              "ridge_vs_bold": c(rd, y)})
-    with open(os.path.join(args.out, "surrogate.csv"), "w", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=rows[0].keys())
-        writer.writeheader()
-        writer.writerows(rows)
-    for m in model_sets:
+    if rows:
+        with open(os.path.join(args.out, "surrogate.csv"), "w", newline="", encoding="utf-8") as stream:
+            writer = csv.DictWriter(stream, fieldnames=rows[0].keys())
+            writer.writeheader()
+            writer.writerows(rows)
+    for m in (() if args.skip_surrogate else model_sets):
         mine = [r for r in rows if r["model"] == m]
         print(f"{m}: surrogate reproduces model R={np.mean([r['surrogate_vs_model'] for r in mine]):.3f}; "
               f"ridge-on-BOLD vs model R={np.mean([r['ridge_vs_model'] for r in mine]):.3f}", flush=True)
@@ -159,7 +168,7 @@ def main():
         spectrum = np.fft.rfft(eeg, axis=-1).astype(np.complex64)
         base = {"ridge": ridge(feats[scan]), **nb_preds[scan]}
         for kind, name in perturbations():
-            for r in range(args.repeats):
+            for r in range(args.channel_repeats if kind == "channel" else args.repeats):
                 donor = donors(len(eeg), rng)
                 x = perturb(eeg, spectrum, kind, name, donor)
                 preds = {"ridge": ridge(ridge_features(x)),
@@ -173,11 +182,11 @@ def main():
                                      "perturbed_r": float(np.corrcoef(p[:, j], y[:, j])[0, 1]),
                                      "shift": float(np.var(p[:, j] - p0) / (np.var(p0) + 1e-12))})
         print(f"permutation importance done for {scan}", flush=True)
-        with open(os.path.join(args.out, "permutation.csv"), "w", newline="", encoding="utf-8") as stream:
+        with open(os.path.join(args.out, f"permutation{args.tag}.csv"), "w", newline="", encoding="utf-8") as stream:
             writer = csv.DictWriter(stream, fieldnames=rows[0].keys())
             writer.writeheader()
             writer.writerows(rows)
-    np.savez_compressed(os.path.join(args.out, "predictions.npz"),
+    np.savez_compressed(os.path.join(args.out, f"predictions{args.tag}.npz"),
                         **{f"{m}|{s}": nb_preds[s][m] for s in nb_preds for m in model_sets},
                         **{f"true|{s}": targets[s] for s in targets})
     print("done")

@@ -647,9 +647,9 @@ def hammerstein(ham, cv, comps, out, md):
     md.append("## Shared-factor Hammerstein distributed-lag model (5-fold CV)\n")
     md.append("| Variant | Parameters (65 targets) | R, 65 targets | Δ vs full ridge, 65 targets (95% CI) | R, 7 ROIs | Δ vs ridge, 7 ROIs |")
     md.append("|---|---|---|---|---|---|")
-    for variant in sorted(ham["variant"].unique(), key=lambda v: (v.startswith("spline"), int(v.lstrip("linespl")))):
+    for variant in sorted(ham["variant"].unique(), key=lambda v: (v.startswith("spline"), int(re.search(r"\d+", v).group()))):
         g = ham[ham["variant"] == variant]
-        k = int(variant.lstrip("linespl"))
+        k = int(re.search(r"\d+", variant).group())
         n_par = k * (26 + 44) + 65 * k * 5 + 65 + (4 * k if variant.startswith("spline") else 0)
         cells = []
         for rois in (None, ROI7):
@@ -745,9 +745,14 @@ def main():
         personal(pd.read_csv(path("personal.csv")),
                  pd.read_csv(path("scan_physiology.csv")) if have("scan_physiology.csv") else None, md)
     if have("hammerstein_scores.csv") and cv is not None:
+        smooth = have("hammerstein_smooth_components.npz")
         hammerstein(pd.read_csv(path("hammerstein_scores.csv")), cv,
-                    np.load(path("hammerstein_components.npz")) if have("hammerstein_components.npz") else None,
+                    None if smooth or not have("hammerstein_components.npz") else np.load(path("hammerstein_components.npz")),
                     args.out, md)
+        if have("hammerstein_smooth_scores.csv"):
+            md.append("Same model with a smoothness penalty on the spectral profiles (used for the component figure):\n")
+            hammerstein(pd.read_csv(path("hammerstein_smooth_scores.csv")), cv,
+                        np.load(path("hammerstein_smooth_components.npz")) if smooth else None, args.out, md)
     with open(os.path.join(args.out, "tables.md"), "w", encoding="utf-8") as stream:
         stream.write("\n".join(md) + "\n")
     print("\n".join(md))

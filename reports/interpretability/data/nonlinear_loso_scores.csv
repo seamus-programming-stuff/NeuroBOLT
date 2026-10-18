@@ -1,0 +1,813 @@
+features,norm,model,fold,scan,roi,chosen,corr
+bands,global,ridge,1,sub01-scan01,Cuneus,,0.17701385372961365
+bands,global,ridge,1,sub01-scan01,Heschl’s gyrus,,0.37954155451399263
+bands,global,ridge,1,sub01-scan01,Middle frontal gyrus anterior,,0.12201141657870589
+bands,global,ridge,1,sub01-scan01,Precuneus anterior,,0.1291804413593432
+bands,global,ridge,1,sub01-scan01,Putamen,,0.28101902857631256
+bands,global,ridge,1,sub01-scan01,Thalamus,,0.016287123581217654
+bands,global,ridge,1,sub01-scan01,global signal clean,,0.26382655143785994
+bands,global,mlp,1,sub01-scan01,Cuneus,width=128 wd=0.1 dropout=0.0,0.13111600489420375
+bands,global,mlp,1,sub01-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.0,0.28134732132339385
+bands,global,mlp,1,sub01-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.0,0.23315028066513213
+bands,global,mlp,1,sub01-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.0,0.15085369121711575
+bands,global,mlp,1,sub01-scan01,Putamen,width=128 wd=0.1 dropout=0.0,0.3387738623251047
+bands,global,mlp,1,sub01-scan01,Thalamus,width=128 wd=0.1 dropout=0.0,0.09564586556702691
+bands,global,mlp,1,sub01-scan01,global signal clean,width=128 wd=0.1 dropout=0.0,0.312380004646468
+cube,global,ridge,1,sub01-scan01,Cuneus,,0.19409367830776544
+cube,global,ridge,1,sub01-scan01,Heschl’s gyrus,,0.4388771343547294
+cube,global,ridge,1,sub01-scan01,Middle frontal gyrus anterior,,0.14684464202541425
+cube,global,ridge,1,sub01-scan01,Precuneus anterior,,0.14661380329509988
+cube,global,ridge,1,sub01-scan01,Putamen,,0.29213516268145245
+cube,global,ridge,1,sub01-scan01,Thalamus,,0.049021001696037764
+cube,global,ridge,1,sub01-scan01,global signal clean,,0.28173333711376974
+cube,global,mlp,1,sub01-scan01,Cuneus,width=32 wd=0.1 dropout=0.0,0.06323189252364392
+cube,global,mlp,1,sub01-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.0,0.35214521771857255
+cube,global,mlp,1,sub01-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.0,0.16221182101129983
+cube,global,mlp,1,sub01-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.0,0.13712798683283603
+cube,global,mlp,1,sub01-scan01,Putamen,width=32 wd=0.1 dropout=0.0,0.27516402801310447
+cube,global,mlp,1,sub01-scan01,Thalamus,width=32 wd=0.1 dropout=0.0,0.07250988506613437
+cube,global,mlp,1,sub01-scan01,global signal clean,width=32 wd=0.1 dropout=0.0,0.2836564523380184
+bands,global,ridge,2,sub02-scan01,Cuneus,,0.33148201522437604
+bands,global,ridge,2,sub02-scan01,Heschl’s gyrus,,0.39032762839283264
+bands,global,ridge,2,sub02-scan01,Middle frontal gyrus anterior,,0.5008544252094073
+bands,global,ridge,2,sub02-scan01,Precuneus anterior,,0.4203101160456711
+bands,global,ridge,2,sub02-scan01,Putamen,,-0.015890236496695527
+bands,global,ridge,2,sub02-scan01,Thalamus,,0.30449211931060777
+bands,global,ridge,2,sub02-scan01,global signal clean,,0.555438557068285
+bands,global,mlp,2,sub02-scan01,Cuneus,width=128 wd=0.1 dropout=0.0,0.3032253362172819
+bands,global,mlp,2,sub02-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.0,0.3883518689061645
+bands,global,mlp,2,sub02-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.0,0.48790967790133394
+bands,global,mlp,2,sub02-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.0,0.410154116949574
+bands,global,mlp,2,sub02-scan01,Putamen,width=128 wd=0.1 dropout=0.0,-0.026678061187694772
+bands,global,mlp,2,sub02-scan01,Thalamus,width=128 wd=0.1 dropout=0.0,0.24951096908831474
+bands,global,mlp,2,sub02-scan01,global signal clean,width=128 wd=0.1 dropout=0.0,0.5309074946549985
+cube,global,ridge,2,sub02-scan01,Cuneus,,0.3450295134208572
+cube,global,ridge,2,sub02-scan01,Heschl’s gyrus,,0.3753526168852871
+cube,global,ridge,2,sub02-scan01,Middle frontal gyrus anterior,,0.5167084404148011
+cube,global,ridge,2,sub02-scan01,Precuneus anterior,,0.41602307140223177
+cube,global,ridge,2,sub02-scan01,Putamen,,-0.018992980817529804
+cube,global,ridge,2,sub02-scan01,Thalamus,,0.3031101748472331
+cube,global,ridge,2,sub02-scan01,global signal clean,,0.5463543819203233
+cube,global,mlp,2,sub02-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.3136082665109018
+cube,global,mlp,2,sub02-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.4249503614555131
+cube,global,mlp,2,sub02-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.4938138260965384
+cube,global,mlp,2,sub02-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.39342253002192684
+cube,global,mlp,2,sub02-scan01,Putamen,width=128 wd=0.1 dropout=0.3,-0.08630442733885618
+cube,global,mlp,2,sub02-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.23428163659214923
+cube,global,mlp,2,sub02-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.5338965692292534
+bands,global,ridge,3,sub03-scan02,Cuneus,,0.2157811294138049
+bands,global,ridge,3,sub03-scan02,Heschl’s gyrus,,0.3587326651293045
+bands,global,ridge,3,sub03-scan02,Middle frontal gyrus anterior,,0.15149748542496339
+bands,global,ridge,3,sub03-scan02,Precuneus anterior,,0.1844524709835877
+bands,global,ridge,3,sub03-scan02,Putamen,,0.18953409757776393
+bands,global,ridge,3,sub03-scan02,Thalamus,,0.05931486746937688
+bands,global,ridge,3,sub03-scan02,global signal clean,,0.1821743288217254
+bands,global,mlp,3,sub03-scan02,Cuneus,width=128 wd=0.1 dropout=0.0,0.1923761550504053
+bands,global,mlp,3,sub03-scan02,Heschl’s gyrus,width=128 wd=0.1 dropout=0.0,0.3773388578036842
+bands,global,mlp,3,sub03-scan02,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.0,0.15801717418037242
+bands,global,mlp,3,sub03-scan02,Precuneus anterior,width=128 wd=0.1 dropout=0.0,0.14717638389482138
+bands,global,mlp,3,sub03-scan02,Putamen,width=128 wd=0.1 dropout=0.0,0.2485689388173116
+bands,global,mlp,3,sub03-scan02,Thalamus,width=128 wd=0.1 dropout=0.0,0.07624053930663252
+bands,global,mlp,3,sub03-scan02,global signal clean,width=128 wd=0.1 dropout=0.0,0.18181044233514068
+cube,global,ridge,3,sub03-scan02,Cuneus,,0.1317931121312313
+cube,global,ridge,3,sub03-scan02,Heschl’s gyrus,,0.32299539276636324
+cube,global,ridge,3,sub03-scan02,Middle frontal gyrus anterior,,0.12628923481575122
+cube,global,ridge,3,sub03-scan02,Precuneus anterior,,0.08114650046052355
+cube,global,ridge,3,sub03-scan02,Putamen,,0.2243092253404265
+cube,global,ridge,3,sub03-scan02,Thalamus,,0.0826878271013892
+cube,global,ridge,3,sub03-scan02,global signal clean,,0.13726762621946545
+cube,global,mlp,3,sub03-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.06532417253313101
+cube,global,mlp,3,sub03-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.34139367217695366
+cube,global,mlp,3,sub03-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.10603740904003636
+cube,global,mlp,3,sub03-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.04097793492564865
+cube,global,mlp,3,sub03-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.22399762354901182
+cube,global,mlp,3,sub03-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.07030903109376682
+cube,global,mlp,3,sub03-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.11176165939415875
+bands,global,ridge,4,sub04-scan01,Cuneus,,0.6010322242487365
+bands,global,ridge,4,sub04-scan01,Heschl’s gyrus,,0.689592385045038
+bands,global,ridge,4,sub04-scan01,Middle frontal gyrus anterior,,0.6008539756150376
+bands,global,ridge,4,sub04-scan01,Precuneus anterior,,0.7123842177295404
+bands,global,ridge,4,sub04-scan01,Putamen,,0.6057017016272287
+bands,global,ridge,4,sub04-scan01,Thalamus,,0.4653947054978109
+bands,global,ridge,4,sub04-scan01,global signal clean,,0.7136471860775809
+bands,global,mlp,4,sub04-scan01,Cuneus,width=128 wd=0.1 dropout=0.0,0.6569533674281571
+bands,global,mlp,4,sub04-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.0,0.7215749292108182
+bands,global,mlp,4,sub04-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.0,0.6219229812306213
+bands,global,mlp,4,sub04-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.0,0.7161622127286933
+bands,global,mlp,4,sub04-scan01,Putamen,width=128 wd=0.1 dropout=0.0,0.6315038953353334
+bands,global,mlp,4,sub04-scan01,Thalamus,width=128 wd=0.1 dropout=0.0,0.4886764922628049
+bands,global,mlp,4,sub04-scan01,global signal clean,width=128 wd=0.1 dropout=0.0,0.7316063390979265
+cube,global,ridge,4,sub04-scan01,Cuneus,,0.6260896830058604
+cube,global,ridge,4,sub04-scan01,Heschl’s gyrus,,0.7106799051334466
+cube,global,ridge,4,sub04-scan01,Middle frontal gyrus anterior,,0.601999566320796
+cube,global,ridge,4,sub04-scan01,Precuneus anterior,,0.7184091056728509
+cube,global,ridge,4,sub04-scan01,Putamen,,0.5681018813534576
+cube,global,ridge,4,sub04-scan01,Thalamus,,0.5315515472856406
+cube,global,ridge,4,sub04-scan01,global signal clean,,0.7165630108206211
+cube,global,mlp,4,sub04-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.6244044124939798
+cube,global,mlp,4,sub04-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.6760308714469211
+cube,global,mlp,4,sub04-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.6098822462972617
+cube,global,mlp,4,sub04-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.616867011124995
+cube,global,mlp,4,sub04-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.6034288174295822
+cube,global,mlp,4,sub04-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.5466684268767823
+cube,global,mlp,4,sub04-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.6887403823600186
+bands,global,ridge,5,sub05-scan01,Cuneus,,0.28543352291108925
+bands,global,ridge,5,sub05-scan01,Heschl’s gyrus,,0.2772985338900281
+bands,global,ridge,5,sub05-scan01,Middle frontal gyrus anterior,,0.1619130042443738
+bands,global,ridge,5,sub05-scan01,Precuneus anterior,,0.2813433928548894
+bands,global,ridge,5,sub05-scan01,Putamen,,0.2900383222261361
+bands,global,ridge,5,sub05-scan01,Thalamus,,0.26225891923551986
+bands,global,ridge,5,sub05-scan01,global signal clean,,0.32235478590846417
+bands,global,mlp,5,sub05-scan01,Cuneus,width=32 wd=0.0001 dropout=0.3,0.27649972982937
+bands,global,mlp,5,sub05-scan01,Heschl’s gyrus,width=32 wd=0.0001 dropout=0.3,0.26968480254881366
+bands,global,mlp,5,sub05-scan01,Middle frontal gyrus anterior,width=32 wd=0.0001 dropout=0.3,0.24741367695299804
+bands,global,mlp,5,sub05-scan01,Precuneus anterior,width=32 wd=0.0001 dropout=0.3,0.36010716029244705
+bands,global,mlp,5,sub05-scan01,Putamen,width=32 wd=0.0001 dropout=0.3,0.32922829283589106
+bands,global,mlp,5,sub05-scan01,Thalamus,width=32 wd=0.0001 dropout=0.3,0.32297564954469027
+bands,global,mlp,5,sub05-scan01,global signal clean,width=32 wd=0.0001 dropout=0.3,0.3962574543085169
+cube,global,ridge,5,sub05-scan01,Cuneus,,0.3082223508237603
+cube,global,ridge,5,sub05-scan01,Heschl’s gyrus,,0.2922091409620126
+cube,global,ridge,5,sub05-scan01,Middle frontal gyrus anterior,,0.17281556620883307
+cube,global,ridge,5,sub05-scan01,Precuneus anterior,,0.24795807348816631
+cube,global,ridge,5,sub05-scan01,Putamen,,0.2999545942342549
+cube,global,ridge,5,sub05-scan01,Thalamus,,0.26128858878654687
+cube,global,ridge,5,sub05-scan01,global signal clean,,0.3040099738477202
+cube,global,mlp,5,sub05-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.4502218231428128
+cube,global,mlp,5,sub05-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.2893479778716411
+cube,global,mlp,5,sub05-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.3224078989859436
+cube,global,mlp,5,sub05-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.35104715728497227
+cube,global,mlp,5,sub05-scan01,Putamen,width=128 wd=0.1 dropout=0.3,0.3470139634502298
+cube,global,mlp,5,sub05-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.31139230497132714
+cube,global,mlp,5,sub05-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.41835165521893486
+bands,global,ridge,6,sub06-scan01,Cuneus,,0.42011811748283034
+bands,global,ridge,6,sub06-scan01,Heschl’s gyrus,,0.4736020364627332
+bands,global,ridge,6,sub06-scan01,Middle frontal gyrus anterior,,0.33385164089104225
+bands,global,ridge,6,sub06-scan01,Precuneus anterior,,0.48050495975021523
+bands,global,ridge,6,sub06-scan01,Putamen,,0.39219172024742055
+bands,global,ridge,6,sub06-scan01,Thalamus,,0.3194214989555034
+bands,global,ridge,6,sub06-scan01,global signal clean,,0.5027659320054727
+bands,global,mlp,6,sub06-scan01,Cuneus,width=32 wd=0.1 dropout=0.0,0.41450685429036094
+bands,global,mlp,6,sub06-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.0,0.46909808026723054
+bands,global,mlp,6,sub06-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.0,0.3345089248582419
+bands,global,mlp,6,sub06-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.0,0.4811591152693699
+bands,global,mlp,6,sub06-scan01,Putamen,width=32 wd=0.1 dropout=0.0,0.391898161230439
+bands,global,mlp,6,sub06-scan01,Thalamus,width=32 wd=0.1 dropout=0.0,0.2966218692398354
+bands,global,mlp,6,sub06-scan01,global signal clean,width=32 wd=0.1 dropout=0.0,0.5208910829872473
+cube,global,ridge,6,sub06-scan01,Cuneus,,0.48384928944306316
+cube,global,ridge,6,sub06-scan01,Heschl’s gyrus,,0.4898006755643372
+cube,global,ridge,6,sub06-scan01,Middle frontal gyrus anterior,,0.36228854751906575
+cube,global,ridge,6,sub06-scan01,Precuneus anterior,,0.5012375595804103
+cube,global,ridge,6,sub06-scan01,Putamen,,0.37471625535238295
+cube,global,ridge,6,sub06-scan01,Thalamus,,0.29951390320556803
+cube,global,ridge,6,sub06-scan01,global signal clean,,0.5277147144167471
+cube,global,mlp,6,sub06-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.416660077235078
+cube,global,mlp,6,sub06-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.4670839055266942
+cube,global,mlp,6,sub06-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.30085830992834606
+cube,global,mlp,6,sub06-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.44840054294799714
+cube,global,mlp,6,sub06-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.3140630410983398
+cube,global,mlp,6,sub06-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.24948858286622708
+cube,global,mlp,6,sub06-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.46694280780719827
+bands,global,ridge,7,sub07-scan01,Cuneus,,0.35692850931962533
+bands,global,ridge,7,sub07-scan01,Heschl’s gyrus,,0.5358110913401625
+bands,global,ridge,7,sub07-scan01,Middle frontal gyrus anterior,,0.611675728885639
+bands,global,ridge,7,sub07-scan01,Precuneus anterior,,0.6141204070494881
+bands,global,ridge,7,sub07-scan01,Putamen,,0.5029769918052776
+bands,global,ridge,7,sub07-scan01,Thalamus,,0.504830789243073
+bands,global,ridge,7,sub07-scan01,global signal clean,,0.6450507505763569
+bands,global,ridge,7,sub07-scan02,Cuneus,,0.4335588014144673
+bands,global,ridge,7,sub07-scan02,Heschl’s gyrus,,0.5170776984620965
+bands,global,ridge,7,sub07-scan02,Middle frontal gyrus anterior,,0.5500860792563896
+bands,global,ridge,7,sub07-scan02,Precuneus anterior,,0.5167451653718903
+bands,global,ridge,7,sub07-scan02,Putamen,,0.41476446062134587
+bands,global,ridge,7,sub07-scan02,Thalamus,,0.5390182359560985
+bands,global,ridge,7,sub07-scan02,global signal clean,,0.5818360295971764
+bands,global,mlp,7,sub07-scan01,Cuneus,width=32 wd=0.0001 dropout=0.3,0.3840697867715822
+bands,global,mlp,7,sub07-scan01,Heschl’s gyrus,width=32 wd=0.0001 dropout=0.3,0.5811365183685356
+bands,global,mlp,7,sub07-scan01,Middle frontal gyrus anterior,width=32 wd=0.0001 dropout=0.3,0.6201785594324505
+bands,global,mlp,7,sub07-scan01,Precuneus anterior,width=32 wd=0.0001 dropout=0.3,0.6392179844119017
+bands,global,mlp,7,sub07-scan01,Putamen,width=32 wd=0.0001 dropout=0.3,0.5030255669677509
+bands,global,mlp,7,sub07-scan01,Thalamus,width=32 wd=0.0001 dropout=0.3,0.4924527433488735
+bands,global,mlp,7,sub07-scan01,global signal clean,width=32 wd=0.0001 dropout=0.3,0.6956029114961562
+bands,global,mlp,7,sub07-scan02,Cuneus,width=32 wd=0.0001 dropout=0.3,0.4466671288433608
+bands,global,mlp,7,sub07-scan02,Heschl’s gyrus,width=32 wd=0.0001 dropout=0.3,0.5101524559112003
+bands,global,mlp,7,sub07-scan02,Middle frontal gyrus anterior,width=32 wd=0.0001 dropout=0.3,0.5285382665233475
+bands,global,mlp,7,sub07-scan02,Precuneus anterior,width=32 wd=0.0001 dropout=0.3,0.5161000469331154
+bands,global,mlp,7,sub07-scan02,Putamen,width=32 wd=0.0001 dropout=0.3,0.3652819985879766
+bands,global,mlp,7,sub07-scan02,Thalamus,width=32 wd=0.0001 dropout=0.3,0.5225937523498301
+bands,global,mlp,7,sub07-scan02,global signal clean,width=32 wd=0.0001 dropout=0.3,0.5848454326568691
+cube,global,ridge,7,sub07-scan01,Cuneus,,0.3639020453850659
+cube,global,ridge,7,sub07-scan01,Heschl’s gyrus,,0.5471190070962733
+cube,global,ridge,7,sub07-scan01,Middle frontal gyrus anterior,,0.6132542372029225
+cube,global,ridge,7,sub07-scan01,Precuneus anterior,,0.6291148179969134
+cube,global,ridge,7,sub07-scan01,Putamen,,0.49544702957285364
+cube,global,ridge,7,sub07-scan01,Thalamus,,0.5079231455684521
+cube,global,ridge,7,sub07-scan01,global signal clean,,0.6576156368115258
+cube,global,ridge,7,sub07-scan02,Cuneus,,0.42082833231420474
+cube,global,ridge,7,sub07-scan02,Heschl’s gyrus,,0.5261163569218731
+cube,global,ridge,7,sub07-scan02,Middle frontal gyrus anterior,,0.5504655236761379
+cube,global,ridge,7,sub07-scan02,Precuneus anterior,,0.5352093561839879
+cube,global,ridge,7,sub07-scan02,Putamen,,0.4064955891779355
+cube,global,ridge,7,sub07-scan02,Thalamus,,0.5408630149600727
+cube,global,ridge,7,sub07-scan02,global signal clean,,0.5945710088120096
+cube,global,mlp,7,sub07-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.375968090515321
+cube,global,mlp,7,sub07-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.5691661661710643
+cube,global,mlp,7,sub07-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.6054700734965044
+cube,global,mlp,7,sub07-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.63404910137737
+cube,global,mlp,7,sub07-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.4077153447628591
+cube,global,mlp,7,sub07-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.4921832311464197
+cube,global,mlp,7,sub07-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.6646872106736118
+cube,global,mlp,7,sub07-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.38679574907182834
+cube,global,mlp,7,sub07-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.4611055728092737
+cube,global,mlp,7,sub07-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.4996370668776498
+cube,global,mlp,7,sub07-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5207321995030703
+cube,global,mlp,7,sub07-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.25131314133655713
+cube,global,mlp,7,sub07-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.5176380436563367
+cube,global,mlp,7,sub07-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.5231523983682503
+bands,global,ridge,8,sub08-scan01,Cuneus,,0.5466491946886244
+bands,global,ridge,8,sub08-scan01,Heschl’s gyrus,,0.28223887619485677
+bands,global,ridge,8,sub08-scan01,Middle frontal gyrus anterior,,0.009663329061823099
+bands,global,ridge,8,sub08-scan01,Precuneus anterior,,0.2380253423594727
+bands,global,ridge,8,sub08-scan01,Putamen,,-0.1414435667897552
+bands,global,ridge,8,sub08-scan01,Thalamus,,-0.006147070050954136
+bands,global,ridge,8,sub08-scan01,global signal clean,,0.40488516540005837
+bands,global,ridge,8,sub08-scan02,Cuneus,,0.6217887085723969
+bands,global,ridge,8,sub08-scan02,Heschl’s gyrus,,0.6055225009361598
+bands,global,ridge,8,sub08-scan02,Middle frontal gyrus anterior,,0.16305543135251396
+bands,global,ridge,8,sub08-scan02,Precuneus anterior,,0.5200798241373447
+bands,global,ridge,8,sub08-scan02,Putamen,,-0.05133238305343176
+bands,global,ridge,8,sub08-scan02,Thalamus,,0.39276033563615
+bands,global,ridge,8,sub08-scan02,global signal clean,,0.545098742278506
+bands,global,mlp,8,sub08-scan01,Cuneus,width=32 wd=0.0001 dropout=0.3,0.5529880694677759
+bands,global,mlp,8,sub08-scan01,Heschl’s gyrus,width=32 wd=0.0001 dropout=0.3,0.2819771275204238
+bands,global,mlp,8,sub08-scan01,Middle frontal gyrus anterior,width=32 wd=0.0001 dropout=0.3,0.014130691955068957
+bands,global,mlp,8,sub08-scan01,Precuneus anterior,width=32 wd=0.0001 dropout=0.3,0.26504005446290463
+bands,global,mlp,8,sub08-scan01,Putamen,width=32 wd=0.0001 dropout=0.3,-0.07927865044312175
+bands,global,mlp,8,sub08-scan01,Thalamus,width=32 wd=0.0001 dropout=0.3,0.0233565930677606
+bands,global,mlp,8,sub08-scan01,global signal clean,width=32 wd=0.0001 dropout=0.3,0.39199456652717835
+bands,global,mlp,8,sub08-scan02,Cuneus,width=32 wd=0.0001 dropout=0.3,0.5734943312403576
+bands,global,mlp,8,sub08-scan02,Heschl’s gyrus,width=32 wd=0.0001 dropout=0.3,0.5500894922559803
+bands,global,mlp,8,sub08-scan02,Middle frontal gyrus anterior,width=32 wd=0.0001 dropout=0.3,0.1557707695112404
+bands,global,mlp,8,sub08-scan02,Precuneus anterior,width=32 wd=0.0001 dropout=0.3,0.4597913937312262
+bands,global,mlp,8,sub08-scan02,Putamen,width=32 wd=0.0001 dropout=0.3,-0.045746607781912085
+bands,global,mlp,8,sub08-scan02,Thalamus,width=32 wd=0.0001 dropout=0.3,0.36153775530481386
+bands,global,mlp,8,sub08-scan02,global signal clean,width=32 wd=0.0001 dropout=0.3,0.4804985196641662
+cube,global,ridge,8,sub08-scan01,Cuneus,,0.5621477790193253
+cube,global,ridge,8,sub08-scan01,Heschl’s gyrus,,0.24880920995369812
+cube,global,ridge,8,sub08-scan01,Middle frontal gyrus anterior,,0.04423469757373376
+cube,global,ridge,8,sub08-scan01,Precuneus anterior,,0.21741821249476903
+cube,global,ridge,8,sub08-scan01,Putamen,,-0.1361290256427498
+cube,global,ridge,8,sub08-scan01,Thalamus,,-0.021769731799197525
+cube,global,ridge,8,sub08-scan01,global signal clean,,0.3633531964676289
+cube,global,ridge,8,sub08-scan02,Cuneus,,0.6460469329407224
+cube,global,ridge,8,sub08-scan02,Heschl’s gyrus,,0.6277466396767842
+cube,global,ridge,8,sub08-scan02,Middle frontal gyrus anterior,,0.18653648255126762
+cube,global,ridge,8,sub08-scan02,Precuneus anterior,,0.5137075898445379
+cube,global,ridge,8,sub08-scan02,Putamen,,-0.04909463980144429
+cube,global,ridge,8,sub08-scan02,Thalamus,,0.3730049814171977
+cube,global,ridge,8,sub08-scan02,global signal clean,,0.5348587594758755
+cube,global,mlp,8,sub08-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.6285451628439732
+cube,global,mlp,8,sub08-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.29853397478527854
+cube,global,mlp,8,sub08-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.14780468810815436
+cube,global,mlp,8,sub08-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.3073290832391581
+cube,global,mlp,8,sub08-scan01,Putamen,width=32 wd=0.1 dropout=0.3,-0.04959472716047408
+cube,global,mlp,8,sub08-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.010158963642906218
+cube,global,mlp,8,sub08-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.4817904782963086
+cube,global,mlp,8,sub08-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.6800470687738418
+cube,global,mlp,8,sub08-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.6192452272221736
+cube,global,mlp,8,sub08-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.22504261810412654
+cube,global,mlp,8,sub08-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5736013273307228
+cube,global,mlp,8,sub08-scan02,Putamen,width=32 wd=0.1 dropout=0.3,-0.0479102742101605
+cube,global,mlp,8,sub08-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.3681111453102493
+cube,global,mlp,8,sub08-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.6086701263626472
+bands,global,ridge,9,sub09-scan01,Cuneus,,0.3799343476862425
+bands,global,ridge,9,sub09-scan01,Heschl’s gyrus,,0.4767046986318427
+bands,global,ridge,9,sub09-scan01,Middle frontal gyrus anterior,,0.37917049299317607
+bands,global,ridge,9,sub09-scan01,Precuneus anterior,,0.2885515011139587
+bands,global,ridge,9,sub09-scan01,Putamen,,0.39509869313512735
+bands,global,ridge,9,sub09-scan01,Thalamus,,0.5395267933828305
+bands,global,ridge,9,sub09-scan01,global signal clean,,0.47505596686211665
+bands,global,ridge,9,sub09-scan02,Cuneus,,0.2017101890416642
+bands,global,ridge,9,sub09-scan02,Heschl’s gyrus,,0.3233670571504577
+bands,global,ridge,9,sub09-scan02,Middle frontal gyrus anterior,,0.24710533275312418
+bands,global,ridge,9,sub09-scan02,Precuneus anterior,,0.13614876054657019
+bands,global,ridge,9,sub09-scan02,Putamen,,0.3006004422489758
+bands,global,ridge,9,sub09-scan02,Thalamus,,0.30788432130310833
+bands,global,ridge,9,sub09-scan02,global signal clean,,0.31699142783455975
+bands,global,mlp,9,sub09-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.38724446807454965
+bands,global,mlp,9,sub09-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.46760289042437775
+bands,global,mlp,9,sub09-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.4368664307649144
+bands,global,mlp,9,sub09-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.37844374770934275
+bands,global,mlp,9,sub09-scan01,Putamen,width=128 wd=0.1 dropout=0.3,0.3725239182052312
+bands,global,mlp,9,sub09-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.534727946998288
+bands,global,mlp,9,sub09-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.5386048314883211
+bands,global,mlp,9,sub09-scan02,Cuneus,width=128 wd=0.1 dropout=0.3,0.3097376714564823
+bands,global,mlp,9,sub09-scan02,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.2860398875821485
+bands,global,mlp,9,sub09-scan02,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.29188043352281007
+bands,global,mlp,9,sub09-scan02,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.15277976358455245
+bands,global,mlp,9,sub09-scan02,Putamen,width=128 wd=0.1 dropout=0.3,0.19639974344794284
+bands,global,mlp,9,sub09-scan02,Thalamus,width=128 wd=0.1 dropout=0.3,0.28839991818868715
+bands,global,mlp,9,sub09-scan02,global signal clean,width=128 wd=0.1 dropout=0.3,0.3740862874824178
+cube,global,ridge,9,sub09-scan01,Cuneus,,0.41902066323379344
+cube,global,ridge,9,sub09-scan01,Heschl’s gyrus,,0.4880524886833056
+cube,global,ridge,9,sub09-scan01,Middle frontal gyrus anterior,,0.38706279829975804
+cube,global,ridge,9,sub09-scan01,Precuneus anterior,,0.3058064614412266
+cube,global,ridge,9,sub09-scan01,Putamen,,0.3805117988046976
+cube,global,ridge,9,sub09-scan01,Thalamus,,0.5145386766097771
+cube,global,ridge,9,sub09-scan01,global signal clean,,0.4910237532384122
+cube,global,ridge,9,sub09-scan02,Cuneus,,0.25287809246532605
+cube,global,ridge,9,sub09-scan02,Heschl’s gyrus,,0.34339301675473644
+cube,global,ridge,9,sub09-scan02,Middle frontal gyrus anterior,,0.2783409388281794
+cube,global,ridge,9,sub09-scan02,Precuneus anterior,,0.1529182513356647
+cube,global,ridge,9,sub09-scan02,Putamen,,0.3139060127493981
+cube,global,ridge,9,sub09-scan02,Thalamus,,0.29984903850805184
+cube,global,ridge,9,sub09-scan02,global signal clean,,0.3454946043363204
+cube,global,mlp,9,sub09-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.4660121961633779
+cube,global,mlp,9,sub09-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.5144806481020006
+cube,global,mlp,9,sub09-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.42110522054013505
+cube,global,mlp,9,sub09-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.41091923643314154
+cube,global,mlp,9,sub09-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.38438211334058286
+cube,global,mlp,9,sub09-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.49474292115109064
+cube,global,mlp,9,sub09-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.5850086207832379
+cube,global,mlp,9,sub09-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.3672269001989166
+cube,global,mlp,9,sub09-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.3536647879387075
+cube,global,mlp,9,sub09-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.291914310270114
+cube,global,mlp,9,sub09-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.17625909678429635
+cube,global,mlp,9,sub09-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.21497441001330433
+cube,global,mlp,9,sub09-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.262070026530058
+cube,global,mlp,9,sub09-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.4546106506759893
+bands,global,ridge,10,sub10-scan02,Cuneus,,0.0948906161598106
+bands,global,ridge,10,sub10-scan02,Heschl’s gyrus,,0.03592461239556098
+bands,global,ridge,10,sub10-scan02,Middle frontal gyrus anterior,,-0.034680420062424784
+bands,global,ridge,10,sub10-scan02,Precuneus anterior,,-0.03823305084451731
+bands,global,ridge,10,sub10-scan02,Putamen,,-0.05137180897684213
+bands,global,ridge,10,sub10-scan02,Thalamus,,-0.18717006011349815
+bands,global,ridge,10,sub10-scan02,global signal clean,,-0.07277641152318987
+bands,global,mlp,10,sub10-scan02,Cuneus,width=128 wd=0.1 dropout=0.3,0.08821589558859187
+bands,global,mlp,10,sub10-scan02,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.04621941744735559
+bands,global,mlp,10,sub10-scan02,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,-0.02919428197312453
+bands,global,mlp,10,sub10-scan02,Precuneus anterior,width=128 wd=0.1 dropout=0.3,-0.007528568677516037
+bands,global,mlp,10,sub10-scan02,Putamen,width=128 wd=0.1 dropout=0.3,-0.045241504589811084
+bands,global,mlp,10,sub10-scan02,Thalamus,width=128 wd=0.1 dropout=0.3,-0.13191680485303764
+bands,global,mlp,10,sub10-scan02,global signal clean,width=128 wd=0.1 dropout=0.3,-0.05244253651510114
+cube,global,ridge,10,sub10-scan02,Cuneus,,0.07738489191513717
+cube,global,ridge,10,sub10-scan02,Heschl’s gyrus,,0.0014545158258043689
+cube,global,ridge,10,sub10-scan02,Middle frontal gyrus anterior,,-0.03113481841073461
+cube,global,ridge,10,sub10-scan02,Precuneus anterior,,-0.06494592131850342
+cube,global,ridge,10,sub10-scan02,Putamen,,-0.02555316636391899
+cube,global,ridge,10,sub10-scan02,Thalamus,,-0.16674789207851376
+cube,global,ridge,10,sub10-scan02,global signal clean,,-0.10685391736469656
+cube,global,mlp,10,sub10-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.1550469160263142
+cube,global,mlp,10,sub10-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.039130689615491404
+cube,global,mlp,10,sub10-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.01940829465155419
+cube,global,mlp,10,sub10-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.020044238500131126
+cube,global,mlp,10,sub10-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.043781141634334726
+cube,global,mlp,10,sub10-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,-0.07872786517618105
+cube,global,mlp,10,sub10-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.007599592641234911
+bands,global,ridge,11,sub11-scan01,Cuneus,,0.6446927259754939
+bands,global,ridge,11,sub11-scan01,Heschl’s gyrus,,0.6258626733502141
+bands,global,ridge,11,sub11-scan01,Middle frontal gyrus anterior,,0.49234522793093166
+bands,global,ridge,11,sub11-scan01,Precuneus anterior,,0.5151130207535755
+bands,global,ridge,11,sub11-scan01,Putamen,,0.4327993277911738
+bands,global,ridge,11,sub11-scan01,Thalamus,,0.4286638982226082
+bands,global,ridge,11,sub11-scan01,global signal clean,,0.6516348829319064
+bands,global,mlp,11,sub11-scan01,Cuneus,width=32 wd=0.01 dropout=0.3,0.6699341772933264
+bands,global,mlp,11,sub11-scan01,Heschl’s gyrus,width=32 wd=0.01 dropout=0.3,0.7036791252763134
+bands,global,mlp,11,sub11-scan01,Middle frontal gyrus anterior,width=32 wd=0.01 dropout=0.3,0.5333337819746843
+bands,global,mlp,11,sub11-scan01,Precuneus anterior,width=32 wd=0.01 dropout=0.3,0.5500382205596653
+bands,global,mlp,11,sub11-scan01,Putamen,width=32 wd=0.01 dropout=0.3,0.53300959647613
+bands,global,mlp,11,sub11-scan01,Thalamus,width=32 wd=0.01 dropout=0.3,0.48457704595144113
+bands,global,mlp,11,sub11-scan01,global signal clean,width=32 wd=0.01 dropout=0.3,0.6833451129973841
+cube,global,ridge,11,sub11-scan01,Cuneus,,0.6809097764345624
+cube,global,ridge,11,sub11-scan01,Heschl’s gyrus,,0.6608327083473295
+cube,global,ridge,11,sub11-scan01,Middle frontal gyrus anterior,,0.49862733593077696
+cube,global,ridge,11,sub11-scan01,Precuneus anterior,,0.534309899992312
+cube,global,ridge,11,sub11-scan01,Putamen,,0.48003263399081525
+cube,global,ridge,11,sub11-scan01,Thalamus,,0.46530408269923046
+cube,global,ridge,11,sub11-scan01,global signal clean,,0.668061529069143
+cube,global,mlp,11,sub11-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.6936998222128611
+cube,global,mlp,11,sub11-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.6878152067185987
+cube,global,mlp,11,sub11-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.513145479495845
+cube,global,mlp,11,sub11-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5126385232519987
+cube,global,mlp,11,sub11-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.5342487958322474
+cube,global,mlp,11,sub11-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.49298316451493357
+cube,global,mlp,11,sub11-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.6625875046823401
+bands,global,ridge,12,sub12-scan01,Cuneus,,0.3959241134848252
+bands,global,ridge,12,sub12-scan01,Heschl’s gyrus,,0.43281645350070647
+bands,global,ridge,12,sub12-scan01,Middle frontal gyrus anterior,,0.5339584687392419
+bands,global,ridge,12,sub12-scan01,Precuneus anterior,,0.47795149292316985
+bands,global,ridge,12,sub12-scan01,Putamen,,0.3174535491001821
+bands,global,ridge,12,sub12-scan01,Thalamus,,0.47738516721623353
+bands,global,ridge,12,sub12-scan01,global signal clean,,0.5593363299288936
+bands,global,ridge,12,sub12-scan02,Cuneus,,0.33700356409933596
+bands,global,ridge,12,sub12-scan02,Heschl’s gyrus,,0.3231484822424448
+bands,global,ridge,12,sub12-scan02,Middle frontal gyrus anterior,,0.4082810208559441
+bands,global,ridge,12,sub12-scan02,Precuneus anterior,,0.44346689271304657
+bands,global,ridge,12,sub12-scan02,Putamen,,0.3599392473560171
+bands,global,ridge,12,sub12-scan02,Thalamus,,0.4592653546491198
+bands,global,ridge,12,sub12-scan02,global signal clean,,0.47365947353062815
+bands,global,mlp,12,sub12-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.47292718716617954
+bands,global,mlp,12,sub12-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.4328161857388308
+bands,global,mlp,12,sub12-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.5385887403025629
+bands,global,mlp,12,sub12-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.5182770515377026
+bands,global,mlp,12,sub12-scan01,Putamen,width=128 wd=0.1 dropout=0.3,0.3739865768037838
+bands,global,mlp,12,sub12-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.5061999085656423
+bands,global,mlp,12,sub12-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.6243017792013795
+bands,global,mlp,12,sub12-scan02,Cuneus,width=128 wd=0.1 dropout=0.3,0.35122827787112815
+bands,global,mlp,12,sub12-scan02,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.3247886881252562
+bands,global,mlp,12,sub12-scan02,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.4637535757351077
+bands,global,mlp,12,sub12-scan02,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.5016176993343942
+bands,global,mlp,12,sub12-scan02,Putamen,width=128 wd=0.1 dropout=0.3,0.3975535064332114
+bands,global,mlp,12,sub12-scan02,Thalamus,width=128 wd=0.1 dropout=0.3,0.4723929821498258
+bands,global,mlp,12,sub12-scan02,global signal clean,width=128 wd=0.1 dropout=0.3,0.540253110166839
+cube,global,ridge,12,sub12-scan01,Cuneus,,0.4414892496965932
+cube,global,ridge,12,sub12-scan01,Heschl’s gyrus,,0.45978694410910703
+cube,global,ridge,12,sub12-scan01,Middle frontal gyrus anterior,,0.5217931734212451
+cube,global,ridge,12,sub12-scan01,Precuneus anterior,,0.467530701102524
+cube,global,ridge,12,sub12-scan01,Putamen,,0.3255274482719133
+cube,global,ridge,12,sub12-scan01,Thalamus,,0.4720514579363441
+cube,global,ridge,12,sub12-scan01,global signal clean,,0.5543198852454267
+cube,global,ridge,12,sub12-scan02,Cuneus,,0.3340154922001884
+cube,global,ridge,12,sub12-scan02,Heschl’s gyrus,,0.32209073695859997
+cube,global,ridge,12,sub12-scan02,Middle frontal gyrus anterior,,0.4248158851391826
+cube,global,ridge,12,sub12-scan02,Precuneus anterior,,0.44486673249279846
+cube,global,ridge,12,sub12-scan02,Putamen,,0.37836747776624124
+cube,global,ridge,12,sub12-scan02,Thalamus,,0.45970374702775135
+cube,global,ridge,12,sub12-scan02,global signal clean,,0.44177931194205244
+cube,global,mlp,12,sub12-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.5132431882167617
+cube,global,mlp,12,sub12-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.47295568685474987
+cube,global,mlp,12,sub12-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.5244424010655154
+cube,global,mlp,12,sub12-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5252045688305828
+cube,global,mlp,12,sub12-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.40168053104826434
+cube,global,mlp,12,sub12-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.46854862870277847
+cube,global,mlp,12,sub12-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.6265812245601042
+cube,global,mlp,12,sub12-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.39381714757243597
+cube,global,mlp,12,sub12-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.35531953526880217
+cube,global,mlp,12,sub12-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.4296973128183046
+cube,global,mlp,12,sub12-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.4300698027127151
+cube,global,mlp,12,sub12-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.40987583308372055
+cube,global,mlp,12,sub12-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.4223574064707977
+cube,global,mlp,12,sub12-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.5090403154566644
+bands,global,ridge,13,sub13-scan01,Cuneus,,0.05502584593036531
+bands,global,ridge,13,sub13-scan01,Heschl’s gyrus,,0.20912442601631992
+bands,global,ridge,13,sub13-scan01,Middle frontal gyrus anterior,,0.20024530923208114
+bands,global,ridge,13,sub13-scan01,Precuneus anterior,,0.13983873919517578
+bands,global,ridge,13,sub13-scan01,Putamen,,0.2259320047736842
+bands,global,ridge,13,sub13-scan01,Thalamus,,0.2200640763254552
+bands,global,ridge,13,sub13-scan01,global signal clean,,0.2264903716336216
+bands,global,ridge,13,sub13-scan02,Cuneus,,0.1674641778460973
+bands,global,ridge,13,sub13-scan02,Heschl’s gyrus,,0.3401970968974276
+bands,global,ridge,13,sub13-scan02,Middle frontal gyrus anterior,,0.12913632779257567
+bands,global,ridge,13,sub13-scan02,Precuneus anterior,,-0.011081238887088795
+bands,global,ridge,13,sub13-scan02,Putamen,,0.16040975850739161
+bands,global,ridge,13,sub13-scan02,Thalamus,,0.22938633681546183
+bands,global,ridge,13,sub13-scan02,global signal clean,,0.19281220186389764
+bands,global,mlp,13,sub13-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.1579443589598427
+bands,global,mlp,13,sub13-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.276398335072699
+bands,global,mlp,13,sub13-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.2031672824978928
+bands,global,mlp,13,sub13-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.20639995793556137
+bands,global,mlp,13,sub13-scan01,Putamen,width=128 wd=0.1 dropout=0.3,0.261756516860718
+bands,global,mlp,13,sub13-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.30080755478725835
+bands,global,mlp,13,sub13-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.3625487093458416
+bands,global,mlp,13,sub13-scan02,Cuneus,width=128 wd=0.1 dropout=0.3,0.1942751654162
+bands,global,mlp,13,sub13-scan02,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.3368746776569118
+bands,global,mlp,13,sub13-scan02,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.23272114902942942
+bands,global,mlp,13,sub13-scan02,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.10946176490415045
+bands,global,mlp,13,sub13-scan02,Putamen,width=128 wd=0.1 dropout=0.3,0.2652644453379021
+bands,global,mlp,13,sub13-scan02,Thalamus,width=128 wd=0.1 dropout=0.3,0.2764047430024753
+bands,global,mlp,13,sub13-scan02,global signal clean,width=128 wd=0.1 dropout=0.3,0.3074101094675084
+cube,global,ridge,13,sub13-scan01,Cuneus,,0.11968926198164198
+cube,global,ridge,13,sub13-scan01,Heschl’s gyrus,,0.25412220870392305
+cube,global,ridge,13,sub13-scan01,Middle frontal gyrus anterior,,0.22382685900365515
+cube,global,ridge,13,sub13-scan01,Precuneus anterior,,0.17543915040333452
+cube,global,ridge,13,sub13-scan01,Putamen,,0.23095392027974004
+cube,global,ridge,13,sub13-scan01,Thalamus,,0.2503085534548769
+cube,global,ridge,13,sub13-scan01,global signal clean,,0.2999632448034136
+cube,global,ridge,13,sub13-scan02,Cuneus,,0.22065176584983937
+cube,global,ridge,13,sub13-scan02,Heschl’s gyrus,,0.3742684949077149
+cube,global,ridge,13,sub13-scan02,Middle frontal gyrus anterior,,0.1789941689627476
+cube,global,ridge,13,sub13-scan02,Precuneus anterior,,0.028600501593452527
+cube,global,ridge,13,sub13-scan02,Putamen,,0.16580230081900812
+cube,global,ridge,13,sub13-scan02,Thalamus,,0.2631645309017512
+cube,global,ridge,13,sub13-scan02,global signal clean,,0.25769865163279654
+cube,global,mlp,13,sub13-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.12198432295367831
+cube,global,mlp,13,sub13-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.18167785269248163
+cube,global,mlp,13,sub13-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.15335920128726574
+cube,global,mlp,13,sub13-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.1699936745226835
+cube,global,mlp,13,sub13-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.29590471583829603
+cube,global,mlp,13,sub13-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.19004503259903183
+cube,global,mlp,13,sub13-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.29785229809612374
+cube,global,mlp,13,sub13-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.16432264176130287
+cube,global,mlp,13,sub13-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.2735629867254449
+cube,global,mlp,13,sub13-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.23396764337309328
+cube,global,mlp,13,sub13-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.14317921288771587
+cube,global,mlp,13,sub13-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.3703519407095995
+cube,global,mlp,13,sub13-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.23127484958193617
+cube,global,mlp,13,sub13-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.3075446286053491
+bands,global,ridge,14,sub14-scan01,Cuneus,,0.5063709878609182
+bands,global,ridge,14,sub14-scan01,Heschl’s gyrus,,0.6251354760236978
+bands,global,ridge,14,sub14-scan01,Middle frontal gyrus anterior,,0.4159840462073838
+bands,global,ridge,14,sub14-scan01,Precuneus anterior,,0.5387672532907912
+bands,global,ridge,14,sub14-scan01,Putamen,,0.4139647885740021
+bands,global,ridge,14,sub14-scan01,Thalamus,,0.36476882120171367
+bands,global,ridge,14,sub14-scan01,global signal clean,,0.5837858026740071
+bands,global,ridge,14,sub14-scan02,Cuneus,,0.43979153575879454
+bands,global,ridge,14,sub14-scan02,Heschl’s gyrus,,0.6070760725736647
+bands,global,ridge,14,sub14-scan02,Middle frontal gyrus anterior,,0.42401950139776373
+bands,global,ridge,14,sub14-scan02,Precuneus anterior,,0.5258989255920209
+bands,global,ridge,14,sub14-scan02,Putamen,,0.32151195908821845
+bands,global,ridge,14,sub14-scan02,Thalamus,,0.20349211765734487
+bands,global,ridge,14,sub14-scan02,global signal clean,,0.5500142117751141
+bands,global,mlp,14,sub14-scan01,Cuneus,width=128 wd=0.0001 dropout=0.3,0.5700593663850705
+bands,global,mlp,14,sub14-scan01,Heschl’s gyrus,width=128 wd=0.0001 dropout=0.3,0.645492147724643
+bands,global,mlp,14,sub14-scan01,Middle frontal gyrus anterior,width=128 wd=0.0001 dropout=0.3,0.3973506946724816
+bands,global,mlp,14,sub14-scan01,Precuneus anterior,width=128 wd=0.0001 dropout=0.3,0.5071541179027095
+bands,global,mlp,14,sub14-scan01,Putamen,width=128 wd=0.0001 dropout=0.3,0.40087437179081087
+bands,global,mlp,14,sub14-scan01,Thalamus,width=128 wd=0.0001 dropout=0.3,0.38260400963004937
+bands,global,mlp,14,sub14-scan01,global signal clean,width=128 wd=0.0001 dropout=0.3,0.553463594271209
+bands,global,mlp,14,sub14-scan02,Cuneus,width=128 wd=0.0001 dropout=0.3,0.4503611254105794
+bands,global,mlp,14,sub14-scan02,Heschl’s gyrus,width=128 wd=0.0001 dropout=0.3,0.5864704934476608
+bands,global,mlp,14,sub14-scan02,Middle frontal gyrus anterior,width=128 wd=0.0001 dropout=0.3,0.3907052393495828
+bands,global,mlp,14,sub14-scan02,Precuneus anterior,width=128 wd=0.0001 dropout=0.3,0.48103255135114914
+bands,global,mlp,14,sub14-scan02,Putamen,width=128 wd=0.0001 dropout=0.3,0.3247341807792689
+bands,global,mlp,14,sub14-scan02,Thalamus,width=128 wd=0.0001 dropout=0.3,0.22570508677391793
+bands,global,mlp,14,sub14-scan02,global signal clean,width=128 wd=0.0001 dropout=0.3,0.509593857143785
+cube,global,ridge,14,sub14-scan01,Cuneus,,0.4929352321780678
+cube,global,ridge,14,sub14-scan01,Heschl’s gyrus,,0.6130186773431968
+cube,global,ridge,14,sub14-scan01,Middle frontal gyrus anterior,,0.41074393193665754
+cube,global,ridge,14,sub14-scan01,Precuneus anterior,,0.5333034678756835
+cube,global,ridge,14,sub14-scan01,Putamen,,0.41407737970600555
+cube,global,ridge,14,sub14-scan01,Thalamus,,0.35011832931239956
+cube,global,ridge,14,sub14-scan01,global signal clean,,0.5853234804011268
+cube,global,ridge,14,sub14-scan02,Cuneus,,0.4540127654107745
+cube,global,ridge,14,sub14-scan02,Heschl’s gyrus,,0.6381567909419018
+cube,global,ridge,14,sub14-scan02,Middle frontal gyrus anterior,,0.4220101457607621
+cube,global,ridge,14,sub14-scan02,Precuneus anterior,,0.5284202718947693
+cube,global,ridge,14,sub14-scan02,Putamen,,0.32418714284868716
+cube,global,ridge,14,sub14-scan02,Thalamus,,0.19988096102576602
+cube,global,ridge,14,sub14-scan02,global signal clean,,0.5739597260212022
+cube,global,mlp,14,sub14-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.5730218222874358
+cube,global,mlp,14,sub14-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.6399106464819353
+cube,global,mlp,14,sub14-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.42717988165148674
+cube,global,mlp,14,sub14-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5157358632713763
+cube,global,mlp,14,sub14-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.4263897256851675
+cube,global,mlp,14,sub14-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.3922399550159623
+cube,global,mlp,14,sub14-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.5838273800675824
+cube,global,mlp,14,sub14-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.4862601735384876
+cube,global,mlp,14,sub14-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.6485832291348861
+cube,global,mlp,14,sub14-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.43934278634278406
+cube,global,mlp,14,sub14-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5229847932349887
+cube,global,mlp,14,sub14-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.3933900918973356
+cube,global,mlp,14,sub14-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.2633481731360027
+cube,global,mlp,14,sub14-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.5755313228062132
+bands,global,ridge,15,sub15-scan01,Cuneus,,0.4308444662697425
+bands,global,ridge,15,sub15-scan01,Heschl’s gyrus,,0.5419942730757252
+bands,global,ridge,15,sub15-scan01,Middle frontal gyrus anterior,,0.3893305538417859
+bands,global,ridge,15,sub15-scan01,Precuneus anterior,,0.4424680191961926
+bands,global,ridge,15,sub15-scan01,Putamen,,0.27066302923693447
+bands,global,ridge,15,sub15-scan01,Thalamus,,0.32755884504915367
+bands,global,ridge,15,sub15-scan01,global signal clean,,0.5298038723488172
+bands,global,mlp,15,sub15-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.4519856398015199
+bands,global,mlp,15,sub15-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.5440519795100297
+bands,global,mlp,15,sub15-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.34627095463533425
+bands,global,mlp,15,sub15-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.46044662893553484
+bands,global,mlp,15,sub15-scan01,Putamen,width=128 wd=0.1 dropout=0.3,0.24512352821946698
+bands,global,mlp,15,sub15-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.37775671042636766
+bands,global,mlp,15,sub15-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.5373063605783799
+cube,global,ridge,15,sub15-scan01,Cuneus,,0.46413296922874697
+cube,global,ridge,15,sub15-scan01,Heschl’s gyrus,,0.5679677089729394
+cube,global,ridge,15,sub15-scan01,Middle frontal gyrus anterior,,0.39639508392779554
+cube,global,ridge,15,sub15-scan01,Precuneus anterior,,0.44670588553198326
+cube,global,ridge,15,sub15-scan01,Putamen,,0.26520413698916157
+cube,global,ridge,15,sub15-scan01,Thalamus,,0.3581720968878966
+cube,global,ridge,15,sub15-scan01,global signal clean,,0.561736154018033
+cube,global,mlp,15,sub15-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.47056425891575826
+cube,global,mlp,15,sub15-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.5325127831540412
+cube,global,mlp,15,sub15-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.30470406570299996
+cube,global,mlp,15,sub15-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.45906090048328513
+cube,global,mlp,15,sub15-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.24655132194500212
+cube,global,mlp,15,sub15-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.39479395294447334
+cube,global,mlp,15,sub15-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.5474724881171126
+bands,global,ridge,16,sub16-scan01,Cuneus,,0.6032163537038371
+bands,global,ridge,16,sub16-scan01,Heschl’s gyrus,,0.5658872299741843
+bands,global,ridge,16,sub16-scan01,Middle frontal gyrus anterior,,0.41918751294723766
+bands,global,ridge,16,sub16-scan01,Precuneus anterior,,0.6340849772031274
+bands,global,ridge,16,sub16-scan01,Putamen,,0.18581910021153125
+bands,global,ridge,16,sub16-scan01,Thalamus,,0.6153952675300566
+bands,global,ridge,16,sub16-scan01,global signal clean,,0.6297277969110544
+bands,global,mlp,16,sub16-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.629651369319765
+bands,global,mlp,16,sub16-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.5778392848501013
+bands,global,mlp,16,sub16-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.4439807443030411
+bands,global,mlp,16,sub16-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.6687569491060323
+bands,global,mlp,16,sub16-scan01,Putamen,width=128 wd=0.1 dropout=0.3,0.2517182543580763
+bands,global,mlp,16,sub16-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.6213967265197936
+bands,global,mlp,16,sub16-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.6809331094452703
+cube,global,ridge,16,sub16-scan01,Cuneus,,0.6199328994202329
+cube,global,ridge,16,sub16-scan01,Heschl’s gyrus,,0.6003789655199737
+cube,global,ridge,16,sub16-scan01,Middle frontal gyrus anterior,,0.4386430304710748
+cube,global,ridge,16,sub16-scan01,Precuneus anterior,,0.6379874488122907
+cube,global,ridge,16,sub16-scan01,Putamen,,0.19113786194649676
+cube,global,ridge,16,sub16-scan01,Thalamus,,0.6398065001828347
+cube,global,ridge,16,sub16-scan01,global signal clean,,0.6597924813580548
+cube,global,mlp,16,sub16-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.6535154771030435
+cube,global,mlp,16,sub16-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.6131598371111764
+cube,global,mlp,16,sub16-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.49575870175671716
+cube,global,mlp,16,sub16-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.6515608216519092
+cube,global,mlp,16,sub16-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.3330053975272482
+cube,global,mlp,16,sub16-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.6072723204483603
+cube,global,mlp,16,sub16-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.7117055245387456
+bands,global,ridge,17,sub17-scan02,Cuneus,,0.09714739076771199
+bands,global,ridge,17,sub17-scan02,Heschl’s gyrus,,0.23451269239620348
+bands,global,ridge,17,sub17-scan02,Middle frontal gyrus anterior,,0.19289178668752188
+bands,global,ridge,17,sub17-scan02,Precuneus anterior,,0.2609076228242384
+bands,global,ridge,17,sub17-scan02,Putamen,,-0.05401631453298469
+bands,global,ridge,17,sub17-scan02,Thalamus,,0.3423480759317377
+bands,global,ridge,17,sub17-scan02,global signal clean,,0.3773055517110012
+bands,global,mlp,17,sub17-scan02,Cuneus,width=128 wd=0.1 dropout=0.0,0.17358176750696072
+bands,global,mlp,17,sub17-scan02,Heschl’s gyrus,width=128 wd=0.1 dropout=0.0,0.26823083836318123
+bands,global,mlp,17,sub17-scan02,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.0,0.2353508872519493
+bands,global,mlp,17,sub17-scan02,Precuneus anterior,width=128 wd=0.1 dropout=0.0,0.31027001144821686
+bands,global,mlp,17,sub17-scan02,Putamen,width=128 wd=0.1 dropout=0.0,-0.03969053502484213
+bands,global,mlp,17,sub17-scan02,Thalamus,width=128 wd=0.1 dropout=0.0,0.3448397959250906
+bands,global,mlp,17,sub17-scan02,global signal clean,width=128 wd=0.1 dropout=0.0,0.43528507821947243
+cube,global,ridge,17,sub17-scan02,Cuneus,,0.19392781015568467
+cube,global,ridge,17,sub17-scan02,Heschl’s gyrus,,0.2753426146503444
+cube,global,ridge,17,sub17-scan02,Middle frontal gyrus anterior,,0.2306876457144446
+cube,global,ridge,17,sub17-scan02,Precuneus anterior,,0.3145839477764033
+cube,global,ridge,17,sub17-scan02,Putamen,,-0.026000246525216094
+cube,global,ridge,17,sub17-scan02,Thalamus,,0.36020692862738696
+cube,global,ridge,17,sub17-scan02,global signal clean,,0.43558306176173806
+cube,global,mlp,17,sub17-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.22487556237526798
+cube,global,mlp,17,sub17-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.31252808589383946
+cube,global,mlp,17,sub17-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.27631233733834015
+cube,global,mlp,17,sub17-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.31199075391329806
+cube,global,mlp,17,sub17-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.05600016819099421
+cube,global,mlp,17,sub17-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.3589128019543017
+cube,global,mlp,17,sub17-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.4656100697910573
+bands,global,ridge,18,sub18-scan01,Cuneus,,0.3811562620755766
+bands,global,ridge,18,sub18-scan01,Heschl’s gyrus,,0.5793199426061442
+bands,global,ridge,18,sub18-scan01,Middle frontal gyrus anterior,,0.3909405644232094
+bands,global,ridge,18,sub18-scan01,Precuneus anterior,,0.3794668434051431
+bands,global,ridge,18,sub18-scan01,Putamen,,0.5347499693147294
+bands,global,ridge,18,sub18-scan01,Thalamus,,0.3879308737196456
+bands,global,ridge,18,sub18-scan01,global signal clean,,0.4406594502056275
+bands,global,mlp,18,sub18-scan01,Cuneus,width=32 wd=0.1 dropout=0.0,0.3195986465430597
+bands,global,mlp,18,sub18-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.0,0.5547895584329219
+bands,global,mlp,18,sub18-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.0,0.37981139196552255
+bands,global,mlp,18,sub18-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.0,0.34837713051971775
+bands,global,mlp,18,sub18-scan01,Putamen,width=32 wd=0.1 dropout=0.0,0.5135034070169996
+bands,global,mlp,18,sub18-scan01,Thalamus,width=32 wd=0.1 dropout=0.0,0.40495745578433745
+bands,global,mlp,18,sub18-scan01,global signal clean,width=32 wd=0.1 dropout=0.0,0.411717605805304
+cube,global,ridge,18,sub18-scan01,Cuneus,,0.38637545432887455
+cube,global,ridge,18,sub18-scan01,Heschl’s gyrus,,0.5852400570607128
+cube,global,ridge,18,sub18-scan01,Middle frontal gyrus anterior,,0.4013494031074723
+cube,global,ridge,18,sub18-scan01,Precuneus anterior,,0.39261736770409583
+cube,global,ridge,18,sub18-scan01,Putamen,,0.5423667098921024
+cube,global,ridge,18,sub18-scan01,Thalamus,,0.38730790020731437
+cube,global,ridge,18,sub18-scan01,global signal clean,,0.4493294723094541
+cube,global,mlp,18,sub18-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.40116995237843683
+cube,global,mlp,18,sub18-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.5707948258861195
+cube,global,mlp,18,sub18-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.39949888069793776
+cube,global,mlp,18,sub18-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.38543086916697755
+cube,global,mlp,18,sub18-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.49490475802790584
+cube,global,mlp,18,sub18-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.3211091635583871
+cube,global,mlp,18,sub18-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.445866110936855
+bands,global,ridge,19,sub19-scan02,Cuneus,,0.38968317835125704
+bands,global,ridge,19,sub19-scan02,Heschl’s gyrus,,0.5067661412370857
+bands,global,ridge,19,sub19-scan02,Middle frontal gyrus anterior,,0.28282034141417006
+bands,global,ridge,19,sub19-scan02,Precuneus anterior,,0.4492909677395799
+bands,global,ridge,19,sub19-scan02,Putamen,,0.28410287317658317
+bands,global,ridge,19,sub19-scan02,Thalamus,,0.45995056885947866
+bands,global,ridge,19,sub19-scan02,global signal clean,,0.4202602433591232
+bands,global,mlp,19,sub19-scan02,Cuneus,width=32 wd=0.1 dropout=0.0,0.3637066122892024
+bands,global,mlp,19,sub19-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.0,0.4281554284722565
+bands,global,mlp,19,sub19-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.0,0.14235801557448693
+bands,global,mlp,19,sub19-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.0,0.30185751805407485
+bands,global,mlp,19,sub19-scan02,Putamen,width=32 wd=0.1 dropout=0.0,0.14478751034843587
+bands,global,mlp,19,sub19-scan02,Thalamus,width=32 wd=0.1 dropout=0.0,0.35731895671640485
+bands,global,mlp,19,sub19-scan02,global signal clean,width=32 wd=0.1 dropout=0.0,0.29932647786916816
+cube,global,ridge,19,sub19-scan02,Cuneus,,0.39426835201531923
+cube,global,ridge,19,sub19-scan02,Heschl’s gyrus,,0.49812253244141863
+cube,global,ridge,19,sub19-scan02,Middle frontal gyrus anterior,,0.28191782620079386
+cube,global,ridge,19,sub19-scan02,Precuneus anterior,,0.4215150845163149
+cube,global,ridge,19,sub19-scan02,Putamen,,0.27042460712700944
+cube,global,ridge,19,sub19-scan02,Thalamus,,0.4548857398441336
+cube,global,ridge,19,sub19-scan02,global signal clean,,0.3820909324964167
+cube,global,mlp,19,sub19-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.3242171752189787
+cube,global,mlp,19,sub19-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.42117613319647934
+cube,global,mlp,19,sub19-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.16277704014309385
+cube,global,mlp,19,sub19-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.3037965322518465
+cube,global,mlp,19,sub19-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.1349576331473363
+cube,global,mlp,19,sub19-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.3407219295665963
+cube,global,mlp,19,sub19-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.2765740006980641
+bands,global,ridge,20,sub20-scan01,Cuneus,,0.21544657735194717
+bands,global,ridge,20,sub20-scan01,Heschl’s gyrus,,0.24619630071393664
+bands,global,ridge,20,sub20-scan01,Middle frontal gyrus anterior,,0.11582357884056917
+bands,global,ridge,20,sub20-scan01,Precuneus anterior,,0.15170689131772883
+bands,global,ridge,20,sub20-scan01,Putamen,,0.19878980577897065
+bands,global,ridge,20,sub20-scan01,Thalamus,,0.2573446959371915
+bands,global,ridge,20,sub20-scan01,global signal clean,,0.2370818199683134
+bands,global,ridge,20,sub20-scan02,Cuneus,,0.420375025441524
+bands,global,ridge,20,sub20-scan02,Heschl’s gyrus,,0.4229934643244485
+bands,global,ridge,20,sub20-scan02,Middle frontal gyrus anterior,,0.3319704270782617
+bands,global,ridge,20,sub20-scan02,Precuneus anterior,,0.40757487615979526
+bands,global,ridge,20,sub20-scan02,Putamen,,0.2699807728696254
+bands,global,ridge,20,sub20-scan02,Thalamus,,0.3535470342694935
+bands,global,ridge,20,sub20-scan02,global signal clean,,0.4229125264610591
+bands,global,mlp,20,sub20-scan01,Cuneus,width=128 wd=0.01 dropout=0.3,0.16802928222440258
+bands,global,mlp,20,sub20-scan01,Heschl’s gyrus,width=128 wd=0.01 dropout=0.3,0.23010291838513836
+bands,global,mlp,20,sub20-scan01,Middle frontal gyrus anterior,width=128 wd=0.01 dropout=0.3,0.1225069414031605
+bands,global,mlp,20,sub20-scan01,Precuneus anterior,width=128 wd=0.01 dropout=0.3,0.14398784578988394
+bands,global,mlp,20,sub20-scan01,Putamen,width=128 wd=0.01 dropout=0.3,0.21713316994584833
+bands,global,mlp,20,sub20-scan01,Thalamus,width=128 wd=0.01 dropout=0.3,0.18817173192492834
+bands,global,mlp,20,sub20-scan01,global signal clean,width=128 wd=0.01 dropout=0.3,0.20162025842660614
+bands,global,mlp,20,sub20-scan02,Cuneus,width=128 wd=0.01 dropout=0.3,0.3023058976569771
+bands,global,mlp,20,sub20-scan02,Heschl’s gyrus,width=128 wd=0.01 dropout=0.3,0.32755710294756274
+bands,global,mlp,20,sub20-scan02,Middle frontal gyrus anterior,width=128 wd=0.01 dropout=0.3,0.2982458336406858
+bands,global,mlp,20,sub20-scan02,Precuneus anterior,width=128 wd=0.01 dropout=0.3,0.329068154976317
+bands,global,mlp,20,sub20-scan02,Putamen,width=128 wd=0.01 dropout=0.3,0.2899460571246399
+bands,global,mlp,20,sub20-scan02,Thalamus,width=128 wd=0.01 dropout=0.3,0.3431149886112693
+bands,global,mlp,20,sub20-scan02,global signal clean,width=128 wd=0.01 dropout=0.3,0.33500182886870133
+cube,global,ridge,20,sub20-scan01,Cuneus,,0.258636529379778
+cube,global,ridge,20,sub20-scan01,Heschl’s gyrus,,0.26781667398603043
+cube,global,ridge,20,sub20-scan01,Middle frontal gyrus anterior,,0.12452575457123194
+cube,global,ridge,20,sub20-scan01,Precuneus anterior,,0.12047843762135342
+cube,global,ridge,20,sub20-scan01,Putamen,,0.20690994870896112
+cube,global,ridge,20,sub20-scan01,Thalamus,,0.21861977553378376
+cube,global,ridge,20,sub20-scan01,global signal clean,,0.2242851837302356
+cube,global,ridge,20,sub20-scan02,Cuneus,,0.369393449017113
+cube,global,ridge,20,sub20-scan02,Heschl’s gyrus,,0.40301850344064755
+cube,global,ridge,20,sub20-scan02,Middle frontal gyrus anterior,,0.2744044794371878
+cube,global,ridge,20,sub20-scan02,Precuneus anterior,,0.28210227507274666
+cube,global,ridge,20,sub20-scan02,Putamen,,0.25897754888463737
+cube,global,ridge,20,sub20-scan02,Thalamus,,0.33015742197216486
+cube,global,ridge,20,sub20-scan02,global signal clean,,0.3348867739364416
+cube,global,mlp,20,sub20-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.33280416031561705
+cube,global,mlp,20,sub20-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.27088226683760624
+cube,global,mlp,20,sub20-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.1148786428078323
+cube,global,mlp,20,sub20-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.22125356611673222
+cube,global,mlp,20,sub20-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.18669697102546576
+cube,global,mlp,20,sub20-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.1506677986120018
+cube,global,mlp,20,sub20-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.25278931175636243
+cube,global,mlp,20,sub20-scan02,Cuneus,width=32 wd=0.1 dropout=0.3,0.3633892283862082
+cube,global,mlp,20,sub20-scan02,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.3946852885433516
+cube,global,mlp,20,sub20-scan02,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.27415253989828975
+cube,global,mlp,20,sub20-scan02,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.3237335319055353
+cube,global,mlp,20,sub20-scan02,Putamen,width=32 wd=0.1 dropout=0.3,0.295384461376257
+cube,global,mlp,20,sub20-scan02,Thalamus,width=32 wd=0.1 dropout=0.3,0.2938263826537488
+cube,global,mlp,20,sub20-scan02,global signal clean,width=32 wd=0.1 dropout=0.3,0.3600777865834791
+bands,global,ridge,21,sub21-scan01,Cuneus,,0.5760034094516171
+bands,global,ridge,21,sub21-scan01,Heschl’s gyrus,,0.5028764369304661
+bands,global,ridge,21,sub21-scan01,Middle frontal gyrus anterior,,0.40423565273197876
+bands,global,ridge,21,sub21-scan01,Precuneus anterior,,0.5048819084012601
+bands,global,ridge,21,sub21-scan01,Putamen,,0.24280832162561458
+bands,global,ridge,21,sub21-scan01,Thalamus,,0.3781378526540662
+bands,global,ridge,21,sub21-scan01,global signal clean,,0.506733482931965
+bands,global,mlp,21,sub21-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.6062404924152432
+bands,global,mlp,21,sub21-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.5546203050638052
+bands,global,mlp,21,sub21-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.4234056223824314
+bands,global,mlp,21,sub21-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5514873863392548
+bands,global,mlp,21,sub21-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.26629683506197493
+bands,global,mlp,21,sub21-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.40399748947073105
+bands,global,mlp,21,sub21-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.5445840434402978
+cube,global,ridge,21,sub21-scan01,Cuneus,,0.5848115876957737
+cube,global,ridge,21,sub21-scan01,Heschl’s gyrus,,0.5038540928943901
+cube,global,ridge,21,sub21-scan01,Middle frontal gyrus anterior,,0.4137248830325882
+cube,global,ridge,21,sub21-scan01,Precuneus anterior,,0.5190320058703579
+cube,global,ridge,21,sub21-scan01,Putamen,,0.24263310711311503
+cube,global,ridge,21,sub21-scan01,Thalamus,,0.4003803140101751
+cube,global,ridge,21,sub21-scan01,global signal clean,,0.5086617280324144
+cube,global,mlp,21,sub21-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.6177042154147443
+cube,global,mlp,21,sub21-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.525286199882283
+cube,global,mlp,21,sub21-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.41769158019674335
+cube,global,mlp,21,sub21-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.5528337310920677
+cube,global,mlp,21,sub21-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.2353754096084233
+cube,global,mlp,21,sub21-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.40638387926675784
+cube,global,mlp,21,sub21-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.5282313996208386
+bands,global,ridge,22,sub22-scan01,Cuneus,,0.5133492839422905
+bands,global,ridge,22,sub22-scan01,Heschl’s gyrus,,0.5647410057671441
+bands,global,ridge,22,sub22-scan01,Middle frontal gyrus anterior,,0.43017067225289335
+bands,global,ridge,22,sub22-scan01,Precuneus anterior,,0.5816371129241474
+bands,global,ridge,22,sub22-scan01,Putamen,,0.33644302310800406
+bands,global,ridge,22,sub22-scan01,Thalamus,,0.5820510941386399
+bands,global,ridge,22,sub22-scan01,global signal clean,,0.616898972611015
+bands,global,mlp,22,sub22-scan01,Cuneus,width=128 wd=0.1 dropout=0.3,0.5457317529129578
+bands,global,mlp,22,sub22-scan01,Heschl’s gyrus,width=128 wd=0.1 dropout=0.3,0.6119544234010303
+bands,global,mlp,22,sub22-scan01,Middle frontal gyrus anterior,width=128 wd=0.1 dropout=0.3,0.39725122310497046
+bands,global,mlp,22,sub22-scan01,Precuneus anterior,width=128 wd=0.1 dropout=0.3,0.5802543816451484
+bands,global,mlp,22,sub22-scan01,Putamen,width=128 wd=0.1 dropout=0.3,0.36348754806050415
+bands,global,mlp,22,sub22-scan01,Thalamus,width=128 wd=0.1 dropout=0.3,0.5879663195017535
+bands,global,mlp,22,sub22-scan01,global signal clean,width=128 wd=0.1 dropout=0.3,0.6344933499720187
+cube,global,ridge,22,sub22-scan01,Cuneus,,0.5449478587938967
+cube,global,ridge,22,sub22-scan01,Heschl’s gyrus,,0.6034290657959298
+cube,global,ridge,22,sub22-scan01,Middle frontal gyrus anterior,,0.42484757767868286
+cube,global,ridge,22,sub22-scan01,Precuneus anterior,,0.5940200986755858
+cube,global,ridge,22,sub22-scan01,Putamen,,0.34641948265273315
+cube,global,ridge,22,sub22-scan01,Thalamus,,0.5785732669329978
+cube,global,ridge,22,sub22-scan01,global signal clean,,0.6387395233844378
+cube,global,mlp,22,sub22-scan01,Cuneus,width=32 wd=0.1 dropout=0.3,0.5694123098959994
+cube,global,mlp,22,sub22-scan01,Heschl’s gyrus,width=32 wd=0.1 dropout=0.3,0.6205002552788766
+cube,global,mlp,22,sub22-scan01,Middle frontal gyrus anterior,width=32 wd=0.1 dropout=0.3,0.40178053831153726
+cube,global,mlp,22,sub22-scan01,Precuneus anterior,width=32 wd=0.1 dropout=0.3,0.611842474625121
+cube,global,mlp,22,sub22-scan01,Putamen,width=32 wd=0.1 dropout=0.3,0.3068935048653732
+cube,global,mlp,22,sub22-scan01,Thalamus,width=32 wd=0.1 dropout=0.3,0.6441958156128617
+cube,global,mlp,22,sub22-scan01,global signal clean,width=32 wd=0.1 dropout=0.3,0.646481574160684

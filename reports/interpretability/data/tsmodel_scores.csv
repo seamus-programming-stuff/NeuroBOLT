@@ -1,0 +1,407 @@
+model,fold,scan,roi,weight_decay,corr
+learned_bands_full,1,sub07-scan01,Cuneus,10.0,0.30871246036958977
+learned_bands_full,1,sub07-scan01,Heschl’s gyrus,10.0,0.4690571014320516
+learned_bands_full,1,sub07-scan01,Middle frontal gyrus anterior,10.0,0.5073647830080734
+learned_bands_full,1,sub07-scan01,Precuneus anterior,10.0,0.48857313336323266
+learned_bands_full,1,sub07-scan01,Putamen,10.0,0.3737993746625584
+learned_bands_full,1,sub07-scan01,Thalamus,10.0,0.40695827562561454
+learned_bands_full,1,sub07-scan01,global signal clean,10.0,0.55634864773621
+learned_bands_full,1,sub07-scan02,Cuneus,10.0,0.3455054719415384
+learned_bands_full,1,sub07-scan02,Heschl’s gyrus,10.0,0.5156528056446682
+learned_bands_full,1,sub07-scan02,Middle frontal gyrus anterior,10.0,0.413255350354088
+learned_bands_full,1,sub07-scan02,Precuneus anterior,10.0,0.4328939123980437
+learned_bands_full,1,sub07-scan02,Putamen,10.0,0.19966803295071453
+learned_bands_full,1,sub07-scan02,Thalamus,10.0,0.36513861914778706
+learned_bands_full,1,sub07-scan02,global signal clean,10.0,0.5061790949200876
+learned_bands_full,1,sub11-scan01,Cuneus,10.0,0.6348616377782074
+learned_bands_full,1,sub11-scan01,Heschl’s gyrus,10.0,0.6099468727604733
+learned_bands_full,1,sub11-scan01,Middle frontal gyrus anterior,10.0,0.4810399340612314
+learned_bands_full,1,sub11-scan01,Precuneus anterior,10.0,0.49477050260781635
+learned_bands_full,1,sub11-scan01,Putamen,10.0,0.45062403520404065
+learned_bands_full,1,sub11-scan01,Thalamus,10.0,0.3656605502081803
+learned_bands_full,1,sub11-scan01,global signal clean,10.0,0.6391653665174563
+learned_bands_full,1,sub16-scan01,Cuneus,10.0,0.6098376272415139
+learned_bands_full,1,sub16-scan01,Heschl’s gyrus,10.0,0.5468282719408889
+learned_bands_full,1,sub16-scan01,Middle frontal gyrus anterior,10.0,0.4147887165829889
+learned_bands_full,1,sub16-scan01,Precuneus anterior,10.0,0.6046265692060488
+learned_bands_full,1,sub16-scan01,Putamen,10.0,0.21547623913391786
+learned_bands_full,1,sub16-scan01,Thalamus,10.0,0.6270121404054741
+learned_bands_full,1,sub16-scan01,global signal clean,10.0,0.63563604712694
+learned_bands_full,1,sub18-scan01,Cuneus,10.0,0.3706755443462895
+learned_bands_full,1,sub18-scan01,Heschl’s gyrus,10.0,0.5294280510305237
+learned_bands_full,1,sub18-scan01,Middle frontal gyrus anterior,10.0,0.39649467676238226
+learned_bands_full,1,sub18-scan01,Precuneus anterior,10.0,0.34882932385182086
+learned_bands_full,1,sub18-scan01,Putamen,10.0,0.4909047922487366
+learned_bands_full,1,sub18-scan01,Thalamus,10.0,0.3561490338071067
+learned_bands_full,1,sub18-scan01,global signal clean,10.0,0.42844716836217245
+learned_bands_full,1,sub21-scan01,Cuneus,10.0,0.549422606416094
+learned_bands_full,1,sub21-scan01,Heschl’s gyrus,10.0,0.551411117714057
+learned_bands_full,1,sub21-scan01,Middle frontal gyrus anterior,10.0,0.45470823853023534
+learned_bands_full,1,sub21-scan01,Precuneus anterior,10.0,0.5487640507292803
+learned_bands_full,1,sub21-scan01,Putamen,10.0,0.27923193829290743
+learned_bands_full,1,sub21-scan01,Thalamus,10.0,0.4096992991421732
+learned_bands_full,1,sub21-scan01,global signal clean,10.0,0.5485694498563086
+learned_bands_cp,1,sub07-scan01,Cuneus,0.01,0.32150881205179
+learned_bands_cp,1,sub07-scan01,Heschl’s gyrus,0.01,0.5056845508260069
+learned_bands_cp,1,sub07-scan01,Middle frontal gyrus anterior,0.01,0.6038470245339083
+learned_bands_cp,1,sub07-scan01,Precuneus anterior,0.01,0.604067877107417
+learned_bands_cp,1,sub07-scan01,Putamen,0.01,0.4480174453466811
+learned_bands_cp,1,sub07-scan01,Thalamus,0.01,0.4690503596500398
+learned_bands_cp,1,sub07-scan01,global signal clean,0.01,0.6512105035490773
+learned_bands_cp,1,sub07-scan02,Cuneus,0.01,0.385281672312421
+learned_bands_cp,1,sub07-scan02,Heschl’s gyrus,0.01,0.5422440191595386
+learned_bands_cp,1,sub07-scan02,Middle frontal gyrus anterior,0.01,0.5284787578514174
+learned_bands_cp,1,sub07-scan02,Precuneus anterior,0.01,0.555102457377694
+learned_bands_cp,1,sub07-scan02,Putamen,0.01,0.379639086317397
+learned_bands_cp,1,sub07-scan02,Thalamus,0.01,0.48679612086481566
+learned_bands_cp,1,sub07-scan02,global signal clean,0.01,0.6046658233876998
+learned_bands_cp,1,sub11-scan01,Cuneus,0.01,0.6468776328719898
+learned_bands_cp,1,sub11-scan01,Heschl’s gyrus,0.01,0.6725780833496944
+learned_bands_cp,1,sub11-scan01,Middle frontal gyrus anterior,0.01,0.5279837117045225
+learned_bands_cp,1,sub11-scan01,Precuneus anterior,0.01,0.5500918440042287
+learned_bands_cp,1,sub11-scan01,Putamen,0.01,0.4417787911934301
+learned_bands_cp,1,sub11-scan01,Thalamus,0.01,0.41479458819633097
+learned_bands_cp,1,sub11-scan01,global signal clean,0.01,0.6751332657612056
+learned_bands_cp,1,sub16-scan01,Cuneus,0.01,0.6019804071182413
+learned_bands_cp,1,sub16-scan01,Heschl’s gyrus,0.01,0.5823466611978836
+learned_bands_cp,1,sub16-scan01,Middle frontal gyrus anterior,0.01,0.5177211782147841
+learned_bands_cp,1,sub16-scan01,Precuneus anterior,0.01,0.6626162674605717
+learned_bands_cp,1,sub16-scan01,Putamen,0.01,0.22156421045257968
+learned_bands_cp,1,sub16-scan01,Thalamus,0.01,0.6263883872846662
+learned_bands_cp,1,sub16-scan01,global signal clean,0.01,0.6679602979236569
+learned_bands_cp,1,sub18-scan01,Cuneus,0.01,0.41648597691446604
+learned_bands_cp,1,sub18-scan01,Heschl’s gyrus,0.01,0.5690641926067121
+learned_bands_cp,1,sub18-scan01,Middle frontal gyrus anterior,0.01,0.33614989302728887
+learned_bands_cp,1,sub18-scan01,Precuneus anterior,0.01,0.3916063653459392
+learned_bands_cp,1,sub18-scan01,Putamen,0.01,0.4982181568653538
+learned_bands_cp,1,sub18-scan01,Thalamus,0.01,0.3638444901906627
+learned_bands_cp,1,sub18-scan01,global signal clean,0.01,0.42346660563510063
+learned_bands_cp,1,sub21-scan01,Cuneus,0.01,0.5514300047941102
+learned_bands_cp,1,sub21-scan01,Heschl’s gyrus,0.01,0.5376525472824067
+learned_bands_cp,1,sub21-scan01,Middle frontal gyrus anterior,0.01,0.3624902546191445
+learned_bands_cp,1,sub21-scan01,Precuneus anterior,0.01,0.49819987296066276
+learned_bands_cp,1,sub21-scan01,Putamen,0.01,0.24508726467555564
+learned_bands_cp,1,sub21-scan01,Thalamus,0.01,0.3978204808209626
+learned_bands_cp,1,sub21-scan01,global signal clean,0.01,0.47438255921989286
+learned_bands_full,2,sub06-scan01,Cuneus,10.0,0.5033029982328223
+learned_bands_full,2,sub06-scan01,Heschl’s gyrus,10.0,0.46803748889505803
+learned_bands_full,2,sub06-scan01,Middle frontal gyrus anterior,10.0,0.3278462495286109
+learned_bands_full,2,sub06-scan01,Precuneus anterior,10.0,0.5229242446145217
+learned_bands_full,2,sub06-scan01,Putamen,10.0,0.28881956017973837
+learned_bands_full,2,sub06-scan01,Thalamus,10.0,0.29641104224534703
+learned_bands_full,2,sub06-scan01,global signal clean,10.0,0.5377456118872804
+learned_bands_full,2,sub13-scan01,Cuneus,10.0,0.10467620704601742
+learned_bands_full,2,sub13-scan01,Heschl’s gyrus,10.0,0.20703803111590735
+learned_bands_full,2,sub13-scan01,Middle frontal gyrus anterior,10.0,0.1874102450102232
+learned_bands_full,2,sub13-scan01,Precuneus anterior,10.0,0.1323120069870546
+learned_bands_full,2,sub13-scan01,Putamen,10.0,0.259360284981441
+learned_bands_full,2,sub13-scan01,Thalamus,10.0,0.15455252557181412
+learned_bands_full,2,sub13-scan01,global signal clean,10.0,0.26064778249076065
+learned_bands_full,2,sub13-scan02,Cuneus,10.0,0.164704067343286
+learned_bands_full,2,sub13-scan02,Heschl’s gyrus,10.0,0.2940807959565091
+learned_bands_full,2,sub13-scan02,Middle frontal gyrus anterior,10.0,0.16383270424084934
+learned_bands_full,2,sub13-scan02,Precuneus anterior,10.0,0.05572322953645505
+learned_bands_full,2,sub13-scan02,Putamen,10.0,0.287595237909507
+learned_bands_full,2,sub13-scan02,Thalamus,10.0,0.14956772924475223
+learned_bands_full,2,sub13-scan02,global signal clean,10.0,0.26706883895442035
+learned_bands_full,2,sub15-scan01,Cuneus,10.0,0.46644188071942705
+learned_bands_full,2,sub15-scan01,Heschl’s gyrus,10.0,0.5377898306539884
+learned_bands_full,2,sub15-scan01,Middle frontal gyrus anterior,10.0,0.2296247839922594
+learned_bands_full,2,sub15-scan01,Precuneus anterior,10.0,0.4283669793306781
+learned_bands_full,2,sub15-scan01,Putamen,10.0,0.1134033238533602
+learned_bands_full,2,sub15-scan01,Thalamus,10.0,0.33282540746300776
+learned_bands_full,2,sub15-scan01,global signal clean,10.0,0.4484357352633059
+learned_bands_full,2,sub22-scan01,Cuneus,10.0,0.5024758044949709
+learned_bands_full,2,sub22-scan01,Heschl’s gyrus,10.0,0.6092841783741594
+learned_bands_full,2,sub22-scan01,Middle frontal gyrus anterior,10.0,0.3813779663586086
+learned_bands_full,2,sub22-scan01,Precuneus anterior,10.0,0.5965820327705921
+learned_bands_full,2,sub22-scan01,Putamen,10.0,0.306028022239181
+learned_bands_full,2,sub22-scan01,Thalamus,10.0,0.5844783250857994
+learned_bands_full,2,sub22-scan01,global signal clean,10.0,0.6086366076690474
+learned_bands_cp,2,sub06-scan01,Cuneus,1.0,0.46381569677851153
+learned_bands_cp,2,sub06-scan01,Heschl’s gyrus,1.0,0.46745898109422407
+learned_bands_cp,2,sub06-scan01,Middle frontal gyrus anterior,1.0,0.3362654619327879
+learned_bands_cp,2,sub06-scan01,Precuneus anterior,1.0,0.48043124331945325
+learned_bands_cp,2,sub06-scan01,Putamen,1.0,0.3449785969421048
+learned_bands_cp,2,sub06-scan01,Thalamus,1.0,0.3163404322885019
+learned_bands_cp,2,sub06-scan01,global signal clean,1.0,0.4806035643517617
+learned_bands_cp,2,sub13-scan01,Cuneus,1.0,0.05951885007236788
+learned_bands_cp,2,sub13-scan01,Heschl’s gyrus,1.0,0.16891901614749727
+learned_bands_cp,2,sub13-scan01,Middle frontal gyrus anterior,1.0,0.22158757304700238
+learned_bands_cp,2,sub13-scan01,Precuneus anterior,1.0,0.11574577503359984
+learned_bands_cp,2,sub13-scan01,Putamen,1.0,0.2657332224107781
+learned_bands_cp,2,sub13-scan01,Thalamus,1.0,0.22815934399644014
+learned_bands_cp,2,sub13-scan01,global signal clean,1.0,0.17639242932787394
+learned_bands_cp,2,sub13-scan02,Cuneus,1.0,0.15030120483406567
+learned_bands_cp,2,sub13-scan02,Heschl’s gyrus,1.0,0.293650039426074
+learned_bands_cp,2,sub13-scan02,Middle frontal gyrus anterior,1.0,0.11103617013901167
+learned_bands_cp,2,sub13-scan02,Precuneus anterior,1.0,0.021567525904078372
+learned_bands_cp,2,sub13-scan02,Putamen,1.0,0.206495423186896
+learned_bands_cp,2,sub13-scan02,Thalamus,1.0,0.17843296676107454
+learned_bands_cp,2,sub13-scan02,global signal clean,1.0,0.17830342048249767
+learned_bands_cp,2,sub15-scan01,Cuneus,1.0,0.47262906942606675
+learned_bands_cp,2,sub15-scan01,Heschl’s gyrus,1.0,0.5506067214525499
+learned_bands_cp,2,sub15-scan01,Middle frontal gyrus anterior,1.0,0.3154221742483594
+learned_bands_cp,2,sub15-scan01,Precuneus anterior,1.0,0.46680982901624324
+learned_bands_cp,2,sub15-scan01,Putamen,1.0,0.21015537999270054
+learned_bands_cp,2,sub15-scan01,Thalamus,1.0,0.3614753467573183
+learned_bands_cp,2,sub15-scan01,global signal clean,1.0,0.5109608348223278
+learned_bands_cp,2,sub22-scan01,Cuneus,1.0,0.512316510905109
+learned_bands_cp,2,sub22-scan01,Heschl’s gyrus,1.0,0.6004857886608636
+learned_bands_cp,2,sub22-scan01,Middle frontal gyrus anterior,1.0,0.4445744034509323
+learned_bands_cp,2,sub22-scan01,Precuneus anterior,1.0,0.5737512709438193
+learned_bands_cp,2,sub22-scan01,Putamen,1.0,0.3266981681915117
+learned_bands_cp,2,sub22-scan01,Thalamus,1.0,0.6603182635353889
+learned_bands_cp,2,sub22-scan01,global signal clean,1.0,0.5957881399271138
+learned_bands_full,3,sub01-scan01,Cuneus,10.0,0.019407651368665
+learned_bands_full,3,sub01-scan01,Heschl’s gyrus,10.0,0.247036385654639
+learned_bands_full,3,sub01-scan01,Middle frontal gyrus anterior,10.0,0.09455288517920464
+learned_bands_full,3,sub01-scan01,Precuneus anterior,10.0,0.07943858071227253
+learned_bands_full,3,sub01-scan01,Putamen,10.0,0.2059763088261828
+learned_bands_full,3,sub01-scan01,Thalamus,10.0,0.07294400439661945
+learned_bands_full,3,sub01-scan01,global signal clean,10.0,0.2048227992053211
+learned_bands_full,3,sub02-scan01,Cuneus,10.0,0.3683084894015985
+learned_bands_full,3,sub02-scan01,Heschl’s gyrus,10.0,0.4186190854574073
+learned_bands_full,3,sub02-scan01,Middle frontal gyrus anterior,10.0,0.540300078270202
+learned_bands_full,3,sub02-scan01,Precuneus anterior,10.0,0.4454242094814095
+learned_bands_full,3,sub02-scan01,Putamen,10.0,-0.12262464612145574
+learned_bands_full,3,sub02-scan01,Thalamus,10.0,0.1670019844522848
+learned_bands_full,3,sub02-scan01,global signal clean,10.0,0.5537486295036614
+learned_bands_full,3,sub03-scan02,Cuneus,10.0,-0.020215675361690014
+learned_bands_full,3,sub03-scan02,Heschl’s gyrus,10.0,0.19696000854832543
+learned_bands_full,3,sub03-scan02,Middle frontal gyrus anterior,10.0,0.10341511477619916
+learned_bands_full,3,sub03-scan02,Precuneus anterior,10.0,-0.007190117648234842
+learned_bands_full,3,sub03-scan02,Putamen,10.0,0.13075929450574283
+learned_bands_full,3,sub03-scan02,Thalamus,10.0,0.11457785710702179
+learned_bands_full,3,sub03-scan02,global signal clean,10.0,0.030840769697433303
+learned_bands_full,3,sub04-scan01,Cuneus,10.0,0.5389692436052658
+learned_bands_full,3,sub04-scan01,Heschl’s gyrus,10.0,0.6138206296696823
+learned_bands_full,3,sub04-scan01,Middle frontal gyrus anterior,10.0,0.48885293896932847
+learned_bands_full,3,sub04-scan01,Precuneus anterior,10.0,0.5788688574108489
+learned_bands_full,3,sub04-scan01,Putamen,10.0,0.5026670821528287
+learned_bands_full,3,sub04-scan01,Thalamus,10.0,0.5740942755240486
+learned_bands_full,3,sub04-scan01,global signal clean,10.0,0.6030845023103288
+learned_bands_cp,3,sub01-scan01,Cuneus,1.0,0.12739604095852908
+learned_bands_cp,3,sub01-scan01,Heschl’s gyrus,1.0,0.34103429544504
+learned_bands_cp,3,sub01-scan01,Middle frontal gyrus anterior,1.0,0.09701480968669488
+learned_bands_cp,3,sub01-scan01,Precuneus anterior,1.0,0.12627662058374337
+learned_bands_cp,3,sub01-scan01,Putamen,1.0,0.25617910274861777
+learned_bands_cp,3,sub01-scan01,Thalamus,1.0,0.03489565487502554
+learned_bands_cp,3,sub01-scan01,global signal clean,1.0,0.18649596403350702
+learned_bands_cp,3,sub02-scan01,Cuneus,1.0,0.366722050487668
+learned_bands_cp,3,sub02-scan01,Heschl’s gyrus,1.0,0.42005847366456384
+learned_bands_cp,3,sub02-scan01,Middle frontal gyrus anterior,1.0,0.5031529507400888
+learned_bands_cp,3,sub02-scan01,Precuneus anterior,1.0,0.485438436691212
+learned_bands_cp,3,sub02-scan01,Putamen,1.0,-0.038606656209940166
+learned_bands_cp,3,sub02-scan01,Thalamus,1.0,0.258588880784128
+learned_bands_cp,3,sub02-scan01,global signal clean,1.0,0.5639921579752397
+learned_bands_cp,3,sub03-scan02,Cuneus,1.0,0.0846575577015671
+learned_bands_cp,3,sub03-scan02,Heschl’s gyrus,1.0,0.24327916895140894
+learned_bands_cp,3,sub03-scan02,Middle frontal gyrus anterior,1.0,0.028724191044286404
+learned_bands_cp,3,sub03-scan02,Precuneus anterior,1.0,0.038274002909281526
+learned_bands_cp,3,sub03-scan02,Putamen,1.0,0.15042099085686814
+learned_bands_cp,3,sub03-scan02,Thalamus,1.0,0.10142766217588589
+learned_bands_cp,3,sub03-scan02,global signal clean,1.0,0.05662645888174062
+learned_bands_cp,3,sub04-scan01,Cuneus,1.0,0.6410717153894661
+learned_bands_cp,3,sub04-scan01,Heschl’s gyrus,1.0,0.6969671182550671
+learned_bands_cp,3,sub04-scan01,Middle frontal gyrus anterior,1.0,0.6235699740498515
+learned_bands_cp,3,sub04-scan01,Precuneus anterior,1.0,0.6991213021795447
+learned_bands_cp,3,sub04-scan01,Putamen,1.0,0.6533777161612196
+learned_bands_cp,3,sub04-scan01,Thalamus,1.0,0.5423782828788204
+learned_bands_cp,3,sub04-scan01,global signal clean,1.0,0.7164963525497102
+learned_bands_full,4,sub05-scan01,Cuneus,10.0,0.16565893344253155
+learned_bands_full,4,sub05-scan01,Heschl’s gyrus,10.0,0.2589906869261354
+learned_bands_full,4,sub05-scan01,Middle frontal gyrus anterior,10.0,0.1402158877100623
+learned_bands_full,4,sub05-scan01,Precuneus anterior,10.0,0.2585995612926776
+learned_bands_full,4,sub05-scan01,Putamen,10.0,0.25733167730041073
+learned_bands_full,4,sub05-scan01,Thalamus,10.0,0.2240883521303581
+learned_bands_full,4,sub05-scan01,global signal clean,10.0,0.2574134065790855
+learned_bands_full,4,sub08-scan01,Cuneus,10.0,0.5246326963776066
+learned_bands_full,4,sub08-scan01,Heschl’s gyrus,10.0,0.30960426360329246
+learned_bands_full,4,sub08-scan01,Middle frontal gyrus anterior,10.0,0.15277067849607776
+learned_bands_full,4,sub08-scan01,Precuneus anterior,10.0,0.3046909015635361
+learned_bands_full,4,sub08-scan01,Putamen,10.0,-0.08256024652020003
+learned_bands_full,4,sub08-scan01,Thalamus,10.0,-0.050289749828669406
+learned_bands_full,4,sub08-scan01,global signal clean,10.0,0.4438150353292691
+learned_bands_full,4,sub08-scan02,Cuneus,10.0,0.5897044100170191
+learned_bands_full,4,sub08-scan02,Heschl’s gyrus,10.0,0.6171954921597897
+learned_bands_full,4,sub08-scan02,Middle frontal gyrus anterior,10.0,0.1777449287186639
+learned_bands_full,4,sub08-scan02,Precuneus anterior,10.0,0.537481340570832
+learned_bands_full,4,sub08-scan02,Putamen,10.0,-0.07997066790892256
+learned_bands_full,4,sub08-scan02,Thalamus,10.0,0.3416853579862643
+learned_bands_full,4,sub08-scan02,global signal clean,10.0,0.566912552558895
+learned_bands_full,4,sub09-scan01,Cuneus,10.0,0.3533896491426847
+learned_bands_full,4,sub09-scan01,Heschl’s gyrus,10.0,0.40139200785815954
+learned_bands_full,4,sub09-scan01,Middle frontal gyrus anterior,10.0,0.29390141294481625
+learned_bands_full,4,sub09-scan01,Precuneus anterior,10.0,0.3019799734374496
+learned_bands_full,4,sub09-scan01,Putamen,10.0,0.2599835644081937
+learned_bands_full,4,sub09-scan01,Thalamus,10.0,0.4232514869041847
+learned_bands_full,4,sub09-scan01,global signal clean,10.0,0.4827226669328996
+learned_bands_full,4,sub09-scan02,Cuneus,10.0,0.20844688653422858
+learned_bands_full,4,sub09-scan02,Heschl’s gyrus,10.0,0.21520993695431367
+learned_bands_full,4,sub09-scan02,Middle frontal gyrus anterior,10.0,0.09969718848147983
+learned_bands_full,4,sub09-scan02,Precuneus anterior,10.0,0.057497757490776534
+learned_bands_full,4,sub09-scan02,Putamen,10.0,-0.0014476557876929093
+learned_bands_full,4,sub09-scan02,Thalamus,10.0,0.235711554182857
+learned_bands_full,4,sub09-scan02,global signal clean,10.0,0.2590593726939778
+learned_bands_full,4,sub10-scan02,Cuneus,10.0,-0.002426740340567174
+learned_bands_full,4,sub10-scan02,Heschl’s gyrus,10.0,0.038774891953375884
+learned_bands_full,4,sub10-scan02,Middle frontal gyrus anterior,10.0,0.06070551411025983
+learned_bands_full,4,sub10-scan02,Precuneus anterior,10.0,0.032931158624082316
+learned_bands_full,4,sub10-scan02,Putamen,10.0,0.0022684142966045004
+learned_bands_full,4,sub10-scan02,Thalamus,10.0,-0.1561257314800973
+learned_bands_full,4,sub10-scan02,global signal clean,10.0,-0.060994544579371236
+learned_bands_cp,4,sub05-scan01,Cuneus,1.0,0.24122621744796457
+learned_bands_cp,4,sub05-scan01,Heschl’s gyrus,1.0,0.24848406050897573
+learned_bands_cp,4,sub05-scan01,Middle frontal gyrus anterior,1.0,0.08576705680661756
+learned_bands_cp,4,sub05-scan01,Precuneus anterior,1.0,0.19672676354160124
+learned_bands_cp,4,sub05-scan01,Putamen,1.0,0.23461628783881805
+learned_bands_cp,4,sub05-scan01,Thalamus,1.0,0.26673161851716565
+learned_bands_cp,4,sub05-scan01,global signal clean,1.0,0.220447427455683
+learned_bands_cp,4,sub08-scan01,Cuneus,1.0,0.5789718156542422
+learned_bands_cp,4,sub08-scan01,Heschl’s gyrus,1.0,0.30693624858883567
+learned_bands_cp,4,sub08-scan01,Middle frontal gyrus anterior,1.0,0.034695834934026996
+learned_bands_cp,4,sub08-scan01,Precuneus anterior,1.0,0.2235695428608512
+learned_bands_cp,4,sub08-scan01,Putamen,1.0,-0.14703443208218592
+learned_bands_cp,4,sub08-scan01,Thalamus,1.0,-0.012196527921402682
+learned_bands_cp,4,sub08-scan01,global signal clean,1.0,0.37924749527339224
+learned_bands_cp,4,sub08-scan02,Cuneus,1.0,0.6548518780659298
+learned_bands_cp,4,sub08-scan02,Heschl’s gyrus,1.0,0.6368708108366852
+learned_bands_cp,4,sub08-scan02,Middle frontal gyrus anterior,1.0,0.144313885857031
+learned_bands_cp,4,sub08-scan02,Precuneus anterior,1.0,0.5255237745354854
+learned_bands_cp,4,sub08-scan02,Putamen,1.0,-0.12318017334537369
+learned_bands_cp,4,sub08-scan02,Thalamus,1.0,0.3928281287141715
+learned_bands_cp,4,sub08-scan02,global signal clean,1.0,0.5335590422812532
+learned_bands_cp,4,sub09-scan01,Cuneus,1.0,0.37777499695687516
+learned_bands_cp,4,sub09-scan01,Heschl’s gyrus,1.0,0.40693547834242877
+learned_bands_cp,4,sub09-scan01,Middle frontal gyrus anterior,1.0,0.3410362505855833
+learned_bands_cp,4,sub09-scan01,Precuneus anterior,1.0,0.2913083194577082
+learned_bands_cp,4,sub09-scan01,Putamen,1.0,0.29966395916387656
+learned_bands_cp,4,sub09-scan01,Thalamus,1.0,0.48903700553723045
+learned_bands_cp,4,sub09-scan01,global signal clean,1.0,0.4963251684535483
+learned_bands_cp,4,sub09-scan02,Cuneus,1.0,0.21161973658529437
+learned_bands_cp,4,sub09-scan02,Heschl’s gyrus,1.0,0.23253336810107156
+learned_bands_cp,4,sub09-scan02,Middle frontal gyrus anterior,1.0,0.12155271546552646
+learned_bands_cp,4,sub09-scan02,Precuneus anterior,1.0,0.051360416159478554
+learned_bands_cp,4,sub09-scan02,Putamen,1.0,0.12693931367819308
+learned_bands_cp,4,sub09-scan02,Thalamus,1.0,0.1939487331643919
+learned_bands_cp,4,sub09-scan02,global signal clean,1.0,0.25041993628926407
+learned_bands_cp,4,sub10-scan02,Cuneus,1.0,-0.0006188665385474
+learned_bands_cp,4,sub10-scan02,Heschl’s gyrus,1.0,-0.007946726391836906
+learned_bands_cp,4,sub10-scan02,Middle frontal gyrus anterior,1.0,-0.0366652077242337
+learned_bands_cp,4,sub10-scan02,Precuneus anterior,1.0,-0.009915540896477794
+learned_bands_cp,4,sub10-scan02,Putamen,1.0,-0.09829478516115783
+learned_bands_cp,4,sub10-scan02,Thalamus,1.0,-0.13486945813420903
+learned_bands_cp,4,sub10-scan02,global signal clean,1.0,-0.12565027189542974
+learned_bands_full,5,sub12-scan01,Cuneus,10.0,0.4327066467397096
+learned_bands_full,5,sub12-scan01,Heschl’s gyrus,10.0,0.3825514641074898
+learned_bands_full,5,sub12-scan01,Middle frontal gyrus anterior,10.0,0.49260773043456046
+learned_bands_full,5,sub12-scan01,Precuneus anterior,10.0,0.49624860305261903
+learned_bands_full,5,sub12-scan01,Putamen,10.0,0.2866214612148701
+learned_bands_full,5,sub12-scan01,Thalamus,10.0,0.3389391252591672
+learned_bands_full,5,sub12-scan01,global signal clean,10.0,0.5634932548683537
+learned_bands_full,5,sub12-scan02,Cuneus,10.0,0.2650750639900832
+learned_bands_full,5,sub12-scan02,Heschl’s gyrus,10.0,0.3094834077449669
+learned_bands_full,5,sub12-scan02,Middle frontal gyrus anterior,10.0,0.3040495590643033
+learned_bands_full,5,sub12-scan02,Precuneus anterior,10.0,0.42925265580811217
+learned_bands_full,5,sub12-scan02,Putamen,10.0,0.3062481921178825
+learned_bands_full,5,sub12-scan02,Thalamus,10.0,0.32953699791483815
+learned_bands_full,5,sub12-scan02,global signal clean,10.0,0.4253598865771883
+learned_bands_full,5,sub14-scan01,Cuneus,10.0,0.4494444697881289
+learned_bands_full,5,sub14-scan01,Heschl’s gyrus,10.0,0.6290825440354905
+learned_bands_full,5,sub14-scan01,Middle frontal gyrus anterior,10.0,0.41795927734084576
+learned_bands_full,5,sub14-scan01,Precuneus anterior,10.0,0.5561309514549625
+learned_bands_full,5,sub14-scan01,Putamen,10.0,0.4068803064478692
+learned_bands_full,5,sub14-scan01,Thalamus,10.0,0.43084484159152053
+learned_bands_full,5,sub14-scan01,global signal clean,10.0,0.5716309144383154
+learned_bands_full,5,sub14-scan02,Cuneus,10.0,0.450249605925802
+learned_bands_full,5,sub14-scan02,Heschl’s gyrus,10.0,0.633283735540292
+learned_bands_full,5,sub14-scan02,Middle frontal gyrus anterior,10.0,0.4361093931062298
+learned_bands_full,5,sub14-scan02,Precuneus anterior,10.0,0.5286767860829322
+learned_bands_full,5,sub14-scan02,Putamen,10.0,0.3619269047633816
+learned_bands_full,5,sub14-scan02,Thalamus,10.0,0.27901737613277744
+learned_bands_full,5,sub14-scan02,global signal clean,10.0,0.5611232598883507
+learned_bands_full,5,sub17-scan02,Cuneus,10.0,0.22754124752423496
+learned_bands_full,5,sub17-scan02,Heschl’s gyrus,10.0,0.2235623124002912
+learned_bands_full,5,sub17-scan02,Middle frontal gyrus anterior,10.0,0.29619268876535054
+learned_bands_full,5,sub17-scan02,Precuneus anterior,10.0,0.3159812570788813
+learned_bands_full,5,sub17-scan02,Putamen,10.0,0.0012147902837895527
+learned_bands_full,5,sub17-scan02,Thalamus,10.0,0.3181788039877057
+learned_bands_full,5,sub17-scan02,global signal clean,10.0,0.40860592098172677
+learned_bands_full,5,sub19-scan02,Cuneus,10.0,0.3586369915666792
+learned_bands_full,5,sub19-scan02,Heschl’s gyrus,10.0,0.4627168745945303
+learned_bands_full,5,sub19-scan02,Middle frontal gyrus anterior,10.0,0.257392034178382
+learned_bands_full,5,sub19-scan02,Precuneus anterior,10.0,0.4123653774637437
+learned_bands_full,5,sub19-scan02,Putamen,10.0,0.17132466151641088
+learned_bands_full,5,sub19-scan02,Thalamus,10.0,0.3836248617895836
+learned_bands_full,5,sub19-scan02,global signal clean,10.0,0.37206970526466665
+learned_bands_full,5,sub20-scan01,Cuneus,10.0,0.11392106708770532
+learned_bands_full,5,sub20-scan01,Heschl’s gyrus,10.0,0.18056252779581358
+learned_bands_full,5,sub20-scan01,Middle frontal gyrus anterior,10.0,0.12005881785241938
+learned_bands_full,5,sub20-scan01,Precuneus anterior,10.0,0.09572181665248919
+learned_bands_full,5,sub20-scan01,Putamen,10.0,0.029826446092756455
+learned_bands_full,5,sub20-scan01,Thalamus,10.0,0.09254514743957262
+learned_bands_full,5,sub20-scan01,global signal clean,10.0,0.15534339506982275
+learned_bands_full,5,sub20-scan02,Cuneus,10.0,0.2954112208067511
+learned_bands_full,5,sub20-scan02,Heschl’s gyrus,10.0,0.31455861256034484
+learned_bands_full,5,sub20-scan02,Middle frontal gyrus anterior,10.0,0.23359258647251507
+learned_bands_full,5,sub20-scan02,Precuneus anterior,10.0,0.286043248567807
+learned_bands_full,5,sub20-scan02,Putamen,10.0,0.1304278442334483
+learned_bands_full,5,sub20-scan02,Thalamus,10.0,0.2721725721366089
+learned_bands_full,5,sub20-scan02,global signal clean,10.0,0.3344031946086965
+learned_bands_cp,5,sub12-scan01,Cuneus,1.0,0.3827119509450618
+learned_bands_cp,5,sub12-scan01,Heschl’s gyrus,1.0,0.40673165038154974
+learned_bands_cp,5,sub12-scan01,Middle frontal gyrus anterior,1.0,0.5468910302314237
+learned_bands_cp,5,sub12-scan01,Precuneus anterior,1.0,0.5064688026888111
+learned_bands_cp,5,sub12-scan01,Putamen,1.0,0.30822307958626194
+learned_bands_cp,5,sub12-scan01,Thalamus,1.0,0.4250144415745541
+learned_bands_cp,5,sub12-scan01,global signal clean,1.0,0.580532868022938
+learned_bands_cp,5,sub12-scan02,Cuneus,1.0,0.2846795868651593
+learned_bands_cp,5,sub12-scan02,Heschl’s gyrus,1.0,0.30595833824270324
+learned_bands_cp,5,sub12-scan02,Middle frontal gyrus anterior,1.0,0.39478022152977416
+learned_bands_cp,5,sub12-scan02,Precuneus anterior,1.0,0.4388412192262615
+learned_bands_cp,5,sub12-scan02,Putamen,1.0,0.35316913928518423
+learned_bands_cp,5,sub12-scan02,Thalamus,1.0,0.434553250316153
+learned_bands_cp,5,sub12-scan02,global signal clean,1.0,0.4759922412113967
+learned_bands_cp,5,sub14-scan01,Cuneus,1.0,0.555933157663704
+learned_bands_cp,5,sub14-scan01,Heschl’s gyrus,1.0,0.6325382041602922
+learned_bands_cp,5,sub14-scan01,Middle frontal gyrus anterior,1.0,0.43008635585401533
+learned_bands_cp,5,sub14-scan01,Precuneus anterior,1.0,0.5867370056943859
+learned_bands_cp,5,sub14-scan01,Putamen,1.0,0.3939940339624397
+learned_bands_cp,5,sub14-scan01,Thalamus,1.0,0.4190143567622868
+learned_bands_cp,5,sub14-scan01,global signal clean,1.0,0.5966783841023388
+learned_bands_cp,5,sub14-scan02,Cuneus,1.0,0.47085431087650553
+learned_bands_cp,5,sub14-scan02,Heschl’s gyrus,1.0,0.616469703177317
+learned_bands_cp,5,sub14-scan02,Middle frontal gyrus anterior,1.0,0.4452743580406663
+learned_bands_cp,5,sub14-scan02,Precuneus anterior,1.0,0.5686909806812231
+learned_bands_cp,5,sub14-scan02,Putamen,1.0,0.2967493972004409
+learned_bands_cp,5,sub14-scan02,Thalamus,1.0,0.24767927222247144
+learned_bands_cp,5,sub14-scan02,global signal clean,1.0,0.5584885057554453
+learned_bands_cp,5,sub17-scan02,Cuneus,1.0,0.11019029475204023
+learned_bands_cp,5,sub17-scan02,Heschl’s gyrus,1.0,0.1789058898085414
+learned_bands_cp,5,sub17-scan02,Middle frontal gyrus anterior,1.0,0.22936521388470532
+learned_bands_cp,5,sub17-scan02,Precuneus anterior,1.0,0.2872667553669463
+learned_bands_cp,5,sub17-scan02,Putamen,1.0,-0.05228302626396906
+learned_bands_cp,5,sub17-scan02,Thalamus,1.0,0.326225361407483
+learned_bands_cp,5,sub17-scan02,global signal clean,1.0,0.3899012736178092
+learned_bands_cp,5,sub19-scan02,Cuneus,1.0,0.4433456783756318
+learned_bands_cp,5,sub19-scan02,Heschl’s gyrus,1.0,0.49922816856306607
+learned_bands_cp,5,sub19-scan02,Middle frontal gyrus anterior,1.0,0.2790648869962385
+learned_bands_cp,5,sub19-scan02,Precuneus anterior,1.0,0.4271683953249982
+learned_bands_cp,5,sub19-scan02,Putamen,1.0,0.20467270106298233
+learned_bands_cp,5,sub19-scan02,Thalamus,1.0,0.5240114106890349
+learned_bands_cp,5,sub19-scan02,global signal clean,1.0,0.37571083453453763
+learned_bands_cp,5,sub20-scan01,Cuneus,1.0,0.15999861172652988
+learned_bands_cp,5,sub20-scan01,Heschl’s gyrus,1.0,0.22652085734113747
+learned_bands_cp,5,sub20-scan01,Middle frontal gyrus anterior,1.0,0.11049409871888925
+learned_bands_cp,5,sub20-scan01,Precuneus anterior,1.0,0.12599842597260122
+learned_bands_cp,5,sub20-scan01,Putamen,1.0,0.17965865619187368
+learned_bands_cp,5,sub20-scan01,Thalamus,1.0,0.22007803347636323
+learned_bands_cp,5,sub20-scan01,global signal clean,1.0,0.1758190605582358
+learned_bands_cp,5,sub20-scan02,Cuneus,1.0,0.4044605675279151
+learned_bands_cp,5,sub20-scan02,Heschl’s gyrus,1.0,0.45948730092882734
+learned_bands_cp,5,sub20-scan02,Middle frontal gyrus anterior,1.0,0.39058371664070607
+learned_bands_cp,5,sub20-scan02,Precuneus anterior,1.0,0.392388942968349
+learned_bands_cp,5,sub20-scan02,Putamen,1.0,0.2703079054819251
+learned_bands_cp,5,sub20-scan02,Thalamus,1.0,0.4160821085827697
+learned_bands_cp,5,sub20-scan02,global signal clean,1.0,0.43012343497657096

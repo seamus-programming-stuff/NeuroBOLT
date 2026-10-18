@@ -1,0 +1,157 @@
+<title>NeuroBOLT Interpretability</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: one reading column for prose; the results table and chart break out wider. Same system as NeuroBOLT Reproduction. */
+:root {
+  --bg: #f5f6f8; --plate: #fcfcfb; --fg: #15181d; --muted: #5a616d; --rule: #dde1e7; --row: #eceff3;
+  --neural: #2a78d6; --linear: #eb6834;
+  --font-head: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --measure: 42rem; --wide: 76rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101215; --plate: #1a1a19; --fg: #e8eaed; --muted: #a3aab5; --rule: #2b3038; --row: #1b1e23;
+    --neural: #3987e5; --linear: #d95926; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101215; --plate: #1a1a19; --fg: #e8eaed; --muted: #a3aab5; --rule: #2b3038; --row: #1b1e23;
+  --neural: #3987e5; --linear: #d95926; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6; }
+.page { padding-inline: 16px; padding-block: 2.5rem 4rem; display: grid; gap: 2.5rem; justify-items: center; }
+.col, .wide { width: 100%; min-width: 0; display: grid; gap: 1rem; }
+.col { max-width: var(--measure); }
+.wide { max-width: var(--wide); }
+h1, h2, h3, .eyebrow, th, figcaption, .note, .status { font-family: var(--font-head); }
+h1 { font-size: clamp(2rem, 5vw, 2.75rem); line-height: 1.1; font-weight: 600; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+h2 { font-size: 1.45rem; font-weight: 600; margin: 0; padding-top: 0.5rem; border-top: 1px solid var(--rule); text-wrap: balance; }
+h3 { font-size: 1.1rem; font-weight: 600; margin: 0.75rem 0 0; text-wrap: balance; }
+p, ul { margin: 0; }
+ul { padding-left: 1.25rem; display: grid; gap: 0.5rem; }
+.eyebrow { font-size: 0.78rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.standfirst { font-size: 1.2rem; color: var(--muted); }
+.status { font-size: 0.9rem; padding: 0.6rem 0.9rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--plate); }
+code { font-family: var(--font-mono); font-size: 0.88em; }
+a { color: var(--neural); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--neural); outline-offset: 2px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--plate); }
+table { border-collapse: collapse; width: 100%; font-family: var(--font-head); font-size: 0.84rem; font-variant-numeric: tabular-nums; }
+th, td { padding: 0.45rem 0.65rem; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; color: var(--muted); font-size: 0.76rem; }
+th.left, td.left { text-align: left; }
+tbody tr:last-child td { border-bottom: none; }
+tr.base td { background: var(--row); font-weight: 500; }
+tr.partial td { color: var(--muted); }
+.ci { color: var(--muted); }
+.swatch { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; margin-right: 0.45rem; vertical-align: 0.05rem; }
+.swatch.neural, .swatch.base { background: var(--neural); }
+.swatch.linear { background: var(--linear); }
+figure { margin: 0; display: grid; gap: 0.6rem; }
+figure .plate { background: var(--plate); border: 1px solid var(--rule); border-radius: 6px; padding: 0.5rem; justify-self: center; max-width: 60rem; width: 100%; }
+figure img { display: block; width: 100%; height: auto; max-width: 100%; }
+.fig-dark { display: none !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .fig-light { display: none !important; }
+  :root:not([data-theme="light"]) .fig-dark { display: block !important; }
+}
+:root[data-theme="dark"] .fig-light { display: none !important; }
+:root[data-theme="dark"] .fig-dark { display: block !important; }
+figcaption, .note { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+footer { border-top: 1px solid var(--rule); padding-top: 1rem; }
+</style>
+
+<main class="page">
+  <header class="col">
+    <span class="eyebrow">Interpretability round · cross-subject EEG-to-BOLD</span>
+    <h1>What EEG-to-BOLD models learn</h1>
+    <p class="status">Seamus Taylor · 18 October 2026 · VU resting-state EEG-fMRI (22 people, 29 scans) · analyses run on Monash M3</p>
+    <p>The hypothesis tests showed that ridge regression on lagged EEG power predicts a new person's BOLD better than NeuroBOLT (mean R 0.381 against 0.336 across all 22 people), that NeuroBOLT's pretrained transformer branch adds nothing, and that a single vigilance index carries much of the signal. This round asks why, so the results can be explained and built on. Each of eight questions below has its own analysis; every number is cross-validated so that no model is scored on a person it saw.</p>
+  </header>
+  <section class="col" aria-labelledby="s1">
+    <h2 id="s1">Bottom line</h2>
+    <ul><li><strong>The prediction is real.</strong> 28 of 29 held-out scans beat their own circular-shift null, and scoring one person's prediction against another person's BOLD gives R = 0.00, so no drift shared across scans inflates the result.</li><li><strong>It is mostly the brain-wide signal.</strong> A region's predictability tracks how closely it follows the global signal (ρ = +0.65 over 64 regions). Removing the global signal cuts mean R from 0.34 to 0.14; what survives is concentrated in the thalamus (0.28), cerebellum and mid-cingulate, regions whose arousal response runs against cortex.</li><li><strong>The models read whole-head band power through a haemodynamic delay.</strong> Sixty channel-averaged band powers keep 93% of the skill and scalp topography adds nothing. Free lag weights matter: forcing the canonical HRF shape loses 0.16 R. PENDING-TIMECOURSE</li><li><strong>NeuroBOLT is in effect a linear band-power model.</strong> A ridge model fitted to imitate NeuroBOLT's outputs reproduces them at R = 0.91 on held-out scans and predicts BOLD better than NeuroBOLT does (0.491 against 0.465). PENDING-PERMUTATION</li><li><strong>The body carries much of the same information.</strong> Heart rate alone predicts BOLD at R = 0.22, and heart rate with slow eye movements and muscle activity at 0.26, with no EEG at all. Head-motion loops add nothing beyond EEG. PENDING-PARTITION</li><li><strong>Nonlinearity does not help at this data size.</strong> MLPs, additive splines, interactions, vigilance-gated coupling, learned frequency bands and a spline Hammerstein model all tie or trail ridge. The MEL preprint's large MLP gain on these data does not replicate (+0.01 under the same leave-one-person-out protocol).</li><li><strong>An interpretable model keeps 96% of the skill with 0.2% of the parameters.</strong> Five shared scalp-spectral components with smooth regional lag kernels (2,040 parameters) reach 0.329 against 0.344 for full ridge (892,000 weights) over 65 targets.</li><li><strong>Personal calibration barely helps.</strong> Using half of a person's own scan to adjust the delay or add their own band powers changes R by under 0.01. Predictable people are those whose arousal markers fluctuate: EEG theta (ρ = +0.66), slow eye movements (+0.53) and heart rate (+0.40).</li></ul>
+<p>Taken together, resting-state EEG tells us where a person sits on the arousal axis, seen through the haemodynamic delay, and linear models already read all of it. The ceiling is the arousal variance in each scan, not model capacity. The open question worth publishing is the region-specific remainder.</p>
+  </section>
+  <section class="col" aria-labelledby="s2">
+    <h2 id="s2">How to read the numbers</h2>
+    <ul><li><strong>R</strong> is the correlation between predicted and measured BOLD over one held-out scan (about 560 frames, 20 minutes).</li><li><strong>5-fold subject-grouped CV</strong> splits the 22 people into five groups (fold 1 is the authors' split); each person is held out once, and penalties and stopping are chosen on separate validation people. Results are averaged within person, then over people; 95% intervals and paired differences are over people.</li><li><strong>Targets</strong> are the 64 DiFuMo regions plus the global signal; the paper's seven ROIs are a subset.</li><li><strong>GSR</strong> (global-signal regression) removes, per scan, the part of each region's time series that follows the global signal.</li><li><strong>Ridge</strong> throughout means the best earlier model: log power of 26 channels in 44 one-Hz bins over 12 two-second lags (24 s of EEG history), 13,728 features.</li></ul>
+  </section>
+  <section class="col" aria-labelledby="s3">
+    <h2 id="s3">1. Is the prediction real?</h2>
+    <figure><div class="plate"><img class="fig-light" src="nulls.png" alt="Per-scan ridge R against two null distributions"><img class="fig-dark" src="nulls_dark.png" alt=""></div></figure>
+<div class="table-wrap"><table><thead><tr><th class="left">Null model</th><th>Controls for</th><th>Result</th></tr></thead><tbody><tr><td class="left">Circular shift: prediction vs the scan's own BOLD shifted by at least 63 s</td><td>Autocorrelated slow signals</td><td>Null SD 0.054 per scan, 95th percentile 0.090; 28 of 29 scans significant</td></tr><tr><td class="left">Mismatched people: one person's prediction vs another person's BOLD (798 pairs)</td><td>Anything time-locked to the scan, such as drowsiness that builds the same way in everyone</td><td>Mean R −0.003 (95% of pairs within ±0.10), against 0.379 matched</td></tr><tr><td class="left">Time in scan only (smooth functions of frame index)</td><td>Slow drift</td><td>R = −0.010</td></tr></tbody></table></div>
+<ul><li>Slow, autocorrelated time series correlate by chance at 0.1–0.2 over a scan, so each scan needs its own null.</li><li>The mismatched-person null is the decisive one. If people drifted towards sleep in the same way, one person's prediction would match another's BOLD; it does not.</li><li>The one scan under its null (sub10-scan02) is in the fold with the least predictable people.</li></ul>
+  </section>
+  <section class="col" aria-labelledby="s4">
+    <h2 id="s4">2. Where in the brain?</h2>
+    <figure><div class="plate"><img class="fig-light" src="brain_r.png" alt="Cross-subject ridge R in every DiFuMo region"><img class="fig-dark" src="brain_r_dark.png" alt=""></div></figure>
+<div class="table-wrap"><table><thead><tr><th class="left">Network</th><th>Regions</th><th>R (raw BOLD)</th><th>R after GSR</th></tr></thead><tbody><tr><td class="left">Somatomotor (incl. auditory)</td><td>10</td><td>0.432</td><td>0.162</td></tr><tr><td class="left">Visual</td><td>13</td><td>0.385</td><td>0.170</td></tr><tr><td class="left">Salience</td><td>7</td><td>0.370</td><td>0.137</td></tr><tr><td class="left">Dorsal attention</td><td>8</td><td>0.366</td><td>0.128</td></tr><tr><td class="left">Cerebellum</td><td>2</td><td>0.284</td><td>0.244</td></tr><tr><td class="left">Default</td><td>12</td><td>0.283</td><td>0.105</td></tr><tr><td class="left">Subcortical (thalamus, putamen, caudate)</td><td>3</td><td>0.276</td><td>0.167</td></tr><tr><td class="left">Control</td><td>6</td><td>0.261</td><td>0.107</td></tr><tr><td class="left">Ventricles, venous sinus, fornix</td><td>3</td><td>0.243</td><td>0.166</td></tr><tr><td class="left">Global signal</td><td>1</td><td>0.453</td><td>–</td></tr></tbody></table></div>
+<figure><div class="plate"><img class="fig-light" src="global_loading.png" alt="Region predictability against each region&#x27;s correlation with the global signal"><img class="fig-dark" src="global_loading_dark.png" alt=""></div></figure>
+<ul><li>Sensory and motor cortex are predicted best, control and default-mode regions worst. This is the spatial pattern of the arousal-related global signal, which is largest in sensory cortex (Chang et al. 2016, PNAS; Bolt et al. 2025, Nature Neuroscience).</li><li>Predictability follows each region's correlation with the global signal (ρ = +0.65, p &lt; 10⁻⁸). After GSR the relation is gone (ρ = +0.06).</li><li>GSR cuts mean R from 0.34 to 0.14 over 64 regions. The remainder is far above chance: the null SD of a 29-scan mean is about 0.01.</li></ul>
+<figure><div class="plate"><img class="fig-light" src="brain_r_gsr.png" alt="Ridge R after global-signal regression"><img class="fig-dark" src="brain_r_gsr_dark.png" alt=""></div></figure>
+<ul><li>After GSR the best regions are the thalamus (0.28), cerebellum I–V (0.26) and mid-anterior cingulate (0.23). In eyes-closed rest, thalamic BOLD rises with alpha while cortical BOLD falls (Goldman 2002; Moosmann 2003; Liu 2012), and thalamus and cingulo-opercular regions move against sensory cortex in arousal templates. The region-specific EEG information sits where the literature says it should.</li><li>The literature review found no published EEG-to-BOLD prediction study that reports accuracy after GSR. This is the natural benchmark for any model that claims to learn more than brain state.</li></ul>
+  </section>
+  <section class="col" aria-labelledby="s5">
+    <h2 id="s5">3. Which EEG features carry the signal?</h2>
+    <div class="table-wrap"><table><thead><tr><th class="left">Ridge features (5-fold CV)</th><th>Per frame</th><th>R, 7 ROIs (95% CI)</th><th>Δ vs full</th><th>R, 65 targets</th></tr></thead><tbody><tr><td class="left">26 channels × 44 one-Hz bins × 12 lags</td><td>13,728</td><td>0.381 (0.306 to 0.456)</td><td>–</td><td>0.344</td></tr><tr><td class="left">5 bands × 5 scalp regions × 12 lags</td><td>300</td><td>0.355 (0.280 to 0.430)</td><td>−0.026</td><td>0.325</td></tr><tr><td class="left">5 bands, channel-averaged × 12 lags</td><td>60</td><td>0.355 (0.283 to 0.427)</td><td>−0.026</td><td>0.321</td></tr><tr><td class="left">Vigilance index (alpha ÷ delta+theta) × 12 lags</td><td>12</td><td>0.211 (0.154 to 0.268)</td><td>−0.170</td><td>0.229</td></tr><tr><td class="left">Time in scan only</td><td>8</td><td>−0.010</td><td>−0.392</td><td>−0.007</td></tr></tbody></table></div>
+<ul><li>Five scalp regions do no better than the channel average: the signal is a whole-head spectral one. Fine frequency resolution adds 0.026.</li><li>In explained variance (R²), the 60 band powers keep about 87% of the full model and the vigilance index about 31%.</li></ul>
+  </section>
+  <section class="col" aria-labelledby="s6">
+    <h2 id="s6">4. What is the time course?</h2>
+    <div class="table-wrap"><table><thead><tr><th class="left">Lag structure (ridge on channels × 1 Hz bins)</th><th>R, 7 ROIs</th><th>Δ vs free lags</th></tr></thead><tbody><tr><td class="left">Free weights on 12 two-second lags</td><td>0.381</td><td>–</td></tr><tr><td class="left">Canonical HRF plus temporal and dispersion derivatives</td><td>0.325</td><td>−0.056</td></tr><tr><td class="left">Canonical HRF only (SPM double gamma)</td><td>0.217</td><td>−0.164</td></tr></tbody></table></div>
+<ul><li>Forcing EEG power through the textbook HRF loses 40% of the skill; its two derivatives recover two-thirds of the loss. The data want a different, region-dependent response.</li></ul>
+<p>PENDING-MAPS</p>
+  </section>
+  <section class="col" aria-labelledby="s7">
+    <h2 id="s7">5. What does NeuroBOLT learn?</h2>
+    <div class="table-wrap"><table><thead><tr><th class="left">Held-out scans of the authors' split</th><th>R</th></tr></thead><tbody><tr><td class="left">Linear surrogate (ridge on band power fitted to NeuroBOLT's output) vs NeuroBOLT's output</td><td><strong>0.912</strong></td></tr><tr><td class="left">Ridge trained on BOLD vs NeuroBOLT's output</td><td>0.852</td></tr><tr><td class="left">NeuroBOLT vs BOLD</td><td>0.465</td></tr><tr><td class="left">Linear surrogate vs BOLD</td><td>0.491</td></tr><tr><td class="left">Ridge vs BOLD</td><td>0.504</td></tr></tbody></table></div>
+<ul><li>A linear map from band power reproduces 83% of the variance of NeuroBOLT's predictions; the authors' published checkpoints give the same picture (0.851).</li><li>The surrogate predicts BOLD better than NeuroBOLT itself: the part of NeuroBOLT's output that is not linear in band power is mostly noise.</li></ul>
+<p>PENDING-PERMUTATION-SECTION</p>
+  </section>
+  <section class="col" aria-labelledby="s8">
+    <h2 id="s8">6. Brain or body?</h2>
+    <p>The recordings include eye (EOG), muscle (EMG) and heart (ECG) channels and, in 19 scans, carbon-wire loops that measure head motion. Arousal changes all of these as well as EEG, so they are both possible confounds and alternative read-outs of the same state.</p>
+<ul><li><strong>Caution:</strong> the EOG, EMG and ECG leads share the EEG reference, so their power in EEG bands is partly EEG itself (raw EOG alone reaches 0.313). Claims about the body use only measures EEG amplitude cannot explain: heart rate, EOG below 4 Hz (slow eye movements, blinks) and EMG above 30 Hz (muscle).</li></ul>
+<div class="table-wrap"><table><thead><tr><th class="left">Ridge features (5-fold CV)</th><th>R, 7 ROIs</th><th>R, 65 targets</th></tr></thead><tbody><tr><td class="left">EEG</td><td>0.381</td><td>0.344</td></tr><tr><td class="left">Heart rate only</td><td>0.218</td><td>0.195</td></tr><tr><td class="left">Slow EOG only</td><td>0.194</td><td>0.168</td></tr><tr><td class="left">High-frequency EMG only</td><td>0.195</td><td>0.164</td></tr><tr><td class="left">Heart rate + slow EOG + high EMG</td><td>0.257</td><td>0.218</td></tr><tr><td class="left">Motion loops only (19 scans)</td><td>0.232</td><td>0.200</td></tr><tr><td class="left">EEG, same 19 scans</td><td>0.391</td><td>0.354</td></tr><tr><td class="left">EEG + motion loops (19 scans)</td><td>0.391 (Δ +0.001)</td><td>0.353</td></tr></tbody></table></div>
+<p>PENDING-PARTITION-SECTION</p>
+  </section>
+  <section class="col" aria-labelledby="s9">
+    <h2 id="s9">7. Does nonlinearity help?</h2>
+    <div class="table-wrap"><table><thead><tr><th class="left">Readout of identical features</th><th>Protocol</th><th>R, 7 ROIs</th><th>Δ vs ridge (95% CI)</th><th>People better</th></tr></thead><tbody><tr><td class="left">MLP, 60 band powers (5-seed ensemble)</td><td>5-fold</td><td>0.361</td><td>+0.006 (−0.012 to +0.024)</td><td>14 of 22</td></tr><tr><td class="left">MLP, 60 band powers</td><td>Leave one person out</td><td>0.375</td><td>+0.010 (−0.007 to +0.026)</td><td>15 of 22</td></tr><tr><td class="left">MLP, 26 channels × 5 bands × 12 lags</td><td>Leave one person out</td><td>0.378</td><td>+0.005 (−0.014 to +0.024)</td><td>13 of 22</td></tr><tr><td class="left">Additive splines, 60 band powers</td><td>5-fold</td><td>0.347</td><td>−0.008 (−0.017 to +0.001)</td><td>6 of 22</td></tr><tr><td class="left">Vigilance × band interactions</td><td>5-fold</td><td>0.347</td><td>−0.008 (−0.022 to +0.006)</td><td>8 of 22</td></tr><tr><td class="left">All pairwise interactions</td><td>5-fold</td><td>0.287</td><td>−0.068 (−0.107 to −0.030)</td><td>4 of 22</td></tr><tr><td class="left">Learned frequency bands, end to end from raw EEG</td><td>5-fold</td><td>0.355</td><td>−0.026 vs 1 Hz ridge (−0.040 to −0.011)</td><td>–</td></tr></tbody></table></div>
+<ul><li>The MLP chose its most heavily regularised settings almost every time, as expected when the best function is close to linear.</li><li>The MEL preprint (arXiv 2608.29304, same VU data) reports an MLP ensemble at 0.499 against ridge at 0.439 under leave-one-subject-out. Under the same protocol on our features the gain is +0.01 and not significant: the claim does not replicate.</li><li>The learned-band model (a SincNet-style filterbank applied in the frequency domain, trained end to end) keeps its filters close to their log-spaced start and trails fixed 1 Hz bins.</li></ul>
+  </section>
+  <section class="col" aria-labelledby="s10">
+    <h2 id="s10">8. An interpretable time-series model</h2>
+    <p>The literature review proposed a shared-factor Hammerstein distributed-lag model: K components shared by all 65 targets, each a scalp topography times a 1 Hz spectral profile; an optional static nonlinearity per component; and a smooth lag kernel per region and component (five B-splines over 0–24 s), which acts as an empirical, region-specific HRF.</p>
+<div class="table-wrap"><table><thead><tr><th class="left">Model (5-fold CV)</th><th>Parameters</th><th>R, 65 targets</th><th>Δ vs full ridge (95% CI)</th><th>R, 7 ROIs</th></tr></thead><tbody><tr><td class="left">Full ridge</td><td>892,320</td><td>0.344</td><td>–</td><td>0.381</td></tr><tr><td class="left">1 component</td><td>460</td><td>0.303</td><td>−0.042 (−0.061 to −0.022)</td><td>0.336</td></tr><tr><td class="left">3 components</td><td>1,250</td><td>0.324</td><td>−0.020 (−0.036 to −0.003)</td><td>0.359</td></tr><tr><td class="left">5 components</td><td>2,040</td><td>0.329</td><td>−0.015 (−0.032 to +0.001)</td><td>0.362</td></tr><tr><td class="left">8 components</td><td>3,225</td><td>0.327</td><td>−0.017 (−0.032 to −0.003)</td><td>0.358</td></tr><tr><td class="left">5 components + spline nonlinearity</td><td>2,060</td><td>0.329</td><td>−0.015 (−0.032 to +0.002)</td><td>0.362</td></tr></tbody></table></div>
+<ul><li>One shared component already reaches 88% of ridge; five reach 96% with 0.2% of the parameters. Beyond five, nothing is gained.</li><li>The spline nonlinearity adds exactly nothing, which rules out the vigilance-gated (state-dependent) coupling that the literature suggested as the one place nonlinearity might pay.</li><li>The predicted 0.01 loss threshold was missed narrowly (−0.015) and the 0.02 falsifier was not reached: the model is a usable compact description, not a replacement.</li></ul>
+<figure><div class="plate"><img class="fig-light" src="hammerstein_components.png" alt="Three shared components: topography, spectrum and regional lag kernels"><img class="fig-dark" src="hammerstein_components_dark.png" alt=""></div></figure>
+<ul><li>The figure shows fold 1's three-component model, refitted with a smoothness penalty on the spectra (same accuracy: 0.330 for five components).</li><li><strong>Component 1</strong> weighs alpha (~10 Hz) and beta (~22 Hz) power negatively and theta positively. Its cortical and global kernels peak about 7 s before the frame, the classic inverse alpha–BOLD coupling through the HRF. The thalamic kernel peaks about 4 s further back.</li><li><strong>Component 3</strong> is the vigilance index in spectral form (alpha up, delta down). Its cortical kernels are derivative-shaped, so a recent rise in vigilance lowers BOLD and an older one raises it; the thalamus barely responds.</li><li>Every component's kernel turns sharply negative in the last 2 s before the frame. That is the short-lag, opposite-sign term seen in the ridge weights; it appears in all regions and in the global signal alike.</li><li>The topographies are noisy, consistent with scalp detail adding nothing.</li></ul>
+  </section>
+  <section class="col" aria-labelledby="s11">
+    <h2 id="s11">9. Does personal calibration help?</h2>
+    <p>The first half of each held-out scan was used for calibration and the second half for scoring, with a 25 s gap so no EEG window spans both.</p>
+<div class="table-wrap"><table><thead><tr><th class="left">Second half of each held-out scan (7 ROIs)</th><th>R</th><th>Δ vs population model (95% CI)</th><th>People better</th></tr></thead><tbody><tr><td class="left">Population model (other people only)</td><td>0.401</td><td>–</td><td>–</td></tr><tr><td class="left">Population model with a person-specific delay (±6 s)</td><td>0.406</td><td>+0.006 (−0.019 to +0.031)</td><td>10 of 22</td></tr><tr><td class="left">The person's own 60 band powers only</td><td>0.394</td><td>−0.006 (−0.049 to +0.037)</td><td>10 of 22</td></tr><tr><td class="left">Population model + own band powers</td><td>0.409</td><td>+0.008 (−0.030 to +0.047)</td><td>10 of 22</td></tr></tbody></table></div>
+<ul><li>The chosen delay shifts were mostly zero or one frame: person-specific HRF timing is not what limits cross-subject prediction here.</li><li>Who is predictable depends on how much their arousal moves: Spearman ρ between a scan's R and its fluctuation in slow eye movements is +0.53 (p = 0.003), in heart rate +0.40 (p = 0.035), and earlier, in EEG theta power +0.66.</li></ul>
+  </section>
+  <section class="col" aria-labelledby="s12">
+    <h2 id="s12">10. Predictions from the literature review, scored</h2>
+    <p>The literature review set numeric predictions and falsifiers for each analysis, written without access to these results.</p>
+<p>PENDING-SCORECARD-ROWS</p>
+<div class="table-wrap"><table><thead><tr><th class="left">Prediction</th><th>Result</th><th>Verdict</th></tr></thead><tbody><tr><td class="left">Mismatched-person and drift-only R ≤ 0.05; matched-minus-mismatched gap ≥ 0.30</td><td>−0.003 and −0.010; gap 0.38</td><td>Confirmed</td></tr><tr><td class="left">Motion-loop or muscle-only R ≤ 0.10</td><td>Motion loops 0.23, high-frequency EMG 0.20</td><td>Falsified: body signals carry arousal</td></tr><tr><td class="left">Motion loops or EMG alone match EEG in Heschl's gyrus or precuneus (falsifier of EEG coupling)</td><td>Heschl's 0.29 and 0.22 vs EEG 0.47; precuneus 0.22 and 0.19 vs 0.40</td><td>Not triggered</td></tr><tr><td class="left">GSR residual mean R 0.05–0.15, concentrated in thalamus, cingulo-opercular and visual cortex</td><td>0.144; thalamus 0.28, mid-cingulate 0.23, visual 0.17</td><td>Confirmed</td></tr><tr><td class="left">GSR residual above null only in a minority of regions</td><td>63 of 64 regions above 0.05, 52 above 0.10</td><td>Falsified: region-specific signal is widespread</td></tr><tr><td class="left">Vigilance share far below its raw-target share after GSR</td><td>45% of full-model R after GSR vs 66% before</td><td>Confirmed</td></tr><tr><td class="left">Canonical-HRF collapse loses ≥ 0.04 R; derivatives recover ≥ half</td><td>Loses 0.164; derivatives recover 66%</td><td>Confirmed</td></tr><tr><td class="left">Linear surrogate reproduces NeuroBOLT at R ≥ 0.9</td><td>0.912 (our checkpoints), 0.851 (published)</td><td>Confirmed for ours, near for published</td></tr><tr><td class="left">MLP beats ridge on the same cube by ≥ 0.02 with ≥ 15 of 22 people</td><td>+0.005 (leave one out), 13 of 22</td><td>Falsified</td></tr><tr><td class="left">Hammerstein with K ≤ 5 within 0.01 of ridge (falsifier: loss &gt; 0.02)</td><td>−0.015</td><td>Between the two thresholds</td></tr><tr><td class="left">Hammerstein splines add ≥ 0.015 over linear</td><td>+0.000</td><td>Falsified</td></tr><tr><td class="left">Calibrated HRF latency raises R by ≥ 0.02</td><td>+0.006</td><td>Falsified: timing is not the bottleneck</td></tr></tbody></table></div>
+  </section>
+  <section class="col" aria-labelledby="s13">
+    <h2 id="s13">11. Future research directions</h2>
+    <p>PENDING-DIRECTIONS</p>
+  </section>
+  <section class="col" aria-labelledby="s14">
+    <h2 id="s14">Methods and code</h2>
+    <ul><li><strong>Data.</strong> VU eyes-closed rest: 22 people, 29 scans, 26 EEG channels at 200 Hz after resampling, TR 2.1 s; DiFuMo-64 regions plus the cleaned global signal, low-passed at 0.15 Hz; EOG, EMG, ECG and, in 19 scans, four carbon-wire loops.</li><li><strong>Features.</strong> Log power per channel in 1 Hz bins (1–45 Hz) and 12 two-second lags before each frame. Non-EEG channels: log power in seven bands × 12 lags; heart rate from ECG R peaks (no usable peaks in sub17-scan02).</li><li><strong>Models.</strong> Ridge with the penalty chosen per target on validation people; combined feature blocks get separate penalty scales. NeuroBOLT analyses use the seven per-region checkpoints of the inter-subject reproduction and the authors' published checkpoints.</li><li><strong>Code.</strong> <code>scripts/interp_build_cache.py</code>, <code>interp_cv.py</code>, <code>interp_maps.py</code>, <code>interp_attribution.py</code>, <code>interp_nonlinear.py</code>, <code>interp_tsmodel.py</code>, <code>interp_hammerstein.py</code> and <code>interp_personal.py</code> run on M3 through <code>scripts/interp_m3.sbatch</code>; <code>bash scripts/refresh_interp_report.sh</code> rebuilds <code>reports/interpretability/tables.md</code> and the figures.</li><li><strong>Literature.</strong> The full review, with 117 citations and preprints labelled, is <code>reports/EEG BOLD interpretability and directions.md</code>.</li></ul>
+  </section>
+  <footer class="col note">Companion pages: <a href="https://claude.ai/artifact/MAxjxrsN8EjVAkRN6kWrXV">NeuroBOLT Hypothesis Tests</a> and <a href="https://claude.ai/artifact/SZerzG3z2x4vUbJebDe2Di">NeuroBOLT Reproduction</a>. Code: <code>scripts/interp_*.py</code> and <code>reports/NeuroBOLT interpretability.md</code> in the project repository.</footer>
+</main>

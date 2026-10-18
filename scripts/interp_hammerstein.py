@@ -21,6 +21,7 @@ from fold 1 and from a fit on all scans) for interpretation.
 import argparse
 import csv
 import os
+import re
 import sys
 
 import numpy as np
@@ -72,7 +73,7 @@ class Hammerstein(torch.nn.Module):
         return torch.einsum("bkl,rkl->br", s, self.kernels()) + self.beta
 
 
-def train(x, y, splits, k, nonlinear, wd, seed, device, max_epochs=200, patience=15, batch=256):
+def train(x, y, splits, k, nonlinear, wd, seed, device, max_epochs=200, patience=15, batch=256, smooth=0.0):
     torch.manual_seed(seed)
     model = Hammerstein(y["train"].shape[1], k, nonlinear).to(device)
     opt = torch.optim.Adam(model.parameters(), lr=3e-3)
@@ -86,6 +87,8 @@ def train(x, y, splits, k, nonlinear, wd, seed, device, max_epochs=200, patience
             opt.zero_grad()
             loss = torch.nn.functional.mse_loss(model(x["train"][idx]), y["train"][idx])
             loss = loss + wd * sum((p ** 2).sum() for p in reg)
+            if smooth:  # roughness of each spectral profile across neighbouring 1 Hz bins
+                loss = loss + smooth * wd * (model.b.diff(n=2, dim=1) ** 2).sum()
             loss.backward()
             opt.step()
         model.eval()
@@ -112,6 +115,9 @@ def main():
     parser.add_argument("--seeds", type=int, default=3)
     parser.add_argument("--variants", nargs="*", default=["linear1", "linear2", "linear3", "linear5", "linear8",
                                                           "spline3", "spline5"])
+    parser.add_argument("--wds", type=float, nargs="+", default=[1e-5, 1e-4, 1e-3])
+    parser.add_argument("--smooth", type=float, default=0.0,
+                        help="penalty on second differences of the spectral profiles, as a multiple of the weight decay")
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
     os.makedirs(args.out, exist_ok=True)
@@ -132,10 +138,11 @@ def main():
         y = {n: torch.from_numpy(np.concatenate([ys[s] for s in g]).astype(np.float32)).to(device) for n, g in split.items()}
         del xtr
         for variant in args.variants:
-            nonlinear, k = variant.startswith("spline"), int(variant.lstrip("linespl"))
-            tried = {wd: train(x, y, split, k, nonlinear, wd, 0, device) for wd in (1e-5, 1e-4, 1e-3)}
+            nonlinear, k = variant.startswith("spline"), int(re.search(r"\d+", variant).group())
+            tried = {wd: train(x, y, split, k, nonlinear, wd, 0, device, smooth=args.smooth) for wd in args.wds}
             wd = min(tried, key=lambda w: tried[w][0])
-            models = [tried[wd][1]] + [train(x, y, split, k, nonlinear, wd, s, device)[1] for s in range(1, args.seeds)]
+            models = [tried[wd][1]] + [train(x, y, split, k, nonlinear, wd, s, device, smooth=args.smooth)[1]
+                                       for s in range(1, args.seeds)]
             with torch.no_grad():
                 pred = torch.stack([m(x["test"]) for m in models]).mean(dim=0).cpu().numpy()
             if fold == 1:
