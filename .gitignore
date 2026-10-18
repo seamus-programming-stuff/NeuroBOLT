@@ -18,3 +18,4 @@ checkpoints/**
 
 # Ignore all Jupyter notebooks
 *.ipynb
+reports/interpretability/data/raw/
