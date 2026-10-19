@@ -69,7 +69,7 @@ svg text { font-family: "Segoe UI", sans-serif; }
     <div class="cols3" style="margin-bottom:14pt">
       <div class="stat"><b>0.381 vs 0.336</b><span>Ridge regression beats the NeuroBOLT transformer at predicting a new person's BOLD (mean R, 22 people)</span></div>
       <div class="stat"><b>~60%</b><span>of what EEG predicts is the brain-wide (global) signal, an arousal read-out</span></div>
-      <div class="stat"><b>EXT_HEADLINE_STAT</b><span>EXT_HEADLINE_TEXT</span></div>
+      <div class="stat"><b>0.227 = 0.228</b><span>On 28 new people at another site, the frozen model matches one trained there: no site penalty</span></div>
     </div>
     <div class="toc">
       <div>1 · The one-page summary</div>
@@ -102,11 +102,11 @@ svg text { font-family: "Segoe UI", sans-serif; }
 <li><b>What EEG predicts is mostly arousal.</b> The best-predicted regions are those that follow the brain-wide global signal. Removing that signal cuts accuracy from 0.34 to 0.14. A one-number vigilance index carries a third of the explained variance, and heart rate alone predicts BOLD at R = 0.22.</li>
 <li><b>It is real physiology, not an artefact.</b> 28 of 29 scans beat their own null; one person's prediction scored against another person's BOLD gives R = 0.00. The model rediscovers the known alpha–BOLD coupling (negative in cortex about 9 s later, positive in the thalamus about 3 s later).</li>
 <li><b>More model capacity does not help at this data size.</b> MLPs, splines, interactions, learned filters and per-person calibration all tie or trail ridge. A compact interpretable model keeps 96% of ridge's skill with 0.2% of its parameters.</li>
-<li><b>EXT_SUMMARY_POINT</b></li>
+<li><b>It transfers to a new site.</b> Frozen and applied to 28 people scanned elsewhere (ds006040), the model predicts eyes-closed BOLD as well as a model trained there (R = 0.227 against 0.228). The physiology replicates, and ridge still beats NeuroBOLT. Eyes-open rest is a real shift (0.14).</li>
 </ol>
 
 <h3>What we built</h3>
-<p><b>An EEG arousal monitor</b> (section 6): it estimates, every fMRI volume and from EEG alone, the arousal-driven brain-wide BOLD signal and a vigilance trace, flags low-vigilance periods and scores how much arousal moved in a run. PROTO_SUMMARY</p>
+<p><b>An EEG arousal monitor</b> (section 6): it estimates, every fMRI volume and from EEG alone, the arousal-driven brain-wide BOLD signal and a vigilance trace, flags low-vigilance periods and scores how much arousal moved in a run. On the new dataset it tracks the measured global BOLD at r = 0.26 (eyes closed), runs live at about 3 ms per fMRI volume, and its arousal-fluctuation score tracks the fMRI-measured global-signal swing across runs (&rho; = +0.50). Its drowsiness flags are not yet validated.</p>
 
 <h3>What this means</h3>
 <p>Resting-state EEG tells us where a person sits on the arousal axis, delayed by the haemodynamic response, and linear models already read all of it. The ceiling is set by how much arousal varies in a recording and by the diversity of the people and sites in the training data, not by model architecture. The open scientific question, and the publishable one, is the <i>region-specific remainder</i>: what EEG predicts about a brain region once the brain-wide signal is removed.</p>
@@ -280,14 +280,86 @@ svg text { font-family: "Segoe UI", sans-serif; }
 <section class="page-break">
 <div class="eyebrow">5</div>
 <h2 style="border-top:none;padding-top:0;margin-top:0">Does it hold on a new dataset?</h2>
-EXT_SECTION
+
+<p class="lede">Everything above came from one site. We took the model trained on the VU people, froze it, and applied it to 28 people scanned at another site, on another scanner, with another EEG cap and artefact-cleaning pipeline.</p>
+
+<div class="box blue">
+<div class="box-title">The new dataset: OpenNeuro ds006040</div>
+<p class="small" style="margin-bottom:3pt">Cha et al., <i>Scientific Data</i> 2026, Sungkyunkwan University; 28 people; 3T Siemens Prisma; TR 2.0 s; 64-channel BrainCap MR EEG (it contains all 26 channels the model uses); eyes-closed and eyes-open rest, about 6.3 minutes each, with the scanner on. The authors removed MR artefacts from the EEG and preprocessed the fMRI with fMRIPrep. We rebuilt the same features and targets as for VU and dropped frames touching stretches of missing EEG (9 of 56 runs had some).</p>
+</div>
+
+<h3>5.1 The model transfers with no site penalty</h3>
+<figure><img src="fig/ext_transfer.png" alt="R per person on ds006040 for four protocols, eyes closed and eyes open"><figcaption>Figure 6. Each dot is one person (mean of 7 regions); large dots and bars are means with 95% CIs. Grey: the null for a single run (another person's BOLD); the group means sit far above its mean of 0.00.</figcaption></figure>
+<table>
+<tr><th>Full ridge model, 7 regions</th><th class="n">Eyes closed</th><th class="n">Eyes open</th><th class="n">After GSR (eyes closed)</th></tr>
+<tr class="hl"><td>Frozen VU model (zero-shot)</td><td class="n">0.227</td><td class="n">0.140</td><td class="n">0.106</td></tr>
+<tr><td>Trained within ds006040 (5-fold)</td><td class="n">0.228</td><td class="n">0.182</td><td class="n">0.119</td></tr>
+<tr><td>VU + ds006040 pooled</td><td class="n">0.238</td><td class="n">0.155</td><td class="n">0.132</td></tr>
+<tr><td>NeuroBOLT, authors' checkpoints (zero-shot)</td><td class="n">0.180</td><td class="n">0.140</td><td class="n">&ndash;</td></tr>
+</table>
+<ul>
+<li><b>No site penalty.</b> The imported model is exactly as good as one trained on the new site's own people (paired &Delta; 0.000, 95% CI &minus;0.018 to +0.018); pooling both sites adds a non-significant +0.010.</li>
+<li><b>Lower level, same ceiling.</b> R is lower than on VU (0.23 against 0.38) for both the imported and the local model, so the cause is the data: 6-minute runs of mostly alert people carry less arousal fluctuation than 20-minute eyes-closed scans.</li>
+<li><b>Region-specific signal transfers too</b> (0.106 zero-shot, 0.132 pooled after GSR), which supports question 1 in section 7 as a benchmark that generalises.</li>
+<li><b>Eye state matters.</b> Eyes-open rest drops the frozen model to 0.14, while a model trained on eyes-open data reaches 0.18: the vigilance index barely works with eyes open (0.045), so other spectral features carry the signal.</li>
+<li><b>Ridge still beats NeuroBOLT</b> on the new eyes-closed data by 0.05 (95% CI 0.03 to 0.07); with eyes open they tie.</li>
+</ul>
+
+<h3>5.2 The physiology replicates</h3>
+<figure><img src="fig/ext_coupling.png" alt="Alpha power against BOLD by lag on VU and ds006040"><figcaption>Figure 7. Correlation of alpha power with BOLD by lag. Grey: VU; orange: ds006040 eyes closed; blue dashed: eyes open.</figcaption></figure>
+<p>The inverse alpha coupling of cortex and the global signal, peaking about 9 s before the frame, replicates at about 60% of its VU strength. The thalamus keeps its positive short-lag lobe (beta +0.16, alpha +0.11 at 1&ndash;3 s) but shows a stronger negative lobe at 9 s than on VU, so the thalamic sign flip is the least robust signature and needs a larger sample.</p>
+
+<h3>5.3 What this tells us</h3>
+<ul>
+<li><b>The finding is general, not a quirk of one dataset.</b> A model that encodes "arousal, seen through the haemodynamic delay" works on new people, a new scanner and a new cap without retraining.</li>
+<li><b>Accuracy is set by the recording more than by the model.</b> The same 0.23 ceiling for imported and local models, and lower accuracy on short, alert runs, point to arousal variance as the limiting quantity.</li>
+<li><b>Two open questions move to the front:</b> eyes-open data need their own calibration, and the thalamic signature needs a larger, pooled sample to settle.</li>
+</ul>
+
 </section>
 
 <!-- ============================== 6 PROTOTYPE ============================== -->
 <section class="page-break">
 <div class="eyebrow">6</div>
 <h2 style="border-top:none;padding-top:0;margin-top:0">A prototype: the EEG arousal monitor</h2>
-PROTO_SECTION
+
+<p class="lede">The research says EEG is an excellent, causal read-out of the arousal-driven part of brain activity. That is useful on its own, so we built a tool around it.</p>
+
+<h3>6.1 What it does and who would use it</h3>
+<p>The <b>EEG arousal monitor</b> takes scalp EEG and, once per fMRI volume, estimates the brain-wide BOLD fluctuation that arousal drives, plus an EEG vigilance trace. Because each estimate uses only the preceding 24 s of EEG, it can run live during a scan.</p>
+<ul>
+<li><b>Scan-time quality control.</b> Resting-state fMRI is confounded by participants drifting towards sleep: about half lose wakefulness within 10 minutes (Tagliazucchi and Laufs 2014). The monitor shows this as it happens, instead of after preprocessing.</li>
+<li><b>An arousal covariate</b> for analyses that need to model or report vigilance.</li>
+<li><b>EEG-only settings</b>, such as sleep labs or bedside monitoring: an fMRI-calibrated arousal index without a scanner.</li>
+</ul>
+
+<h3>6.2 How it works</h3>
+<p>Pick 26 standard channels, resample to 200 Hz, compute log power in 1 Hz bins over twelve 2 s slices of the last 24 s, standardise within the recording (or with running statistics when live), and apply the frozen ridge model trained on VU. The code is a small Python package (<i>app/arousal_monitor</i>) with offline and streaming modes and a command-line interface; it refuses frames that touch missing EEG.</p>
+
+<h3>6.3 Validation on 56 runs it never saw</h3>
+<div class="cols">
+<figure><img src="fig/ext_monitor_example.png" alt="Vigilance and predicted versus measured global BOLD for one run"><figcaption>Figure 8. The best-tracked eyes-closed run (r = 0.49); typical runs track at r &asymp; 0.25.</figcaption></figure>
+<figure><img src="fig/ext_qc.png" alt="Arousal fluctuation against measured global-signal swing per run"><figcaption>Figure 9. Across runs, the monitor's arousal-fluctuation score tracks the global-signal swing measured by fMRI (&rho; = +0.50).</figcaption></figure>
+</div>
+<table>
+<tr><th>Measure</th><th class="n">Eyes closed</th><th class="n">Eyes open</th></tr>
+<tr><td>Tracks measured global BOLD (r, offline)</td><td class="n">0.26 (0.20&ndash;0.31)</td><td class="n">0.17 (0.11&ndash;0.24)</td></tr>
+<tr><td>Live streaming mode</td><td class="n">0.26 (0.21&ndash;0.32)</td><td class="n">0.16 (0.10&ndash;0.22)</td></tr>
+<tr><td>Computation per fMRI volume</td><td class="n" colspan="2">3 ms on one CPU core</td></tr>
+<tr><td>QC score vs measured global-signal swing (&rho;, 56 runs)</td><td class="n" colspan="2">+0.50 (p &lt; 0.001)</td></tr>
+<tr><td>QC score vs how predictable the run is</td><td class="n" colspan="2">+0.42 (p = 0.001)</td></tr>
+</table>
+<p><b>Validated:</b> the per-volume estimate, the live mode, and the run-level QC score. <b>Not yet validated:</b> the low-vigilance flags, which need eye tracking or sleep scoring to check; the raw vigilance index's fluctuation did not track the fMRI measures. The QC score also tracks head motion (&rho; = +0.32), consistent with arousal and movement rising together, but a motion-matched test is needed. The interactive demo replays all 56 runs: claude.ai/artifact/M3MtScwGda3GP4d2e27dUU.</p>
+
+<div class="box">
+<div class="box-title">Next steps for the prototype</div>
+<ol class="small" style="margin-bottom:3pt">
+<li>Validate the flags on a dataset with eye tracking or sleep staging (NATVIEW, the ds003768 sleep runs).</li>
+<li>Connect to a live EEG stream (BrainVision RDA or Lab Streaming Layer) and pilot it in the scanner.</li>
+<li>Calibrate an eyes-open variant and test it on ds007216, which has self-reported arousal probes.</li>
+</ol>
+</div>
+
 </section>
 
 <!-- ============================== 7 QUESTIONS ============================== -->
@@ -333,7 +405,7 @@ PROTO_SECTION
 <div class="box blue">
 <div class="box-title">Risks worth naming</div>
 <ul class="small">
-<li><b>Pipeline confounds.</b> If sites are preprocessed differently, "site differences" may be pipeline differences. Mitigation: one pipeline, and the target-statistics standardisation of section 5.</li>
+<li><b>Pipeline confounds.</b> If sites are preprocessed differently, "site differences" may be pipeline differences. Mitigation: one pipeline for every site; section 5 shows ridge needed no site adjustment, but check this for every new site.</li>
 <li><b>Small effects, small samples.</b> Model differences of 0.01–0.02 R need dozens of people to resolve. Mitigation: pre-registered thresholds, paired tests, and pooling.</li>
 <li><b>Over-reading arousal as region-specific function.</b> Always report raw and GSR results side by side.</li>
 </ul>
@@ -406,7 +478,7 @@ PROTO_SECTION
 <div class="box blue">
 <ol style="margin-bottom:3pt">
 <li>"A simple, transparent model predicts a new person's fMRI from their EEG better than the published deep-learning model, and we can show exactly what it uses."</li>
-<li>"What EEG mostly tells us about the resting brain is the person's level of alertness, seen through the slow blood response; that holds on an independent dataset EXT_SENTENCE."</li>
+<li>"What EEG mostly tells us about the resting brain is the person's level of alertness, seen through the slow blood response; that holds on an independent dataset: a model trained at one site works unchanged on 28 people scanned elsewhere."</li>
 <li>"We have turned that into a working prototype that tracks arousal-driven brain activity from EEG alone, and the next step is to test what EEG knows about specific brain regions beyond alertness."</li>
 </ol>
 </div>
@@ -425,7 +497,7 @@ PROTO_SECTION
 <tr><td>Is R = 0.38 good?</td><td>It is about 14% of variance, well above chance (null ≈ 0.00 ± 0.05) and above the published model; typical within-person EEG-fMRI correlations in the literature are 0.2–0.3.</td></tr>
 <tr><td>Why not just use more data with the transformer?</td><td>That is Q5; theory and our learning curve suggest diversity of people and arousal range matter more than more of the same scans.</td></tr>
 <tr><td>Could it be head motion or the heart?</td><td>Those signals are shared with EEG and add nothing unique; motion loops add +0.001.</td></tr>
-<tr><td>Will it work on other scanners?</td><td>Section 5: EXT_QA</td></tr>
+<tr><td>Will it work on other scanners?</td><td>Section 5: for eyes-closed rest, yes: on 28 people at another site the frozen model matches one trained there. Eyes-open rest needs its own calibration.</td></tr>
 <tr><td>What is the product?</td><td>An arousal monitor for fMRI sessions and EEG-only settings (section 6); a research tool, not a clinical device.</td></tr>
 </table>
 

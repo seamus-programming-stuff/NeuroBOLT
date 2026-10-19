@@ -32,7 +32,7 @@ The model is causal: a volume's prediction uses only EEG recorded before it, so 
 
 ```bash
 python -m app.arousal_monitor --eeg sub-01_task-rest_eeg.set --marker TR \
-    --model models/vu_model_full.npz --out monitor_report/
+    --model app/models/vu_model_full.npz --out monitor_report/
 python -m app.arousal_monitor --eeg ... --marker TR --model ... --out ... --stream   # real-time replay
 ```
 
@@ -42,9 +42,20 @@ from an annotation (`--marker`, e.g. `TR`, `R128`) or a fixed `--tr`. Outputs: `
 
 ## Validation
 
-See `reports/NeuroBOLT external validation.md` for the ds006040 results (28 people the model never
-saw, another site and scanner): agreement with the measured global signal for eyes-closed and
-eyes-open rest, offline and streaming, the QC relationship, and per-volume latency.
+On OpenNeuro ds006040 (28 people the model never saw, another site, scanner and EEG cap; 56 rest runs):
+
+| | Eyes closed | Eyes open |
+| --- | --- | --- |
+| r, predicted vs measured fMRI global BOLD (offline) | 0.26 (95% CI 0.20–0.31) | 0.17 (0.11–0.24) |
+| Same, streaming (causal, live) | 0.26 (0.21–0.32) | 0.16 (0.10–0.22) |
+| Compute per fMRI volume | 3 ms | 3 ms |
+
+Across runs, the arousal-fluctuation score tracks the fMRI-measured global-signal swing (Spearman ρ = +0.50,
+p < 0.001) and how predictable the run is (+0.42). The low-vigilance flags are **not yet validated**. Details:
+`reports/NeuroBOLT external validation.md`; interactive replay: https://claude.ai/artifact/M3MtScwGda3GP4d2e27dUU.
+
+Models: `app/models/vu_model_full.npz` (13,728 features) and `vu_model_bands60.npz` (60 channel-averaged band
+powers, nearly as accurate and far smaller), both ridge regression trained on all 29 VU scans.
 
 ## Limitations
 

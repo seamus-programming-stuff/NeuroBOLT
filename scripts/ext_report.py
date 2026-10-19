@@ -84,6 +84,27 @@ def transfer_tables(tr, nulls, md):
     return out
 
 
+def neurobolt_table(nb, tr, md):
+    """NeuroBOLT zero-shot on ds006040 against transferred ridge, paired by person, 7 ROIs."""
+    md.append("## Does NeuroBOLT transfer?\n")
+    md.append("Zero-shot on ds006040, same frames as ridge; Δ is paired by person against ridge "
+              "(full features, new-site EEG statistics).\n")
+    md.append("| Model | Input scaling | Eyes closed | Δ vs ridge | Eyes open | Δ vs ridge |")
+    md.append("|---|---|---|---|---|---|")
+    ridge = tr[(tr["targets"] == "all65") & tr["roi"].isin(ROI7) & (tr["model"] == "full") &
+               (tr["protocol"] == "target-stats")].groupby(["condition", "subject"])["corr"].mean()
+    for (model, scaling), g in nb.groupby(["model", "scaling"]):
+        cells = []
+        for cond in ("EC", "EO"):
+            pp = g[g["condition"] == cond].groupby("subject")["corr"].mean()
+            m, lo, hi = ci(pp)
+            d = (pp - ridge.loc[cond].reindex(pp.index)).dropna()
+            dm, dlo, dhi = ci(d)
+            cells += [f"{m:.3f} ({lo:.3f} to {hi:.3f})", f"{dm:+.3f} ({dlo:+.3f} to {dhi:+.3f})"]
+        md.append(f"| {model} | {scaling} | " + " | ".join(cells) + " |")
+    md.append("")
+
+
 def transfer_figure(tr, nulls, out):
     sub = tr[(tr["targets"] == "all65") & tr["roi"].isin(ROI7) & (tr["model"] == "full")]
     for theme, c in THEMES.items():
@@ -104,7 +125,7 @@ def transfer_figure(tr, nulls, out):
                             label=("Eyes closed" if cond == "EC" else "Eyes open") if i == 0 else None)
         nm = nulls["corr"]
         ax.axhspan(np.percentile(nm, 2.5), np.percentile(nm, 97.5), color=c["grid"], zorder=0,
-                   label="Mismatched-person null (95%)")
+                   label="Null for a single run: another person’s BOLD (95%)")
         ax.axhline(0, color=c["axis"], linewidth=0.8)
         ax.set_xticks(range(len(PROTOCOLS)), [PROTOCOL_LABELS[p].replace(" + ", "\n+ ").replace(" pooled", "\npooled")
                                               .replace("Trained within", "Trained\nwithin") for p in PROTOCOLS], fontsize=8)
@@ -184,7 +205,7 @@ def monitor_section(mon, demo, out, md):
         ax.legend(frameon=False, fontsize=8, labelcolor=c["ink_2"])
         save(fig, out, "ext_qc", theme, c)
     if demo:
-        run = max(demo, key=lambda r: demo[r]["r"])
+        run = max((r for r in demo if r.endswith("_EC")), key=lambda r: demo[r]["r"])
         d = demo[run]
         for theme, c in THEMES.items():
             fig, axes = plt.subplots(2, 1, figsize=(8.6, 4.4), sharex=True, facecolor=c["surface"])
@@ -220,6 +241,8 @@ def main():
         nulls = pd.read_csv(path("mismatched_null.csv"))
         transfer_tables(tr, nulls, md)
         transfer_figure(tr, nulls, args.out)
+        if os.path.isfile(path("neurobolt.csv")):
+            neurobolt_table(pd.read_csv(path("neurobolt.csv")), tr, md)
     if os.path.isfile(path("coupling_ext.npz")):
         coupling_figure(np.load(path("coupling_ext.npz")), np.load(args.vu_maps), args.out, md)
     if os.path.isfile(path("monitor_runs.csv")):

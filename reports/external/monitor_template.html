@@ -1,0 +1,189 @@
+<title>EEG Arousal Monitor</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: an instrument panel. Run picker on the left (top on phones), the two traces stacked like a polygraph, readouts beside them, validation below. */
+:root {
+  --bg: #f6f5f1; --panel: #fcfcfb; --fg: #1c1b19; --muted: #6b6860; --rule: #dedbd2; --grid: #ebe9e2;
+  --pred: #d0581f; --meas: #2a6bc2; --flag: #f3dfd2; --vig: #1c1b19; --chip: #ecebe5; --chip-on: #1c1b19; --chip-on-fg: #fcfcfb;
+  --font-head: "Source Serif 4", Georgia, serif; --font-ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141413; --panel: #1c1c1a; --fg: #ecebe6; --muted: #a29f96; --rule: #34332f; --grid: #2a2a27;
+  --pred: #ec7a42; --meas: #5b9bea; --flag: #3a2a20; --vig: #ecebe6; --chip: #2a2a27; --chip-on: #ecebe6; --chip-on-fg: #141413; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #141413; --panel: #1c1c1a; --fg: #ecebe6; --muted: #a29f96; --rule: #34332f; --grid: #2a2a27;
+  --pred: #ec7a42; --meas: #5b9bea; --flag: #3a2a20; --vig: #ecebe6; --chip: #2a2a27; --chip-on: #ecebe6; --chip-on-fg: #141413; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 72rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 2rem 3rem; display: grid; gap: 1.75rem; }
+header { display: grid; gap: 0.5rem; max-width: 46rem; }
+.eyebrow { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+h1 { font-family: var(--font-head); font-weight: 600; font-size: clamp(1.9rem, 4.5vw, 2.6rem); line-height: 1.1; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--font-head); font-weight: 600; font-size: 1.3rem; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+.lede { color: var(--muted); font-size: 1.05rem; }
+.console { display: grid; gap: 0.9rem; }
+.picker { display: grid; gap: 0.75rem; }
+.picker h3 { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; font-weight: 500; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.controls { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; }
+select { font-family: var(--font-mono); font-size: 0.9rem; background: var(--chip); color: var(--fg); border: 1px solid var(--rule); border-radius: 6px; padding: 0.3rem 0.5rem; }
+select:focus-visible { outline: 2px solid var(--pred); outline-offset: 2px; }
+label { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.chip { font-family: var(--font-mono); font-size: 0.8rem; border: 1px solid var(--rule); background: var(--chip); color: var(--fg); border-radius: 999px; padding: 0.25rem 0.65rem; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-fg); border-color: var(--chip-on); }
+.chip:focus-visible { outline: 2px solid var(--pred); outline-offset: 2px; }
+.screen { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 1rem 1rem 0.75rem; display: grid; gap: 0.75rem; min-width: 0; }
+.readouts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; }
+.readout { display: grid; gap: 0.1rem; }
+.readout b { font-family: var(--font-mono); font-size: 1.35rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.readout span { font-size: 0.78rem; color: var(--muted); }
+svg { display: block; width: 100%; height: auto; }
+.legend { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.8rem; color: var(--muted); }
+.key { display: inline-flex; align-items: center; gap: 0.4rem; }
+.swatch { width: 18px; height: 3px; border-radius: 2px; display: inline-block; }
+.validation { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.25rem; }
+.card { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 1rem 1.1rem; display: grid; gap: 0.5rem; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 0.35rem 0.4rem; border-bottom: 1px solid var(--rule); }
+th { color: var(--muted); font-weight: 500; font-size: 0.78rem; }
+td.n { text-align: right; font-family: var(--font-mono); }
+.note { font-size: 0.82rem; color: var(--muted); }
+.how { display: grid; gap: 0.6rem; max-width: 46rem; }
+.how ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
+@media (max-width: 760px) { .readouts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Research prototype · tested on 28 people the model never saw</span>
+    <h1>EEG Arousal Monitor</h1>
+    <p class="lede">From EEG alone, once per fMRI volume, it estimates the brain-wide BOLD fluctuation that arousal drives and flags the least vigilant stretches of a scan. The traces below are real ds006040 resting runs (another site, another scanner) scored against their measured fMRI.</p>
+  </header>
+
+  <section class="console" aria-label="Monitor replay">
+    <div class="controls">
+      <div class="chips"><label for="subject">Person</label><select id="subject"></select></div>
+      <div class="chips" role="group" aria-label="Eye state">
+        <button class="chip" type="button" data-cond="EC">Eyes closed</button>
+        <button class="chip" type="button" data-cond="EO">Eyes open</button>
+      </div>
+      <p class="note">Eyes open is the harder case: the model was trained on eyes-closed rest.</p>
+    </div>
+    <div class="screen">
+      <div class="readouts">
+        <div class="readout"><b id="r-r">–</b><span>r, predicted vs measured global BOLD</span></div>
+        <div class="readout"><b id="r-fluct">–</b><span>arousal fluctuation (SD of prediction)</span></div>
+        <div class="readout"><b id="r-flag">–</b><span>time flagged as low vigilance</span></div>
+        <div class="readout"><b id="r-dur">–</b><span>minutes scored</span></div>
+      </div>
+      <svg id="chart" viewBox="0 0 900 360" role="img" aria-label="Vigilance and global BOLD traces for the chosen recording"></svg>
+      <div class="legend">
+        <span class="key"><span class="swatch" style="background:var(--vig)"></span>EEG vigilance (robust z)</span>
+        <span class="key"><span class="swatch" style="background:var(--pred)"></span>Global BOLD predicted from EEG</span>
+        <span class="key"><span class="swatch" style="background:var(--meas)"></span>Global BOLD measured by fMRI</span>
+        <span class="key"><span class="swatch" style="background:var(--flag);height:10px"></span>Flagged low vigilance</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="validation" aria-label="Validation">
+    <div class="card">
+      <h2>How well it tracks</h2>
+      <table id="t-acc"></table>
+      <p class="note">Mean over people; 95% intervals over people. Streaming uses only EEG recorded so far, as it would during a scan.</p>
+    </div>
+    <div class="card">
+      <h2>Does it work as QC?</h2>
+      <table id="t-qc"></table>
+      <p class="note">Spearman ρ across runs. A useful QC score should track the global-signal swing actually measured by fMRI.</p>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <ol>
+      <li>Take the 24 s of EEG before each fMRI volume from 26 standard channels and measure log power in 1 Hz bins (1–45 Hz) over twelve 2 s slices.</li>
+      <li>Apply a ridge-regression model trained on 22 people from another site (VU). Features are standardised within the recording, so no fMRI is needed.</li>
+      <li>Report the predicted brain-wide BOLD and an alpha / (delta + theta) vigilance index averaged over the last 8 s; flag stretches where vigilance stays more than 1 robust SD below the run's median for at least 10 s.</li>
+    </ol>
+    <p class="note">What is validated: the predicted global BOLD (against fMRI, above) and the run-level arousal fluctuation as a QC score. What is not yet: the low-vigilance flags, which need eye tracking or sleep scoring to check.</p>
+    <p class="note">Research tool, not a medical device. Accuracy depends on how much arousal varies in a run, and the vigilance flag is relative to the run itself, not an absolute sleep stage. Code: app/arousal_monitor in the NeuroBOLT repository.</p>
+  </section>
+</div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function () {
+  const data = JSON.parse(document.getElementById("data").textContent);
+  const runs = Object.keys(data.runs);
+  const svg = document.getElementById("chart");
+  const NS = "http://www.w3.org/2000/svg";
+  const W = 900, L = 46, R = 12, TOP1 = 14, H1 = 130, GAP = 40, TOP2 = TOP1 + H1 + GAP, H2 = 150;
+  const el = (name, attrs) => { const e = document.createElementNS(NS, name); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+  const z = a => { const m = a.reduce((s, v) => s + v, 0) / a.length; const sd = Math.sqrt(a.reduce((s, v) => s + (v - m) ** 2, 0) / a.length) || 1; return a.map(v => (v - m) / sd); };
+  const path = (xs, ys, x, y) => xs.map((t, i) => (i ? "L" : "M") + x(t).toFixed(1) + " " + y(ys[i]).toFixed(1)).join(" ");
+
+  function draw(id) {
+    const d = data.runs[id];
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    const t0 = d.t[0], t1 = d.t[d.t.length - 1];
+    const x = t => L + (t - t0) / (t1 - t0) * (W - L - R);
+    const vz = d.vigilance_z.map(v => Math.max(-4, Math.min(4, v)));
+    const y1 = v => TOP1 + (4 - v) / 8 * H1;
+    const p = z(d.pred_global), m = z(d.measured_global);
+    const lim = Math.max(3, ...p.map(Math.abs), ...m.map(Math.abs));
+    const y2 = v => TOP2 + (lim - v) / (2 * lim) * H2;
+    for (const ep of d.episodes) {
+      for (const [top, h] of [[TOP1, H1], [TOP2, H2]]) svg.appendChild(el("rect", { x: x(ep.start_s), y: top, width: Math.max(2, x(ep.end_s) - x(ep.start_s)), height: h, fill: "var(--flag)" }));
+    }
+    for (const [v, lab] of [[4, "+4"], [0, "0"], [-1, "−1"], [-4, "−4"]]) {
+      svg.appendChild(el("line", { x1: L, x2: W - R, y1: y1(v), y2: y1(v), stroke: "var(--grid)", "stroke-width": 1, "stroke-dasharray": v === -1 ? "4 3" : "" }));
+      const tx = el("text", { x: L - 6, y: y1(v) + 4, "text-anchor": "end", "font-size": 11, fill: "var(--muted)" }); tx.textContent = lab; svg.appendChild(tx);
+    }
+    for (const v of [-2, 0, 2]) {
+      svg.appendChild(el("line", { x1: L, x2: W - R, y1: y2(v), y2: y2(v), stroke: "var(--grid)", "stroke-width": 1 }));
+      const tx = el("text", { x: L - 6, y: y2(v) + 4, "text-anchor": "end", "font-size": 11, fill: "var(--muted)" }); tx.textContent = (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v); svg.appendChild(tx);
+    }
+    const lab1 = el("text", { x: L, y: TOP1 - 2, "font-size": 11, fill: "var(--muted)" }); lab1.textContent = "Vigilance (z)"; svg.appendChild(lab1);
+    const lab2 = el("text", { x: L, y: TOP2 - 6, "font-size": 11, fill: "var(--muted)" }); lab2.textContent = "Global BOLD (z)"; svg.appendChild(lab2);
+    svg.appendChild(el("path", { d: path(d.t, vz, x, y1), fill: "none", stroke: "var(--vig)", "stroke-width": 1.5 }));
+    svg.appendChild(el("path", { d: path(d.t, m, x, y2), fill: "none", stroke: "var(--meas)", "stroke-width": 1.6 }));
+    svg.appendChild(el("path", { d: path(d.t, p, x, y2), fill: "none", stroke: "var(--pred)", "stroke-width": 2.2 }));
+    const step = (t1 - t0) > 300 ? 60 : 30;
+    for (let s = Math.ceil(t0 / step) * step; s <= t1; s += step) {
+      const tx = el("text", { x: x(s), y: TOP2 + H2 + 16, "text-anchor": "middle", "font-size": 11, fill: "var(--muted)" });
+      tx.textContent = (s / 60).toFixed(s % 60 ? 1 : 0) + " min"; svg.appendChild(tx);
+    }
+    const flagged = d.episodes.reduce((s, e) => s + (e.end_s - e.start_s + 2), 0);
+    document.getElementById("r-r").textContent = d.r.toFixed(2);
+    document.getElementById("r-fluct").textContent = d.fluctuation.toFixed(2);
+    document.getElementById("r-flag").textContent = Math.round(100 * flagged / (t1 - t0 + 2)) + "%";
+    document.getElementById("r-dur").textContent = ((t1 - t0) / 60).toFixed(1);
+    const [sub, cond] = id.split("_");
+    document.getElementById("subject").value = sub;
+    for (const b of document.querySelectorAll("[data-cond]")) b.setAttribute("aria-pressed", b.dataset.cond === cond ? "true" : "false");
+  }
+
+  const state = {};
+  const pick = () => { const id = state.sub + "_" + state.cond; if (data.runs[id]) draw(id); };
+  const subjects = [...new Set(runs.map(r => r.split("_")[0]))].sort();
+  const sel = document.getElementById("subject");
+  for (const s of subjects) { const o = document.createElement("option"); o.value = s; o.textContent = s.replace("sub-", "Person "); sel.appendChild(o); }
+  sel.addEventListener("change", () => { state.sub = sel.value; pick(); });
+  for (const b of document.querySelectorAll("[data-cond]")) b.addEventListener("click", () => { state.cond = b.dataset.cond; pick(); });
+  const table = (id, head, rows) => {
+    const t = document.getElementById(id);
+    t.innerHTML = "<tr>" + head.map((h, i) => `<th${i ? ' style="text-align:right"' : ""}>${h}</th>`).join("") + "</tr>" +
+      rows.map(r => "<tr>" + r.map((c, i) => `<td${i ? ' class="n"' : ""}>${c}</td>`).join("") + "</tr>").join("");
+  };
+  table("t-acc", ["", "Eyes closed", "Eyes open"], data.accuracy);
+  table("t-qc", ["EEG-derived score vs", "ρ"], data.qc);
+  const first = data.default || runs[0];
+  [state.sub, state.cond] = first.split("_");
+  draw(first);
+})();
+</script>

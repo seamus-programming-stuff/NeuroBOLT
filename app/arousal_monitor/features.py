@@ -92,6 +92,7 @@ def bands60(features):
     return np.concatenate([band_power(features, lo, hi) for lo, hi in BANDS.values()], axis=1).astype(np.float32)
 
 
-def vigilance(features):
-    """EEG vigilance index per frame: log alpha minus log (delta + theta) power, most recent 2 s, channel mean."""
-    return (band_power(features, 8, 13) - band_power(features, 1, 8))[:, -1]
+def vigilance(features, recent_lags=4):
+    """EEG vigilance index per frame: log alpha minus log (delta + theta) power, channel mean, averaged over
+    the most recent 8 s (4 two-second lags) to steady it."""
+    return (band_power(features, 8, 13) - band_power(features, 1, 8))[:, -recent_lags:].mean(axis=1)
