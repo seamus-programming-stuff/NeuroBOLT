@@ -8,9 +8,9 @@ The hypothesis tests showed that ridge regression on lagged EEG power predicts a
 
 - **The prediction is real.** 28 of 29 held-out scans beat their own circular-shift null, and scoring one person's prediction against another person's BOLD gives R = 0.00, so no drift shared across scans inflates the result.
 - **It is mostly the brain-wide signal.** A region's predictability tracks how closely it follows the global signal (ρ = +0.65 over 64 regions). Removing the global signal cuts mean R from 0.34 to 0.14; what survives is concentrated in the thalamus (0.28), cerebellum and mid-cingulate, regions whose arousal response runs against cortex.
-- **The models read whole-head band power through a haemodynamic delay.** Sixty channel-averaged band powers keep 93% of the skill and scalp topography adds nothing. Free lag weights matter: forcing the canonical HRF shape loses 0.16 R. PENDING-TIMECOURSE
-- **NeuroBOLT is in effect a linear band-power model.** A ridge model fitted to imitate NeuroBOLT's outputs reproduces them at R = 0.91 on held-out scans and predicts BOLD better than NeuroBOLT does (0.491 against 0.465). PENDING-PERMUTATION
-- **The body carries much of the same information.** Heart rate alone predicts BOLD at R = 0.22, and heart rate with slow eye movements and muscle activity at 0.26, with no EEG at all. Head-motion loops add nothing beyond EEG. PENDING-PARTITION
+- **The models read whole-head band power through a haemodynamic delay.** Sixty channel-averaged band powers keep 93% of the skill and scalp topography adds nothing. Free lag weights matter: forcing the canonical HRF shape loses 0.16 R. Cortex couples negatively with alpha and beta power 8–12 s earlier; the thalamus couples positively and about 6 s sooner; and broadband power in the last 4 s couples positively everywhere, most likely shared arousal transients.
+- **NeuroBOLT is in effect a linear band-power model.** A ridge model fitted to imitate NeuroBOLT's outputs reproduces them at R = 0.91 on held-out scans and predicts BOLD better than NeuroBOLT does (0.491 against 0.465). Perturbing the EEG the same way moves both models' predictions alike, with the last 4 s mattering most; NeuroBOLT leans more on delta power.
+- **The body carries much of the same information.** Heart rate alone predicts BOLD at R = 0.22, and heart rate with slow eye movements and muscle activity at 0.26, with no EEG at all. Head-motion loops add nothing beyond EEG. Everything the body signals predict, EEG already predicts: they share about 44% of EEG's explained variance, and physiology adds almost nothing unique (R² +0.001).
 - **Nonlinearity does not help at this data size.** MLPs, additive splines, interactions, vigilance-gated coupling, learned frequency bands and a spline Hammerstein model all tie or trail ridge. The MEL preprint's large MLP gain on these data does not replicate (+0.01 under the same leave-one-person-out protocol).
 - **An interpretable model keeps 96% of the skill with 0.2% of the parameters.** Five shared scalp-spectral components with smooth regional lag kernels (2,040 parameters) reach 0.329 against 0.344 for full ridge (892,000 weights) over 65 targets.
 - **Personal calibration barely helps.** Using half of a person's own scan to adjust the delay or add their own band powers changes R by under 0.01. Predictable people are those whose arousal markers fluctuate: EEG theta (ρ = +0.66), slow eye movements (+0.53) and heart rate (+0.40).
@@ -90,7 +90,13 @@ Taken together, resting-state EEG tells us where a person sits on the arousal ax
 
 - Forcing EEG power through the textbook HRF loses 40% of the skill; its two derivatives recover two-thirds of the loss. The data want a different, region-dependent response.
 
-PENDING-MAPS
+![Model-free coupling and Haufe patterns by frequency and lag](interpretability/coupling_vs_pattern.png)
+
+- **Top row, model-free:** the within-scan correlation of each 1 Hz power bin at each lag with BOLD, averaged over the 29 scans. **Bottom row, model:** the same for the ridge prediction (Haufe patterns, which unlike raw weights are safe to read with correlated features). The two rows agree, so ridge reads what is in the data.
+- **Cortex and the global signal:** power 8–12 s before a frame, strongest at 8–25 Hz (alpha and beta), predicts lower BOLD (alpha r = −0.25 in cuneus and the global signal, t ≈ −12 over scans). This is the inverse alpha–BOLD coupling of the EEG-fMRI literature, delayed by the haemodynamic response.
+- **Thalamus:** the sign flips. Alpha and beta power predict higher thalamic BOLD (beta r = +0.24, alpha +0.20), and the lag is about 3 s rather than 9 s. A rank-1 (channel × spectrum × lag) model per region puts the thalamic lag peak at 3 s against 7–11 s for cortex. Positive thalamic alpha coupling and an earlier thalamic response were both reported in within-subject studies (Goldman 2002; de Munck 2007); here they hold across people.
+- **The last 4 s:** broadband power (all frequencies) just before a frame predicts higher BOLD in every region, most strongly in the thalamus. It survives in the Haufe patterns, so it is not a suppressor artefact of the weights. A broadband, near-zero-lag co-fluctuation of EEG power and BOLD is what shared arousal transients produce (Bolt et al. 2025 report EEG power and the global signal moving together with the body's arousal signals).
+- Alpha power couples negatively with all 65 targets at some lag; 36 also show a positive lobe, mostly at short lag.
 
 ## 5. What does NeuroBOLT learn?
 
@@ -105,7 +111,25 @@ PENDING-MAPS
 - A linear map from band power reproduces 83% of the variance of NeuroBOLT's predictions; the authors' published checkpoints give the same picture (0.851).
 - The surrogate predicts BOLD better than NeuroBOLT itself: the part of NeuroBOLT's output that is not linear in band power is mostly noise.
 
-PENDING-PERMUTATION-SECTION
+**Matched permutation importance.** On the six held-out scans, one part of each EEG window was swapped with the same part of a window at least 60 s away, so its statistics stay realistic but its timing relative to BOLD is broken. Every model saw the same perturbed EEG.
+
+| Part swapped | Drop in R: ridge | NeuroBOLT (ours) | NeuroBOLT (published) |
+| --- | --- | --- | --- |
+| Delta band (0.5–4 Hz) | 0.034 | 0.108 | 0.122 |
+| Theta band (4–8 Hz) | 0.017 | 0.020 | 0.023 |
+| Alpha band (8–13 Hz) | 0.015 | 0.025 | 0.030 |
+| Beta band (13–30 Hz) | 0.271 | 0.138 | 0.148 |
+| Gamma band (30–45 Hz) | 0.014 | 0.002 | 0.002 |
+| Frontal channels | 0.086 | 0.035 | 0.028 |
+| Occipital channels | 0.018 | 0.025 | 0.050 |
+| Last 4 s of the window | 0.187 | 0.196 | 0.187 |
+| 4–8 s before | 0.093 | 0.056 | 0.071 |
+| 8–12 s before | 0.121 | 0.122 | 0.096 |
+| 12–16 s before | 0.079 | 0.082 | 0.082 |
+
+- Both models depend on time in the same way: the last 4 s matter most, then 8–12 s, which are the two coupling lobes in the maps above.
+- The band column is about unique reliance, not total importance. Alpha and beta power rise and fall together, so swapping alpha alone leaves beta carrying the same information; a model that leans on beta then shows a small alpha drop. The broad beta band also covers 17 of the 44 one-Hz bins.
+- NeuroBOLT leans more on delta power than ridge does (0.11 against 0.03). Delta in frontal channels is where slow eye movements, a drowsiness marker, appear in eyes-closed EEG.
 
 ## 6. Brain or body?
 
@@ -124,7 +148,21 @@ The recordings include eye (EOG), muscle (EMG) and heart (ECG) channels and, in 
 | EEG, same 19 scans | 0.391 | 0.354 |
 | EEG + motion loops (19 scans) | 0.391 (Δ +0.001) | 0.353 |
 
-PENDING-PARTITION-SECTION
+**Variance partition.** Ridge was fitted on EEG alone, physiology alone, and both together (with separate penalties), and cross-validated R² was split into the part only EEG explains, the part only physiology explains, and the shared part.
+
+| Target | R² EEG | R² physiology (EEG-free) | Unique to EEG | Unique to physiology | Shared |
+| --- | --- | --- | --- | --- | --- |
+| Cuneus | 0.196 | 0.066 | 0.130 | 0.000 | 0.066 |
+| Heschl's gyrus | 0.245 | 0.100 | 0.145 | 0.000 | 0.100 |
+| Thalamus | 0.151 | 0.077 | 0.078 | 0.005 | 0.072 |
+| Global signal | 0.246 | 0.110 | 0.136 | 0.001 | 0.109 |
+| Mean of 65 targets | 0.156 | 0.069 | 0.088 | 0.001 | 0.068 |
+
+![Unique and shared variance, EEG against EEG-free physiology](interpretability/physio_partition.png)
+
+- Physiology adds almost nothing unique (R² +0.001 on average). Adding heart rate to EEG raises R by 0.005, which is reliable but tiny.
+- EEG and the body signals share about 44% of what EEG explains; the rest is unique to EEG. With all non-EEG channels, including their EEG-contaminated bands, the shared part rises to 70%.
+- Reading: heart rate, eye movements and muscle tone are co-markers of the same arousal state that EEG reads, not separate routes to BOLD that EEG misses. Respiration and CO₂, the main missing physiological measures, are not recorded in this dataset.
 
 ## 7. Does nonlinearity help?
 
@@ -199,7 +237,9 @@ The literature review set numeric predictions and falsifiers for each analysis, 
 | Hammerstein with K ≤ 5 within 0.01 of ridge (falsifier: loss > 0.02) | −0.015 | Between the two thresholds |
 | Hammerstein splines add ≥ 0.015 over linear | +0.000 | Falsified |
 | Calibrated HRF latency raises R by ≥ 0.02 | +0.006 | Falsified: timing is not the bottleneck |
-PENDING-SCORECARD-ROWS
+| Thalamic lag profile peaks at least 1 s earlier than cortex | 3 s against 7–11 s before the frame | Confirmed |
+| Short-lag lobe at least 50% smaller in Haufe patterns than in raw weights | Persists in patterns as a broadband component in every region | Falsified: favours a shared arousal transient |
+| EEG adds at least 0.10 R over all EEG-free nuisance blocks | 0.381 against 0.257 (+0.124) | Confirmed |
 
 ## 11. Future research directions
 

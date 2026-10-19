@@ -15,14 +15,19 @@ Mean R per held-out scan, averaged within person, then over people (95% CI over 
 | EEG: channels × bins, canonical-HRF weighted (no free lags) | 0.217 (0.147 to 0.287) | -0.164 (-0.214 to -0.114) | 0.212 | 0.126 | 22 |
 | EEG: channels × bins × HRF + 2 derivatives | 0.325 (0.258 to 0.392) | -0.056 (-0.071 to -0.041) | 0.294 | 0.128 | 22 |
 | Time in scan only | -0.010 (-0.030 to 0.009) | -0.392 (-0.465 to -0.318) | -0.007 | 0.001 | 22 |
+| EEG + time in scan | 0.381 (0.306 to 0.456) | -0.000 (-0.001 to +0.001) | 0.344 | 0.144 | 22 |
 | Eye channels (EOG) only | 0.313 (0.253 to 0.372) | -0.068 (-0.092 to -0.044) | 0.276 | 0.100 | 22 |
 | Muscle channels (EMG) only | 0.278 (0.227 to 0.330) | -0.103 (-0.139 to -0.067) | 0.243 | 0.082 | 22 |
 | ECG power + heart rate only | 0.218 (0.164 to 0.272) | -0.163 (-0.223 to -0.103) | 0.196 | 0.038 | 22 |
 | EOG + EMG + ECG + heart rate | 0.334 (0.275 to 0.394) | -0.047 (-0.070 to -0.023) | 0.297 | 0.102 | 22 |
+| EEG + EOG + EMG + ECG + heart rate | 0.386 (0.313 to 0.460) | +0.005 (+0.002 to +0.009) | 0.348 | 0.146 | 22 |
+| 5 EEG bands + physiology | 0.367 (0.298 to 0.437) | -0.014 (-0.028 to +0.000) | 0.330 | 0.128 | 22 |
 | Heart rate only | 0.218 (0.144 to 0.292) | -0.166 (-0.249 to -0.083) | 0.195 | 0.048 | 21 |
 | EOG below 4 Hz only (eye movements, blinks) | 0.194 (0.149 to 0.238) | -0.187 (-0.236 to -0.139) | 0.168 | 0.064 | 22 |
 | EMG above 30 Hz only (muscle) | 0.195 (0.152 to 0.237) | -0.186 (-0.246 to -0.127) | 0.164 | 0.060 | 22 |
 | Heart rate + slow EOG + high EMG | 0.257 (0.204 to 0.310) | -0.124 (-0.169 to -0.080) | 0.218 | 0.079 | 22 |
+| EEG + heart rate + slow EOG + high EMG | 0.385 (0.310 to 0.460) | +0.004 (+0.002 to +0.006) | 0.347 | 0.147 | 22 |
+| EEG + heart rate | 0.386 (0.311 to 0.462) | +0.005 (+0.002 to +0.009) | 0.349 | 0.144 | 22 |
 | EEG only (19 scans) | 0.391 (0.285 to 0.497) |  | 0.354 | 0.120 | 12 |
 | Motion loops only (19 scans) | 0.232 (0.164 to 0.301) | -0.158 (-0.252 to -0.065) | 0.200 | 0.049 | 12 |
 | EEG + motion loops (19 scans) | 0.391 (0.285 to 0.498) | +0.001 (-0.001 to +0.002) | 0.353 | 0.121 | 12 |
@@ -30,6 +35,7 @@ Mean R per held-out scan, averaged within person, then over people (95% CI over 
 | Physiology + motion loops (19 scans) | 0.336 (0.257 to 0.415) | -0.055 (-0.091 to -0.019) | 0.299 | 0.091 | 12 |
 | Heart rate + slow EOG + high EMG (19 scans) | 0.255 (0.175 to 0.335) | -0.136 (-0.209 to -0.062) | 0.225 | 0.066 | 12 |
 | Specific physiology + motion loops (19 scans) | 0.278 (0.201 to 0.355) | -0.112 (-0.178 to -0.047) | 0.245 | 0.069 | 12 |
+| EEG + specific physiology + motion loops (19 scans) | 0.391 (0.285 to 0.496) | +0.000 (-0.003 to +0.004) | 0.352 | 0.123 | 12 |
 
 ## Chance level
 
@@ -58,6 +64,74 @@ Worst: Superior frontal gyrus 0.26, Angular gyrus inferior 0.24, Intraparietal s
 
 Across the 64 regions, predictability tracks how strongly a region follows the global signal: Spearman ρ = +0.65 (p = 7e-09) on raw BOLD, +0.06 (p = 0.6) after GSR.
 
+## EEG versus all non-EEG channels (EOG, EMG, ECG power + heart rate): variance partition (cross-validated R²)
+
+| Target | R² EEG | R² physiology | R² both | Unique EEG | Unique physiology | Shared |
+|---|---|---|---|---|---|---|
+| Cuneus | 0.196 | 0.120 | 0.196 | 0.077 | 0.001 | 0.119 |
+| Heschl's | 0.245 | 0.171 | 0.243 | 0.072 | -0.002 | 0.173 |
+| Mid. frontal | 0.148 | 0.110 | 0.149 | 0.039 | 0.001 | 0.109 |
+| Precuneus | 0.202 | 0.140 | 0.204 | 0.065 | 0.003 | 0.137 |
+| Putamen | 0.108 | 0.106 | 0.115 | 0.010 | 0.007 | 0.098 |
+| Thalamus | 0.151 | 0.126 | 0.160 | 0.034 | 0.009 | 0.116 |
+| Global | 0.246 | 0.185 | 0.249 | 0.064 | 0.004 | 0.181 |
+| Mean of 65 | 0.156 | 0.112 | 0.158 | 0.046 | 0.002 | 0.110 |
+
+## EEG versus EEG-free physiology (heart rate, EOG < 4 Hz, EMG > 30 Hz): variance partition (cross-validated R²)
+
+| Target | R² EEG | R² physiology | R² both | Unique EEG | Unique physiology | Shared |
+|---|---|---|---|---|---|---|
+| Cuneus | 0.196 | 0.066 | 0.196 | 0.130 | -0.000 | 0.066 |
+| Heschl's | 0.245 | 0.100 | 0.245 | 0.145 | -0.000 | 0.100 |
+| Mid. frontal | 0.148 | 0.078 | 0.148 | 0.070 | 0.000 | 0.078 |
+| Precuneus | 0.202 | 0.098 | 0.205 | 0.106 | 0.003 | 0.095 |
+| Putamen | 0.108 | 0.082 | 0.116 | 0.033 | 0.008 | 0.075 |
+| Thalamus | 0.151 | 0.077 | 0.155 | 0.078 | 0.005 | 0.072 |
+| Global | 0.246 | 0.110 | 0.246 | 0.136 | 0.001 | 0.109 |
+| Mean of 65 | 0.156 | 0.069 | 0.157 | 0.088 | 0.001 | 0.068 |
+
+## Rank-1 separable model: an empirical EEG-to-BOLD impulse response
+
+| ROI | Rank-1 CV R | Full ridge CV R | Peak of lag profile (s before frame) | Spectrum sign at alpha (8–13 Hz) |
+|---|---|---|---|---|
+| Cuneus | 0.320 | 0.402 | 7 | negative (-0.003) |
+| Heschl's | 0.366 | 0.463 | 9 | negative (-0.000) |
+| Mid. frontal | 0.285 | 0.339 | 9 | negative (-0.000) |
+| Precuneus | 0.349 | 0.398 | 11 | negative (-0.001) |
+| Putamen | 0.263 | 0.270 | 9 | positive (+0.000) |
+| Thalamus | 0.333 | 0.342 | 3 | positive (+0.001) |
+| Global | 0.336 | 0.453 | 9 | negative (-0.004) |
+
+## Model-free EEG–BOLD coupling
+
+Within-scan correlation of channel-averaged band power with BOLD, averaged over 29 scans; t over scans in brackets; lag of the strongest coupling.
+
+| Target | Band | Strongest r | Lag (s before frame) |
+|---|---|---|---|
+| Cuneus | alpha | -0.250 (t = -12.1) | 9 |
+| Cuneus | theta | -0.139 (t = -7.6) | 11 |
+| Cuneus | beta | -0.234 (t = -9.3) | 9 |
+| Heschl's | alpha | -0.211 (t = -8.4) | 9 |
+| Heschl's | theta | +0.153 (t = +7.4) | 1 |
+| Heschl's | beta | -0.210 (t = -7.0) | 9 |
+| Mid. frontal | alpha | -0.152 (t = -7.6) | 11 |
+| Mid. frontal | theta | -0.126 (t = -8.8) | 17 |
+| Mid. frontal | beta | -0.160 (t = -7.2) | 11 |
+| Precuneus | alpha | -0.194 (t = -7.8) | 9 |
+| Precuneus | theta | -0.135 (t = -7.6) | 17 |
+| Precuneus | beta | -0.199 (t = -7.2) | 11 |
+| Putamen | alpha | -0.099 (t = -4.7) | 11 |
+| Putamen | theta | +0.148 (t = +6.8) | 1 |
+| Putamen | beta | +0.117 (t = +4.5) | 1 |
+| Thalamus | alpha | +0.196 (t = +7.2) | 3 |
+| Thalamus | theta | +0.135 (t = +7.1) | 3 |
+| Thalamus | beta | +0.244 (t = +9.2) | 3 |
+| Global | alpha | -0.258 (t = -11.4) | 9 |
+| Global | theta | -0.152 (t = -8.6) | 17 |
+| Global | beta | -0.256 (t = -8.8) | 9 |
+
+Alpha power couples negatively (r < −0.05 at some lag) with 65 of 65 targets and positively (r > 0.05) with 36; positive: Superior frontal sulcus, Fusiform gyrus, Cingulate cortex posterior, Parieto-occipital sulcus superior, Superior temporal sulcus with angular gyrus, Planum temporale, Cerebellum Crus II, Transverse sinus, Cingulate gyrus mid-posterior, ventricles, Superior frontal gyrus medial, Precuneus superior, Planum polare, Cerebellum I-V, Superior fornix and isthmus, Anterior Cingulate Cortex, Putamen, Cingulate gyrus mid-anterior, Paracentral lobule, Superior rostral gyrus, Precentral gyrus medial, Angular gyrus superior, Supramarginal gyrus, Dorsomedial prefrontal cortex antero-superior, Postcentral gyrus inferior, Callosomarginal sulcus, Paracentral lobule superior, Heschl’s gyrus, Thalamus, Parieto-occipital sulcus anterior, Precuneus anterior, Middle frontal gyrus anterior, Angular gyrus inferior, Central sulcus, Caudate, global signal clean.
+
 ## Is NeuroBOLT a linear band-power model in disguise?
 
 Held-out scans of the authors' split, mean over 6 scans × 7 ROIs.
@@ -66,6 +140,28 @@ Held-out scans of the authors' split, mean over 6 scans × 7 ROIs.
 |---|---|---|---|---|---|
 | NeuroBOLT | 0.912 | 0.852 | 0.465 | 0.491 | 0.504 |
 | NeuroBOLT (published) | 0.851 | 0.803 | 0.437 | 0.468 | 0.504 |
+
+## Permutation importance (same perturbed EEG for every model)
+
+Drop in held-out R when one part of the EEG is swapped with a window ≥ 60 s away; 'moves' is the variance of the prediction change relative to the prediction's variance.
+
+| Part | ridge: ΔR / moves | NeuroBOLT: ΔR / moves | NeuroBOLT (published): ΔR / moves |
+|---|---|---|---|
+| band: above 45 Hz | +0.000 / 0.00 | +0.002 / 0.02 | +0.006 / 0.04 |
+| band: alpha | +0.015 / 0.07 | +0.025 / 0.12 | +0.030 / 0.18 |
+| band: beta | +0.271 / 0.95 | +0.138 / 0.47 | +0.148 / 0.55 |
+| band: delta | +0.034 / 0.12 | +0.108 / 0.52 | +0.122 / 0.57 |
+| band: gamma | +0.014 / 0.14 | +0.002 / 0.01 | +0.002 / 0.03 |
+| band: theta | +0.017 / 0.06 | +0.020 / 0.11 | +0.023 / 0.15 |
+| region: central | +0.010 / 0.05 | +0.003 / 0.01 | +0.006 / 0.02 |
+| region: frontal | +0.086 / 0.32 | +0.035 / 0.17 | +0.028 / 0.16 |
+| region: occipital | +0.018 / 0.06 | +0.025 / 0.10 | +0.050 / 0.19 |
+| region: parietal | +0.017 / 0.09 | +0.020 / 0.10 | +0.031 / 0.15 |
+| region: temporal | +0.033 / 0.16 | +0.040 / 0.21 | +0.034 / 0.21 |
+| segment: 12-8 s before | +0.121 / 0.45 | +0.122 / 0.56 | +0.096 / 0.44 |
+| segment: 16-12 s before | +0.079 / 0.34 | +0.082 / 0.38 | +0.082 / 0.39 |
+| segment: 4-0 s before | +0.187 / 1.01 | +0.196 / 1.12 | +0.187 / 1.19 |
+| segment: 8-4 s before | +0.093 / 0.32 | +0.056 / 0.19 | +0.071 / 0.29 |
 
 ## Linear versus nonlinear readouts of the same band powers (5-fold CV, 7 ROIs)
 

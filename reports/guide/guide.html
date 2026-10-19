@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>EEG, BOLD and the arousal axis: a researcher's guide</title>
+<style>
+@page { size: A4; margin: 18mm 17mm 18mm 17mm;
+  @bottom-right { content: counter(page); font: 8.5pt "Segoe UI", sans-serif; color: #8a877f; }
+  @bottom-left { content: "NeuroBOLT · EEG-to-BOLD research guide · October 2026"; font: 8pt "Segoe UI", sans-serif; color: #8a877f; } }
+@page :first { @bottom-right { content: none; } @bottom-left { content: none; } }
+:root { --ink: #1c1b19; --ink2: #47453f; --muted: #7c7970; --rule: #dcd9d0; --tint: #f4f2ec; --accent: #b8461a; --blue: #2a6bc2; }
+* { box-sizing: border-box; }
+html { font-family: Cambria, Georgia, serif; font-size: 10.4pt; line-height: 1.48; color: var(--ink); }
+body { margin: 0; }
+h1, h2, h3, h4, .eyebrow, th, figcaption, .box-title, .kicker, .toc, .cover-meta { font-family: "Segoe UI", Calibri, sans-serif; }
+h1 { font-size: 25pt; line-height: 1.12; margin: 0 0 10pt; font-weight: 600; letter-spacing: -0.3pt; }
+h2 { font-size: 15pt; margin: 20pt 0 6pt; font-weight: 600; break-after: avoid; border-top: 1.2pt solid var(--ink); padding-top: 6pt; }
+h3 { font-size: 11.6pt; margin: 13pt 0 4pt; font-weight: 600; break-after: avoid; }
+h4 { font-size: 10.2pt; margin: 9pt 0 2pt; font-weight: 600; break-after: avoid; color: var(--ink2); }
+p { margin: 0 0 6pt; }
+ul, ol { margin: 0 0 7pt; padding-left: 15pt; }
+li { margin-bottom: 2.5pt; }
+.eyebrow { font-size: 8.2pt; text-transform: uppercase; letter-spacing: 1.2pt; color: var(--accent); font-weight: 600; margin-bottom: 3pt; }
+.lede { font-size: 12pt; color: var(--ink2); line-height: 1.45; }
+.page-break { break-before: page; }
+.avoid { break-inside: avoid; }
+.box { background: var(--tint); border-left: 3pt solid var(--accent); padding: 7pt 10pt 4pt; margin: 8pt 0 10pt; break-inside: avoid; }
+.box.blue { border-left-color: var(--blue); }
+.box.grey { border-left-color: var(--muted); }
+.box-title { font-weight: 600; font-size: 9.4pt; margin-bottom: 3pt; text-transform: uppercase; letter-spacing: 0.6pt; color: var(--ink2); }
+table { border-collapse: collapse; width: 100%; margin: 6pt 0 10pt; font-family: "Segoe UI", Calibri, sans-serif; font-size: 8.6pt; break-inside: avoid; }
+th { text-align: left; font-weight: 600; color: var(--ink2); border-bottom: 1pt solid var(--ink); padding: 3pt 5pt; }
+td { border-bottom: 0.5pt solid var(--rule); padding: 3pt 5pt; vertical-align: top; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.hl td { background: #fbefe7; }
+figure { margin: 8pt 0 10pt; break-inside: avoid; }
+figure img { width: 100%; display: block; }
+figcaption { font-size: 8.4pt; color: var(--muted); margin-top: 3pt; line-height: 1.35; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+.cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10pt; }
+.stat { font-family: "Segoe UI", sans-serif; }
+.stat b { display: block; font-size: 19pt; color: var(--accent); font-weight: 600; line-height: 1.1; }
+.stat span { font-size: 8.6pt; color: var(--ink2); line-height: 1.3; display: block; }
+.cover { height: 255mm; display: flex; flex-direction: column; justify-content: space-between; }
+.cover h1 { font-size: 30pt; max-width: 150mm; }
+.cover-meta { font-size: 9pt; color: var(--muted); }
+.kicker { font-size: 8.6pt; color: var(--muted); }
+.toc { font-size: 9.2pt; columns: 2; column-gap: 14pt; }
+.toc div { margin-bottom: 2pt; }
+.tag { font-family: "Segoe UI", sans-serif; font-size: 7.6pt; font-weight: 600; padding: 0.5pt 4pt; border-radius: 3pt; background: #ece9e1; color: var(--ink2); white-space: nowrap; }
+.tag.yes { background: #e3efe0; color: #2f5b27; }
+.tag.no { background: #f6e0d6; color: #8a3210; }
+.small { font-size: 8.8pt; }
+.refs { font-size: 8.2pt; line-height: 1.35; }
+.refs li { margin-bottom: 3pt; }
+svg text { font-family: "Segoe UI", sans-serif; }
+</style>
+</head>
+<body>
+
+<!-- ============================== COVER ============================== -->
+<section class="cover">
+  <div>
+    <div class="eyebrow">NeuroBOLT project · research guide</div>
+    <h1>EEG, BOLD and the arousal axis</h1>
+    <p class="lede" style="max-width:150mm">What a year of reproducing and dissecting an EEG-to-fMRI transformer actually taught us, what holds up on a new dataset, a working prototype built on it, and what to do next, written to be learned from and explained to others.</p>
+  </div>
+  <div class="avoid">
+    <div class="cols3" style="margin-bottom:14pt">
+      <div class="stat"><b>0.381 vs 0.336</b><span>Ridge regression beats the NeuroBOLT transformer at predicting a new person's BOLD (mean R, 22 people)</span></div>
+      <div class="stat"><b>~60%</b><span>of what EEG predicts is the brain-wide (global) signal, an arousal read-out</span></div>
+      <div class="stat"><b>EXT_HEADLINE_STAT</b><span>EXT_HEADLINE_TEXT</span></div>
+    </div>
+    <div class="toc">
+      <div>1 · The one-page summary</div>
+      <div>2 · The question and why it matters</div>
+      <div>3 · Key concepts, in depth</div>
+      <div>4 · What we found on the VU data</div>
+      <div>5 · Does it hold on a new dataset?</div>
+      <div>6 · A prototype: the EEG arousal monitor</div>
+      <div>7 · The larger research questions</div>
+      <div>8 · Resources needed</div>
+      <div>9 · Working as a human researcher alongside AI</div>
+      <div>10 · What you are learning, and how to say it</div>
+      <div>References</div>
+    </div>
+    <p class="cover-meta" style="margin-top:14pt">Seamus Taylor · Monash University · October 2026<br>
+    Data: VU resting-state EEG-fMRI (22 people, 29 scans; NeuroBOLT, NeurIPS 2024) and OpenNeuro ds006040 (28 people; Cha et al., Sci Data 2026). Computation: Monash MASSIVE M3. Code and full reports: the project repository.</p>
+  </div>
+</section>
+
+<!-- ============================== 1 SUMMARY ============================== -->
+<section class="page-break">
+<div class="eyebrow">1</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">The one-page summary</h2>
+
+<p><b>The question.</b> Can scalp EEG, cheap and portable, tell us what deep brain activity measured by fMRI is doing in a person the model has never seen? NeuroBOLT (NeurIPS 2024) said yes, using a pretrained EEG transformer. We reproduced it, then took it apart.</p>
+
+<h3>Five things to know</h3>
+<ol>
+<li><b>A simple linear model does better than the transformer.</b> Ridge regression on EEG power in 1 Hz bins over the last 24 s predicts a new person's BOLD at mean R = 0.381 across all 22 people, against 0.336 for NeuroBOLT. NeuroBOLT's pretrained transformer branch contributes nothing; a linear model reproduces its output at R = 0.91.</li>
+<li><b>What EEG predicts is mostly arousal.</b> The best-predicted regions are those that follow the brain-wide global signal. Removing that signal cuts accuracy from 0.34 to 0.14. A one-number vigilance index carries a third of the explained variance, and heart rate alone predicts BOLD at R = 0.22.</li>
+<li><b>It is real physiology, not an artefact.</b> 28 of 29 scans beat their own null; one person's prediction scored against another person's BOLD gives R = 0.00. The model rediscovers the known alpha–BOLD coupling (negative in cortex about 9 s later, positive in the thalamus about 3 s later).</li>
+<li><b>More model capacity does not help at this data size.</b> MLPs, splines, interactions, learned filters and per-person calibration all tie or trail ridge. A compact interpretable model keeps 96% of ridge's skill with 0.2% of its parameters.</li>
+<li><b>EXT_SUMMARY_POINT</b></li>
+</ol>
+
+<h3>What we built</h3>
+<p><b>An EEG arousal monitor</b> (section 6): it estimates, every fMRI volume and from EEG alone, the arousal-driven brain-wide BOLD signal and a vigilance trace, flags low-vigilance periods and scores how much arousal moved in a run. PROTO_SUMMARY</p>
+
+<h3>What this means</h3>
+<p>Resting-state EEG tells us where a person sits on the arousal axis, delayed by the haemodynamic response, and linear models already read all of it. The ceiling is set by how much arousal varies in a recording and by the diversity of the people and sites in the training data, not by model architecture. The open scientific question, and the publishable one, is the <i>region-specific remainder</i>: what EEG predicts about a brain region once the brain-wide signal is removed.</p>
+
+<div class="box">
+<div class="box-title">Decisions this guide asks the team to make</div>
+<ol class="small" style="margin-bottom:3pt">
+<li>Adopt region-specific (global-signal-removed) accuracy and the mismatched-person null as the benchmark for any future EEG-to-fMRI model.</li>
+<li>Fund the external-data track: two to three more open datasets processed through one shared pipeline (section 8).</li>
+<li>Decide whether to develop the arousal monitor towards a real-time pilot in the scanner (section 6).</li>
+</ol>
+</div>
+</section>
+
+<!-- ============================== 2 QUESTION ============================== -->
+<section class="page-break">
+<div class="eyebrow">2</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">The question and why it matters</h2>
+
+<p><b>Two ways of watching the brain.</b> EEG records electrical activity from the scalp with millisecond timing, costs little and fits on a head. fMRI measures the blood-oxygen-level-dependent (BOLD) signal everywhere in the brain, including deep structures such as the thalamus, but needs a scanner, is slow (one image every 2 s) and sees neural activity only through the sluggish blood response. Recording both at once lets us learn the mapping between them.</p>
+
+<p><b>Why predicting fMRI from EEG would matter.</b> If EEG alone could tell us what deep brain regions are doing, we could monitor them outside the scanner: in sleep labs, at the bedside, during neurofeedback, or over days rather than minutes. The test that matters for those uses is <i>cross-subject</i>: train on some people, predict BOLD in someone new.</p>
+
+<p><b>What NeuroBOLT claimed.</b> Li et al. (NeurIPS 2024) combined a pretrained EEG foundation model (LaBraM) with a multi-scale spectral branch and reported mean R = 0.473 for seven brain regions in five held-out people. Our project asked whether that holds up, and if so, what the model has learned.</p>
+
+<figure>
+<svg viewBox="0 0 640 150" width="100%" aria-label="The prediction problem: 24 seconds of EEG before an fMRI frame are summarised as power in 1 Hz bins and 2 s lags, and a model maps them to BOLD in 64 regions plus the global signal">
+  <rect x="4" y="30" width="118" height="80" rx="6" fill="#f4f2ec" stroke="#dcd9d0"/>
+  <text x="63" y="56" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1b19">Scalp EEG</text>
+  <text x="63" y="74" text-anchor="middle" font-size="9.5" fill="#47453f">26 channels</text>
+  <text x="63" y="88" text-anchor="middle" font-size="9.5" fill="#47453f">last 24 s before</text>
+  <text x="63" y="101" text-anchor="middle" font-size="9.5" fill="#47453f">each fMRI frame</text>
+  <path d="M126 70 L156 70" stroke="#7c7970" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="160" y="30" width="140" height="80" rx="6" fill="#f4f2ec" stroke="#dcd9d0"/>
+  <text x="230" y="56" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1b19">Spectral features</text>
+  <text x="230" y="74" text-anchor="middle" font-size="9.5" fill="#47453f">log power, 1–45 Hz</text>
+  <text x="230" y="88" text-anchor="middle" font-size="9.5" fill="#47453f">in 1 Hz bins × 12 lags</text>
+  <text x="230" y="101" text-anchor="middle" font-size="9.5" fill="#47453f">(13,728 numbers)</text>
+  <path d="M304 70 L334 70" stroke="#7c7970" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="338" y="30" width="130" height="80" rx="6" fill="#fbefe7" stroke="#e8c4b0"/>
+  <text x="403" y="56" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1b19">Model</text>
+  <text x="403" y="74" text-anchor="middle" font-size="9.5" fill="#47453f">ridge regression</text>
+  <text x="403" y="88" text-anchor="middle" font-size="9.5" fill="#47453f">or NeuroBOLT</text>
+  <text x="403" y="101" text-anchor="middle" font-size="9.5" fill="#47453f">trained on other people</text>
+  <path d="M472 70 L502 70" stroke="#7c7970" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="506" y="30" width="130" height="80" rx="6" fill="#f4f2ec" stroke="#dcd9d0"/>
+  <text x="571" y="56" text-anchor="middle" font-size="11" font-weight="600" fill="#1c1b19">BOLD at frame t</text>
+  <text x="571" y="74" text-anchor="middle" font-size="9.5" fill="#47453f">64 brain regions</text>
+  <text x="571" y="88" text-anchor="middle" font-size="9.5" fill="#47453f">+ global signal</text>
+  <text x="571" y="101" text-anchor="middle" font-size="9.5" fill="#47453f">scored by correlation R</text>
+  <text x="320" y="140" text-anchor="middle" font-size="9.5" fill="#7c7970">Scored only on people the model never saw. R = correlation over a whole held-out scan.</text>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c7970"/></marker></defs>
+</svg>
+<figcaption>Figure 1. The prediction problem. The model sees only EEG from before the frame, so it is causal and could, in principle, run live.</figcaption>
+</figure>
+
+<h3>The project in three stages</h3>
+<table>
+<tr><th style="width:22%">Stage</th><th>What we did</th><th style="width:30%">Outcome</th></tr>
+<tr><td>Reproduction</td><td>Retrained NeuroBOLT for 7 regions and all 29 scans on M3; scored each held-out scan separately</td><td>Cross-subject result reproduced (0.46 vs 0.473); within-scan result did not (0.38 vs 0.53)</td></tr>
+<tr><td>Hypothesis tests</td><td>33 NeuroBOLT variants, 21 band-power baselines, 5-fold cross-validation over all 22 people</td><td>Ridge wins for 19–20 of 22 people; the paper's split is the easiest of five folds</td></tr>
+<tr><td>Interpretability</td><td>Nulls, whole-brain maps, physiology controls, model dissection, nonlinear tests, an interpretable time-series model, personalisation</td><td>Section 4: the signal is arousal, read linearly through the haemodynamic delay</td></tr>
+<tr><td>External validation and prototype</td><td>A new site (ds006040, 28 people) and an application</td><td>Sections 5 and 6</td></tr>
+</table>
+</section>
+
+<!-- ============================== 3 CONCEPTS ============================== -->
+<section class="page-break">
+<div class="eyebrow">3</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">Key concepts, in depth</h2>
+<p class="kicker">Ten ideas carry every result in this guide. Each comes with why it matters here and the mistake it guards against.</p>
+
+<h3>3.1 The haemodynamic response: BOLD is late and smooth</h3>
+<p>Neurons do not light up fMRI directly. Activity triggers a local blood-flow increase that peaks about 5–6 s later and settles over 15–20 s: the haemodynamic response function (HRF). So BOLD at time <i>t</i> reflects neural activity from roughly <i>t</i> − 4 to <i>t</i> − 12 s. That is why the models look at 24 s of EEG history, and why the most useful EEG is 8–12 s before the frame. The HRF also varies between regions and people by a second or two; a textbook HRF shape fitted to these data loses 40% of the accuracy, so the models learn their own delays.</p>
+
+<h3>3.2 EEG band power and the vigilance index</h3>
+<p>Raw EEG is summarised by its power at each frequency. In eyes-closed rest, <b>alpha</b> (8–13 Hz) is strong when a person is relaxed but awake; as they drift towards sleep, alpha fades and slower <b>theta</b> (4–8 Hz) and <b>delta</b> (1–4 Hz) rise. The ratio of alpha to delta+theta is therefore a standard EEG vigilance index. For twenty years, studies have shown that alpha power goes with <i>lower</i> BOLD in visual and parietal cortex a few seconds later, and with <i>higher</i> BOLD in the thalamus (Goldman et al. 2002; Laufs et al. 2003; de Munck et al. 2007).</p>
+
+<h3>3.3 Encoding models</h3>
+<p>An encoding model predicts a brain measurement from features of the input, here BOLD from EEG features. It is a predictive association, not a causal claim: a good prediction means the EEG carries information about the BOLD, not that one causes the other. Both may follow a third process, which in this project turns out to be arousal.</p>
+
+<h3>3.4 Cross-validation by person, and what <i>n</i> really is</h3>
+<p>Every number here is scored on people the model never saw. The data are split into five groups of people; each group is held out once while the model trains on the rest, and settings such as the penalty are chosen on separate validation people. Two consequences matter. First, a 20-minute scan has 560 frames, but they are strongly autocorrelated, and what we want to generalise across is people: the real sample size is 22, not 16,000. Second, cross-validation with small samples has wide error bars (around ±10% even at 100 samples; Varoquaux 2018), and a single split can mislead. NeuroBOLT's own split turned out to be the easiest of the five (0.46–0.52 against 0.19–0.40 elsewhere).</p>
+
+<h3>3.5 R, R² and paired comparisons</h3>
+<p><b>R</b> is the correlation between predicted and measured BOLD over a held-out scan. <b>R²</b> is the fraction of variance explained, so R = 0.38 means about 14%; halving R quarters the variance explained, which is why "half the R" can be "a third of the variance". To compare two models fairly, compute each person's difference and put a confidence interval on those 22 differences ("paired" comparison). Differences under about 0.02 R are usually within noise here.</p>
+
+<h3>3.6 Null models: what would chance look like?</h3>
+<p>Slow, smooth time series correlate by chance much more than independent numbers do; over a 10-minute scan, chance |R| of 0.1–0.2 is common. Two nulls answer two different worries. A <b>circular-shift null</b> (slide the measured BOLD in time against the prediction) asks whether the scan's own autocorrelation could produce the R. A <b>mismatched-person null</b> (score one person's prediction against another person's BOLD) asks whether something shared by every scan, such as drowsiness that builds the same way in everyone, inflates it. The second is the decisive check, and the literature rarely runs it.</p>
+
+<h3>3.7 The global signal and arousal</h3>
+<p>Averaging BOLD over the whole brain gives the <b>global signal</b>. It is not noise: a large part of it follows arousal, rising as vigilance falls, and it is coupled to heart rate, breathing, pupil size and EEG (Chang et al. 2016; Bolt et al. 2025). Arousal changes BOLD most in sensory cortex and in the opposite direction in parts of the thalamus and cingulate. <b>Global-signal regression (GSR)</b> removes, per scan, the part of each region that follows the global signal, leaving what is region-specific.</p>
+
+<h3>3.8 Ridge regression and why simple models win with few people</h3>
+<p>Ridge regression is linear regression with a penalty that shrinks all weights towards zero, trading a little bias for a large cut in variance. With 13,728 features and 13–17 training people, that trade dominates. Learning theory and benchmarks agree on the general picture:</p>
+<ul class="small">
+<li><b>Bias–variance.</b> A flexible model fits the training people better but varies more between training sets. With few independent units, variance wins unless the extra flexibility matches real structure.</li>
+<li><b>Interpolation and double descent</b> (Belkin et al. 2019; Hastie et al. 2022; Bartlett et al. 2020) explain why very large models can still generalise, but those results rest on specific conditions about the data's covariance and on large samples; in their own analyses, tuned ridge remains hard to beat in the small-sample linear regime.</li>
+<li><b>Scaling laws</b> (Kaplan et al. 2020; Hoffmann et al. 2022): deep networks improve as a power law in data, so a 22-person dataset sits at the very start of the curve. In brain imaging, linear models matched deep ones up to about 10,000 people (Schulz et al. 2020).</li>
+<li><b>Inductive bias.</b> When the true mapping is close to linear in the right features, a model that assumes that structure needs far less data. Log band power with lags is that structure here.</li>
+</ul>
+
+<h3>3.9 Reading a model: weights, patterns and importance</h3>
+<p>With correlated features, raw weights mislead: a weight can be large because it cancels noise in a neighbouring feature. The safe objects (Haufe et al. 2014) are <b>patterns</b> (how each feature co-varies with the model's prediction), <b>group refits</b> (what is lost when a block of features is removed) and <b>matched perturbations</b> (scramble one part of the input and measure the damage). <b>Surrogates</b> help too: if a simple model can reproduce a complex model's output, the complex model has, in effect, learned the simple one.</p>
+
+<h3>3.10 Transfer and domain shift</h3>
+<p>A model trained at one site meets different amplifiers, caps, artefact-cleaning pipelines, scanners and people at another. Some shift is in feature <i>levels</i> (the whole spectrum is louder or quieter), which standardising the new site's EEG with its own statistics can absorb without any fMRI. Some is in the <i>relationship</i> itself, for example eyes open versus eyes closed, where alpha behaves differently. External validation measures how much survives.</p>
+</section>
+
+<!-- ============================== 4 FINDINGS ============================== -->
+<section class="page-break">
+<div class="eyebrow">4</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">What we found on the VU data</h2>
+
+<h3>4.1 Ridge beats NeuroBOLT, for nearly everyone</h3>
+<table>
+<tr><th>5-fold CV, all 22 people (mean R, 7 regions)</th><th class="n">R</th><th class="n">People where ridge wins</th></tr>
+<tr class="hl"><td>Ridge, 1 Hz bins × 24 s</td><td class="n">0.381</td><td class="n">–</td></tr>
+<tr><td>NeuroBOLT, shared model, 24 s window</td><td class="n">0.336</td><td class="n">19 of 22</td></tr>
+<tr><td>NeuroBOLT, shared model, 16 s (paper setting)</td><td class="n">0.323</td><td class="n">20 of 22</td></tr>
+</table>
+<p>Of 33 NeuroBOLT changes, only a longer EEG window helped. Its pretrained LaBraM transformer branch never learned (R = 0.02 alone); the spectral branch did all the work.</p>
+
+<h3>4.2 The prediction is real</h3>
+<figure><img src="fig/nulls.png" alt="Per-scan ridge R sorted, against circular-shift and mismatched-person null bands"><figcaption>Figure 2. Each orange dot is one held-out scan. Grey bars: that scan's circular-shift null; grey band: mismatched-person null. 28 of 29 scans clear their null; the mismatched-person null is centred on zero (−0.003).</figcaption></figure>
+
+<h3>4.3 It is mostly the brain-wide arousal signal</h3>
+<div class="cols">
+<figure><img src="fig/global_loading.png" alt="Region R against correlation with the global signal, before and after GSR"><figcaption>Figure 3. Left: a region is predictable to the extent it follows the global signal (ρ = +0.65 over 64 regions). Right: after GSR the relation vanishes.</figcaption></figure>
+<div>
+<p>Sensory and motor cortex are predicted best (R ≈ 0.43), control and default-mode regions worst (≈ 0.27), which is the spatial signature of arousal. Removing the global signal per scan cuts mean R from 0.34 to 0.14. What survives is far above chance, and concentrated where arousal moves BOLD <i>against</i> cortex: the thalamus (0.28), cerebellum (0.26) and mid-anterior cingulate (0.23).</p>
+<p>Five channel-averaged band powers keep 93% of the skill; scalp topography adds nothing. A one-number vigilance index explains about a third of what the full model explains.</p>
+</div>
+</div>
+
+<h3>4.4 The model reads known physiology through the haemodynamic delay</h3>
+<figure><img src="fig/coupling_vs_pattern.png" alt="Correlation of each frequency and lag with BOLD, model-free and in the model's patterns, for seven regions"><figcaption>Figure 4. Top: model-free correlation of EEG power (frequency on the y axis, seconds before the frame on the x axis) with BOLD, averaged over 29 scans. Bottom: the same for ridge's predictions. Blue: more power goes with lower BOLD; red: higher.</figcaption></figure>
+<ul>
+<li><b>Cortex:</b> alpha and beta power 8–12 s before a frame predict lower BOLD (r ≈ −0.25, t ≈ −12 over scans), the classic inverse coupling seen through the HRF.</li>
+<li><b>Thalamus:</b> the sign flips and the delay shortens; alpha and beta predict higher BOLD with a 3 s lag (r ≈ +0.20 to +0.24), as within-subject studies reported, here holding across people.</li>
+<li><b>The last 4 s:</b> broadband power just before a frame predicts higher BOLD everywhere. This survives in the model's patterns, so it is real; it looks like arousal transients that move EEG and BOLD together.</li>
+</ul>
+
+<h3>4.5 NeuroBOLT learned the same linear map</h3>
+<p>A ridge model trained to imitate NeuroBOLT's own predictions reproduces them at R = 0.91 on held-out scans and predicts BOLD better than NeuroBOLT does (0.491 against 0.465): the non-linear part of its output is mostly noise. Scrambling parts of the EEG moves both models alike, with the last 4 s and the 8–12 s lobe mattering most.</p>
+
+<h3>4.6 Brain or body?</h3>
+<div class="cols">
+<figure><img src="fig/physio_partition.png" alt="Stacked bars of shared and unique cross-validated variance for EEG and EEG-free physiology"><figcaption>Figure 5. Cross-validated variance explained, split into the part shared by EEG and body signals (grey), unique to EEG (orange) and unique to physiology (green, almost nothing).</figcaption></figure>
+<div>
+<p>Arousal also changes heart rate, eye movements, muscle tone and head motion. Using only measures EEG cannot contaminate (heart rate, eye channels below 4 Hz, muscle above 30 Hz), the body predicts BOLD at R = 0.26 with no EEG at all, and heart rate alone at 0.22.</p>
+<p>But everything the body predicts, the EEG already predicts: they share about 44% of EEG's explained variance, and physiology adds almost nothing unique (R² +0.001). Head-motion sensors add nothing beyond EEG. The body signals are co-markers of the same state, not separate routes that EEG misses.</p>
+</div>
+</div>
+
+<h3>4.7 Capacity does not help; structure is low-dimensional</h3>
+<table>
+<tr><th>Readout of the same features</th><th>Protocol</th><th class="n">R (7 regions)</th><th class="n">Δ vs ridge (95% CI)</th></tr>
+<tr><td>MLP, 60 band powers</td><td>5-fold</td><td class="n">0.361</td><td class="n">+0.006 (−0.012, +0.024)</td></tr>
+<tr><td>MLP, 60 band powers</td><td>leave one person out</td><td class="n">0.375</td><td class="n">+0.010 (−0.007, +0.026)</td></tr>
+<tr><td>MLP, 1,560-feature cube</td><td>leave one person out</td><td class="n">0.378</td><td class="n">+0.005 (−0.014, +0.024)</td></tr>
+<tr><td>Additive splines / vigilance × band</td><td>5-fold</td><td class="n">0.347</td><td class="n">−0.008 / −0.008</td></tr>
+<tr><td>Learned frequency bands (end to end)</td><td>5-fold</td><td class="n">0.355</td><td class="n">−0.026</td></tr>
+<tr><td>Person-specific delay from half the scan</td><td>calibrated</td><td class="n">0.406</td><td class="n">+0.006 (−0.019, +0.031)</td></tr>
+<tr class="hl"><td>Interpretable model: 5 shared components, 2,040 parameters</td><td>5-fold, 65 targets</td><td class="n">0.329</td><td class="n">−0.015 vs 0.344 for 892,320 ridge weights</td></tr>
+</table>
+<p>A 2026 preprint (MEL, same data) reported a large MLP gain; under its own leave-one-person-out protocol we find +0.01, not significant. The interpretable "Hammerstein" model, a few shared scalp-spectral components each with its own regional delay kernel, keeps 96% of ridge's skill, and one component alone reaches 88%: the predictable part of resting BOLD is low-dimensional.</p>
+</section>
+
+<!-- ============================== 5 EXTERNAL ============================== -->
+<section class="page-break">
+<div class="eyebrow">5</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">Does it hold on a new dataset?</h2>
+EXT_SECTION
+</section>
+
+<!-- ============================== 6 PROTOTYPE ============================== -->
+<section class="page-break">
+<div class="eyebrow">6</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">A prototype: the EEG arousal monitor</h2>
+PROTO_SECTION
+</section>
+
+<!-- ============================== 7 QUESTIONS ============================== -->
+<section class="page-break">
+<div class="eyebrow">7</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">The larger research questions</h2>
+<p class="kicker">Each question below is answerable with existing open data and a clear test; the first two are the strongest bets for a publication.</p>
+
+<h3>Q1. What does EEG know about a brain region beyond brain state?</h3>
+<p>After removing the global signal, EEG still predicts region-specific BOLD (mean R 0.14), strongest in the thalamus, cerebellum and cingulate. No published EEG-to-fMRI study reports this number. <b>Test:</b> make region-specific accuracy, scored against the mismatched-person null, the primary benchmark; ask whether any model beats ridge there. A positive answer would make two decades of within-subject EEG-fMRI findings testable across people; a negative one would show resting-state EEG-to-fMRI models are vigilance decoders.</p>
+
+<h3>Q2. What sets the ceiling: the model, the data, or the person?</h3>
+<p>Accuracy ranged from 0.23 to 0.52 between groups of people, while the learning curve flattened after about nine training people and capacity added nothing. People whose arousal fluctuates are predictable. <b>Test:</b> train and test across sites and across arousal ranges (sleep recordings), and model accuracy as a function of each run's arousal variance. If sleepier, longer recordings raise the ceiling, the bottleneck is the signal, not the model.</p>
+
+<h3>Q3. Is the thalamic coupling a cross-person marker of arousal regulation?</h3>
+<p>The thalamus is the one region where coupling flips sign and arrives earlier. <b>Test:</b> estimate thalamic and cortical delay kernels per person in larger samples, check test–retest reliability (NATVIEW, ds007216 have repeat sessions), and relate them to behaviour (sustained attention in ds006040's gradCPT task).</p>
+
+<h3>Q4. Can an EEG-derived arousal signal replace or complement physiological recordings in fMRI analysis?</h3>
+<p>EEG explained everything the body signals explained and more. <b>Test:</b> on a dataset with respiration and pulse (ds005795), compare EEG-derived, physiology-derived and fMRI-derived (global signal) arousal regressors for denoising and for connectivity estimates.</p>
+
+<h3>Q5. When does nonlinearity start to pay?</h3>
+<p>Theory predicts deep models need much more data per pattern. <b>Test:</b> pool about 150 people from open datasets and add hours-long sleep recordings; re-run the ridge-versus-MLP comparison with paired per-person tests. The answer decides whether foundation-model approaches are worth their cost in this field.</p>
+
+<h3>Q6. Can the arousal monitor improve real studies?</h3>
+<p><b>Test:</b> a prospective pilot in which the monitor runs live during resting scans, with blinded comparison of flagged periods against eye-tracking and post-scan sleepiness reports.</p>
+</section>
+
+<!-- ============================== 8 RESOURCES ============================== -->
+<section class="page-break">
+<div class="eyebrow">8</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">Resources needed</h2>
+
+<table>
+<tr><th style="width:22%">Resource</th><th>What and why</th><th style="width:24%">Estimate</th></tr>
+<tr><td><b>Data</b></td><td>Open simultaneous EEG-fMRI with rest: ds003768 (33, same TR and amplifier as VU, sleep runs), ds005795 (34, eyes closed, motion loops, respiration), NATVIEW (22 × 2 sessions), ds007216 (24 × 2), ds005127 (16, overnight sleep). About 178 people in total, all CC0/CC BY.</td><td>0.5–1 TB download; free; data-use terms are open</td></tr>
+<tr><td><b>Preprocessing</b></td><td>One shared pipeline for every site: MR artefact correction of EEG where only raw data exist (ds003768), fMRIPrep, DiFuMo-64 extraction. Site differences must not come from different pipelines.</td><td>~3–6 core-hours per person for fMRIPrep; ~1 week of engineering</td></tr>
+<tr><td><b>Compute</b></td><td>Everything in this guide ran on M3: ridge and analyses on CPU nodes, NeuroBOLT and MLPs on single GPUs (4-GPU quota). Pooled 150-person models stay within this.</td><td>&lt; 2,000 CPU-hours and &lt; 300 GPU-hours per study; 2 TB scratch</td></tr>
+<tr><td><b>People and skills</b></td><td>One researcher with signal processing and statistics (core); input from an EEG-fMRI physiologist (arousal, thalamus), an MRI physicist for pipelines, and a statistician for pre-registration and paired designs.</td><td>1 FTE for 6–12 months, plus advisory time</td></tr>
+<tr><td><b>Real-time pilot</b></td><td>Scanner time with simultaneous EEG, a live data stream (BrainVision RDA or LSL), ethics approval, 10–15 participants.</td><td>Ethics 2–3 months; ~20 scanner hours</td></tr>
+<tr><td><b>Time</b></td><td>External validation on two more sets (2 months); region-specific benchmark paper (3–4 months); pooled-data nonlinearity study (4–6 months); real-time pilot (6–9 months).</td><td>About 12 months for the programme</td></tr>
+</table>
+
+<div class="box blue">
+<div class="box-title">Risks worth naming</div>
+<ul class="small">
+<li><b>Pipeline confounds.</b> If sites are preprocessed differently, "site differences" may be pipeline differences. Mitigation: one pipeline, and the target-statistics standardisation of section 5.</li>
+<li><b>Small effects, small samples.</b> Model differences of 0.01–0.02 R need dozens of people to resolve. Mitigation: pre-registered thresholds, paired tests, and pooling.</li>
+<li><b>Over-reading arousal as region-specific function.</b> Always report raw and GSR results side by side.</li>
+</ul>
+</div>
+</section>
+
+<!-- ============================== 9 HUMAN + AI ============================== -->
+<section class="page-break">
+<div class="eyebrow">9</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">Working as a human researcher alongside AI</h2>
+<p>Much of the computation, coding and literature search in this project was done with an AI assistant directing jobs on M3. That changes what the human researcher's job is. This section draws on what current research says about AI capabilities and failure modes, and on this project's own experience, to separate what to delegate from what to own.</p>
+
+<h3>9.1 What the evidence says about AI as a research tool (2025–2026)</h3>
+<table>
+<tr><th style="width:52%">Finding</th><th>What it means for us</th></tr>
+<tr><td><b>Task length is growing fast.</b> The length of software tasks AI agents complete at 50% reliability has doubled roughly every 7 months since 2019 (Kwa et al. 2025, METR).</td><td>Long, well-specified pipelines (fetch data, build features, run cross-validation) are now delegable. Reliability at a given length is still 50%, not 99%: check outputs.</td></tr>
+<tr><td><b>Feeling faster is not being faster.</b> In a randomised trial, experienced developers took 19% longer with early-2025 AI tools, while believing they were 20% faster (Becker et al. 2025, METR).</td><td>Measure your own productivity on real tasks; do not trust the impression of speed.</td></tr>
+<tr><td><b>Replication is harder than description.</b> On PaperBench, the best agent replicated 21% of ICML papers' results, about half the human baseline (Starace et al. 2025); agents describe methods well but lose points executing them.</td><td>Ask the AI to run things, then verify numbers against an independent check (we added nulls, assertions and cross-checks against cached results throughout).</td></tr>
+<tr><td><b>Citations need checking.</b> Papers with at least one fabricated reference rose from about 1 in 2,800 (2023) to 1 in 277 (early 2026) in a 2.5-million-paper biomedical audit (Topaz et al., Lancet 2026); 2.6% of 2025 papers at three CS conferences had a likely hallucinated citation.</td><td>Every reference in this guide was found by search, but treat machine-extracted numbers as unverified until you have read the source. Our literature review flags preprints and machine-extracted figures for that reason.</td></tr>
+<tr><td><b>Models agree too readily.</b> Leading models changed answers to match a user's pushback in 58% of tested cases, sometimes from right to wrong (Fanous et al. 2025, SycEval).</td><td>Do not ask "is this right?" with your preferred answer in the question. Ask for the strongest case against it, and for pre-registered thresholds.</td></tr>
+<tr><td><b>Real discoveries, mostly in reach of search.</b> AI systems resolved several open Erdős problems in 2025–26, but a DeepMind study screening 700 "open" problems concluded that many were open through obscurity rather than difficulty, and several were already solved in the literature (Feng et al. 2026). Google's AI co-scientist produced drug-repurposing hypotheses that worked in vitro, after experts chose which to test (Gottweis et al. 2025).</td><td>AI is strong at breadth: search, recombination, exhaustive checking. Humans still choose which problems matter and which hypotheses are worth testing.</td></tr>
+</table>
+
+<h3>9.2 Where human judgement was decisive in this project</h3>
+<ul>
+<li><b>Shared-reference trap.</b> The eye, muscle and heart channels share the EEG reference, so their power partly <i>is</i> EEG. A naive analysis said "eye channels predict BOLD almost as well as EEG"; the correct control used only measures EEG cannot contaminate. Knowing the recording hardware mattered more than the model.</li>
+<li><b>Choosing the null.</b> Statistical significance per scan was easy; the question that mattered, whether all scans share a time-locked drift, needed a different null. The mismatched-person null answered it.</li>
+<li><b>Not believing a striking preprint.</b> The MEL preprint's MLP gain would have redirected the project. Re-running it under its own protocol showed it does not replicate on our features.</li>
+<li><b>Reading the short-lag lobe.</b> An odd positive term near zero lag could have been dismissed as a weight artefact; checking it in model-free correlations showed it is real and probably arousal transients.</li>
+</ul>
+
+<h3>9.3 Specific findings a human researcher should look into</h3>
+<ol class="small">
+<li><b>Inspect raw EEG at high-leverage moments.</b> Look at the 4 s before frames with the largest predicted BOLD swings: are they arousals, movements, eye opening, or residual artefact?</li>
+<li><b>Check pipeline equivalence.</b> The VU data were cleaned by the authors with tools we did not see; ds006040 with FMRIB and median-template BCG removal. Confirm with the authors what was done, and how ROI series were denoised.</li>
+<li><b>Ask the NeuroBOLT authors</b> how the within-scan epochs were chosen; picking the best test epoch reproduces their 0.53, validation choice gives 0.38.</li>
+<li><b>Read the MEL preprint in full</b> and contact its authors about their preprocessing and protocol before citing the discrepancy.</li>
+<li><b>Interpret the thalamic result physiologically</b> with a domain expert: which nuclei (pulvinar couples the other way), and whether it reflects arousal regulation or vascular timing.</li>
+<li><b>Decide thresholds before results.</b> For each next experiment, write the expected effect and the falsifier first (the literature review's scorecard is a template).</li>
+</ol>
+
+<div class="box">
+<div class="box-title">A working protocol for research with AI</div>
+<ul class="small" style="margin-bottom:2pt">
+<li><b>Delegate breadth, own depth:</b> AI for literature sweeps, scaffolding code, running many controlled variants; you for problem choice, causal interpretation and deciding what counts as surprising.</li>
+<li><b>Pre-register, then run:</b> state expected effects and falsifiers before the AI sees results; it keeps both of you honest.</li>
+<li><b>Demand controls by default:</b> nulls, paired comparisons, a simple baseline and an independent replication for any headline.</li>
+<li><b>Verify the chain, not the prose:</b> spot-check data alignment, counts and units; read primary sources for any number you will repeat.</li>
+<li><b>Keep a decision log</b> (the project's memory notes and reports do this) so that a result can be traced to the code and data that produced it.</li>
+</ul>
+</div>
+</section>
+
+<!-- ============================== 10 LEARNING + COMMS ============================== -->
+<section class="page-break">
+<div class="eyebrow">10</div>
+<h2 style="border-top:none;padding-top:0;margin-top:0">What you are learning, and how to say it</h2>
+
+<h3>10.1 What you are actually learning</h3>
+<table>
+<tr><th style="width:26%">Area</th><th>The transferable lesson</th></tr>
+<tr><td>Neurophysiology</td><td>EEG and BOLD are linked mainly through arousal and neurovascular delay; the thalamus behaves differently from cortex; the global signal is physiology, not just noise.</td></tr>
+<tr><td>Statistics</td><td>The unit of inference is the person; autocorrelated signals need their own nulls; paired designs and confidence intervals over people; small samples have wide error bars.</td></tr>
+<tr><td>Machine learning</td><td>Strong baselines first; capacity must earn its place with data; surrogates and matched perturbations reveal what a model really uses; a striking claim is a hypothesis until replicated under its own protocol.</td></tr>
+<tr><td>Research practice</td><td>Separate reproduction from extension; pre-register thresholds; validate externally; document so others can rerun everything (M3 scripts, memory notes, reports).</td></tr>
+<tr><td>Working with AI</td><td>Specify tasks precisely, check numbers independently, and keep scientific judgement human.</td></tr>
+</table>
+
+<h3>10.2 Three sentences for stakeholders</h3>
+<div class="box blue">
+<ol style="margin-bottom:3pt">
+<li>"A simple, transparent model predicts a new person's fMRI from their EEG better than the published deep-learning model, and we can show exactly what it uses."</li>
+<li>"What EEG mostly tells us about the resting brain is the person's level of alertness, seen through the slow blood response; that holds on an independent dataset EXT_SENTENCE."</li>
+<li>"We have turned that into a working prototype that tracks arousal-driven brain activity from EEG alone, and the next step is to test what EEG knows about specific brain regions beyond alertness."</li>
+</ol>
+</div>
+
+<h3>10.3 What not to claim</h3>
+<ul class="small">
+<li>Not "EEG can replace fMRI": it predicts mainly the brain-wide arousal component; region-specific accuracy is about 0.14.</li>
+<li>Not "deep learning doesn't work for EEG": it does not help <i>at this data size and for this target</i>.</li>
+<li>Not "the authors were wrong": their cross-subject number reproduces on their split; their split was unusually easy.</li>
+<li>Not "EEG causes BOLD changes": these are predictive associations with a shared cause.</li>
+</ul>
+
+<h3>10.4 Questions you will be asked</h3>
+<table>
+<tr><th style="width:36%">Question</th><th>Short answer</th></tr>
+<tr><td>Is R = 0.38 good?</td><td>It is about 14% of variance, well above chance (null ≈ 0.00 ± 0.05) and above the published model; typical within-person EEG-fMRI correlations in the literature are 0.2–0.3.</td></tr>
+<tr><td>Why not just use more data with the transformer?</td><td>That is Q5; theory and our learning curve suggest diversity of people and arousal range matter more than more of the same scans.</td></tr>
+<tr><td>Could it be head motion or the heart?</td><td>Those signals are shared with EEG and add nothing unique; motion loops add +0.001.</td></tr>
+<tr><td>Will it work on other scanners?</td><td>Section 5: EXT_QA</td></tr>
+<tr><td>What is the product?</td><td>An arousal monitor for fMRI sessions and EEG-only settings (section 6); a research tool, not a clinical device.</td></tr>
+</table>
+
+<h3>10.5 Glossary</h3>
+<p class="small"><b>BOLD</b>: the fMRI signal, reflecting blood oxygenation. <b>HRF</b>: the haemodynamic response function, the delayed blood response to neural activity. <b>Alpha/theta/delta</b>: EEG rhythms at 8–13, 4–8 and 1–4 Hz. <b>Global signal</b>: BOLD averaged over the brain. <b>GSR</b>: removing it from each region. <b>Ridge</b>: penalised linear regression. <b>Cross-validation</b>: repeatedly training on some people and testing on others. <b>Null</b>: the distribution of a score when there is no real relation. <b>Haufe pattern</b>: how input features co-vary with a model's output, the readable counterpart of its weights. <b>DiFuMo-64</b>: a 64-region brain atlas. <b>Domain shift</b>: differences between training and deployment data.</p>
+</section>
+
+<!-- ============================== REFERENCES ============================== -->
+<section class="page-break">
+<h2 style="border-top:none;padding-top:0;margin-top:0">References</h2>
+<ol class="refs">
+<li>Bartlett PL, Long PM, Lugosi G, Tsigler A (2020). Benign overfitting in linear regression. <i>PNAS</i> 117:30063–30070.</li>
+<li>Becker J, Rush N, Barnes E, Rein D (2025). Measuring the impact of early-2025 AI on experienced open-source developer productivity. METR; arXiv:2507.09089.</li>
+<li>Belkin M, Hsu D, Ma S, Mandal S (2019). Reconciling modern machine-learning practice and the classical bias–variance trade-off. <i>PNAS</i> 116:15849–15854.</li>
+<li>Bolt T et al. (2025). A unified physiological process links global patterns of functional MRI, respiratory activity and autonomic signalling. <i>Nature Neuroscience</i> 28:1327–1335.</li>
+<li>Cha et al. (2026). Sustained attention task (gradCPT) dataset using simultaneous EEG-fMRI and DTI. <i>Scientific Data</i>, doi:10.1038/s41597-026-06616-6; OpenNeuro ds006040.</li>
+<li>Chang C et al. (2016). Tracking brain arousal fluctuations with fMRI. <i>PNAS</i> 113:4518–4523.</li>
+<li>de Munck JC et al. (2007). The hemodynamic response of the alpha rhythm: an EEG/fMRI study. <i>NeuroImage</i> 35:1142–1151.</li>
+<li>Falahpour M et al. (2018). Template-based prediction of vigilance fluctuations in resting-state fMRI. <i>NeuroImage</i> 174:317–327.</li>
+<li>Fanous A et al. (2025). SycEval: evaluating LLM sycophancy. arXiv:2502.08177.</li>
+<li>Goldman RI, Stern JM, Engel J, Cohen MS (2002). Simultaneous EEG and fMRI of the alpha rhythm. <i>NeuroReport</i> 13:2487–2492.</li>
+<li>Gottweis J et al. (2025). Towards an AI co-scientist. arXiv:2502.18864.</li>
+<li>Hastie T, Montanari A, Rosset S, Tibshirani RJ (2022). Surprises in high-dimensional ridgeless least squares interpolation. <i>Annals of Statistics</i> 50:949–986.</li>
+<li>Haufe S et al. (2014). On the interpretation of weight vectors of linear models in multivariate neuroimaging. <i>NeuroImage</i> 87:96–110.</li>
+<li>Hoffmann J et al. (2022). Training compute-optimal large language models. <i>NeurIPS</i>.</li>
+<li>Kaplan J et al. (2020). Scaling laws for neural language models. arXiv:2001.08361.</li>
+<li>Kwa T et al. (2025). Measuring AI ability to complete long tasks. METR; arXiv:2503.14499.</li>
+<li>Laufs H et al. (2003). EEG-correlated fMRI of human alpha activity. <i>NeuroImage</i> 19:1463–1476.</li>
+<li>Li Y et al. (2024). NeuroBOLT: resting-state EEG-to-fMRI synthesis with multi-dimensional feature mapping. <i>NeurIPS</i>.</li>
+<li>Schulz M-A et al. (2020). Different scaling of linear models and deep learning in UK Biobank brain images versus machine-learning datasets. <i>Nature Communications</i> 11:4238.</li>
+<li>Starace G et al. (2025). PaperBench: evaluating AI's ability to replicate AI research. <i>ICML</i>; arXiv:2504.01848.</li>
+<li>Tagliazucchi E, Laufs H (2014). Decoding wakefulness levels from typical fMRI resting-state data reveals reliable drifts between wakefulness and sleep. <i>Neuron</i> 82:695–708.</li>
+<li>Topaz M et al. (2026). Fabricated citations: an audit across 2.5 million biomedical papers. <i>The Lancet</i> (correspondence).</li>
+<li>Varoquaux G (2018). Cross-validation failure: small sample sizes lead to large error bars. <i>NeuroImage</i> 180:68–77.</li>
+<li>Feng T, Trinh T, Bingham G et al. (2026). Semi-autonomous mathematics discovery with Gemini: a case study on the Erdős problems. arXiv:2601.22401.</li>
+<li>MEL (2026). Preprint, arXiv:2608.29304 (not peer reviewed).</li>
+</ol>
+<p class="small">Full project reports: <i>NeuroBOLT reproduction results</i>, <i>NeuroBOLT hypothesis tests</i>, <i>NeuroBOLT interpretability</i>, <i>NeuroBOLT external validation</i>, and the 117-citation literature review <i>EEG BOLD interpretability and directions</i>, all in the repository's reports folder.</p>
+</section>
+</body>
+</html>
