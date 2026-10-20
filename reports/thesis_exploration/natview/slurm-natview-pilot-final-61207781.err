@@ -1,0 +1,4 @@
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py:264: RuntimeWarning: Data will be preloaded. preload=False or a string preload is not supported when the data is stored in the .set file
+  check=mne.io.read_raw_eeglab(str(pre/f'eeg/{stem}_eeg.set'),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py:264: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  check=mne.io.read_raw_eeglab(str(pre/f'eeg/{stem}_eeg.set'),preload=False,verbose=False)

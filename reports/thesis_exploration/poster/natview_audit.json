@@ -1,0 +1,111 @@
+{
+  "panel": {
+    "outcome": "prediction",
+    "n_people": 6,
+    "n_reserved_people": 8,
+    "n_accepted_people": 6,
+    "n_failed_people": 2,
+    "v1_accepted_people": 1,
+    "pilot_excluded": true,
+    "amendment_role": "secondary exploratory after QC",
+    "scope": "secondary exploratory after metadata-only clock amendment; not original untouched confirmation",
+    "mean": 0.10381261861494206,
+    "ci_low": -0.0001834445760335058,
+    "ci_high": 0.20711321300579907,
+    "predictive_R2": -0.07136653684680766,
+    "predictive_R2_ci95": [
+      -0.10640052437727994,
+      -0.03010601010177824
+    ],
+    "scored_frames": 740,
+    "total_frames": 2304,
+    "metric_label": "Regional r 0.104 [-0.0002, 0.207]",
+    "coverage_caption": "R2 -0.071; 740/2304 frames (32.1%).",
+    "montage_caption": "Frozen VU model/thresholds; 23 target sites include interpolation.",
+    "protocol_sha256": "02f3138499a33c3f683a3c7b17899651bc968dd44ca2791edf7bc96bb71531d7",
+    "model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9"
+  },
+  "source_files": [
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\machine_summary.json",
+      "sha256": "d41d4e425fb68665d9a83e0713d74111b7e796799f927d3eff71158c4e375a70"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\per_person_metrics.csv",
+      "sha256": "a1650ef74b7ae768b268ea75ae4ac4a644580e11b51a119dde4abc4c156b177f"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\machine_summary.json",
+      "sha256": "97cd56568be0a5402615bd875efc87a7860c663d6f881bf4670583a947258f64"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\protocol.json",
+      "sha256": "02f3138499a33c3f683a3c7b17899651bc968dd44ca2791edf7bc96bb71531d7"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\freeze.json",
+      "sha256": "4a7c688d51ccaeebc1a9f8404218a8f03af068f05bb68172527d3d557bfa14c5"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\jobs_sacct_final.psv",
+      "sha256": "68604e8b0ae91f8b81876c312d2b483a3e42abce6957dcb79226b0a25617fa33"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\coverage_QC.csv",
+      "sha256": "c1b5936375c7e4642dc4fe86e0d9520936dbd460496374abbabf7bdd49d949cb"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-04_qc.json",
+      "sha256": "29c65ea237fe37d39ae5fff88b58f5e43d738a0ae614ed045e8b9820508b06f1"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-05_qc.json",
+      "sha256": "fc4ef51ded735eb2a035bd72dc9bb5fa3490b2671430c572d673721f75b6e728"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-06_qc.json",
+      "sha256": "d39e128aabeafcc2bf7cc48bed7aedf5e22422327dc47063ff87ef6b68d43d4b"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-08_qc.json",
+      "sha256": "69d08554d02c86080e668b9a2291c83d2d09f0a9a72ed119a1288f77dbd00ec7"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-10_qc.json",
+      "sha256": "dae052b3bc9254981966e829cb6978aaf4a2a5e03775b5f8af065ea409c156c4"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-11_qc.json",
+      "sha256": "702a689f161286fa045bdb15b28234ba5ef9be728897ab53b6fc832f45f0af92"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-12_qc.json",
+      "sha256": "7ad96ded1b1e000cba58dc9f8d0dcc1855be00fdd147334287b268360aa53ae5"
+    },
+    {
+      "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\natview\\v2\\sub-13_qc.json",
+      "sha256": "9bd61073424eb6b70d2c569bb70a0880aa6f7250cf67c0db4881b680434e93d6"
+    }
+  ],
+  "accepted_ids": [
+    "sub-04",
+    "sub-06",
+    "sub-08",
+    "sub-11",
+    "sub-12",
+    "sub-13"
+  ],
+  "failed_ids": [
+    "sub-05",
+    "sub-10"
+  ],
+  "frame_counts": {
+    "sub-04": 166,
+    "sub-06": 134,
+    "sub-08": 64,
+    "sub-11": 67,
+    "sub-12": 133,
+    "sub-13": 176
+  },
+  "status": "native NATVIEW audit passed"
+}

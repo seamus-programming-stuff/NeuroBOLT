@@ -1,0 +1,15 @@
+Tue Oct 20 03:32:44 PM UTC 2026
+job=61207432 host=m3k020 cpus=4 script=thesis_verify.py args=--out reports/thesis_exploration/data
+b0be6255fb3f9d8f74c421d90041a7d893bf44034d1210175538e88603608fba  scripts/thesis_verify.py
+{
+  "passed": true,
+  "completed_cells": 96,
+  "score_rows": 10368,
+  "outer_test_people": 27,
+  "highest_resource_prediction_archives": 42,
+  "all_arms_use_same_original_test_frames": true,
+  "training_label_budgets_verified": true,
+  "group_separation_verified": true,
+  "source_and_protocol_hashes_verified": true
+}
+Tue Oct 20 03:34:40 PM UTC 2026

@@ -1,0 +1,69 @@
+[
+  {
+    "subject": "sub-04",
+    "n_channels": 58,
+    "missing_common23": [],
+    "metadata_sha256": "2d26baa5551cc792505589abddb5d9d743b862a084f1f5a5eff1057bc5d79b17",
+    "no_outcomes_read": true
+  },
+  {
+    "subject": "sub-05",
+    "n_channels": 58,
+    "missing_common23": [
+      "T8",
+      "CZ"
+    ],
+    "metadata_sha256": "efa2540661d5593aa8f858b048eaf544b89b4562c2393c3d424202ec288cc6a0",
+    "no_outcomes_read": true
+  },
+  {
+    "subject": "sub-06",
+    "n_channels": 51,
+    "missing_common23": [
+      "T8",
+      "FZ",
+      "CZ"
+    ],
+    "metadata_sha256": "21cd140b8066f8b2cbfa2e3727f5687c9834fc52c2eaa1848535bed29ab1b057",
+    "no_outcomes_read": true
+  },
+  {
+    "subject": "sub-08",
+    "n_channels": 60,
+    "missing_common23": [],
+    "metadata_sha256": "a06c88ee50685cba0a8ffc450bd0a6714202b55d661fd801c91eecc7758f1621",
+    "no_outcomes_read": true
+  },
+  {
+    "subject": "sub-10",
+    "n_channels": 61,
+    "missing_common23": [],
+    "metadata_sha256": "922c260d071a3f0b3e5e8c6b203375c85742036dde7d01d4de30eb17aeed8322",
+    "no_outcomes_read": true
+  },
+  {
+    "subject": "sub-11",
+    "n_channels": 60,
+    "missing_common23": [],
+    "metadata_sha256": "330f036dcb5f90e47f0b9c5965b7ba06ec47d362eabac6dcbd191aeba9014b67",
+    "no_outcomes_read": true
+  },
+  {
+    "subject": "sub-12",
+    "n_channels": 57,
+    "missing_common23": [],
+    "metadata_sha256": "eb8ae5cac50ecc6ba22ddfddae6787ed3f0ee178518250a37f6c3a109c2cc959",
+    "no_outcomes_read": true
+  },
+  {
+    "subject": "sub-13",
+    "n_channels": 50,
+    "missing_common23": [
+      "FP1",
+      "FP2",
+      "O2"
+    ],
+    "metadata_sha256": "221aac87da17fb78fa4636283cba3dc6a126aae64361cd2a99fe8d871e54d3b4",
+    "no_outcomes_read": true
+  }
+]

@@ -1,0 +1,5701 @@
+{
+  "subject": "sub-12",
+  "clock_resolved": true,
+  "n_volumes": 288,
+  "sfreq": 250,
+  "raw_R128": 288,
+  "urevent_R128": 288,
+  "processed_R128": 275,
+  "boundary_count_including_start": 19,
+  "original_samples": 155845,
+  "retained_samples": 144379,
+  "removed_samples": 11466,
+  "removed_seconds": 45.864,
+  "original_to_task_offset_seconds": 12.4526,
+  "raw_urevent_offset_max_residual_seconds": 7.460698725481052e-14,
+  "raw_scanner_onsets_task_seconds": [
+    -2.1486,
+    -0.0486,
+    2.0514,
+    4.1514,
+    6.2514,
+    8.3514,
+    10.4514,
+    12.5514,
+    14.6514,
+    16.7514,
+    18.8514,
+    20.9514,
+    23.0514,
+    25.1514,
+    27.2514,
+    29.3514,
+    31.4514,
+    33.5514,
+    35.6514,
+    37.7514,
+    39.8514,
+    41.9514,
+    44.0514,
+    46.1514,
+    48.2514,
+    50.3514,
+    52.4514,
+    54.5514,
+    56.6514,
+    58.7514,
+    60.8514,
+    62.9514,
+    65.0514,
+    67.1514,
+    69.2514,
+    71.3514,
+    73.4514,
+    75.5514,
+    77.6514,
+    79.7514,
+    81.8514,
+    83.9514,
+    86.0514,
+    88.1514,
+    90.2514,
+    92.3514,
+    94.4514,
+    96.5514,
+    98.6514,
+    100.7514,
+    102.8514,
+    104.9514,
+    107.0514,
+    109.1514,
+    111.2514,
+    113.3514,
+    115.4514,
+    117.5514,
+    119.6514,
+    121.7514,
+    123.8514,
+    125.9514,
+    128.0514,
+    130.1514,
+    132.2514,
+    134.3514,
+    136.4514,
+    138.5514,
+    140.6514,
+    142.7514,
+    144.8514,
+    146.9514,
+    149.0514,
+    151.1514,
+    153.2514,
+    155.3514,
+    157.4514,
+    159.5514,
+    161.6514,
+    163.7514,
+    165.8514,
+    167.9514,
+    170.0514,
+    172.1514,
+    174.2514,
+    176.3514,
+    178.4514,
+    180.5514,
+    182.6514,
+    184.7514,
+    186.8514,
+    188.9514,
+    191.0514,
+    193.1514,
+    195.2514,
+    197.3514,
+    199.4514,
+    201.5514,
+    203.6514,
+    205.7514,
+    207.8514,
+    209.9514,
+    212.0514,
+    214.1514,
+    216.2514,
+    218.3514,
+    220.4514,
+    222.5514,
+    224.6514,
+    226.7514,
+    228.8514,
+    230.9514,
+    233.0514,
+    235.1514,
+    237.2514,
+    239.3514,
+    241.4514,
+    243.5514,
+    245.6514,
+    247.7514,
+    249.8514,
+    251.9514,
+    254.0514,
+    256.1514,
+    258.2514,
+    260.3514,
+    262.4514,
+    264.5514,
+    266.6514,
+    268.7514,
+    270.8514,
+    272.9514,
+    275.0514,
+    277.1514,
+    279.2514,
+    281.3514,
+    283.4514,
+    285.5514,
+    287.6514,
+    289.7514,
+    291.8514,
+    293.9514,
+    296.0514,
+    298.1514,
+    300.2514,
+    302.3514,
+    304.4514,
+    306.5514,
+    308.6514,
+    310.7514,
+    312.8514,
+    314.9514,
+    317.0514,
+    319.1514,
+    321.2514,
+    323.3514,
+    325.4514,
+    327.5514,
+    329.6514,
+    331.7514,
+    333.8514,
+    335.9514,
+    338.0514,
+    340.1514,
+    342.2514,
+    344.3514,
+    346.4514,
+    348.5514,
+    350.6514,
+    352.7514,
+    354.8514,
+    356.9514,
+    359.0514,
+    361.1514,
+    363.2514,
+    365.3514,
+    367.4514,
+    369.5514,
+    371.6514,
+    373.7514,
+    375.8514,
+    377.9514,
+    380.0514,
+    382.1514,
+    384.2514,
+    386.3514,
+    388.4514,
+    390.5514,
+    392.6514,
+    394.7514,
+    396.8514,
+    398.9514,
+    401.0514,
+    403.1514,
+    405.2514,
+    407.3514,
+    409.4514,
+    411.5514,
+    413.6514,
+    415.7514,
+    417.8514,
+    419.9514,
+    422.0514,
+    424.1514,
+    426.2514,
+    428.3514,
+    430.4514,
+    432.5514,
+    434.6514,
+    436.7514,
+    438.8514,
+    440.9514,
+    443.0514,
+    445.1514,
+    447.2514,
+    449.3514,
+    451.4514,
+    453.5514,
+    455.6514,
+    457.7514,
+    459.8514,
+    461.9514,
+    464.0514,
+    466.1514,
+    468.2514,
+    470.3514,
+    472.4514,
+    474.5514,
+    476.6514,
+    478.7514,
+    480.8514,
+    482.9514,
+    485.0514,
+    487.1514,
+    489.2514,
+    491.3514,
+    493.4514,
+    495.5514,
+    497.6514,
+    499.7514,
+    501.8514,
+    503.9514,
+    506.0514,
+    508.1514,
+    510.2514,
+    512.3514,
+    514.4514,
+    516.5514,
+    518.6514,
+    520.7514,
+    522.8514,
+    524.9514,
+    527.0514,
+    529.1514,
+    531.2514,
+    533.3514,
+    535.4514,
+    537.5514,
+    539.6514,
+    541.7514,
+    543.8514,
+    545.9514,
+    548.0514,
+    550.1514,
+    552.2514,
+    554.3514,
+    556.4514,
+    558.5514,
+    560.6514,
+    562.7514,
+    564.8514,
+    566.9514,
+    569.0514,
+    571.1514,
+    573.2514,
+    575.3514,
+    577.4514,
+    579.5514,
+    581.6514,
+    583.7514,
+    585.8514,
+    587.9514,
+    590.0514,
+    592.1514,
+    594.2514,
+    596.3514,
+    598.4514,
+    600.5514
+  ],
+  "original_urevent_onsets_recording_seconds": [
+    10.304,
+    12.404,
+    14.504,
+    16.604,
+    18.704,
+    20.804,
+    22.904,
+    25.004,
+    27.104,
+    29.204,
+    31.304,
+    33.404,
+    35.504,
+    37.604,
+    39.704,
+    41.804,
+    43.904,
+    46.004,
+    48.104,
+    50.204,
+    52.304,
+    54.404,
+    56.504,
+    58.604,
+    60.704,
+    62.804,
+    64.904,
+    67.004,
+    69.104,
+    71.204,
+    73.304,
+    75.404,
+    77.504,
+    79.604,
+    81.704,
+    83.804,
+    85.904,
+    88.004,
+    90.104,
+    92.204,
+    94.304,
+    96.404,
+    98.504,
+    100.604,
+    102.704,
+    104.804,
+    106.904,
+    109.004,
+    111.104,
+    113.204,
+    115.304,
+    117.404,
+    119.504,
+    121.604,
+    123.704,
+    125.804,
+    127.904,
+    130.004,
+    132.104,
+    134.204,
+    136.304,
+    138.404,
+    140.504,
+    142.604,
+    144.704,
+    146.804,
+    148.904,
+    151.004,
+    153.104,
+    155.204,
+    157.304,
+    159.404,
+    161.504,
+    163.604,
+    165.704,
+    167.804,
+    169.904,
+    172.004,
+    174.104,
+    176.204,
+    178.304,
+    180.404,
+    182.504,
+    184.604,
+    186.704,
+    188.804,
+    190.904,
+    193.004,
+    195.104,
+    197.204,
+    199.304,
+    201.404,
+    203.504,
+    205.604,
+    207.704,
+    209.804,
+    211.904,
+    214.004,
+    216.104,
+    218.204,
+    220.304,
+    222.404,
+    224.504,
+    226.604,
+    228.704,
+    230.804,
+    232.904,
+    235.004,
+    237.104,
+    239.204,
+    241.304,
+    243.404,
+    245.504,
+    247.604,
+    249.704,
+    251.804,
+    253.904,
+    256.004,
+    258.104,
+    260.204,
+    262.304,
+    264.404,
+    266.504,
+    268.604,
+    270.704,
+    272.804,
+    274.904,
+    277.004,
+    279.104,
+    281.204,
+    283.304,
+    285.404,
+    287.504,
+    289.604,
+    291.704,
+    293.804,
+    295.904,
+    298.004,
+    300.104,
+    302.204,
+    304.304,
+    306.404,
+    308.504,
+    310.604,
+    312.704,
+    314.804,
+    316.904,
+    319.004,
+    321.104,
+    323.204,
+    325.304,
+    327.404,
+    329.504,
+    331.604,
+    333.704,
+    335.804,
+    337.904,
+    340.004,
+    342.104,
+    344.204,
+    346.304,
+    348.404,
+    350.504,
+    352.604,
+    354.704,
+    356.804,
+    358.904,
+    361.004,
+    363.104,
+    365.204,
+    367.304,
+    369.404,
+    371.504,
+    373.604,
+    375.704,
+    377.804,
+    379.904,
+    382.004,
+    384.104,
+    386.204,
+    388.304,
+    390.404,
+    392.504,
+    394.604,
+    396.704,
+    398.804,
+    400.904,
+    403.004,
+    405.104,
+    407.204,
+    409.304,
+    411.404,
+    413.504,
+    415.604,
+    417.704,
+    419.804,
+    421.904,
+    424.004,
+    426.104,
+    428.204,
+    430.304,
+    432.404,
+    434.504,
+    436.604,
+    438.704,
+    440.804,
+    442.904,
+    445.004,
+    447.104,
+    449.204,
+    451.304,
+    453.404,
+    455.504,
+    457.604,
+    459.704,
+    461.804,
+    463.904,
+    466.004,
+    468.104,
+    470.204,
+    472.304,
+    474.404,
+    476.504,
+    478.604,
+    480.704,
+    482.804,
+    484.904,
+    487.004,
+    489.104,
+    491.204,
+    493.304,
+    495.404,
+    497.504,
+    499.604,
+    501.704,
+    503.804,
+    505.904,
+    508.004,
+    510.104,
+    512.204,
+    514.304,
+    516.404,
+    518.504,
+    520.604,
+    522.704,
+    524.804,
+    526.904,
+    529.004,
+    531.104,
+    533.204,
+    535.304,
+    537.404,
+    539.504,
+    541.604,
+    543.704,
+    545.804,
+    547.904,
+    550.004,
+    552.104,
+    554.204,
+    556.304,
+    558.404,
+    560.504,
+    562.604,
+    564.704,
+    566.804,
+    568.904,
+    571.004,
+    573.104,
+    575.204,
+    577.304,
+    579.404,
+    581.504,
+    583.604,
+    585.704,
+    587.804,
+    589.904,
+    592.004,
+    594.104,
+    596.204,
+    598.304,
+    600.404,
+    602.504,
+    604.604,
+    606.704,
+    608.804,
+    610.904,
+    613.004
+  ],
+  "raw_TR_max_error_seconds": 9.103828801926284e-14,
+  "removed_intervals_recording_seconds": [
+    [
+      0.0,
+      13.24
+    ],
+    [
+      13.94,
+      14.94
+    ],
+    [
+      48.004,
+      49.188
+    ],
+    [
+      160.304,
+      162.324
+    ],
+    [
+      162.684,
+      164.96
+    ],
+    [
+      168.672,
+      169.164
+    ],
+    [
+      169.86,
+      170.796
+    ],
+    [
+      176.74,
+      177.48
+    ],
+    [
+      311.712,
+      312.4
+    ],
+    [
+      412.432,
+      413.616
+    ],
+    [
+      466.58,
+      467.32
+    ],
+    [
+      477.764,
+      478.452
+    ],
+    [
+      519.628,
+      525.976
+    ],
+    [
+      542.604,
+      543.592
+    ],
+    [
+      552.352,
+      552.844
+    ],
+    [
+      564.48,
+      567.348
+    ],
+    [
+      611.996,
+      612.684
+    ],
+    [
+      613.992,
+      623.284
+    ]
+  ],
+  "boundaries": [
+    {
+      "latency_1based": 0.5,
+      "removed_samples": 1950.0
+    },
+    {
+      "latency_1based": 175.5,
+      "removed_samples": 250.0
+    },
+    {
+      "latency_1based": 8441.5,
+      "removed_samples": 296.0
+    },
+    {
+      "latency_1based": 36220.5,
+      "removed_samples": 505.0
+    },
+    {
+      "latency_1based": 36310.5,
+      "removed_samples": 335.0
+    },
+    {
+      "latency_1based": 37238.5,
+      "removed_samples": 123.0
+    },
+    {
+      "latency_1based": 37412.5,
+      "removed_samples": 234.0
+    },
+    {
+      "latency_1based": 38898.5,
+      "removed_samples": 185.0
+    },
+    {
+      "latency_1based": 72456.5,
+      "removed_samples": 172.0
+    },
+    {
+      "latency_1based": 97464.5,
+      "removed_samples": 296.0
+    },
+    {
+      "latency_1based": 110705.5,
+      "removed_samples": 185.0
+    },
+    {
+      "latency_1based": 113316.5,
+      "removed_samples": 172.0
+    },
+    {
+      "latency_1based": 123610.5,
+      "removed_samples": 760.0
+    },
+    {
+      "latency_1based": 127767.5,
+      "removed_samples": 247.0
+    },
+    {
+      "latency_1based": 129957.5,
+      "removed_samples": 123.0
+    },
+    {
+      "latency_1based": 132866.5,
+      "removed_samples": 717.0
+    },
+    {
+      "latency_1based": 144028.5,
+      "removed_samples": 172.0
+    },
+    {
+      "latency_1based": 144355.5,
+      "removed_samples": 1015.0
+    }
+  ],
+  "boundary_duration_discrepancies": [
+    {
+      "boundary_latency_1based": 36310.5,
+      "stored_duration_samples": 335.0,
+      "mask_removed_samples": 569,
+      "physical_gap_start_sample": 40671,
+      "physical_gap_stop_sample": 41240
+    },
+    {
+      "boundary_latency_1based": 123610.5,
+      "stored_duration_samples": 760.0,
+      "mask_removed_samples": 1587,
+      "physical_gap_start_sample": 129907,
+      "physical_gap_stop_sample": 131494
+    },
+    {
+      "boundary_latency_1based": 144355.5,
+      "stored_duration_samples": 1015.0,
+      "mask_removed_samples": 2323,
+      "physical_gap_start_sample": 153498,
+      "physical_gap_stop_sample": 155821
+    }
+  ],
+  "boundary_discrepancy_policy": "preserve stored durations; use exact cumulative clean_sample_mask only if every surviving event/urevent anchor agrees within 1.01 samples and every interior mask gap has a matching boundary position",
+  "all_surviving_anchor_count": 1732,
+  "event_volume_mapping": [
+    {
+      "volume": 3,
+      "event_sample_1based": 592.0,
+      "urevent_sample_1based": 4152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 36
+    },
+    {
+      "volume": 4,
+      "event_sample_1based": 1117.0,
+      "urevent_sample_1based": 4677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 43
+    },
+    {
+      "volume": 5,
+      "event_sample_1based": 1642.0,
+      "urevent_sample_1based": 5202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 49
+    },
+    {
+      "volume": 6,
+      "event_sample_1based": 2167.0,
+      "urevent_sample_1based": 5727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 56
+    },
+    {
+      "volume": 7,
+      "event_sample_1based": 2692.0,
+      "urevent_sample_1based": 6252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 64
+    },
+    {
+      "volume": 8,
+      "event_sample_1based": 3217.0,
+      "urevent_sample_1based": 6777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 71
+    },
+    {
+      "volume": 9,
+      "event_sample_1based": 3742.0,
+      "urevent_sample_1based": 7302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 77
+    },
+    {
+      "volume": 10,
+      "event_sample_1based": 4267.0,
+      "urevent_sample_1based": 7827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 83
+    },
+    {
+      "volume": 11,
+      "event_sample_1based": 4792.0,
+      "urevent_sample_1based": 8352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 89
+    },
+    {
+      "volume": 12,
+      "event_sample_1based": 5317.0,
+      "urevent_sample_1based": 8877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 96
+    },
+    {
+      "volume": 13,
+      "event_sample_1based": 5842.0,
+      "urevent_sample_1based": 9402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 103
+    },
+    {
+      "volume": 14,
+      "event_sample_1based": 6367.0,
+      "urevent_sample_1based": 9927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 109
+    },
+    {
+      "volume": 15,
+      "event_sample_1based": 6892.0,
+      "urevent_sample_1based": 10452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 115
+    },
+    {
+      "volume": 16,
+      "event_sample_1based": 7417.0,
+      "urevent_sample_1based": 10977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 121
+    },
+    {
+      "volume": 17,
+      "event_sample_1based": 7942.0,
+      "urevent_sample_1based": 11502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 127
+    },
+    {
+      "volume": 19,
+      "event_sample_1based": 8696.0,
+      "urevent_sample_1based": 12552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 140
+    },
+    {
+      "volume": 20,
+      "event_sample_1based": 9221.0,
+      "urevent_sample_1based": 13077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 146
+    },
+    {
+      "volume": 21,
+      "event_sample_1based": 9746.0,
+      "urevent_sample_1based": 13602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 152
+    },
+    {
+      "volume": 22,
+      "event_sample_1based": 10271.0,
+      "urevent_sample_1based": 14127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 160
+    },
+    {
+      "volume": 23,
+      "event_sample_1based": 10796.0,
+      "urevent_sample_1based": 14652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 166
+    },
+    {
+      "volume": 24,
+      "event_sample_1based": 11321.0,
+      "urevent_sample_1based": 15177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 172
+    },
+    {
+      "volume": 25,
+      "event_sample_1based": 11846.0,
+      "urevent_sample_1based": 15702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 178
+    },
+    {
+      "volume": 26,
+      "event_sample_1based": 12371.0,
+      "urevent_sample_1based": 16227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 184
+    },
+    {
+      "volume": 27,
+      "event_sample_1based": 12896.0,
+      "urevent_sample_1based": 16752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 192
+    },
+    {
+      "volume": 28,
+      "event_sample_1based": 13421.0,
+      "urevent_sample_1based": 17277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 198
+    },
+    {
+      "volume": 29,
+      "event_sample_1based": 13946.0,
+      "urevent_sample_1based": 17802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 204
+    },
+    {
+      "volume": 30,
+      "event_sample_1based": 14471.0,
+      "urevent_sample_1based": 18327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 210
+    },
+    {
+      "volume": 31,
+      "event_sample_1based": 14996.0,
+      "urevent_sample_1based": 18852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 217
+    },
+    {
+      "volume": 32,
+      "event_sample_1based": 15521.0,
+      "urevent_sample_1based": 19377.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 224
+    },
+    {
+      "volume": 33,
+      "event_sample_1based": 16046.0,
+      "urevent_sample_1based": 19902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 230
+    },
+    {
+      "volume": 34,
+      "event_sample_1based": 16571.0,
+      "urevent_sample_1based": 20427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 236
+    },
+    {
+      "volume": 35,
+      "event_sample_1based": 17096.0,
+      "urevent_sample_1based": 20952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 242
+    },
+    {
+      "volume": 36,
+      "event_sample_1based": 17621.0,
+      "urevent_sample_1based": 21477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 248
+    },
+    {
+      "volume": 37,
+      "event_sample_1based": 18146.0,
+      "urevent_sample_1based": 22002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 255
+    },
+    {
+      "volume": 38,
+      "event_sample_1based": 18671.0,
+      "urevent_sample_1based": 22527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 261
+    },
+    {
+      "volume": 39,
+      "event_sample_1based": 19196.0,
+      "urevent_sample_1based": 23052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 267
+    },
+    {
+      "volume": 40,
+      "event_sample_1based": 19721.0,
+      "urevent_sample_1based": 23577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 273
+    },
+    {
+      "volume": 41,
+      "event_sample_1based": 20246.0,
+      "urevent_sample_1based": 24102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 279
+    },
+    {
+      "volume": 42,
+      "event_sample_1based": 20771.0,
+      "urevent_sample_1based": 24627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 287
+    },
+    {
+      "volume": 43,
+      "event_sample_1based": 21296.0,
+      "urevent_sample_1based": 25152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 293
+    },
+    {
+      "volume": 44,
+      "event_sample_1based": 21821.0,
+      "urevent_sample_1based": 25677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 299
+    },
+    {
+      "volume": 45,
+      "event_sample_1based": 22346.0,
+      "urevent_sample_1based": 26202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 305
+    },
+    {
+      "volume": 46,
+      "event_sample_1based": 22871.0,
+      "urevent_sample_1based": 26727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 311
+    },
+    {
+      "volume": 47,
+      "event_sample_1based": 23396.0,
+      "urevent_sample_1based": 27252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 318
+    },
+    {
+      "volume": 48,
+      "event_sample_1based": 23921.0,
+      "urevent_sample_1based": 27777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 324
+    },
+    {
+      "volume": 49,
+      "event_sample_1based": 24446.0,
+      "urevent_sample_1based": 28302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 330
+    },
+    {
+      "volume": 50,
+      "event_sample_1based": 24971.0,
+      "urevent_sample_1based": 28827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 336
+    },
+    {
+      "volume": 51,
+      "event_sample_1based": 25496.0,
+      "urevent_sample_1based": 29352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 343
+    },
+    {
+      "volume": 52,
+      "event_sample_1based": 26021.0,
+      "urevent_sample_1based": 29877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 350
+    },
+    {
+      "volume": 53,
+      "event_sample_1based": 26546.0,
+      "urevent_sample_1based": 30402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 356
+    },
+    {
+      "volume": 54,
+      "event_sample_1based": 27071.0,
+      "urevent_sample_1based": 30927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 362
+    },
+    {
+      "volume": 55,
+      "event_sample_1based": 27596.0,
+      "urevent_sample_1based": 31452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 368
+    },
+    {
+      "volume": 56,
+      "event_sample_1based": 28121.0,
+      "urevent_sample_1based": 31977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 374
+    },
+    {
+      "volume": 57,
+      "event_sample_1based": 28646.0,
+      "urevent_sample_1based": 32502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 380
+    },
+    {
+      "volume": 58,
+      "event_sample_1based": 29171.0,
+      "urevent_sample_1based": 33027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 387
+    },
+    {
+      "volume": 59,
+      "event_sample_1based": 29696.0,
+      "urevent_sample_1based": 33552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 393
+    },
+    {
+      "volume": 60,
+      "event_sample_1based": 30221.0,
+      "urevent_sample_1based": 34077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 399
+    },
+    {
+      "volume": 61,
+      "event_sample_1based": 30746.0,
+      "urevent_sample_1based": 34602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 405
+    },
+    {
+      "volume": 62,
+      "event_sample_1based": 31271.0,
+      "urevent_sample_1based": 35127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 412
+    },
+    {
+      "volume": 63,
+      "event_sample_1based": 31796.0,
+      "urevent_sample_1based": 35652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 418
+    },
+    {
+      "volume": 64,
+      "event_sample_1based": 32321.0,
+      "urevent_sample_1based": 36177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 425
+    },
+    {
+      "volume": 65,
+      "event_sample_1based": 32846.0,
+      "urevent_sample_1based": 36702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 431
+    },
+    {
+      "volume": 66,
+      "event_sample_1based": 33371.0,
+      "urevent_sample_1based": 37227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 437
+    },
+    {
+      "volume": 67,
+      "event_sample_1based": 33896.0,
+      "urevent_sample_1based": 37752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 444
+    },
+    {
+      "volume": 68,
+      "event_sample_1based": 34421.0,
+      "urevent_sample_1based": 38277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 450
+    },
+    {
+      "volume": 69,
+      "event_sample_1based": 34946.0,
+      "urevent_sample_1based": 38802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 456
+    },
+    {
+      "volume": 70,
+      "event_sample_1based": 35471.0,
+      "urevent_sample_1based": 39327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 463
+    },
+    {
+      "volume": 71,
+      "event_sample_1based": 35996.0,
+      "urevent_sample_1based": 39852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 469
+    },
+    {
+      "volume": 74,
+      "event_sample_1based": 36497.0,
+      "urevent_sample_1based": 41427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 489
+    },
+    {
+      "volume": 75,
+      "event_sample_1based": 37022.0,
+      "urevent_sample_1based": 41952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 495
+    },
+    {
+      "volume": 77,
+      "event_sample_1based": 37715.0,
+      "urevent_sample_1based": 43002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 507
+    },
+    {
+      "volume": 78,
+      "event_sample_1based": 38240.0,
+      "urevent_sample_1based": 43527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 514
+    },
+    {
+      "volume": 79,
+      "event_sample_1based": 38765.0,
+      "urevent_sample_1based": 44052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 520
+    },
+    {
+      "volume": 80,
+      "event_sample_1based": 39105.0,
+      "urevent_sample_1based": 44577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 526
+    },
+    {
+      "volume": 81,
+      "event_sample_1based": 39630.0,
+      "urevent_sample_1based": 45102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 532
+    },
+    {
+      "volume": 82,
+      "event_sample_1based": 40155.0,
+      "urevent_sample_1based": 45627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 539
+    },
+    {
+      "volume": 83,
+      "event_sample_1based": 40680.0,
+      "urevent_sample_1based": 46152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 545
+    },
+    {
+      "volume": 84,
+      "event_sample_1based": 41205.0,
+      "urevent_sample_1based": 46677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 551
+    },
+    {
+      "volume": 85,
+      "event_sample_1based": 41730.0,
+      "urevent_sample_1based": 47202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 557
+    },
+    {
+      "volume": 86,
+      "event_sample_1based": 42255.0,
+      "urevent_sample_1based": 47727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 564
+    },
+    {
+      "volume": 87,
+      "event_sample_1based": 42780.0,
+      "urevent_sample_1based": 48252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 571
+    },
+    {
+      "volume": 88,
+      "event_sample_1based": 43305.0,
+      "urevent_sample_1based": 48777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 577
+    },
+    {
+      "volume": 89,
+      "event_sample_1based": 43830.0,
+      "urevent_sample_1based": 49302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 583
+    },
+    {
+      "volume": 90,
+      "event_sample_1based": 44355.0,
+      "urevent_sample_1based": 49827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 589
+    },
+    {
+      "volume": 91,
+      "event_sample_1based": 44880.0,
+      "urevent_sample_1based": 50352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 595
+    },
+    {
+      "volume": 92,
+      "event_sample_1based": 45405.0,
+      "urevent_sample_1based": 50877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 602
+    },
+    {
+      "volume": 93,
+      "event_sample_1based": 45930.0,
+      "urevent_sample_1based": 51402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 608
+    },
+    {
+      "volume": 94,
+      "event_sample_1based": 46455.0,
+      "urevent_sample_1based": 51927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 614
+    },
+    {
+      "volume": 95,
+      "event_sample_1based": 46980.0,
+      "urevent_sample_1based": 52452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 620
+    },
+    {
+      "volume": 96,
+      "event_sample_1based": 47505.0,
+      "urevent_sample_1based": 52977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 626
+    },
+    {
+      "volume": 97,
+      "event_sample_1based": 48030.0,
+      "urevent_sample_1based": 53502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 632
+    },
+    {
+      "volume": 98,
+      "event_sample_1based": 48555.0,
+      "urevent_sample_1based": 54027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 638
+    },
+    {
+      "volume": 99,
+      "event_sample_1based": 49080.0,
+      "urevent_sample_1based": 54552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 644
+    },
+    {
+      "volume": 100,
+      "event_sample_1based": 49605.0,
+      "urevent_sample_1based": 55077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 650
+    },
+    {
+      "volume": 101,
+      "event_sample_1based": 50130.0,
+      "urevent_sample_1based": 55602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 656
+    },
+    {
+      "volume": 102,
+      "event_sample_1based": 50655.0,
+      "urevent_sample_1based": 56127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 663
+    },
+    {
+      "volume": 103,
+      "event_sample_1based": 51180.0,
+      "urevent_sample_1based": 56652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 669
+    },
+    {
+      "volume": 104,
+      "event_sample_1based": 51705.0,
+      "urevent_sample_1based": 57177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 676
+    },
+    {
+      "volume": 105,
+      "event_sample_1based": 52230.0,
+      "urevent_sample_1based": 57702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 682
+    },
+    {
+      "volume": 106,
+      "event_sample_1based": 52755.0,
+      "urevent_sample_1based": 58227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 688
+    },
+    {
+      "volume": 107,
+      "event_sample_1based": 53280.0,
+      "urevent_sample_1based": 58752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 695
+    },
+    {
+      "volume": 108,
+      "event_sample_1based": 53805.0,
+      "urevent_sample_1based": 59277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 701
+    },
+    {
+      "volume": 109,
+      "event_sample_1based": 54330.0,
+      "urevent_sample_1based": 59802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 707
+    },
+    {
+      "volume": 110,
+      "event_sample_1based": 54855.0,
+      "urevent_sample_1based": 60327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 713
+    },
+    {
+      "volume": 111,
+      "event_sample_1based": 55380.0,
+      "urevent_sample_1based": 60852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 719
+    },
+    {
+      "volume": 112,
+      "event_sample_1based": 55905.0,
+      "urevent_sample_1based": 61377.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 726
+    },
+    {
+      "volume": 113,
+      "event_sample_1based": 56430.0,
+      "urevent_sample_1based": 61902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 732
+    },
+    {
+      "volume": 114,
+      "event_sample_1based": 56955.0,
+      "urevent_sample_1based": 62427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 738
+    },
+    {
+      "volume": 115,
+      "event_sample_1based": 57480.0,
+      "urevent_sample_1based": 62952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 744
+    },
+    {
+      "volume": 116,
+      "event_sample_1based": 58005.0,
+      "urevent_sample_1based": 63477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 751
+    },
+    {
+      "volume": 117,
+      "event_sample_1based": 58530.0,
+      "urevent_sample_1based": 64002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 757
+    },
+    {
+      "volume": 118,
+      "event_sample_1based": 59055.0,
+      "urevent_sample_1based": 64527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 763
+    },
+    {
+      "volume": 119,
+      "event_sample_1based": 59580.0,
+      "urevent_sample_1based": 65052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 769
+    },
+    {
+      "volume": 120,
+      "event_sample_1based": 60105.0,
+      "urevent_sample_1based": 65577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 775
+    },
+    {
+      "volume": 121,
+      "event_sample_1based": 60630.0,
+      "urevent_sample_1based": 66102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 781
+    },
+    {
+      "volume": 122,
+      "event_sample_1based": 61155.0,
+      "urevent_sample_1based": 66627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 788
+    },
+    {
+      "volume": 123,
+      "event_sample_1based": 61680.0,
+      "urevent_sample_1based": 67152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 794
+    },
+    {
+      "volume": 124,
+      "event_sample_1based": 62205.0,
+      "urevent_sample_1based": 67677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 800
+    },
+    {
+      "volume": 125,
+      "event_sample_1based": 62730.0,
+      "urevent_sample_1based": 68202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 807
+    },
+    {
+      "volume": 126,
+      "event_sample_1based": 63255.0,
+      "urevent_sample_1based": 68727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 813
+    },
+    {
+      "volume": 127,
+      "event_sample_1based": 63780.0,
+      "urevent_sample_1based": 69252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 820
+    },
+    {
+      "volume": 128,
+      "event_sample_1based": 64305.0,
+      "urevent_sample_1based": 69777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 826
+    },
+    {
+      "volume": 129,
+      "event_sample_1based": 64830.0,
+      "urevent_sample_1based": 70302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 832
+    },
+    {
+      "volume": 130,
+      "event_sample_1based": 65355.0,
+      "urevent_sample_1based": 70827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 838
+    },
+    {
+      "volume": 131,
+      "event_sample_1based": 65880.0,
+      "urevent_sample_1based": 71352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 844
+    },
+    {
+      "volume": 132,
+      "event_sample_1based": 66405.0,
+      "urevent_sample_1based": 71877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 851
+    },
+    {
+      "volume": 133,
+      "event_sample_1based": 66930.0,
+      "urevent_sample_1based": 72402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 857
+    },
+    {
+      "volume": 134,
+      "event_sample_1based": 67455.0,
+      "urevent_sample_1based": 72927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 864
+    },
+    {
+      "volume": 135,
+      "event_sample_1based": 67980.0,
+      "urevent_sample_1based": 73452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 870
+    },
+    {
+      "volume": 136,
+      "event_sample_1based": 68505.0,
+      "urevent_sample_1based": 73977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 876
+    },
+    {
+      "volume": 137,
+      "event_sample_1based": 69030.0,
+      "urevent_sample_1based": 74502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 882
+    },
+    {
+      "volume": 138,
+      "event_sample_1based": 69555.0,
+      "urevent_sample_1based": 75027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 888
+    },
+    {
+      "volume": 139,
+      "event_sample_1based": 70080.0,
+      "urevent_sample_1based": 75552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 894
+    },
+    {
+      "volume": 140,
+      "event_sample_1based": 70605.0,
+      "urevent_sample_1based": 76077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 900
+    },
+    {
+      "volume": 141,
+      "event_sample_1based": 71130.0,
+      "urevent_sample_1based": 76602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 907
+    },
+    {
+      "volume": 142,
+      "event_sample_1based": 71655.0,
+      "urevent_sample_1based": 77127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 914
+    },
+    {
+      "volume": 143,
+      "event_sample_1based": 72180.0,
+      "urevent_sample_1based": 77652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 920
+    },
+    {
+      "volume": 144,
+      "event_sample_1based": 72533.0,
+      "urevent_sample_1based": 78177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 926
+    },
+    {
+      "volume": 145,
+      "event_sample_1based": 73058.0,
+      "urevent_sample_1based": 78702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 932
+    },
+    {
+      "volume": 146,
+      "event_sample_1based": 73583.0,
+      "urevent_sample_1based": 79227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 938
+    },
+    {
+      "volume": 147,
+      "event_sample_1based": 74108.0,
+      "urevent_sample_1based": 79752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 945
+    },
+    {
+      "volume": 148,
+      "event_sample_1based": 74633.0,
+      "urevent_sample_1based": 80277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 951
+    },
+    {
+      "volume": 149,
+      "event_sample_1based": 75158.0,
+      "urevent_sample_1based": 80802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 958
+    },
+    {
+      "volume": 150,
+      "event_sample_1based": 75683.0,
+      "urevent_sample_1based": 81327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 964
+    },
+    {
+      "volume": 151,
+      "event_sample_1based": 76208.0,
+      "urevent_sample_1based": 81852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 970
+    },
+    {
+      "volume": 152,
+      "event_sample_1based": 76733.0,
+      "urevent_sample_1based": 82377.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 977
+    },
+    {
+      "volume": 153,
+      "event_sample_1based": 77258.0,
+      "urevent_sample_1based": 82902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 983
+    },
+    {
+      "volume": 154,
+      "event_sample_1based": 77783.0,
+      "urevent_sample_1based": 83427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 989
+    },
+    {
+      "volume": 155,
+      "event_sample_1based": 78308.0,
+      "urevent_sample_1based": 83952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 995
+    },
+    {
+      "volume": 156,
+      "event_sample_1based": 78833.0,
+      "urevent_sample_1based": 84477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1001
+    },
+    {
+      "volume": 157,
+      "event_sample_1based": 79358.0,
+      "urevent_sample_1based": 85002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1007
+    },
+    {
+      "volume": 158,
+      "event_sample_1based": 79883.0,
+      "urevent_sample_1based": 85527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1014
+    },
+    {
+      "volume": 159,
+      "event_sample_1based": 80408.0,
+      "urevent_sample_1based": 86052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1020
+    },
+    {
+      "volume": 160,
+      "event_sample_1based": 80933.0,
+      "urevent_sample_1based": 86577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1026
+    },
+    {
+      "volume": 161,
+      "event_sample_1based": 81458.0,
+      "urevent_sample_1based": 87102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1032
+    },
+    {
+      "volume": 162,
+      "event_sample_1based": 81983.0,
+      "urevent_sample_1based": 87627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1039
+    },
+    {
+      "volume": 163,
+      "event_sample_1based": 82508.0,
+      "urevent_sample_1based": 88152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1045
+    },
+    {
+      "volume": 164,
+      "event_sample_1based": 83033.0,
+      "urevent_sample_1based": 88677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1052
+    },
+    {
+      "volume": 165,
+      "event_sample_1based": 83558.0,
+      "urevent_sample_1based": 89202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1058
+    },
+    {
+      "volume": 166,
+      "event_sample_1based": 84083.0,
+      "urevent_sample_1based": 89727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1064
+    },
+    {
+      "volume": 167,
+      "event_sample_1based": 84608.0,
+      "urevent_sample_1based": 90252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1071
+    },
+    {
+      "volume": 168,
+      "event_sample_1based": 85133.0,
+      "urevent_sample_1based": 90777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1077
+    },
+    {
+      "volume": 169,
+      "event_sample_1based": 85658.0,
+      "urevent_sample_1based": 91302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1083
+    },
+    {
+      "volume": 170,
+      "event_sample_1based": 86183.0,
+      "urevent_sample_1based": 91827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1089
+    },
+    {
+      "volume": 171,
+      "event_sample_1based": 86708.0,
+      "urevent_sample_1based": 92352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1095
+    },
+    {
+      "volume": 172,
+      "event_sample_1based": 87233.0,
+      "urevent_sample_1based": 92877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1102
+    },
+    {
+      "volume": 173,
+      "event_sample_1based": 87758.0,
+      "urevent_sample_1based": 93402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1108
+    },
+    {
+      "volume": 174,
+      "event_sample_1based": 88283.0,
+      "urevent_sample_1based": 93927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1115
+    },
+    {
+      "volume": 175,
+      "event_sample_1based": 88808.0,
+      "urevent_sample_1based": 94452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1121
+    },
+    {
+      "volume": 176,
+      "event_sample_1based": 89333.0,
+      "urevent_sample_1based": 94977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1127
+    },
+    {
+      "volume": 177,
+      "event_sample_1based": 89858.0,
+      "urevent_sample_1based": 95502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1133
+    },
+    {
+      "volume": 178,
+      "event_sample_1based": 90383.0,
+      "urevent_sample_1based": 96027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1139
+    },
+    {
+      "volume": 179,
+      "event_sample_1based": 90908.0,
+      "urevent_sample_1based": 96552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1145
+    },
+    {
+      "volume": 180,
+      "event_sample_1based": 91433.0,
+      "urevent_sample_1based": 97077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1152
+    },
+    {
+      "volume": 181,
+      "event_sample_1based": 91958.0,
+      "urevent_sample_1based": 97602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1158
+    },
+    {
+      "volume": 182,
+      "event_sample_1based": 92483.0,
+      "urevent_sample_1based": 98127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1165
+    },
+    {
+      "volume": 183,
+      "event_sample_1based": 93008.0,
+      "urevent_sample_1based": 98652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1171
+    },
+    {
+      "volume": 184,
+      "event_sample_1based": 93533.0,
+      "urevent_sample_1based": 99177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1177
+    },
+    {
+      "volume": 185,
+      "event_sample_1based": 94058.0,
+      "urevent_sample_1based": 99702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1183
+    },
+    {
+      "volume": 186,
+      "event_sample_1based": 94583.0,
+      "urevent_sample_1based": 100227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1190
+    },
+    {
+      "volume": 187,
+      "event_sample_1based": 95108.0,
+      "urevent_sample_1based": 100752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1197
+    },
+    {
+      "volume": 188,
+      "event_sample_1based": 95633.0,
+      "urevent_sample_1based": 101277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1203
+    },
+    {
+      "volume": 189,
+      "event_sample_1based": 96158.0,
+      "urevent_sample_1based": 101802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1209
+    },
+    {
+      "volume": 190,
+      "event_sample_1based": 96683.0,
+      "urevent_sample_1based": 102327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1215
+    },
+    {
+      "volume": 191,
+      "event_sample_1based": 97208.0,
+      "urevent_sample_1based": 102852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1221
+    },
+    {
+      "volume": 193,
+      "event_sample_1based": 97962.0,
+      "urevent_sample_1based": 103902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1234
+    },
+    {
+      "volume": 194,
+      "event_sample_1based": 98487.0,
+      "urevent_sample_1based": 104427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1241
+    },
+    {
+      "volume": 195,
+      "event_sample_1based": 99012.0,
+      "urevent_sample_1based": 104952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1247
+    },
+    {
+      "volume": 196,
+      "event_sample_1based": 99537.0,
+      "urevent_sample_1based": 105477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1253
+    },
+    {
+      "volume": 197,
+      "event_sample_1based": 100062.0,
+      "urevent_sample_1based": 106002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1259
+    },
+    {
+      "volume": 198,
+      "event_sample_1based": 100587.0,
+      "urevent_sample_1based": 106527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1265
+    },
+    {
+      "volume": 199,
+      "event_sample_1based": 101112.0,
+      "urevent_sample_1based": 107052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1271
+    },
+    {
+      "volume": 200,
+      "event_sample_1based": 101637.0,
+      "urevent_sample_1based": 107577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1277
+    },
+    {
+      "volume": 201,
+      "event_sample_1based": 102162.0,
+      "urevent_sample_1based": 108102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1283
+    },
+    {
+      "volume": 202,
+      "event_sample_1based": 102687.0,
+      "urevent_sample_1based": 108627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1290
+    },
+    {
+      "volume": 203,
+      "event_sample_1based": 103212.0,
+      "urevent_sample_1based": 109152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1296
+    },
+    {
+      "volume": 204,
+      "event_sample_1based": 103737.0,
+      "urevent_sample_1based": 109677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1302
+    },
+    {
+      "volume": 205,
+      "event_sample_1based": 104262.0,
+      "urevent_sample_1based": 110202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1309
+    },
+    {
+      "volume": 206,
+      "event_sample_1based": 104787.0,
+      "urevent_sample_1based": 110727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1315
+    },
+    {
+      "volume": 207,
+      "event_sample_1based": 105312.0,
+      "urevent_sample_1based": 111252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1322
+    },
+    {
+      "volume": 208,
+      "event_sample_1based": 105837.0,
+      "urevent_sample_1based": 111777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1328
+    },
+    {
+      "volume": 209,
+      "event_sample_1based": 106362.0,
+      "urevent_sample_1based": 112302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1334
+    },
+    {
+      "volume": 210,
+      "event_sample_1based": 106887.0,
+      "urevent_sample_1based": 112827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1340
+    },
+    {
+      "volume": 211,
+      "event_sample_1based": 107412.0,
+      "urevent_sample_1based": 113352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1346
+    },
+    {
+      "volume": 212,
+      "event_sample_1based": 107937.0,
+      "urevent_sample_1based": 113877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1353
+    },
+    {
+      "volume": 213,
+      "event_sample_1based": 108462.0,
+      "urevent_sample_1based": 114402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1359
+    },
+    {
+      "volume": 214,
+      "event_sample_1based": 108987.0,
+      "urevent_sample_1based": 114927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1365
+    },
+    {
+      "volume": 215,
+      "event_sample_1based": 109512.0,
+      "urevent_sample_1based": 115452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1372
+    },
+    {
+      "volume": 216,
+      "event_sample_1based": 110037.0,
+      "urevent_sample_1based": 115977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1378
+    },
+    {
+      "volume": 217,
+      "event_sample_1based": 110562.0,
+      "urevent_sample_1based": 116502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1384
+    },
+    {
+      "volume": 218,
+      "event_sample_1based": 110902.0,
+      "urevent_sample_1based": 117027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1390
+    },
+    {
+      "volume": 219,
+      "event_sample_1based": 111427.0,
+      "urevent_sample_1based": 117552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1396
+    },
+    {
+      "volume": 220,
+      "event_sample_1based": 111952.0,
+      "urevent_sample_1based": 118077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1402
+    },
+    {
+      "volume": 221,
+      "event_sample_1based": 112477.0,
+      "urevent_sample_1based": 118602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1409
+    },
+    {
+      "volume": 222,
+      "event_sample_1based": 113002.0,
+      "urevent_sample_1based": 119127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1416
+    },
+    {
+      "volume": 223,
+      "event_sample_1based": 113355.0,
+      "urevent_sample_1based": 119652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1422
+    },
+    {
+      "volume": 224,
+      "event_sample_1based": 113880.0,
+      "urevent_sample_1based": 120177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1428
+    },
+    {
+      "volume": 225,
+      "event_sample_1based": 114405.0,
+      "urevent_sample_1based": 120702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1434
+    },
+    {
+      "volume": 226,
+      "event_sample_1based": 114930.0,
+      "urevent_sample_1based": 121227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1441
+    },
+    {
+      "volume": 227,
+      "event_sample_1based": 115455.0,
+      "urevent_sample_1based": 121752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1448
+    },
+    {
+      "volume": 228,
+      "event_sample_1based": 115980.0,
+      "urevent_sample_1based": 122277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1454
+    },
+    {
+      "volume": 229,
+      "event_sample_1based": 116505.0,
+      "urevent_sample_1based": 122802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1460
+    },
+    {
+      "volume": 230,
+      "event_sample_1based": 117030.0,
+      "urevent_sample_1based": 123327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1466
+    },
+    {
+      "volume": 231,
+      "event_sample_1based": 117555.0,
+      "urevent_sample_1based": 123852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1472
+    },
+    {
+      "volume": 232,
+      "event_sample_1based": 118080.0,
+      "urevent_sample_1based": 124377.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1480
+    },
+    {
+      "volume": 233,
+      "event_sample_1based": 118605.0,
+      "urevent_sample_1based": 124902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1486
+    },
+    {
+      "volume": 234,
+      "event_sample_1based": 119130.0,
+      "urevent_sample_1based": 125427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1492
+    },
+    {
+      "volume": 235,
+      "event_sample_1based": 119655.0,
+      "urevent_sample_1based": 125952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1498
+    },
+    {
+      "volume": 236,
+      "event_sample_1based": 120180.0,
+      "urevent_sample_1based": 126477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1504
+    },
+    {
+      "volume": 237,
+      "event_sample_1based": 120705.0,
+      "urevent_sample_1based": 127002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1511
+    },
+    {
+      "volume": 238,
+      "event_sample_1based": 121230.0,
+      "urevent_sample_1based": 127527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1517
+    },
+    {
+      "volume": 239,
+      "event_sample_1based": 121755.0,
+      "urevent_sample_1based": 128052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1523
+    },
+    {
+      "volume": 240,
+      "event_sample_1based": 122280.0,
+      "urevent_sample_1based": 128577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1529
+    },
+    {
+      "volume": 241,
+      "event_sample_1based": 122805.0,
+      "urevent_sample_1based": 129102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1535
+    },
+    {
+      "volume": 242,
+      "event_sample_1based": 123330.0,
+      "urevent_sample_1based": 129627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1542
+    },
+    {
+      "volume": 246,
+      "event_sample_1based": 123843.0,
+      "urevent_sample_1based": 131727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1568
+    },
+    {
+      "volume": 247,
+      "event_sample_1based": 124368.0,
+      "urevent_sample_1based": 132252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1575
+    },
+    {
+      "volume": 248,
+      "event_sample_1based": 124893.0,
+      "urevent_sample_1based": 132777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1581
+    },
+    {
+      "volume": 249,
+      "event_sample_1based": 125418.0,
+      "urevent_sample_1based": 133302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1587
+    },
+    {
+      "volume": 250,
+      "event_sample_1based": 125943.0,
+      "urevent_sample_1based": 133827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1594
+    },
+    {
+      "volume": 251,
+      "event_sample_1based": 126468.0,
+      "urevent_sample_1based": 134352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1600
+    },
+    {
+      "volume": 252,
+      "event_sample_1based": 126993.0,
+      "urevent_sample_1based": 134877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1607
+    },
+    {
+      "volume": 253,
+      "event_sample_1based": 127518.0,
+      "urevent_sample_1based": 135402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1613
+    },
+    {
+      "volume": 254,
+      "event_sample_1based": 127796.0,
+      "urevent_sample_1based": 135927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1619
+    },
+    {
+      "volume": 255,
+      "event_sample_1based": 128321.0,
+      "urevent_sample_1based": 136452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1625
+    },
+    {
+      "volume": 256,
+      "event_sample_1based": 128846.0,
+      "urevent_sample_1based": 136977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1631
+    },
+    {
+      "volume": 257,
+      "event_sample_1based": 129371.0,
+      "urevent_sample_1based": 137502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1637
+    },
+    {
+      "volume": 258,
+      "event_sample_1based": 129896.0,
+      "urevent_sample_1based": 138027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1644
+    },
+    {
+      "volume": 259,
+      "event_sample_1based": 130298.0,
+      "urevent_sample_1based": 138552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1650
+    },
+    {
+      "volume": 260,
+      "event_sample_1based": 130823.0,
+      "urevent_sample_1based": 139077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1656
+    },
+    {
+      "volume": 261,
+      "event_sample_1based": 131348.0,
+      "urevent_sample_1based": 139602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1662
+    },
+    {
+      "volume": 262,
+      "event_sample_1based": 131873.0,
+      "urevent_sample_1based": 140127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1669
+    },
+    {
+      "volume": 263,
+      "event_sample_1based": 132398.0,
+      "urevent_sample_1based": 140652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1676
+    },
+    {
+      "volume": 266,
+      "event_sample_1based": 133256.0,
+      "urevent_sample_1based": 142227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1694
+    },
+    {
+      "volume": 267,
+      "event_sample_1based": 133781.0,
+      "urevent_sample_1based": 142752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1702
+    },
+    {
+      "volume": 268,
+      "event_sample_1based": 134306.0,
+      "urevent_sample_1based": 143277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1708
+    },
+    {
+      "volume": 269,
+      "event_sample_1based": 134831.0,
+      "urevent_sample_1based": 143802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1714
+    },
+    {
+      "volume": 270,
+      "event_sample_1based": 135356.0,
+      "urevent_sample_1based": 144327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1720
+    },
+    {
+      "volume": 271,
+      "event_sample_1based": 135881.0,
+      "urevent_sample_1based": 144852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1726
+    },
+    {
+      "volume": 272,
+      "event_sample_1based": 136406.0,
+      "urevent_sample_1based": 145377.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1734
+    },
+    {
+      "volume": 273,
+      "event_sample_1based": 136931.0,
+      "urevent_sample_1based": 145902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1740
+    },
+    {
+      "volume": 274,
+      "event_sample_1based": 137456.0,
+      "urevent_sample_1based": 146427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1746
+    },
+    {
+      "volume": 275,
+      "event_sample_1based": 137981.0,
+      "urevent_sample_1based": 146952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1752
+    },
+    {
+      "volume": 276,
+      "event_sample_1based": 138506.0,
+      "urevent_sample_1based": 147477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1758
+    },
+    {
+      "volume": 277,
+      "event_sample_1based": 139031.0,
+      "urevent_sample_1based": 148002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1764
+    },
+    {
+      "volume": 278,
+      "event_sample_1based": 139556.0,
+      "urevent_sample_1based": 148527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1771
+    },
+    {
+      "volume": 279,
+      "event_sample_1based": 140081.0,
+      "urevent_sample_1based": 149052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1777
+    },
+    {
+      "volume": 280,
+      "event_sample_1based": 140606.0,
+      "urevent_sample_1based": 149577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1783
+    },
+    {
+      "volume": 281,
+      "event_sample_1based": 141131.0,
+      "urevent_sample_1based": 150102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1789
+    },
+    {
+      "volume": 282,
+      "event_sample_1based": 141656.0,
+      "urevent_sample_1based": 150627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1796
+    },
+    {
+      "volume": 283,
+      "event_sample_1based": 142181.0,
+      "urevent_sample_1based": 151152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1802
+    },
+    {
+      "volume": 284,
+      "event_sample_1based": 142706.0,
+      "urevent_sample_1based": 151677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1809
+    },
+    {
+      "volume": 285,
+      "event_sample_1based": 143231.0,
+      "urevent_sample_1based": 152202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1815
+    },
+    {
+      "volume": 286,
+      "event_sample_1based": 143756.0,
+      "urevent_sample_1based": 152727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1821
+    },
+    {
+      "volume": 287,
+      "event_sample_1based": 144109.0,
+      "urevent_sample_1based": 153252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1829
+    }
+  ],
+  "retained_windows": [
+    {
+      "volume": 33,
+      "event_sample_1based": 16046.0,
+      "urevent_sample_1based": 19902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 230,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 67.1514,
+      "original_recording_seconds": 79.604
+    },
+    {
+      "volume": 34,
+      "event_sample_1based": 16571.0,
+      "urevent_sample_1based": 20427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 236,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 69.2514,
+      "original_recording_seconds": 81.704
+    },
+    {
+      "volume": 35,
+      "event_sample_1based": 17096.0,
+      "urevent_sample_1based": 20952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 242,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 71.3514,
+      "original_recording_seconds": 83.804
+    },
+    {
+      "volume": 36,
+      "event_sample_1based": 17621.0,
+      "urevent_sample_1based": 21477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 248,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 73.4514,
+      "original_recording_seconds": 85.904
+    },
+    {
+      "volume": 37,
+      "event_sample_1based": 18146.0,
+      "urevent_sample_1based": 22002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 255,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 75.5514,
+      "original_recording_seconds": 88.004
+    },
+    {
+      "volume": 38,
+      "event_sample_1based": 18671.0,
+      "urevent_sample_1based": 22527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 261,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 77.6514,
+      "original_recording_seconds": 90.104
+    },
+    {
+      "volume": 39,
+      "event_sample_1based": 19196.0,
+      "urevent_sample_1based": 23052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 267,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 79.7514,
+      "original_recording_seconds": 92.204
+    },
+    {
+      "volume": 40,
+      "event_sample_1based": 19721.0,
+      "urevent_sample_1based": 23577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 273,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 81.8514,
+      "original_recording_seconds": 94.304
+    },
+    {
+      "volume": 41,
+      "event_sample_1based": 20246.0,
+      "urevent_sample_1based": 24102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 279,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 83.9514,
+      "original_recording_seconds": 96.404
+    },
+    {
+      "volume": 42,
+      "event_sample_1based": 20771.0,
+      "urevent_sample_1based": 24627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 287,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 86.0514,
+      "original_recording_seconds": 98.504
+    },
+    {
+      "volume": 43,
+      "event_sample_1based": 21296.0,
+      "urevent_sample_1based": 25152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 293,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 88.1514,
+      "original_recording_seconds": 100.604
+    },
+    {
+      "volume": 44,
+      "event_sample_1based": 21821.0,
+      "urevent_sample_1based": 25677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 299,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 90.2514,
+      "original_recording_seconds": 102.704
+    },
+    {
+      "volume": 45,
+      "event_sample_1based": 22346.0,
+      "urevent_sample_1based": 26202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 305,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 92.3514,
+      "original_recording_seconds": 104.804
+    },
+    {
+      "volume": 46,
+      "event_sample_1based": 22871.0,
+      "urevent_sample_1based": 26727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 311,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 94.4514,
+      "original_recording_seconds": 106.904
+    },
+    {
+      "volume": 47,
+      "event_sample_1based": 23396.0,
+      "urevent_sample_1based": 27252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 318,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 96.5514,
+      "original_recording_seconds": 109.004
+    },
+    {
+      "volume": 48,
+      "event_sample_1based": 23921.0,
+      "urevent_sample_1based": 27777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 324,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 98.6514,
+      "original_recording_seconds": 111.104
+    },
+    {
+      "volume": 49,
+      "event_sample_1based": 24446.0,
+      "urevent_sample_1based": 28302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 330,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 100.7514,
+      "original_recording_seconds": 113.204
+    },
+    {
+      "volume": 50,
+      "event_sample_1based": 24971.0,
+      "urevent_sample_1based": 28827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 336,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 102.8514,
+      "original_recording_seconds": 115.304
+    },
+    {
+      "volume": 51,
+      "event_sample_1based": 25496.0,
+      "urevent_sample_1based": 29352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 343,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 104.9514,
+      "original_recording_seconds": 117.404
+    },
+    {
+      "volume": 52,
+      "event_sample_1based": 26021.0,
+      "urevent_sample_1based": 29877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 350,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 107.0514,
+      "original_recording_seconds": 119.504
+    },
+    {
+      "volume": 53,
+      "event_sample_1based": 26546.0,
+      "urevent_sample_1based": 30402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 356,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 109.1514,
+      "original_recording_seconds": 121.604
+    },
+    {
+      "volume": 54,
+      "event_sample_1based": 27071.0,
+      "urevent_sample_1based": 30927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 362,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 111.2514,
+      "original_recording_seconds": 123.704
+    },
+    {
+      "volume": 55,
+      "event_sample_1based": 27596.0,
+      "urevent_sample_1based": 31452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 368,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 113.3514,
+      "original_recording_seconds": 125.804
+    },
+    {
+      "volume": 56,
+      "event_sample_1based": 28121.0,
+      "urevent_sample_1based": 31977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 374,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 115.4514,
+      "original_recording_seconds": 127.904
+    },
+    {
+      "volume": 57,
+      "event_sample_1based": 28646.0,
+      "urevent_sample_1based": 32502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 380,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 117.5514,
+      "original_recording_seconds": 130.004
+    },
+    {
+      "volume": 58,
+      "event_sample_1based": 29171.0,
+      "urevent_sample_1based": 33027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 387,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 119.6514,
+      "original_recording_seconds": 132.104
+    },
+    {
+      "volume": 59,
+      "event_sample_1based": 29696.0,
+      "urevent_sample_1based": 33552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 393,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 121.7514,
+      "original_recording_seconds": 134.204
+    },
+    {
+      "volume": 60,
+      "event_sample_1based": 30221.0,
+      "urevent_sample_1based": 34077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 399,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 123.8514,
+      "original_recording_seconds": 136.304
+    },
+    {
+      "volume": 61,
+      "event_sample_1based": 30746.0,
+      "urevent_sample_1based": 34602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 405,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 125.9514,
+      "original_recording_seconds": 138.404
+    },
+    {
+      "volume": 62,
+      "event_sample_1based": 31271.0,
+      "urevent_sample_1based": 35127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 412,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 128.0514,
+      "original_recording_seconds": 140.504
+    },
+    {
+      "volume": 63,
+      "event_sample_1based": 31796.0,
+      "urevent_sample_1based": 35652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 418,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 130.1514,
+      "original_recording_seconds": 142.604
+    },
+    {
+      "volume": 64,
+      "event_sample_1based": 32321.0,
+      "urevent_sample_1based": 36177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 425,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 132.2514,
+      "original_recording_seconds": 144.704
+    },
+    {
+      "volume": 65,
+      "event_sample_1based": 32846.0,
+      "urevent_sample_1based": 36702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 431,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 134.3514,
+      "original_recording_seconds": 146.804
+    },
+    {
+      "volume": 66,
+      "event_sample_1based": 33371.0,
+      "urevent_sample_1based": 37227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 437,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 136.4514,
+      "original_recording_seconds": 148.904
+    },
+    {
+      "volume": 67,
+      "event_sample_1based": 33896.0,
+      "urevent_sample_1based": 37752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 444,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 138.5514,
+      "original_recording_seconds": 151.004
+    },
+    {
+      "volume": 68,
+      "event_sample_1based": 34421.0,
+      "urevent_sample_1based": 38277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 450,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 140.6514,
+      "original_recording_seconds": 153.104
+    },
+    {
+      "volume": 69,
+      "event_sample_1based": 34946.0,
+      "urevent_sample_1based": 38802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 456,
+      "segment_start_sample_0based": 12297,
+      "segment_stop_sample_exclusive": 40076,
+      "task_seconds": 142.7514,
+      "original_recording_seconds": 155.204
+    },
+    {
+      "volume": 94,
+      "event_sample_1based": 46455.0,
+      "urevent_sample_1based": 51927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 614,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 195.2514,
+      "original_recording_seconds": 207.704
+    },
+    {
+      "volume": 95,
+      "event_sample_1based": 46980.0,
+      "urevent_sample_1based": 52452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 620,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 197.3514,
+      "original_recording_seconds": 209.804
+    },
+    {
+      "volume": 96,
+      "event_sample_1based": 47505.0,
+      "urevent_sample_1based": 52977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 626,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 199.4514,
+      "original_recording_seconds": 211.904
+    },
+    {
+      "volume": 97,
+      "event_sample_1based": 48030.0,
+      "urevent_sample_1based": 53502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 632,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 201.5514,
+      "original_recording_seconds": 214.004
+    },
+    {
+      "volume": 98,
+      "event_sample_1based": 48555.0,
+      "urevent_sample_1based": 54027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 638,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 203.6514,
+      "original_recording_seconds": 216.104
+    },
+    {
+      "volume": 99,
+      "event_sample_1based": 49080.0,
+      "urevent_sample_1based": 54552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 644,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 205.7514,
+      "original_recording_seconds": 218.204
+    },
+    {
+      "volume": 100,
+      "event_sample_1based": 49605.0,
+      "urevent_sample_1based": 55077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 650,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 207.8514,
+      "original_recording_seconds": 220.304
+    },
+    {
+      "volume": 101,
+      "event_sample_1based": 50130.0,
+      "urevent_sample_1based": 55602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 656,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 209.9514,
+      "original_recording_seconds": 222.404
+    },
+    {
+      "volume": 102,
+      "event_sample_1based": 50655.0,
+      "urevent_sample_1based": 56127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 663,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 212.0514,
+      "original_recording_seconds": 224.504
+    },
+    {
+      "volume": 103,
+      "event_sample_1based": 51180.0,
+      "urevent_sample_1based": 56652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 669,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 214.1514,
+      "original_recording_seconds": 226.604
+    },
+    {
+      "volume": 104,
+      "event_sample_1based": 51705.0,
+      "urevent_sample_1based": 57177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 676,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 216.2514,
+      "original_recording_seconds": 228.704
+    },
+    {
+      "volume": 105,
+      "event_sample_1based": 52230.0,
+      "urevent_sample_1based": 57702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 682,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 218.3514,
+      "original_recording_seconds": 230.804
+    },
+    {
+      "volume": 106,
+      "event_sample_1based": 52755.0,
+      "urevent_sample_1based": 58227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 688,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 220.4514,
+      "original_recording_seconds": 232.904
+    },
+    {
+      "volume": 107,
+      "event_sample_1based": 53280.0,
+      "urevent_sample_1based": 58752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 695,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 222.5514,
+      "original_recording_seconds": 235.004
+    },
+    {
+      "volume": 108,
+      "event_sample_1based": 53805.0,
+      "urevent_sample_1based": 59277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 701,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 224.6514,
+      "original_recording_seconds": 237.104
+    },
+    {
+      "volume": 109,
+      "event_sample_1based": 54330.0,
+      "urevent_sample_1based": 59802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 707,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 226.7514,
+      "original_recording_seconds": 239.204
+    },
+    {
+      "volume": 110,
+      "event_sample_1based": 54855.0,
+      "urevent_sample_1based": 60327.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 713,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 228.8514,
+      "original_recording_seconds": 241.304
+    },
+    {
+      "volume": 111,
+      "event_sample_1based": 55380.0,
+      "urevent_sample_1based": 60852.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 719,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 230.9514,
+      "original_recording_seconds": 243.404
+    },
+    {
+      "volume": 112,
+      "event_sample_1based": 55905.0,
+      "urevent_sample_1based": 61377.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 726,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 233.0514,
+      "original_recording_seconds": 245.504
+    },
+    {
+      "volume": 113,
+      "event_sample_1based": 56430.0,
+      "urevent_sample_1based": 61902.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 732,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 235.1514,
+      "original_recording_seconds": 247.604
+    },
+    {
+      "volume": 114,
+      "event_sample_1based": 56955.0,
+      "urevent_sample_1based": 62427.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 738,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 237.2514,
+      "original_recording_seconds": 249.704
+    },
+    {
+      "volume": 115,
+      "event_sample_1based": 57480.0,
+      "urevent_sample_1based": 62952.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 744,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 239.3514,
+      "original_recording_seconds": 251.804
+    },
+    {
+      "volume": 116,
+      "event_sample_1based": 58005.0,
+      "urevent_sample_1based": 63477.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 751,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 241.4514,
+      "original_recording_seconds": 253.904
+    },
+    {
+      "volume": 117,
+      "event_sample_1based": 58530.0,
+      "urevent_sample_1based": 64002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 757,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 243.5514,
+      "original_recording_seconds": 256.004
+    },
+    {
+      "volume": 118,
+      "event_sample_1based": 59055.0,
+      "urevent_sample_1based": 64527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 763,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 245.6514,
+      "original_recording_seconds": 258.104
+    },
+    {
+      "volume": 119,
+      "event_sample_1based": 59580.0,
+      "urevent_sample_1based": 65052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 769,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 247.7514,
+      "original_recording_seconds": 260.204
+    },
+    {
+      "volume": 120,
+      "event_sample_1based": 60105.0,
+      "urevent_sample_1based": 65577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 775,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 249.8514,
+      "original_recording_seconds": 262.304
+    },
+    {
+      "volume": 121,
+      "event_sample_1based": 60630.0,
+      "urevent_sample_1based": 66102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 781,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 251.9514,
+      "original_recording_seconds": 264.404
+    },
+    {
+      "volume": 122,
+      "event_sample_1based": 61155.0,
+      "urevent_sample_1based": 66627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 788,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 254.0514,
+      "original_recording_seconds": 266.504
+    },
+    {
+      "volume": 123,
+      "event_sample_1based": 61680.0,
+      "urevent_sample_1based": 67152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 794,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 256.1514,
+      "original_recording_seconds": 268.604
+    },
+    {
+      "volume": 124,
+      "event_sample_1based": 62205.0,
+      "urevent_sample_1based": 67677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 800,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 258.2514,
+      "original_recording_seconds": 270.704
+    },
+    {
+      "volume": 125,
+      "event_sample_1based": 62730.0,
+      "urevent_sample_1based": 68202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 807,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 260.3514,
+      "original_recording_seconds": 272.804
+    },
+    {
+      "volume": 126,
+      "event_sample_1based": 63255.0,
+      "urevent_sample_1based": 68727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 813,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 262.4514,
+      "original_recording_seconds": 274.904
+    },
+    {
+      "volume": 127,
+      "event_sample_1based": 63780.0,
+      "urevent_sample_1based": 69252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 820,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 264.5514,
+      "original_recording_seconds": 277.004
+    },
+    {
+      "volume": 128,
+      "event_sample_1based": 64305.0,
+      "urevent_sample_1based": 69777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 826,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 266.6514,
+      "original_recording_seconds": 279.104
+    },
+    {
+      "volume": 129,
+      "event_sample_1based": 64830.0,
+      "urevent_sample_1based": 70302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 832,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 268.7514,
+      "original_recording_seconds": 281.204
+    },
+    {
+      "volume": 130,
+      "event_sample_1based": 65355.0,
+      "urevent_sample_1based": 70827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 838,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 270.8514,
+      "original_recording_seconds": 283.304
+    },
+    {
+      "volume": 131,
+      "event_sample_1based": 65880.0,
+      "urevent_sample_1based": 71352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 844,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 272.9514,
+      "original_recording_seconds": 285.404
+    },
+    {
+      "volume": 132,
+      "event_sample_1based": 66405.0,
+      "urevent_sample_1based": 71877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 851,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 275.0514,
+      "original_recording_seconds": 287.504
+    },
+    {
+      "volume": 133,
+      "event_sample_1based": 66930.0,
+      "urevent_sample_1based": 72402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 857,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 277.1514,
+      "original_recording_seconds": 289.604
+    },
+    {
+      "volume": 134,
+      "event_sample_1based": 67455.0,
+      "urevent_sample_1based": 72927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 864,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 279.2514,
+      "original_recording_seconds": 291.704
+    },
+    {
+      "volume": 135,
+      "event_sample_1based": 67980.0,
+      "urevent_sample_1based": 73452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 870,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 281.3514,
+      "original_recording_seconds": 293.804
+    },
+    {
+      "volume": 136,
+      "event_sample_1based": 68505.0,
+      "urevent_sample_1based": 73977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 876,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 283.4514,
+      "original_recording_seconds": 295.904
+    },
+    {
+      "volume": 137,
+      "event_sample_1based": 69030.0,
+      "urevent_sample_1based": 74502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 882,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 285.5514,
+      "original_recording_seconds": 298.004
+    },
+    {
+      "volume": 138,
+      "event_sample_1based": 69555.0,
+      "urevent_sample_1based": 75027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 888,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 287.6514,
+      "original_recording_seconds": 300.104
+    },
+    {
+      "volume": 139,
+      "event_sample_1based": 70080.0,
+      "urevent_sample_1based": 75552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 894,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 289.7514,
+      "original_recording_seconds": 302.204
+    },
+    {
+      "volume": 140,
+      "event_sample_1based": 70605.0,
+      "urevent_sample_1based": 76077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 900,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 291.8514,
+      "original_recording_seconds": 304.304
+    },
+    {
+      "volume": 141,
+      "event_sample_1based": 71130.0,
+      "urevent_sample_1based": 76602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 907,
+      "segment_start_sample_0based": 44370,
+      "segment_stop_sample_exclusive": 77928,
+      "task_seconds": 293.9514,
+      "original_recording_seconds": 306.404
+    },
+    {
+      "volume": 158,
+      "event_sample_1based": 79883.0,
+      "urevent_sample_1based": 85527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1014,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 329.6514,
+      "original_recording_seconds": 342.104
+    },
+    {
+      "volume": 159,
+      "event_sample_1based": 80408.0,
+      "urevent_sample_1based": 86052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1020,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 331.7514,
+      "original_recording_seconds": 344.204
+    },
+    {
+      "volume": 160,
+      "event_sample_1based": 80933.0,
+      "urevent_sample_1based": 86577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1026,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 333.8514,
+      "original_recording_seconds": 346.304
+    },
+    {
+      "volume": 161,
+      "event_sample_1based": 81458.0,
+      "urevent_sample_1based": 87102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1032,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 335.9514,
+      "original_recording_seconds": 348.404
+    },
+    {
+      "volume": 162,
+      "event_sample_1based": 81983.0,
+      "urevent_sample_1based": 87627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1039,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 338.0514,
+      "original_recording_seconds": 350.504
+    },
+    {
+      "volume": 163,
+      "event_sample_1based": 82508.0,
+      "urevent_sample_1based": 88152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1045,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 340.1514,
+      "original_recording_seconds": 352.604
+    },
+    {
+      "volume": 164,
+      "event_sample_1based": 83033.0,
+      "urevent_sample_1based": 88677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1052,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 342.2514,
+      "original_recording_seconds": 354.704
+    },
+    {
+      "volume": 165,
+      "event_sample_1based": 83558.0,
+      "urevent_sample_1based": 89202.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1058,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 344.3514,
+      "original_recording_seconds": 356.804
+    },
+    {
+      "volume": 166,
+      "event_sample_1based": 84083.0,
+      "urevent_sample_1based": 89727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1064,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 346.4514,
+      "original_recording_seconds": 358.904
+    },
+    {
+      "volume": 167,
+      "event_sample_1based": 84608.0,
+      "urevent_sample_1based": 90252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1071,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 348.5514,
+      "original_recording_seconds": 361.004
+    },
+    {
+      "volume": 168,
+      "event_sample_1based": 85133.0,
+      "urevent_sample_1based": 90777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1077,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 350.6514,
+      "original_recording_seconds": 363.104
+    },
+    {
+      "volume": 169,
+      "event_sample_1based": 85658.0,
+      "urevent_sample_1based": 91302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1083,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 352.7514,
+      "original_recording_seconds": 365.204
+    },
+    {
+      "volume": 170,
+      "event_sample_1based": 86183.0,
+      "urevent_sample_1based": 91827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1089,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 354.8514,
+      "original_recording_seconds": 367.304
+    },
+    {
+      "volume": 171,
+      "event_sample_1based": 86708.0,
+      "urevent_sample_1based": 92352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1095,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 356.9514,
+      "original_recording_seconds": 369.404
+    },
+    {
+      "volume": 172,
+      "event_sample_1based": 87233.0,
+      "urevent_sample_1based": 92877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1102,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 359.0514,
+      "original_recording_seconds": 371.504
+    },
+    {
+      "volume": 173,
+      "event_sample_1based": 87758.0,
+      "urevent_sample_1based": 93402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1108,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 361.1514,
+      "original_recording_seconds": 373.604
+    },
+    {
+      "volume": 174,
+      "event_sample_1based": 88283.0,
+      "urevent_sample_1based": 93927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1115,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 363.2514,
+      "original_recording_seconds": 375.704
+    },
+    {
+      "volume": 175,
+      "event_sample_1based": 88808.0,
+      "urevent_sample_1based": 94452.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1121,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 365.3514,
+      "original_recording_seconds": 377.804
+    },
+    {
+      "volume": 176,
+      "event_sample_1based": 89333.0,
+      "urevent_sample_1based": 94977.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1127,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 367.4514,
+      "original_recording_seconds": 379.904
+    },
+    {
+      "volume": 177,
+      "event_sample_1based": 89858.0,
+      "urevent_sample_1based": 95502.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1133,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 369.5514,
+      "original_recording_seconds": 382.004
+    },
+    {
+      "volume": 178,
+      "event_sample_1based": 90383.0,
+      "urevent_sample_1based": 96027.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1139,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 371.6514,
+      "original_recording_seconds": 384.104
+    },
+    {
+      "volume": 179,
+      "event_sample_1based": 90908.0,
+      "urevent_sample_1based": 96552.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1145,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 373.7514,
+      "original_recording_seconds": 386.204
+    },
+    {
+      "volume": 180,
+      "event_sample_1based": 91433.0,
+      "urevent_sample_1based": 97077.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1152,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 375.8514,
+      "original_recording_seconds": 388.304
+    },
+    {
+      "volume": 181,
+      "event_sample_1based": 91958.0,
+      "urevent_sample_1based": 97602.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1158,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 377.9514,
+      "original_recording_seconds": 390.404
+    },
+    {
+      "volume": 182,
+      "event_sample_1based": 92483.0,
+      "urevent_sample_1based": 98127.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1165,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 380.0514,
+      "original_recording_seconds": 392.504
+    },
+    {
+      "volume": 183,
+      "event_sample_1based": 93008.0,
+      "urevent_sample_1based": 98652.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1171,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 382.1514,
+      "original_recording_seconds": 394.604
+    },
+    {
+      "volume": 184,
+      "event_sample_1based": 93533.0,
+      "urevent_sample_1based": 99177.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1177,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 384.2514,
+      "original_recording_seconds": 396.704
+    },
+    {
+      "volume": 185,
+      "event_sample_1based": 94058.0,
+      "urevent_sample_1based": 99702.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1183,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 386.3514,
+      "original_recording_seconds": 398.804
+    },
+    {
+      "volume": 186,
+      "event_sample_1based": 94583.0,
+      "urevent_sample_1based": 100227.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1190,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 388.4514,
+      "original_recording_seconds": 400.904
+    },
+    {
+      "volume": 187,
+      "event_sample_1based": 95108.0,
+      "urevent_sample_1based": 100752.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1197,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 390.5514,
+      "original_recording_seconds": 403.004
+    },
+    {
+      "volume": 188,
+      "event_sample_1based": 95633.0,
+      "urevent_sample_1based": 101277.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1203,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 392.6514,
+      "original_recording_seconds": 405.104
+    },
+    {
+      "volume": 189,
+      "event_sample_1based": 96158.0,
+      "urevent_sample_1based": 101802.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1209,
+      "segment_start_sample_0based": 78100,
+      "segment_stop_sample_exclusive": 103108,
+      "task_seconds": 394.7514,
+      "original_recording_seconds": 407.204
+    },
+    {
+      "volume": 206,
+      "event_sample_1based": 104787.0,
+      "urevent_sample_1based": 110727.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1315,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 430.4514,
+      "original_recording_seconds": 442.904
+    },
+    {
+      "volume": 207,
+      "event_sample_1based": 105312.0,
+      "urevent_sample_1based": 111252.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1322,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 432.5514,
+      "original_recording_seconds": 445.004
+    },
+    {
+      "volume": 208,
+      "event_sample_1based": 105837.0,
+      "urevent_sample_1based": 111777.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1328,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 434.6514,
+      "original_recording_seconds": 447.104
+    },
+    {
+      "volume": 209,
+      "event_sample_1based": 106362.0,
+      "urevent_sample_1based": 112302.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1334,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 436.7514,
+      "original_recording_seconds": 449.204
+    },
+    {
+      "volume": 210,
+      "event_sample_1based": 106887.0,
+      "urevent_sample_1based": 112827.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1340,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 438.8514,
+      "original_recording_seconds": 451.304
+    },
+    {
+      "volume": 211,
+      "event_sample_1based": 107412.0,
+      "urevent_sample_1based": 113352.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1346,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 440.9514,
+      "original_recording_seconds": 453.404
+    },
+    {
+      "volume": 212,
+      "event_sample_1based": 107937.0,
+      "urevent_sample_1based": 113877.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1353,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 443.0514,
+      "original_recording_seconds": 455.504
+    },
+    {
+      "volume": 213,
+      "event_sample_1based": 108462.0,
+      "urevent_sample_1based": 114402.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1359,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 445.1514,
+      "original_recording_seconds": 457.604
+    },
+    {
+      "volume": 214,
+      "event_sample_1based": 108987.0,
+      "urevent_sample_1based": 114927.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1365,
+      "segment_start_sample_0based": 103404,
+      "segment_stop_sample_exclusive": 116645,
+      "task_seconds": 447.2514,
+      "original_recording_seconds": 459.704
+    },
+    {
+      "volume": 237,
+      "event_sample_1based": 120705.0,
+      "urevent_sample_1based": 127002.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1511,
+      "segment_start_sample_0based": 119613,
+      "segment_stop_sample_exclusive": 129907,
+      "task_seconds": 495.5514,
+      "original_recording_seconds": 508.004
+    },
+    {
+      "volume": 238,
+      "event_sample_1based": 121230.0,
+      "urevent_sample_1based": 127527.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1517,
+      "segment_start_sample_0based": 119613,
+      "segment_stop_sample_exclusive": 129907,
+      "task_seconds": 497.6514,
+      "original_recording_seconds": 510.104
+    },
+    {
+      "volume": 239,
+      "event_sample_1based": 121755.0,
+      "urevent_sample_1based": 128052.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1523,
+      "segment_start_sample_0based": 119613,
+      "segment_stop_sample_exclusive": 129907,
+      "task_seconds": 499.7514,
+      "original_recording_seconds": 512.204
+    },
+    {
+      "volume": 240,
+      "event_sample_1based": 122280.0,
+      "urevent_sample_1based": 128577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1529,
+      "segment_start_sample_0based": 119613,
+      "segment_stop_sample_exclusive": 129907,
+      "task_seconds": 501.8514,
+      "original_recording_seconds": 514.304
+    },
+    {
+      "volume": 280,
+      "event_sample_1based": 140606.0,
+      "urevent_sample_1based": 149577.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1783,
+      "segment_start_sample_0based": 141837,
+      "segment_stop_sample_exclusive": 152999,
+      "task_seconds": 585.8514,
+      "original_recording_seconds": 598.304
+    },
+    {
+      "volume": 281,
+      "event_sample_1based": 141131.0,
+      "urevent_sample_1based": 150102.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1789,
+      "segment_start_sample_0based": 141837,
+      "segment_stop_sample_exclusive": 152999,
+      "task_seconds": 587.9514,
+      "original_recording_seconds": 600.404
+    },
+    {
+      "volume": 282,
+      "event_sample_1based": 141656.0,
+      "urevent_sample_1based": 150627.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1796,
+      "segment_start_sample_0based": 141837,
+      "segment_stop_sample_exclusive": 152999,
+      "task_seconds": 590.0514,
+      "original_recording_seconds": 602.504
+    },
+    {
+      "volume": 283,
+      "event_sample_1based": 142181.0,
+      "urevent_sample_1based": 151152.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1802,
+      "segment_start_sample_0based": 141837,
+      "segment_stop_sample_exclusive": 152999,
+      "task_seconds": 592.1514,
+      "original_recording_seconds": 604.604
+    },
+    {
+      "volume": 284,
+      "event_sample_1based": 142706.0,
+      "urevent_sample_1based": 151677.0,
+      "mask_reconstruction_error_samples": 0.0,
+      "urevent_index_1based": 1809,
+      "segment_start_sample_0based": 141837,
+      "segment_stop_sample_exclusive": 152999,
+      "task_seconds": 594.2514,
+      "original_recording_seconds": 606.704
+    }
+  ],
+  "excluded_volumes": [
+    {
+      "volume": 0,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 1,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 2,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 3,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 4,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 5,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 6,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 7,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 8,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 9,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 10,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 11,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 12,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 13,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 14,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 15,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 16,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 17,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 18,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 19,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 20,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 21,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 22,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 23,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 24,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 25,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 26,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 27,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 28,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 29,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 30,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 31,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 32,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 70,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 71,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 72,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 73,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 74,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 75,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 76,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 77,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 78,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 79,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 80,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 81,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 82,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 83,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 84,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 85,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 86,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 87,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 88,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 89,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 90,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 91,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 92,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 93,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 142,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 143,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 144,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 145,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 146,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 147,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 148,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 149,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 150,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 151,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 152,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 153,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 154,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 155,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 156,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 157,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 190,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 191,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 192,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 193,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 194,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 195,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 196,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 197,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 198,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 199,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 200,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 201,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 202,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 203,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 204,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 205,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 215,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 216,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 217,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 218,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 219,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 220,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 221,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 222,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 223,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 224,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 225,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 226,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 227,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 228,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 229,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 230,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 231,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 232,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 233,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 234,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 235,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 236,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 241,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 242,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 243,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 244,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 245,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 246,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 247,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 248,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 249,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 250,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 251,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 252,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 253,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 254,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 255,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 256,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 257,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 258,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 259,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 260,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 261,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 262,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 263,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 264,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 265,
+      "reason": "scanner event excised by source EEG cleaning"
+    },
+    {
+      "volume": 266,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 267,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 268,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 269,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 270,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 271,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 272,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 273,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 274,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 275,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 276,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 277,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 278,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 279,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 285,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 286,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    },
+    {
+      "volume": 287,
+      "reason": "24s physical history plus 5s filter margins crosses removed interval or acquisition edge"
+    }
+  ],
+  "retained_target_frames": 135,
+  "retained_target_seconds": 283.5,
+  "eye": {
+    "scanner_pulse_count": 285,
+    "pulse_task_seconds": [
+      2.051,
+      4.151,
+      6.25,
+      8.35,
+      10.45,
+      12.549,
+      14.649,
+      16.749,
+      18.849,
+      20.949,
+      23.049,
+      25.152,
+      27.252,
+      29.352,
+      31.452,
+      33.552,
+      35.651,
+      37.751,
+      39.851,
+      41.951,
+      44.051,
+      46.15,
+      48.25,
+      50.35,
+      52.45,
+      54.55,
+      56.649,
+      58.749,
+      60.849,
+      62.949,
+      65.049,
+      67.149,
+      69.249,
+      71.348,
+      73.448,
+      75.548,
+      77.648,
+      79.747,
+      81.847,
+      83.947,
+      86.047,
+      88.147,
+      90.246,
+      92.346,
+      94.448,
+      96.55,
+      98.65,
+      100.75,
+      102.85,
+      104.95,
+      107.05,
+      109.15,
+      111.25,
+      113.35,
+      115.45,
+      117.55,
+      119.65,
+      121.75,
+      123.85,
+      125.95,
+      128.05,
+      130.15,
+      132.25,
+      134.35,
+      136.45,
+      138.55,
+      140.65,
+      142.75,
+      144.85,
+      146.95,
+      149.05,
+      151.15,
+      153.25,
+      155.35,
+      157.45,
+      159.54,
+      161.64,
+      163.74,
+      165.85,
+      167.95,
+      170.05,
+      172.15,
+      174.25,
+      176.35,
+      178.45,
+      180.55,
+      182.65,
+      184.75,
+      186.85,
+      188.95,
+      191.05,
+      193.15,
+      195.25,
+      197.35,
+      199.45,
+      201.55,
+      203.64,
+      205.74,
+      207.84,
+      209.94,
+      212.04,
+      214.14,
+      216.24,
+      218.34,
+      220.44,
+      222.54,
+      224.64,
+      226.74,
+      228.84,
+      230.94,
+      233.04,
+      235.15,
+      237.25,
+      239.35,
+      241.45,
+      243.55,
+      245.65,
+      247.74,
+      249.84,
+      251.94,
+      254.04,
+      256.14,
+      258.24,
+      260.34,
+      262.44,
+      264.54,
+      266.64,
+      268.74,
+      270.84,
+      272.94,
+      275.04,
+      277.14,
+      279.24,
+      281.34,
+      283.44,
+      285.54,
+      287.64,
+      289.74,
+      291.84,
+      293.94,
+      296.04,
+      298.14,
+      300.24,
+      302.34,
+      304.44,
+      306.54,
+      308.64,
+      310.74,
+      312.84,
+      314.94,
+      317.04,
+      319.14,
+      321.24,
+      323.34,
+      325.44,
+      327.54,
+      329.64,
+      331.74,
+      333.84,
+      335.94,
+      338.04,
+      340.14,
+      342.24,
+      344.34,
+      346.44,
+      348.54,
+      350.64,
+      352.74,
+      354.84,
+      356.94,
+      359.04,
+      361.14,
+      363.24,
+      365.34,
+      367.44,
+      369.54,
+      371.64,
+      373.74,
+      375.84,
+      377.94,
+      380.04,
+      382.14,
+      384.24,
+      386.34,
+      388.44,
+      390.54,
+      392.64,
+      394.74,
+      396.84,
+      398.94,
+      401.04,
+      403.14,
+      405.24,
+      407.34,
+      409.44,
+      411.54,
+      413.64,
+      415.74,
+      417.84,
+      419.94,
+      422.04,
+      424.14,
+      426.24,
+      428.34,
+      430.44,
+      432.54,
+      434.64,
+      436.74,
+      438.84,
+      440.94,
+      443.04,
+      445.14,
+      447.24,
+      449.34,
+      451.44,
+      453.54,
+      455.64,
+      457.74,
+      459.84,
+      461.94,
+      464.04,
+      466.14,
+      468.24,
+      470.34,
+      472.44,
+      474.54,
+      476.64,
+      478.74,
+      480.84,
+      482.94,
+      485.04,
+      487.13,
+      489.24,
+      491.34,
+      493.44,
+      495.53,
+      497.63,
+      499.73,
+      501.83,
+      503.93,
+      506.03,
+      508.13,
+      510.23,
+      512.33,
+      514.44,
+      516.54,
+      518.64,
+      520.74,
+      522.84,
+      524.94,
+      527.04,
+      529.13,
+      531.24,
+      533.34,
+      535.44,
+      537.54,
+      539.63,
+      541.73,
+      543.83,
+      545.93,
+      548.03,
+      550.13,
+      552.23,
+      554.33,
+      556.43,
+      558.53,
+      560.63,
+      562.73,
+      564.83,
+      566.93,
+      569.03,
+      571.13,
+      573.23,
+      575.33,
+      577.43,
+      579.53,
+      581.63,
+      583.73,
+      585.83,
+      587.93,
+      590.03,
+      592.13,
+      594.23,
+      596.33,
+      598.43
+    ],
+    "matched_volumes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286
+    ],
+    "unmatched_volumes": [
+      0,
+      1,
+      287
+    ],
+    "max_abs_match_error_seconds": 0.02140000000008513,
+    "first_time_column": -20.242,
+    "last_time_column": 600.13,
+    "StartTime_sidecar": -7.79,
+    "time_column_nonincreasing_steps": 450113,
+    "pupil_nonzero_fraction": 1.0,
+    "interpolated_fraction": 0.07644160169189627,
+    "blink_code_values": [
+      0,
+      1
+    ],
+    "interpretation": "QC only; uncalibrated pupil area; missing or interpolated pupil is not sleep"
+  },
+  "biopac": {
+    "file_rows": 448,
+    "code_values": [
+      5
+    ],
+    "format": "sparse positive pulse sample list; group consecutive high timestamps within 100ms",
+    "pulse_count": 288,
+    "pulse_seconds": [
+      0.0,
+      2.096,
+      4.192,
+      6.304,
+      8.4,
+      10.496,
+      12.592,
+      14.704,
+      16.8,
+      18.896,
+      20.992,
+      23.104,
+      25.2,
+      27.296,
+      29.392,
+      31.504,
+      33.6,
+      35.696,
+      37.792,
+      39.904,
+      42.0,
+      44.096,
+      46.192,
+      48.304,
+      50.4,
+      52.496,
+      54.592,
+      56.704,
+      58.8,
+      60.896,
+      62.992,
+      65.104,
+      67.2,
+      69.296,
+      71.392,
+      73.504,
+      75.6,
+      77.696,
+      79.792,
+      81.904,
+      84.0,
+      86.096,
+      88.192,
+      90.304,
+      92.4,
+      94.496,
+      96.592,
+      98.704,
+      100.8,
+      102.896,
+      104.992,
+      107.104,
+      109.2,
+      111.296,
+      113.392,
+      115.504,
+      117.6,
+      119.696,
+      121.792,
+      123.904,
+      126.0,
+      128.096,
+      130.192,
+      132.304,
+      134.4,
+      136.496,
+      138.592,
+      140.704,
+      142.8,
+      144.896,
+      146.992,
+      149.104,
+      151.2,
+      153.296,
+      155.392,
+      157.504,
+      159.6,
+      161.696,
+      163.792,
+      165.904,
+      168.0,
+      170.096,
+      172.192,
+      174.304,
+      176.4,
+      178.496,
+      180.592,
+      182.688,
+      184.8,
+      186.896,
+      188.992,
+      191.088,
+      193.2,
+      195.296,
+      197.392,
+      199.488,
+      201.6,
+      203.696,
+      205.792,
+      207.888,
+      210.0,
+      212.096,
+      214.192,
+      216.288,
+      218.4,
+      220.496,
+      222.592,
+      224.688,
+      226.8,
+      228.896,
+      230.992,
+      233.088,
+      235.2,
+      237.296,
+      239.392,
+      241.488,
+      243.6,
+      245.696,
+      247.792,
+      249.888,
+      252.0,
+      254.096,
+      256.192,
+      258.288,
+      260.4,
+      262.496,
+      264.592,
+      266.688,
+      268.8,
+      270.896,
+      272.992,
+      275.088,
+      277.2,
+      279.296,
+      281.392,
+      283.488,
+      285.6,
+      287.696,
+      289.792,
+      291.888,
+      294.0,
+      296.096,
+      298.192,
+      300.288,
+      302.4,
+      304.496,
+      306.592,
+      308.688,
+      310.8,
+      312.896,
+      314.992,
+      317.088,
+      319.2,
+      321.296,
+      323.392,
+      325.488,
+      327.6,
+      329.696,
+      331.792,
+      333.888,
+      336.0,
+      338.096,
+      340.192,
+      342.288,
+      344.4,
+      346.496,
+      348.592,
+      350.688,
+      352.8,
+      354.896,
+      356.992,
+      359.088,
+      361.2,
+      363.296,
+      365.392,
+      367.488,
+      369.6,
+      371.696,
+      373.792,
+      375.888,
+      378.0,
+      380.096,
+      382.192,
+      384.288,
+      386.4,
+      388.496,
+      390.592,
+      392.688,
+      394.784,
+      396.896,
+      398.992,
+      401.088,
+      403.184,
+      405.296,
+      407.392,
+      409.488,
+      411.584,
+      413.696,
+      415.792,
+      417.888,
+      419.984,
+      422.096,
+      424.192,
+      426.288,
+      428.384,
+      430.496,
+      432.592,
+      434.688,
+      436.784,
+      438.896,
+      440.992,
+      443.088,
+      445.184,
+      447.296,
+      449.392,
+      451.488,
+      453.584,
+      455.696,
+      457.792,
+      459.888,
+      461.984,
+      464.096,
+      466.192,
+      468.288,
+      470.384,
+      472.496,
+      474.592,
+      476.688,
+      478.784,
+      480.896,
+      482.992,
+      485.088,
+      487.184,
+      489.296,
+      491.392,
+      493.488,
+      495.584,
+      497.696,
+      499.792,
+      501.888,
+      503.984,
+      506.096,
+      508.192,
+      510.288,
+      512.384,
+      514.496,
+      516.592,
+      518.688,
+      520.784,
+      522.896,
+      524.992,
+      527.088,
+      529.184,
+      531.296,
+      533.392,
+      535.488,
+      537.584,
+      539.696,
+      541.792,
+      543.888,
+      545.984,
+      548.096,
+      550.192,
+      552.288,
+      554.384,
+      556.496,
+      558.592,
+      560.688,
+      562.784,
+      564.896,
+      566.992,
+      569.088,
+      571.184,
+      573.296,
+      575.392,
+      577.488,
+      579.584,
+      581.696,
+      583.792,
+      585.888,
+      587.984,
+      590.096,
+      592.192,
+      594.288,
+      596.384,
+      598.496,
+      600.592,
+      602.688
+    ],
+    "relative_to_first_trigger": true,
+    "max_relative_clock_residual_seconds": 0.016000000000076398,
+    "respiration_first_seconds": 0.0,
+    "respiration_last_seconds": 608.384,
+    "respiration_finite_fraction": 1.0,
+    "respiration_units": "V"
+  },
+  "no_outcome_based_clock_selection": true,
+  "clock_rule": "raw ordered R128 = volume0..N-1; event urevent links + exact clean_sample_mask; eye task clock nearest <=50ms; BIOPAC ordered pulses relative to first <=40ms",
+  "volume_drop_rule": "zero; pinned released CCS wrapper numDropping=0; raw and processed 288 volumes in pilot"
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_v2.py", line 210, in <module>
+    {'audit':audit,'freeze':freeze,'run':run}[a.phase]()
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_v2.py", line 113, in audit
+    qc=certified_adapter(d,times)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_v2.py", line 56, in certified_adapter
+    boundary=np.unique([int(np.floor(x['latency'])) for x in d['boundaries'] if np.isfinite(x['duration']) and 0<float(x['latency'])<d['pnts']])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_v2.py", line 56, in <listcomp>
+    boundary=np.unique([int(np.floor(x['latency'])) for x in d['boundaries'] if np.isfinite(x['duration']) and 0<float(x['latency'])<d['pnts']])
+TypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''

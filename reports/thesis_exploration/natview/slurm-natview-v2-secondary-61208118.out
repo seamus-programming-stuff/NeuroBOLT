@@ -1,0 +1,18 @@
+Tue Oct 20 04:16:35 PM UTC 2026
+job=61208118 host=m3e116 script=natview_v2.py args=--phase run
+ca072518e4f0b2266d7071f0a16923b333d5c2b351f84f5d9e24ca107ed8d434  scripts/natview_v2.py
+V2 QC sub-04 166 frames, included True
+V2 QC sub-05 4 frames, included False
+V2 QC sub-06 134 frames, included True
+V2 QC sub-08 64 frames, included True
+V2 QC sub-10 23 frames, included False
+V2 QC sub-11 67 frames, included True
+V2 QC sub-12 133 frames, included True
+V2 QC sub-13 176 frames, included True
+SCORED sub-04 frames 166 global r 0.29597277024000396 regional r 0.1507762049959604
+SCORED sub-06 frames 134 global r 0.3379151077393754 regional r 0.2570091652427504
+SCORED sub-08 frames 64 global r 0.3196510879983465 regional r 0.2611819780434618
+SCORED sub-11 frames 67 global r -0.11122833665299625 regional r -0.04758760537554867
+SCORED sub-12 frames 133 global r -0.13817779365640756 regional r -0.05819763048409243
+SCORED sub-13 frames 176 global r 0.04518167530442246 regional r 0.05969359926712077
+Tue Oct 20 04:23:10 PM UTC 2026

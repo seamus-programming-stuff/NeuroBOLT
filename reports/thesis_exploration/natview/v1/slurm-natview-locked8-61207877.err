@@ -1,0 +1,76 @@
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 75, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 170, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 112, in validate_sample_map
+    if mask.sum()!=int(e['pnts']):raise ValueError('Sample mask does not reconstruct cleaned data')
+ValueError: Sample mask does not reconstruct cleaned data
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 75, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 170, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 112, in validate_sample_map
+    if mask.sum()!=int(e['pnts']):raise ValueError('Sample mask does not reconstruct cleaned data')
+ValueError: Sample mask does not reconstruct cleaned data
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 75, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 170, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 112, in validate_sample_map
+    if mask.sum()!=int(e['pnts']):raise ValueError('Sample mask does not reconstruct cleaned data')
+ValueError: Sample mask does not reconstruct cleaned data
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 75, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 170, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 112, in validate_sample_map
+    if mask.sum()!=int(e['pnts']):raise ValueError('Sample mask does not reconstruct cleaned data')
+ValueError: Sample mask does not reconstruct cleaned data
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 75, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 170, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 148, in validate_sample_map
+    if len(match)!=1:raise ValueError('Interior excision lacks matching boundary position')
+ValueError: Interior excision lacks matching boundary position
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 75, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 170, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 112, in validate_sample_map
+    if mask.sum()!=int(e['pnts']):raise ValueError('Sample mask does not reconstruct cleaned data')
+ValueError: Sample mask does not reconstruct cleaned data
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py:264: RuntimeWarning: Data will be preloaded. preload=False or a string preload is not supported when the data is stored in the .set file
+  check=mne.io.read_raw_eeglab(str(pre/f'eeg/{stem}_eeg.set'),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py:264: RuntimeWarning: Limited 2 annotation(s) that were expanding outside the data range.
+  check=mne.io.read_raw_eeglab(str(pre/f'eeg/{stem}_eeg.set'),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py:264: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  check=mne.io.read_raw_eeglab(str(pre/f'eeg/{stem}_eeg.set'),preload=False,verbose=False)
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 75, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 170, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 112, in validate_sample_map
+    if mask.sum()!=int(e['pnts']):raise ValueError('Sample mask does not reconstruct cleaned data')
+ValueError: Sample mask does not reconstruct cleaned data

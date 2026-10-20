@@ -1,0 +1,279 @@
+{
+  "slurm_job_id": "61207906",
+  "runs": [
+    {
+      "subject": "sub-04",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 159560,
+      "mask_shape": [
+        173280
+      ],
+      "mask_length": 173280,
+      "mask_true_samples": 165356,
+      "mask_false_samples": 7924,
+      "events_R128": 279,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1854,
+      "boundary_count": 27,
+      "raw_urevent_origin_residual_seconds": 1.1368683772161603e-13,
+      "raw_urevent_offset_seconds": 56.40219999999999,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.02140000000008513,
+      "eye_unmatched_volumes": [
+        0,
+        286,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.020000000000038654,
+      "respiration_time_span_seconds": [
+        0.0,
+        606.816
+      ],
+      "no_BOLD_outcome_values_read": true
+    },
+    {
+      "subject": "sub-05",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 136563,
+      "mask_shape": [
+        161915
+      ],
+      "mask_length": 161915,
+      "mask_true_samples": 150854,
+      "mask_false_samples": 11061,
+      "events_R128": 251,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1575,
+      "boundary_count": 45,
+      "raw_urevent_origin_residual_seconds": 1.2789769243681803e-13,
+      "raw_urevent_offset_seconds": 9.948800000000006,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.024800000000027467,
+      "eye_unmatched_volumes": [
+        0,
+        1,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.016000000000076398,
+      "respiration_time_span_seconds": [
+        0.0,
+        655.504
+      ],
+      "no_BOLD_outcome_values_read": true
+    },
+    {
+      "subject": "sub-06",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 148874,
+      "mask_shape": [
+        156705
+      ],
+      "mask_length": 156705,
+      "mask_true_samples": 154340,
+      "mask_false_samples": 2365,
+      "events_R128": 277,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1728,
+      "boundary_count": 18,
+      "raw_urevent_origin_residual_seconds": 1.1368683772161603e-13,
+      "raw_urevent_offset_seconds": 21.71119999999999,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.018600000000049022,
+      "eye_unmatched_volumes": [
+        0,
+        1,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.01200000000000756,
+      "respiration_time_span_seconds": [
+        0.0,
+        607.328
+      ],
+      "no_BOLD_outcome_values_read": true
+    },
+    {
+      "subject": "sub-08",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 141102,
+      "mask_shape": [
+        165770
+      ],
+      "mask_length": 165770,
+      "mask_true_samples": 144958,
+      "mask_false_samples": 20812,
+      "events_R128": 252,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1665,
+      "boundary_count": 47,
+      "raw_urevent_origin_residual_seconds": 2.2737367544323206e-13,
+      "raw_urevent_offset_seconds": 14.6892,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.023600000000044474,
+      "eye_unmatched_volumes": [
+        0,
+        1,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.016000000000076398,
+      "respiration_time_span_seconds": [
+        0.0,
+        610.144
+      ],
+      "no_BOLD_outcome_values_read": true
+    },
+    {
+      "subject": "sub-10",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 133262,
+      "mask_shape": [
+        162240
+      ],
+      "mask_length": 162240,
+      "mask_true_samples": 133262,
+      "mask_false_samples": 28978,
+      "events_R128": 238,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1593,
+      "boundary_count": 41,
+      "raw_urevent_origin_residual_seconds": 1.7053025658242404e-13,
+      "raw_urevent_offset_seconds": 18.7768,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.016400000000089676,
+      "eye_unmatched_volumes": [
+        0,
+        1,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.016000000000076398,
+      "respiration_time_span_seconds": [
+        0.0,
+        639.6
+      ],
+      "no_BOLD_outcome_values_read": true
+    },
+    {
+      "subject": "sub-11",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 144777,
+      "mask_shape": [
+        160405
+      ],
+      "mask_length": 160405,
+      "mask_true_samples": 153108,
+      "mask_false_samples": 7297,
+      "events_R128": 269,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1800,
+      "boundary_count": 28,
+      "raw_urevent_origin_residual_seconds": 1.7053025658242404e-13,
+      "raw_urevent_offset_seconds": 15.481800000000021,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.018400000000042382,
+      "eye_unmatched_volumes": [
+        0,
+        286,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.024000000000114596,
+      "respiration_time_span_seconds": [
+        0.0,
+        605.904
+      ],
+      "no_BOLD_outcome_values_read": true
+    },
+    {
+      "subject": "sub-12",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 144379,
+      "mask_shape": [
+        155845
+      ],
+      "mask_length": 155845,
+      "mask_true_samples": 144379,
+      "mask_false_samples": 11466,
+      "events_R128": 275,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1732,
+      "boundary_count": 18,
+      "raw_urevent_origin_residual_seconds": 1.1368683772161603e-13,
+      "raw_urevent_offset_seconds": 12.4526,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.02140000000008513,
+      "eye_unmatched_volumes": [
+        0,
+        1,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.016000000000076398,
+      "respiration_time_span_seconds": [
+        0.0,
+        608.384
+      ],
+      "no_BOLD_outcome_values_read": true
+    },
+    {
+      "subject": "sub-13",
+      "nvol": 288,
+      "srate": 250,
+      "pnts": 149337,
+      "mask_shape": [
+        159620
+      ],
+      "mask_length": 159620,
+      "mask_true_samples": 153378,
+      "mask_false_samples": 6242,
+      "events_R128": 280,
+      "urevents_R128": 288,
+      "raw_R128": 288,
+      "event_urevent_anchor_count": 1838,
+      "boundary_count": 20,
+      "raw_urevent_origin_residual_seconds": 1.1368683772161603e-13,
+      "raw_urevent_offset_seconds": 32.922799999999995,
+      "eye_pulses": 285,
+      "eye_unique_matched_volumes": 285,
+      "eye_max_abs_raw_match_error_seconds": 0.020800000000008367,
+      "eye_unmatched_volumes": [
+        0,
+        1,
+        287
+      ],
+      "biopac_pulses": 288,
+      "biopac_relative_first_residual_seconds": 0.012000000000004007,
+      "respiration_time_span_seconds": [
+        0.0,
+        606.144
+      ],
+      "no_BOLD_outcome_values_read": true
+    }
+  ],
+  "scope": "metadata/trigger diagnostics only; original frozen inclusion rules and scores are unchanged",
+  "source_sha256": "73bf4f314c1ee91df731b48e1013cb68182f2c6af88e6cbae623bfa0b2f570f6"
+}

@@ -1,0 +1,227 @@
+{
+  "branch": "amended_v2_secondary_complete_eligible_panel",
+  "n_prespecified_people": 8,
+  "n_clock_resolved": 8,
+  "n_evaluated_people": 6,
+  "excluded_people": [
+    {
+      "subject": "sub-05",
+      "reason": "fewer than 60 prespecified QC-passing frames"
+    },
+    {
+      "subject": "sub-10",
+      "reason": "fewer than 60 prespecified QC-passing frames"
+    }
+  ],
+  "pooled_metrics": [
+    {
+      "target": "global",
+      "n_people": 6,
+      "person_mean_r": 0.12488575182879073,
+      "person_bootstrap_r_95CI": [
+        -0.033023330674286894,
+        0.27604780616997837
+      ],
+      "person_mean_normalized_target_predictive_R2": -0.04310374937788999,
+      "person_bootstrap_R2_95CI": [
+        -0.09042316676872408,
+        0.005628854744365068
+      ],
+      "person_mean_amplitude_ratio": 0.1584507805446621,
+      "person_bootstrap_amplitude_95CI": [
+        0.13298537527266277,
+        0.18906431295460469
+      ]
+    },
+    {
+      "target": "regional64",
+      "n_people": 6,
+      "person_mean_r": 0.10381261861494206,
+      "person_bootstrap_r_95CI": [
+        -0.0001834445760335058,
+        0.20711321300579907
+      ],
+      "person_mean_normalized_target_predictive_R2": -0.07136653684680766,
+      "person_bootstrap_R2_95CI": [
+        -0.10640052437727994,
+        -0.03010601010177824
+      ],
+      "person_mean_amplitude_ratio": 0.14917947480890723,
+      "person_bootstrap_amplitude_95CI": [
+        0.12397031981709172,
+        0.17776433174253525
+      ]
+    },
+    {
+      "target": "VU_global_adjusted_residual64",
+      "n_people": 6,
+      "person_mean_r": 0.024784233176353254,
+      "person_bootstrap_r_95CI": [
+        -0.005003095872097312,
+        0.054571562224803825
+      ],
+      "person_mean_normalized_target_predictive_R2": -0.07216640740768406,
+      "person_bootstrap_R2_95CI": [
+        -0.09069155635098398,
+        -0.05875374155398719
+      ],
+      "person_mean_amplitude_ratio": 0.09678077209327052,
+      "person_bootstrap_amplitude_95CI": [
+        0.07406577593063383,
+        0.12162121336687555
+      ]
+    }
+  ],
+  "channel_contract": "21 nominal exact name-overlap sites +2 always interpolated VU prime targets; additional missing2or3 sites interpolated in3 prespecified people",
+  "per_person_QC": [
+    {
+      "subject": "sub-04",
+      "clock_resolved": true,
+      "frames": 166,
+      "retained_seconds": 348.6,
+      "measured_feature_sites": 21,
+      "interpolated_feature_sites": [
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.09270593270560348,
+      "clock_eye_max_abs_error_seconds": 0.02140000000008513,
+      "clock_biopac_max_relative_error_seconds": 0.020000000000038654,
+      "error": null
+    },
+    {
+      "subject": "sub-05",
+      "clock_resolved": true,
+      "frames": 4,
+      "retained_seconds": 8.4,
+      "measured_feature_sites": 19,
+      "interpolated_feature_sites": [
+        "T8",
+        "CZ",
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.9228040767594664,
+      "clock_eye_max_abs_error_seconds": 0.024800000000027467,
+      "clock_biopac_max_relative_error_seconds": 0.016000000000076398,
+      "error": null
+    },
+    {
+      "subject": "sub-06",
+      "clock_resolved": true,
+      "frames": 134,
+      "retained_seconds": 281.40000000000003,
+      "measured_feature_sites": 18,
+      "interpolated_feature_sites": [
+        "T8",
+        "FZ",
+        "CZ",
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.23135907618350926,
+      "clock_eye_max_abs_error_seconds": 0.018600000000049022,
+      "clock_biopac_max_relative_error_seconds": 0.01200000000000756,
+      "error": null
+    },
+    {
+      "subject": "sub-08",
+      "clock_resolved": true,
+      "frames": 64,
+      "retained_seconds": 134.4,
+      "measured_feature_sites": 21,
+      "interpolated_feature_sites": [
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.15807198580535886,
+      "clock_eye_max_abs_error_seconds": 0.023600000000044474,
+      "clock_biopac_max_relative_error_seconds": 0.016000000000076398,
+      "error": null
+    },
+    {
+      "subject": "sub-10",
+      "clock_resolved": true,
+      "frames": 23,
+      "retained_seconds": 48.300000000000004,
+      "measured_feature_sites": 21,
+      "interpolated_feature_sites": [
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.4266937673815272,
+      "clock_eye_max_abs_error_seconds": 0.016400000000089676,
+      "clock_biopac_max_relative_error_seconds": 0.016000000000076398,
+      "error": null
+    },
+    {
+      "subject": "sub-11",
+      "clock_resolved": true,
+      "frames": 67,
+      "retained_seconds": 140.70000000000002,
+      "measured_feature_sites": 21,
+      "interpolated_feature_sites": [
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.13717106905677334,
+      "clock_eye_max_abs_error_seconds": 0.018400000000042382,
+      "clock_biopac_max_relative_error_seconds": 0.024000000000114596,
+      "error": null
+    },
+    {
+      "subject": "sub-12",
+      "clock_resolved": true,
+      "frames": 133,
+      "retained_seconds": 279.3,
+      "measured_feature_sites": 21,
+      "interpolated_feature_sites": [
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.07644160169189627,
+      "clock_eye_max_abs_error_seconds": 0.02140000000008513,
+      "clock_biopac_max_relative_error_seconds": 0.016000000000076398,
+      "error": null
+    },
+    {
+      "subject": "sub-13",
+      "clock_resolved": true,
+      "frames": 176,
+      "retained_seconds": 369.6,
+      "measured_feature_sites": 18,
+      "interpolated_feature_sites": [
+        "FP1",
+        "FP2",
+        "O2",
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.07078175895765472,
+      "clock_eye_max_abs_error_seconds": 0.020800000000008367,
+      "clock_biopac_max_relative_error_seconds": 0.012000000000004007,
+      "error": null
+    }
+  ],
+  "protocol_sha256": "02f3138499a33c3f683a3c7b17899651bc968dd44ca2791edf7bc96bb71531d7",
+  "model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9",
+  "freeze_sha256": "4a7c688d51ccaeebc1a9f8404218a8f03af068f05bb68172527d3d557bfa14c5",
+  "slurm_job_id": "61208118",
+  "completed_utc": "2026-10-20T16:22:58Z",
+  "primary_alignment": "unshifted; original scanner volume identities from raw events/urevents/mask and independent pulses",
+  "bootstrap": "2000 within-person stationary replicates, expected 10TR block; restart at every gap; 10000 between-person iid replicates",
+  "lag": "-5..5 original volume index lags, min20 pairs, positive prediction later; descriptive only; no re-alignment or model selection",
+  "clinical_claim": false,
+  "independent_sleep_or_arousal_labels": false,
+  "new_site_accuracy_scope": "small external feasibility panel; resting instructed eye condition/site and preprocessing confounded",
+  "pilot_used_for_ingestion_only": true,
+  "test_outcome_tuning": false,
+  "EEG_adaptation": "none; VU training means/scales only",
+  "residual_endpoint": "VU-trained global coefficient used on measured and predicted global; measured BOLD defines label only, never a model input; residual algebra, not a separately tuned residual head",
+  "original_strict_8person_confirmation_achieved": false,
+  "scope": "secondary exploratory after metadata-only clock amendment; not original untouched confirmation",
+  "original_v1_summary_sha256": "97cd56568be0a5402615bd875efc87a7860c663d6f881bf4670583a947258f64",
+  "original_v1_protocol_sha256": "005d4145fd51f297df8133ee28870bb7b9f97f1eb04f0533e047817ce241d035",
+  "model_coefficients_scalers_unchanged": true,
+  "v2_metadata_freeze_sha256": "4a7c688d51ccaeebc1a9f8404218a8f03af068f05bb68172527d3d557bfa14c5"
+}

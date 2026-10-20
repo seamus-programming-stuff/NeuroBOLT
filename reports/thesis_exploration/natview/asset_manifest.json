@@ -1,0 +1,1028 @@
+[
+  {
+    "panel": "pilot",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"e057d7c471742b050e3c29f6017fdc74\"",
+    "size": 209199,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"73c6e5d9247c985fe0fa2fd387f2369c\"",
+    "size": 1361,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"9ada7f33be43a665bbd7a9e1c24d962b\"",
+    "size": 1904,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"8a97f5e55fc678f2a6eac3f0a45ee9ed\"",
+    "size": 2628,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"a6c63bd96d5e61bdd0d736a5a1e1f36c\"",
+    "size": 547,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"49500ec6be0b23aeff1f9b6363e3678c-5\"",
+    "size": 38793320,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"8a21d8c2bb4687dc144bd36f217a0ba2\"",
+    "size": 78818,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"4eef8f24858de047cc959cb3af56b7e2\"",
+    "size": 2277,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"43db9ce863f7d3e946188ee30dfb3f6a\"",
+    "size": 1385835,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"0206457a9282d58d87fc10f8928f2eba\"",
+    "size": 6752,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"5b6877e0744bc45caf6251875ac9d8fb\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"8026426af24337f50f08249b68998344-11\"",
+    "size": 86485324,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"4e6d1a6fe4346052122a8a6856346852\"",
+    "size": 2747,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"dbb522835fe7a29c2914023e0e6812b2\"",
+    "size": 562,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "pilot",
+    "etag": "\"b060302c75dc9c34e7dfd9c9884e8502\"",
+    "size": 45947,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"69c248830bf6a41c6e9c904ed35fed91\"",
+    "size": 2586,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"97392aaedff7887db5df4b51ee769b3c\"",
+    "size": 547,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c2f5664e00ac304f8c5bccc04da7fe5e-5\"",
+    "size": 40144040,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"0909c4839edc007cd73adedbb47ae657\"",
+    "size": 65758,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"649760a3c188bf9952f41aa9852c7578\"",
+    "size": 2278,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"52ab1e4a380077b326d8236ab091f12c\"",
+    "size": 2448213,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"bfb814a3eeb37afbd1f1de2143d1eaf3\"",
+    "size": 6783,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/func/sub-04_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"e5353afa5808880597a0f948538edcd9\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/func/sub-04_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/func/sub-04_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"2986d8a3b9c0b56897eb6840ff760015-10\"",
+    "size": 81261319,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/func/sub-04_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"3d1c6e1a00f90b27419a1c9f19c3fac1\"",
+    "size": 2961,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-04/ses-01/func/sub-04_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"9084e52082c2dff443371d2947ae2d83\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"b130c98a542239e3a95c6b5dd10dac91\"",
+    "size": 47584,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"33993e41e8a9421d50539824116583e8\"",
+    "size": 206437,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"eeff1e2423beede0dd94ab0799e5e4b9\"",
+    "size": 1353,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/eeg/sub-04_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f2f62f51863fb6825940c3b0d3b9b6a6\"",
+    "size": 1902,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-04/ses-01/func/sub-04_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"8d76d8d5cd8dc426ce8bdfeb1c3dd301\"",
+    "size": 2587,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"8840410b8cfa296cb2d271b4abb306a6\"",
+    "size": 549,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"392456d715d7a5c8f8c0efb4376a135d-5\"",
+    "size": 34472368,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"0e5d6d764de5dd757a44cc54a7bc6303\"",
+    "size": 56835,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"08b4ac114274746b8e6f03a1d3581ba5\"",
+    "size": 2279,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"157f7f59fad456d195ec28595611e895\"",
+    "size": 1725474,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"4d16e499df48667539dd2b474f316f10\"",
+    "size": 6724,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/func/sub-05_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"3c7edec11994c7f75a6a49fd6887422b\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/func/sub-05_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/func/sub-05_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"0a5554f148a27ec680f0d780f76b0e1d-10\"",
+    "size": 82795136,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/func/sub-05_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"02bd4ad07e15c5b5f7d70c516f168777\"",
+    "size": 2713,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-05/ses-01/func/sub-05_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"b9a1540e977b57d1ff06a136d2a7c39d\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"76247f0e640d24c46676e0c377a3facf\"",
+    "size": 46516,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"27aa8ddfc3c6492aa695a351d82a9099\"",
+    "size": 202226,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a62c2085c874c5b11977fabba68286f6\"",
+    "size": 1367,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/eeg/sub-05_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"4b30dd39aa03735cba2a345fdc789962\"",
+    "size": 1905,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-05/ses-01/func/sub-05_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"47aa08ac10813fd491bd9db4f8768bfe\"",
+    "size": 2289,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f8ff8379df8c7b0319f7f4f461e67451\"",
+    "size": 549,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c63dc5b258591eedaf6eddb21490cfd8-4\"",
+    "size": 33482456,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"d6731d81b42c8e3d94099112e17eb88c\"",
+    "size": 61727,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"27a6d2ec0014a0de2b9b272836d25a95\"",
+    "size": 2276,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"33e83b0fa7351a45345dff06a54d6436\"",
+    "size": 1442215,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"331202e749b1a6cd7f9595753e97a6b2\"",
+    "size": 6775,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/func/sub-06_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"76242555e934dc85cb90bc142b2674e5\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/func/sub-06_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/func/sub-06_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"79824a57ba470a2e0d665dc7bf5f7d75-10\"",
+    "size": 79096926,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/func/sub-06_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"fe88ba6a7768874fb6da31bc91784977\"",
+    "size": 2851,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-06/ses-01/func/sub-06_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"ae41e26b33c658b1e247d0f2625eb3a9\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"9a52bc0242ce52e44a40e2f897c141b7\"",
+    "size": 46081,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"19e9add1c8b9b639b40076c51d696f81\"",
+    "size": 162938,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f7b50a1cfaa8f3ed489e8a324377ff9c\"",
+    "size": 1333,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/eeg/sub-06_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1caab8f959c081e21f3e33d4c1b37b8d\"",
+    "size": 1904,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-06/ses-01/func/sub-06_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"e6d8266df786d2a5dbe21abac0fb5032\"",
+    "size": 2671,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c4dc0bf63e44e6a18bf2afec13bc2a18\"",
+    "size": 549,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"5aaf5dbec7a3a47071e9dd79614d6bd4-5\"",
+    "size": 36757408,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"eaac6007db9a00c51da7a1ba0e586c33\"",
+    "size": 59369,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"be80a90876dbc6a912c9716338c03209\"",
+    "size": 2279,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"d0fb7b52df74d26a6a7fe5cff9830c58\"",
+    "size": 3627762,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"9d6da6ed00cc260395113b8d8a23522b\"",
+    "size": 6738,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/func/sub-08_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"36438773e54841c8c92fd978fb4034ed\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/func/sub-08_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/func/sub-08_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"3b00e4c4c1268dae948bd7a8d5a37d0c-10\"",
+    "size": 83645359,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/func/sub-08_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"b6ff3247c08b3e15a60a4bbcf3686abc\"",
+    "size": 2972,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-08/ses-01/func/sub-08_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"043789fff13863abde155d6028d79d6c\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"380247d487a033d224bc2f3ed40d9f17\"",
+    "size": 46869,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"908f0267c2e45c57cfc06118fb92c636\"",
+    "size": 156115,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"88b22655f8c3bec111882edecef911da\"",
+    "size": 1355,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/eeg/sub-08_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"09bc6aa57346be4d6a01b68e1c5d01ef\"",
+    "size": 1909,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-08/ses-01/func/sub-08_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"6f7e8f1924af387c220e1ba1d9509f4b\"",
+    "size": 2713,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"6bd35ce4504dde914c6e1068dacd016c\"",
+    "size": 549,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"6f135e32c26463e53998cb5fbeef7499-5\"",
+    "size": 35507072,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"faf9f5b48c014c8f773ce26b749077d5\"",
+    "size": 56497,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c093dbea2512bbb097b746c6f732b608\"",
+    "size": 2277,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c0091033557017447b3fe4b5253776ea\"",
+    "size": 4104898,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"b297d005846b9fd5c4d2edab066a31d2\"",
+    "size": 6746,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/func/sub-10_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c06572e5c7928604d2471b0b7240759b\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/func/sub-10_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/func/sub-10_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"56a880a66b9e8686d1b72a0836c9bc54-11\"",
+    "size": 86605761,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/func/sub-10_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"13da9e31f40c68a0f1435ddf48650211\"",
+    "size": 2969,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-10/ses-01/func/sub-10_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"5a6cfca59c5687735ef8442ec3748692\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c7f2f60362312344bb66cbb6791027aa\"",
+    "size": 46510,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"6ffbe38330d0cb1ffacda16503e34bd3\"",
+    "size": 228489,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"90ce980bd96e6c3cfd73d45876ad7815\"",
+    "size": 1355,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/eeg/sub-10_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"2143d9fb6278ac3a966244d930923cdd\"",
+    "size": 1901,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-10/ses-01/func/sub-10_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"8bf07d3b9dba2f36879c497d4bb7c88f\"",
+    "size": 2670,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"fae21d100f4b6484adebf206afb27687\"",
+    "size": 549,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"2956bdb99c8b59fa84212a9d493ba0d9-5\"",
+    "size": 37716992,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"5ee7b1242d8809d94b563d58b00f7cfe\"",
+    "size": 63515,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"e3bc5730970b40f173e70f5717344005\"",
+    "size": 2279,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"2dada0d88f3509e3ba1c5fbec42fa107\"",
+    "size": 2857697,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"e91f0314d9cb99c0c9404cf569684732\"",
+    "size": 6758,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/func/sub-11_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"7463208ce41f3537bb38f4245e304ef1\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/func/sub-11_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/func/sub-11_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"d82a6f917d388a0dc0763f6fb3969c8a-11\"",
+    "size": 87778685,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/func/sub-11_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"6327086997382bb7cb77a901d17b9db6\"",
+    "size": 2756,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-11/ses-01/func/sub-11_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1cbfc6bd94e3aef3eff5f8c6f51ec973\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"3f8b7348358146a7702533ac9d3bdfbc\"",
+    "size": 46418,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f935dd87af14e74ed1cca4deeee7d08d\"",
+    "size": 209249,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"ee3a1b5afd16a8077cbbea87ddf6a548\"",
+    "size": 1356,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/eeg/sub-11_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f7ab18a1f91d224b65beaf423cd58b45\"",
+    "size": 1909,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-11/ses-01/func/sub-11_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"34d6126b774c586ff94a72799924d132\"",
+    "size": 2543,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"8a142c1a12b5987b5e354aaa520bc776\"",
+    "size": 549,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"7aeeb51935993c706541672149f8bcac-5\"",
+    "size": 35953136,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"9a504d2a999febb4621cc592ddc063f7\"",
+    "size": 58990,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"9f9441a461ddde69c3dc9a7ca96654c1\"",
+    "size": 2277,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"887d0a298f2b7bc1226b9392b29c195f\"",
+    "size": 2660463,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"9ccfe953a2553b944b1832e2d31302f3\"",
+    "size": 6734,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/func/sub-12_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"3bc2721ffb1c2660982cbebafd0eae50\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/func/sub-12_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/func/sub-12_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"24b89ef376847d1581c907ba96adb957-10\"",
+    "size": 82680026,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/func/sub-12_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"014a07f6c42208c321e0743b979c4f12\"",
+    "size": 2876,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-12/ses-01/func/sub-12_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"00b8ab01fb172f83cc454601db71a2b0\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"028cc27668fbdcebfb3f6201e25d1377\"",
+    "size": 44573,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"8eaa26bab2f590ff23c74ff1ff596318\"",
+    "size": 209268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a6207e23ba39a0cc8f3464406658dff2\"",
+    "size": 1356,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/eeg/sub-12_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"be0617e36fa1bcaa7f021d4646367f93\"",
+    "size": 1901,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-12/ses-01/func/sub-12_ses-01_task-rest_bold.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"583752434a4ed6a84f27f145f0be4886\"",
+    "size": 2244,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"23ab549ab916e66b597b3afd9e3cdc4a\"",
+    "size": 549,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"7906c60e8736bc3a02b314d2494b7213-4\"",
+    "size": 33069104,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_eeg.set"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"5d50282c10416c4dc6d385dc2e3489d3\"",
+    "size": 64716,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a3930dac10721effa234704272607069\"",
+    "size": 2276,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_recording-eyetracking_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f8a099a188df7d5253b1d4dbe0dc7f41\"",
+    "size": 1128307,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_recording-eyetracking_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"d00c4ea9f79428778c32f193151a3f58\"",
+    "size": 6764,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/func/sub-13_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f14ec94dae803f45e562f1560c3d5b20\"",
+    "size": 15552,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/func/sub-13_ses-01_task-rest_bold/func_nuisance/func_mc.1D"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "size": 31,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/func/sub-13_ses-01_task-rest_bold/func_preproc/Regressors_model.log"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"54ad7e527e8b13983837192e15cc0bb4-11\"",
+    "size": 86421053,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/func/sub-13_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"24c8be2d792efb6fda6473ea0933e43d\"",
+    "size": 2743,
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-13/ses-01/func/sub-13_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"a1572aafa81c50ba15532f4192b79e0d\"",
+    "size": 1047,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_channels.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f8c04e9e75648e5d110456a0c43f05e6\"",
+    "size": 564,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_eeg.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"d4ce12da0255d4088e8faeb1212be56b\"",
+    "size": 46359,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_events.tsv"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "size": 285,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_recording-respiratory_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"8db41bdac582091f250c684c16db7387\"",
+    "size": 186982,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_recording-respiratory_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "size": 268,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_recording-trigger_physio.json"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"5336e662e57f4811da616482d781cf5a\"",
+    "size": 1344,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/eeg/sub-13_ses-01_task-rest_recording-trigger_physio.tsv.gz"
+  },
+  {
+    "panel": "reserved8",
+    "etag": "\"c3ba0bd3e010b5b32a2792c164da6006\"",
+    "size": 1901,
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-13/ses-01/func/sub-13_ses-01_task-rest_bold.json"
+  }
+]

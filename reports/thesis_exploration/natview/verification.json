@@ -1,0 +1,1058 @@
+{
+  "status": "PASS",
+  "slurm_job_id": "61208309",
+  "completed_utc": "2026-10-20T16:29:16Z",
+  "hash_checks": [
+    {
+      "path": "reports/thesis_exploration/natview/freeze.json",
+      "sha256": "e8cdd1b9164fe0c8746514a50c44478f60b7d005290c0866949f59a2a3ab0743",
+      "meaning": "strict v1 freeze unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/protocol.json",
+      "sha256": "005d4145fd51f297df8133ee28870bb7b9f97f1eb04f0533e047817ce241d035",
+      "meaning": "strict v1 protocol unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/protocol.json",
+      "sha256": "005d4145fd51f297df8133ee28870bb7b9f97f1eb04f0533e047817ce241d035",
+      "meaning": "strict v1 protocol unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/protocol.json",
+      "sha256": "02f3138499a33c3f683a3c7b17899651bc968dd44ca2791edf7bc96bb71531d7",
+      "meaning": "v2 protocol unchanged"
+    },
+    {
+      "path": "scripts/natview_cache_audit.py",
+      "sha256": "8bc904f3196a6693e777e7ffbf2cd1d74e4d593fed3c6dd1801e9e4a9f8f5629",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_cache_audit.py",
+      "sha256": "8bc904f3196a6693e777e7ffbf2cd1d74e4d593fed3c6dd1801e9e4a9f8f5629",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_clock_probe.py",
+      "sha256": "a60023a4d717bd5bcb6e0fe38ad98fb344af77c9d134054935087e1d49f95d83",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_clock_probe.py",
+      "sha256": "a60023a4d717bd5bcb6e0fe38ad98fb344af77c9d134054935087e1d49f95d83",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_data.py",
+      "sha256": "d6625940223ba2f281a7a55aec0be2ee696bd1925df7065c3c95257f60622a8b",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_data.py",
+      "sha256": "d6625940223ba2f281a7a55aec0be2ee696bd1925df7065c3c95257f60622a8b",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_finalize_model.py",
+      "sha256": "bf424a52db0a8ed2e078fac87d57842a2e54e0d259dcd68b83f9bde4b525ed77",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_finalize_model.py",
+      "sha256": "bf424a52db0a8ed2e078fac87d57842a2e54e0d259dcd68b83f9bde4b525ed77",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_freeze.py",
+      "sha256": "555941093912910e9997bb875ff9fc9b5fd8c7770c40050853daa0ec1a6369ce",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_freeze.py",
+      "sha256": "555941093912910e9997bb875ff9fc9b5fd8c7770c40050853daa0ec1a6369ce",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_inspect.py",
+      "sha256": "267077c621c32106433e597ecfd1392768cc43cfd6f38d95faa6246836ac5bde",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_inspect.py",
+      "sha256": "267077c621c32106433e597ecfd1392768cc43cfd6f38d95faa6246836ac5bde",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_montage.py",
+      "sha256": "88cc6489ef448b7a55a2c785b1d5ccf25e764faecf4dd85b11b878691b5fe1e5",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_montage.py",
+      "sha256": "88cc6489ef448b7a55a2c785b1d5ccf25e764faecf4dd85b11b878691b5fe1e5",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_run.py",
+      "sha256": "5aa340ca0a2514d624e200a40486b2fe1565c0662221ad531cf784b3705d1add",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_run.py",
+      "sha256": "5aa340ca0a2514d624e200a40486b2fe1565c0662221ad531cf784b3705d1add",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_score.py",
+      "sha256": "3682229ea0a5dfda86605d29b74af615a852af39fe972342451d266775dc29f0",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_score.py",
+      "sha256": "3682229ea0a5dfda86605d29b74af615a852af39fe972342451d266775dc29f0",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_sources.py",
+      "sha256": "e9b246af135b6dc8041d76a8099ed44a3865e2309e202f092d91c1da006341c8",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_sources.py",
+      "sha256": "e9b246af135b6dc8041d76a8099ed44a3865e2309e202f092d91c1da006341c8",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_stage.py",
+      "sha256": "966a0602ab6bc1fbcc662c15a67e55f1ca7bf1a867fcee54518be5cc772949ab",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_stage.py",
+      "sha256": "966a0602ab6bc1fbcc662c15a67e55f1ca7bf1a867fcee54518be5cc772949ab",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_tests.py",
+      "sha256": "7266963bb6953d111782eb6bfac82dc49f0965dae1d03ea904b2f4173cd898f9",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_tests.py",
+      "sha256": "7266963bb6953d111782eb6bfac82dc49f0965dae1d03ea904b2f4173cd898f9",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_train.py",
+      "sha256": "6981cbf892d238d370d5e214c9fd3299ffc5af5fb78aa828a5577b6b2f1ef726",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_train.py",
+      "sha256": "6981cbf892d238d370d5e214c9fd3299ffc5af5fb78aa828a5577b6b2f1ef726",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_vu_audit.py",
+      "sha256": "d33f75fb3186db4682c7f6584bb6bb4299ccc2027906efdbd20dd44d5d28ab4a",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/natview_vu_audit.py",
+      "sha256": "d33f75fb3186db4682c7f6584bb6bb4299ccc2027906efdbd20dd44d5d28ab4a",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/baseline_ridge.py",
+      "sha256": "495e0964ddf063ed550a3d1118434bb0738e6ca5e42043399a9dae6ae69a390f",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/baseline_ridge.py",
+      "sha256": "495e0964ddf063ed550a3d1118434bb0738e6ca5e42043399a9dae6ae69a390f",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/ext_transfer.py",
+      "sha256": "3a9411f258017839db2cb58bec9fb89ecca8e4cfab328a09e98cef05adc9dfdc",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/ext_transfer.py",
+      "sha256": "3a9411f258017839db2cb58bec9fb89ecca8e4cfab328a09e98cef05adc9dfdc",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/interp_cv.py",
+      "sha256": "8bb6b57e4c4869cabfb6115b33b13b10a2be1f18d3d29da42a4f775a659d4d86",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/interp_cv.py",
+      "sha256": "8bb6b57e4c4869cabfb6115b33b13b10a2be1f18d3d29da42a4f775a659d4d86",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/eval_inter_per_scan.py",
+      "sha256": "44cf2dfd4121f899d99b2843fa667378f75bbd4e117131513ab8ed2f012d5940",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/scripts/eval_inter_per_scan.py",
+      "sha256": "44cf2dfd4121f899d99b2843fa667378f75bbd4e117131513ab8ed2f012d5940",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "dataset_maker/preproc.py",
+      "sha256": "379cb0acbf7715151224b821453b3b18370dde2e0f88df7b7ffe4241beeb2347",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/dataset_maker/preproc.py",
+      "sha256": "379cb0acbf7715151224b821453b3b18370dde2e0f88df7b7ffe4241beeb2347",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "dataset_maker/get_datasets.py",
+      "sha256": "6c5ebb5b53cfd35a7f5d85084a9ca2ca7021ad6d788679d96e1fdddc7b2ed3f3",
+      "meaning": "current original-v1 source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/source/dataset_maker/get_datasets.py",
+      "sha256": "6c5ebb5b53cfd35a7f5d85084a9ca2ca7021ad6d788679d96e1fdddc7b2ed3f3",
+      "meaning": "archived frozen-v1 source unchanged"
+    },
+    {
+      "path": "scripts/natview_cache_audit.py",
+      "sha256": "8bc904f3196a6693e777e7ffbf2cd1d74e4d593fed3c6dd1801e9e4a9f8f5629",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_cache_audit.py",
+      "sha256": "8bc904f3196a6693e777e7ffbf2cd1d74e4d593fed3c6dd1801e9e4a9f8f5629",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_clock_probe.py",
+      "sha256": "a60023a4d717bd5bcb6e0fe38ad98fb344af77c9d134054935087e1d49f95d83",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_clock_probe.py",
+      "sha256": "a60023a4d717bd5bcb6e0fe38ad98fb344af77c9d134054935087e1d49f95d83",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_data.py",
+      "sha256": "d6625940223ba2f281a7a55aec0be2ee696bd1925df7065c3c95257f60622a8b",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_data.py",
+      "sha256": "d6625940223ba2f281a7a55aec0be2ee696bd1925df7065c3c95257f60622a8b",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_finalize_model.py",
+      "sha256": "bf424a52db0a8ed2e078fac87d57842a2e54e0d259dcd68b83f9bde4b525ed77",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_finalize_model.py",
+      "sha256": "bf424a52db0a8ed2e078fac87d57842a2e54e0d259dcd68b83f9bde4b525ed77",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_freeze.py",
+      "sha256": "555941093912910e9997bb875ff9fc9b5fd8c7770c40050853daa0ec1a6369ce",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_freeze.py",
+      "sha256": "555941093912910e9997bb875ff9fc9b5fd8c7770c40050853daa0ec1a6369ce",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_inspect.py",
+      "sha256": "267077c621c32106433e597ecfd1392768cc43cfd6f38d95faa6246836ac5bde",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_inspect.py",
+      "sha256": "267077c621c32106433e597ecfd1392768cc43cfd6f38d95faa6246836ac5bde",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_montage.py",
+      "sha256": "88cc6489ef448b7a55a2c785b1d5ccf25e764faecf4dd85b11b878691b5fe1e5",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_montage.py",
+      "sha256": "88cc6489ef448b7a55a2c785b1d5ccf25e764faecf4dd85b11b878691b5fe1e5",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_run.py",
+      "sha256": "5aa340ca0a2514d624e200a40486b2fe1565c0662221ad531cf784b3705d1add",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_run.py",
+      "sha256": "5aa340ca0a2514d624e200a40486b2fe1565c0662221ad531cf784b3705d1add",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_score.py",
+      "sha256": "3682229ea0a5dfda86605d29b74af615a852af39fe972342451d266775dc29f0",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_score.py",
+      "sha256": "3682229ea0a5dfda86605d29b74af615a852af39fe972342451d266775dc29f0",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_sources.py",
+      "sha256": "e9b246af135b6dc8041d76a8099ed44a3865e2309e202f092d91c1da006341c8",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_sources.py",
+      "sha256": "e9b246af135b6dc8041d76a8099ed44a3865e2309e202f092d91c1da006341c8",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_stage.py",
+      "sha256": "966a0602ab6bc1fbcc662c15a67e55f1ca7bf1a867fcee54518be5cc772949ab",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_stage.py",
+      "sha256": "966a0602ab6bc1fbcc662c15a67e55f1ca7bf1a867fcee54518be5cc772949ab",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_tests.py",
+      "sha256": "7266963bb6953d111782eb6bfac82dc49f0965dae1d03ea904b2f4173cd898f9",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_tests.py",
+      "sha256": "7266963bb6953d111782eb6bfac82dc49f0965dae1d03ea904b2f4173cd898f9",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_train.py",
+      "sha256": "6981cbf892d238d370d5e214c9fd3299ffc5af5fb78aa828a5577b6b2f1ef726",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_train.py",
+      "sha256": "6981cbf892d238d370d5e214c9fd3299ffc5af5fb78aa828a5577b6b2f1ef726",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_vu_audit.py",
+      "sha256": "d33f75fb3186db4682c7f6584bb6bb4299ccc2027906efdbd20dd44d5d28ab4a",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_vu_audit.py",
+      "sha256": "d33f75fb3186db4682c7f6584bb6bb4299ccc2027906efdbd20dd44d5d28ab4a",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/baseline_ridge.py",
+      "sha256": "495e0964ddf063ed550a3d1118434bb0738e6ca5e42043399a9dae6ae69a390f",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/baseline_ridge.py",
+      "sha256": "495e0964ddf063ed550a3d1118434bb0738e6ca5e42043399a9dae6ae69a390f",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/ext_transfer.py",
+      "sha256": "3a9411f258017839db2cb58bec9fb89ecca8e4cfab328a09e98cef05adc9dfdc",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/ext_transfer.py",
+      "sha256": "3a9411f258017839db2cb58bec9fb89ecca8e4cfab328a09e98cef05adc9dfdc",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/interp_cv.py",
+      "sha256": "8bb6b57e4c4869cabfb6115b33b13b10a2be1f18d3d29da42a4f775a659d4d86",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/interp_cv.py",
+      "sha256": "8bb6b57e4c4869cabfb6115b33b13b10a2be1f18d3d29da42a4f775a659d4d86",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/eval_inter_per_scan.py",
+      "sha256": "44cf2dfd4121f899d99b2843fa667378f75bbd4e117131513ab8ed2f012d5940",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/eval_inter_per_scan.py",
+      "sha256": "44cf2dfd4121f899d99b2843fa667378f75bbd4e117131513ab8ed2f012d5940",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "dataset_maker/preproc.py",
+      "sha256": "379cb0acbf7715151224b821453b3b18370dde2e0f88df7b7ffe4241beeb2347",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/dataset_maker/preproc.py",
+      "sha256": "379cb0acbf7715151224b821453b3b18370dde2e0f88df7b7ffe4241beeb2347",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "dataset_maker/get_datasets.py",
+      "sha256": "6c5ebb5b53cfd35a7f5d85084a9ca2ca7021ad6d788679d96e1fdddc7b2ed3f3",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/dataset_maker/get_datasets.py",
+      "sha256": "6c5ebb5b53cfd35a7f5d85084a9ca2ca7021ad6d788679d96e1fdddc7b2ed3f3",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_v2.py",
+      "sha256": "ca072518e4f0b2266d7071f0a16923b333d5c2b351f84f5d9e24ca107ed8d434",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_v2.py",
+      "sha256": "ca072518e4f0b2266d7071f0a16923b333d5c2b351f84f5d9e24ca107ed8d434",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_v2_tests.py",
+      "sha256": "f1d3dbe1628f001d297372a8a55bb4883f9f5e297c22060ace82f658c7b6833b",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_v2_tests.py",
+      "sha256": "f1d3dbe1628f001d297372a8a55bb4883f9f5e297c22060ace82f658c7b6833b",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "scripts/natview_segment_audit.py",
+      "sha256": "3b46ed72b4c8613dd8c7311d25486a3c3727baed435b5f25b4e7d351821033ec",
+      "meaning": "current v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/source/scripts/natview_segment_audit.py",
+      "sha256": "3b46ed72b4c8613dd8c7311d25486a3c3727baed435b5f25b4e7d351821033ec",
+      "meaning": "archived frozen-v2/helper source unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-10_certified_metadata.json",
+      "sha256": "b48fe8df18be709c8385629139294f47b5fcfdb677cb0aa2f58aec462514f948",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-12_certified_metadata.json",
+      "sha256": "d6e222ae6da04bc79f56f06f6f3a18773748929b2dbe58f4d09f40561dd28160",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-06_certified_metadata.json",
+      "sha256": "b5e69241f6ae26c2e9ed58c57bfa16a2b5d1cd2329777077d957b17ed02b131c",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-08_certified_metadata.json",
+      "sha256": "6eb47538bd2f984ed8c10aa3ad273757caa73f07b72598407ef9eb59c587b092",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-04_certified_metadata.json",
+      "sha256": "c599db5f1801391e21fa92cb17f62ac0434a48402747830da445ee2d04a13014",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-05_certified_metadata.json",
+      "sha256": "b18c22c9e31162d818274fa95cac262ea651f9bc1ade32d4c19c0d58bcd3c6da",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-13_certified_metadata.json",
+      "sha256": "7f59d4651d763de508e1b65c19ec0fbf24e7b3f87eeb717aab751888c3ad07a1",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/sub-11_certified_metadata.json",
+      "sha256": "87ff116715e13f4763f4c78e6c50cca59d23b286804bba541e7962e32edc3c7d",
+      "meaning": "v2 metadata certificates unchanged since freeze"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-08_event_segment_QC.json",
+      "sha256": "796b2ea11edda9bf7a6b15e7b06b927f4de08b64da12fa1313e02df2cb70ba8e",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-inspect-61207459.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-11_independent_clock_diagnostic.json",
+      "sha256": "bf5687cea60f7ac295d8aeb333166ef0ce420a8d68c0383e9c461067fd0db811",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot-final-61207781.err",
+      "sha256": "88f50d58ae81b795e9d85b7cb2e79dfe5cd7d4a1b892f49061ec20612d75122b",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/natview_freeze.py",
+      "sha256": "555941093912910e9997bb875ff9fc9b5fd8c7770c40050853daa0ec1a6369ce",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-prime-geometry-61207771.out",
+      "sha256": "658e69ad7500b88719670b4514a16b3ffa1e8af28fa32e124aab75faac70261c",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-clock-probe-61207604.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/per_person_metrics.csv",
+      "sha256": "0419e163a488ee68e21da38bb8a05046acf95916956fff2965fc4d9db257e9f7",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot-61207555.err",
+      "sha256": "6ba91025e6c753233943a5ca2067ae066a80a3159cec065e68712fcabe45e80d",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-10_failure.json",
+      "sha256": "ac52eead7e020509278386638860970265561332372754f140f38ba32e0672ed",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot2-61207590.out",
+      "sha256": "29506a71312119b0ad3bf12ddafa9b389f07e6179ba2106f2a94af2a9bfd9acb",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/bridge_geometry.json",
+      "sha256": "5011de4d1ba46307db3e1f78104318904c6eedc1bebbdf75098458f9429b5264",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-cache-audit2-61207729.out",
+      "sha256": "0e30280edc64dc33892e013264cf800e199a79d204d181e4f8761a9c9f71ff52",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/model_finalization.json",
+      "sha256": "97bb17a1f29ac325f6b3e084a6b21b03f9c7207eed14f52e3060913277e209f2",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/physical_clock_QC.svg",
+      "sha256": "f71d6018be8b18bad04468c37ab0c3e4a0552c9e16a540c5a619a74012f37541",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-freeze-61207793.out",
+      "sha256": "9e8bf8b875d5018fa08329b20e341b55b484a840e9bba3fed2bd56bcd9357f0c",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot3-61207653.out",
+      "sha256": "c2bea5b9c426100438e7d1db0ee36c9a5b5260d5068aab2537190aa52e1a1caa",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-04_failure.json",
+      "sha256": "d46bd5bce46e43d2c01501577b586be193e92c0ad6696801a58584b947781716",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-event-segments-61207930.out",
+      "sha256": "312ab43689b21406278606c2d1597bdc0d92d892d5bbcfc08ae86c1eef3eeb19",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-vu-common23-61207492.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/reserved_montage_metadata_audit.json",
+      "sha256": "3436f191470abfa841b46c2f2b6f2359dd432a147782bf02774cc29ec7d22637",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-preserve-v1-61207961.out",
+      "sha256": "900f608dae4e4b8c39781e5d62e706b0c156c19538a9f055abae8a611ee0f1f2",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot3-61207653.err",
+      "sha256": "13f4a02fc6ecbe70522d6f00d6bd0e4c7263ac73282d813bd683148d9b45f44c",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/pilot_payload_inspection.json",
+      "sha256": "5d7b081e08932939eb7e1676b93a39ecbb86345ad0ed846d1f7efa43e5470df5",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-clock-diagnostics-61207906.out",
+      "sha256": "ab65ce809f355fe335203695552f355659092ec727f66f6e6efecfd07aba51af",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-05_event_segment_QC.json",
+      "sha256": "a24804406fed2edda2da972f13eff607a57b472dbc41ec2999fbf8dd19edbe34",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-cache-audit-61207671.err",
+      "sha256": "b2b116668495fdf1b8e2eb88ff6fb15ba687663297c34db8617a6edc80ec5d6d",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-freeze-61207793.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-08_independent_clock_diagnostic.json",
+      "sha256": "2526cc340b671c1d961c536442f4868a15b25e54ef84f08a86de634cd3bc7878",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-06_event_segment_QC.json",
+      "sha256": "739ffd2fcc6ec099005fd92adc096429dd46623213a95c64ec6b8deb8a850be3",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/VU_per_scan_cache_audit.json",
+      "sha256": "af839febb05d000c8518665dcaa8045256006fb460852f9f05f1c4371f3d4797",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-12_independent_clock_diagnostic.json",
+      "sha256": "eb86ecde8a894dcadf6ff50935ab1c1fde3f8b730764dbafefed83bc09d5a84b",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-tests-final-61207681.err",
+      "sha256": "2a481aa5faa97b42a34654447268915635f34d6b77fed45e383d5a9fb3e7b47a",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-04_event_segment_QC.json",
+      "sha256": "a1b09138b4b85159e39fb866161666f58bfb1705e8d4a4e7d00be70f4e7c1401",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-contract-tests-61207783.out",
+      "sha256": "181442b6638e0d54a88f1b6b78d4d3883edfd5db9bfd25f69f2ee1ff8a3f4980",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-tests-final-61207681.out",
+      "sha256": "19180cbdee21da47fbcafc5750078fcac16727450e188b9ef3073e2f00942409",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/locked_transfer_r.svg",
+      "sha256": "2dea9863812c368cd9ed690eb3308516ba29a3e73660e5d6338f667221f59883",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-10_event_segment_QC.json",
+      "sha256": "bd9843683b5b8a41182e1b64421b8a2e6d7630577356c52555270a962719e6e3",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/pilot_mask_boundary_probe.json",
+      "sha256": "9dd13d246cf896724fb5cab777ba94d527bb9802758f05a9022d57d35146ecfe",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/reserved_assets.json",
+      "sha256": "b2dd4a6e25b6ceefb53ce8ca8fa298431da8edc6315b719e41ba4918c57f904f",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/VU_reference_audit.json",
+      "sha256": "0cafde4059eff7e73400b9ec30950db7fb00c18ad22185c86d13221eb56ae6b4",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-clock-diagnostics-61207906.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/locked_transfer_r.png",
+      "sha256": "f9409a6cdaa06fbdbd134641035ac27e6dbd8e5347315d7be4a34a76d8064117",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/job_ledger.json",
+      "sha256": "e50d033277dc5ae2ec9b7deb3eb1e2f565a8472e01bfe3447dd8e361457cc0bc",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-10_independent_clock_diagnostic.json",
+      "sha256": "16291b300fd252c8e0f9fb0fe95e7662293feb4541779e5b9b5cb4b0bd5c3036",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-05_failure.json",
+      "sha256": "c02721cba821efb2da2869c4e026b54a28251a6065911aee316eb09ac6f2bf99",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-prime-geometry-61207771.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/regional_metrics.csv",
+      "sha256": "4e4d2d308c7dd92fd9db00a49de962e72af518d10a64f07e1e29782f3b2f7e97",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/input_handoff_hashes.json",
+      "sha256": "415bfbd01ac33564601887dcc56375b98ba5d65e7c9120dfeaaa9bfef971916f",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-13_failure.json",
+      "sha256": "56b03a4c5a2efef86c8977fa2ff2d5be1bd2c6e7dfe6730a7806c7878321d243",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-contract-tests-61207783.err",
+      "sha256": "b1e18913328023b90f00f5410c9272a5566facec327c469f76786d0e2730bc94",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/reserved_outcomes_opened.json",
+      "sha256": "f7e3d0cb60c93ff61345efbfe92b5c8ba7da7350e7f482193f491b01d892750c",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-05_independent_clock_diagnostic.json",
+      "sha256": "8bd651ed66a4690711c7fd8c761b85849bbc4c1fcbfe5c19e2a1abb050159145",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-12_clock.json",
+      "sha256": "0e76718e09990a116c2f1d8809c5aba9d1bc507f0fa5bc8678a3c5021a66e9e9",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-clock-probe-61207604.out",
+      "sha256": "8bb29c77b383d955e288d433ab4f8c7a3722b18dbd9a9ae8b494cc4d09782ce2",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-13_independent_clock_diagnostic.json",
+      "sha256": "d49710d7047305d10380b6296004a90c91343c32fb3691e000820b6ea0faf25c",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-06_failure.json",
+      "sha256": "d8f2ee38bf76d7e48a95586479e4e91bfa5b5ee256e8a2d61479e1b23a46923b",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/event_segment_QC_summary.json",
+      "sha256": "e6d51cd2b7033212ebcba36b4a32961fc745965d90fab6d6637c23c6fae36cf3",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-11_event_segment_QC.json",
+      "sha256": "f73c0b85082d987da8cf5f3a9591aebd2ff535976c09c31dc22915dd7aadf2ab",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-inspect-61207459.out",
+      "sha256": "4c21ecb256cf45335a4104cee2288d220b1521ffffe324330df5871287255d65",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot2-61207590.err",
+      "sha256": "228cd5df84ebb6801e3db7278b7ca640d80a27eb42894c9474bdf89be847d2fe",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/pilot_build_summary.json",
+      "sha256": "a79cc6056d11559a2753f35c9b39ee8052b3731ca13b59c29b3806f82b5672a8",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-11_failure.json",
+      "sha256": "35806937299d73f00bc273d210e1c1154821e2c09cb8e258899e97871b51bc54",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-tests-61207554.err",
+      "sha256": "2bfbd511447ad7755898a37705709ccd0ce94e1eb534592b525954a2fc9f1768",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/independent_clock_diagnostic_summary.json",
+      "sha256": "aa48cec5d7911820e416e0fefad046aa80dc1924f039b29d439fcaac8ed7c22a",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/reserved_channel_metadata_receipt.json",
+      "sha256": "5fa168b23e4704bf2a784032b027e04cb37c94cfe9ccc0340389c08764777c50",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-12_qc.json",
+      "sha256": "a135fc810d3bf073b5199c82bbb4ff2d4f3ad1b8c3147f6f8bcec8d41f80dcfa",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-event-segments-61207930.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-06_independent_clock_diagnostic.json",
+      "sha256": "ba594100265fd479ac11211957b90cda9cd57782c00ed82e86eaeab46ee2bab7",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-vu-reference-61207588.err",
+      "sha256": "77461fc87062537b439447bc7a2a41e95ec687d5951efc8ab55090b5bae65408",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-package-61207884.out",
+      "sha256": "b48f05ecc32fd6771be4004b117d02379ea57c3ddba023906ecb1e3cccec145a",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/coverage_QC.csv",
+      "sha256": "bf6aef9098a98a26f908df79cb837c1c9f64267b5744071d80c45e9af9795fe8",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-cache-audit2-61207729.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/asset_manifest.json",
+      "sha256": "9f23c759c064ce88ba78c274b2189a150d12f12418be54564154e48f13eae597",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot-final-61207781.out",
+      "sha256": "856b61b8d479ada5ac70f0bdf70e65c86fbccb16e9124818e3017420b6a6629a",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-01_qc.json",
+      "sha256": "05b089dc10777b027e416f7a394f1e66495e3370ac97d8bc047580704e10e808",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-tests-61207554.out",
+      "sha256": "df36e437d2a6cd16eaf70898e4f1734669f6b36d54bb8dab5a7e9b9c27262fb8",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-locked8-61207877.err",
+      "sha256": "2b0c21bb0f1b84af3f9e6c015ad1b523ac4af5b513c68f80da6ed06b386201ca",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-vu-coordinates-61207710.err",
+      "sha256": "77461fc87062537b439447bc7a2a41e95ec687d5951efc8ab55090b5bae65408",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-01_clock.json",
+      "sha256": "c3c2e6db9e53efb1cc713eecd585713dda02ce2295f01d119fab7b1021b684ac",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/pilot_assets.json",
+      "sha256": "e34c34d135b709d93c4f1f885cde690af0508a5d6ea8a8d833006fc46be44c01",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/artifact_hashes.json",
+      "sha256": "86c42d913438436f67060106ef59e6d18c528a779453cfbbc5f6f3fa620af12e",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-cache-audit-61207671.out",
+      "sha256": "a505f6f2aa4e6c8f1ccd177d20ecd37aec4380fa91fed41193272c74f796d8ef",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/panel_build_summary.json",
+      "sha256": "27eb0c8e5a4284e9372b86ccffe0b85de8ee771b724df4ffc66f77fdddd33e9e",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/machine_summary.json",
+      "sha256": "97cd56568be0a5402615bd875efc87a7860c663d6f881bf4670583a947258f64",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/protocol.json",
+      "sha256": "005d4145fd51f297df8133ee28870bb7b9f97f1eb04f0533e047817ce241d035",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-04_independent_clock_diagnostic.json",
+      "sha256": "8e7628abce40d06553f68845241831e1ca98452f7cc6e5be3ca3fea60fd1251a",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-01_failure.json",
+      "sha256": "05e9f3162f6474b0694ccf820aadaa1bb79cabb5a7cfd8364833b0f3a90501ca",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-package-61207884.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-vu-reference-61207588.out",
+      "sha256": "8276daf83151b74dfc01f246603012c43075e46e456a07f7669e8575f48514ee",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/frozen_tests.txt",
+      "sha256": "384c8a184cbb7b9627b683e32ceec0d73367f7aa6bb8b9e09a3bc58534631bdc",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-preserve-v1-61207961.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-08_failure.json",
+      "sha256": "61b355d7d48bd52635e7cd4c0316c0f6848fb188ada9c6a04b568dc6b663cc9a",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-12_event_segment_QC.json",
+      "sha256": "2bd24b6158b9c4ff1e139fe81b05b04d11aec879dd9f6932b2599cb3203a9fd8",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-locked8-61207877.out",
+      "sha256": "41f39d982a92e8385b18fb3181e6d46363578b6c988226858d8ee99b4350e3ac",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/jobs_sacct.psv",
+      "sha256": "2e9970f8ac50085cbb7ebf25c2685f9caab69ad743192b9b09d4ab05c32b5641",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/model_training.json",
+      "sha256": "5648c98bb533d281bfe748cdd05be95d34e1ef9b15975dcce4bc5cb5af7de871",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-pilot-61207555.out",
+      "sha256": "7fdba5c9ef22bb6f91e208665ed44687e015f7f64dee44f4c826926634023a91",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/physical_clock_QC.png",
+      "sha256": "2ac3938fb2b4c2837fb191e3ca70dd3f181bd5ec199a4535324ecdb16c91c33f",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/freeze.json",
+      "sha256": "e8cdd1b9164fe0c8746514a50c44478f60b7d005290c0866949f59a2a3ab0743",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-vu-coordinates-61207710.out",
+      "sha256": "cb481764b683bf53aa28a158d76544c2b3108ccb0ad666fc5e7064f3331ba90a",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/sub-13_event_segment_QC.json",
+      "sha256": "bb6cb8814b5a3b70b7379f04fd4aaf17c96c4512bf9534d36aba0506bf2073f5",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/slurm-natview-vu-common23-61207492.out",
+      "sha256": "184c413d8f5b8baf96f44ac967fc74eb549fb306185bf1cd9d1fc56a54e9aead",
+      "meaning": "preserved strict-v1 artifact unchanged"
+    },
+    {
+      "path": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/ext/natview/vu_common23_prime_geometry_frozen.npz",
+      "sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9",
+      "meaning": "v1/current/v2 final model containers unchanged"
+    },
+    {
+      "path": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/ext/natview/v2/vu_common23_prime_geometry_frozen.npz",
+      "sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9",
+      "meaning": "v1/current/v2 final model containers unchanged"
+    },
+    {
+      "path": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/ext/natview/vu_common23_frozen.npz",
+      "sha256": "c7d2a46c05f711f89e5da4e24d148d47655ce868a1d0c1819b05044b10174fd4",
+      "meaning": "initial coefficient-fit container preserved"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/bridge_geometry.json",
+      "sha256": "5011de4d1ba46307db3e1f78104318904c6eedc1bebbdf75098458f9429b5264",
+      "meaning": "original fixed spatial bridge unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v1/bridge_geometry.json",
+      "sha256": "5011de4d1ba46307db3e1f78104318904c6eedc1bebbdf75098458f9429b5264",
+      "meaning": "original fixed spatial bridge unchanged"
+    },
+    {
+      "path": "reports/thesis_exploration/natview/v2/bridge_geometry.json",
+      "sha256": "5011de4d1ba46307db3e1f78104318904c6eedc1bebbdf75098458f9429b5264",
+      "meaning": "original fixed spatial bridge unchanged"
+    }
+  ],
+  "strict_original_8person_confirmation_achieved": false,
+  "strict_eligible": 1,
+  "amended_secondary_eligible": 6,
+  "prespecified_denominator": 8,
+  "accepted_frames": 740,
+  "possible_raw_frames": 2304,
+  "accepted_frame_fraction": 0.3211805555555556,
+  "summary_means_match_all_per_person_tables": true,
+  "per_person_metric_rows": 18,
+  "region_metric_rows": 774,
+  "no_post_freeze_model_or_scaler_change": true,
+  "frozen_spatial_bridge_unchanged": true,
+  "v1_artifacts_unchanged": true,
+  "v2_exploratory_scope_required": true,
+  "source_contract_failures_are_not_biological_or_dataset_unusability_ceiling": true,
+  "source_sha256": "8bf955c37f70cfd711c3e7b35d60f7ee4d8dc492082814150f6b95b372cc5432"
+}

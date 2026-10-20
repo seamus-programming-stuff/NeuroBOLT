@@ -1,0 +1,49 @@
+{
+  "status": "sources used in parent-reviewed final PhD exploration poster",
+  "evidence_note": "research_notes/Clinical EEG fMRI thesis exploration/clinical applications.md",
+  "model_panel": [
+    {
+      "model": "UnEBOLT",
+      "url": "https://raw.githubusercontent.com/mlresearch/v315/main/assets/li26g/li26g.pdf",
+      "record": "https://proceedings.mlr.press/v315/li26g.html",
+      "publication": "Li et al., MIDL 2026, PMLR 315:2338-2351",
+      "location": "Tables 1-3; architecture section 2.2, PDF pp. 3-5",
+      "temporal_r": 0.418,
+      "n_regions": 64,
+      "benchmark_scope": "VU healthy cohort; 22 people/29 scans; 18/5/6 subject-disjoint scan split; five test people",
+      "use": "Proposed regional feedback; patient target engagement and clinical benefit untested"
+    },
+    {
+      "model": "UniEFS",
+      "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26gp/li26gp.pdf",
+      "record": "https://proceedings.mlr.press/v306/li26gp.html",
+      "publication": "Li et al., Mind the State, ICML 2026, PMLR 306:70744-70768",
+      "location": "Main Table 1; EEG-only Parkinson probe Appendix D.5/Table 7",
+      "temporal_r": 0.367,
+      "n_regions": 512,
+      "benchmark_scope": "Healthy VU main test; NIH paired training and HCP unpaired pretraining; not an unseen-site patient validation score",
+      "use": "EEG-only patient representation probe; actual patient BOLD fidelity not tested"
+    },
+    {
+      "model": "MARBLE",
+      "url": "https://papers.miccai.org/miccai-2026/paper/4437_paper.pdf",
+      "record": "https://papers.miccai.org/miccai-2026/0612-Paper4437.html",
+      "publication": "Kim and Gahm, MICCAI 2026",
+      "location": "Table 1; sections 3.1-3.3 and 4",
+      "temporal_r": 0.434,
+      "n_regions": 64,
+      "parameters_millions": 2.6,
+      "benchmark_scope": "VU 22 healthy people/29 scans; subject-wise split, six test scans; unique test-person count unresolved",
+      "use": "Proposed compact regional predictor; no external or patient cohort validation in paper"
+    }
+  ],
+  "clinical_precedent": {
+    "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K222101.pdf",
+    "scope": "Prism adjunctive PTSD EEG biofeedback; diagnostic interpretation excluded; clearance does not transfer to these models"
+  },
+  "workflow_guidance": {
+    "url": "https://doi.org/10.1038/s41591-022-01772-9",
+    "name": "DECIDE-AI, Vasey et al., 2022",
+    "scope": "Clinical evaluation reporting guidance, not empirical evidence of benefit"
+  }
+}

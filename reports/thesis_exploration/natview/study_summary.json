@@ -1,0 +1,135 @@
+{
+  "original_strict_v1": {
+    "achieved_original_locked8_accuracy": false,
+    "attempted": 8,
+    "eligible": 1,
+    "meaning": "7 source-mask-contract failures; single eligible person is not8-person validation",
+    "protocol_sha256": "005d4145fd51f297df8133ee28870bb7b9f97f1eb04f0533e047817ce241d035",
+    "summary_path": "reports/thesis_exploration/natview/v1/machine_summary.json"
+  },
+  "amended_secondary_v2": {
+    "achieved_amended_eligible_panel": true,
+    "attempted": 8,
+    "clock_certified": 8,
+    "eligible": 6,
+    "excluded": [
+      {
+        "subject": "sub-05",
+        "reason": "fewer than 60 prespecified QC-passing frames"
+      },
+      {
+        "subject": "sub-10",
+        "reason": "fewer than 60 prespecified QC-passing frames"
+      }
+    ],
+    "scope": "secondary exploratory after metadata-only clock amendment; not original untouched confirmation",
+    "pooled_metrics": [
+      {
+        "target": "global",
+        "n_people": 6,
+        "person_mean_r": 0.12488575182879073,
+        "person_bootstrap_r_95CI": [
+          -0.033023330674286894,
+          0.27604780616997837
+        ],
+        "person_mean_normalized_target_predictive_R2": -0.04310374937788999,
+        "person_bootstrap_R2_95CI": [
+          -0.09042316676872408,
+          0.005628854744365068
+        ],
+        "person_mean_amplitude_ratio": 0.1584507805446621,
+        "person_bootstrap_amplitude_95CI": [
+          0.13298537527266277,
+          0.18906431295460469
+        ]
+      },
+      {
+        "target": "regional64",
+        "n_people": 6,
+        "person_mean_r": 0.10381261861494206,
+        "person_bootstrap_r_95CI": [
+          -0.0001834445760335058,
+          0.20711321300579907
+        ],
+        "person_mean_normalized_target_predictive_R2": -0.07136653684680766,
+        "person_bootstrap_R2_95CI": [
+          -0.10640052437727994,
+          -0.03010601010177824
+        ],
+        "person_mean_amplitude_ratio": 0.14917947480890723,
+        "person_bootstrap_amplitude_95CI": [
+          0.12397031981709172,
+          0.17776433174253525
+        ]
+      },
+      {
+        "target": "VU_global_adjusted_residual64",
+        "n_people": 6,
+        "person_mean_r": 0.024784233176353254,
+        "person_bootstrap_r_95CI": [
+          -0.005003095872097312,
+          0.054571562224803825
+        ],
+        "person_mean_normalized_target_predictive_R2": -0.07216640740768406,
+        "person_bootstrap_R2_95CI": [
+          -0.09069155635098398,
+          -0.05875374155398719
+        ],
+        "person_mean_amplitude_ratio": 0.09678077209327052,
+        "person_bootstrap_amplitude_95CI": [
+          0.07406577593063383,
+          0.12162121336687555
+        ]
+      }
+    ],
+    "protocol_sha256": "02f3138499a33c3f683a3c7b17899651bc968dd44ca2791edf7bc96bb71531d7",
+    "summary_path": "reports/thesis_exploration/natview/v2/machine_summary.json"
+  },
+  "model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9",
+  "coefficients_scalers_bridge_unchanged": true,
+  "min60_threshold_unchanged": true,
+  "source_mask_repair": false,
+  "BOLD_correlation_clock_selection": false,
+  "clinical_claim": false,
+  "staging": {
+    "pilot_bytes": 127034404,
+    "reserved8_bytes": 980089695,
+    "full_corpus_download": false,
+    "raw_arrays_pulled_locally": false
+  },
+  "practical_bounds": {
+    "eyes_open_site_and_preprocessing_confound": true,
+    "pupil_respiration_are_independent_measurements_not_clinical_truth": true,
+    "amended_after_v1_exposure": true,
+    "strict_vs_amended_must_be_reported": true
+  },
+  "source_hashes": {
+    "scripts/natview_score.py": "3682229ea0a5dfda86605d29b74af615a852af39fe972342451d266775dc29f0",
+    "scripts/natview_failure_audit.py": "73bf4f314c1ee91df731b48e1013cb68182f2c6af88e6cbae623bfa0b2f570f6",
+    "scripts/natview_freeze.py": "555941093912910e9997bb875ff9fc9b5fd8c7770c40050853daa0ec1a6369ce",
+    "scripts/natview_segment_audit.py": "3b46ed72b4c8613dd8c7311d25486a3c3727baed435b5f25b4e7d351821033ec",
+    "scripts/natview_tests.py": "7266963bb6953d111782eb6bfac82dc49f0965dae1d03ea904b2f4173cd898f9",
+    "scripts/natview_v2_package.py": "f6b92bda85c6ba434061aafb1af5a9bf1d11a6c62f297317ceadc8a9586bf70f",
+    "scripts/natview_v2_tests.py": "f1d3dbe1628f001d297372a8a55bb4883f9f5e297c22060ace82f658c7b6833b",
+    "scripts/natview_run.py": "5aa340ca0a2514d624e200a40486b2fe1565c0662221ad531cf784b3705d1add",
+    "scripts/natview_vu_audit.py": "d33f75fb3186db4682c7f6584bb6bb4299ccc2027906efdbd20dd44d5d28ab4a",
+    "scripts/natview_sources.py": "e9b246af135b6dc8041d76a8099ed44a3865e2309e202f092d91c1da006341c8",
+    "scripts/natview_v2.py": "ca072518e4f0b2266d7071f0a16923b333d5c2b351f84f5d9e24ca107ed8d434",
+    "scripts/natview_train.py": "6981cbf892d238d370d5e214c9fd3299ffc5af5fb78aa828a5577b6b2f1ef726",
+    "scripts/natview_finalize_model.py": "bf424a52db0a8ed2e078fac87d57842a2e54e0d259dcd68b83f9bde4b525ed77",
+    "scripts/natview_package.py": "e78ec2d76735ca234bf308a6e8d2192d9342a7ba52b3f71107c8d8eee140e7e3",
+    "scripts/natview_inspect.py": "267077c621c32106433e597ecfd1392768cc43cfd6f38d95faa6246836ac5bde",
+    "scripts/natview_montage.py": "88cc6489ef448b7a55a2c785b1d5ccf25e764faecf4dd85b11b878691b5fe1e5",
+    "scripts/natview_stage.py": "966a0602ab6bc1fbcc662c15a67e55f1ca7bf1a867fcee54518be5cc772949ab",
+    "scripts/natview_preserve_v1.py": "bca20c5c9d44813d578190aa5b8cbd857d061af252ca48ff7a17f05659583c62",
+    "scripts/natview_cache_audit.py": "8bc904f3196a6693e777e7ffbf2cd1d74e4d593fed3c6dd1801e9e4a9f8f5629",
+    "scripts/natview_clock_probe.py": "a60023a4d717bd5bcb6e0fe38ad98fb344af77c9d134054935087e1d49f95d83",
+    "scripts/natview_data.py": "d6625940223ba2f281a7a55aec0be2ee696bd1925df7065c3c95257f60622a8b"
+  },
+  "M3_paths": {
+    "source_data": "/scratch/hz18/stay0060/NeuroBOLT/data/natview",
+    "v1_derivatives": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/ext/natview",
+    "v2_derivatives": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/ext/natview/v2"
+  },
+  "package_job_id": "61208120"
+}

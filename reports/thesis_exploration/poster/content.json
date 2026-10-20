@@ -1,0 +1,18 @@
+{
+  "problem": "Which EEG-to-BOLD estimates could support one clinical action? Test regional fidelity and failure modes before considering patient-specific fMRI replacement.",
+  "aim": "<b>Thesis aim:</b> identify which BOLD information is recoverable, then build models that generalise and know when to abstain. This explores a possible computer science PhD.<br/><br/><b>Candidate contributions:</b> multimodal system identification; robust person/site transfer; calibrated, selective regional prediction. Establish novelty against UnEBOLT, MARBLE and UniEFS, rather than promising clinical replacement.<br/><br/><b>First application:</b> a wakefulness advisory prompting technologist review. Compare direct arousal prediction: BOLD synthesis must earn its complexity. One regional feedback target is a conditional second route. Diagnostic mapping needs a separate validation programme.",
+  "hypothesis": "Predictive value may depend more on measured information and target definition than on model size. Cross people, duration, sensors and capacity on fixed holdouts. A nonlinear gain would favour richer models; an added-sensor gain would favour acquisition. Null results and small learning curves cannot establish a biological ceiling.",
+  "models": [
+    "<b>UnEBOLT [1] | 64 regions, r .418.</b><br/>Proposed: one regional feedback target.",
+    "<b>UniEFS [2] | 512 regions, r .367.</b><br/>EEG-only Parkinson classification probe;<br/>patient BOLD unvalidated.",
+    "<b>MARBLE [3] | 64 regions, r .434; 2.6M parameters.</b><br/>Proposed: compact regional prediction."
+  ],
+  "methods": "<b>ds006040 development:</b> 27 people/54 runs; three outer folds, 96 fitted outer cells. Inner tuning separate. Matched inputs: 300 EEG-power features, ECG timing/availability or both; ridge/small MLP. Cross 4/12 training people x 120/240 retained target-seconds. One seed; four equal-weight MLP target groups. Published models were not reproduced.",
+  "work_packages": [
+    ["WP1 | Measurement design.", "Rank montage, history and sensors; test held-out gains against cost-matched choices."],
+    ["WP2 | Structured estimation.", "Learn shared dynamics with counted calibration. Test regional gains beyond ridge and state/physiology controls."],
+    ["WP3 | Selective prediction.", "Report error at useful coverage under stated shift assumptions; compare quality rejection."]
+  ],
+  "clinical_gate": "<b>Clinical precedent:</b> Prism's fMRI-informed EEG biofeedback is cleared for adjunctive PTSD treatment; diagnostic interpretation is excluded [4].<br/><b>Proposed:</b> wakefulness support or one regional feedback target. Disease classification does not verify patient BOLD recovery.<br/><b>M3 limits:</b> inherited preprocessing is retrospective; no absolute %BOLD calibration. Causal inputs do not establish end-to-end live use. Sparse ECG; one development site/seed; clinical benefit untested [5].",
+  "references": "<link href=\"https://proceedings.mlr.press/v315/li26g.html\"><b>[1]</b> UnEBOLT, MIDL 2026.</link> <link href=\"https://proceedings.mlr.press/v306/li26gp.html\"><b>[2]</b> UniEFS, ICML 2026.</link><br/><link href=\"https://papers.miccai.org/miccai-2026/0612-Paper4437.html\"><b>[3]</b> MARBLE, MICCAI 2026.</link> <link href=\"https://www.accessdata.fda.gov/cdrh_docs/pdf22/K222101.pdf\"><b>[4]</b> FDA K222101, 2023.</link><br/><link href=\"https://www.bmj.com/content/377/bmj-2022-070904\"><b>[5]</b> DECIDE-AI, 2022.</link> Full sources: accompanying report."
+}

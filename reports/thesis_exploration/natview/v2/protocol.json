@@ -1,0 +1,221 @@
+{
+  "version": 2,
+  "study": "NATVIEW new-site bounded external feasibility panel; implementation, not clinical validation",
+  "development_person": "sub-01_ses-01",
+  "reserved_people": [
+    "sub-04",
+    "sub-05",
+    "sub-06",
+    "sub-08",
+    "sub-10",
+    "sub-11",
+    "sub-12",
+    "sub-13"
+  ],
+  "session": "ses-01",
+  "task": "rest",
+  "selection": "prespecified evidence/NATVIEW_PROPOSED_8person_repeat_extension.json, modality/visit availability only; all8 retained in denominator",
+  "feature_channels": [
+    "FP1",
+    "FP2",
+    "F3",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2",
+    "F7",
+    "F8",
+    "T7",
+    "T8",
+    "P7",
+    "P8",
+    "FPZ",
+    "FZ",
+    "CZ",
+    "PZ",
+    "POZ",
+    "OZ",
+    "TP9'",
+    "TP10'"
+  ],
+  "VU_literal_channels": "case differences retained in source; final two VU positions literally TP9-prime and TP10-prime, always interpolated at source directions",
+  "bridge": {
+    "n_features": 12144,
+    "base": "drop VU F4/FT9/FT10 feature positions; retain existing VU reference",
+    "additional_missing_policy": "up to3 of21 exact nonprime sites may be interpolated from >=40 measured scalp donors; two prime sites always interpolated",
+    "geometry": "MNE accurate spherical spline using source NATVIEW donor and VU target direction vectors, normalized to95mm sphere, fixed origin0; explicit EEGLAB [X,Y,Z] to head [-Y,X,Z]; no outcome fitted geometry",
+    "geometry_sha256": "5011de4d1ba46307db3e1f78104318904c6eedc1bebbdf75098458f9429b5264",
+    "missing_metadata": [
+      {
+        "subject": "sub-04",
+        "n_channels": 58,
+        "missing_common23": [],
+        "metadata_sha256": "2d26baa5551cc792505589abddb5d9d743b862a084f1f5a5eff1057bc5d79b17",
+        "no_outcomes_read": true
+      },
+      {
+        "subject": "sub-05",
+        "n_channels": 58,
+        "missing_common23": [
+          "T8",
+          "CZ"
+        ],
+        "metadata_sha256": "efa2540661d5593aa8f858b048eaf544b89b4562c2393c3d424202ec288cc6a0",
+        "no_outcomes_read": true
+      },
+      {
+        "subject": "sub-06",
+        "n_channels": 51,
+        "missing_common23": [
+          "T8",
+          "FZ",
+          "CZ"
+        ],
+        "metadata_sha256": "21cd140b8066f8b2cbfa2e3727f5687c9834fc52c2eaa1848535bed29ab1b057",
+        "no_outcomes_read": true
+      },
+      {
+        "subject": "sub-08",
+        "n_channels": 60,
+        "missing_common23": [],
+        "metadata_sha256": "a06c88ee50685cba0a8ffc450bd0a6714202b55d661fd801c91eecc7758f1621",
+        "no_outcomes_read": true
+      },
+      {
+        "subject": "sub-10",
+        "n_channels": 61,
+        "missing_common23": [],
+        "metadata_sha256": "922c260d071a3f0b3e5e8c6b203375c85742036dde7d01d4de30eb17aeed8322",
+        "no_outcomes_read": true
+      },
+      {
+        "subject": "sub-11",
+        "n_channels": 60,
+        "missing_common23": [],
+        "metadata_sha256": "330f036dcb5f90e47f0b9c5965b7ba06ec47d362eabac6dcbd191aeba9014b67",
+        "no_outcomes_read": true
+      },
+      {
+        "subject": "sub-12",
+        "n_channels": 57,
+        "missing_common23": [],
+        "metadata_sha256": "eb8ae5cac50ecc6ba22ddfddae6787ed3f0ee178518250a37f6c3a109c2cc959",
+        "no_outcomes_read": true
+      },
+      {
+        "subject": "sub-13",
+        "n_channels": 50,
+        "missing_common23": [
+          "FP1",
+          "FP2",
+          "O2"
+        ],
+        "metadata_sha256": "221aac87da17fb78fa4636283cba3dc6a126aae64361cd2a99fe8d871e54d3b4",
+        "no_outcomes_read": true
+      }
+    ],
+    "direct_measured_vs_interpolated": "report for each subject; do not call all23 commonly measured channels",
+    "reference": "NATVIEW average over released retained scalp montage; VU SET ref=common; these remain a domain shift"
+  },
+  "VU_model": {
+    "training_only": "all29 existing VU scans; no ds006040 or NATVIEW training",
+    "selector": "per-target alpha retained from existing all26 VU cv_A geometric median across5 folds; NOT newly optimized for common23",
+    "training_standardization": "VU-only feature mean and sd+1e-8; no NATVIEW target-stat adaptation or calibration",
+    "model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9",
+    "initial_coefficient_fit_model_sha256": "c7d2a46c05f711f89e5da4e24d148d47655ce868a1d0c1819b05044b10174fd4",
+    "coefficient_finalization": "bitwise unchanged coefficients/scalers; model channel metadata now literal prime labels",
+    "training_metadata_sha256": "5648c98bb533d281bfe748cdd05be95d34e1ef9b15975dcce4bc5cb5af7de871",
+    "per_scan_cache_audit_sha256": "af839febb05d000c8518665dcaa8045256006fb460852f9f05f1c4371f3d4797"
+  },
+  "EEG_processing": {
+    "units": "EEGLAB native uV; assert MNE volts*1e6 agrees within1e-4uV; no /100 neural scaling",
+    "identity": "case-only canonicalization for NATVIEW, never replacement by another electrode",
+    "sampling": "250to200Hz polyphase4/5 antialiasing separately within every physical segment",
+    "filter": "MNE0.5Hz highpass zero phase separately within segment; 5s margins around 24s context",
+    "features": "original baseline_ridge.band_power_features,44 one-Hz bins1..45Hz,12x2s lags oldestfirst, Welch nperseg200, log(power+1e-12)",
+    "window": "4801samples including trigger for baseline mean; crop last sample to4800 as existing VU helper"
+  },
+  "clock": {
+    "identity": "same ordered raw R128 and event->urevent physical volume identities",
+    "certificate": "all surviving anchors must have monotonic, exact integer original-minus-processed offsets; same-offset bracketing anchors certify physical time; split at every source boundary; no extrapolation; original24s+5s margins and min60 retained",
+    "source_mask": "retained unchanged as stage-specific/possibly noncumulative provenance; never silently expanded or used as cumulative timeline",
+    "independent_clocks": "original numeric gates unchanged: raw TR6ms, raw/urevent4.1ms, eye unique>=90% within50ms, BIOPAC count and relative40ms",
+    "no_outcome_alignment": "no BOLD values/predictions/correlations used in amendment or sample map"
+  },
+  "exclusions": {
+    "window": "reject any24s physical history plus original5s margins not fully bracketed by equal-offset event anchors within one source-boundary-free segment; no extrapolation",
+    "amplitude": "any selected/interpolated channel peak-to-peak>500uV in4801samples",
+    "motion": "AFNI6 param Power FD50mm radius; FD>0.5mm and following frame excluded",
+    "channel": "exclude if >3 of21 nonprime sites absent or <40 measured donors with finite source coordinates",
+    "person": "minimum60 target frames (126s retained target duration), finite EEG/targets, all timing requirements; preserve failed-person denominator",
+    "strict_measured_comparison": "report measured nonprime coverage and interpolation counts; two VU prime sites are always interpolated, so no all23-measured claim; no choosing analysis by predictive scores"
+  },
+  "targets": {
+    "atlas": "/scratch/hz18/stay0060/nilearn_data/difumo_atlases/64/3mm/maps.nii.gz",
+    "atlas_sha256": "5dfc063e7d50104cdb88585afe437c808dc3d90a32987b8837409badbc90c634",
+    "labels_sha256": "0e1d2822391f7916f72e118061fb108a98e3dd6f92e0d4a285a39a0d1e30cd3a",
+    "regions": "NiftiMapsMasker DiFuMo64 maps resampled in world coordinates to released MNI3mm image; VU label identity/order checks",
+    "global": "mean of released MNI nonzero temporal support (sd>1e-8); native EPI mask not treated as MNI mask",
+    "released_processing": "noGSR/no temporal filter/sm0; CCS motion24 +WM/CSF; no additional fitted nuisance regression",
+    "postprocessing": "5th order0.15Hz Butterworth filtfilt; full-run demean/absolute95thpercentile normalization",
+    "differences": "NATVIEW CCS MNI152Lin vs existing VU derivative, distinct global-mask/reference/cleaning; common labels do not establish identical preprocessing"
+  },
+  "endpoints": {
+    "primary": "unshifted temporal r globally and arithmetic mean over64 regions, per person then equally over people",
+    "amplitude": "normalized-target predictiveR2 and std(prediction)/std(target); no test calibration",
+    "residual": "regional and predicted global residualization using one VU-trained coefficient per region; no measured global model input",
+    "lag": "diagnostic -5..5 original volume indices, positive prediction later, minimum20 pairs; never changes primary alignment",
+    "CI": "2000 within-person stationary block bootstrap, expected10TR/21s block, restart at gaps;10000 between-person resamples, seed20261021"
+  },
+  "physiology": {
+    "role": "independent timing/coverage QC only in this bounded test; pupil area not calibrated, respiration inV, no clinical arousal or sleep diagnosis",
+    "pilot_eye": "285pulses map volumes1..285; missing0/286/287;76.4% interpolated; Time is quantized, so no pupil-BOLD association claim"
+  },
+  "causal_context": "features have declared physical past context; source artifact/ICA correction, zero-phase filtering, interpolation and whole-run targets are retrospective",
+  "license": "NKI NATVIEW data/code CC BY4.0; preserve source attribution and SHA256 receipts; no redistribution of raw arrays",
+  "input_handoff_hashes": [
+    {
+      "sha256": "19e385b43d0e13668747d19bd87476b2f6259b514a9306c3ccbeb8455a2c408e",
+      "path": ".agents/skills/neurobolt-m3/SKILL.md"
+    },
+    {
+      "sha256": "71bb4e87a0edbfad285ac02266499a837b8042f37b04e4ff7804086c8ebb6ef4",
+      "path": "research_notes/Clinical EEG fMRI thesis exploration/reproducibility and datasets.md"
+    },
+    {
+      "sha256": "abea748b4ca8e7692c4a74620aa5b73c66c7ba3988aa5c18323c21f78d01fcea",
+      "path": "research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_sub01_rest_verified_manifest.json"
+    },
+    {
+      "sha256": "22666b03ca8165f98d0ae5a03037d188dc012cfedca0b5e7887089f50a570c6f",
+      "path": "research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_PROPOSED_8person_repeat_extension.json"
+    },
+    {
+      "sha256": "b2e3081a6328149a73d75f9703d50f526f1632257f7ea4c1e925f2eefcde12dc",
+      "path": "research_notes/Clinical EEG fMRI thesis exploration/evidence/natview_paper.txt"
+    }
+  ],
+  "frozen_utc": "2026-10-20T15:53:24Z",
+  "slurm_job_id": "61207793",
+  "scope": "secondary exploratory amended metadata adapter; NOT original untouched confirmation",
+  "original_v1_protocol_sha256": "005d4145fd51f297df8133ee28870bb7b9f97f1eb04f0533e047817ce241d035",
+  "original_v1_freeze_sha256": "e8cdd1b9164fe0c8746514a50c44478f60b7d005290c0866949f59a2a3ab0743",
+  "original_v1_result": "7/8 excluded by source-mask contract; only sub12 eligible. Preserved under v1/.",
+  "amendment": "use exact event/urevent sample-offset certificates rather than assuming source clean_sample_mask is cumulative; no source field overwritten",
+  "v2_clock_policy": "all surviving anchors must have monotonic, exact integer original-minus-processed offsets; same-offset bracketing anchors certify physical time; split at every source boundary; no extrapolation; original24s+5s margins and min60 retained",
+  "v2_numeric_thresholds": "original thresholds unchanged:24s history,5s margins,500uV,FD0.5mm+following,min60,eye50ms/BIOPAC40ms",
+  "model_coefficients_scalers_and_bridge": "unchanged from v1 final dd9b894b model and fixed VU/NATVIEW source coordinate bridge",
+  "frozen_v2_utc": "2026-10-20T16:16:09Z",
+  "original_v1_clock_contract": {
+    "source": "raw ordered R128 are volume0..N-1; processed event->urevent links identify original volume",
+    "requirements": "n_raw_R128=n_urevent_R128=n_BOLD; raw TR max deviation<=6ms; raw/urevent offset residual<=4.1ms",
+    "mask": "clean_sample_mask true count=pnts; all surviving event anchors agree within1.01 samples; each interior mask gap has boundary at compressed location",
+    "boundary_duration_discrepancy": "preserve source duration and exact mask gap length side by side; mask controls timing only after all anchor checks pass",
+    "eye": "Time column already task-relative; do NOT add StartTime; >=90% volume pulses with unique nearest raw event within50ms",
+    "BIOPAC": "sparse positive-code sample list; group samples within100ms; n_pulses=n_BOLD, relative first-pulse residual<=40ms",
+    "volume_dropping": "zero as pinned CCS wrapper numDropping=0 and verified pilot raw/processed header counts",
+    "no_prediction_alignment": "no offset, drift, lag or participant selection based on predicted/measured BOLD correlation"
+  }
+}

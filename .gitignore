@@ -20,3 +20,13 @@ checkpoints/**
 *.ipynb
 reports/interpretability/data/raw/
 reports/external/data/vu_model_*.npz
+
+# Thesis exploration: keep caches, prediction arrays and private references local.
+/reports/thesis_exploration/data/features_causal.npz
+/reports/thesis_exploration/data/predictions/
+/reports/thesis_exploration/poster/reference/
+
+# Downloaded audit evidence; retain only the two curated reusable manifests.
+/research_notes/Clinical EEG fMRI thesis exploration/evidence/*
+!/research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_sub01_rest_verified_manifest.json
+!/research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_PROPOSED_8person_repeat_extension.json

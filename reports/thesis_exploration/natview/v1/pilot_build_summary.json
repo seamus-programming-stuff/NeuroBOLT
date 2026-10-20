@@ -1,0 +1,21 @@
+{
+  "mode": "pilot",
+  "utc": "2026-10-20T15:51:18Z",
+  "runs": [
+    {
+      "subject": "sub-01",
+      "clock_resolved": true,
+      "inclusion_pass": true,
+      "frames": 134,
+      "error": null
+    }
+  ],
+  "environment": {
+    "numpy": "1.24.3",
+    "scipy": "1.13.1",
+    "mne": "1.4.2",
+    "nibabel": "5.3.3",
+    "nilearn": "0.12.1",
+    "torch": "2.0.0"
+  }
+}

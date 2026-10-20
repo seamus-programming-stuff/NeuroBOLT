@@ -1,0 +1,6 @@
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_vu_audit.py:18: RuntimeWarning: Estimated head radius (0.1 cm) is below the 3rd percentile for infant head size. Check if the montage_units argument is correct (the default is "mm", but your channel positions may be in different units).
+  raw=mne.io.read_raw_eeglab(str(path),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_vu_audit.py:18: RuntimeWarning: Limited 1 annotation(s) that were expanding outside the data range.
+  raw=mne.io.read_raw_eeglab(str(path),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_vu_audit.py:18: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw=mne.io.read_raw_eeglab(str(path),preload=False,verbose=False)

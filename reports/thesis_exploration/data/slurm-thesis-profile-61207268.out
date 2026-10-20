@@ -1,0 +1,5 @@
+Tue Oct 20 03:21:41 PM UTC 2026
+job=61207268 host=m3g103 cpus=4 script=thesis_study.py args=--model mlp --profile --out reports/thesis_exploration/data
+b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447  scripts/thesis_study.py
+PROFILE 27.666159168817103 {'chosen': {'width': 32, 'weight_decay': 0.01, 'epochs_run': 11, 'best_epoch': 1, 'validation_standardized_mse': 1.0798966884613037, 'fit_seconds': 22.9528540330939, 'parameters': 16769}, 'candidates': [{'width': 32, 'weight_decay': 0.01, 'epochs_run': 11, 'best_epoch': 1, 'validation_standardized_mse': 1.0798966884613037, 'fit_seconds': 22.9528540330939, 'parameters': 16769}], 'validation_standardized_mse': 1.0798966884613037}
+Tue Oct 20 03:24:47 PM UTC 2026

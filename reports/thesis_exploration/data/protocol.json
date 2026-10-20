@@ -1,0 +1,282 @@
+{
+  "study": "thesis_causal_factorial_v1",
+  "frozen_before_model_outcomes": true,
+  "dataset": "ds006040",
+  "scope": "single-site previously inspected development data; EC within-condition and EO condition-shift evaluation",
+  "folds": [
+    {
+      "fold": 0,
+      "test_people": [
+        "sub-020",
+        "sub-015",
+        "sub-022",
+        "sub-026",
+        "sub-010",
+        "sub-006",
+        "sub-014",
+        "sub-009",
+        "sub-023"
+      ],
+      "validation_people": [
+        "sub-019",
+        "sub-024",
+        "sub-018",
+        "sub-025"
+      ],
+      "training_order": [
+        "sub-002",
+        "sub-012",
+        "sub-004",
+        "sub-017",
+        "sub-016",
+        "sub-013",
+        "sub-011",
+        "sub-008",
+        "sub-027",
+        "sub-021",
+        "sub-005",
+        "sub-029",
+        "sub-028",
+        "sub-007"
+      ],
+      "training_people_levels": {
+        "4": [
+          "sub-002",
+          "sub-012",
+          "sub-004",
+          "sub-017"
+        ],
+        "12": [
+          "sub-002",
+          "sub-012",
+          "sub-004",
+          "sub-017",
+          "sub-016",
+          "sub-013",
+          "sub-011",
+          "sub-008",
+          "sub-027",
+          "sub-021",
+          "sub-005",
+          "sub-029"
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "test_people": [
+        "sub-019",
+        "sub-024",
+        "sub-018",
+        "sub-025",
+        "sub-002",
+        "sub-012",
+        "sub-004",
+        "sub-017",
+        "sub-016"
+      ],
+      "validation_people": [
+        "sub-020",
+        "sub-015",
+        "sub-022",
+        "sub-026"
+      ],
+      "training_order": [
+        "sub-010",
+        "sub-006",
+        "sub-014",
+        "sub-009",
+        "sub-023",
+        "sub-013",
+        "sub-011",
+        "sub-008",
+        "sub-027",
+        "sub-021",
+        "sub-005",
+        "sub-029",
+        "sub-028",
+        "sub-007"
+      ],
+      "training_people_levels": {
+        "4": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009"
+        ],
+        "12": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009",
+          "sub-023",
+          "sub-013",
+          "sub-011",
+          "sub-008",
+          "sub-027",
+          "sub-021",
+          "sub-005",
+          "sub-029"
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "test_people": [
+        "sub-013",
+        "sub-011",
+        "sub-008",
+        "sub-027",
+        "sub-021",
+        "sub-005",
+        "sub-029",
+        "sub-028",
+        "sub-007"
+      ],
+      "validation_people": [
+        "sub-020",
+        "sub-015",
+        "sub-022",
+        "sub-026"
+      ],
+      "training_order": [
+        "sub-010",
+        "sub-006",
+        "sub-014",
+        "sub-009",
+        "sub-023",
+        "sub-019",
+        "sub-024",
+        "sub-018",
+        "sub-025",
+        "sub-002",
+        "sub-012",
+        "sub-004",
+        "sub-017",
+        "sub-016"
+      ],
+      "training_people_levels": {
+        "4": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009"
+        ],
+        "12": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009",
+          "sub-023",
+          "sub-019",
+          "sub-024",
+          "sub-018",
+          "sub-025",
+          "sub-002",
+          "sub-012",
+          "sub-004"
+        ]
+      }
+    }
+  ],
+  "people_levels": [
+    4,
+    12
+  ],
+  "duration_seconds": [
+    120,
+    240
+  ],
+  "duration_definition": "first 60/120 eligible EC target frames (120/240 retained target-seconds), plus strictly prior 24 s input context; actual acquisition span and gaps reported per person; no inner validation frames counted as training",
+  "inputs": [
+    "eeg",
+    "phys",
+    "combined"
+  ],
+  "physiology": "ECG RR timing and availability fractions only; no ECG spectral power, no respiration, no CO2, no EOG",
+  "availability_control": "highest resource condition only: availability fractions without RR; both ridge and MLP, EC training",
+  "interpretation": "bounded development comparisons from one fixed nested subset order per fold, not a scaling law",
+  "poster_primary_prespecified": {
+    "train_state": "EC",
+    "eval_condition": "EC",
+    "training_people": 12,
+    "duration_seconds": 240,
+    "target": "regional64",
+    "arms": [
+      "ridge EEG",
+      "ridge ECG timing+availability",
+      "ridge EEG+ECG timing+availability",
+      "MLP EEG"
+    ]
+  },
+  "poster_learning_prespecified": "ridge EEG, EC train/test, regional64; 4 vs12 training people crossed with120 vs240 retained target-seconds/person; full grid reported",
+  "models": [
+    "ridge",
+    "mlp"
+  ],
+  "ridge_alphas": [
+    0.1,
+    1,
+    10,
+    100,
+    1000,
+    10000
+  ],
+  "mlp_candidates": [
+    {
+      "width": 32,
+      "weight_decay": 0.01
+    },
+    {
+      "width": 128,
+      "weight_decay": 0.01
+    }
+  ],
+  "mlp_max_epochs": 60,
+  "mlp_patience": 10,
+  "mlp_learning_rate": 0.001,
+  "batch_size": 128,
+  "seed": 41,
+  "mlp_objective": "193 standardized outputs jointly fitted; each of global, regional64, global-residual64, global+phys-residual64 groups has weight 1/4. Shared MLP representation differs from independent per-output ridge; not an isolated parameter-count intervention.",
+  "ridge_objective": "independent-output raw-target MSE; per-output alpha on equal-person validation MSE. Standardizing any one output would not change its selected alpha.",
+  "selection": "one nested subject-disjoint inner validation holdout per outer fold, equal-person MSE; choose ridge alpha per target and neural width/epoch by average standardized-target MSE; no refit on validation",
+  "calibration": "per-output affine fitted on inner validation predictions only; report both uncalibrated and validation-calibrated R2",
+  "targets": [
+    "global",
+    "regional64",
+    "global_residual64",
+    "global_phys_residual64"
+  ],
+  "residual_definition": "nuisance coefficients fitted only on selected training frames; apply to measured heldout global/physiology for retrospective target definition; residual models receive no measured BOLD input",
+  "controls": [
+    "training_mean_R2",
+    "predicted_global_template",
+    "availability-only at n12/240s",
+    "30 deterministic within-run original-volume-grid circular shifts >=60s; score matched available frame pairs"
+  ],
+  "metrics": [
+    "temporal_r",
+    "predictive_R2",
+    "validation_calibrated_R2",
+    "rmse",
+    "amplitude_ratio",
+    "best_lag_seconds_+-10",
+    "regional_contrast_r",
+    "negative_R2_fraction",
+    "undefined_r_fraction"
+  ],
+  "aggregation": "per-run metrics averaged over ROIs, then EC/EO separately per person; all outer-test people once; 2000 person bootstrap draws, paired by person for differences",
+  "mixed_state_extension": "only highest resource 12 people x240 total seconds/person, first60 EC and60 EO frames, same validation/test people; equal total labels",
+  "profile_gate": "one GPU profile fit; then one serial GPU job, 4 CPU/12GB request; CPU ridge job 4 CPU/12GB; no checkpoint files",
+  "feature_sha256": "d0857caad515135b091a2e23b6609762892feb99d6711ad37f4671141e597863",
+  "source_sha256": {
+    "thesis_data.py": "94b7c979ebbce1bc7c6d02550de14d093de6d6941f0411527762dd87a6a49312",
+    "thesis_m3.sbatch": "3b55ff9d6e66336a8a0d232a05ce24ab0083ea843efdf676b30fd48afc67069d",
+    "thesis_prepare.py": "d355dc1cc7ec198c8cd9d19b857b34ba6f61241fa9b33299ff1b0b4429a526ad",
+    "thesis_study.py": "b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447",
+    "thesis_summarize.py": "54e548137d8d7c15ecf42f66bb6e99b7ca5d073338cc31ed345ca9234f727a5e",
+    "thesis_tests.py": "7ccd6a20471f19c9dde88ef2784190512f91875e35cfc7f7c583a11bca616ae1",
+    "thesis_verify.py": "b0be6255fb3f9d8f74c421d90041a7d893bf44034d1210175538e88603608fba"
+  },
+  "created_utc": "2026-10-20T15:20:49Z"
+}

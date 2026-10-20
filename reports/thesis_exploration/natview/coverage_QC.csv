@@ -1,0 +1,10 @@
+subject,included,frames,retained_target_seconds,raw_volumes,processed_R128,removed_EEG_seconds,measured_feature_sites,interpolated_feature_sites,interpolated_names,eye_pulses,eye_interpolated_fraction,eye_max_clock_error_ms,biopac_pulses,biopac_max_clock_error_ms,mean_FD_mm,retained_frame_gaps
+sub-01,True,134,281.40000000000003,288.0,280.0,20.88,21.0,2.0,"TP9',TP10'",285.0,0.7641098448014314,15.399999999999636,288.0,23.999999999887223,0.12133651437343564,6.0
+sub-04,False,0,,,,,,,,,,,,,,
+sub-05,False,0,,,,,,,,,,,,,,
+sub-06,False,0,,,,,,,,,,,,,,
+sub-08,False,0,,,,,,,,,,,,,,
+sub-10,False,0,,,,,,,,,,,,,,
+sub-11,False,0,,,,,,,,,,,,,,
+sub-12,True,135,283.5,288.0,275.0,45.864,21.0,2.0,"TP9',TP10'",285.0,0.07644160169189627,21.40000000008513,288.0,16.000000000076398,0.2233237170924101,5.0
+sub-13,False,0,,,,,,,,,,,,,,

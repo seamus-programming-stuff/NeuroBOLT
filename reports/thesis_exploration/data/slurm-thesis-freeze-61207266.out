@@ -1,0 +1,22 @@
+Tue Oct 20 03:17:24 PM UTC 2026
+job=61207266 host=m3e116 cpus=4 script=thesis_prepare.py args=--out reports/thesis_exploration/data
+d355dc1cc7ec198c8cd9d19b857b34ba6f61241fa9b33299ff1b0b4429a526ad  scripts/thesis_prepare.py
+test_causal_filter_future_invariance (__main__.ThesisTests) ... ok
+test_correlation_is_not_amplitude_calibration (__main__.ThesisTests) ... ok
+test_hr_future_invariance_and_heart_rate (__main__.ThesisTests) ... ok
+test_lag_with_real_frame_gaps (__main__.ThesisTests) ... ok
+test_null_uses_actual_frame_grid (__main__.ThesisTests) ... ok
+test_protocol_grouping_if_present (__main__.ThesisTests) ... ok
+test_residual_coefficients_apply_without_refitting (__main__.ThesisTests) ... ok
+test_ridge_matches_closed_form (__main__.ThesisTests) ... ok
+test_training_only_transforms (__main__.ThesisTests) ... ok
+test_window_excludes_endpoint_and_future (__main__.ThesisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 10.892s
+
+OK
+
+FROZEN 59505927a5f9073c0c1fda106baa161576b18e1c58db74838dc28f036050032e
+PREPARED: No model outcomes inspected; protocol fixed.
+Tue Oct 20 03:20:49 PM UTC 2026

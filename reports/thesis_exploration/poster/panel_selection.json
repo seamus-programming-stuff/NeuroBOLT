@@ -1,0 +1,28 @@
+{
+  "selection_id": "EC_regional64_predeclared_20261021",
+  "selection_stage": "before outcomes; audit completed and feature extraction started",
+  "source": "Coordinator instruction during poster design, 21 October 2026",
+  "development_dataset": "ds006040; previously inspected; not untouched external validation",
+  "primary_panel": {
+    "train_condition": "EC",
+    "test_condition": "EC",
+    "train_people": 12,
+    "target_seconds_per_person": 240,
+    "target": "regional64",
+    "metric": "temporal_r",
+    "rows_in_order": ["Ridge EEG", "Ridge ECG", "Ridge EEG+ECG", "MLP EEG"],
+    "note": "Full regional64, without global target. ECG uses actual timing features, not an EEG-band power proxy. No winner selection."
+  },
+  "learning_panel": {
+    "model": "Ridge EEG",
+    "train_condition": "EC",
+    "test_condition": "EC",
+    "train_people": [4, 12],
+    "target_seconds_per_person": [120, 240],
+    "target": "regional64",
+    "metric": "temporal_r",
+    "evaluation": "same fixed EC evaluation people and frames"
+  },
+  "feasibility_rule": "If delivered cohort/protocol differs, annotate actual conditions and rationale explicitly; do not force unavailable conditions or invent observations. Retained target time is not acquired paired time.",
+  "claim_scope": "Exploratory development comparisons only; no clinical performance, causal sensor attribution or scaling-law claim."
+}

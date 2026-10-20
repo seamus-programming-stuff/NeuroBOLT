@@ -1,0 +1,371 @@
+{
+  "scan": "sub01-scan01",
+  "EEG_source": "/scratch/hz18/stay0060/NeuroBOLT/data/EEG/sub01-scan01_eeg.set",
+  "srate": 250.0,
+  "set_reference_field": "common",
+  "SET_history": "\nEEG.etc.eeglabvers = '2021.0'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG = eeg_checkset( EEG );\nEEG = eeg_checkset( EEG );\nEEG.etc.eeglabvers = '2022.1'; % this tracks which version of EEGLAB is being used, you may ignore it\nEEG.etc.eeglabvers = '2021.1'; % this tracks which version of EEGLAB is being used, you may ignore it",
+  "channels": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2",
+    "F7",
+    "F8",
+    "T7",
+    "T8",
+    "P7",
+    "P8",
+    "FPz",
+    "Fz",
+    "Cz",
+    "Pz",
+    "POz",
+    "Oz",
+    "FT9",
+    "FT10",
+    "TP9'",
+    "TP10'",
+    "EOG1",
+    "EOG2",
+    "EMG1",
+    "EMG2",
+    "EMG3",
+    "ECG"
+  ],
+  "channel_coordinates": [
+    {
+      "label": "Fp1",
+      "X": 0.9510565162951535,
+      "Y": 0.3090169943749474,
+      "Z": 0.0,
+      "theta": -18.0,
+      "radius": 0.5
+    },
+    {
+      "label": "Fp2",
+      "X": 0.9510565162951535,
+      "Y": -0.3090169943749474,
+      "Z": 0.0,
+      "theta": 18.0,
+      "radius": 0.5
+    },
+    {
+      "label": "F3",
+      "X": 0.673028145070219,
+      "Y": 0.5450074457687164,
+      "Z": 0.49999999999999994,
+      "theta": -39.0,
+      "radius": 0.33333333333333337
+    },
+    {
+      "label": "F4",
+      "X": 0.673028145070219,
+      "Y": -0.5450074457687164,
+      "Z": 0.49999999999999994,
+      "theta": 39.0,
+      "radius": 0.33333333333333337
+    },
+    {
+      "label": "C3",
+      "X": 4.329780281177467e-17,
+      "Y": 0.7071067811865476,
+      "Z": 0.7071067811865475,
+      "theta": -90.0,
+      "radius": 0.25
+    },
+    {
+      "label": "C4",
+      "X": 4.329780281177467e-17,
+      "Y": -0.7071067811865476,
+      "Z": 0.7071067811865475,
+      "theta": 90.0,
+      "radius": 0.25
+    },
+    {
+      "label": "P3",
+      "X": -0.673028145070219,
+      "Y": 0.5450074457687163,
+      "Z": 0.49999999999999994,
+      "theta": -141.0,
+      "radius": 0.33333333333333337
+    },
+    {
+      "label": "P4",
+      "X": -0.673028145070219,
+      "Y": -0.5450074457687163,
+      "Z": 0.49999999999999994,
+      "theta": 141.0,
+      "radius": 0.33333333333333337
+    },
+    {
+      "label": "O1",
+      "X": -0.9510565162951535,
+      "Y": 0.3090169943749475,
+      "Z": 0.0,
+      "theta": -162.0,
+      "radius": 0.5
+    },
+    {
+      "label": "O2",
+      "X": -0.9510565162951535,
+      "Y": -0.3090169943749475,
+      "Z": 0.0,
+      "theta": 162.0,
+      "radius": 0.5
+    },
+    {
+      "label": "F7",
+      "X": 0.5877852522924731,
+      "Y": 0.8090169943749475,
+      "Z": 0.0,
+      "theta": -54.0,
+      "radius": 0.5
+    },
+    {
+      "label": "F8",
+      "X": 0.5877852522924731,
+      "Y": -0.8090169943749475,
+      "Z": 0.0,
+      "theta": 54.0,
+      "radius": 0.5
+    },
+    {
+      "label": "T7",
+      "X": 6.123233995736766e-17,
+      "Y": 1.0,
+      "Z": 0.0,
+      "theta": -90.0,
+      "radius": 0.5
+    },
+    {
+      "label": "T8",
+      "X": 6.123233995736766e-17,
+      "Y": -1.0,
+      "Z": 0.0,
+      "theta": 90.0,
+      "radius": 0.5
+    },
+    {
+      "label": "P7",
+      "X": -0.587785252292473,
+      "Y": 0.8090169943749475,
+      "Z": 0.0,
+      "theta": -126.0,
+      "radius": 0.5
+    },
+    {
+      "label": "P8",
+      "X": -0.587785252292473,
+      "Y": -0.8090169943749475,
+      "Z": 0.0,
+      "theta": 126.0,
+      "radius": 0.5
+    },
+    {
+      "label": "FPz",
+      "X": 1.0,
+      "Y": 0.0,
+      "Z": 0.0,
+      "theta": -0.0,
+      "radius": 0.5
+    },
+    {
+      "label": "Fz",
+      "X": 0.7071067811865476,
+      "Y": 0.0,
+      "Z": 0.7071067811865475,
+      "theta": -0.0,
+      "radius": 0.25
+    },
+    {
+      "label": "Cz",
+      "X": 6.123233995736766e-17,
+      "Y": 0.0,
+      "Z": 1.0,
+      "theta": -0.0,
+      "radius": 0.0
+    },
+    {
+      "label": "Pz",
+      "X": -0.7071067811865476,
+      "Y": -8.659560562354934e-17,
+      "Z": 0.7071067811865475,
+      "theta": 180.0,
+      "radius": 0.25
+    },
+    {
+      "label": "POz",
+      "X": -0.9205048534524404,
+      "Y": -1.1272933223801346e-16,
+      "Z": 0.3907311284892737,
+      "theta": 180.0,
+      "radius": 0.37222222222222223
+    },
+    {
+      "label": "Oz",
+      "X": -1.0,
+      "Y": -1.2246467991473532e-16,
+      "Z": 0.0,
+      "theta": 180.0,
+      "radius": 0.5
+    },
+    {
+      "label": "FT9",
+      "X": 0.28445164312142457,
+      "Y": 0.8754521391572587,
+      "Z": -0.3907311284892737,
+      "theta": -72.0,
+      "radius": 0.6277777777777778
+    },
+    {
+      "label": "FT10",
+      "X": 0.28445164312142457,
+      "Y": -0.8754521391572587,
+      "Z": -0.3907311284892737,
+      "theta": 72.0,
+      "radius": 0.6277777777777778
+    },
+    {
+      "label": "TP9'",
+      "X": -0.26487926293945346,
+      "Y": 0.8152145468878713,
+      "Z": -0.5150380749100542,
+      "theta": -108.0,
+      "radius": 0.6722222222222223
+    },
+    {
+      "label": "TP10'",
+      "X": -0.26487926293945346,
+      "Y": -0.8152145468878713,
+      "Z": -0.5150380749100542,
+      "theta": 108.0,
+      "radius": 0.6722222222222223
+    },
+    {
+      "label": "EOG1",
+      "X": 0.5038302981000493,
+      "Y": 0.6934629132905097,
+      "Z": -0.5150380749100542,
+      "theta": -54.0,
+      "radius": 0.6722222222222223
+    },
+    {
+      "label": "EOG2",
+      "X": 0.5038302981000493,
+      "Y": -0.6934629132905097,
+      "Z": -0.5150380749100542,
+      "theta": 54.0,
+      "radius": 0.6722222222222223
+    },
+    {
+      "label": "EMG1",
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": -0.0,
+      "theta": -38.0,
+      "radius": 0.8333333333333333
+    },
+    {
+      "label": "EMG2",
+      "X": 0.0,
+      "Y": -0.0,
+      "Z": -0.0,
+      "theta": 29.0,
+      "radius": 0.7777777777777778
+    },
+    {
+      "label": "EMG3",
+      "X": 0.0,
+      "Y": -0.0,
+      "Z": -0.0,
+      "theta": 37.0,
+      "radius": 0.8444444444444444
+    },
+    {
+      "label": "ECG",
+      "X": -0.0,
+      "Y": 0.0,
+      "Z": -0.0,
+      "theta": -134.0,
+      "radius": 0.9
+    }
+  ],
+  "first_retained_frame": 12,
+  "last_retained_frame": 574,
+  "cache_labels": [
+    "Superior frontal sulcus",
+    "Fusiform gyrus",
+    "Calcarine cortex posterior",
+    "Cingulate cortex posterior",
+    "Parieto-occipital sulcus superior",
+    "Insula antero-superior",
+    "Superior temporal sulcus with angular gyrus",
+    "Planum temporale",
+    "Cerebellum Crus II",
+    "Superior parts of Postcentral and Precentral gyri",
+    "Transverse sinus",
+    "Paracentral gyrus RH",
+    "Superior occipital gyrus",
+    "Cingulate gyrus mid-posterior",
+    "ventricles",
+    "Fusiform gyrus posterior",
+    "Superior frontal gyrus medial",
+    "Precuneus superior",
+    "Planum polare",
+    "Parieto-occipital sulcus middle",
+    "Cerebellum I-V",
+    "Superior fornix and isthmus",
+    "Anterior Cingulate Cortex",
+    "Descending occipital gyrus",
+    "Putamen",
+    "Cingulate gyrus mid-anterior",
+    "Superior parietal lobule posterior",
+    "Paracentral lobule",
+    "Inferior occipital gyrus",
+    "Superior rostral gyrus",
+    "Calcarine sulcus anterior",
+    "Intraparietal sulcus",
+    "Superior parietal lobule anterior",
+    "Precentral gyrus medial",
+    "Lingual gyrus anterior",
+    "Angular gyrus superior",
+    "Supramarginal gyrus",
+    "Intraparietal sulcus LH",
+    "Dorsomedial prefrontal cortex antero-superior",
+    "Precentral gyrus superior",
+    "Postcentral gyrus inferior",
+    "Lateral occipital cortex",
+    "Callosomarginal sulcus",
+    "Paracentral lobule superior",
+    "Heschl’s gyrus",
+    "Occipital pole",
+    "Thalamus",
+    "Intraparietal sulcus RH",
+    "Inferior frontal sulcus",
+    "Postcentral gyrus LH",
+    "Middle frontal gyrus",
+    "Inferior frontal gyrus",
+    "Parieto-occipital sulcus anterior",
+    "Precuneus anterior",
+    "Lingual gyrus",
+    "Superior occipital sulcus",
+    "Superior parietal lobule",
+    "Middle frontal gyrus anterior",
+    "Angular gyrus inferior",
+    "Cuneus",
+    "Middle temporal gyrus",
+    "Superior frontal gyrus",
+    "Central sulcus",
+    "Caudate",
+    "global signal clean"
+  ],
+  "cache_sha256": "9ce69c7b34696e956026c15f4b9e025a5672cde529b8191577a974d8edb35b4d",
+  "MNE_custom_ref_applied": "0 (FIFFV_MNE_CUSTOM_REF_OFF)",
+  "note": "Common23 feature selection retains original VU recording reference. NATVIEW average over its retained scalp montage is not harmonized by dropping channels."
+}

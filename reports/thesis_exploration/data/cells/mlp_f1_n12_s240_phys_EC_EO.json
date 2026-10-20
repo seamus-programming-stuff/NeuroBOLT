@@ -1,0 +1,406 @@
+{
+  "dataset": "ds006040",
+  "scope": "development",
+  "fold": 1,
+  "input": "phys",
+  "model": "mlp",
+  "training_people": 12,
+  "duration_seconds": 240,
+  "train_state": "EC_EO",
+  "protocol_sha256": "59505927a5f9073c0c1fda106baa161576b18e1c58db74838dc28f036050032e",
+  "selection": {
+    "chosen": {
+      "width": 32,
+      "weight_decay": 0.01,
+      "epochs_run": 21,
+      "best_epoch": 11,
+      "validation_standardized_mse": 1.102243423461914,
+      "fit_seconds": 0.23550839815288782,
+      "parameters": 7169
+    },
+    "candidates": [
+      {
+        "width": 32,
+        "weight_decay": 0.01,
+        "epochs_run": 21,
+        "best_epoch": 11,
+        "validation_standardized_mse": 1.102243423461914,
+        "fit_seconds": 0.23550839815288782,
+        "parameters": 7169
+      },
+      {
+        "width": 128,
+        "weight_decay": 0.01,
+        "epochs_run": 15,
+        "best_epoch": 5,
+        "validation_standardized_mse": 1.1120259761810303,
+        "fit_seconds": 0.1674869772978127,
+        "parameters": 28097
+      }
+    ],
+    "validation_standardized_mse": 1.102243423461914
+  },
+  "validation_selection_only": true,
+  "training_rows": [
+    {
+      "run": "sub-010_EC",
+      "subject": "sub-010",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-010_EO",
+      "subject": "sub-010",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.00000762939453,
+      "input_acquisition_span_seconds": 142.00000762939453,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-006_EC",
+      "subject": "sub-006",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-006_EO",
+      "subject": "sub-006",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.00000762939453,
+      "input_acquisition_span_seconds": 142.00000762939453,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-014_EC",
+      "subject": "sub-014",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 10,
+      "last_frame": 69,
+      "gaps": 0
+    },
+    {
+      "run": "sub-014_EO",
+      "subject": "sub-014",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 119.99999237060547,
+      "input_acquisition_span_seconds": 141.99999237060547,
+      "first_frame": 10,
+      "last_frame": 69,
+      "gaps": 0
+    },
+    {
+      "run": "sub-009_EC",
+      "subject": "sub-009",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 12,
+      "last_frame": 71,
+      "gaps": 0
+    },
+    {
+      "run": "sub-009_EO",
+      "subject": "sub-009",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-023_EC",
+      "subject": "sub-023",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 10,
+      "last_frame": 69,
+      "gaps": 0
+    },
+    {
+      "run": "sub-023_EO",
+      "subject": "sub-023",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-013_EC",
+      "subject": "sub-013",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 9,
+      "last_frame": 68,
+      "gaps": 0
+    },
+    {
+      "run": "sub-013_EO",
+      "subject": "sub-013",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 10,
+      "last_frame": 69,
+      "gaps": 0
+    },
+    {
+      "run": "sub-011_EC",
+      "subject": "sub-011",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-011_EO",
+      "subject": "sub-011",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 119.99999237060547,
+      "input_acquisition_span_seconds": 141.99999237060547,
+      "first_frame": 14,
+      "last_frame": 73,
+      "gaps": 0
+    },
+    {
+      "run": "sub-008_EC",
+      "subject": "sub-008",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 210.0,
+      "input_acquisition_span_seconds": 232.0,
+      "first_frame": 12,
+      "last_frame": 116,
+      "gaps": 1
+    },
+    {
+      "run": "sub-008_EO",
+      "subject": "sub-008",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 35,
+      "last_frame": 94,
+      "gaps": 0
+    },
+    {
+      "run": "sub-027_EC",
+      "subject": "sub-027",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-027_EO",
+      "subject": "sub-027",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 119.99999237060547,
+      "input_acquisition_span_seconds": 141.99999237060547,
+      "first_frame": 10,
+      "last_frame": 69,
+      "gaps": 0
+    },
+    {
+      "run": "sub-021_EC",
+      "subject": "sub-021",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.00000762939453,
+      "input_acquisition_span_seconds": 142.00000762939453,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-021_EO",
+      "subject": "sub-021",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-005_EC",
+      "subject": "sub-005",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-005_EO",
+      "subject": "sub-005",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.00000762939453,
+      "input_acquisition_span_seconds": 142.00000762939453,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-029_EC",
+      "subject": "sub-029",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.00000762939453,
+      "input_acquisition_span_seconds": 142.00000762939453,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-029_EO",
+      "subject": "sub-029",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 17,
+      "last_frame": 76,
+      "gaps": 0
+    }
+  ],
+  "validation_rows": [
+    {
+      "run": "sub-020_EC",
+      "subject": "sub-020",
+      "n_frames": 180,
+      "retained_target_seconds": 360,
+      "target_acquisition_span_seconds": 360.0,
+      "input_acquisition_span_seconds": 382.0,
+      "first_frame": 10,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-020_EO",
+      "subject": "sub-020",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-015_EC",
+      "subject": "sub-015",
+      "n_frames": 178,
+      "retained_target_seconds": 356,
+      "target_acquisition_span_seconds": 356.0,
+      "input_acquisition_span_seconds": 378.0,
+      "first_frame": 12,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-015_EO",
+      "subject": "sub-015",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-022_EC",
+      "subject": "sub-022",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-022_EO",
+      "subject": "sub-022",
+      "n_frames": 178,
+      "retained_target_seconds": 356,
+      "target_acquisition_span_seconds": 356.0,
+      "input_acquisition_span_seconds": 378.0,
+      "first_frame": 12,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-026_EC",
+      "subject": "sub-026",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-026_EO",
+      "subject": "sub-026",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    }
+  ],
+  "peak_ram_MB": 654.0078125,
+  "device": "cuda",
+  "gpu": "NVIDIA L40S",
+  "gpu_peak_allocated_MB": 73.8525390625,
+  "source_sha256": "b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447",
+  "elapsed_seconds": 2.240752249956131
+}

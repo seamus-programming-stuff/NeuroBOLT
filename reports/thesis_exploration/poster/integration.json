@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "results_reviewed": true,
+  "results_review_basis": "Coordinator confirmed final complete ds006040 results, nine COMPLETED 0:0 root jobs, all 96 fitted outer cells, and passing verification/package checks in this session. Does not approve NATVIEW or the final report.",
+  "evidence_reviewed": true,
+  "natview_reviewed": true,
+  "natview_review_basis": "Coordinator explicitly approved v2 regional r/CI, normalized predictive R2 and 740/2304 all-eight frame coverage with amended exploratory scope; final report still pending.",
+  "completed_jobs": [],
+  "experiment_note": "research_notes/Clinical EEG fMRI thesis exploration/M3 experiments.md",
+  "reviewed_report": "reports/Clinical EEG fMRI thesis exploration.md",
+  "native_summary": "reports/thesis_exploration/data/summary.json",
+  "native_people_csv": "reports/thesis_exploration/data/per_person_scores.csv",
+  "native_protocol": "reports/thesis_exploration/data/protocol.json",
+  "panel_selection_id": "EC_regional64_predeclared_20261021",
+  "primary_view": {
+    "condition": "EC->EC",
+    "target": "regional64",
+    "metric": "temporal_r"
+  },
+  "metric_label": "Mean regional temporal r",
+  "protocol_caption": "Three grouped outer folds; equal-person means over regional64; 2000 percentile person bootstraps. One subset order and neural seed; normalized retrospective targets.",
+  "result_scope": "ds006040 previously inspected development data; 27 people, 54 EC/EO runs. EC training/test, 12 training people, 240 retained target-seconds/person; primary panel selected before outcomes.",
+  "result_caption": "27 people; person-bootstrap 95% CIs. EEG ridge predictive R-squared .028 in normalized targets.",
+  "result_takeaway": "Ridge EEG regional gain over its predicted-global template is uncertain: paired delta-r .004, 95% CI -.008 to .017.",
+  "methods_text": "<b>ds006040 development:</b> 27 people/54 runs; three outer folds, 96 fitted outer cells. Inner tuning separate. Matched inputs: 300 EEG-power features, ECG timing/availability or both; ridge/small MLP. Cross 4/12 training people x 120/240 retained target-seconds. One seed; four equal-weight MLP target groups. Published models were not reproduced.",
+  "learning_scope": "ds006040 | EC-trained/test-EC | n=27 | regional64 temporal r",
+  "learning_caption": "Person-bootstrap 95% CIs; fixed subsets and EC evaluation.",
+  "natview_summary": "reports/thesis_exploration/natview/v2/machine_summary.json",
+  "native_natview_people_csv": "reports/thesis_exploration/natview/v2/per_person_metrics.csv",
+  "natview_note": "research_notes/Clinical EEG fMRI thesis exploration/NATVIEW experiments.md",
+  "natview_qc_context": {
+    "status": "QC scope supplied by coordinator; accuracy metrics not approved",
+    "v1_accepted_people": 1,
+    "n_reserved_people": 8,
+    "v2_accepted_people": 6,
+    "accepted_ids": [
+      "sub04",
+      "sub06",
+      "sub08",
+      "sub11",
+      "sub12",
+      "sub13"
+    ],
+    "failed_ids": [
+      "sub05",
+      "sub10"
+    ],
+    "failure_reason": "fewer than 60 eligible frames",
+    "amendment_role": "secondary exploratory after QC",
+    "amendment_basis": "metadata-only event-map certification; numeric QC thresholds and model weights unchanged",
+    "target_electrodes": 23,
+    "always_interpolated_in_VU": [
+      "TP9'",
+      "TP10'"
+    ],
+    "extra_missing_sites": "2-3 additional sites in three people; specified interpolation policy",
+    "pilot_excluded": true,
+    "all_eight_frame_coverage": "awaiting final reviewed reporting package"
+  },
+  "natview_panel": null,
+  "evidence_review_basis": "Parent authorized finalization after the writer removed DRAFT/PENDING; final report now records completed results and provenance reviewed. Clinical/theory claims reviewed by parent.",
+  "reviewed_report_sha256": "900cda12c6f0bad7f2083d17959eda8a80aa32317b0982fbf1e2398465887ee6",
+  "source_files": [
+    "reports/thesis_exploration/poster/sources.json"
+  ]
+}

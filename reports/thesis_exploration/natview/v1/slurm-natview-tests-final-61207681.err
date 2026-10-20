@@ -1,0 +1,13 @@
+test_atlas_identity (__main__.ContractTests) ... ok
+test_channel_identity_and_order (__main__.ContractTests) ... ok
+test_exact_urevent_gap_reconstruction (__main__.ContractTests) ... ok
+test_explicit_interpolation_preserves_constant_and_measured_channels (__main__.ContractTests) ... ok
+test_merged_boundary_duration_is_preserved_with_exact_mask_anchors (__main__.ContractTests) ... ok
+test_no_window_crosses_excised_time (__main__.ContractTests) ... ok
+test_sparse_trigger_codes (__main__.ContractTests) ... ok
+test_units (__main__.ContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.266s
+
+OK

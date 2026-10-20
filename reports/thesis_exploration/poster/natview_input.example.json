@@ -1,0 +1,27 @@
+{
+  "purpose": "Schema only, not an observed NATVIEW result. Replace fields only from actual reviewed outputs.",
+  "natview_summary": "reports/thesis_exploration/natview/v2/machine_summary.json",
+  "natview_note": "research_notes/Clinical EEG fMRI thesis exploration/NATVIEW experiments.md",
+  "natview_reviewed": false,
+  "natview_panel": {
+    "outcome": "pending",
+    "scope": "Replace with actual confirmation N, protocol/condition and exclusion of ingestion pilot; max two short lines.",
+    "metric_label": "Replace with actual target and metric; do not borrow ds006040 target definition.",
+    "n_people": null,
+    "n_reserved_people": 8,
+    "v1_accepted_people": 1,
+    "n_accepted_people": null,
+    "n_failed_people": null,
+    "pilot_excluded": true,
+    "amendment_role": "secondary exploratory after QC",
+    "mean": null,
+    "ci_low": null,
+    "ci_high": null,
+    "coverage_caption": "Replace with eligible/attempted frame coverage against all eight reserved people; never use pilot 134/288 as confirmation coverage.",
+    "montage_caption": "23 target sites include specified interpolation; not 23 shared measured channels.",
+    "qc_caption": "Keep original v1 1/8 QC result; v2 is an amendment, not untouched confirmation.",
+    "failure_caption": "Use only for a completed QC failure with no defensible transfer estimate. Describe what prevented scoring."
+  },
+  "allowed_final_outcomes": ["prediction", "qc_failure"],
+  "rules": "Keep separate N/CI/scale from ds006040. Set prediction metrics only when justified; QC failure does not require an invented point. Coordinator must confirm NATVIEW and final report review."
+}

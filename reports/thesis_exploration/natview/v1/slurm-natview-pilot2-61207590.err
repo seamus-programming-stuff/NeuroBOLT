@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 74, in main
+    try:results.append(process(sub))
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py", line 23, in process
+    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 123, in clock_audit
+    mask,triggers,rows,boundaries=validate_sample_map(e)
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py", line 93, in validate_sample_map
+    raise ValueError('Boundary durations plus edge truncation differ from mask missing samples')
+ValueError: Boundary durations plus edge truncation differ from mask missing samples

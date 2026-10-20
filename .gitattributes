@@ -1,0 +1,29 @@
+# Preserve byte hashes for the scoped thesis scripts, text outputs and notes.
+/.gitattributes text=auto eol=lf
+/.gitignore text=auto eol=lf
+scripts/thesis_* text=auto eol=lf
+scripts/natview_* text=auto eol=lf
+scripts/build_thesis_exploration_poster.py text=auto eol=lf
+reports/thesis_exploration/** text=auto eol=lf
+"reports/Clinical EEG fMRI thesis exploration.md" text=auto eol=lf
+"research_notes/Clinical EEG fMRI thesis exploration/**" text=auto eol=lf
+
+# These binary artifacts must never undergo line-ending conversion.
+reports/thesis_exploration/**/*.pdf -text -eol
+reports/thesis_exploration/**/*.png -text -eol
+reports/thesis_exploration/**/*.npz -text -eol
+"research_notes/Clinical EEG fMRI thesis exploration/**/*.pdf" -text -eol
+"research_notes/Clinical EEG fMRI thesis exploration/**/*.png" -text -eol
+"research_notes/Clinical EEG fMRI thesis exploration/**/*.npz" -text -eol
+
+# Preserve original verified handoff bytes (including CRLF) for these manifests.
+"research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_sub01_rest_verified_manifest.json" -text -eol whitespace=cr-at-eol
+"research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_PROPOSED_8person_repeat_extension.json" -text -eol whitespace=cr-at-eol
+
+# Immutable generated artifacts preserve original bytes for delivery hashes.
+# Validate these with scientific integrity checks, not code-format checks.
+reports/thesis_exploration/data/** -text -eol -whitespace
+reports/thesis_exploration/natview/** -text -eol -whitespace
+reports/thesis_exploration/poster/*.json -text -eol -whitespace
+# Generated SVG images may contain meaningful, hashed font-path whitespace.
+reports/thesis_exploration/**/*.svg -text -eol -diff

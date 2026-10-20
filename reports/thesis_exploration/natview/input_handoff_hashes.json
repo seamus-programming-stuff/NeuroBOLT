@@ -1,0 +1,22 @@
+[
+  {
+    "sha256": "19e385b43d0e13668747d19bd87476b2f6259b514a9306c3ccbeb8455a2c408e",
+    "path": ".agents/skills/neurobolt-m3/SKILL.md"
+  },
+  {
+    "sha256": "71bb4e87a0edbfad285ac02266499a837b8042f37b04e4ff7804086c8ebb6ef4",
+    "path": "research_notes/Clinical EEG fMRI thesis exploration/reproducibility and datasets.md"
+  },
+  {
+    "sha256": "abea748b4ca8e7692c4a74620aa5b73c66c7ba3988aa5c18323c21f78d01fcea",
+    "path": "research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_sub01_rest_verified_manifest.json"
+  },
+  {
+    "sha256": "22666b03ca8165f98d0ae5a03037d188dc012cfedca0b5e7887089f50a570c6f",
+    "path": "research_notes/Clinical EEG fMRI thesis exploration/evidence/NATVIEW_PROPOSED_8person_repeat_extension.json"
+  },
+  {
+    "sha256": "b2e3081a6328149a73d75f9703d50f526f1632257f7ea4c1e925f2eefcde12dc",
+    "path": "research_notes/Clinical EEG fMRI thesis exploration/evidence/natview_paper.txt"
+  }
+]

@@ -1,0 +1,12 @@
+Tue Oct 20 04:03:23 PM UTC 2026
+job=61207930 host=m3j001 script=natview_segment_audit.py args=
+3b46ed72b4c8613dd8c7311d25486a3c3727baed435b5f25b4e7d351821033ec  scripts/natview_segment_audit.py
+SEGMENTS sub-04 certifiable True nondecreasing violations 0 physical windows 166
+SEGMENTS sub-05 certifiable True nondecreasing violations 0 physical windows 27
+SEGMENTS sub-06 certifiable True nondecreasing violations 0 physical windows 142
+SEGMENTS sub-08 certifiable True nondecreasing violations 0 physical windows 64
+SEGMENTS sub-10 certifiable True nondecreasing violations 0 physical windows 28
+SEGMENTS sub-11 certifiable True nondecreasing violations 0 physical windows 98
+SEGMENTS sub-12 certifiable True nondecreasing violations 0 physical windows 133
+SEGMENTS sub-13 certifiable True nondecreasing violations 0 physical windows 176
+Tue Oct 20 04:04:38 PM UTC 2026

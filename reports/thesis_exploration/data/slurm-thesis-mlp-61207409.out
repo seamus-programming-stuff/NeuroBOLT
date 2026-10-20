@@ -1,0 +1,53 @@
+Tue Oct 20 03:26:49 PM UTC 2026
+job=61207409 host=m3g103 cpus=4 script=thesis_study.py args=--model mlp --out reports/thesis_exploration/data
+b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447  scripts/thesis_study.py
+DONE mlp_f0_n4_s120_eeg_EC seconds 2.53
+DONE mlp_f0_n4_s120_phys_EC seconds 1.85
+DONE mlp_f0_n4_s120_combined_EC seconds 1.84
+DONE mlp_f0_n4_s240_eeg_EC seconds 1.9
+DONE mlp_f0_n4_s240_phys_EC seconds 1.91
+DONE mlp_f0_n4_s240_combined_EC seconds 1.91
+DONE mlp_f0_n12_s120_eeg_EC seconds 1.94
+DONE mlp_f0_n12_s120_phys_EC seconds 1.98
+DONE mlp_f0_n12_s120_combined_EC seconds 1.96
+DONE mlp_f0_n12_s240_eeg_EC seconds 2.07
+DONE mlp_f0_n12_s240_phys_EC seconds 2.21
+DONE mlp_f0_n12_s240_combined_EC seconds 2.08
+DONE mlp_f1_n4_s120_eeg_EC seconds 1.86
+DONE mlp_f1_n4_s120_phys_EC seconds 1.87
+DONE mlp_f1_n4_s120_combined_EC seconds 1.84
+DONE mlp_f1_n4_s240_eeg_EC seconds 1.92
+DONE mlp_f1_n4_s240_phys_EC seconds 1.93
+DONE mlp_f1_n4_s240_combined_EC seconds 1.91
+DONE mlp_f1_n12_s120_eeg_EC seconds 2.04
+DONE mlp_f1_n12_s120_phys_EC seconds 1.99
+DONE mlp_f1_n12_s120_combined_EC seconds 2.0
+DONE mlp_f1_n12_s240_eeg_EC seconds 2.21
+DONE mlp_f1_n12_s240_phys_EC seconds 2.25
+DONE mlp_f1_n12_s240_combined_EC seconds 2.19
+DONE mlp_f2_n4_s120_eeg_EC seconds 1.78
+DONE mlp_f2_n4_s120_phys_EC seconds 1.8
+DONE mlp_f2_n4_s120_combined_EC seconds 1.77
+DONE mlp_f2_n4_s240_eeg_EC seconds 1.84
+DONE mlp_f2_n4_s240_phys_EC seconds 1.86
+DONE mlp_f2_n4_s240_combined_EC seconds 1.83
+DONE mlp_f2_n12_s120_eeg_EC seconds 1.93
+DONE mlp_f2_n12_s120_phys_EC seconds 1.92
+DONE mlp_f2_n12_s120_combined_EC seconds 1.88
+DONE mlp_f2_n12_s240_eeg_EC seconds 2.14
+DONE mlp_f2_n12_s240_phys_EC seconds 2.13
+DONE mlp_f2_n12_s240_combined_EC seconds 2.13
+DONE mlp_f0_n12_s240_eeg_EC_EO seconds 2.12
+DONE mlp_f0_n12_s240_phys_EC_EO seconds 2.27
+DONE mlp_f0_n12_s240_combined_EC_EO seconds 2.18
+DONE mlp_f1_n12_s240_eeg_EC_EO seconds 2.25
+DONE mlp_f1_n12_s240_phys_EC_EO seconds 2.24
+DONE mlp_f1_n12_s240_combined_EC_EO seconds 2.18
+DONE mlp_f2_n12_s240_eeg_EC_EO seconds 2.08
+DONE mlp_f2_n12_s240_phys_EC_EO seconds 2.14
+DONE mlp_f2_n12_s240_combined_EC_EO seconds 2.07
+DONE mlp_f0_n12_s240_availability_EC seconds 2.24
+DONE mlp_f1_n12_s240_availability_EC seconds 2.28
+DONE mlp_f2_n12_s240_availability_EC seconds 2.29
+STUDY_COMPLETE mlp
+Tue Oct 20 03:28:35 PM UTC 2026

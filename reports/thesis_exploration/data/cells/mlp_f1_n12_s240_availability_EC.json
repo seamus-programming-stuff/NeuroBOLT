@@ -1,0 +1,230 @@
+{
+  "dataset": "ds006040",
+  "scope": "development",
+  "fold": 1,
+  "input": "availability",
+  "model": "mlp",
+  "training_people": 12,
+  "duration_seconds": 240,
+  "train_state": "EC",
+  "protocol_sha256": "59505927a5f9073c0c1fda106baa161576b18e1c58db74838dc28f036050032e",
+  "selection": {
+    "chosen": {
+      "width": 32,
+      "weight_decay": 0.01,
+      "epochs_run": 26,
+      "best_epoch": 16,
+      "validation_standardized_mse": 1.0815373659133911,
+      "fit_seconds": 0.2879831879399717,
+      "parameters": 6785
+    },
+    "candidates": [
+      {
+        "width": 32,
+        "weight_decay": 0.01,
+        "epochs_run": 26,
+        "best_epoch": 16,
+        "validation_standardized_mse": 1.0815373659133911,
+        "fit_seconds": 0.2879831879399717,
+        "parameters": 6785
+      },
+      {
+        "width": 128,
+        "weight_decay": 0.01,
+        "epochs_run": 17,
+        "best_epoch": 7,
+        "validation_standardized_mse": 1.085697054862976,
+        "fit_seconds": 0.19036489073187113,
+        "parameters": 26561
+      }
+    ],
+    "validation_standardized_mse": 1.0815373659133911
+  },
+  "validation_selection_only": true,
+  "training_rows": [
+    {
+      "run": "sub-010_EC",
+      "subject": "sub-010",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.0,
+      "input_acquisition_span_seconds": 262.0,
+      "first_frame": 11,
+      "last_frame": 130,
+      "gaps": 0
+    },
+    {
+      "run": "sub-006_EC",
+      "subject": "sub-006",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.00001525878906,
+      "input_acquisition_span_seconds": 262.00001525878906,
+      "first_frame": 11,
+      "last_frame": 130,
+      "gaps": 0
+    },
+    {
+      "run": "sub-014_EC",
+      "subject": "sub-014",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 239.99998474121094,
+      "input_acquisition_span_seconds": 261.99998474121094,
+      "first_frame": 10,
+      "last_frame": 129,
+      "gaps": 0
+    },
+    {
+      "run": "sub-009_EC",
+      "subject": "sub-009",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.0,
+      "input_acquisition_span_seconds": 262.0,
+      "first_frame": 12,
+      "last_frame": 131,
+      "gaps": 0
+    },
+    {
+      "run": "sub-023_EC",
+      "subject": "sub-023",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.0,
+      "input_acquisition_span_seconds": 262.0,
+      "first_frame": 10,
+      "last_frame": 129,
+      "gaps": 0
+    },
+    {
+      "run": "sub-013_EC",
+      "subject": "sub-013",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 239.99998474121094,
+      "input_acquisition_span_seconds": 261.99998474121094,
+      "first_frame": 9,
+      "last_frame": 128,
+      "gaps": 0
+    },
+    {
+      "run": "sub-011_EC",
+      "subject": "sub-011",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 239.99998474121094,
+      "input_acquisition_span_seconds": 261.99998474121094,
+      "first_frame": 11,
+      "last_frame": 130,
+      "gaps": 0
+    },
+    {
+      "run": "sub-008_EC",
+      "subject": "sub-008",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 330.0,
+      "input_acquisition_span_seconds": 352.0,
+      "first_frame": 12,
+      "last_frame": 176,
+      "gaps": 1
+    },
+    {
+      "run": "sub-027_EC",
+      "subject": "sub-027",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.0,
+      "input_acquisition_span_seconds": 262.0,
+      "first_frame": 11,
+      "last_frame": 130,
+      "gaps": 0
+    },
+    {
+      "run": "sub-021_EC",
+      "subject": "sub-021",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.0,
+      "input_acquisition_span_seconds": 262.0,
+      "first_frame": 11,
+      "last_frame": 130,
+      "gaps": 0
+    },
+    {
+      "run": "sub-005_EC",
+      "subject": "sub-005",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.0,
+      "input_acquisition_span_seconds": 262.0,
+      "first_frame": 11,
+      "last_frame": 130,
+      "gaps": 0
+    },
+    {
+      "run": "sub-029_EC",
+      "subject": "sub-029",
+      "n_frames": 120,
+      "retained_target_seconds": 240,
+      "target_acquisition_span_seconds": 240.0,
+      "input_acquisition_span_seconds": 262.0,
+      "first_frame": 11,
+      "last_frame": 130,
+      "gaps": 0
+    }
+  ],
+  "validation_rows": [
+    {
+      "run": "sub-020_EC",
+      "subject": "sub-020",
+      "n_frames": 180,
+      "retained_target_seconds": 360,
+      "target_acquisition_span_seconds": 360.0,
+      "input_acquisition_span_seconds": 382.0,
+      "first_frame": 10,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-015_EC",
+      "subject": "sub-015",
+      "n_frames": 178,
+      "retained_target_seconds": 356,
+      "target_acquisition_span_seconds": 356.0,
+      "input_acquisition_span_seconds": 378.0,
+      "first_frame": 12,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-022_EC",
+      "subject": "sub-022",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-026_EC",
+      "subject": "sub-026",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    }
+  ],
+  "peak_ram_MB": 656.7421875,
+  "device": "cuda",
+  "gpu": "NVIDIA L40S",
+  "gpu_peak_allocated_MB": 73.8525390625,
+  "source_sha256": "b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447",
+  "elapsed_seconds": 2.2798045380041003
+}

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_cache_audit.py", line 60, in <module>
+    if __name__=='__main__':main()
+  File "/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_cache_audit.py", line 32, in main
+    assert raw.ch_names==CH_NAMES
+AssertionError

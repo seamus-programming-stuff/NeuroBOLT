@@ -1,0 +1,27 @@
+Tue Oct 20 03:41:25 PM UTC 2026
+job=61207653 host=m3k020 script=natview_run.py args=--mode pilot
+b1c9d73f7464a625aa7732c44809e653a2945fbf8be821949f38df5e2acfbd6c  scripts/natview_run.py
+CLOCK sub-01 PASS 280 / 288 physical windows 134
+DERIVED sub-01 frames 134 inclusion True DiFuMo65 (288, 65)
+{
+  "mode": "pilot",
+  "utc": "2026-10-20T15:42:50Z",
+  "runs": [
+    {
+      "subject": "sub-01",
+      "clock_resolved": true,
+      "inclusion_pass": true,
+      "frames": 134,
+      "error": null
+    }
+  ],
+  "environment": {
+    "numpy": "1.24.3",
+    "scipy": "1.13.1",
+    "mne": "1.4.2",
+    "nibabel": "5.3.3",
+    "nilearn": "0.12.1",
+    "torch": "2.0.0"
+  }
+}
+Tue Oct 20 03:42:51 PM UTC 2026

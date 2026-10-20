@@ -1,0 +1,8 @@
+{
+  "subject": "sub-13",
+  "clock_resolved": false,
+  "inclusion_pass": false,
+  "error": "Sample mask does not reconstruct cleaned data",
+  "slurm_job_id": "61207877",
+  "traceback": "Traceback (most recent call last):\n  File \"/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py\", line 75, in main\n    try:results.append(process(sub))\n  File \"/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_run.py\", line 23, in process\n    qc,mask,eye,resp=clock_audit(sub,e,nib.load(bold).shape[-1])\n  File \"/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py\", line 170, in clock_audit\n    mask,triggers,rows,boundaries=validate_sample_map(e)\n  File \"/fs04/hz18/stay0060/NeuroBOLT/scripts/natview_data.py\", line 112, in validate_sample_map\n    if mask.sum()!=int(e['pnts']):raise ValueError('Sample mask does not reconstruct cleaned data')\nValueError: Sample mask does not reconstruct cleaned data\n"
+}

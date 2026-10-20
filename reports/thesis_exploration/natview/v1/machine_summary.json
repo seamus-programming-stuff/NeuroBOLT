@@ -1,0 +1,212 @@
+{
+  "branch": "partial_or_not_achieved_locked_panel",
+  "n_prespecified_people": 8,
+  "n_clock_resolved": 1,
+  "n_evaluated_people": 1,
+  "excluded_people": [
+    {
+      "subject": "sub-04",
+      "reason": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-05",
+      "reason": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-06",
+      "reason": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-08",
+      "reason": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-10",
+      "reason": "Interior excision lacks matching boundary position"
+    },
+    {
+      "subject": "sub-11",
+      "reason": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-13",
+      "reason": "Sample mask does not reconstruct cleaned data"
+    }
+  ],
+  "pooled_metrics": [
+    {
+      "target": "global",
+      "n_people": 1,
+      "person_mean_r": -0.13944477610144743,
+      "person_bootstrap_r_95CI": [
+        -0.13944477610144743,
+        -0.13944477610144743
+      ],
+      "person_mean_normalized_target_predictive_R2": -0.12230296663848428,
+      "person_bootstrap_R2_95CI": [
+        -0.12230296663848428,
+        -0.12230296663848428
+      ],
+      "person_mean_amplitude_ratio": 0.1294733427478871,
+      "person_bootstrap_amplitude_95CI": [
+        0.1294733427478871,
+        0.1294733427478871
+      ]
+    },
+    {
+      "target": "regional64",
+      "n_people": 1,
+      "person_mean_r": -0.056492260784102105,
+      "person_bootstrap_r_95CI": [
+        -0.056492260784102105,
+        -0.056492260784102105
+      ],
+      "person_mean_normalized_target_predictive_R2": -0.12627259141547287,
+      "person_bootstrap_R2_95CI": [
+        -0.12627259141547287,
+        -0.12627259141547287
+      ],
+      "person_mean_amplitude_ratio": 0.10740284671137214,
+      "person_bootstrap_amplitude_95CI": [
+        0.10740284671137214,
+        0.10740284671137214
+      ]
+    },
+    {
+      "target": "VU_global_adjusted_residual64",
+      "n_people": 1,
+      "person_mean_r": 0.04379127231102201,
+      "person_bootstrap_r_95CI": [
+        0.04379127231102201,
+        0.04379127231102201
+      ],
+      "person_mean_normalized_target_predictive_R2": -0.058969214960283185,
+      "person_bootstrap_R2_95CI": [
+        -0.058969214960283185,
+        -0.058969214960283185
+      ],
+      "person_mean_amplitude_ratio": 0.05713847256908893,
+      "person_bootstrap_amplitude_95CI": [
+        0.05713847256908893,
+        0.05713847256908893
+      ]
+    }
+  ],
+  "channel_contract": "21 nominal exact name-overlap sites +2 always interpolated VU prime targets; additional missing2or3 sites interpolated in3 prespecified people",
+  "per_person_QC": [
+    {
+      "subject": "sub-04",
+      "clock_resolved": false,
+      "frames": 0,
+      "retained_seconds": null,
+      "measured_feature_sites": null,
+      "interpolated_feature_sites": null,
+      "eye_interpolated_fraction": null,
+      "clock_eye_max_abs_error_seconds": null,
+      "clock_biopac_max_relative_error_seconds": null,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-05",
+      "clock_resolved": false,
+      "frames": 0,
+      "retained_seconds": null,
+      "measured_feature_sites": null,
+      "interpolated_feature_sites": null,
+      "eye_interpolated_fraction": null,
+      "clock_eye_max_abs_error_seconds": null,
+      "clock_biopac_max_relative_error_seconds": null,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-06",
+      "clock_resolved": false,
+      "frames": 0,
+      "retained_seconds": null,
+      "measured_feature_sites": null,
+      "interpolated_feature_sites": null,
+      "eye_interpolated_fraction": null,
+      "clock_eye_max_abs_error_seconds": null,
+      "clock_biopac_max_relative_error_seconds": null,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-08",
+      "clock_resolved": false,
+      "frames": 0,
+      "retained_seconds": null,
+      "measured_feature_sites": null,
+      "interpolated_feature_sites": null,
+      "eye_interpolated_fraction": null,
+      "clock_eye_max_abs_error_seconds": null,
+      "clock_biopac_max_relative_error_seconds": null,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-10",
+      "clock_resolved": false,
+      "frames": 0,
+      "retained_seconds": null,
+      "measured_feature_sites": null,
+      "interpolated_feature_sites": null,
+      "eye_interpolated_fraction": null,
+      "clock_eye_max_abs_error_seconds": null,
+      "clock_biopac_max_relative_error_seconds": null,
+      "error": "Interior excision lacks matching boundary position"
+    },
+    {
+      "subject": "sub-11",
+      "clock_resolved": false,
+      "frames": 0,
+      "retained_seconds": null,
+      "measured_feature_sites": null,
+      "interpolated_feature_sites": null,
+      "eye_interpolated_fraction": null,
+      "clock_eye_max_abs_error_seconds": null,
+      "clock_biopac_max_relative_error_seconds": null,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-12",
+      "clock_resolved": true,
+      "frames": 135,
+      "retained_seconds": 283.5,
+      "measured_feature_sites": 21,
+      "interpolated_feature_sites": [
+        "TP9'",
+        "TP10'"
+      ],
+      "eye_interpolated_fraction": 0.07644160169189627,
+      "clock_eye_max_abs_error_seconds": 0.02140000000008513,
+      "clock_biopac_max_relative_error_seconds": 0.016000000000076398,
+      "error": null
+    },
+    {
+      "subject": "sub-13",
+      "clock_resolved": false,
+      "frames": 0,
+      "retained_seconds": null,
+      "measured_feature_sites": null,
+      "interpolated_feature_sites": null,
+      "eye_interpolated_fraction": null,
+      "clock_eye_max_abs_error_seconds": null,
+      "clock_biopac_max_relative_error_seconds": null,
+      "error": "Sample mask does not reconstruct cleaned data"
+    }
+  ],
+  "protocol_sha256": "005d4145fd51f297df8133ee28870bb7b9f97f1eb04f0533e047817ce241d035",
+  "model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9",
+  "freeze_sha256": "e8cdd1b9164fe0c8746514a50c44478f60b7d005290c0866949f59a2a3ab0743",
+  "slurm_job_id": "61207877",
+  "completed_utc": "2026-10-20T16:02:05Z",
+  "primary_alignment": "unshifted; original scanner volume identities from raw events/urevents/mask and independent pulses",
+  "bootstrap": "2000 within-person stationary replicates, expected 10TR block; restart at every gap; 10000 between-person iid replicates",
+  "lag": "-5..5 original volume index lags, min20 pairs, positive prediction later; descriptive only; no re-alignment or model selection",
+  "clinical_claim": false,
+  "independent_sleep_or_arousal_labels": false,
+  "new_site_accuracy_scope": "small external feasibility panel; resting instructed eye condition/site and preprocessing confounded",
+  "pilot_used_for_ingestion_only": true,
+  "test_outcome_tuning": false,
+  "EEG_adaptation": "none; VU training means/scales only",
+  "residual_endpoint": "VU-trained global coefficient used on measured and predicted global; measured BOLD defines label only, never a model input; residual algebra, not a separately tuned residual head"
+}

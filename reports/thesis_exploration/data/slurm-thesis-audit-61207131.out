@@ -1,0 +1,17 @@
+Tue Oct 20 03:10:22 PM UTC 2026
+job=61207131 host=m3k024 cpus=4 script=thesis_data.py args=audit --out reports/thesis_exploration/data
+52856e85bef470c6feabfd1ad8dfdfab5a2cef4fc6751beff743f5339c874436  scripts/thesis_data.py
+{
+  "dataset": "ds006040",
+  "scope": "previously inspected development dataset; no final external test",
+  "n_people": 27,
+  "n_runs": 54,
+  "history_seconds": 24,
+  "TR_seconds": 2,
+  "new_release_staged": false,
+  "independent_arousal_labels_staged": false,
+  "input_plan": "real ECG timing only; no ECG/EOG EEG-band power; no respiration/CO2 inferred",
+  "created_utc": "2026-10-20T15:11:38Z"
+}
+CHANNELS ['Fp1', 'Fp2', 'F3', 'F4', 'C3', 'C4', 'P3', 'P4', 'O1', 'O2', 'F7', 'F8', 'T7', 'T8', 'P7', 'P8', 'Fz', 'Cz', 'Pz', 'Oz', 'FC1', 'FC2', 'CP1', 'CP2', 'FC5', 'FC6', 'CP5', 'CP6', 'TP9', 'TP10', 'POz', 'ECG', 'F1', 'F2', 'C1', 'C2', 'P1', 'P2', 'AF3', 'AF4', 'FC3', 'FC4', 'CP3', 'CP4', 'PO3', 'PO4', 'F5', 'F6', 'C5', 'C6', 'P5', 'P6', 'AF7', 'AF8', 'FT7', 'FT8', 'TP7', 'TP8', 'PO7', 'PO8', 'FT9', 'FT10', 'Fpz', 'CPz']
+Tue Oct 20 03:11:39 PM UTC 2026

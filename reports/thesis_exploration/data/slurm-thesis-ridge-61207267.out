@@ -1,0 +1,53 @@
+Tue Oct 20 03:21:02 PM UTC 2026
+job=61207267 host=m3e116 cpus=4 script=thesis_study.py args=--model ridge --out reports/thesis_exploration/data
+b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447  scripts/thesis_study.py
+DONE ridge_f0_n4_s120_eeg_EC seconds 4.53
+DONE ridge_f0_n4_s120_phys_EC seconds 2.29
+DONE ridge_f0_n4_s120_combined_EC seconds 2.46
+DONE ridge_f0_n4_s240_eeg_EC seconds 2.42
+DONE ridge_f0_n4_s240_phys_EC seconds 2.25
+DONE ridge_f0_n4_s240_combined_EC seconds 2.46
+DONE ridge_f0_n12_s120_eeg_EC seconds 2.46
+DONE ridge_f0_n12_s120_phys_EC seconds 2.26
+DONE ridge_f0_n12_s120_combined_EC seconds 2.45
+DONE ridge_f0_n12_s240_eeg_EC seconds 2.66
+DONE ridge_f0_n12_s240_phys_EC seconds 2.45
+DONE ridge_f0_n12_s240_combined_EC seconds 2.7
+DONE ridge_f1_n4_s120_eeg_EC seconds 2.59
+DONE ridge_f1_n4_s120_phys_EC seconds 2.4
+DONE ridge_f1_n4_s120_combined_EC seconds 2.61
+DONE ridge_f1_n4_s240_eeg_EC seconds 2.61
+DONE ridge_f1_n4_s240_phys_EC seconds 2.4
+DONE ridge_f1_n4_s240_combined_EC seconds 2.64
+DONE ridge_f1_n12_s120_eeg_EC seconds 2.62
+DONE ridge_f1_n12_s120_phys_EC seconds 2.42
+DONE ridge_f1_n12_s120_combined_EC seconds 2.66
+DONE ridge_f1_n12_s240_eeg_EC seconds 2.66
+DONE ridge_f1_n12_s240_phys_EC seconds 2.42
+DONE ridge_f1_n12_s240_combined_EC seconds 2.66
+DONE ridge_f2_n4_s120_eeg_EC seconds 2.5
+DONE ridge_f2_n4_s120_phys_EC seconds 2.31
+DONE ridge_f2_n4_s120_combined_EC seconds 2.51
+DONE ridge_f2_n4_s240_eeg_EC seconds 2.51
+DONE ridge_f2_n4_s240_phys_EC seconds 2.29
+DONE ridge_f2_n4_s240_combined_EC seconds 2.56
+DONE ridge_f2_n12_s120_eeg_EC seconds 2.56
+DONE ridge_f2_n12_s120_phys_EC seconds 2.32
+DONE ridge_f2_n12_s120_combined_EC seconds 2.6
+DONE ridge_f2_n12_s240_eeg_EC seconds 2.54
+DONE ridge_f2_n12_s240_phys_EC seconds 2.31
+DONE ridge_f2_n12_s240_combined_EC seconds 2.64
+DONE ridge_f0_n12_s240_eeg_EC_EO seconds 2.81
+DONE ridge_f0_n12_s240_phys_EC_EO seconds 2.48
+DONE ridge_f0_n12_s240_combined_EC_EO seconds 2.89
+DONE ridge_f1_n12_s240_eeg_EC_EO seconds 2.85
+DONE ridge_f1_n12_s240_phys_EC_EO seconds 2.46
+DONE ridge_f1_n12_s240_combined_EC_EO seconds 2.88
+DONE ridge_f2_n12_s240_eeg_EC_EO seconds 2.72
+DONE ridge_f2_n12_s240_phys_EC_EO seconds 2.4
+DONE ridge_f2_n12_s240_combined_EC_EO seconds 2.8
+DONE ridge_f0_n12_s240_availability_EC seconds 2.39
+DONE ridge_f1_n12_s240_availability_EC seconds 2.41
+DONE ridge_f2_n12_s240_availability_EC seconds 2.32
+STUDY_COMPLETE ridge
+Tue Oct 20 03:23:17 PM UTC 2026

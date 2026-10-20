@@ -1,0 +1,9 @@
+{
+  "python": "3.9.19 | packaged by conda-forge | (main, Mar 20 2024, 12:50:21) \n[GCC 12.3.0]",
+  "platform": "Linux-5.14.0-687.17.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "numpy": "1.24.3",
+  "scipy": "1.13.1",
+  "torch": "2.0.0",
+  "mne": "1.4.2",
+  "cuda_build": "11.8"
+}

@@ -1,0 +1,10 @@
+{
+  "initial_model_path": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/ext/natview/vu_common23_frozen.npz",
+  "initial_model_sha256": "c7d2a46c05f711f89e5da4e24d148d47655ce868a1d0c1819b05044b10174fd4",
+  "final_model_path": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/ext/natview/vu_common23_prime_geometry_frozen.npz",
+  "final_model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9",
+  "coefficients_and_scalers_bitwise_unchanged": true,
+  "only_model_container_change": "channels field records literal VU TP9-prime/TP10-prime names; NATVIEW bridge geometry handles them explicitly",
+  "bridge_geometry_sha256": "5011de4d1ba46307db3e1f78104318904c6eedc1bebbdf75098458f9429b5264",
+  "slurm_job_id": "61207771"
+}

@@ -1,0 +1,5 @@
+Tue Oct 20 03:34:55 PM UTC 2026
+job=61207479 host=m3k020 cpus=4 script=thesis_package.py args=--out reports/thesis_exploration/data
+0e11f7f588ef2cca433487b6848328b3b82c34715a5287ac49f1a6fd752bafa7  scripts/thesis_package.py
+PACKAGED: four prespecified primary rows and four learning rows; all frozen source hashes match.
+Tue Oct 20 03:34:56 PM UTC 2026

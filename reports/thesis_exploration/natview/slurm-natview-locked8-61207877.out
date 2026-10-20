@@ -1,0 +1,77 @@
+Tue Oct 20 03:57:41 PM UTC 2026
+job=61207877 host=m3e116 script=natview_run.py args=--mode panel
+5aa340ca0a2514d624e200a40486b2fe1565c0662221ad531cf784b3705d1add  scripts/natview_run.py
+CLOCK sub-12 PASS 275 / 288 physical windows 135
+DERIVED sub-12 frames 135 inclusion True DiFuMo65 (288, 65)
+SCORED sub-12 frames 135 global r -0.13944477610144743 regional r -0.056492260784102105
+{
+  "mode": "panel",
+  "utc": "2026-10-20T16:02:03Z",
+  "runs": [
+    {
+      "subject": "sub-04",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-05",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-06",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-08",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-10",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Interior excision lacks matching boundary position"
+    },
+    {
+      "subject": "sub-11",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Sample mask does not reconstruct cleaned data"
+    },
+    {
+      "subject": "sub-12",
+      "clock_resolved": true,
+      "inclusion_pass": true,
+      "frames": 135,
+      "error": null
+    },
+    {
+      "subject": "sub-13",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Sample mask does not reconstruct cleaned data"
+    }
+  ],
+  "environment": {
+    "numpy": "1.24.3",
+    "scipy": "1.13.1",
+    "mne": "1.4.2",
+    "nibabel": "5.3.3",
+    "nilearn": "0.12.1",
+    "torch": "2.0.0"
+  }
+}
+Tue Oct 20 04:02:21 PM UTC 2026

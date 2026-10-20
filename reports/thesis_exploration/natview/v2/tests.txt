@@ -1,0 +1,9 @@
+test_no_gap_or_boundary_is_bridged (__main__.AmendmentTests) ... ok
+test_offset_decrease_rejects_clock (__main__.AmendmentTests) ... ok
+test_original_independent_thresholds_are_not_relaxed (__main__.AmendmentTests) ... ok
+test_stale_mask_does_not_replace_event_clock (__main__.AmendmentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.097s
+
+OK

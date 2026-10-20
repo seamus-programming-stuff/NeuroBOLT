@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "completed_cells": 96,
+  "score_rows": 10368,
+  "outer_test_people": 27,
+  "highest_resource_prediction_archives": 42,
+  "all_arms_use_same_original_test_frames": true,
+  "training_label_budgets_verified": true,
+  "group_separation_verified": true,
+  "source_and_protocol_hashes_verified": true
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-respiratory_physio.json",
+    "size": 285,
+    "etag": "\"1c10b7f58b4c1a045c0e95a80b81be5e\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-respiratory_physio.json",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-respiratory_physio.tsv.gz",
+    "size": 209199,
+    "etag": "\"e057d7c471742b050e3c29f6017fdc74\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-respiratory_physio.tsv.gz",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-trigger_physio.json",
+    "size": 268,
+    "etag": "\"f5a823aa9bf3edc5e413b7d77faec7d2\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-trigger_physio.json",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-trigger_physio.tsv.gz",
+    "size": 1361,
+    "etag": "\"73c6e5d9247c985fe0fa2fd387f2369c\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-trigger_physio.tsv.gz",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold.json",
+    "size": 1904,
+    "etag": "\"9ada7f33be43a665bbd7a9e1c24d962b\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold.json",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_channels.tsv",
+    "size": 2628,
+    "etag": "\"8a97f5e55fc678f2a6eac3f0a45ee9ed\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_channels.tsv",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_eeg.json",
+    "size": 547,
+    "etag": "\"a6c63bd96d5e61bdd0d736a5a1e1f36c\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_eeg.json",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_eeg.set",
+    "size": 38793320,
+    "etag": "\"49500ec6be0b23aeff1f9b6363e3678c-5\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_eeg.set",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation",
+    "caution": "59 scalp channels; sample channels.tsv lacks F4/FT9/FT10 from VU26; no payload inspection"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_events.tsv",
+    "size": 78818,
+    "etag": "\"8a21d8c2bb4687dc144bd36f217a0ba2\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_events.tsv",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-eyetracking_physio.json",
+    "size": 2277,
+    "etag": "\"4eef8f24858de047cc959cb3af56b7e2\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-eyetracking_physio.json",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-eyetracking_physio.tsv.gz",
+    "size": 1385835,
+    "etag": "\"43db9ce863f7d3e946188ee30dfb3f6a\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/eeg/sub-01_ses-01_task-rest_recording-eyetracking_physio.tsv.gz",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_atlas/sub-01_ses-01_task-rest_space-MNI152Lin_res-3mm_atlas-Schaefer2018_dens-100parcels7networks_desc-sm0_bold.tsv",
+    "size": 242929,
+    "etag": "\"17b31fd4c7de85b779cd070dfab8a6d0\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_atlas/sub-01_ses-01_task-rest_space-MNI152Lin_res-3mm_atlas-Schaefer2018_dens-100parcels7networks_desc-sm0_bold.tsv",
+    "status": "pilot body inspected; ragged TSV: 98 rows x 288, 1 x 187, 1 x 389; do not treat as ready table",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt",
+    "size": 6752,
+    "etag": "\"0206457a9282d58d87fc10f8928f2eba\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_nuisance/csf_wm_global.txt",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_nuisance/func_mc.1D",
+    "size": 15552,
+    "etag": "\"5b6877e0744bc45caf6251875ac9d8fb\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_nuisance/func_mc.1D",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_preproc/Regressors_model.log",
+    "size": 31,
+    "etag": "\"013221a7abf5638c37ab367773ef5390\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_preproc/Regressors_model.log",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz",
+    "size": 86485324,
+    "etag": "\"8026426af24337f50f08249b68998344-11\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_preproc/func_pp_nofilt_sm0.mni152.3mm.nii.gz",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  },
+  {
+    "key": "data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz",
+    "size": 2747,
+    "etag": "\"4e6d1a6fe4346052122a8a6856346852\"",
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/preproc_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold/func_reg/func_pp_mask.nii.gz",
+    "status": "listed; body not downloaded unless noted in evidence index",
+    "role": "pilot only; not untouched final validation"
+  }
+]

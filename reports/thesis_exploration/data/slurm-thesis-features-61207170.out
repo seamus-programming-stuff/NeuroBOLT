@@ -1,0 +1,59 @@
+Tue Oct 20 03:12:43 PM UTC 2026
+job=61207170 host=m3k024 cpus=4 script=thesis_data.py args=build --out reports/thesis_exploration/data
+013f0bf52f46e5684e5cfc2aba47e00877a9284de59d45f697613d68600d472c  scripts/thesis_data.py
+BUILT sub-002_EC 179 {'confirmed_peaks': 135, 'valid_fraction': 0.3139804982642434, 'median_hr': 56.074766355140184} seconds 4.22
+BUILT sub-002_EO 179 {'confirmed_peaks': 128, 'valid_fraction': 0.2626919740803102, 'median_hr': 60.91370558375635} seconds 3.83
+BUILT sub-004_EC 179 {'confirmed_peaks': 199, 'valid_fraction': 0.5038578680203045, 'median_hr': 75.47169811320755} seconds 3.92
+BUILT sub-004_EO 179 {'confirmed_peaks': 177, 'valid_fraction': 0.4151175159558302, 'median_hr': 75.47169811320755} seconds 3.87
+BUILT sub-005_EC 179 {'confirmed_peaks': 145, 'valid_fraction': 0.28435055973010276, 'median_hr': 63.492063492063494} seconds 3.85
+BUILT sub-005_EO 179 {'confirmed_peaks': 173, 'valid_fraction': 0.38057113717491076, 'median_hr': 65.93406593406593} seconds 4.01
+BUILT sub-006_EC 179 {'confirmed_peaks': 192, 'valid_fraction': 0.45128591880560387, 'median_hr': 67.79661016949153} seconds 3.87
+BUILT sub-006_EO 179 {'confirmed_peaks': 174, 'valid_fraction': 0.3765000255323495, 'median_hr': 67.41573033707866} seconds 3.96
+BUILT sub-007_EC 159 {'confirmed_peaks': 172, 'valid_fraction': 0.38191483962647177, 'median_hr': 83.33333333333333} seconds 5.98
+BUILT sub-007_EO 144 {'confirmed_peaks': 155, 'valid_fraction': 0.3912553809190109, 'median_hr': 83.91608391608392} seconds 5.31
+BUILT sub-008_EC 133 {'confirmed_peaks': 130, 'valid_fraction': 0.2618027402883974, 'median_hr': 67.41573033707866} seconds 7.73
+BUILT sub-008_EO 155 {'confirmed_peaks': 150, 'valid_fraction': 0.3331297709923664, 'median_hr': 68.18181818181819} seconds 4.16
+BUILT sub-009_EC 178 {'confirmed_peaks': 134, 'valid_fraction': 0.3303488850066797, 'median_hr': 71.42857142857143} seconds 3.93
+BUILT sub-009_EO 179 {'confirmed_peaks': 197, 'valid_fraction': 0.47131168433931486, 'median_hr': 84.50704225352112} seconds 4.05
+BUILT sub-010_EC 179 {'confirmed_peaks': 163, 'valid_fraction': 0.33797264887482775, 'median_hr': 63.829787234042556} seconds 3.97
+BUILT sub-010_EO 179 {'confirmed_peaks': 132, 'valid_fraction': 0.28224739119368797, 'median_hr': 64.86486486486487} seconds 3.95
+BUILT sub-011_EC 179 {'confirmed_peaks': 151, 'valid_fraction': 0.3581293076843946, 'median_hr': 56.60377358490566} seconds 3.89
+BUILT sub-011_EO 176 {'confirmed_peaks': 206, 'valid_fraction': 0.4841964285714286, 'median_hr': 62.17616580310881} seconds 4.04
+BUILT sub-012_EC 180 {'confirmed_peaks': 191, 'valid_fraction': 0.42112027281518805, 'median_hr': 68.18181818181819} seconds 3.95
+BUILT sub-012_EO 180 {'confirmed_peaks': 170, 'valid_fraction': 0.3763036654515998, 'median_hr': 64.1711229946524} seconds 3.95
+BUILT sub-013_EC 181 {'confirmed_peaks': 158, 'valid_fraction': 0.33535968859006116, 'median_hr': 71.00591715976331} seconds 4.0
+BUILT sub-013_EO 180 {'confirmed_peaks': 175, 'valid_fraction': 0.4120659062103929, 'median_hr': 69.36416184971098} seconds 3.95
+BUILT sub-014_EC 180 {'confirmed_peaks': 169, 'valid_fraction': 0.4209473150962513, 'median_hr': 83.33333333333333} seconds 4.12
+BUILT sub-014_EO 180 {'confirmed_peaks': 164, 'valid_fraction': 0.4022104512580218, 'median_hr': 85.71428571428571} seconds 4.2
+BUILT sub-015_EC 178 {'confirmed_peaks': 131, 'valid_fraction': 0.26644127930892636, 'median_hr': 61.53846153846154} seconds 4.14
+BUILT sub-015_EO 179 {'confirmed_peaks': 137, 'valid_fraction': 0.30906973172230184, 'median_hr': 65.57377049180327} seconds 4.14
+BUILT sub-016_EC 176 {'confirmed_peaks': 222, 'valid_fraction': 0.5591529220118102, 'median_hr': 56.872037914691944} seconds 4.2
+BUILT sub-016_EO 179 {'confirmed_peaks': 147, 'valid_fraction': 0.34715906187726736, 'median_hr': 61.224489795918366} seconds 4.02
+BUILT sub-017_EC 179 {'confirmed_peaks': 177, 'valid_fraction': 0.39313382776701783, 'median_hr': 86.33093525179856} seconds 4.4
+BUILT sub-017_EO 184 {'confirmed_peaks': 161, 'valid_fraction': 0.3579904282612986, 'median_hr': 90.9090909090909} seconds 4.16
+BUILT sub-018_EC 180 {'confirmed_peaks': 188, 'valid_fraction': 0.4380104870424524, 'median_hr': 69.36416184971098} seconds 4.15
+BUILT sub-018_EO 181 {'confirmed_peaks': 228, 'valid_fraction': 0.5040049524964625, 'median_hr': 67.0391061452514} seconds 4.18
+BUILT sub-019_EC 179 {'confirmed_peaks': 130, 'valid_fraction': 0.23508072756999795, 'median_hr': 67.79661016949153} seconds 4.09
+BUILT sub-019_EO 180 {'confirmed_peaks': 179, 'valid_fraction': 0.33061208991494534, 'median_hr': 71.00591715976331} seconds 4.14
+BUILT sub-020_EC 180 {'confirmed_peaks': 209, 'valid_fraction': 0.5087185725871858, 'median_hr': 83.33333333333333} seconds 4.16
+BUILT sub-020_EO 179 {'confirmed_peaks': 183, 'valid_fraction': 0.44978060105107404, 'median_hr': 82.1917808219178} seconds 4.12
+BUILT sub-021_EC 179 {'confirmed_peaks': 168, 'valid_fraction': 0.4119339984650806, 'median_hr': 51.94805194805195} seconds 4.04
+BUILT sub-021_EO 179 {'confirmed_peaks': 178, 'valid_fraction': 0.3923153539687404, 'median_hr': 60.0} seconds 4.08
+BUILT sub-022_EC 179 {'confirmed_peaks': 144, 'valid_fraction': 0.2792651119975453, 'median_hr': 65.57377049180327} seconds 4.04
+BUILT sub-022_EO 178 {'confirmed_peaks': 163, 'valid_fraction': 0.3493475379753288, 'median_hr': 69.36416184971098} seconds 4.04
+BUILT sub-023_EC 180 {'confirmed_peaks': 183, 'valid_fraction': 0.4143917139384117, 'median_hr': 90.9090909090909} seconds 4.19
+BUILT sub-023_EO 179 {'confirmed_peaks': 180, 'valid_fraction': 0.4512842202399262, 'median_hr': 87.5912408759124} seconds 4.14
+BUILT sub-024_EC 179 {'confirmed_peaks': 143, 'valid_fraction': 0.3150352508429549, 'median_hr': 53.333333333333336} seconds 4.07
+BUILT sub-024_EO 179 {'confirmed_peaks': 164, 'valid_fraction': 0.36108275052325284, 'median_hr': 54.54545454545455} seconds 4.1
+BUILT sub-025_EC 180 {'confirmed_peaks': 317, 'valid_fraction': 0.7319950965369292, 'median_hr': 66.66666666666667} seconds 4.2
+BUILT sub-025_EO 179 {'confirmed_peaks': 148, 'valid_fraction': 0.35597631928141266, 'median_hr': 68.57142857142857} seconds 4.09
+BUILT sub-026_EC 179 {'confirmed_peaks': 168, 'valid_fraction': 0.4035292921074044, 'median_hr': 56.60377358490566} seconds 4.1
+BUILT sub-026_EO 179 {'confirmed_peaks': 149, 'valid_fraction': 0.29106113915659576, 'median_hr': 60.60606060606061} seconds 4.07
+BUILT sub-027_EC 179 {'confirmed_peaks': 210, 'valid_fraction': 0.4969485836342369, 'median_hr': 76.92307692307692} seconds 4.19
+BUILT sub-027_EO 180 {'confirmed_peaks': 193, 'valid_fraction': 0.44584183673469385, 'median_hr': 82.1917808219178} seconds 4.15
+BUILT sub-028_EC 180 {'confirmed_peaks': 176, 'valid_fraction': 0.5231307222787386, 'median_hr': 46.33204633204633} seconds 4.19
+BUILT sub-028_EO 176 {'confirmed_peaks': 261, 'valid_fraction': 0.6744402509307901, 'median_hr': 57.142857142857146} seconds 4.11
+BUILT sub-029_EC 179 {'confirmed_peaks': 190, 'valid_fraction': 0.5034725729871704, 'median_hr': 71.42857142857143} seconds 4.12
+BUILT sub-029_EO 173 {'confirmed_peaks': 194, 'valid_fraction': 0.496841063635441, 'median_hr': 76.92307692307692} seconds 4.14
+COMPLETE 27 people 54 runs
+Tue Oct 20 03:16:33 PM UTC 2026

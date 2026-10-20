@@ -1,0 +1,78 @@
+{
+  "slurm_job_id": "61207930",
+  "runs": [
+    {
+      "subject": "sub-04",
+      "anchor_count": 1854,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 166,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    },
+    {
+      "subject": "sub-05",
+      "anchor_count": 1575,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 27,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    },
+    {
+      "subject": "sub-06",
+      "anchor_count": 1728,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 142,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    },
+    {
+      "subject": "sub-08",
+      "anchor_count": 1665,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 64,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    },
+    {
+      "subject": "sub-10",
+      "anchor_count": 1593,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 28,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    },
+    {
+      "subject": "sub-11",
+      "anchor_count": 1800,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 98,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    },
+    {
+      "subject": "sub-12",
+      "anchor_count": 1732,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 133,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    },
+    {
+      "subject": "sub-13",
+      "anchor_count": 1838,
+      "offset_decreases": 0,
+      "event_time_map_certifiable": true,
+      "frames_with_24s_history_and_5s_margins_between_certified_anchors": 176,
+      "no_source_mask_repair_performed": true,
+      "no_BOLD_or_EEG_values_read": true
+    }
+  ],
+  "source_sha256": "3b46ed72b4c8613dd8c7311d25486a3c3727baed435b5f25b4e7d351821033ec"
+}

@@ -1,0 +1,25 @@
+Tue Oct 20 03:37:50 PM UTC 2026
+job=61207590 host=m3k020 script=natview_run.py args=--mode pilot
+b1c9d73f7464a625aa7732c44809e653a2945fbf8be821949f38df5e2acfbd6c  scripts/natview_run.py
+{
+  "mode": "pilot",
+  "utc": "2026-10-20T15:37:54Z",
+  "runs": [
+    {
+      "subject": "sub-01",
+      "clock_resolved": false,
+      "inclusion_pass": false,
+      "frames": 0,
+      "error": "Boundary durations plus edge truncation differ from mask missing samples"
+    }
+  ],
+  "environment": {
+    "numpy": "1.24.3",
+    "scipy": "1.13.1",
+    "mne": "1.4.2",
+    "nibabel": "5.3.3",
+    "nilearn": "0.12.1",
+    "torch": "2.0.0"
+  }
+}
+Tue Oct 20 03:37:55 PM UTC 2026

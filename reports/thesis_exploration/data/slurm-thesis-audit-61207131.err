@@ -1,0 +1,108 @@
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)
+/fs04/hz18/stay0060/NeuroBOLT/scripts/thesis_data.py:114: RuntimeWarning: The data contains 'boundary' events, indicating data discontinuities. Be cautious of filtering and epoching around these events.
+  raw = mne.io.read_raw_eeglab(str(p),preload=False,verbose=False)

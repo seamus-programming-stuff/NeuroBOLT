@@ -1,0 +1,15 @@
+test_causal_filter_future_invariance (__main__.ThesisTests) ... ok
+test_correlation_is_not_amplitude_calibration (__main__.ThesisTests) ... ok
+test_hr_future_invariance_and_heart_rate (__main__.ThesisTests) ... ok
+test_lag_with_real_frame_gaps (__main__.ThesisTests) ... ok
+test_null_uses_actual_frame_grid (__main__.ThesisTests) ... ok
+test_protocol_grouping_if_present (__main__.ThesisTests) ... ok
+test_residual_coefficients_apply_without_refitting (__main__.ThesisTests) ... ok
+test_ridge_matches_closed_form (__main__.ThesisTests) ... ok
+test_training_only_transforms (__main__.ThesisTests) ... ok
+test_window_excludes_endpoint_and_future (__main__.ThesisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 10.892s
+
+OK

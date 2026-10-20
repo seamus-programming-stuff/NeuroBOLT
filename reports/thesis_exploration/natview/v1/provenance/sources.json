@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/NathanKlineInstitute/NATVIEW_EEGFMRI/a7ac63d526e13817e1031e8a910cc58b46a18ae7/fmri/ccs_preproc_bids_docker.sh",
+    "path": "reports/thesis_exploration/natview/provenance/ccs_preproc_bids_docker.sh",
+    "bytes": 6415,
+    "sha256": "769d9fb46fa2f6cdba8b1140089ee3e2d965673633780f9ce2db88718e0b4e7c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NathanKlineInstitute/NATVIEW_EEGFMRI/a7ac63d526e13817e1031e8a910cc58b46a18ae7/fmri/README.md",
+    "path": "reports/thesis_exploration/natview/provenance/README.md",
+    "bytes": 917,
+    "sha256": "e264b61c1134234d093edd8f93d4d265efe039f6c589277c003c37e8b30f71cd"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NathanKlineInstitute/NATVIEW_EEGFMRI/a7ac63d526e13817e1031e8a910cc58b46a18ae7/fmri/preprocessing/ccs_bids_01_funcpreproc.sh",
+    "path": "reports/thesis_exploration/natview/provenance/ccs_bids_01_funcpreproc.sh",
+    "bytes": 7929,
+    "sha256": "06213f633b55d24bf795303a90fe7e8d6f265a973b7a0e36120290fcd7a17fe0"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NathanKlineInstitute/NATVIEW_EEGFMRI/a7ac63d526e13817e1031e8a910cc58b46a18ae7/fmri/preprocessing/ccs_bids_04_funcnuisance.sh",
+    "path": "reports/thesis_exploration/natview/provenance/ccs_bids_04_funcnuisance.sh",
+    "bytes": 8155,
+    "sha256": "19743f2f8b82bcefb7789b01ed4d89d3c4fbcf1fe54b476735a02c6d2020d427"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NathanKlineInstitute/NATVIEW_EEGFMRI/a7ac63d526e13817e1031e8a910cc58b46a18ae7/fmri/preprocessing/ccs_bids_05_funcpreproc_vol.sh",
+    "path": "reports/thesis_exploration/natview/provenance/ccs_bids_05_funcpreproc_vol.sh",
+    "bytes": 9379,
+    "sha256": "2f67bb6422e4013cd2de2b825c77001df353f2b1e588cef7cdb1384887f2aab6"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/NathanKlineInstitute/NATVIEW_EEGFMRI/a7ac63d526e13817e1031e8a910cc58b46a18ae7/LICENSE",
+    "path": "reports/thesis_exploration/natview/provenance/LICENSE",
+    "bytes": 630,
+    "sha256": "0dd79a9aaa4bc5698cc600e45c69fe0525efcf30ed525eb412dab38b5cc18b7b"
+  },
+  {
+    "url": "https://fcp-indi.s3.amazonaws.com/data/Projects/NATVIEW_EEGFMRI/raw_data/sub-01/ses-01/func/sub-01_ses-01_task-rest_bold.nii.gz",
+    "path": "reports/thesis_exploration/natview/provenance/pilot_raw_bold_header_range.gz",
+    "bytes": 65536,
+    "sha256": "356062886c633dc3ecea682067f7a0884c3e5deae488617e4bafe0c543f72a78",
+    "headers": {
+      "x-amz-id-2": "Fr/2ADXp6lriBW8UW1DBC9X8EMe8Wh/yyPYmkok02hHe83XxkB3ViNjIVS1rVo1ivpW4eu5uqRI=",
+      "x-amz-request-id": "NF35R7WYAGCP765F",
+      "Server": "AmazonS3",
+      "Date": "Tue, 20 Oct 2026 15:29:45 GMT",
+      "Last-Modified": "Tue, 14 Feb 2023 16:15:51 GMT",
+      "ETag": "\"77ae2f72f2f8e35f50bd75b5c8eac8de-8\"",
+      "x-amz-server-side-encryption": "AES256",
+      "x-amz-version-id": "IFsmhCfu0rMIBlWe2YePOpxtZ_puBneM",
+      "Accept-Ranges": "bytes",
+      "Content-Range": "bytes 0-65535/58808918",
+      "Content-Type": "binary/octet-stream",
+      "Content-Length": "65536",
+      "Connection": "close"
+    },
+    "dim": [
+      4,
+      64,
+      64,
+      38,
+      288,
+      0,
+      0,
+      0
+    ],
+    "pixdim": [
+      -1.0,
+      3.46875,
+      3.46875,
+      3.3299999237060547,
+      2.0999999046325684,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+]

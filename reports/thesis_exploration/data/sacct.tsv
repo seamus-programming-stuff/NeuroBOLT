@@ -1,0 +1,31 @@
+JobID|JobName|State|ExitCode|Elapsed|TotalCPU|AllocCPUS|ReqMem|MaxRSS|NodeList|Start|End|AllocTRES|SubmitLine
+61207131|thesis-audit|COMPLETED|0:0|00:01:47|00:16.630|4|12582912K||m3k024|2026-10-20T15:09:52|2026-10-20T15:11:39|billing=4,cpu=4,mem=12582912K,node=1|sbatch --job-name=thesis-audit scripts/thesis_m3.sbatch thesis_data.py audit --out reports/thesis_exploration/data
+61207131.batch|batch|COMPLETED|0:0|00:01:47|00:16.630|4||1990460K|m3k024|2026-10-20T15:09:52|2026-10-20T15:11:39|cpu=4,mem=12582912K,node=1|
+61207131.extern|extern|COMPLETED|0:0|00:01:47|00:00:00|4|||m3k024|2026-10-20T15:09:52|2026-10-20T15:11:39|billing=4,cpu=4,mem=12582912K,node=1|
+61207170|thesis-features|COMPLETED|0:0|00:03:52|03:47.124|4|12582912K||m3k024|2026-10-20T15:12:41|2026-10-20T15:16:33|billing=4,cpu=4,mem=12582912K,node=1|sbatch --dependency=afterok:61207131 --job-name=thesis-features scripts/thesis_m3.sbatch thesis_data.py build --out reports/thesis_exploration/data
+61207170.batch|batch|COMPLETED|0:0|00:03:52|03:47.124|4||12583404K|m3k024|2026-10-20T15:12:41|2026-10-20T15:16:33|cpu=4,mem=12582912K,node=1|
+61207170.extern|extern|COMPLETED|0:0|00:03:52|00:00:00|4|||m3k024|2026-10-20T15:12:41|2026-10-20T15:16:33|billing=4,cpu=4,mem=12582912K,node=1|
+61207266|thesis-freeze|COMPLETED|0:0|00:03:59|00:10.664|4|12582912K||m3e116|2026-10-20T15:16:50|2026-10-20T15:20:49|billing=4,cpu=4,mem=12582912K,node=1|sbatch --dependency=afterok:61207170 --job-name=thesis-freeze scripts/thesis_m3.sbatch thesis_prepare.py --out reports/thesis_exploration/data
+61207266.batch|batch|COMPLETED|0:0|00:03:59|00:10.417|4||886296K|m3e116|2026-10-20T15:16:50|2026-10-20T15:20:49|cpu=4,mem=12582912K,node=1|
+61207266.extern|extern|COMPLETED|0:0|00:03:59|00:00:00|4|||m3e116|2026-10-20T15:16:50|2026-10-20T15:20:49|billing=4,cpu=4,mem=12582912K,node=1|
+61207266.0|ps|COMPLETED|0:0|00:00:02|00:00.089|1||1348K|m3e116|2026-10-20T15:19:47|2026-10-20T15:19:49|cpu=1,mem=12582912K,node=1|srun --jobid=61207266 --overlap -n 1 -c 1 ps -u stay0060 -o pid,ppid,etime,pcpu,stat,wchan:25,args
+61207266.1|bash|COMPLETED|0:0|00:00:00|00:00.158|1||5120K|m3e116|2026-10-20T15:20:45|2026-10-20T15:20:45|cpu=1,mem=12582912K,node=1|srun --jobid=61207266 --overlap -n 1 -c 1 bash -c ls -l /proc/2732181/fd; cat /proc/2732181/io; tail -8 /proc/2732181/maps
+61207267|thesis-ridge|COMPLETED|0:0|00:02:17|02:44.235|4|12582912K||m3e116|2026-10-20T15:21:00|2026-10-20T15:23:17|billing=4,cpu=4,mem=12582912K,node=1|sbatch --dependency=afterok:61207266 --job-name=thesis-ridge scripts/thesis_m3.sbatch thesis_study.py --model ridge --out reports/thesis_exploration/data
+61207267.batch|batch|COMPLETED|0:0|00:02:17|02:44.235|4||415444K|m3e116|2026-10-20T15:21:00|2026-10-20T15:23:17|cpu=4,mem=12582912K,node=1|
+61207267.extern|extern|COMPLETED|0:0|00:02:17|00:00:00|4|||m3e116|2026-10-20T15:21:00|2026-10-20T15:23:17|billing=4,cpu=4,mem=12582912K,node=1|
+61207268|thesis-profile|COMPLETED|0:0|00:03:33|00:05.890|4|12582912K||m3g103|2026-10-20T15:21:14|2026-10-20T15:24:47|billing=4,cpu=4,gres/gpu=1,mem=12582912K,node=1|sbatch --dependency=afterok:61207266 --partition=gpu --gres=gpu:1 --time=00:10:00 --job-name=thesis-profile scripts/thesis_m3.sbatch thesis_study.py --model mlp --profile --out reports/thesis_exploration/data
+61207268.batch|batch|COMPLETED|0:0|00:03:33|00:05.827|4||918364K|m3g103|2026-10-20T15:21:14|2026-10-20T15:24:47|cpu=4,gres/gpu=1,mem=12582912K,node=1|
+61207268.extern|extern|COMPLETED|0:0|00:03:33|00:00:00|4|||m3g103|2026-10-20T15:21:14|2026-10-20T15:24:47|billing=4,cpu=4,gres/gpu=1,mem=12582912K,node=1|
+61207268.0|ps|COMPLETED|0:0|00:00:00|00:00.062|1||1348K|m3g103|2026-10-20T15:24:43|2026-10-20T15:24:43|cpu=1,gres/gpu=1,mem=12582912K,node=1|srun --jobid=61207268 --overlap -n 1 -c 1 ps -u stay0060 -o pid,ppid,etime,pcpu,stat,wchan:25,args
+61207409|thesis-mlp|COMPLETED|0:0|00:01:48|01:45.046|4|12582912K||m3g103|2026-10-20T15:26:47|2026-10-20T15:28:35|billing=4,cpu=4,gres/gpu=1,mem=12582912K,node=1|sbatch --dependency=afterok:61207268 --partition=gpu --gres=gpu:1 --nodelist=m3g103 --time=00:45:00 --job-name=thesis-mlp scripts/thesis_m3.sbatch thesis_study.py --model mlp --out reports/thesis_exploration/data
+61207409.batch|batch|COMPLETED|0:0|00:01:48|01:45.046|4||583536K|m3g103|2026-10-20T15:26:47|2026-10-20T15:28:35|cpu=4,gres/gpu=1,mem=12582912K,node=1|
+61207409.extern|extern|COMPLETED|0:0|00:01:48|00:00:00|4|||m3g103|2026-10-20T15:26:47|2026-10-20T15:28:35|billing=4,cpu=4,gres/gpu=1,mem=12582912K,node=1|
+61207416|thesis-summary|COMPLETED|0:0|00:01:22|00:10.321|4|12582912K||m3k020|2026-10-20T15:31:15|2026-10-20T15:32:37|billing=4,cpu=4,mem=12582912K,node=1|sbatch --dependency=afterok:61207409:61207267 --nodelist=m3e116 --job-name=thesis-summary scripts/thesis_m3.sbatch thesis_summarize.py --out reports/thesis_exploration/data
+61207416.batch|batch|COMPLETED|0:0|00:01:22|00:10.321|4||265604K|m3k020|2026-10-20T15:31:15|2026-10-20T15:32:37|cpu=4,mem=12582912K,node=1|
+61207416.extern|extern|COMPLETED|0:0|00:01:22|00:00:00|4|||m3k020|2026-10-20T15:31:15|2026-10-20T15:32:37|billing=4,cpu=4,mem=12582912K,node=1|
+61207432|thesis-verify|COMPLETED|0:0|00:01:58|00:11.794|4|12582912K||m3k020|2026-10-20T15:32:42|2026-10-20T15:34:40|billing=4,cpu=4,mem=12582912K,node=1|sbatch --dependency=afterok:61207416 --nodelist=m3e116 --job-name=thesis-verify scripts/thesis_m3.sbatch thesis_verify.py --out reports/thesis_exploration/data
+61207432.batch|batch|COMPLETED|0:0|00:01:58|00:11.794|4||799600K|m3k020|2026-10-20T15:32:42|2026-10-20T15:34:40|cpu=4,mem=12582912K,node=1|
+61207432.extern|extern|COMPLETED|0:0|00:01:58|00:00:00|4|||m3k020|2026-10-20T15:32:42|2026-10-20T15:34:40|billing=4,cpu=4,mem=12582912K,node=1|
+61207479|thesis-package|COMPLETED|0:0|00:00:03|00:01.921|4|12582912K||m3k020|2026-10-20T15:34:53|2026-10-20T15:34:56|billing=4,cpu=4,mem=12582912K,node=1|sbatch --dependency=afterok:61207432 --nodelist=m3e116 --job-name=thesis-package scripts/thesis_m3.sbatch thesis_package.py --out reports/thesis_exploration/data
+61207479.batch|batch|COMPLETED|0:0|00:00:03|00:01.921|4||58256K|m3k020|2026-10-20T15:34:53|2026-10-20T15:34:56|cpu=4,mem=12582912K,node=1|
+61207479.extern|extern|COMPLETED|0:0|00:00:04|00:00:00|4|||m3k020|2026-10-20T15:34:53|2026-10-20T15:34:57|billing=4,cpu=4,mem=12582912K,node=1|

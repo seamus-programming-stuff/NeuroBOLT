@@ -1,0 +1,20 @@
+{
+  "status": "awaiting_completed_results",
+  "results_reviewed": false,
+  "evidence_reviewed": false,
+  "completed_jobs": [],
+  "experiment_note": "research_notes/Clinical EEG fMRI thesis exploration/M3 experiments.md",
+  "reviewed_report": "reports/Clinical EEG fMRI thesis exploration.md",
+  "source_files": [],
+  "scores_csv": "reports/thesis_exploration/data/poster_scores.csv",
+  "learning_csv": null,
+  "panel_selection_id": "EC_regional64_predeclared_20261021",
+  "primary_view": {"condition": "REPLACE_WITH_ACTUAL_CONDITION", "target": "REPLACE_WITH_ACTUAL_TARGET", "metric": "temporal_r"},
+  "metric_label": "Mean temporal r",
+  "protocol_caption": "Replace with actual protocol, target aggregation and interval method.",
+  "result_scope": "Replace with exact development cohort, person/site split and inference unit.",
+  "result_caption": "Replace with concise cohort, target and n; max two short lines.",
+  "result_takeaway": "Replace with reviewed finding, at most 30 words. No causal/clinical overclaim.",
+  "methods_text": "Replace configured study text with actual completed conditions and final QC N; approximately 55 words. Retain retrospective processing, one seed and normalized target caveats in limits.",
+  "learning_caption": "Replace with actual fixed holdout protocol and interval method."
+}

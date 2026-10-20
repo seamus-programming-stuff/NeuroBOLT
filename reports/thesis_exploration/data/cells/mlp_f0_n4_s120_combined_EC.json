@@ -1,0 +1,142 @@
+{
+  "dataset": "ds006040",
+  "scope": "development",
+  "fold": 0,
+  "input": "combined",
+  "model": "mlp",
+  "training_people": 4,
+  "duration_seconds": 120,
+  "train_state": "EC",
+  "protocol_sha256": "59505927a5f9073c0c1fda106baa161576b18e1c58db74838dc28f036050032e",
+  "selection": {
+    "chosen": {
+      "width": 32,
+      "weight_decay": 0.01,
+      "epochs_run": 13,
+      "best_epoch": 3,
+      "validation_standardized_mse": 1.3640750646591187,
+      "fit_seconds": 0.029580411966890097,
+      "parameters": 16769
+    },
+    "candidates": [
+      {
+        "width": 32,
+        "weight_decay": 0.01,
+        "epochs_run": 13,
+        "best_epoch": 3,
+        "validation_standardized_mse": 1.3640750646591187,
+        "fit_seconds": 0.029580411966890097,
+        "parameters": 16769
+      },
+      {
+        "width": 128,
+        "weight_decay": 0.01,
+        "epochs_run": 12,
+        "best_epoch": 2,
+        "validation_standardized_mse": 1.3821593523025513,
+        "fit_seconds": 0.027330895885825157,
+        "parameters": 66497
+      }
+    ],
+    "validation_standardized_mse": 1.3640750646591187
+  },
+  "validation_selection_only": true,
+  "training_rows": [
+    {
+      "run": "sub-002_EC",
+      "subject": "sub-002",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.00000762939453,
+      "input_acquisition_span_seconds": 142.00000762939453,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-012_EC",
+      "subject": "sub-012",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 10,
+      "last_frame": 69,
+      "gaps": 0
+    },
+    {
+      "run": "sub-004_EC",
+      "subject": "sub-004",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.00000762939453,
+      "input_acquisition_span_seconds": 142.00000762939453,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    },
+    {
+      "run": "sub-017_EC",
+      "subject": "sub-017",
+      "n_frames": 60,
+      "retained_target_seconds": 120,
+      "target_acquisition_span_seconds": 120.0,
+      "input_acquisition_span_seconds": 142.0,
+      "first_frame": 11,
+      "last_frame": 70,
+      "gaps": 0
+    }
+  ],
+  "validation_rows": [
+    {
+      "run": "sub-019_EC",
+      "subject": "sub-019",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-024_EC",
+      "subject": "sub-024",
+      "n_frames": 179,
+      "retained_target_seconds": 358,
+      "target_acquisition_span_seconds": 358.0,
+      "input_acquisition_span_seconds": 380.0,
+      "first_frame": 11,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-018_EC",
+      "subject": "sub-018",
+      "n_frames": 180,
+      "retained_target_seconds": 360,
+      "target_acquisition_span_seconds": 360.0,
+      "input_acquisition_span_seconds": 382.0,
+      "first_frame": 10,
+      "last_frame": 189,
+      "gaps": 0
+    },
+    {
+      "run": "sub-025_EC",
+      "subject": "sub-025",
+      "n_frames": 180,
+      "retained_target_seconds": 360,
+      "target_acquisition_span_seconds": 360.0,
+      "input_acquisition_span_seconds": 382.0,
+      "first_frame": 10,
+      "last_frame": 189,
+      "gaps": 0
+    }
+  ],
+  "peak_ram_MB": 638.87890625,
+  "device": "cuda",
+  "gpu": "NVIDIA L40S",
+  "gpu_peak_allocated_MB": 69.17529296875,
+  "source_sha256": "b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447",
+  "elapsed_seconds": 1.843610686250031
+}

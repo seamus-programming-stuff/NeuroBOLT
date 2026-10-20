@@ -1,0 +1,12 @@
+Tue Oct 20 04:00:56 PM UTC 2026
+job=61207906 host=m3k027 script=natview_failure_audit.py args=
+73bf4f314c1ee91df731b48e1013cb68182f2c6af88e6cbae623bfa0b2f570f6  scripts/natview_failure_audit.py
+DIAGNOSTIC sub-04 pnts 159560 mask_true 165356 raw/ue/eye/bio 288 288 285 288
+DIAGNOSTIC sub-05 pnts 136563 mask_true 150854 raw/ue/eye/bio 288 288 285 288
+DIAGNOSTIC sub-06 pnts 148874 mask_true 154340 raw/ue/eye/bio 288 288 285 288
+DIAGNOSTIC sub-08 pnts 141102 mask_true 144958 raw/ue/eye/bio 288 288 285 288
+DIAGNOSTIC sub-10 pnts 133262 mask_true 133262 raw/ue/eye/bio 288 288 285 288
+DIAGNOSTIC sub-11 pnts 144777 mask_true 153108 raw/ue/eye/bio 288 288 285 288
+DIAGNOSTIC sub-12 pnts 144379 mask_true 144379 raw/ue/eye/bio 288 288 285 288
+DIAGNOSTIC sub-13 pnts 149337 mask_true 153378 raw/ue/eye/bio 288 288 285 288
+Tue Oct 20 04:01:09 PM UTC 2026

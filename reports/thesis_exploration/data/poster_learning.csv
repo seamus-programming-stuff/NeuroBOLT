@@ -1,0 +1,5 @@
+model,condition,target,metric,mean,ci_low,ci_high,n_people,train_people,target_seconds_per_person,predictive_R2,validation_calibrated_R2,dataset,scope,estimator,input
+Ridge EEG,EC train / EC test,regional64,temporal_r,0.08885133285966659,0.059814942850521635,0.11849892954923955,27,4,120,-0.0005456791521801363,0.0009961426206448515,ds006040,previously inspected development dataset,ridge,eeg
+Ridge EEG,EC train / EC test,regional64,temporal_r,0.14447263938255675,0.1065598037391785,0.18234054576681955,27,4,240,0.006782072757672386,0.009633168556601497,ds006040,previously inspected development dataset,ridge,eeg
+Ridge EEG,EC train / EC test,regional64,temporal_r,0.1418647678544875,0.11124787584368866,0.17197382275369316,27,12,120,0.00710494455797289,0.00404010061082609,ds006040,previously inspected development dataset,ridge,eeg
+Ridge EEG,EC train / EC test,regional64,temporal_r,0.1886090400733248,0.14879050122875415,0.2264574780393783,27,12,240,0.027882815500815877,0.02555332788814275,ds006040,previously inspected development dataset,ridge,eeg
