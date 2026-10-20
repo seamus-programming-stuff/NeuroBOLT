@@ -2,8 +2,10 @@
   "status": "reviewed exploratory poster",
   "reference": "Examples.zip/Files/example2.pdf",
   "reference_sha256": "6cbcaa767705fab9f998e7bfbe85e27b66d7da3c3dcd356359c5c3fd43cd6e83",
-  "reference_file_status": "not loaded; recorded verified SHA256 and measured geometry",
+  "reference_file_status": "local bytes verified; measured canvas and asymmetric grid adapted in visual revision",
   "reference_content_embedded": false,
+  "design_revision": "v2 - results-first visual hierarchy",
+  "reference_use": "A0 canvas, palette, asymmetric columns and divider; revised internal layout",
   "page_points": [
     2383.937,
     3370.394
@@ -13,43 +15,31 @@
       56.69287,
       56.693,
       2270.55113,
-      264.323
+      450.0
     ],
     "problem": [
-      97.69085,
-      349.564,
-      562.3009,
-      412.1302
+      96.42254,
+      565.0,
+      563.5692,
+      300.0
     ],
     "architecture": [
       96.42254,
-      823.416,
+      900.0,
       563.5692,
-      811.9902
+      710.0
     ],
-    "aim": [
+    "results": [
       727.6812,
-      349.141989,
+      565.0,
       1556.084,
-      554.643111
+      795.0
     ],
-    "hypothesis": [
+    "takeaway": [
       727.6812,
-      923.499997,
+      1390.0,
       1556.084,
-      284.931503
-    ],
-    "clinical_path": [
-      725.0,
-      1242.0,
-      457.0,
-      335.0
-    ],
-    "models": [
-      1270.667,
-      1244.524,
-      1015.599,
-      388.3821
+      220.0
     ],
     "divider": [
       56.69287,
@@ -57,49 +47,55 @@
       2270.55113,
       102.619
     ],
-    "methods": [
-      96.42254,
-      1820.803,
-      920.1018,
-      461.395
-    ],
-    "results": [
-      1078.925,
-      1820.803,
-      1204.341,
-      420.5544
-    ],
-    "work_packages": [
-      1078.925,
-      2285.198,
-      1204.341,
-      420.5544
-    ],
-    "clinical_gate": [
-      1078.925,
-      2753.2483,
-      1204.341,
-      484.6679
-    ],
     "learning": [
       96.42254,
-      2440.0,
+      1820.803,
       920.1018,
-      737.0
+      475.0
+    ],
+    "methods": [
+      96.42254,
+      2325.0,
+      920.1018,
+      307.0
     ],
     "natview_inset": [
       96.42254,
-      2905.0,
+      2662.0,
       920.1018,
-      272.0
+      478.0
+    ],
+    "work_packages": [
+      1078.925,
+      1820.803,
+      1204.341,
+      570.0
+    ],
+    "models": [
+      1078.925,
+      2420.0,
+      1204.341,
+      285.0
+    ],
+    "clinical_gate": [
+      1078.925,
+      2735.0,
+      1204.341,
+      405.0
+    ],
+    "references": [
+      96.42254,
+      3180.0,
+      2187.0,
+      95.0
     ],
     "author": [
-      1191.9685,
-      3275.274
+      96.42254,
+      3291.0
     ]
   },
-  "word_count": 662,
-  "content_sha256": "20f8ea4d76786e0b244b46a8847f0475eafa58bf6a2c1f104cb659abdf7327d6",
+  "word_count": 612,
+  "content_sha256": "46a556da307254030d58de0ec4bb7abdd9b41bfac7b846b22f3436592e6406f5",
   "source_files": [
     {
       "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\data\\summary.json",
@@ -216,498 +212,298 @@
   ],
   "text_boxes": [
     {
-      "x": 102,
-      "y": 84,
-      "w": 2179.937,
-      "h": 100,
-      "font": "Display",
-      "size": 84,
-      "role": "title",
-      "text": "Clinical EEG-to-fMRI feasibility"
+      "x": 104,
+      "y": 95,
+      "w": 1590,
+      "h": 34.8,
+      "font": "Body-Bold",
+      "size": 29,
+      "role": "kicker",
+      "text": "EEG TO BOLD / COMPUTER SCIENCE PHD EXPLORATION"
     },
     {
-      "x": 102,
-      "y": 202,
-      "w": 2179.937,
-      "h": 100,
+      "x": 100,
+      "y": 153,
+      "w": 1620,
+      "h": 112,
       "font": "Display",
-      "size": 84,
+      "size": 102,
       "role": "title",
-      "text": "PhD thesis exploration"
+      "text": "Can EEG recover"
     },
     {
-      "x": 727,
-      "y": 320,
-      "w": 1556,
-      "h": 27,
+      "x": 100,
+      "y": 269,
+      "w": 1620,
+      "h": 112,
+      "font": "Display",
+      "size": 102,
+      "role": "title",
+      "text": "clinically useful fMRI?"
+    },
+    {
+      "x": 105,
+      "y": 407,
+      "w": 1570,
+      "h": 82,
+      "font": "Body",
+      "size": 34,
+      "role": "summary",
+      "text": "More data helped, but cross-site prediction remains weak. A useful PhD should target one clinical decision and measure when a model must abstain."
+    },
+    {
+      "x": 1770,
+      "y": 105,
+      "w": 475,
+      "h": 27.599999999999998,
+      "font": "Body-Bold",
+      "size": 23,
+      "role": "body",
+      "text": "EEG HISTORY"
+    },
+    {
+      "x": 1770,
+      "y": 442,
+      "w": 475,
+      "h": 26.4,
+      "font": "Body-Bold",
+      "size": 22,
+      "role": "body",
+      "text": "REGIONAL BOLD ESTIMATES"
+    },
+    {
+      "x": 1770,
+      "y": 473,
+      "w": 475,
+      "h": 24.0,
+      "font": "Body",
+      "size": 20,
+      "role": "caption",
+      "text": "Schematic; not recorded signals"
+    },
+    {
+      "x": 97,
+      "y": 526,
+      "w": 2187,
+      "h": 27.599999999999998,
       "font": "Body",
       "size": 23,
       "role": "status",
-      "text": "Exploratory research | reviewed M3 experiments | 21 October 2026"
+      "text": "EXPLORATORY RESEARCH  |  MONASH M3 EXPERIMENTS  |  21 OCTOBER 2026"
     },
     {
-      "x": 120.69085,
-      "y": 366.564,
-      "w": 516.3009,
-      "h": 115.19999999999999,
+      "x": 123.42254,
+      "y": 590.0,
+      "w": 509.5692,
+      "h": 30,
+      "font": "Body-Bold",
+      "size": 25,
+      "role": "kicker",
+      "text": "THE CLINICAL QUESTION"
+    },
+    {
+      "x": 123.42254,
+      "y": 636.0,
+      "w": 509.5692,
+      "h": 93.47999999999999,
       "font": "Display",
-      "size": 48,
+      "size": 41,
       "role": "heading",
-      "text": "The clinical question"
+      "text": "One task.<br/>A measurable benefit."
     },
     {
-      "x": 120.69085,
-      "y": 489.564,
-      "w": 516.3009,
-      "h": 259.2,
+      "x": 123.42254,
+      "y": 747.0,
+      "w": 509.5692,
+      "h": 108,
       "font": "Body",
-      "size": 36,
+      "size": 30,
       "role": "body",
-      "text": "Which EEG-to-BOLD estimates could support one clinical action? Test regional fidelity and failure modes before considering patient-specific fMRI replacement."
+      "text": "EEG: scalp electrical activity.<br/>BOLD: blood oxygenation in fMRI.<br/>One useful clinical decision?"
     },
     {
-      "x": 119.42254,
-      "y": 840.416,
-      "w": 517.5692,
-      "h": 57.599999999999994,
+      "x": 123.42254,
+      "y": 923.0,
+      "w": 509.5692,
+      "h": 30,
+      "font": "Body-Bold",
+      "size": 25,
+      "role": "kicker",
+      "text": "PUBLISHED MODEL REFERENCE"
+    },
+    {
+      "x": 123.42254,
+      "y": 962.0,
+      "w": 509.5692,
+      "h": 49.019999999999996,
       "font": "Display",
-      "size": 48,
+      "size": 43,
       "role": "heading",
-      "text": "Model architecture"
+      "text": "Inside UnEBOLT"
     },
     {
-      "x": 119.42254,
-      "y": 925.416,
-      "w": 517.5692,
-      "h": 34.8,
+      "x": 123.42254,
+      "y": 1022.0,
+      "w": 509.5692,
+      "h": 60,
       "font": "Body",
-      "size": 29,
+      "size": 25,
       "role": "caption",
-      "text": "UnEBOLT schematic [1]"
+      "text": "Simplified architecture [1]; not reproduced here."
     },
     {
-      "x": 133.42254,
-      "y": 988.416,
-      "w": 489.5692,
-      "h": 65.53999999999999,
+      "x": 139.42254,
+      "y": 1114.0,
+      "w": 477.5692,
+      "h": 62,
       "font": "Body",
-      "size": 29,
+      "size": 27,
       "role": "diagram",
-      "text": "EEG history<br/>preceding each BOLD frame"
+      "text": "<b>EEG history</b><br/>Before each BOLD frame"
     },
     {
-      "x": 133.42254,
-      "y": 1122.4160000000002,
-      "w": 489.5692,
-      "h": 98.30999999999999,
+      "x": 139.42254,
+      "y": 1226.0,
+      "w": 477.5692,
+      "h": 62,
       "font": "Body",
-      "size": 29,
+      "size": 27,
       "role": "diagram",
-      "text": "<b>Shared EEG encoder</b><br/>Temporal + spectral<br/>Gated fusion"
+      "text": "<b>Shared EEG encoder</b><br/>Temporal + spectral; gated fusion"
     },
     {
-      "x": 133.42254,
-      "y": 1287.4160000000002,
-      "w": 489.5692,
-      "h": 98.30999999999999,
+      "x": 139.42254,
+      "y": 1338.0,
+      "w": 477.5692,
+      "h": 62,
       "font": "Body",
-      "size": 29,
+      "size": 27,
       "role": "diagram",
-      "text": "ROI embeddings +<br/>representation adapter<br/>ROI-specific heads"
+      "text": "<b>Regional adapters</b><br/>ROI embeddings and output heads"
     },
     {
-      "x": 133.42254,
-      "y": 1447.4160000000002,
-      "w": 489.5692,
-      "h": 65.53999999999999,
+      "x": 139.42254,
+      "y": 1450.0,
+      "w": 477.5692,
+      "h": 62,
       "font": "Body",
-      "size": 29,
+      "size": 27,
       "role": "diagram",
-      "text": "Regional BOLD estimates<br/>over successive frames"
+      "text": "<b>BOLD trajectories</b><br/>One predicted series per region"
     },
     {
-      "x": 119.42254,
-      "y": 1550.4160000000002,
-      "w": 517.5692,
+      "x": 124.42254,
+      "y": 1547.0,
+      "w": 507.5692,
       "h": 58,
       "font": "Body",
       "size": 25,
       "role": "caption",
-      "text": "Published reference; not tested here.<br/>Patient BOLD/utility unvalidated."
+      "text": "Patient BOLD fidelity and clinical utility remain unvalidated."
     },
     {
-      "x": 750.6812,
-      "y": 366.141989,
-      "w": 1510.084,
-      "h": 57.599999999999994,
-      "font": "Display",
-      "size": 48,
-      "role": "heading",
-      "text": "A computer science thesis to explore"
-    },
-    {
-      "x": 750.6812,
-      "y": 447.141989,
-      "w": 1510.084,
-      "h": 440,
-      "font": "Body",
-      "size": 36,
-      "role": "body",
-      "text": "<b>Thesis aim:</b> identify which BOLD information is recoverable, then build models that generalise and know when to abstain. This explores a possible computer science PhD.<br/><br/><b>Candidate contributions:</b> multimodal system identification; robust person/site transfer; calibrated, selective regional prediction. Establish novelty against UnEBOLT, MARBLE and UniEFS, rather than promising clinical replacement.<br/><br/><b>First application:</b> a wakefulness advisory prompting technologist review. Compare direct arousal prediction: BOLD synthesis must earn its complexity. One regional feedback target is a conditional second route. Diagnostic mapping needs a separate validation programme."
-    },
-    {
-      "x": 750.6812,
-      "y": 940.499997,
-      "w": 1510.084,
-      "h": 57.599999999999994,
-      "font": "Display",
-      "size": 48,
-      "role": "heading",
-      "text": "Working hypothesis"
-    },
-    {
-      "x": 750.6812,
-      "y": 1015.499997,
-      "w": 1510.084,
-      "h": 172,
-      "font": "Body",
-      "size": 36,
-      "role": "body",
-      "text": "Predictive value may depend more on measured information and target definition than on model size. Cross people, duration, sensors and capacity on fixed holdouts. A nonlinear gain would favour richer models; an added-sensor gain would favour acquisition. Null results and small learning curves cannot establish a biological ceiling."
-    },
-    {
-      "x": 734.0,
-      "y": 1252.0,
-      "w": 439.0,
-      "h": 32.769999999999996,
-      "font": "Body",
-      "size": 29,
-      "role": "diagram",
-      "text": "Offline prediction"
-    },
-    {
-      "x": 734.0,
-      "y": 1368.0,
-      "w": 439.0,
-      "h": 32.769999999999996,
-      "font": "Body",
-      "size": 29,
-      "role": "diagram",
-      "text": "Frozen external test"
-    },
-    {
-      "x": 734.0,
-      "y": 1484.0,
-      "w": 439.0,
-      "h": 32.769999999999996,
-      "font": "Body",
-      "size": 29,
-      "role": "diagram",
-      "text": "Silent prospective study"
-    },
-    {
-      "x": 725.0,
-      "y": 1563.0,
-      "w": 457.0,
-      "h": 30.0,
-      "font": "Body",
-      "size": 25,
-      "role": "caption",
-      "text": "Proposed validation pathway"
-    },
-    {
-      "x": 1293.667,
-      "y": 1261.524,
-      "w": 969.599,
-      "h": 57.599999999999994,
-      "font": "Display",
-      "size": 48,
-      "role": "heading",
-      "text": "Models and possible uses"
-    },
-    {
-      "x": 1293.667,
-      "y": 1327.524,
-      "w": 969.599,
-      "h": 30.0,
-      "font": "Body",
-      "size": 25,
-      "role": "caption",
-      "text": "Healthy technical BOLD evidence; uses proposed"
-    },
-    {
-      "x": 1293.667,
-      "y": 1366.524,
-      "w": 969.599,
-      "h": 60,
-      "font": "Body",
-      "size": 27,
-      "role": "body",
-      "text": "<b>UnEBOLT [1] | 64 regions, r .418.</b><br/>Proposed: one regional feedback target."
-    },
-    {
-      "x": 1293.667,
-      "y": 1432.524,
-      "w": 969.599,
-      "h": 90,
-      "font": "Body",
-      "size": 27,
-      "role": "body",
-      "text": "<b>UniEFS [2] | 512 regions, r .367.</b><br/>EEG-only Parkinson classification probe;<br/>patient BOLD unvalidated."
-    },
-    {
-      "x": 1293.667,
-      "y": 1526.524,
-      "w": 969.599,
-      "h": 60,
-      "font": "Body",
-      "size": 27,
-      "role": "body",
-      "text": "<b>MARBLE [3] | 64 regions, r .434; 2.6M parameters.</b><br/>Proposed: compact regional prediction."
-    },
-    {
-      "x": 1293.667,
-      "y": 1599.524,
-      "w": 969.599,
-      "h": 27.599999999999998,
-      "font": "Body",
-      "size": 23,
-      "role": "caption",
-      "text": "Reported temporal r; different protocols, not a ranking."
-    },
-    {
-      "x": 80,
-      "y": 1684,
-      "w": 2223.937,
-      "h": 67.2,
-      "font": "Display",
-      "size": 56,
-      "role": "heading",
-      "text": "M3 evidence and proposed PhD next steps"
-    },
-    {
-      "x": 119.42254,
-      "y": 1837.803,
-      "w": 874.1018,
-      "h": 57.599999999999994,
-      "font": "Display",
-      "size": 48,
-      "role": "heading",
-      "text": "M3 study design"
-    },
-    {
-      "x": 119.42254,
-      "y": 1920.803,
-      "w": 874.1018,
-      "h": 294,
-      "font": "Body",
-      "size": 35,
-      "role": "body",
-      "text": "<b>ds006040 development:</b> 27 people/54 runs; three outer folds, 96 fitted outer cells. Inner tuning separate. Matched inputs: 300 EEG-power features, ECG timing/availability or both; ridge/small MLP. Cross 4/12 training people x 120/240 retained target-seconds. One seed; four equal-weight MLP target groups. Published models were not reproduced."
-    },
-    {
-      "x": 1078.925,
-      "y": 1835.803,
-      "w": 1204.341,
-      "h": 57.599999999999994,
-      "font": "Display",
-      "size": 48,
-      "role": "heading",
-      "text": "New M3 empirical evidence"
-    },
-    {
-      "x": 1078.925,
-      "y": 1896.803,
-      "w": 1204.341,
-      "h": 28.799999999999997,
-      "font": "Body",
-      "size": 24,
-      "role": "caption",
-      "text": "EC-trained/test-EC | 12 training people x 240 target-s | regional64"
-    },
-    {
-      "x": 1521.925,
-      "y": 2159.803,
-      "w": 45.07861328125,
-      "h": 30.0,
-      "font": "Body",
-      "size": 25,
-      "role": "figure_label",
-      "text": "-0.1"
-    },
-    {
-      "x": 1684.2602499999998,
-      "y": 2159.803,
-      "w": 36.75341796875,
-      "h": 30.0,
-      "font": "Body",
-      "size": 25,
-      "role": "figure_label",
-      "text": "0.0"
-    },
-    {
-      "x": 1846.5955,
-      "y": 2159.803,
-      "w": 36.75341796875,
-      "h": 30.0,
-      "font": "Body",
-      "size": 25,
-      "role": "figure_label",
-      "text": "0.1"
-    },
-    {
-      "x": 2008.93075,
-      "y": 2159.803,
-      "w": 36.75341796875,
-      "h": 30.0,
-      "font": "Body",
-      "size": 25,
-      "role": "figure_label",
-      "text": "0.2"
-    },
-    {
-      "x": 2171.2659999999996,
-      "y": 2159.803,
-      "w": 36.75341796875,
-      "h": 30.0,
-      "font": "Body",
-      "size": 25,
-      "role": "figure_label",
-      "text": "0.3"
-    },
-    {
-      "x": 1078.925,
-      "y": 1943.803,
-      "w": 450,
-      "h": 36.0,
-      "font": "Body",
-      "size": 30,
-      "role": "body",
-      "text": "Ridge EEG"
-    },
-    {
-      "x": 2199.2659999999996,
-      "y": 1943.803,
-      "w": 84,
-      "h": 33.6,
-      "font": "Body",
-      "size": 28,
-      "role": "body",
-      "text": "0.189"
-    },
-    {
-      "x": 1078.925,
-      "y": 2001.1363333333334,
-      "w": 450,
-      "h": 36.0,
-      "font": "Body",
-      "size": 30,
-      "role": "body",
-      "text": "Ridge ECG timing"
-    },
-    {
-      "x": 2199.2659999999996,
-      "y": 2001.1363333333334,
-      "w": 84,
-      "h": 33.6,
-      "font": "Body",
-      "size": 28,
-      "role": "body",
-      "text": "0.018"
-    },
-    {
-      "x": 1078.925,
-      "y": 2058.469666666667,
-      "w": 450,
-      "h": 36.0,
-      "font": "Body",
-      "size": 30,
-      "role": "body",
-      "text": "Ridge EEG+ECG"
-    },
-    {
-      "x": 2199.2659999999996,
-      "y": 2058.469666666667,
-      "w": 84,
-      "h": 33.6,
-      "font": "Body",
-      "size": 28,
-      "role": "body",
-      "text": "0.178"
-    },
-    {
-      "x": 1078.925,
-      "y": 2115.803,
-      "w": 450,
-      "h": 36.0,
-      "font": "Body",
-      "size": 30,
-      "role": "body",
-      "text": "MLP EEG"
-    },
-    {
-      "x": 2199.2659999999996,
-      "y": 2115.803,
-      "w": 84,
-      "h": 33.6,
-      "font": "Body",
-      "size": 28,
-      "role": "body",
-      "text": "0.122"
-    },
-    {
-      "x": 1543.925,
-      "y": 2198.803,
-      "w": 649.3409999999999,
-      "h": 31.2,
-      "font": "Body",
-      "size": 26,
-      "role": "caption",
-      "text": "Mean regional temporal r (95% CI over people)"
-    },
-    {
-      "x": 1078.925,
-      "y": 2245.803,
-      "w": 1204.341,
-      "h": 29,
-      "font": "Body",
-      "size": 25,
-      "role": "caption",
-      "text": "27 people; person-bootstrap 95% CIs. EEG ridge predictive R-squared .028 in normalized targets."
-    },
-    {
-      "x": 96.423,
-      "y": 2322,
-      "w": 920.102,
-      "h": 74,
-      "font": "Body",
-      "size": 31,
-      "role": "body",
-      "text": "Ridge EEG regional gain over its predicted-global template is uncertain: paired delta-r .004, 95% CI -.008 to .017."
-    },
-    {
-      "x": 96.42254,
-      "y": 2440.0,
-      "w": 920.1018,
-      "h": 55.199999999999996,
+      "x": 759.6812,
+      "y": 588.0,
+      "w": 1492.084,
+      "h": 30,
       "font": "Body-Bold",
-      "size": 46,
-      "role": "heading",
-      "text": "People and retained target time"
+      "size": 25,
+      "role": "kicker",
+      "text": "01 / EVIDENCE FROM M3"
     },
     {
-      "x": 96.42254,
-      "y": 2505.0,
-      "w": 920.1018,
+      "x": 759.6812,
+      "y": 634.0,
+      "w": 1492.084,
+      "h": 60.419999999999995,
+      "font": "Display",
+      "size": 53,
+      "role": "heading",
+      "text": "A linear baseline stays ahead"
+    },
+    {
+      "x": 759.6812,
+      "y": 706.0,
+      "w": 1492.084,
+      "h": 33.6,
+      "font": "Body",
+      "size": 28,
+      "role": "caption",
+      "text": "ds006040 development | EC-trained / EC-tested | 64 regional targets"
+    },
+    {
+      "x": 759.6812,
+      "y": 774.0,
+      "w": 215,
+      "h": 84,
+      "font": "Display",
+      "size": 79,
+      "role": "body",
+      "text": "27"
+    },
+    {
+      "x": 964.6812,
+      "y": 789.0,
+      "w": 258,
+      "h": 33,
+      "font": "Body",
+      "size": 28,
+      "role": "body",
+      "text": "held-out people"
+    },
+    {
+      "x": 1257.6812,
+      "y": 774.0,
+      "w": 215,
+      "h": 84,
+      "font": "Display",
+      "size": 79,
+      "role": "body",
+      "text": "96"
+    },
+    {
+      "x": 1462.6812,
+      "y": 789.0,
+      "w": 258,
+      "h": 66,
+      "font": "Body",
+      "size": 28,
+      "role": "body",
+      "text": "fitted experiment cells"
+    },
+    {
+      "x": 1755.6812,
+      "y": 774.0,
+      "w": 215,
+      "h": 84,
+      "font": "Display",
+      "size": 79,
+      "role": "body",
+      "text": "300"
+    },
+    {
+      "x": 1960.6812,
+      "y": 789.0,
+      "w": 258,
+      "h": 66,
+      "font": "Body",
+      "size": 28,
+      "role": "body",
+      "text": "matched EEG-power features"
+    },
+    {
+      "x": 1236.6812,
+      "y": 1215.0,
+      "w": 58.982421875,
       "h": 30.0,
       "font": "Body",
       "size": 25,
-      "role": "caption",
-      "text": "ds006040 | EC-trained/test-EC | n=27 | regional64 temporal r"
+      "role": "figure_label",
+      "text": "-0.05"
     },
     {
-      "x": 96.42254,
-      "y": 2742.0,
+      "x": 1373.5285333333334,
+      "y": 1215.0,
       "w": 50.6572265625,
       "h": 30.0,
       "font": "Body",
@@ -716,8 +512,8 @@
       "text": "0.00"
     },
     {
-      "x": 96.42254,
-      "y": 2702.8,
+      "x": 1510.3758666666668,
+      "y": 1215.0,
       "w": 50.6572265625,
       "h": 30.0,
       "font": "Body",
@@ -726,8 +522,8 @@
       "text": "0.05"
     },
     {
-      "x": 96.42254,
-      "y": 2663.6,
+      "x": 1647.2232000000001,
+      "y": 1215.0,
       "w": 50.6572265625,
       "h": 30.0,
       "font": "Body",
@@ -736,8 +532,8 @@
       "text": "0.10"
     },
     {
-      "x": 96.42254,
-      "y": 2624.4,
+      "x": 1784.0705333333335,
+      "y": 1215.0,
       "w": 50.6572265625,
       "h": 30.0,
       "font": "Body",
@@ -746,8 +542,8 @@
       "text": "0.15"
     },
     {
-      "x": 96.42254,
-      "y": 2585.2,
+      "x": 1920.9178666666667,
+      "y": 1215.0,
       "w": 50.6572265625,
       "h": 30.0,
       "font": "Body",
@@ -756,8 +552,8 @@
       "text": "0.20"
     },
     {
-      "x": 96.42254,
-      "y": 2546.0,
+      "x": 2057.7652,
+      "y": 1215.0,
       "w": 50.6572265625,
       "h": 30.0,
       "font": "Body",
@@ -766,28 +562,258 @@
       "text": "0.25"
     },
     {
-      "x": 183.42254,
-      "y": 2765.0,
-      "w": 17.01611328125,
-      "h": 32.4,
-      "font": "Body",
-      "size": 27,
-      "role": "figure_label",
-      "text": "4"
+      "x": 761.6812,
+      "y": 938.0,
+      "w": 470,
+      "h": 40.8,
+      "font": "Body-Bold",
+      "size": 34,
+      "role": "body",
+      "text": "Ridge EEG"
     },
     {
-      "x": 978.52434,
-      "y": 2765.0,
-      "w": 32.0322265625,
-      "h": 32.4,
-      "font": "Body",
-      "size": 27,
-      "role": "figure_label",
-      "text": "12"
+      "x": 2122.7652,
+      "y": 935.0,
+      "w": 126,
+      "h": 46.8,
+      "font": "Body-Bold",
+      "size": 39,
+      "role": "body",
+      "text": "0.189"
     },
     {
-      "x": 176.42254,
-      "y": 2833.0,
+      "x": 761.6812,
+      "y": 1008.0,
+      "w": 470,
+      "h": 40.8,
+      "font": "Body",
+      "size": 34,
+      "role": "body",
+      "text": "Ridge ECG timing"
+    },
+    {
+      "x": 2122.7652,
+      "y": 1005.0,
+      "w": 126,
+      "h": 46.8,
+      "font": "Body-Bold",
+      "size": 39,
+      "role": "body",
+      "text": "0.018"
+    },
+    {
+      "x": 761.6812,
+      "y": 1078.0,
+      "w": 470,
+      "h": 40.8,
+      "font": "Body",
+      "size": 34,
+      "role": "body",
+      "text": "Ridge EEG+ECG"
+    },
+    {
+      "x": 2122.7652,
+      "y": 1075.0,
+      "w": 126,
+      "h": 46.8,
+      "font": "Body-Bold",
+      "size": 39,
+      "role": "body",
+      "text": "0.178"
+    },
+    {
+      "x": 761.6812,
+      "y": 1148.0,
+      "w": 470,
+      "h": 40.8,
+      "font": "Body",
+      "size": 34,
+      "role": "body",
+      "text": "MLP EEG"
+    },
+    {
+      "x": 2122.7652,
+      "y": 1145.0,
+      "w": 126,
+      "h": 46.8,
+      "font": "Body-Bold",
+      "size": 39,
+      "role": "body",
+      "text": "0.122"
+    },
+    {
+      "x": 1262.6812,
+      "y": 1260.0,
+      "w": 821.0840000000001,
+      "h": 31.2,
+      "font": "Body",
+      "size": 26,
+      "role": "caption",
+      "text": "Mean regional temporal r | 95% CI across people"
+    },
+    {
+      "x": 759.6812,
+      "y": 1303.0,
+      "w": 1492.084,
+      "h": 31,
+      "font": "Body",
+      "size": 26,
+      "role": "caption",
+      "text": "12 training people x 240 retained target-seconds/person. EEG ridge predictive R\u00b2 = .028."
+    },
+    {
+      "x": 757.6812,
+      "y": 1414.0,
+      "w": 1496.084,
+      "h": 49.019999999999996,
+      "font": "Display",
+      "size": 43,
+      "role": "heading",
+      "text": "More data helped; extra complexity did not."
+    },
+    {
+      "x": 757.6812,
+      "y": 1484.0,
+      "w": 1496.084,
+      "h": 114,
+      "font": "Body",
+      "size": 31,
+      "role": "body",
+      "text": "The small MLP and sparse ECG pipeline did not improve the EEG baseline. Regional gain beyond a predicted-global template remains uncertain: paired delta-r .004 (95% CI -.008 to .017). These tests do not establish a biological ceiling."
+    },
+    {
+      "x": 89,
+      "y": 1688,
+      "w": 2205.937,
+      "h": 58,
+      "font": "Display",
+      "size": 47,
+      "role": "heading",
+      "text": "THE PHD OPPORTUNITY / reliable prediction across people and sites"
+    },
+    {
+      "x": 123.42254,
+      "y": 1841.803,
+      "w": 866.1018,
+      "h": 30,
+      "font": "Body-Bold",
+      "size": 25,
+      "role": "kicker",
+      "text": "02 / EFFECT OF TRAINING DATA"
+    },
+    {
+      "x": 123.42254,
+      "y": 1880.803,
+      "w": 866.1018,
+      "h": 44.459999999999994,
+      "font": "Display",
+      "size": 39,
+      "role": "heading",
+      "text": "People and recording time help"
+    },
+    {
+      "x": 123.42254,
+      "y": 1932.803,
+      "w": 866.1018,
+      "h": 31.2,
+      "font": "Body",
+      "size": 26,
+      "role": "caption",
+      "text": "Ridge EEG | same held-out EC evaluation | n=27"
+    },
+    {
+      "x": 121.42254,
+      "y": 2167.803,
+      "w": 50.6572265625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "0.00"
+    },
+    {
+      "x": 121.42254,
+      "y": 2130.803,
+      "w": 50.6572265625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "0.05"
+    },
+    {
+      "x": 121.42254,
+      "y": 2093.803,
+      "w": 50.6572265625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "0.10"
+    },
+    {
+      "x": 121.42254,
+      "y": 2056.803,
+      "w": 50.6572265625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "0.15"
+    },
+    {
+      "x": 121.42254,
+      "y": 2019.803,
+      "w": 50.6572265625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "0.20"
+    },
+    {
+      "x": 121.42254,
+      "y": 1982.803,
+      "w": 50.6572265625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "0.25"
+    },
+    {
+      "x": 171.42254,
+      "y": 2190.803,
+      "w": 97.9228515625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "4 people"
+    },
+    {
+      "x": 846.52434,
+      "y": 2190.803,
+      "w": 111.82666015625,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "figure_label",
+      "text": "12 people"
+    },
+    {
+      "x": 203.42254,
+      "y": 1968.803,
+      "w": 750.1018,
+      "h": 27.599999999999998,
+      "font": "Body",
+      "size": 23,
+      "role": "caption",
+      "text": "Regional r; 95% person-bootstrap CIs."
+    },
+    {
+      "x": 180.42254,
+      "y": 2241.803,
       "w": 218.796875,
       "h": 30.0,
       "font": "Body",
@@ -796,8 +822,8 @@
       "text": "120 target-s/person"
     },
     {
-      "x": 624.42254,
-      "y": 2833.0,
+      "x": 623.42254,
+      "y": 2241.803,
       "w": 218.796875,
       "h": 30.0,
       "font": "Body",
@@ -806,174 +832,334 @@
       "text": "240 target-s/person"
     },
     {
-      "x": 196.42254,
-      "y": 2803.0,
-      "w": 795.1018,
-      "h": 33.6,
-      "font": "Body",
-      "size": 28,
-      "role": "caption",
-      "text": "Training people (fixed evaluation)"
-    },
-    {
-      "x": 96.42254,
-      "y": 2866.0,
-      "w": 920.1018,
-      "h": 28,
-      "font": "Body",
-      "size": 24,
-      "role": "caption",
-      "text": "Person-bootstrap 95% CIs; fixed subsets and EC evaluation."
-    },
-    {
-      "x": 116.42254,
-      "y": 2917.0,
-      "w": 880.1018,
-      "h": 40.8,
+      "x": 123.42254,
+      "y": 2347.0,
+      "w": 866.1018,
+      "h": 30,
       "font": "Body-Bold",
-      "size": 34,
-      "role": "heading",
-      "text": "NATVIEW: transfer and QC"
+      "size": 25,
+      "role": "kicker",
+      "text": "WHAT WAS ACTUALLY TESTED"
     },
     {
-      "x": 116.42254,
-      "y": 2968.0,
-      "w": 880.1018,
-      "h": 58,
+      "x": 123.42254,
+      "y": 2395.0,
+      "w": 866.1018,
+      "h": 216,
+      "font": "Body",
+      "size": 30,
+      "role": "body",
+      "text": "<b>ds006040:</b> 27 people/54 runs; three subject-grouped outer folds, separate inner tuning. Ridge/small MLP; EEG, sparse ECG timing/availability, or both. Cross 4/12 training people and 120/240 retained target-seconds/person. Fixed subsets; one neural seed; four equal-weight MLP target groups. Published models were not reproduced."
+    },
+    {
+      "x": 123.42254,
+      "y": 2685.0,
+      "w": 866.1018,
+      "h": 30,
+      "font": "Body-Bold",
+      "size": 25,
+      "role": "kicker",
+      "text": "EXTERNAL DATA / SECONDARY EXPLORATION"
+    },
+    {
+      "x": 123.42254,
+      "y": 2727.0,
+      "w": 866.1018,
+      "h": 43.31999999999999,
+      "font": "Display",
+      "size": 38,
+      "role": "heading",
+      "text": "NATVIEW: transfer remains weak"
+    },
+    {
+      "x": 123.42254,
+      "y": 2780.0,
+      "w": 866.1018,
+      "h": 62,
+      "font": "Body",
+      "size": 26,
+      "role": "caption",
+      "text": "Strict timing QC: 1/8. Amended QC: 6/8; n=6.<br/>Metadata-only amendment; ingestion pilot excluded."
+    },
+    {
+      "x": 123.42254,
+      "y": 2865.0,
+      "w": 370,
+      "h": 91,
+      "font": "Display",
+      "size": 86,
+      "role": "body",
+      "text": "0.104"
+    },
+    {
+      "x": 130.42254,
+      "y": 2960.0,
+      "w": 340,
+      "h": 32.4,
+      "font": "Body",
+      "size": 27,
+      "role": "body",
+      "text": "regional r"
+    },
+    {
+      "x": 579.42254,
+      "y": 2865.0,
+      "w": 390,
+      "h": 91,
+      "font": "Display",
+      "size": 76,
+      "role": "body",
+      "text": "-0.071"
+    },
+    {
+      "x": 585.42254,
+      "y": 2960.0,
+      "w": 360,
+      "h": 32.4,
+      "font": "Body",
+      "size": 27,
+      "role": "body",
+      "text": "predictive R\u00b2"
+    },
+    {
+      "x": 123.42254,
+      "y": 2999.0,
+      "w": 866.1018,
+      "h": 31.2,
+      "font": "Body",
+      "size": 26,
+      "role": "caption",
+      "text": "r: 95% CI [-0.0002, 0.207]; includes zero."
+    },
+    {
+      "x": 123.42254,
+      "y": 3062.0,
+      "w": 866.1018,
+      "h": 30.0,
       "font": "Body",
       "size": 25,
       "role": "caption",
-      "text": "Strict timing 1/8; amended QC 6/8.<br/>Secondary exploratory; n=6; pilot excluded."
+      "text": "740/2304 frames scored (32.1% of all eight)."
     },
     {
-      "x": 116.42254,
-      "y": 3032.0,
-      "w": 400,
-      "h": 58,
-      "font": "Body",
-      "size": 25,
-      "role": "body",
-      "text": "Regional r 0.104<br/>95% CI [-0.0002, 0.207]"
-    },
-    {
-      "x": 511.42254,
-      "y": 3068.0,
-      "w": 54.423828125,
-      "h": 27.599999999999998,
-      "font": "Body",
-      "size": 23,
-      "role": "figure_label",
-      "text": "-0.05"
-    },
-    {
-      "x": 721.47344,
-      "y": 3068.0,
-      "w": 46.7646484375,
-      "h": 27.599999999999998,
-      "font": "Body",
-      "size": 23,
-      "role": "figure_label",
-      "text": "0.10"
-    },
-    {
-      "x": 931.52434,
-      "y": 3068.0,
-      "w": 46.7646484375,
-      "h": 27.599999999999998,
-      "font": "Body",
-      "size": 23,
-      "role": "figure_label",
-      "text": "0.25"
-    },
-    {
-      "x": 116.42254,
-      "y": 3109.0,
-      "w": 880.1018,
-      "h": 58,
-      "font": "Body",
-      "size": 25,
-      "role": "caption",
-      "text": "R2 -0.071; 740/2304 frames (32.1%).<br/>Frozen VU model/thresholds; 23 target sites include interpolation."
-    },
-    {
-      "x": 1101.925,
-      "y": 2302.198,
-      "w": 1158.341,
-      "h": 57.599999999999994,
-      "font": "Display",
-      "size": 48,
-      "role": "heading",
-      "text": "Three proposed work packages"
-    },
-    {
-      "x": 1101.925,
-      "y": 2379.198,
-      "w": 1158.341,
-      "h": 78,
-      "font": "Body",
-      "size": 33,
-      "role": "body",
-      "text": "<b>WP1 | Measurement design.</b> Rank montage, history and sensors; test held-out gains against cost-matched choices."
-    },
-    {
-      "x": 1101.925,
-      "y": 2470.198,
-      "w": 1158.341,
-      "h": 78,
-      "font": "Body",
-      "size": 33,
-      "role": "body",
-      "text": "<b>WP2 | Structured estimation.</b> Learn shared dynamics with counted calibration. Test regional gains beyond ridge and state/physiology controls."
-    },
-    {
-      "x": 1101.925,
-      "y": 2561.198,
-      "w": 1158.341,
-      "h": 78,
-      "font": "Body",
-      "size": 33,
-      "role": "body",
-      "text": "<b>WP3 | Selective prediction.</b> Report error at useful coverage under stated shift assumptions; compare quality rejection."
-    },
-    {
-      "x": 1101.925,
-      "y": 2770.2483,
-      "w": 1158.341,
-      "h": 57.599999999999994,
-      "font": "Display",
-      "size": 48,
-      "role": "heading",
-      "text": "Clinical uses and limits"
-    },
-    {
-      "x": 1101.925,
-      "y": 2849.2483,
-      "w": 1158.341,
-      "h": 287,
-      "font": "Body",
-      "size": 34,
-      "role": "body",
-      "text": "<b>Clinical precedent:</b> Prism's fMRI-informed EEG biofeedback is cleared for adjunctive PTSD treatment; diagnostic interpretation is excluded [4].<br/><b>Proposed:</b> wakefulness support or one regional feedback target. Disease classification does not verify patient BOLD recovery.<br/><b>M3 limits:</b> inherited preprocessing is retrospective; no absolute %BOLD calibration. Causal inputs do not establish end-to-end live use. Sparse ECG; one development site/seed; clinical benefit untested [5]."
-    },
-    {
-      "x": 1101.925,
-      "y": 3139.2483,
-      "w": 1158.341,
-      "h": 87,
+      "x": 123.42254,
+      "y": 3098.0,
+      "w": 866.1018,
+      "h": 28.799999999999997,
       "font": "Body",
       "size": 24,
+      "role": "caption",
+      "text": "Frozen VU model/QC; 23 target sites include interpolation."
+    },
+    {
+      "x": 1107.925,
+      "y": 1843.803,
+      "w": 1146.341,
+      "h": 30,
+      "font": "Body-Bold",
+      "size": 25,
+      "role": "kicker",
+      "text": "03 / THREE FALSIFIABLE THESIS QUESTIONS"
+    },
+    {
+      "x": 1107.925,
+      "y": 1887.803,
+      "w": 1146.341,
+      "h": 46.739999999999995,
+      "font": "Display",
+      "size": 41,
+      "role": "heading",
+      "text": "Recover. Transfer. Know when to stop."
+    },
+    {
+      "x": 1110.925,
+      "y": 1970.803,
+      "w": 53,
+      "h": 44.4,
+      "font": "Body-Bold",
+      "size": 37,
+      "role": "body",
+      "text": "1"
+    },
+    {
+      "x": 1189.925,
+      "y": 1970.803,
+      "w": 1059.341,
+      "h": 42.0,
+      "font": "Body-Bold",
+      "size": 35,
+      "role": "body",
+      "text": "Measure useful information"
+    },
+    {
+      "x": 1189.925,
+      "y": 2020.803,
+      "w": 1059.341,
+      "h": 72,
+      "font": "Body",
+      "size": 30,
+      "role": "body",
+      "text": "Which montage, EEG history and sensors add held-out value for their acquisition cost?"
+    },
+    {
+      "x": 1110.925,
+      "y": 2105.803,
+      "w": 53,
+      "h": 44.4,
+      "font": "Body-Bold",
+      "size": 37,
+      "role": "body",
+      "text": "2"
+    },
+    {
+      "x": 1189.925,
+      "y": 2105.803,
+      "w": 1059.341,
+      "h": 42.0,
+      "font": "Body-Bold",
+      "size": 35,
+      "role": "body",
+      "text": "Transfer structured dynamics"
+    },
+    {
+      "x": 1189.925,
+      "y": 2155.803,
+      "w": 1059.341,
+      "h": 72,
+      "font": "Body",
+      "size": 30,
+      "role": "body",
+      "text": "Can shared dynamics and counted calibration improve regional signal beyond ridge and state controls?"
+    },
+    {
+      "x": 1110.925,
+      "y": 2240.803,
+      "w": 53,
+      "h": 44.4,
+      "font": "Body-Bold",
+      "size": 37,
+      "role": "body",
+      "text": "3"
+    },
+    {
+      "x": 1189.925,
+      "y": 2240.803,
+      "w": 1059.341,
+      "h": 42.0,
+      "font": "Body-Bold",
+      "size": 35,
+      "role": "body",
+      "text": "Predict selectively"
+    },
+    {
+      "x": 1189.925,
+      "y": 2290.803,
+      "w": 1059.341,
+      "h": 72,
+      "font": "Body",
+      "size": 30,
+      "role": "body",
+      "text": "What error is achievable at useful coverage under specified shift? Compare abstention with quality rejection."
+    },
+    {
+      "x": 1107.925,
+      "y": 2443.0,
+      "w": 1146.341,
+      "h": 30,
+      "font": "Body-Bold",
+      "size": 25,
+      "role": "kicker",
+      "text": "CUTTING-EDGE MODELS / PROPOSED USES"
+    },
+    {
+      "x": 1107.925,
+      "y": 2491.0,
+      "w": 1146.341,
+      "h": 35,
+      "font": "Body",
+      "size": 29,
+      "role": "body",
+      "text": "<b>UnEBOLT [1]</b> | 64 ROIs, r .418 | regional feedback target"
+    },
+    {
+      "x": 1107.925,
+      "y": 2550.0,
+      "w": 1146.341,
+      "h": 35,
+      "font": "Body",
+      "size": 29,
+      "role": "body",
+      "text": "<b>UniEFS [2]</b> | 512 ROIs, r .367 | Parkinson classification probe"
+    },
+    {
+      "x": 1107.925,
+      "y": 2609.0,
+      "w": 1146.341,
+      "h": 35,
+      "font": "Body",
+      "size": 29,
+      "role": "body",
+      "text": "<b>MARBLE [3]</b> | 64 ROIs, r .434; 2.6M parameters | compact estimation"
+    },
+    {
+      "x": 1107.925,
+      "y": 2667.0,
+      "w": 1146.341,
+      "h": 27.599999999999998,
+      "font": "Body",
+      "size": 23,
+      "role": "caption",
+      "text": "Healthy temporal r, different protocols: not a ranking or patient validation."
+    },
+    {
+      "x": 1107.925,
+      "y": 2758.0,
+      "w": 1146.341,
+      "h": 30,
+      "font": "Body-Bold",
+      "size": 25,
+      "role": "kicker",
+      "text": "APPLICATIONS / VALIDATION GATES"
+    },
+    {
+      "x": 1107.925,
+      "y": 2805.0,
+      "w": 1146.341,
+      "h": 296,
+      "font": "Body",
+      "size": 30,
+      "role": "body",
+      "text": "<b>First route:</b> wakefulness advisory; compare direct EEG arousal prediction.<br/><b>Second route:</b> one regional feedback target; require paired patient validation and controlled benefit.<br/><b>Precedent:</b> Prism is cleared for adjunctive PTSD biofeedback; diagnostic interpretation excluded [4].<br/><b>Limits:</b> retrospective preprocessing; normalized targets, no absolute %BOLD calibration; sparse ECG, one development site/seed. Live use and clinical benefit untested [5]."
+    },
+    {
+      "x": 97,
+      "y": 3189,
+      "w": 2187,
+      "h": 84,
+      "font": "Body",
+      "size": 23,
       "role": "references",
       "text": "<link href=\"https://proceedings.mlr.press/v315/li26g.html\"><b>[1]</b> UnEBOLT, MIDL 2026.</link> <link href=\"https://proceedings.mlr.press/v306/li26gp.html\"><b>[2]</b> UniEFS, ICML 2026.</link><br/><link href=\"https://papers.miccai.org/miccai-2026/0612-Paper4437.html\"><b>[3]</b> MARBLE, MICCAI 2026.</link> <link href=\"https://www.accessdata.fda.gov/cdrh_docs/pdf22/K222101.pdf\"><b>[4]</b> FDA K222101, 2023.</link><br/><link href=\"https://www.bmj.com/content/377/bmj-2022-070904\"><b>[5]</b> DECIDE-AI, 2022.</link> Full sources: accompanying report."
     },
     {
-      "x": 96,
-      "y": 3265,
-      "w": 2191.937,
-      "h": 57.599999999999994,
+      "x": 97,
+      "y": 3291,
+      "w": 900,
+      "h": 48.0,
       "font": "Display",
-      "size": 48,
+      "size": 40,
       "role": "author",
-      "text": "Seamus Taylor | PhD thesis exploration"
+      "text": "Seamus Taylor"
+    },
+    {
+      "x": 970,
+      "y": 3299,
+      "w": 1313,
+      "h": 30.0,
+      "font": "Body",
+      "size": 25,
+      "role": "author",
+      "text": "PhD thesis exploration  /  Evidence and full methods in the accompanying report"
     }
   ],
   "input_manifest": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\poster\\integration.json",
@@ -1216,7 +1402,7 @@
     "protocol_sha256": "02f3138499a33c3f683a3c7b17899651bc968dd44ca2791edf7bc96bb71531d7",
     "model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9"
   },
-  "pdf_sha256": "932a9f27b41c80a60e195bfff3a4ae97cf720a25ad45a2b851a53c75688e6efe",
+  "pdf_sha256": "e00b82a3a232e402d5ea21ea65fdf6743747d88afa21a0b27cd84366d4af970d",
   "result_scope": "ds006040 previously inspected development data; 27 people, 54 EC/EO runs. EC training/test, 12 training people, 240 retained target-seconds/person; primary panel selected before outcomes.",
   "protocol_caption": "Three grouped outer folds; equal-person means over regional64; 2000 percentile person bootstraps. One subset order and neural seed; normalized retrospective targets."
 }

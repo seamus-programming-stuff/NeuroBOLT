@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the thesis-exploration poster using example2.pdf's measured geometry.
+"""Build the visually revised poster from the reviewed evidence exports.
 
 Run with the bundled ReportLab runtime. The artifact-operation marker is a
 workflow precondition, deliberately not repeated inside this reusable builder.
@@ -31,24 +31,21 @@ REFERENCE_ID = 'Examples.zip/Files/example2.pdf'
 REFERENCE_SHA256 = '6cbcaa767705fab9f998e7bfbe85e27b66d7da3c3dcd356359c5c3fd43cd6e83'
 W, H = 2383.937, 3370.394
 BLUE, ORANGE = "#00A2FF", "#FF9300"
-INK, MUTED, GRID = "#151515", "#4A5158", "#D9E0E6"
-GEOMETRY = {
-    "title": [56.69287, 56.693, 2270.55113, 264.323],
-    "problem": [97.69085, 349.564, 562.3009, 412.1302],
-    "architecture": [96.42254, 823.416, 563.5692, 811.9902],
-    "aim": [727.6812, 349.141989, 1556.084, 554.643111],
-    "hypothesis": [727.6812, 923.499997, 1556.084, 284.931503],
-    "clinical_path": [725.0, 1242.0, 457.0, 335.0],
-    "models": [1270.667, 1244.524, 1015.599, 388.3821],
-    "divider": [56.69287, 1665.627, 2270.55113, 102.619],
-    "methods": [96.42254, 1820.803, 920.1018, 461.395],
-    "results": [1078.925, 1820.803, 1204.341, 420.5544],
-    "work_packages": [1078.925, 2285.198, 1204.341, 420.5544],
-    "clinical_gate": [1078.925, 2753.2483, 1204.341, 484.6679],
-    "learning": [96.42254, 2440.0, 920.1018, 737.0],
-    "natview_inset": [96.42254, 2905.0, 920.1018, 272.0],
-    "author": [1191.9685, 3275.274],
-}
+INK, MUTED, GRID = "#102A43", "#4C6172", "#D9E5ED"
+GEOMETRY = {'title': [56.69287, 56.693, 2270.55113, 450.0],
+ 'problem': [96.42254, 565.0, 563.5692, 300.0],
+ 'architecture': [96.42254, 900.0, 563.5692, 710.0],
+ 'results': [727.6812, 565.0, 1556.084, 795.0],
+ 'takeaway': [727.6812, 1390.0, 1556.084, 220.0],
+ 'divider': [56.69287, 1665.627, 2270.55113, 102.619],
+ 'learning': [96.42254, 1820.803, 920.1018, 475.0],
+ 'methods': [96.42254, 2325.0, 920.1018, 307.0],
+ 'natview_inset': [96.42254, 2662.0, 920.1018, 478.0],
+ 'work_packages': [1078.925, 1820.803, 1204.341, 570.0],
+ 'models': [1078.925, 2420.0, 1204.341, 285.0],
+ 'clinical_gate': [1078.925, 2735.0, 1204.341, 405.0],
+ 'references': [96.42254, 3180.0, 2187.0, 95.0],
+ 'author': [96.42254, 3291.0]}
 
 
 def read_json(path):
@@ -70,9 +67,9 @@ def reference_provenance(path=None):
     if path.is_file():
         if sha(path)!=REFERENCE_SHA256:
             raise ValueError('Local reference differs from the measured example2 PDF')
-        status='local bytes verified; layout uses recorded geometry'
+        status='local bytes verified; measured canvas and asymmetric grid adapted in visual revision'
     else:
-        status='not loaded; recorded verified SHA256 and measured geometry'
+        status='not loaded; recorded verified SHA256; measured canvas and asymmetric grid adapted'
     return dict(reference=REFERENCE_ID,reference_sha256=REFERENCE_SHA256,
                 reference_file_status=status,reference_content_embedded=False)
 
@@ -352,262 +349,264 @@ def inputs(path, final):
 
 
 class Poster:
+    """Vector-only A0 poster with a results-first visual hierarchy."""
+
     def __init__(self, path, final):
         self.c = Canvas(str(path), pagesize=(W, H), pageCompression=1,
-                        initialFontName='Body', initialFontSize=36)
-        self.c.setTitle("Clinical EEG-to-fMRI feasibility: PhD thesis exploration")
-        self.c.setAuthor("Seamus Taylor")
-        self.c.setSubject("PhD exploration; " + ("reviewed exploratory results" if final else "INTERNAL DRAFT - results pending"))
-        self.c.setCreator("ReportLab; measured example2.pdf layout")
+                        initialFontName='Body', initialFontSize=34)
+        self.c.setTitle('Can EEG recover clinically useful fMRI?')
+        self.c.setAuthor('Seamus Taylor')
+        self.c.setSubject('Computer science PhD exploration; reviewed exploratory M3 evidence')
+        self.c.setCreator('ReportLab; visual revision of the measured example2 layout')
         self.boxes, self.words = [], []
 
-    def rect(self, x, y, w, h, color=None, stroke=None, lw=5):
+    def rect(self, x, y, w, h, color=None, stroke=None, lw=2, radius=0):
         self.c.setLineWidth(lw)
-        self.c.setFillColor(colors.HexColor(color or "#FFFFFF"))
-        self.c.setStrokeColor(colors.HexColor(stroke or "#FFFFFF"))
-        self.c.rect(x, H-y-h, w, h, fill=int(color is not None), stroke=int(stroke is not None))
+        self.c.setFillColor(colors.HexColor(color or '#FFFFFF'))
+        self.c.setStrokeColor(colors.HexColor(stroke or '#FFFFFF'))
+        args=(x,H-y-h,w,h)
+        if radius:
+            self.c.roundRect(*args,radius,fill=int(color is not None),stroke=int(stroke is not None))
+        else:
+            self.c.rect(*args,fill=int(color is not None),stroke=int(stroke is not None))
 
-    def line(self, x1, y1, x2, y2, color=MUTED, lw=3):
-        self.c.setStrokeColor(colors.HexColor(color))
-        self.c.setLineWidth(lw)
-        self.c.line(x1, H-y1, x2, H-y2)
+    def line(self, x1,y1,x2,y2,color=MUTED,lw=3):
+        self.c.setStrokeColor(colors.HexColor(color));self.c.setLineWidth(lw)
+        self.c.line(x1,H-y1,x2,H-y2)
 
-    def para(self, text, x, y, w, size=36, leading=None, color=INK,
-             font="Body", align=TA_LEFT, max_h=None, role="body"):
-        style = ParagraphStyle("p", fontName=font, fontSize=size, leading=leading or size*1.2,
-                               textColor=colors.HexColor(color), alignment=align)
-        p = Paragraph(text, style)
-        _, h = p.wrap(w, H)
-        if max_h is not None and h > max_h+.1:
-            raise ValueError(f"Text overflow {h:.1f}>{max_h:.1f}: {text[:100]}")
-        if x < 0 or y < 0 or x+w > W+.1 or y+h > H+.1:
-            raise ValueError(f"Text outside page: {text[:70]}")
-        p.drawOn(self.c, x, H-y-h)
+    def circle(self,x,y,r,color,stroke=None,lw=2):
+        self.c.setFillColor(colors.HexColor(color));self.c.setLineWidth(lw)
+        self.c.setStrokeColor(colors.HexColor(stroke or color))
+        self.c.circle(x,H-y,r,fill=1,stroke=int(stroke is not None))
+
+    def para(self,text,x,y,w,size=34,leading=None,color=INK,font='Body',
+             align=TA_LEFT,max_h=None,role='body'):
+        style=ParagraphStyle('p',fontName=font,fontSize=size,leading=leading or size*1.2,
+                             textColor=colors.HexColor(color),alignment=align)
+        p=Paragraph(text,style);_,h=p.wrap(w,H)
+        if max_h is not None and h>max_h+.1:
+            raise ValueError(f'Text overflow {h:.1f}>{max_h:.1f}: {text[:100]}')
+        if x<0 or y<0 or x+w>W+.1 or y+h>H+.1:
+            raise ValueError(f'Text outside page: {text[:70]}')
+        p.drawOn(self.c,x,H-y-h)
         self.boxes.append(dict(x=x,y=y,w=w,h=h,font=font,size=size,role=role,text=text))
-        self.words.append(re.sub("<[^>]+>", " ", text))
+        self.words.append(re.sub('<[^>]+>',' ',text))
         return h
 
-    def label(self, text, x, y, size=28, color=MUTED, bold=False):
-        width = pdfmetrics.stringWidth(text, "Body-Bold" if bold else "Body", size)
-        return self.para(escape(text), x, y, width+2, size=size, color=color,
-                         font="Body-Bold" if bold else "Body", role="figure_label")
+    def label(self,text,x,y,size=26,color=MUTED,bold=False):
+        font='Body-Bold' if bold else 'Body'
+        width=pdfmetrics.stringWidth(text,font,size)
+        return self.para(escape(text),x,y,width+2,size=size,color=color,font=font,role='figure_label')
 
-    def section(self, name, title, color=BLUE):
-        x,y,w,h=GEOMETRY[name]
-        self.rect(x,y,w,h,stroke=color,lw=5 if color==BLUE else 6)
-        self.para(title,x+23,y+17,w-46,size=48,font="Display",color=color,max_h=120,role="heading")
-        return x,y,w,h
-
-    def arrow(self, x1,y1,x2,y2,color=BLUE,lw=4):
+    def arrow(self,x1,y1,x2,y2,color=BLUE,lw=4):
         self.line(x1,y1,x2,y2,color,lw)
         angle=math.atan2(y2-y1,x2-x1)
         for a in (angle-.47,angle+.47):
-            self.line(x2,y2,x2-16*math.cos(a),y2-16*math.sin(a),color,lw)
+            self.line(x2,y2,x2-15*math.cos(a),y2-15*math.sin(a),color,lw)
 
-    def node(self,text,x,y,w,h,size=29,color=BLUE):
-        self.rect(x,y,w,h,color="#F1F8FD",stroke=color,lw=2.5)
-        self.para(text,x+9,y+10,w-18,size=size,leading=size*1.13,align=TA_CENTER,
-                  max_h=h-15,role="diagram")
+    def card(self,name,accent=BLUE,fill='#FFFFFF'):
+        x,y,w,h=GEOMETRY[name]
+        self.rect(x+5,y+6,w,h,color='#E4EDF4',radius=14)
+        self.rect(x,y,w,h,color=fill,stroke='#D8E4ED',lw=1.5,radius=14)
+        self.rect(x,y+19,7,h-38,color=accent)
+        return x,y,w,h
+
+    def heading(self,text,x,y,w,size=42,color=INK):
+        return self.para(text,x,y,w,size=size,leading=size*1.14,font='Display',
+                         color=color,max_h=size*2.3,role='heading')
+
+    def kicker(self,text,x,y,w,color=BLUE):
+        self.para(text,x,y,w,size=25,leading=30,color=color,font='Body-Bold',max_h=32,role='kicker')
+
+    def trace(self,x,y,w,h,color,kind='eeg',lw=4):
+        """Decorative schematic, deliberately never presented as measured data."""
+        pts=[]
+        for i in range(181):
+            u=i/180
+            if kind=='eeg':
+                z=.48*math.sin(19*math.pi*u)+.23*math.sin(49*math.pi*u)+.14*math.cos(77*math.pi*u)
+                z*=.65+.35*math.sin(3*math.pi*u)**2
+            else:
+                z=.65*math.sin(2.6*math.pi*u-.6)+.2*math.cos(5*math.pi*u)
+            pts.append((x+u*w,y+z*h/2))
+        path=self.c.beginPath();path.moveTo(pts[0][0],H-pts[0][1])
+        for xx,yy in pts[1:]:path.lineTo(xx,H-yy)
+        self.c.setStrokeColor(colors.HexColor(color));self.c.setLineWidth(lw);self.c.drawPath(path)
+
+    def hero_art(self):
+        # Abstract, original vector rendering: EEG and slower regional outputs.
+        x,y,w=1770,105,475
+        self.para('EEG HISTORY',x,y,w,size=23,color='#A9DFFF',font='Body-Bold',max_h=30)
+        for i in range(3):self.trace(x,y+65+i*34,w,30,('#54CBFF','#FFFFFF','#54CBFF')[i],lw=3)
+        self.arrow(x+w/2,y+160,x+w/2,y+202,color=ORANGE,lw=4)
+        self.rect(x,y+219,w,101,color='#1C3F5B',radius=14)
+        for i in range(3):self.trace(x+20,y+245+i*24,w-40,21,('#66D5FF','#FFB854','#FFFFFF')[i],kind='bold',lw=3.5)
+        self.para('REGIONAL BOLD ESTIMATES',x,y+337,w,size=22,color='#A9DFFF',
+                  font='Body-Bold',max_h=28)
+        self.para('Schematic; not recorded signals',x,y+368,w,size=20,color='#B9CFDF',max_h=27,role='caption')
 
     def architecture(self):
-        x,y,w,h=self.section("architecture","Model architecture")
-        # Simplified UnEBOLT paper, section 2.2; no new layer counts or details.
-        self.para("UnEBOLT schematic [1]",x+23,y+102,w-46,size=29,
-                  color=MUTED,max_h=40,role="caption")
-        nodes=[(155,91,"EEG history<br/>preceding each BOLD frame"),
-               (289,122,"<b>Shared EEG encoder</b><br/>Temporal + spectral<br/>Gated fusion"),
-               (454,117,"ROI embeddings +<br/>representation adapter<br/>ROI-specific heads"),
-               (614,89,"Regional BOLD estimates<br/>over successive frames")]
-        for i,(yy,hh,txt) in enumerate(nodes):
-            self.node(txt,x+28,y+yy,w-56,hh,size=29)
-            if i<len(nodes)-1:
-                self.arrow(x+w/2,y+yy+hh,x+w/2,y+nodes[i+1][0]-6)
-        self.para("Published reference; not tested here.<br/>Patient BOLD/utility unvalidated.",
-                  x+23,y+727,w-46,size=25,leading=29,max_h=76,color=MUTED,role="caption")
-
-    def clinical_path(self):
-        x,y,w,h=GEOMETRY["clinical_path"]
-        for i,txt in enumerate(("Offline prediction","Frozen external test","Silent prospective study")):
-            self.node(txt,x,y+i*116,w,82,size=29)
-            if i<2:self.arrow(x+w/2,y+i*116+82,x+w/2,y+i*116+112)
-        self.para("Proposed validation pathway",x,y+321,w,size=25,align=TA_CENTER,
-                  color=MUTED,role="caption")
-
-    def pending(self,x,y,w,h,title,body):
-        self.rect(x,y,w,h,color="#F5F7F9",stroke=GRID,lw=2)
-        self.para(title,x+23,y+28,w-46,size=39,font="Body-Bold",align=TA_CENTER,max_h=105,color=MUTED)
-        self.para(body,x+37,y+146,w-74,size=31,align=TA_CENTER,max_h=h-163,color=MUTED)
+        x,y,w,h=self.card('architecture')
+        self.kicker('PUBLISHED MODEL REFERENCE',x+27,y+23,w-54)
+        self.heading('Inside UnEBOLT',x+27,y+62,w-54,size=43)
+        self.para('Simplified architecture [1]; not reproduced here.',x+27,y+122,w-54,
+                  size=25,leading=30,max_h=61,color=MUTED,role='caption')
+        nodes=[('EEG history','Before each BOLD frame'),
+               ('Shared EEG encoder','Temporal + spectral; gated fusion'),
+               ('Regional adapters','ROI embeddings and output heads'),
+               ('BOLD trajectories','One predicted series per region')]
+        for i,(title,body) in enumerate(nodes):
+            yy=y+204+i*112
+            fill='#EAF6FF' if i<3 else '#FFF1DF'
+            self.rect(x+28,yy,w-56,88,color=fill,radius=10)
+            self.para(f'<b>{title}</b><br/>{body}',x+43,yy+10,w-86,size=27,leading=31,
+                      max_h=66,align=TA_CENTER,role='diagram')
+            if i<3:self.arrow(x+w/2,yy+89,x+w/2,yy+109,lw=3)
+        self.para('Patient BOLD fidelity and clinical utility remain unvalidated.',
+                  x+28,y+647,w-56,size=25,leading=29,max_h=60,color=MUTED,role='caption')
 
     def scores(self,rows,data):
-        x,y,w,h=GEOMETRY["results"]
-        self.para("New M3 empirical evidence",x,y+15,w,size=48,font="Display",max_h=65,role="heading")
-        if not rows:
-            self.pending(x,y+92,w,319,"RESULTS PENDING",
-                         "Completed participant-level estimates will appear here.<br/>"
-                         "No interim, simulated or earlier-project scores are plotted.")
-            return
-        self.para('EC-trained/test-EC | 12 training people x 240 target-s | regional64',
-                  x,y+76,w,size=24,color=MUTED,max_h=30,role='caption')
-        px=x+465; pw=w-555; py=y+115; ph=212
-        lo=math.floor(min(0,min(r['ci_low'] for r in rows))*10)/10
-        hi=max(lo+.1,math.ceil(max(r['ci_high'] for r in rows)*10)/10)
+        x,y,w,h=self.card('results')
+        self.kicker('01 / EVIDENCE FROM M3',x+32,y+23,w-64)
+        self.heading('A linear baseline stays ahead',x+32,y+69,w-64,size=53)
+        self.para('ds006040 development | EC-trained / EC-tested | 64 regional targets',
+                  x+32,y+141,w-64,size=28,color=MUTED,max_h=38,role='caption')
+        for i,(value,caption) in enumerate((('27','held-out people'),('96','fitted experiment cells'),('300','matched EEG-power features'))):
+            xx=x+32+i*498
+            self.para(value,xx,y+209,215,size=79,leading=84,font='Display',max_h=90)
+            self.para(caption,xx+205,y+224,258,size=28,leading=33,color=MUTED,max_h=70)
+        self.line(x+32,y+322,x+w-32,y+322,GRID,2)
+        px=x+535;pw=w-735;py=y+370;ph=258
+        lo,hi=-.05,.25
         sx=lambda z:px+pw*(z-lo)/(hi-lo)
-        for i in range(round((hi-lo)*10)+1):
-            v=lo+i*.1
-            self.line(sx(v),py,sx(v),py+ph,GRID,1.5)
-            self.label(f"{v:.1f}",sx(v)-22,py+ph+12,size=25)
+        for v in (-.05,0,.05,.10,.15,.20,.25):
+            self.line(sx(v),py-4,sx(v),py+ph+4,('#98AEBF' if v==0 else GRID),2 if v==0 else 1.4)
+            self.label(f'{v:.2f}',sx(v)-26,py+ph+22,size=25)
         for i,r in enumerate(rows):
-            yy=py+25+i*(ph-40)/max(1,len(rows)-1)
-            color=BLUE if i%2 else ORANGE
-            label=r.get('label') or r['model']
-            self.para(escape(label),x,yy-17,450,size=30,max_h=40)
-            self.line(sx(r['ci_low']),yy,sx(r['ci_high']),yy,color,5)
-            self.c.setFillColor(colors.HexColor(color))
-            self.c.circle(sx(r['mean']),H-yy,8,fill=1,stroke=0)
-            self.para(f"{r['mean']:.3f}",x+w-84,yy-17,84,size=28,max_h=37)
-        self.para(escape(data.get('metric_label',rows[0]['metric']))+" (95% CI over people)",
-                  px,py+ph+51,pw,size=26,align=TA_CENTER,max_h=35,color=MUTED,role="caption")
-        self.para(escape(data.get('result_caption','')),x,y+425,w,size=25,max_h=32,
-                  leading=29,color=MUTED,role="caption")
+            yy=py+27+i*70
+            if i==0:self.rect(x+22,yy-30,w-44,61,color='#EAF6FF',radius=7)
+            color=BLUE if i==0 else ('#7190A6' if i==1 else ORANGE if i==2 else '#344F67')
+            self.para(escape(r.get('label') or r['model']),x+34,yy-24,470,
+                      size=34,max_h=45,font='Body-Bold' if i==0 else 'Body')
+            self.line(sx(r['ci_low']),yy,sx(r['ci_high']),yy,color,7)
+            for v in ('ci_low','ci_high'):self.line(sx(r[v]),yy-7,sx(r[v]),yy+7,color,3)
+            self.circle(sx(r['mean']),yy,10,color,stroke='#FFFFFF',lw=2)
+            self.para(f"{r['mean']:.3f}",x+w-161,yy-27,126,size=39,
+                      color=color,font='Body-Bold',max_h=50)
+        self.para('Mean regional temporal r | 95% CI across people',px,py+ph+67,pw,
+                  size=26,align=TA_CENTER,color=MUTED,max_h=35,role='caption')
+        self.para('12 training people x 240 retained target-seconds/person. EEG ridge predictive R² = .028.',
+                  x+32,y+738,w-64,size=26,leading=31,color=MUTED,max_h=45,role='caption')
 
     def learning(self,curves,data):
-        x,y,w,h=GEOMETRY['learning']
-        self.para("People and retained target time",x,y,w,size=46,font="Body-Bold",max_h=60,role="heading")
-        if not curves:
-            self.pending(x,y+86,w,343,"LEARNING COMPARISON PENDING",
-                         "ds006040: Ridge EEG, 4/12 training people and 120/240 retained target-seconds/person. "
-                         "Same held-out EC evaluation; exploratory development evidence.")
-            self.natview(data.get('natview_panel'))
-            return
-        if len({(r['condition'],r['target'],r['metric']) for r in curves})!=1:
-            raise ValueError("Learning figure must have one condition, target and metric")
-        # Each line is one exact model/duration; no pooling of independent axes.
+        x,y,w,h=self.card('learning')
+        self.kicker('02 / EFFECT OF TRAINING DATA',x+27,y+21,w-54)
+        self.heading('People and recording time help',x+27,y+60,w-54,size=39)
+        self.para('Ridge EEG | same held-out EC evaluation | n=27',x+27,y+112,w-54,
+                  size=26,color=MUTED,max_h=35,role='caption')
+        px=x+107;py=y+177;pw=w-170;ph=185
+        sx=lambda n:px+pw*(n-4)/8
+        sy=lambda v:py+ph*(1-v/.25)
+        for v in (0,.05,.10,.15,.20,.25):
+            self.line(px,sy(v),px+pw,sy(v),GRID,1.4)
+            self.label(f'{v:.2f}',x+25,sy(v)-15,size=25)
         groups={}
-        for r in curves:
-            key=(r['model'],str(r['target_seconds_per_person']))
-            groups.setdefault(key,[]).append(r)
-        if len(groups)>2:raise ValueError("Predeclared learning figure has two duration series")
-        self.para(escape(data.get('learning_scope','ds006040 | EC-trained/test-EC | regional64 temporal r')),
-                  x,y+65,w,size=25,color=MUTED,max_h=34,role='caption')
-        px=x+100;py=y+120;pw=w-125;ph=196
-        xs=[int(r['train_people']) for r in curves]
-        lo=math.floor(min(0,min(r['ci_low'] for r in curves))*20)/20
-        hi=max(lo+.05,math.ceil(max(r['ci_high'] for r in curves)*20)/20)
-        sx=lambda n:px+pw*(n-min(xs))/max(1,max(xs)-min(xs))
-        sy=lambda z:py+ph*(1-(z-lo)/(hi-lo))
-        for i in range(round((hi-lo)*20)+1):
-            v=lo+i*.05
-            self.line(px,sy(v),px+pw,sy(v),GRID,1.5)
-            self.label(f"{v:.2f}",x,sy(v)-14,size=25)
-        for xx in sorted(set(xs)):
-            self.label(str(xx),sx(xx)-13,py+ph+9,size=27)
-        for i,(key,rr) in enumerate(groups.items()):
-            rr=sorted(rr,key=lambda r:int(r['train_people']))
-            color=(ORANGE,BLUE,"#555555","#7B5B9A")[i]
-            for a,b in zip(rr,rr[1:]):self.line(sx(int(a['train_people'])),sy(a['mean']),sx(int(b['train_people'])),sy(b['mean']),color,4)
+        for r in curves:groups.setdefault(int(r['target_seconds_per_person']),[]).append(r)
+        for duration,rr in sorted(groups.items()):
+            rr=sorted(rr,key=lambda r:r['train_people']);color=ORANGE if duration==120 else BLUE
+            a,b=rr;self.line(sx(a['train_people']),sy(a['mean']),sx(b['train_people']),sy(b['mean']),color,5)
             for r in rr:
-                xx=sx(int(r['train_people'])); yy=sy(r['mean'])
-                self.line(xx,sy(r['ci_low']),xx,sy(r['ci_high']),color,3)
-                self.c.setFillColor(colors.HexColor(color));self.c.circle(xx,H-yy,7,fill=1,stroke=0)
-            self.line(x+16+i*448,y+408,x+68+i*448,y+408,color,4)
-            self.label(f"{key[1]} target-s/person",x+80+i*448,y+393,size=25)
-        self.para("Training people (fixed evaluation)",px,py+ph+47,pw,size=28,align=TA_CENTER,max_h=37,role="caption")
-        self.para(escape(data.get('learning_caption','Person-bootstrap 95% intervals; fixed subsets and one seed.')),
-                  x,y+426,w,size=24,leading=28,max_h=33,color=MUTED,role="caption")
-        self.natview(data.get('natview_panel'))
+                xx=sx(r['train_people']);yy=sy(r['mean'])
+                self.line(xx,sy(r['ci_low']),xx,sy(r['ci_high']),color,2.7)
+                self.circle(xx,yy,7,color)
+        for n in (4,12):self.label(f'{n} people',sx(n)-(32 if n==4 else 107),py+ph+8,size=25)
+        self.para('Regional r; 95% person-bootstrap CIs.',x+107,y+148,w-170,size=23,color=MUTED,max_h=28,role='caption')
+        for i,(duration,color) in enumerate(((120,ORANGE),(240,BLUE))):
+            xx=x+27+i*443;self.line(xx,y+438,xx+45,y+438,color,5)
+            self.label(f'{duration} target-s/person',xx+57,y+421,size=25)
 
     def natview(self,panel):
-        """Separate protocol, N, axis and interval; never pooled with development."""
-        x,y,w,h=GEOMETRY['natview_inset']
-        self.rect(x,y,w,h,color='#F5FAFD',stroke=BLUE,lw=2.5)
-        self.para('NATVIEW: transfer and QC',x+20,y+12,w-40,size=34,
-                  font='Body-Bold',max_h=44,role='heading')
-        if not panel:
-            self.para('Strict v1 QC: 1/8; amended v2 QC: 6/8.',x+20,y+66,w-40,size=27,
-                      color=MUTED,max_h=38)
-            self.para('v2 is secondary exploratory after QC; pilot excluded. '
-                      'Two failures/8 (<60 frames). Accuracy review pending.',x+20,y+115,w-40,
-                      size=27,leading=32,max_h=97)
-            self.para('23 target sites include interpolation; VU ridge frozen. '
-                      'Final all-eight frame coverage pending.',
-                      x+20,y+218,w-40,size=25,leading=29,max_h=58,color=MUTED,role='caption')
-            return
-        if panel.get('outcome')=='qc_failure':
-            self.para(escape(panel['scope']),x+20,y+63,w-40,size=27,leading=31,max_h=63)
-            self.para(escape(panel['failure_caption']),x+20,y+137,w-40,size=27,leading=31,max_h=65)
-            self.para(escape(panel['qc_caption']),x+20,y+212,w-40,size=25,leading=29,
-                      max_h=58,color=MUTED,role='caption')
-            return
-        self.para(f"Strict timing {panel['v1_accepted_people']}/8; amended QC {panel['n_accepted_people']}/8."
-                  f"<br/>Secondary exploratory; n={panel['n_people']}; pilot excluded.",
-                  x+20,y+63,w-40,size=25,leading=29,max_h=58,
-                  color=MUTED,role='caption')
-        # The NATVIEW estimate owns its own numeric scale and participant count.
-        low,mean,high=[float(panel[k]) for k in ('ci_low','mean','ci_high')]
-        ax0,ax1=min(-.05,low-.04),max(.1,high+.04)
-        px=x+440;pw=w-500;yy=y+145
-        sx=lambda z:px+pw*(z-ax0)/(ax1-ax0)
-        self.para(f"Regional r {mean:.3f}<br/>95% CI [{low:.4f}, {high:.3f}]",
-                  x+20,yy-18,400,size=25,leading=29,max_h=60)
-        self.line(px,yy,px+pw,yy,GRID,2)
-        self.line(sx(low),yy,sx(high),yy,BLUE,5)
-        self.c.setFillColor(colors.HexColor(BLUE));self.c.circle(sx(mean),H-yy,7,fill=1,stroke=0)
-        for v in (ax0,(ax0+ax1)/2,ax1):
-            self.label(f'{v:.2f}',sx(v)-25,yy+18,size=23)
-        self.para(escape(panel['coverage_caption'])+'<br/>'+escape(panel['montage_caption']),x+20,y+204,w-40,size=25,
-                  leading=29,max_h=59,color=MUTED,role='caption')
+        x,y,w,h=self.card('natview_inset',accent=ORANGE,fill='#FFF8F0')
+        self.kicker('EXTERNAL DATA / SECONDARY EXPLORATION',x+27,y+23,w-54,color='#9B5700')
+        self.heading('NATVIEW: transfer remains weak',x+27,y+65,w-54,size=38)
+        self.para('Strict timing QC: 1/8. Amended QC: 6/8; n=6.<br/>Metadata-only amendment; ingestion pilot excluded.',
+                  x+27,y+118,w-54,size=26,leading=31,max_h=64,color=MUTED,role='caption')
+        self.para(f"{panel['mean']:.3f}",x+27,y+203,370,size=86,leading=91,font='Display',max_h=96)
+        self.para('regional r',x+34,y+298,340,size=27,max_h=36)
+        self.para(f"{panel['predictive_R2']:.3f}",x+483,y+203,390,size=76,leading=91,
+                  font='Display',color='#A05A14',max_h=96)
+        self.para('predictive R²',x+489,y+298,360,size=27,max_h=36)
+        self.para(f"r: 95% CI [{panel['ci_low']:.4f}, {panel['ci_high']:.3f}]; includes zero.",
+                  x+27,y+337,w-54,size=26,color=MUTED,max_h=35,role='caption')
+        frac=panel['scored_frames']/panel['total_frames']
+        self.rect(x+27,y+379,w-54,12,color='#E6D9CB',radius=6)
+        self.rect(x+27,y+379,(w-54)*frac,12,color=ORANGE,radius=6)
+        self.para(f"{panel['scored_frames']}/{panel['total_frames']} frames scored ({100*frac:.1f}% of all eight).",
+                  x+27,y+400,w-54,size=25,max_h=33,color=MUTED,role='caption')
+        self.para('Frozen VU model/QC; 23 target sites include interpolation.',x+27,y+436,w-54,
+                  size=24,max_h=31,color=MUTED,role='caption')
 
 
-def build(out, content, data, rows, curves, final):
+def build(out,content,data,rows,curves,final):
+    if not final or not rows or not data.get('natview_panel'):
+        raise ValueError('The visual revision requires the reviewed completed evidence')
     p=Poster(out,final)
-    p.rect(0,0,W,H,color="#FFFFFF")
-    p.rect(*GEOMETRY['title'],color=BLUE)
-    for text,yy in (("Clinical EEG-to-fMRI feasibility",84),("PhD thesis exploration",202)):
-        p.para(text,102,yy,W-204,size=84,leading=100,font="Display",color="#FFFFFF",
-               align=TA_CENTER,max_h=102,role="title")
-    p.para(("INTERNAL DRAFT - final report review pending" if data.get('natview_panel') else
-            "INTERNAL DRAFT - NATVIEW and final report review pending" if rows else
-            "INTERNAL DRAFT - M3 results and evidence review pending") if not final else
-           "Exploratory research | reviewed M3 experiments | 21 October 2026",
-           727,320,1556,size=23,leading=27,max_h=28,color=MUTED,align=TA_CENTER,role="status")
-    x,y,w,h=p.section('problem','The clinical question')
-    p.para(content['problem'],x+23,y+140,w-46,size=36,max_h=h-150)
-    p.architecture()
-    x,y,w,h=p.section('aim','A computer science thesis to explore')
-    p.para(content['aim'],x+23,y+98,w-46,size=36,leading=44,max_h=h-114)
-    x,y,w,h=p.section('hypothesis','Working hypothesis')
-    p.para(content['hypothesis'],x+23,y+92,w-46,size=36,leading=43,max_h=h-107)
-    p.clinical_path()
-    x,y,w,h=p.section('models','Models and possible uses')
-    p.para('Healthy technical BOLD evidence; uses proposed',x+23,y+83,w-46,
-           size=25,color=MUTED,max_h=33,role='caption')
-    for txt,yy,mh in zip(content['models'],(122,188,282),(66,96,66)):
-        p.para(txt,x+23,y+yy,w-46,size=27,leading=30,max_h=mh)
-    p.para('Reported temporal r; different protocols, not a ranking.',x+23,y+355,w-46,
-           size=23,color=MUTED,max_h=29,role='caption')
+    p.rect(0,0,W,H,color='#F5F8FB')
+    p.rect(*GEOMETRY['title'],color=INK,radius=13)
+    p.rect(56.693,56.693,13,450,color=BLUE)
+    p.para('EEG TO BOLD / COMPUTER SCIENCE PHD EXPLORATION',104,95,1590,
+           size=29,color='#74D5FF',font='Body-Bold',max_h=38,role='kicker')
+    for text,yy in (('Can EEG recover',153),('clinically useful fMRI?',269)):
+        p.para(text,100,yy,1620,size=102,leading=112,font='Display',color='#FFFFFF',max_h=115,role='title')
+    p.para(content['summary'],105,407,1570,size=34,leading=41,color='#E4F3FF',max_h=85,role='summary')
+    p.hero_art()
+    p.para('EXPLORATORY RESEARCH  |  MONASH M3 EXPERIMENTS  |  21 OCTOBER 2026',
+           97,526,2187,size=23,color=MUTED,max_h=30,role='status')
+    x,y,w,h=p.card('problem')
+    p.kicker('THE CLINICAL QUESTION',x+27,y+25,w-54)
+    p.heading('One task.<br/>A measurable benefit.',x+27,y+71,w-54,size=41)
+    p.para(content['problem'],x+27,y+182,w-54,size=30,leading=36,max_h=112)
+    p.architecture();p.scores(rows,data)
+    x,y,w,h=p.card('takeaway',accent=ORANGE,fill='#FFF2DF')
+    p.heading('More data helped; extra complexity did not.',x+30,y+24,w-60,size=43)
+    p.para(content['takeaway'],x+30,y+94,w-60,size=31,leading=38,max_h=116)
     p.rect(*GEOMETRY['divider'],color=ORANGE)
-    p.para('M3 evidence and proposed PhD next steps',80,1684,W-160,size=56,
-           font='Display',color='#FFFFFF',align=TA_CENTER,max_h=72,role='heading')
-    x,y,w,h=p.section('methods','M3 study design',ORANGE)
-    method=data.get('methods_text') or content['methods']
-    p.para(method,x+23,y+100,w-46,size=35,leading=42,max_h=h-115)
-    p.scores(rows,data)
-    # This narrow interstitial area exists in the source between box and figure.
-    p.para(escape(data.get('result_takeaway','The first test is whether added information or capacity improves held-out prediction.')),
-           96.423,2322,920.102,size=31,leading=37,max_h=104,color=MUTED)
+    p.para('THE PHD OPPORTUNITY / reliable prediction across people and sites',89,1688,W-178,
+           size=47,leading=58,font='Display',color=INK,align=TA_CENTER,max_h=65,role='heading')
     p.learning(curves,data)
-    x,y,w,h=p.section('work_packages','Three proposed work packages',ORANGE)
-    offset=94
-    for title,txt in content['work_packages']:
-        hh=p.para(f'<b>{title}</b> {txt}',x+23,y+offset,w-46,size=33,leading=39,max_h=100)
-        offset+=hh+13
-    x,y,w,h=p.section('clinical_gate','Clinical uses and limits',ORANGE)
-    p.para(content['clinical_gate'],x+23,y+96,w-46,size=34,leading=41,max_h=288)
-    p.para(content['references'],x+23,y+386,w-46,size=24,leading=29,max_h=90,color=MUTED,role='references')
-    p.para('Seamus Taylor | PhD thesis exploration',96,3265,W-192,size=48,
-           font='Display',color=BLUE,align=TA_CENTER,max_h=65,role='author')
+    x,y,w,h=p.card('methods')
+    p.kicker('WHAT WAS ACTUALLY TESTED',x+27,y+22,w-54)
+    p.para(content['methods'],x+27,y+70,w-54,size=30,leading=36,max_h=235)
+    p.natview(data['natview_panel'])
+    x,y,w,h=p.card('work_packages',accent=ORANGE)
+    p.kicker('03 / THREE FALSIFIABLE THESIS QUESTIONS',x+29,y+23,w-58,color='#A55D00')
+    p.heading('Recover. Transfer. Know when to stop.',x+29,y+67,w-58,size=41)
+    for i,(title,body) in enumerate(content['work_packages']):
+        yy=y+151+i*135
+        p.circle(x+58,yy+24,31,INK)
+        p.para(str(i+1),x+32,yy-1,53,size=37,font='Body-Bold',color='#FFFFFF',align=TA_CENTER,max_h=48)
+        p.para(title,x+111,yy-1,w-145,size=35,font='Body-Bold',max_h=46)
+        p.para(body,x+111,yy+49,w-145,size=30,leading=36,max_h=78)
+        if i<2:p.line(x+111,yy+124,x+w-30,yy+124,GRID,1.5)
+    x,y,w,h=p.card('models')
+    p.kicker('CUTTING-EDGE MODELS / PROPOSED USES',x+29,y+23,w-58)
+    yy=y+71
+    for text in content['models']:
+        p.para(text,x+29,yy,w-58,size=29,leading=35,max_h=72)
+        yy+=59
+    p.para('Healthy temporal r, different protocols: not a ranking or patient validation.',
+           x+29,y+247,w-58,size=23,max_h=30,color=MUTED,role='caption')
+    x,y,w,h=p.card('clinical_gate')
+    p.kicker('APPLICATIONS / VALIDATION GATES',x+29,y+23,w-58)
+    p.para(content['clinical_gate'],x+29,y+70,w-58,size=30,leading=37,max_h=310)
+    p.line(97,3170,2285,3170,GRID,2)
+    p.para(content['references'],97,3189,2187,size=23,leading=28,max_h=90,color=MUTED,role='references')
+    p.para('Seamus Taylor',97,3291,900,size=40,font='Display',color=BLUE,max_h=54,role='author')
+    p.para('PhD thesis exploration  /  Evidence and full methods in the accompanying report',
+           970,3299,1313,size=25,color=MUTED,align=TA_LEFT,max_h=35,role='author')
     p.c.showPage();p.c.save()
     return p
+
 
 
 def main():
@@ -645,6 +644,8 @@ def main():
         raise ValueError(f'Poster exceeds 1000-word maximum: {count}')
     manifest=dict(status='reviewed exploratory poster' if args.final else 'internal draft - pending NATVIEW/final evidence',
                   **reference,
+                  design_revision='v2 - results-first visual hierarchy',
+                  reference_use='A0 canvas, palette, asymmetric columns and divider; revised internal layout',
                   page_points=[W,H],geometry_points_top_origin=GEOMETRY,word_count=count,
                   content_sha256=sha(args.content),source_files=provenance,text_boxes=p.boxes,
                   input_manifest=str(args.inputs),input_manifest_sha256=sha(args.inputs) if args.inputs.exists() else None,

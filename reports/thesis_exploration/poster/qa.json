@@ -1,56 +1,48 @@
 {
-  "status": "passed; final exploratory poster released for parent visual review",
+  "status": "PASS",
+  "design_revision": "v2 - results-first visual hierarchy",
+  "artifact_operation": "edit; marker ran successfully once before authoring",
+  "visual_review": "Final 2400-pixel full-page rendering inspected: no clipping or collisions; distinct study scopes, readable hierarchy and vector figures.",
   "page_count": 1,
   "page_points": [
     2383.937,
     3370.394
   ],
-  "page_mm": [
-    840.9999972222221,
-    1189.0001055555554
+  "word_count": 612,
+  "font_embedding": [
+    {
+      "name": "/AAAAAA+Arial-BoldMT",
+      "embedded": true
+    },
+    {
+      "name": "/AAAAAA+Arial-Black",
+      "embedded": true
+    },
+    {
+      "name": "/AAAAAA+ArialMT",
+      "embedded": true
+    }
   ],
-  "embedded_fonts": [
-    "/AAAAAA+Arial-Black",
-    "/AAAAAA+ArialMT",
-    "/AAAAAA+Arial-BoldMT"
-  ],
-  "vector_figures": true,
-  "bitmap_images": 0,
-  "primary_source_links": [
+  "raster_images": 0,
+  "reference_hyperlinks": [
     "https://proceedings.mlr.press/v315/li26g.html",
     "https://proceedings.mlr.press/v306/li26gp.html",
     "https://papers.miccai.org/miccai-2026/0612-Paper4437.html",
     "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K222101.pdf",
     "https://www.bmj.com/content/377/bmj-2022-070904"
   ],
-  "word_count": 662,
-  "full_page_visually_inspected": true,
-  "no_text_wrap_overflow": true,
-  "draft_markers_absent": true,
-  "primary_and_learning_preselection_verified": true,
-  "worker_poster_csvs_and_person_means_checked": true,
-  "main_successful_root_jobs": 9,
-  "natview_scoring_and_reporting_jobs_successful": true,
-  "natview_people": 6,
-  "natview_reserved_denominator": 8,
-  "natview_strict_QC_accepted": 1,
-  "natview_amendment_scope": "secondary exploratory after QC",
-  "natview_95CI_includes_zero": true,
-  "natview_scored_frames": 740,
-  "natview_total_frames": 2304,
-  "natview_coverage_percent": 32.11805555555556,
-  "natview_accuracy_unit": "QC-passing people; normalized retained targets",
-  "source_hashes_checked": 28,
-  "private_reference_loaded": false,
-  "private_reference_embedded": false,
-  "private_reference_absence_build_passed": true,
-  "reference_sha256": "6cbcaa767705fab9f998e7bfbe85e27b66d7da3c3dcd356359c5c3fd43cd6e83",
-  "report_sha256": "900cda12c6f0bad7f2083d17959eda8a80aa32317b0982fbf1e2398465887ee6",
-  "builder_sha256": "15a00e7364f72f9439b9c8c7d55ccfed6ec506ccab72bbd3069dd3458ef94ebd",
-  "content_sha256": "20f8ea4d76786e0b244b46a8847f0475eafa58bf6a2c1f104cb659abdf7327d6",
-  "integration_sha256": "7ce0e4f5c85d65493557e027ca2cdc3937a8b182aff6b3ce1723e88dcdca47c2",
-  "pdf_sha256": "932a9f27b41c80a60e195bfff3a4ae97cf720a25ad45a2b851a53c75688e6efe",
-  "preview_sha256": "4441a67cbecb891a851ae61f53736fc95fae0c0a6867cef78c3ffbe9919cbad7",
-  "marker": "one successful invocation before the first PDF-authoring command; not repeated",
-  "git_operations": "no stage, commit or push"
+  "source_files_verified": 28,
+  "all_experimental_rows_unchanged": true,
+  "natview_panel_unchanged": true,
+  "normalization_and_exploratory_limitations_retained": true,
+  "sha256": {
+    "pdf": "e00b82a3a232e402d5ea21ea65fdf6743747d88afa21a0b27cd84366d4af970d",
+    "preview": "8a48499580569df7d506e087c769dd2d06adc43db00d7114d1b0c2b903063bd9",
+    "builder": "aaf798036d420424ad45e5fe5eb2eb2c079902b9ba6dcaf5e09eedfb4e7ce43e",
+    "content": "46a556da307254030d58de0ec4bb7abdd9b41bfac7b846b22f3436592e6406f5",
+    "integration": "7ce0e4f5c85d65493557e027ca2cdc3937a8b182aff6b3ce1723e88dcdca47c2",
+    "reviewed_report": "900cda12c6f0bad7f2083d17959eda8a80aa32317b0982fbf1e2398465887ee6"
+  },
+  "reviewed_utc": "2026-10-20T21:41:28.751941+00:00",
+  "unicode_glyph_check": "PASS"
 }
