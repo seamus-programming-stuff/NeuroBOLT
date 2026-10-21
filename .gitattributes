@@ -6,6 +6,12 @@ scripts/natview_* text=auto eol=lf
 scripts/build_thesis_exploration_poster.py text=auto eol=lf
 scripts/build_poster_reading_guide.py text=auto eol=lf
 scripts/requirements_poster.txt text=auto eol=lf
+scripts/build_clinical_feasibility_pdf.py text=auto eol=lf
+scripts/build_research_poster.py text=auto eol=lf
+"reports/Clinical EEG to fMRI feasibility.md" text=auto eol=lf
+"research_notes/Clinical EEG to fMRI feasibility/**" text=auto eol=lf
+reports/poster/*.md text=auto eol=lf
+reports/poster/*.json -text -eol -whitespace
 output/pdf/*.pdf binary
 output/pdf/*.png binary
 reports/thesis_exploration/** text=auto eol=lf

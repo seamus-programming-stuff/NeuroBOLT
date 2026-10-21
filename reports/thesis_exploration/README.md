@@ -8,6 +8,8 @@ supplied examples: background, technique, evaluation and further research.
 - [Nine-page illustrated explanation](../../output/pdf/EEG_fMRI_poster_explained.pdf)
 - [Read the explanation on GitHub](poster_reading_guide.md)
 - [Full literature and research report](../Clinical%20EEG%20fMRI%20thesis%20exploration.md)
+- [Earlier clinical feasibility and resource-planning report](../Clinical%20EEG%20to%20fMRI%20feasibility.md)
+- [Earlier reproduction/interpretability poster](../poster/README.md)
 - [ds006040 results and protocol](data/)
 - [NATVIEW strict and amended evidence](natview/)
 
