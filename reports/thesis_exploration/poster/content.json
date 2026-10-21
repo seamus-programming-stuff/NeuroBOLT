@@ -1,20 +1,20 @@
 {
-  "summary": "More data helped, but cross-site prediction remains weak. A useful PhD should target one clinical decision and measure when a model must abstain.",
+  "summary": "EEG predicts some healthy BOLD. Weak transfer and regional specificity shift the PhD focus to measurement, calibration and reliable abstention.",
   "problem": "EEG: scalp electrical activity.<br/>BOLD: blood oxygenation in fMRI.<br/>One useful clinical decision?",
-  "takeaway": "The small MLP and sparse ECG pipeline did not improve the EEG baseline. Regional gain beyond a predicted-global template remains uncertain: paired delta-r .004 (95% CI -.008 to .017). These tests do not establish a biological ceiling.",
-  "methods": "<b>ds006040:</b> 27 people/54 runs; three subject-grouped outer folds, separate inner tuning. Ridge/small MLP; EEG, sparse ECG timing/availability, or both. Cross 4/12 training people and 120/240 retained target-seconds/person. Fixed subsets; one neural seed; four equal-weight MLP target groups. Published models were not reproduced.",
+  "takeaway": "r measures aligned rises/falls; predictive R<super>2</super> also penalizes scale and offset errors. EEG ridge r .189, R<super>2</super> .028. Regional gain beyond a predicted-global template is uncertain (delta-r .004; 95% CI -.008 to .017).",
+  "methods": "27 people / 54 EC/EO runs. Three outer folds test unseen people; separate inner validation chooses settings. Compare 4/12 training people and 120/240 retained target-seconds; EEG power, sparse ECG timing or both. One subset order/MLP seed; four equal-weight MLP target groups. The 96 fitted cells reuse these people.",
   "work_packages": [
     [
       "Measure useful information",
-      "Which montage, EEG history and sensors add held-out value for their acquisition cost?"
+      "Predict which montage/history/sensors add information; test rankings against cost-matched held-out choices."
     ],
     [
-      "Transfer structured dynamics",
-      "Can shared dynamics and counted calibration improve regional signal beyond ridge and state controls?"
+      "Transfer with counted calibration",
+      "Learn dynamics with missing EEG; test transfer beyond ridge, state templates and output recalibration."
     ],
     [
-      "Predict selectively",
-      "What error is achievable at useful coverage under specified shift? Compare abstention with quality rejection."
+      "Calibrate when to abstain",
+      "Compare error at matched coverage. State assumptions: hidden vascular shifts can invalidate reliability."
     ]
   ],
   "models": [
@@ -22,6 +22,6 @@
     "<b>UniEFS [2]</b> | 512 ROIs, r .367 | Parkinson classification probe",
     "<b>MARBLE [3]</b> | 64 ROIs, r .434; 2.6M parameters | compact estimation"
   ],
-  "clinical_gate": "<b>First route:</b> wakefulness advisory; compare direct EEG arousal prediction.<br/><b>Second route:</b> one regional feedback target; require paired patient validation and controlled benefit.<br/><b>Precedent:</b> Prism is cleared for adjunctive PTSD biofeedback; diagnostic interpretation excluded [4].<br/><b>Limits:</b> retrospective preprocessing; normalized targets, no absolute %BOLD calibration; sparse ECG, one development site/seed. Live use and clinical benefit untested [5].",
+  "clinical_gate": "<b>Wakefulness advisory:</b> compare direct EEG using independent events, false alerts/hour, delay and coverage.<br/><b>Regional feedback:</b> validate one patient ROI against paired fMRI, then test controlled benefit.<br/><b>Clinical precedent:</b> Prism's cleared adjunctive PTSD biofeedback excludes diagnostic interpretation [4].<br/><b>Current limits:</b> retrospective preprocessing, normalized targets, sparse ECG and one development site/seed. Live use and clinical benefit untested [5].",
   "references": "<link href=\"https://proceedings.mlr.press/v315/li26g.html\"><b>[1]</b> UnEBOLT, MIDL 2026.</link> <link href=\"https://proceedings.mlr.press/v306/li26gp.html\"><b>[2]</b> UniEFS, ICML 2026.</link><br/><link href=\"https://papers.miccai.org/miccai-2026/0612-Paper4437.html\"><b>[3]</b> MARBLE, MICCAI 2026.</link> <link href=\"https://www.accessdata.fda.gov/cdrh_docs/pdf22/K222101.pdf\"><b>[4]</b> FDA K222101, 2023.</link><br/><link href=\"https://www.bmj.com/content/377/bmj-2022-070904\"><b>[5]</b> DECIDE-AI, 2022.</link> Full sources: accompanying report."
 }

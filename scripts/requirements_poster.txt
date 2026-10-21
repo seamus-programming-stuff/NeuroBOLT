@@ -1,0 +1,7 @@
+# Artifact generation; Windows Arial fonts are also required.
+reportlab==4.4.9
+pypdf==6.10.0
+numpy==2.3.5
+matplotlib==3.11.2
+svglib==2.3.0
+Pillow==12.3.0

@@ -23,6 +23,9 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen.canvas import Canvas
 from reportlab.platypus import Paragraph
+from reportlab.graphics.barcode.qr import QrCodeWidget
+from reportlab.graphics.shapes import Drawing
+from reportlab.graphics import renderPDF
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "reports/thesis_exploration/poster"
@@ -447,28 +450,28 @@ class Poster:
 
     def architecture(self):
         x,y,w,h=self.card('architecture')
-        self.kicker('PUBLISHED MODEL REFERENCE',x+27,y+23,w-54)
-        self.heading('Inside UnEBOLT',x+27,y+62,w-54,size=43)
-        self.para('Simplified architecture [1]; not reproduced here.',x+27,y+122,w-54,
+        self.kicker('METHOD / THE ACTUAL M3 PIPELINE',x+27,y+23,w-54)
+        self.heading('How EEG becomes a prediction',x+27,y+62,w-54,size=39)
+        self.para('Past EEG is summarized before fitting either model.',x+27,y+164,w-54,
                   size=25,leading=30,max_h=61,color=MUTED,role='caption')
-        nodes=[('EEG history','Before each BOLD frame'),
-               ('Shared EEG encoder','Temporal + spectral; gated fusion'),
-               ('Regional adapters','ROI embeddings and output heads'),
-               ('BOLD trajectories','One predicted series per region')]
+        nodes=[('24 seconds of EEG','5 scalp groups x 5 frequency bands'),
+               ('300 power features','12 lags; training-only standardization'),
+               ('Ridge or small MLP','Same EEG features; inner tuning'),
+               ('Predict BOLD targets','Score 64 regional series here')]
         for i,(title,body) in enumerate(nodes):
-            yy=y+204+i*112
+            yy=y+237+i*103
             fill='#EAF6FF' if i<3 else '#FFF1DF'
             self.rect(x+28,yy,w-56,88,color=fill,radius=10)
             self.para(f'<b>{title}</b><br/>{body}',x+43,yy+10,w-86,size=27,leading=31,
                       max_h=66,align=TA_CENTER,role='diagram')
-            if i<3:self.arrow(x+w/2,yy+89,x+w/2,yy+109,lw=3)
-        self.para('Patient BOLD fidelity and clinical utility remain unvalidated.',
+            if i<3:self.arrow(x+w/2,yy+89,x+w/2,yy+101,lw=3)
+        self.para('MLP learns four target groups. Published models were not reproduced.',
                   x+28,y+647,w-56,size=25,leading=29,max_h=60,color=MUTED,role='caption')
 
     def scores(self,rows,data):
         x,y,w,h=self.card('results')
         self.kicker('01 / EVIDENCE FROM M3',x+32,y+23,w-64)
-        self.heading('A linear baseline stays ahead',x+32,y+69,w-64,size=53)
+        self.heading('Ridge leads the matched-feature models',x+32,y+69,w-64,size=49)
         self.para('ds006040 development | EC-trained / EC-tested | 64 regional targets',
                   x+32,y+141,w-64,size=28,color=MUTED,max_h=38,role='caption')
         for i,(value,caption) in enumerate((('27','held-out people'),('96','fitted experiment cells'),('300','matched EEG-power features'))):
@@ -568,14 +571,14 @@ def build(out,content,data,rows,curves,final):
     p.para(content['problem'],x+27,y+182,w-54,size=30,leading=36,max_h=112)
     p.architecture();p.scores(rows,data)
     x,y,w,h=p.card('takeaway',accent=ORANGE,fill='#FFF2DF')
-    p.heading('More data helped; extra complexity did not.',x+30,y+24,w-60,size=43)
+    p.heading('What does a better prediction mean?',x+30,y+24,w-60,size=43)
     p.para(content['takeaway'],x+30,y+94,w-60,size=31,leading=38,max_h=116)
     p.rect(*GEOMETRY['divider'],color=ORANGE)
     p.para('THE PHD OPPORTUNITY / reliable prediction across people and sites',89,1688,W-178,
            size=47,leading=58,font='Display',color=INK,align=TA_CENTER,max_h=65,role='heading')
     p.learning(curves,data)
     x,y,w,h=p.card('methods')
-    p.kicker('WHAT WAS ACTUALLY TESTED',x+27,y+22,w-54)
+    p.kicker('METHOD / TEST ON UNSEEN PEOPLE',x+27,y+22,w-54)
     p.para(content['methods'],x+27,y+70,w-54,size=30,leading=36,max_h=235)
     p.natview(data['natview_panel'])
     x,y,w,h=p.card('work_packages',accent=ORANGE)
@@ -600,7 +603,15 @@ def build(out,content,data,rows,curves,final):
     p.kicker('APPLICATIONS / VALIDATION GATES',x+29,y+23,w-58)
     p.para(content['clinical_gate'],x+29,y+70,w-58,size=30,leading=37,max_h=310)
     p.line(97,3170,2285,3170,GRID,2)
-    p.para(content['references'],97,3189,2187,size=23,leading=28,max_h=90,color=MUTED,role='references')
+    p.para(content['references'],97,3189,1660,size=23,leading=28,max_h=90,color=MUTED,role='references')
+    guide_url='https://github.com/seamus-programming-stuff/NeuroBOLT/blob/main/reports/thesis_exploration/poster_reading_guide.md'
+    p.para('Full explanation,<br/>methods and code',1828,3194,306,size=25,leading=30,color=MUTED,max_h=63,role='caption')
+    qr=QrCodeWidget(guide_url)
+    bx,by,bw,bh=qr.getBounds();side=105
+    drawing=Drawing(side,side,transform=[side/(bw-bx),0,0,side/(bh-by),0,0]);drawing.add(qr)
+    drawing.initialFontName='Body'
+    renderPDF.draw(drawing,p.c,2175,H-3182-side)
+    p.c.linkURL(guide_url,(2175,H-3182-side,2280,H-3182),relative=0,thickness=0)
     p.para('Seamus Taylor',97,3291,900,size=40,font='Display',color=BLUE,max_h=54,role='author')
     p.para('PhD thesis exploration  /  Evidence and full methods in the accompanying report',
            970,3299,1313,size=25,color=MUTED,align=TA_LEFT,max_h=35,role='author')
@@ -644,7 +655,7 @@ def main():
         raise ValueError(f'Poster exceeds 1000-word maximum: {count}')
     manifest=dict(status='reviewed exploratory poster' if args.final else 'internal draft - pending NATVIEW/final evidence',
                   **reference,
-                  design_revision='v2 - results-first visual hierarchy',
+                  design_revision='v3 - explanatory methods and research narrative',
                   reference_use='A0 canvas, palette, asymmetric columns and divider; revised internal layout',
                   page_points=[W,H],geometry_points_top_origin=GEOMETRY,word_count=count,
                   content_sha256=sha(args.content),source_files=provenance,text_boxes=p.boxes,

@@ -1,62 +1,78 @@
-# Visual revision 2
+# Revision 3: an explanatory research narrative
 
-The A0 poster is a visual iteration of the reviewed research poster from commit
-b42bb3c. The user requested a more visually striking design. The original
-Examples.zip / Files / example2.pdf remains the reference for the A0 canvas,
-cyan/orange palette, asymmetric columns and full-width central divider. The
-internal panels are deliberately reorganized to put the completed evidence first.
-The private example itself is not embedded or republished.
+The user asked to keep iterating, give an in-depth explanation and use the
+supplied examples as a guide. Both original example images were inspected again.
+Example1's background/method/evaluation/further-research narrative informs the
+explanation; example2 remains the guide for the A0 canvas, asymmetric composition,
+cyan/orange palette, process diagram and central divider. The navy title panel
+and enlarged evidence chart retain the stronger hierarchy developed in revision2.
+No source example text, images, author identity or institutional logo is copied.
 
-The exact canvas remains 2383.937 x 3370.394 points (841 x 1189 mm), A0 portrait.
-The measured original reference SHA256 is
-6cbcaa767705fab9f998e7bfbe85e27b66d7da3c3dcd356359c5c3fd43cd6e83.
+## Current deliverables
 
-## Visual changes
+- One-page A0 poster: 636 words; exact canvas 2383.937 x 3370.394 points,
+  841 x 1189 mm, portrait. Stable output/pdf filenames are retained.
+- Nine-page A4 companion explanation, sourced from poster_reading_guide.md.
+  It is approximately 3,200 source words, with teaching diagrams, tables,
+  mathematical reasoning and an advisor discussion script.
 
-- Dark navy title panel, cyan accent and a shorter two-line research question.
-- A concise summary at the top and an original vector EEG-to-BOLD schematic.
-  These traces are explicitly illustrative, not measured participant signals.
-- The primary four-arm chart is now the largest evidence panel, with enlarged
-  estimates, confidence intervals and explicit participant/experiment/input counts.
-- Thin accents, soft cards and a restrained pale background replace heavy boxes.
-- The NATVIEW result has a separate panel, denominator, uncertainty and coverage
-  indicator. It is not pooled into the main development-data chart.
-- The three PhD questions are numbered and arranged as an actionable research path.
-- EEG and BOLD definitions, named model references and clinical validation gates
-  remain visible for stakeholder discussion.
+## Why this revision is more explanatory
 
-## Evidence retained
+The main process figure now describes the actual M3 experiment: 24 seconds of
+EEG, five scalp groups x five frequency bands x twelve lags, 300 power features,
+training-only standardization, ridge/small MLP and regional evaluation. It no
+longer uses a published UnEBOLT schematic as the main methods illustration.
+The small model was not a reproduction of UnEBOLT or the other frontier models.
 
-The four preselected primary rows, four learning points, NATVIEW panel and all
-28 scientific source-file hashes are identical to the previous reviewed build.
-The code still audits native exports against participant CSVs and the frozen
-protocol before authoring. The experiment report, model results and data are
-unchanged. The poster is a 612-word condensation, not a new experiment.
+The interpretation panel distinguishes temporal correlation from predictive R2,
+retains the uncertain global-template increment and avoids equating correlation
+with a percentage of brain activity recovered. Methods explicitly say that the
+96 fitted cells reuse the same 27 people. Proposed thesis questions include tests
+against cost-matched measurements, state templates and simple quality rejection.
+Application gates name independent events, paired patient targets and benefit.
 
-The clinical/model distinction remains explicit: the small matched-feature MLP
-is not UnEBOLT; published models were not reproduced. Literature scores use
-different protocols. The paired global-template increment remains uncertain.
-Strict NATVIEW timing QC was 1/8; amended QC was 6/8. Its accuracy is secondary
-exploratory after a metadata-only amendment, with the ingestion pilot excluded.
-The CI includes zero; negative predictive R2, all-eight frame coverage and the
-interpolation policy remain visible. Clinical benefit and end-to-end live use
-are untested, and normalized retrospective targets do not establish absolute
-%BOLD calibration.
+The QR code, inspired by example1's printable handover, resolves to the editable
+GitHub reading guide. It is a vector QR and a clickable PDF link. Five primary
+reference links remain, for six hyperlinks total. The original reference SHA256
+is still recorded in the build manifest; private example files are not published.
 
-## Typography and reproduction
+## Companion explanation
 
-All elements are vector; Arial and Arial Black are embedded. Display sizes are
-38-102 pt, body text 30-34 pt, figure labels 23-29 pt and decorative annotations
-20-23 pt. No content is silently shrunk to fit. Text has explicit height limits.
-Source geometry is GEOMETRY in the builder and build_manifest.json.
+The nine sections cover: physiology and target scope; grouped M3 evaluation;
+r versus predictive R2 and regional specificity; strict/amended NATVIEW timing;
+frontier models and clinical endpoints; conditional-variance decomposition and
+selective risk; three falsifiable work packages; prototype/resources/human roles;
+and a five-minute advisor account with decision questions.
 
-Build with the bundled ReportLab Python runtime:
+The correlation plot is an explicitly labelled mathematical example, not
+participant data. It uses a zero-mean, unit-variance target and prediction
+0.2 x target + 1, with verified r=1 and predictive R2=-0.64. Explanatory diagrams
+separate clinical event references from deployment inputs. Forecasting theory
+and resource brackets are scoped proposals, not new empirical results.
+
+## Reproduction and quality checks
+
+Use Windows Arial/Arial Black fonts and scripts/requirements_poster.txt:
 
     python scripts/build_thesis_exploration_poster.py --final
+    python scripts/build_poster_reading_guide.py
 
-The private reference is optional. The final 2400-pixel PNG was inspected and
-spacing refined. Release checks confirm a single A0 page, embedded fonts, no
-raster figures, all five reference links, no release placeholders, unchanged
-statistics and matching scientific hashes. release_checks.json and qa.json
-record final hashes and review evidence. The artifact edit marker already ran
-once before this revision's first authoring command; it is not part of rebuilding.
+The artifact-operation marker ran once before authoring these two PDF outputs.
+It is not part of the reusable builders. Both PDF outputs were rendered; all
+nine guide pages and the full poster were visually inspected. Diagram labels
+and figure annotations were refined to avoid collisions. All used text fonts
+are embedded, and every figure is vector. An unused default Helvetica resource
+in the guide does not paint text; the content-stream audit records this fact.
+
+The four primary rows, four learning points, NATVIEW panel and all 28 scientific
+input hashes match revision2. No experiment was rerun and the reviewed research
+report is unchanged. Native input audits remain enforced. Guide links, rounded
+primary table values and the mathematical example were checked. Current checks
+and output/source hashes are in release_checks.json and qa.json. Geometry and
+numeric selections are in build_manifest.json; guide provenance is in
+../guide_figures/build_manifest.json.
+
+GitHub is the primary project location per the user's clarification. Earlier
+visual versions and the original example-style build remain in Git history.
+The earlier OneDrive bundle is a separate revision2 snapshot and is not the
+primary handover for this revision.

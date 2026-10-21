@@ -4,7 +4,7 @@
   "reference_sha256": "6cbcaa767705fab9f998e7bfbe85e27b66d7da3c3dcd356359c5c3fd43cd6e83",
   "reference_file_status": "local bytes verified; measured canvas and asymmetric grid adapted in visual revision",
   "reference_content_embedded": false,
-  "design_revision": "v2 - results-first visual hierarchy",
+  "design_revision": "v3 - explanatory methods and research narrative",
   "reference_use": "A0 canvas, palette, asymmetric columns and divider; revised internal layout",
   "page_points": [
     2383.937,
@@ -94,8 +94,8 @@
       3291.0
     ]
   },
-  "word_count": 612,
-  "content_sha256": "46a556da307254030d58de0ec4bb7abdd9b41bfac7b846b22f3436592e6406f5",
+  "word_count": 636,
+  "content_sha256": "4e8b2c007801ff13e341609173954bbefe526cb4bec319b9a4061763261bee6f",
   "source_files": [
     {
       "path": "C:\\Users\\Seamus\\Documents\\GitHub\\NeuroBOLT\\reports\\thesis_exploration\\data\\summary.json",
@@ -249,7 +249,7 @@
       "font": "Body",
       "size": 34,
       "role": "summary",
-      "text": "More data helped, but cross-site prediction remains weak. A useful PhD should target one clinical decision and measure when a model must abstain."
+      "text": "EEG predicts some healthy BOLD. Weak transfer and regional specificity shift the PhD focus to measurement, calibration and reliable abstention."
     },
     {
       "x": 1770,
@@ -329,67 +329,67 @@
       "font": "Body-Bold",
       "size": 25,
       "role": "kicker",
-      "text": "PUBLISHED MODEL REFERENCE"
+      "text": "METHOD / THE ACTUAL M3 PIPELINE"
     },
     {
       "x": 123.42254,
       "y": 962.0,
       "w": 509.5692,
-      "h": 49.019999999999996,
+      "h": 88.91999999999999,
       "font": "Display",
-      "size": 43,
+      "size": 39,
       "role": "heading",
-      "text": "Inside UnEBOLT"
+      "text": "How EEG becomes a prediction"
     },
     {
       "x": 123.42254,
-      "y": 1022.0,
+      "y": 1064.0,
       "w": 509.5692,
       "h": 60,
       "font": "Body",
       "size": 25,
       "role": "caption",
-      "text": "Simplified architecture [1]; not reproduced here."
+      "text": "Past EEG is summarized before fitting either model."
     },
     {
       "x": 139.42254,
-      "y": 1114.0,
+      "y": 1147.0,
       "w": 477.5692,
       "h": 62,
       "font": "Body",
       "size": 27,
       "role": "diagram",
-      "text": "<b>EEG history</b><br/>Before each BOLD frame"
+      "text": "<b>24 seconds of EEG</b><br/>5 scalp groups x 5 frequency bands"
     },
     {
       "x": 139.42254,
-      "y": 1226.0,
+      "y": 1250.0,
       "w": 477.5692,
       "h": 62,
       "font": "Body",
       "size": 27,
       "role": "diagram",
-      "text": "<b>Shared EEG encoder</b><br/>Temporal + spectral; gated fusion"
+      "text": "<b>300 power features</b><br/>12 lags; training-only standardization"
     },
     {
       "x": 139.42254,
-      "y": 1338.0,
+      "y": 1353.0,
       "w": 477.5692,
       "h": 62,
       "font": "Body",
       "size": 27,
       "role": "diagram",
-      "text": "<b>Regional adapters</b><br/>ROI embeddings and output heads"
+      "text": "<b>Ridge or small MLP</b><br/>Same EEG features; inner tuning"
     },
     {
       "x": 139.42254,
-      "y": 1450.0,
+      "y": 1456.0,
       "w": 477.5692,
       "h": 62,
       "font": "Body",
       "size": 27,
       "role": "diagram",
-      "text": "<b>BOLD trajectories</b><br/>One predicted series per region"
+      "text": "<b>Predict BOLD targets</b><br/>Score 64 regional series here"
     },
     {
       "x": 124.42254,
@@ -399,7 +399,7 @@
       "font": "Body",
       "size": 25,
       "role": "caption",
-      "text": "Patient BOLD fidelity and clinical utility remain unvalidated."
+      "text": "MLP learns four target groups. Published models were not reproduced."
     },
     {
       "x": 759.6812,
@@ -415,11 +415,11 @@
       "x": 759.6812,
       "y": 634.0,
       "w": 1492.084,
-      "h": 60.419999999999995,
+      "h": 55.85999999999999,
       "font": "Display",
-      "size": 53,
+      "size": 49,
       "role": "heading",
-      "text": "A linear baseline stays ahead"
+      "text": "Ridge leads the matched-feature models"
     },
     {
       "x": 759.6812,
@@ -669,17 +669,17 @@
       "font": "Display",
       "size": 43,
       "role": "heading",
-      "text": "More data helped; extra complexity did not."
+      "text": "What does a better prediction mean?"
     },
     {
       "x": 757.6812,
       "y": 1484.0,
       "w": 1496.084,
-      "h": 114,
+      "h": 76,
       "font": "Body",
       "size": 31,
       "role": "body",
-      "text": "The small MLP and sparse ECG pipeline did not improve the EEG baseline. Regional gain beyond a predicted-global template remains uncertain: paired delta-r .004 (95% CI -.008 to .017). These tests do not establish a biological ceiling."
+      "text": "r measures aligned rises/falls; predictive R<super>2</super> also penalizes scale and offset errors. EEG ridge r .189, R<super>2</super> .028. Regional gain beyond a predicted-global template is uncertain (delta-r .004; 95% CI -.008 to .017)."
     },
     {
       "x": 89,
@@ -839,7 +839,7 @@
       "font": "Body-Bold",
       "size": 25,
       "role": "kicker",
-      "text": "WHAT WAS ACTUALLY TESTED"
+      "text": "METHOD / TEST ON UNSEEN PEOPLE"
     },
     {
       "x": 123.42254,
@@ -849,7 +849,7 @@
       "font": "Body",
       "size": 30,
       "role": "body",
-      "text": "<b>ds006040:</b> 27 people/54 runs; three subject-grouped outer folds, separate inner tuning. Ridge/small MLP; EEG, sparse ECG timing/availability, or both. Cross 4/12 training people and 120/240 retained target-seconds/person. Fixed subsets; one neural seed; four equal-weight MLP target groups. Published models were not reproduced."
+      "text": "27 people / 54 EC/EO runs. Three outer folds test unseen people; separate inner validation chooses settings. Compare 4/12 training people and 120/240 retained target-seconds; EEG power, sparse ECG timing or both. One subset order/MLP seed; four equal-weight MLP target groups. The 96 fitted cells reuse these people."
     },
     {
       "x": 123.42254,
@@ -999,7 +999,7 @@
       "font": "Body",
       "size": 30,
       "role": "body",
-      "text": "Which montage, EEG history and sensors add held-out value for their acquisition cost?"
+      "text": "Predict which montage/history/sensors add information; test rankings against cost-matched held-out choices."
     },
     {
       "x": 1110.925,
@@ -1019,7 +1019,7 @@
       "font": "Body-Bold",
       "size": 35,
       "role": "body",
-      "text": "Transfer structured dynamics"
+      "text": "Transfer with counted calibration"
     },
     {
       "x": 1189.925,
@@ -1029,7 +1029,7 @@
       "font": "Body",
       "size": 30,
       "role": "body",
-      "text": "Can shared dynamics and counted calibration improve regional signal beyond ridge and state controls?"
+      "text": "Learn dynamics with missing EEG; test transfer beyond ridge, state templates and output recalibration."
     },
     {
       "x": 1110.925,
@@ -1049,7 +1049,7 @@
       "font": "Body-Bold",
       "size": 35,
       "role": "body",
-      "text": "Predict selectively"
+      "text": "Calibrate when to abstain"
     },
     {
       "x": 1189.925,
@@ -1059,7 +1059,7 @@
       "font": "Body",
       "size": 30,
       "role": "body",
-      "text": "What error is achievable at useful coverage under specified shift? Compare abstention with quality rejection."
+      "text": "Compare error at matched coverage. State assumptions: hidden vascular shifts can invalidate reliability."
     },
     {
       "x": 1107.925,
@@ -1129,17 +1129,27 @@
       "font": "Body",
       "size": 30,
       "role": "body",
-      "text": "<b>First route:</b> wakefulness advisory; compare direct EEG arousal prediction.<br/><b>Second route:</b> one regional feedback target; require paired patient validation and controlled benefit.<br/><b>Precedent:</b> Prism is cleared for adjunctive PTSD biofeedback; diagnostic interpretation excluded [4].<br/><b>Limits:</b> retrospective preprocessing; normalized targets, no absolute %BOLD calibration; sparse ECG, one development site/seed. Live use and clinical benefit untested [5]."
+      "text": "<b>Wakefulness advisory:</b> compare direct EEG using independent events, false alerts/hour, delay and coverage.<br/><b>Regional feedback:</b> validate one patient ROI against paired fMRI, then test controlled benefit.<br/><b>Clinical precedent:</b> Prism's cleared adjunctive PTSD biofeedback excludes diagnostic interpretation [4].<br/><b>Current limits:</b> retrospective preprocessing, normalized targets, sparse ECG and one development site/seed. Live use and clinical benefit untested [5]."
     },
     {
       "x": 97,
       "y": 3189,
-      "w": 2187,
+      "w": 1660,
       "h": 84,
       "font": "Body",
       "size": 23,
       "role": "references",
       "text": "<link href=\"https://proceedings.mlr.press/v315/li26g.html\"><b>[1]</b> UnEBOLT, MIDL 2026.</link> <link href=\"https://proceedings.mlr.press/v306/li26gp.html\"><b>[2]</b> UniEFS, ICML 2026.</link><br/><link href=\"https://papers.miccai.org/miccai-2026/0612-Paper4437.html\"><b>[3]</b> MARBLE, MICCAI 2026.</link> <link href=\"https://www.accessdata.fda.gov/cdrh_docs/pdf22/K222101.pdf\"><b>[4]</b> FDA K222101, 2023.</link><br/><link href=\"https://www.bmj.com/content/377/bmj-2022-070904\"><b>[5]</b> DECIDE-AI, 2022.</link> Full sources: accompanying report."
+    },
+    {
+      "x": 1828,
+      "y": 3194,
+      "w": 306,
+      "h": 60,
+      "font": "Body",
+      "size": 25,
+      "role": "caption",
+      "text": "Full explanation,<br/>methods and code"
     },
     {
       "x": 97,
@@ -1402,7 +1412,7 @@
     "protocol_sha256": "02f3138499a33c3f683a3c7b17899651bc968dd44ca2791edf7bc96bb71531d7",
     "model_sha256": "dd9b894b805dd5a33fb5f5fbf741f8670439f81a3de709410320aba16ed0c7a9"
   },
-  "pdf_sha256": "e00b82a3a232e402d5ea21ea65fdf6743747d88afa21a0b27cd84366d4af970d",
+  "pdf_sha256": "344a4a4ddc8e14e6413efc7d5448b86dcb2f02ec19959b60566976405fdd1b8a",
   "result_scope": "ds006040 previously inspected development data; 27 people, 54 EC/EO runs. EC training/test, 12 training people, 240 retained target-seconds/person; primary panel selected before outcomes.",
   "protocol_caption": "Three grouped outer folds; equal-person means over regional64; 2000 percentile person bootstraps. One subset order and neural seed; normalized retrospective targets."
 }

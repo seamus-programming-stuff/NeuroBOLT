@@ -1,48 +1,53 @@
 {
+  "poster": {
+    "page_count": 1,
+    "sha256": "344a4a4ddc8e14e6413efc7d5448b86dcb2f02ec19959b60566976405fdd1b8a",
+    "embedded_text_fonts": {
+      "/AAAAAA+Arial-Black": true,
+      "/AAAAAA+Arial-BoldMT": true,
+      "/AAAAAA+ArialMT": true
+    },
+    "unused_default_font_resources": [],
+    "raster_images": 0,
+    "link_count": 6
+  },
+  "guide": {
+    "page_count": 9,
+    "sha256": "63b699d25ca4a6f530badfd15cc83ec6b075bfd489748fecd6df323385e7748b",
+    "embedded_text_fonts": {
+      "/AAAAAA+Arial-Black": true,
+      "/AAAAAA+Arial-BoldMT": true,
+      "/AAAAAA+ArialMT": true
+    },
+    "unused_default_font_resources": [
+      "/Helvetica"
+    ],
+    "raster_images": 0,
+    "link_count": 25
+  },
   "status": "PASS",
-  "design_revision": "v2 - results-first visual hierarchy",
-  "artifact_operation": "edit; marker ran successfully once before authoring",
-  "visual_review": "Final 2400-pixel full-page rendering inspected: no clipping or collisions; distinct study scopes, readable hierarchy and vector figures.",
-  "page_count": 1,
-  "page_points": [
-    2383.937,
-    3370.394
-  ],
-  "word_count": 612,
-  "font_embedding": [
-    {
-      "name": "/AAAAAA+Arial-BoldMT",
-      "embedded": true
-    },
-    {
-      "name": "/AAAAAA+Arial-Black",
-      "embedded": true
-    },
-    {
-      "name": "/AAAAAA+ArialMT",
-      "embedded": true
-    }
-  ],
-  "raster_images": 0,
-  "reference_hyperlinks": [
-    "https://proceedings.mlr.press/v315/li26g.html",
-    "https://proceedings.mlr.press/v306/li26gp.html",
-    "https://papers.miccai.org/miccai-2026/0612-Paper4437.html",
-    "https://www.accessdata.fda.gov/cdrh_docs/pdf22/K222101.pdf",
-    "https://www.bmj.com/content/377/bmj-2022-070904"
-  ],
+  "reviewed_utc": "2026-10-21T01:49:52.339032+00:00",
+  "design_revision": "v3 - explanatory methods and research narrative",
   "source_files_verified": 28,
   "all_experimental_rows_unchanged": true,
-  "natview_panel_unchanged": true,
-  "normalization_and_exploratory_limitations_retained": true,
-  "sha256": {
-    "pdf": "e00b82a3a232e402d5ea21ea65fdf6743747d88afa21a0b27cd84366d4af970d",
-    "preview": "8a48499580569df7d506e087c769dd2d06adc43db00d7114d1b0c2b903063bd9",
-    "builder": "aaf798036d420424ad45e5fe5eb2eb2c079902b9ba6dcaf5e09eedfb4e7ce43e",
-    "content": "46a556da307254030d58de0ec4bb7abdd9b41bfac7b846b22f3436592e6406f5",
-    "integration": "7ce0e4f5c85d65493557e027ca2cdc3937a8b182aff6b3ce1723e88dcdca47c2",
-    "reviewed_report": "900cda12c6f0bad7f2083d17959eda8a80aa32317b0982fbf1e2398465887ee6"
+  "guide_relative_links_verified": true,
+  "math_example_verified": true,
+  "visual_review": "All nine guide pages and full poster rendered and inspected; explanatory diagrams refined; no clipping or collisions.",
+  "dependencies": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2",
+    "svglib": "2.3.0",
+    "Pillow": "12.3.0"
   },
-  "reviewed_utc": "2026-10-20T21:41:28.754013+00:00",
-  "unicode_glyph_check": "PASS"
+  "artifact_operation": "edit; marker ran once before authoring; two PDF outputs",
+  "source_sha256": {
+    "scripts/build_thesis_exploration_poster.py": "fa30a8aed5f8c7720728594b2ca8922c57551aa689d2d32040df95d5a4cb46d8",
+    "scripts/build_poster_reading_guide.py": "52fc823f3a77cc8c9eaf28336e065af2e365de5fc1a4cf554068d155af599e17",
+    "reports/thesis_exploration/poster/content.json": "4e8b2c007801ff13e341609173954bbefe526cb4bec319b9a4061763261bee6f",
+    "reports/thesis_exploration/poster_reading_guide.md": "96622da6777e7a410d64817f640c4178b76fd0d866f69752a20c57c3f8a6dced",
+    "reports/Clinical EEG fMRI thesis exploration.md": "900cda12c6f0bad7f2083d17959eda8a80aa32317b0982fbf1e2398465887ee6"
+  },
+  "preview_sha256": "4ad2e5b8dfe9b749b629eac6d5d4cfd5ab2e6662916141572c64514f6936f489"
 }

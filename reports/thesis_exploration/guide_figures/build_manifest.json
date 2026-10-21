@@ -1,0 +1,20 @@
+{
+  "source": "reports\\thesis_exploration\\poster_reading_guide.md",
+  "source_sha256": "96622da6777e7a410d64817f640c4178b76fd0d866f69752a20c57c3f8a6dced",
+  "pdf": "output\\pdf\\EEG_fMRI_poster_explained.pdf",
+  "pdf_sha256": "63b699d25ca4a6f530badfd15cc83ec6b075bfd489748fecd6df323385e7748b",
+  "planned_sections": 9,
+  "evidence_report_sha256": "900cda12c6f0bad7f2083d17959eda8a80aa32317b0982fbf1e2398465887ee6",
+  "math_figure": {
+    "r": 1.0,
+    "predictive_R2": -0.6399999999999997,
+    "illustrative_only": true,
+    "sha256": "e2ebba63a1a271064f56c070b765685c9c330bfc4e2c413d9915256234c98e30"
+  },
+  "source_word_count": 3205,
+  "revision_role": "Explanatory synthesis of reviewed results; no new experiment",
+  "reference_designs": [
+    "example1: background/method/evaluation/further research narrative",
+    "example2: explanatory pipeline and asymmetric cyan/orange composition"
+  ]
+}

@@ -4,6 +4,10 @@
 scripts/thesis_* text=auto eol=lf
 scripts/natview_* text=auto eol=lf
 scripts/build_thesis_exploration_poster.py text=auto eol=lf
+scripts/build_poster_reading_guide.py text=auto eol=lf
+scripts/requirements_poster.txt text=auto eol=lf
+output/pdf/*.pdf binary
+output/pdf/*.png binary
 reports/thesis_exploration/** text=auto eol=lf
 "reports/Clinical EEG fMRI thesis exploration.md" text=auto eol=lf
 "research_notes/Clinical EEG fMRI thesis exploration/**" text=auto eol=lf
