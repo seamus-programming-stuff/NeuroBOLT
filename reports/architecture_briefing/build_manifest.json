@@ -1,0 +1,19 @@
+{
+  "source": "reports\\NeuroBOLT architecture research briefing.md",
+  "source_sha256": "6743fa0a6fdd36599be1970e8f0881c16b29b7d5d37ba4f672ed931d7472b4f5",
+  "pdf": "output\\pdf\\NeuroBOLT_architecture_research_briefing.pdf",
+  "pdf_sha256": "177e70087176a23dfac5d7b28ac4ede3f3440aa3c34075cc64125ead1925c38b",
+  "renderer_sha256": "a6fe61d70715de6488dad2f5836722bfba4dc75a0fa090e47055ba4e09bd59de",
+  "word_count": 4427,
+  "figure_kinds": [
+    "neurobolt",
+    "results",
+    "alignment",
+    "evaluation",
+    "data",
+    "pilot"
+  ],
+  "role": "Research synthesis. New pilot evidence, if included, must identify its own protocol and limitations.",
+  "pilot_summary": "reports/architecture_briefing/pilot/20261026_ec_global_v1/summary_verified.json",
+  "pilot_summary_sha256": "1350f472ceeafaece8b4b791af0ab1132be03a3b918cd8a6bf7d2b28c092b4e6"
+}

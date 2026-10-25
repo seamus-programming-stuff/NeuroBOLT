@@ -1,0 +1,10 @@
+{
+  "device": "cuda",
+  "job_id": "61455229",
+  "numpy": "1.24.3",
+  "platform": "Linux-5.14.0-687.17.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "protocol_sha256": "24e4f3af183a31cc336a0ee99f8487ec3ecc669f7cc464c44af81d77dc3fcb74",
+  "python": "3.9.19 | packaged by conda-forge | (main, Mar 20 2024, 12:50:21) \n[GCC 12.3.0]",
+  "started_utc": "2026-10-25T15:29:59.648038+00:00",
+  "torch": "2.0.0"
+}

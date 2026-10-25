@@ -1,0 +1,15 @@
+test_budget_gate_blocks_before_test_scoring (__main__.ArchitecturePilotTests.test_budget_gate_blocks_before_test_scoring) ... ok
+test_exact_person_splits_and_overlap_rejection (__main__.ArchitecturePilotTests.test_exact_person_splits_and_overlap_rejection) ... ok
+test_input_transform_excludes_heldout_values (__main__.ArchitecturePilotTests.test_input_transform_excludes_heldout_values) ... ok
+test_learned_pool_receives_gradients (__main__.ArchitecturePilotTests.test_learned_pool_receives_gradients) ... ok
+test_raw_r2_not_squared_correlation_and_constant_prediction (__main__.ArchitecturePilotTests.test_raw_r2_not_squared_correlation_and_constant_prediction) ... ok
+test_ridge_on_raw_scalar_matches_closed_form (__main__.ArchitecturePilotTests.test_ridge_on_raw_scalar_matches_closed_form) ... ok
+test_same_encoder_initialization_uniform_pool_and_parameter_cap (__main__.ArchitecturePilotTests.test_same_encoder_initialization_uniform_pool_and_parameter_cap) ... ok
+test_semantic_token_order_and_roundtrip (__main__.ArchitecturePilotTests.test_semantic_token_order_and_roundtrip) ... ok
+test_small_fit_has_only_training_and_validation_inputs (__main__.ArchitecturePilotTests.test_small_fit_has_only_training_and_validation_inputs) ... ok
+test_validation_weights_balance_people_not_frames (__main__.ArchitecturePilotTests.test_validation_weights_balance_people_not_frames) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.906s
+
+OK

@@ -1,0 +1,248 @@
+{
+  "completed_utc": "2026-10-25T15:30:17.915900+00:00",
+  "elapsed_seconds": 18.267935095820576,
+  "gpu_peak_allocated_MB": 74.6279296875,
+  "model_fold_fits": 12,
+  "models": {
+    "mlp32": {
+      "Pearson_r": {
+        "ci95": [
+          0.18223547149035665,
+          0.30051108974342544
+        ],
+        "defined_people": 27,
+        "mean": 0.24064662100540268
+      },
+      "RMSE": {
+        "ci95": [
+          0.4801855278235895,
+          0.5177666638184477
+        ],
+        "defined_people": 27,
+        "mean": 0.49903358463887815
+      },
+      "SD_ratio": {
+        "ci95": [
+          0.26903943724160145,
+          0.34020962196048027
+        ],
+        "defined_people": 27,
+        "mean": 0.3043048182323857
+      },
+      "negative_R2_count": 9,
+      "negative_R2_frequency": 0.3333333333333333,
+      "predictive_R2": {
+        "ci95": [
+          -0.0028763338923454276,
+          0.08157589065807834
+        ],
+        "defined_people": 27,
+        "mean": 0.038448335947813814
+      },
+      "undefined_r_frequency": 0.0
+    },
+    "ridge": {
+      "Pearson_r": {
+        "ci95": [
+          0.2193764868190612,
+          0.33782056868628346
+        ],
+        "defined_people": 27,
+        "mean": 0.2765014459112488
+      },
+      "RMSE": {
+        "ci95": [
+          0.47541325770017884,
+          0.5087119925779371
+        ],
+        "defined_people": 27,
+        "mean": 0.4922645600854897
+      },
+      "SD_ratio": {
+        "ci95": [
+          0.19324298221843955,
+          0.253553890693412
+        ],
+        "defined_people": 27,
+        "mean": 0.22266578392265804
+      },
+      "negative_R2_count": 4,
+      "negative_R2_frequency": 0.14814814814814814,
+      "predictive_R2": {
+        "ci95": [
+          0.03211273041975655,
+          0.09908701656514965
+        ],
+        "defined_people": 27,
+        "mean": 0.06512866424743219
+      },
+      "undefined_r_frequency": 0.0
+    },
+    "training_mean": {
+      "Pearson_r": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "defined_people": 1,
+        "mean": 0.0
+      },
+      "RMSE": {
+        "ci95": [
+          0.49672654610541134,
+          0.5208670358415003
+        ],
+        "defined_people": 27,
+        "mean": 0.5092885582535355
+      },
+      "SD_ratio": {
+        "ci95": [
+          0.0,
+          1.7687515676402694e-12
+        ],
+        "defined_people": 27,
+        "mean": 5.895838558800897e-13
+      },
+      "negative_R2_count": 27,
+      "negative_R2_frequency": 1.0,
+      "predictive_R2": {
+        "ci95": [
+          -0.0005220199072802508,
+          -0.00015859846715573922
+        ],
+        "defined_people": 27,
+        "mean": -0.00031750290482132523
+      },
+      "undefined_r_frequency": 0.9629629629629629
+    },
+    "transformer_lag": {
+      "Pearson_r": {
+        "ci95": [
+          0.11617241679794259,
+          0.22457334931715633
+        ],
+        "defined_people": 27,
+        "mean": 0.16738131169781642
+      },
+      "RMSE": {
+        "ci95": [
+          0.49508384452373894,
+          0.5298418035661733
+        ],
+        "defined_people": 27,
+        "mean": 0.512907459780022
+      },
+      "SD_ratio": {
+        "ci95": [
+          0.25903778168629515,
+          0.3166528622661658
+        ],
+        "defined_people": 27,
+        "mean": 0.2877934637142262
+      },
+      "negative_R2_count": 15,
+      "negative_R2_frequency": 0.5555555555555556,
+      "predictive_R2": {
+        "ci95": [
+          -0.05426121773543181,
+          0.024719883943045577
+        ],
+        "defined_people": 27,
+        "mean": -0.01592544493851838
+      },
+      "undefined_r_frequency": 0.0
+    },
+    "transformer_mean": {
+      "Pearson_r": {
+        "ci95": [
+          0.04364735659349848,
+          0.16558152249220895
+        ],
+        "defined_people": 27,
+        "mean": 0.10182929245962037
+      },
+      "RMSE": {
+        "ci95": [
+          0.4993021806908978,
+          0.5343432772766661
+        ],
+        "defined_people": 27,
+        "mean": 0.5170924012307767
+      },
+      "SD_ratio": {
+        "ci95": [
+          0.20739866028973764,
+          0.29664027722388975
+        ],
+        "defined_people": 27,
+        "mean": 0.2529216813214825
+      },
+      "negative_R2_count": 20,
+      "negative_R2_frequency": 0.7407407407407407,
+      "predictive_R2": {
+        "ci95": [
+          -0.06534051133526696,
+          0.005835338543962547
+        ],
+        "defined_people": 27,
+        "mean": -0.031570114471294264
+      },
+      "undefined_r_frequency": 0.0
+    }
+  },
+  "n_people": 27,
+  "paired_contrasts": [
+    {
+      "ci95": [
+        -0.0010878645159580088,
+        0.03225505970142503
+      ],
+      "first": "transformer_lag",
+      "mean_difference": 0.01564466953277588,
+      "metric": "raw_predictive_R2",
+      "people_favoring_first": 17,
+      "second": "transformer_mean"
+    },
+    {
+      "ci95": [
+        -0.10521886915415424,
+        -0.05815238623849072
+      ],
+      "first": "transformer_lag",
+      "mean_difference": -0.08105410918595057,
+      "metric": "raw_predictive_R2",
+      "people_favoring_first": 1,
+      "second": "ridge"
+    },
+    {
+      "ci95": [
+        -0.12060458861221282,
+        -0.073502767177492
+      ],
+      "first": "transformer_mean",
+      "mean_difference": -0.09669877871872645,
+      "metric": "raw_predictive_R2",
+      "people_favoring_first": 2,
+      "second": "ridge"
+    },
+    {
+      "ci95": [
+        -0.04631948742310179,
+        -0.009433565658268799
+      ],
+      "first": "mlp32",
+      "mean_difference": -0.02668032829961839,
+      "metric": "raw_predictive_R2",
+      "people_favoring_first": 9,
+      "second": "ridge"
+    }
+  ],
+  "parameter_counts": {
+    "mlp32": 9665,
+    "transformer_lag": 9442,
+    "transformer_mean": 9409
+  },
+  "primary": "equal-person mean raw predictive_R2, per-person denominator sum(y - that evaluation run mean)^2",
+  "protocol_sha256": "24e4f3af183a31cc336a0ee99f8487ec3ecc669f7cc464c44af81d77dc3fcb74",
+  "scope": "exploratory reused-development-data teaching prototype; NOT a NeuroBOLT modification or fresh confirmation"
+}

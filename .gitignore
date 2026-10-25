@@ -24,6 +24,8 @@ reports/external/data/vu_model_*.npz
 # Thesis exploration: keep caches, prediction arrays and private references local.
 /reports/thesis_exploration/data/features_causal.npz
 /reports/thesis_exploration/data/predictions/
+/reports/architecture_briefing/pilot/**/*.pt
+/reports/architecture_briefing/pilot/**/*.npz
 /reports/thesis_exploration/poster/reference/
 
 # Downloaded audit evidence; retain only the two curated reusable manifests.

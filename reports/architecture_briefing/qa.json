@@ -1,0 +1,31 @@
+{
+  "pdf_sha256": "177e70087176a23dfac5d7b28ac4ede3f3440aa3c34075cc64125ead1925c38b",
+  "pages": 14,
+  "linked_annotations": 64,
+  "all_relative_report_targets_exist": true,
+  "all_links_https": true,
+  "blank_or_orphan_only_pages": false,
+  "missing_font_glyphs": false,
+  "visual_review": "All pages reviewed through full-size renders/contact sheet; changed pages and appendix reviewed after content updates.",
+  "latest_renders_pixel_identical_to_reviewed_release_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "pilot_status": "COMPLETE, all 12 fits/27 people; parent independently recomputed all108 model-person raw-R2 scores and source/protocol hashes.",
+  "primary_architecture_change": "H1 is proposed, not implemented or validated by the proxy pilot.",
+  "clinical_validation_claimed": false,
+  "private_or_prospective_Emotiv_access_claimed": false,
+  "main_pdf_contains_careers_pitch": false
+}

@@ -1,0 +1,14 @@
+{
+  "all_four_first_fold_models_fit": true,
+  "device": "cuda",
+  "elapsed_seconds": 13.074653625953943,
+  "full_three_fold_scope_accepted": true,
+  "gpu": "NVIDIA L40S",
+  "gpu_peak_allocated_MB": 74.16796875,
+  "outer_scored": false,
+  "parameter_counts": {
+    "mlp32": 9665,
+    "transformer_lag": 9442,
+    "transformer_mean": 9409
+  }
+}

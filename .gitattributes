@@ -10,6 +10,14 @@ scripts/build_clinical_feasibility_pdf.py text=auto eol=lf
 scripts/build_research_poster.py text=auto eol=lf
 scripts/build_honours_kickoff.mjs text=auto eol=lf
 scripts/export_honours_kickoff_pdf.ps1 text=auto eol=lf
+scripts/build_architecture_briefing.py text=auto eol=lf
+scripts/architecture_pilot* text=auto eol=lf
+"reports/NeuroBOLT architecture research briefing.md" text=auto eol=lf
+reports/architecture_briefing/** text=auto eol=lf
+# Preserve immutable execution outputs and audit hashes byte for byte.
+reports/architecture_briefing/pilot/** -text -eol whitespace=cr-at-eol
+reports/architecture_briefing/pilot/**/README.md text=auto eol=lf
+"research_notes/NeuroBOLT architecture research briefing/**" text=auto eol=lf
 "reports/Monash honours EEG project.md" text=auto eol=lf
 "research_notes/Monash honours EEG project/**" text=auto eol=lf
 reports/honours_kickoff/** text=auto eol=lf

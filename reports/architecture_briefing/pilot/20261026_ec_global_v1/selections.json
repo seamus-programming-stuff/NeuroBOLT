@@ -1,0 +1,3351 @@
+[
+  {
+    "alpha_per_target": [
+      10000.0
+    ],
+    "elapsed_seconds": 1.863771490752697,
+    "fold": 0,
+    "model": "ridge",
+    "path": [
+      {
+        "alpha": 0.1,
+        "validation_mse": 0.3840928765186422
+      },
+      {
+        "alpha": 1,
+        "validation_mse": 0.37915901104559424
+      },
+      {
+        "alpha": 10,
+        "validation_mse": 0.349997924058378
+      },
+      {
+        "alpha": 100,
+        "validation_mse": 0.2968857306612395
+      },
+      {
+        "alpha": 1000,
+        "validation_mse": 0.25986272151646084
+      },
+      {
+        "alpha": 10000,
+        "validation_mse": 0.24631188048644553
+      }
+    ],
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-017_EC",
+        "subject": "sub-017",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 14,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 133,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-016_EC",
+        "subject": "sub-016",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse_per_target": [
+      0.24631188048644553
+    ],
+    "validation_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 360.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 1,
+    "elapsed_seconds": 8.129752314183861,
+    "epochs_run": 11,
+    "fit_seconds": 8.120504466351122,
+    "fold": 0,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.2524512287643221,
+        "validation_mse": 0.2605695128440857
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.21852040555742053,
+        "validation_mse": 0.2729569375514984
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.20862895217206742,
+        "validation_mse": 0.28627288341522217
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.19579762683974372,
+        "validation_mse": 0.3080190122127533
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.19001385834481982,
+        "validation_mse": 0.3063938617706299
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.18174715472592248,
+        "validation_mse": 0.3112325966358185
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.1764427774482303,
+        "validation_mse": 0.3104040026664734
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.16960702704058753,
+        "validation_mse": 0.3146591782569885
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.1665818257464303,
+        "validation_mse": 0.3482428193092346
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.17054634524716272,
+        "validation_mse": 0.36404699087142944
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.15835521088706123,
+        "validation_mse": 0.35710394382476807
+      }
+    ],
+    "model": "mlp32",
+    "parameters": 9665,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-017_EC",
+        "subject": "sub-017",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 14,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 133,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-016_EC",
+        "subject": "sub-016",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.2605695128440857,
+    "validation_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 360.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 5,
+    "elapsed_seconds": 2.0009902650490403,
+    "epochs_run": 15,
+    "fit_seconds": 1.9983914620243013,
+    "fold": 0,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.35471699006027646,
+        "validation_mse": 0.290657103061676
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.258308834499783,
+        "validation_mse": 0.26596248149871826
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.25171992944346533,
+        "validation_mse": 0.2629590332508087
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.2475009904967414,
+        "validation_mse": 0.2708892226219177
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.24436022771729363,
+        "validation_mse": 0.2621822655200958
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.2413983358277215,
+        "validation_mse": 0.2714514434337616
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.23969045380751292,
+        "validation_mse": 0.2645344138145447
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.2368529160817464,
+        "validation_mse": 0.2680320143699646
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.23672469688786402,
+        "validation_mse": 0.27229851484298706
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.2307032114929623,
+        "validation_mse": 0.28291216492652893
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.22483318514294096,
+        "validation_mse": 0.2665867209434509
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.21699151926570467,
+        "validation_mse": 0.2772490680217743
+      },
+      {
+        "epoch": 13,
+        "training_mse": 0.2131024506356981,
+        "validation_mse": 0.26603540778160095
+      },
+      {
+        "epoch": 14,
+        "training_mse": 0.2100611686706543,
+        "validation_mse": 0.2682647109031677
+      },
+      {
+        "epoch": 15,
+        "training_mse": 0.20579208864106072,
+        "validation_mse": 0.28527987003326416
+      }
+    ],
+    "model": "transformer_mean",
+    "parameters": 9409,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-017_EC",
+        "subject": "sub-017",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 14,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 133,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-016_EC",
+        "subject": "sub-016",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.2621822655200958,
+    "validation_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 360.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 11,
+    "elapsed_seconds": 0.8094959054142237,
+    "epochs_run": 21,
+    "fit_seconds": 0.8075946653261781,
+    "fold": 0,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.3542889787091149,
+        "validation_mse": 0.2895554304122925
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.2577456752459208,
+        "validation_mse": 0.265900582075119
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.25093516111373904,
+        "validation_mse": 0.26209449768066406
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.2462566249900394,
+        "validation_mse": 0.2700444459915161
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.24313502940866683,
+        "validation_mse": 0.26070690155029297
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.24003933668136596,
+        "validation_mse": 0.26898059248924255
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.23816817237271204,
+        "validation_mse": 0.2615746855735779
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.2348549445470174,
+        "validation_mse": 0.26241984963417053
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.23436372280120848,
+        "validation_mse": 0.26426270604133606
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.22752454413308038,
+        "validation_mse": 0.27304697036743164
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.22049815124935573,
+        "validation_mse": 0.25600293278694153
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.2120797445376714,
+        "validation_mse": 0.2645728588104248
+      },
+      {
+        "epoch": 13,
+        "training_mse": 0.2088502761390474,
+        "validation_mse": 0.25651273131370544
+      },
+      {
+        "epoch": 14,
+        "training_mse": 0.2042491055197186,
+        "validation_mse": 0.26125967502593994
+      },
+      {
+        "epoch": 15,
+        "training_mse": 0.20078212651941513,
+        "validation_mse": 0.2834787368774414
+      },
+      {
+        "epoch": 16,
+        "training_mse": 0.1950647989908854,
+        "validation_mse": 0.26655951142311096
+      },
+      {
+        "epoch": 17,
+        "training_mse": 0.1964570744170083,
+        "validation_mse": 0.25839775800704956
+      },
+      {
+        "epoch": 18,
+        "training_mse": 0.19221278296576605,
+        "validation_mse": 0.2628646790981293
+      },
+      {
+        "epoch": 19,
+        "training_mse": 0.18991228739420574,
+        "validation_mse": 0.27693837881088257
+      },
+      {
+        "epoch": 20,
+        "training_mse": 0.18403533299763997,
+        "validation_mse": 0.27741724252700806
+      },
+      {
+        "epoch": 21,
+        "training_mse": 0.18118507464726766,
+        "validation_mse": 0.29853349924087524
+      }
+    ],
+    "model": "transformer_lag",
+    "parameters": 9442,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-017_EC",
+        "subject": "sub-017",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 14,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 133,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-016_EC",
+        "subject": "sub-016",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.25600293278694153,
+    "validation_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 360.0
+      }
+    ]
+  },
+  {
+    "alpha_per_target": [
+      1000.0
+    ],
+    "elapsed_seconds": 0.01134007703512907,
+    "fold": 1,
+    "model": "ridge",
+    "path": [
+      {
+        "alpha": 0.1,
+        "validation_mse": 0.26856155521247727
+      },
+      {
+        "alpha": 1,
+        "validation_mse": 0.2673170114589218
+      },
+      {
+        "alpha": 10,
+        "validation_mse": 0.2597096310924891
+      },
+      {
+        "alpha": 100,
+        "validation_mse": 0.24302582999601513
+      },
+      {
+        "alpha": 1000,
+        "validation_mse": 0.23686991576513267
+      },
+      {
+        "alpha": 10000,
+        "validation_mse": 0.24710100531275564
+      }
+    ],
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse_per_target": [
+      0.23686991576513267
+    ],
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 2,
+    "elapsed_seconds": 0.13354185270145535,
+    "epochs_run": 12,
+    "fit_seconds": 0.13277182122692466,
+    "fold": 1,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.2366196009847853,
+        "validation_mse": 0.2532908618450165
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.203036367893219,
+        "validation_mse": 0.2489621490240097
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.19476877715852525,
+        "validation_mse": 0.2513595223426819
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.1969299766752455,
+        "validation_mse": 0.2519795596599579
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.18524423539638518,
+        "validation_mse": 0.25556278228759766
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.17925250563356612,
+        "validation_mse": 0.2787608504295349
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.17781928446557788,
+        "validation_mse": 0.2744617164134979
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.16964151528146532,
+        "validation_mse": 0.25376594066619873
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.16458850469854142,
+        "validation_mse": 0.2661662995815277
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.16725201540523105,
+        "validation_mse": 0.2615128457546234
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.15990539027584924,
+        "validation_mse": 0.25972867012023926
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.15559567676650154,
+        "validation_mse": 0.272768497467041
+      }
+    ],
+    "model": "mlp32",
+    "parameters": 9665,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.2489621490240097,
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 18,
+    "elapsed_seconds": 0.9949576952494681,
+    "epochs_run": 28,
+    "fit_seconds": 0.9930644556879997,
+    "fold": 1,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.3996403462356991,
+        "validation_mse": 0.2961367964744568
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.25418060620625815,
+        "validation_mse": 0.2719928026199341
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.24233803020583258,
+        "validation_mse": 0.26999905705451965
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.23982088499599033,
+        "validation_mse": 0.27058783173561096
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.2351332363155153,
+        "validation_mse": 0.2745096981525421
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.23285549481709797,
+        "validation_mse": 0.2704589068889618
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.23188558320204417,
+        "validation_mse": 0.2768774628639221
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.23094407386249965,
+        "validation_mse": 0.27277523279190063
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.22413504521052044,
+        "validation_mse": 0.2674487829208374
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.2188226646847195,
+        "validation_mse": 0.26978859305381775
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.21903115113576252,
+        "validation_mse": 0.26224640011787415
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.21303883526060316,
+        "validation_mse": 0.2602270543575287
+      },
+      {
+        "epoch": 13,
+        "training_mse": 0.21246452861362033,
+        "validation_mse": 0.2594946026802063
+      },
+      {
+        "epoch": 14,
+        "training_mse": 0.2093113362789154,
+        "validation_mse": 0.2537936568260193
+      },
+      {
+        "epoch": 15,
+        "training_mse": 0.2115938895278507,
+        "validation_mse": 0.26288530230522156
+      },
+      {
+        "epoch": 16,
+        "training_mse": 0.20949209233125052,
+        "validation_mse": 0.26384153962135315
+      },
+      {
+        "epoch": 17,
+        "training_mse": 0.20631532073020936,
+        "validation_mse": 0.2622588276863098
+      },
+      {
+        "epoch": 18,
+        "training_mse": 0.20322967105441622,
+        "validation_mse": 0.25251540541648865
+      },
+      {
+        "epoch": 19,
+        "training_mse": 0.19989559584193758,
+        "validation_mse": 0.253299355506897
+      },
+      {
+        "epoch": 20,
+        "training_mse": 0.20120423369937473,
+        "validation_mse": 0.25400471687316895
+      },
+      {
+        "epoch": 21,
+        "training_mse": 0.19707142213980358,
+        "validation_mse": 0.2554144859313965
+      },
+      {
+        "epoch": 22,
+        "training_mse": 0.19615258574485778,
+        "validation_mse": 0.2640135586261749
+      },
+      {
+        "epoch": 23,
+        "training_mse": 0.19501179059346516,
+        "validation_mse": 0.2557331323623657
+      },
+      {
+        "epoch": 24,
+        "training_mse": 0.19222867025269402,
+        "validation_mse": 0.2624058127403259
+      },
+      {
+        "epoch": 25,
+        "training_mse": 0.19092635975943673,
+        "validation_mse": 0.2601647675037384
+      },
+      {
+        "epoch": 26,
+        "training_mse": 0.18997486366166008,
+        "validation_mse": 0.2558407783508301
+      },
+      {
+        "epoch": 27,
+        "training_mse": 0.18698274592558542,
+        "validation_mse": 0.2620839476585388
+      },
+      {
+        "epoch": 28,
+        "training_mse": 0.18961821926964653,
+        "validation_mse": 0.2578538656234741
+      }
+    ],
+    "model": "transformer_mean",
+    "parameters": 9409,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.25251540541648865,
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 14,
+    "elapsed_seconds": 0.9292527898214757,
+    "epochs_run": 24,
+    "fit_seconds": 0.927234002854675,
+    "fold": 1,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.39924560056792363,
+        "validation_mse": 0.2949245870113373
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.25383758081330193,
+        "validation_mse": 0.27155014872550964
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.24190745254357657,
+        "validation_mse": 0.26940324902534485
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.2391527619626787,
+        "validation_mse": 0.2699480652809143
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.23454047309027778,
+        "validation_mse": 0.27397358417510986
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.2320702208413018,
+        "validation_mse": 0.2697117030620575
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.23094601631164552,
+        "validation_mse": 0.2758806645870209
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.22983915077315437,
+        "validation_mse": 0.2724273204803467
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.22267971502410042,
+        "validation_mse": 0.26639318466186523
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.21686555014716255,
+        "validation_mse": 0.2688326835632324
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.21663978033595616,
+        "validation_mse": 0.2622380256652832
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.21059328185187445,
+        "validation_mse": 0.2598223388195038
+      },
+      {
+        "epoch": 13,
+        "training_mse": 0.2099747402800454,
+        "validation_mse": 0.2590748071670532
+      },
+      {
+        "epoch": 14,
+        "training_mse": 0.20569390257199605,
+        "validation_mse": 0.253487229347229
+      },
+      {
+        "epoch": 15,
+        "training_mse": 0.20798186626699236,
+        "validation_mse": 0.26156461238861084
+      },
+      {
+        "epoch": 16,
+        "training_mse": 0.2051905184984207,
+        "validation_mse": 0.2692407965660095
+      },
+      {
+        "epoch": 17,
+        "training_mse": 0.20084084338612027,
+        "validation_mse": 0.2690039873123169
+      },
+      {
+        "epoch": 18,
+        "training_mse": 0.1975505921575758,
+        "validation_mse": 0.25864216685295105
+      },
+      {
+        "epoch": 19,
+        "training_mse": 0.19320669107966953,
+        "validation_mse": 0.2556626498699188
+      },
+      {
+        "epoch": 20,
+        "training_mse": 0.19428338077333238,
+        "validation_mse": 0.25964927673339844
+      },
+      {
+        "epoch": 21,
+        "training_mse": 0.19026276932822334,
+        "validation_mse": 0.2585310935974121
+      },
+      {
+        "epoch": 22,
+        "training_mse": 0.1911967264281379,
+        "validation_mse": 0.271828830242157
+      },
+      {
+        "epoch": 23,
+        "training_mse": 0.1886891957786348,
+        "validation_mse": 0.26331138610839844
+      },
+      {
+        "epoch": 24,
+        "training_mse": 0.18616922630204094,
+        "validation_mse": 0.2678600251674652
+      }
+    ],
+    "model": "transformer_lag",
+    "parameters": 9442,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 9,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 128,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-013_EC",
+        "subject": "sub-013",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-011_EC",
+        "subject": "sub-011",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 1,
+        "input_acquisition_span_seconds": 352.0,
+        "last_frame": 176,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-008_EC",
+        "subject": "sub-008",
+        "target_acquisition_span_seconds": 330.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-027_EC",
+        "subject": "sub-027",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-021_EC",
+        "subject": "sub-021",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-005_EC",
+        "subject": "sub-005",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-029_EC",
+        "subject": "sub-029",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.253487229347229,
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  },
+  {
+    "alpha_per_target": [
+      1000.0
+    ],
+    "elapsed_seconds": 0.010055237915366888,
+    "fold": 2,
+    "model": "ridge",
+    "path": [
+      {
+        "alpha": 0.1,
+        "validation_mse": 0.30187129786169087
+      },
+      {
+        "alpha": 1,
+        "validation_mse": 0.2999496905741929
+      },
+      {
+        "alpha": 10,
+        "validation_mse": 0.2882782743440716
+      },
+      {
+        "alpha": 100,
+        "validation_mse": 0.25566569552222373
+      },
+      {
+        "alpha": 1000,
+        "validation_mse": 0.24186488274096601
+      },
+      {
+        "alpha": 10000,
+        "validation_mse": 0.25195759988457295
+      }
+    ],
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse_per_target": [
+      0.24186488274096601
+    ],
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 3,
+    "elapsed_seconds": 0.1438082568347454,
+    "epochs_run": 13,
+    "fit_seconds": 0.1430313140153885,
+    "fold": 2,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.26373557448387147,
+        "validation_mse": 0.27030444145202637
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.23618287179205152,
+        "validation_mse": 0.2574231028556824
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.22235444022549522,
+        "validation_mse": 0.25414109230041504
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.21623573501904805,
+        "validation_mse": 0.25579649209976196
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.21041679051187304,
+        "validation_mse": 0.25467175245285034
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.20459849172168307,
+        "validation_mse": 0.25424301624298096
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.2036286774608824,
+        "validation_mse": 0.26924508810043335
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.19918153087298077,
+        "validation_mse": 0.2606985569000244
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.19046086139149135,
+        "validation_mse": 0.266251802444458
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.18701390557818942,
+        "validation_mse": 0.27811700105667114
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.18589420583513047,
+        "validation_mse": 0.27431225776672363
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.17712156209680768,
+        "validation_mse": 0.2724330425262451
+      },
+      {
+        "epoch": 13,
+        "training_mse": 0.17331431011358897,
+        "validation_mse": 0.28993773460388184
+      }
+    ],
+    "model": "mlp32",
+    "parameters": 9665,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.25414109230041504,
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 25,
+    "elapsed_seconds": 1.2427077763713896,
+    "epochs_run": 35,
+    "fit_seconds": 1.240889981854707,
+    "fold": 2,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.4257900251282586,
+        "validation_mse": 0.30391764640808105
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.2694198144806756,
+        "validation_mse": 0.2816368043422699
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.2606258481740952,
+        "validation_mse": 0.27513885498046875
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.2560002677970462,
+        "validation_mse": 0.27617180347442627
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.254102842675315,
+        "validation_mse": 0.275151789188385
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.2544835925102234,
+        "validation_mse": 0.27781832218170166
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.2540052834484312,
+        "validation_mse": 0.273763507604599
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.2523077176676856,
+        "validation_mse": 0.27373459935188293
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.2491096811162101,
+        "validation_mse": 0.27604174613952637
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.24802911149130927,
+        "validation_mse": 0.2754930257797241
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.24603058497111002,
+        "validation_mse": 0.2757817506790161
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.2433228936460283,
+        "validation_mse": 0.2773456573486328
+      },
+      {
+        "epoch": 13,
+        "training_mse": 0.24125375085406833,
+        "validation_mse": 0.27400338649749756
+      },
+      {
+        "epoch": 14,
+        "training_mse": 0.23839968542257944,
+        "validation_mse": 0.27566802501678467
+      },
+      {
+        "epoch": 15,
+        "training_mse": 0.23820655643939972,
+        "validation_mse": 0.2789839208126068
+      },
+      {
+        "epoch": 16,
+        "training_mse": 0.2374487547410859,
+        "validation_mse": 0.2734959125518799
+      },
+      {
+        "epoch": 17,
+        "training_mse": 0.23750520944595338,
+        "validation_mse": 0.27567601203918457
+      },
+      {
+        "epoch": 18,
+        "training_mse": 0.2318483981821272,
+        "validation_mse": 0.2761330008506775
+      },
+      {
+        "epoch": 19,
+        "training_mse": 0.23268620570500692,
+        "validation_mse": 0.2763005495071411
+      },
+      {
+        "epoch": 20,
+        "training_mse": 0.22717569602860344,
+        "validation_mse": 0.2822449803352356
+      },
+      {
+        "epoch": 21,
+        "training_mse": 0.22454359200265672,
+        "validation_mse": 0.275587797164917
+      },
+      {
+        "epoch": 22,
+        "training_mse": 0.2230788290500641,
+        "validation_mse": 0.2737225890159607
+      },
+      {
+        "epoch": 23,
+        "training_mse": 0.22128065956963433,
+        "validation_mse": 0.278018593788147
+      },
+      {
+        "epoch": 24,
+        "training_mse": 0.23006225956810844,
+        "validation_mse": 0.27092909812927246
+      },
+      {
+        "epoch": 25,
+        "training_mse": 0.21701240142186481,
+        "validation_mse": 0.2703930139541626
+      },
+      {
+        "epoch": 26,
+        "training_mse": 0.21506157914797466,
+        "validation_mse": 0.27192801237106323
+      },
+      {
+        "epoch": 27,
+        "training_mse": 0.21103545857800377,
+        "validation_mse": 0.2707363963127136
+      },
+      {
+        "epoch": 28,
+        "training_mse": 0.20851195057233174,
+        "validation_mse": 0.2704780101776123
+      },
+      {
+        "epoch": 29,
+        "training_mse": 0.21001945601569283,
+        "validation_mse": 0.27838394045829773
+      },
+      {
+        "epoch": 30,
+        "training_mse": 0.2066239701377021,
+        "validation_mse": 0.28370317816734314
+      },
+      {
+        "epoch": 31,
+        "training_mse": 0.20590704083442687,
+        "validation_mse": 0.2805749773979187
+      },
+      {
+        "epoch": 32,
+        "training_mse": 0.2031872166527642,
+        "validation_mse": 0.29264116287231445
+      },
+      {
+        "epoch": 33,
+        "training_mse": 0.20181915379232832,
+        "validation_mse": 0.2810807228088379
+      },
+      {
+        "epoch": 34,
+        "training_mse": 0.20281586315896777,
+        "validation_mse": 0.2981429100036621
+      },
+      {
+        "epoch": 35,
+        "training_mse": 0.2030322876241472,
+        "validation_mse": 0.2893414795398712
+      }
+    ],
+    "model": "transformer_mean",
+    "parameters": 9409,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.2703930139541626,
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  },
+  {
+    "best_epoch": 25,
+    "elapsed_seconds": 1.3432722897268832,
+    "epochs_run": 35,
+    "fit_seconds": 1.341365140862763,
+    "fold": 2,
+    "history": [
+      {
+        "epoch": 1,
+        "training_mse": 0.42545871800846524,
+        "validation_mse": 0.30268123745918274
+      },
+      {
+        "epoch": 2,
+        "training_mse": 0.2693037430445353,
+        "validation_mse": 0.2813155949115753
+      },
+      {
+        "epoch": 3,
+        "training_mse": 0.26039793690045676,
+        "validation_mse": 0.27466070652008057
+      },
+      {
+        "epoch": 4,
+        "training_mse": 0.2555882016817729,
+        "validation_mse": 0.27561789751052856
+      },
+      {
+        "epoch": 5,
+        "training_mse": 0.25364261203342015,
+        "validation_mse": 0.2747466564178467
+      },
+      {
+        "epoch": 6,
+        "training_mse": 0.25384059217241073,
+        "validation_mse": 0.27697229385375977
+      },
+      {
+        "epoch": 7,
+        "training_mse": 0.2534047603607178,
+        "validation_mse": 0.27313733100891113
+      },
+      {
+        "epoch": 8,
+        "training_mse": 0.2515496836768256,
+        "validation_mse": 0.27268871665000916
+      },
+      {
+        "epoch": 9,
+        "training_mse": 0.24819030364354452,
+        "validation_mse": 0.2748269736766815
+      },
+      {
+        "epoch": 10,
+        "training_mse": 0.24680613809161717,
+        "validation_mse": 0.2740500569343567
+      },
+      {
+        "epoch": 11,
+        "training_mse": 0.24493173758188883,
+        "validation_mse": 0.27375268936157227
+      },
+      {
+        "epoch": 12,
+        "training_mse": 0.2424291302760442,
+        "validation_mse": 0.2751799523830414
+      },
+      {
+        "epoch": 13,
+        "training_mse": 0.24077391409211688,
+        "validation_mse": 0.27244317531585693
+      },
+      {
+        "epoch": 14,
+        "training_mse": 0.23740051984786986,
+        "validation_mse": 0.27300825715065
+      },
+      {
+        "epoch": 15,
+        "training_mse": 0.23733948469161986,
+        "validation_mse": 0.27671679854393005
+      },
+      {
+        "epoch": 16,
+        "training_mse": 0.23679577873812782,
+        "validation_mse": 0.2719590365886688
+      },
+      {
+        "epoch": 17,
+        "training_mse": 0.23678218523661296,
+        "validation_mse": 0.2760797441005707
+      },
+      {
+        "epoch": 18,
+        "training_mse": 0.23117784129248725,
+        "validation_mse": 0.27226531505584717
+      },
+      {
+        "epoch": 19,
+        "training_mse": 0.23212060199843512,
+        "validation_mse": 0.27367115020751953
+      },
+      {
+        "epoch": 20,
+        "training_mse": 0.22727283835411072,
+        "validation_mse": 0.28124910593032837
+      },
+      {
+        "epoch": 21,
+        "training_mse": 0.2242949836783939,
+        "validation_mse": 0.2758626341819763
+      },
+      {
+        "epoch": 22,
+        "training_mse": 0.22422471112675138,
+        "validation_mse": 0.2728458642959595
+      },
+      {
+        "epoch": 23,
+        "training_mse": 0.220780662033293,
+        "validation_mse": 0.28299450874328613
+      },
+      {
+        "epoch": 24,
+        "training_mse": 0.23140599462721084,
+        "validation_mse": 0.2724018692970276
+      },
+      {
+        "epoch": 25,
+        "training_mse": 0.21668860912322999,
+        "validation_mse": 0.2697196304798126
+      },
+      {
+        "epoch": 26,
+        "training_mse": 0.21492189235157436,
+        "validation_mse": 0.275083988904953
+      },
+      {
+        "epoch": 27,
+        "training_mse": 0.20994481245676677,
+        "validation_mse": 0.2749263644218445
+      },
+      {
+        "epoch": 28,
+        "training_mse": 0.20625054472022586,
+        "validation_mse": 0.27300727367401123
+      },
+      {
+        "epoch": 29,
+        "training_mse": 0.2078255858686235,
+        "validation_mse": 0.28531134128570557
+      },
+      {
+        "epoch": 30,
+        "training_mse": 0.2039429121547275,
+        "validation_mse": 0.28547441959381104
+      },
+      {
+        "epoch": 31,
+        "training_mse": 0.20276630802286996,
+        "validation_mse": 0.28845444321632385
+      },
+      {
+        "epoch": 32,
+        "training_mse": 0.20024259156650967,
+        "validation_mse": 0.30290138721466064
+      },
+      {
+        "epoch": 33,
+        "training_mse": 0.19820628397994572,
+        "validation_mse": 0.2876964509487152
+      },
+      {
+        "epoch": 34,
+        "training_mse": 0.19970176286167568,
+        "validation_mse": 0.3055446147918701
+      },
+      {
+        "epoch": 35,
+        "training_mse": 0.20003622968991597,
+        "validation_mse": 0.297282338142395
+      }
+    ],
+    "model": "transformer_lag",
+    "parameters": 9442,
+    "training_rows": [
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-010_EC",
+        "subject": "sub-010",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-006_EC",
+        "subject": "sub-006",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 261.99998474121094,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-014_EC",
+        "subject": "sub-014",
+        "target_acquisition_span_seconds": 239.99998474121094
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 131,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-009_EC",
+        "subject": "sub-009",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-023_EC",
+        "subject": "sub-023",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-019_EC",
+        "subject": "sub-019",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-024_EC",
+        "subject": "sub-024",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-018_EC",
+        "subject": "sub-018",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-025_EC",
+        "subject": "sub-025",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-002_EC",
+        "subject": "sub-002",
+        "target_acquisition_span_seconds": 240.0
+      },
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.00001525878906,
+        "last_frame": 129,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-012_EC",
+        "subject": "sub-012",
+        "target_acquisition_span_seconds": 240.00001525878906
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 262.0,
+        "last_frame": 130,
+        "n_frames": 120,
+        "retained_target_seconds": 240,
+        "run": "sub-004_EC",
+        "subject": "sub-004",
+        "target_acquisition_span_seconds": 240.0
+      }
+    ],
+    "validation_mse": 0.2697196304798126,
+    "validation_rows": [
+      {
+        "first_frame": 10,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 382.0,
+        "last_frame": 189,
+        "n_frames": 180,
+        "retained_target_seconds": 360,
+        "run": "sub-020_EC",
+        "subject": "sub-020",
+        "target_acquisition_span_seconds": 360.0
+      },
+      {
+        "first_frame": 12,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 378.0,
+        "last_frame": 189,
+        "n_frames": 178,
+        "retained_target_seconds": 356,
+        "run": "sub-015_EC",
+        "subject": "sub-015",
+        "target_acquisition_span_seconds": 356.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-022_EC",
+        "subject": "sub-022",
+        "target_acquisition_span_seconds": 358.0
+      },
+      {
+        "first_frame": 11,
+        "gaps": 0,
+        "input_acquisition_span_seconds": 380.0,
+        "last_frame": 189,
+        "n_frames": 179,
+        "retained_target_seconds": 358,
+        "run": "sub-026_EC",
+        "subject": "sub-026",
+        "target_acquisition_span_seconds": 358.0
+      }
+    ]
+  }
+]

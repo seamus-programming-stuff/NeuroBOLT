@@ -1,0 +1,24 @@
+{
+  "job_id": "61455229",
+  "initial_state": "PENDING (Priority)",
+  "protocol_sha256": "24e4f3af183a31cc336a0ee99f8487ec3ecc669f7cc464c44af81d77dc3fcb74",
+  "remote_output_directory": "/projects/hz18/stay0060/NeuroBOLT/reports/architecture_briefing/pilot/20261026_ec_global_v1",
+  "remote_stdout": "/projects/hz18/stay0060/NeuroBOLT/reports/architecture_briefing/pilot/architecture-61455229.out",
+  "remote_stderr": "/projects/hz18/stay0060/NeuroBOLT/reports/architecture_briefing/pilot/architecture-61455229.err",
+  "local_tests_passed": 10,
+  "allocation": {
+    "gpus": 1,
+    "cpus": 4,
+    "mem_GB": 32,
+    "wall_minutes": 90
+  },
+  "scope": "exploratory cached EC/global-BOLD development prototype; not a NeuroBOLT replacement",
+  "final_state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed_seconds": 216,
+  "all_fits": 12,
+  "outer_people": 27,
+  "verification": "verification.json",
+  "raw_summary_preserved": "summary.json",
+  "post_audit_summary": "summary_verified.json"
+}

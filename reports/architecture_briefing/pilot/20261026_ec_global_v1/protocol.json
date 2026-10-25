@@ -1,0 +1,483 @@
+{
+  "base_protocol": "reports/thesis_exploration/data/protocol.json",
+  "base_protocol_sha256": "59505927a5f9073c0c1fda106baa161576b18e1c58db74838dc28f036050032e",
+  "batch_size": 128,
+  "cache": "reports/thesis_exploration/data/features_causal.npz",
+  "contrasts": [
+    [
+      "transformer_lag",
+      "transformer_mean"
+    ],
+    [
+      "transformer_lag",
+      "ridge"
+    ],
+    [
+      "transformer_mean",
+      "ridge"
+    ],
+    [
+      "mlp32",
+      "ridge"
+    ]
+  ],
+  "created_utc": "2026-10-25T15:25:15.503629+00:00",
+  "ec_manifest": [
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-002_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-004_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-005_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-006_EC"
+    },
+    {
+      "first": 31,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 159,
+      "run": "sub-007_EC"
+    },
+    {
+      "first": 12,
+      "gaps": 1,
+      "last": 189,
+      "n_frames": 133,
+      "run": "sub-008_EC"
+    },
+    {
+      "first": 12,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 178,
+      "run": "sub-009_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-010_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-011_EC"
+    },
+    {
+      "first": 10,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 180,
+      "run": "sub-012_EC"
+    },
+    {
+      "first": 9,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 181,
+      "run": "sub-013_EC"
+    },
+    {
+      "first": 10,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 180,
+      "run": "sub-014_EC"
+    },
+    {
+      "first": 12,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 178,
+      "run": "sub-015_EC"
+    },
+    {
+      "first": 14,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 176,
+      "run": "sub-016_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-017_EC"
+    },
+    {
+      "first": 10,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 180,
+      "run": "sub-018_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-019_EC"
+    },
+    {
+      "first": 10,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 180,
+      "run": "sub-020_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-021_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-022_EC"
+    },
+    {
+      "first": 10,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 180,
+      "run": "sub-023_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-024_EC"
+    },
+    {
+      "first": 10,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 180,
+      "run": "sub-025_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-026_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-027_EC"
+    },
+    {
+      "first": 10,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 180,
+      "run": "sub-028_EC"
+    },
+    {
+      "first": 11,
+      "gaps": 0,
+      "last": 189,
+      "n_frames": 179,
+      "run": "sub-029_EC"
+    }
+  ],
+  "feature_sha256": "d0857caad515135b091a2e23b6609762892feb99d6711ad37f4671141e597863",
+  "folds": [
+    {
+      "fold": 0,
+      "test_people": [
+        "sub-020",
+        "sub-015",
+        "sub-022",
+        "sub-026",
+        "sub-010",
+        "sub-006",
+        "sub-014",
+        "sub-009",
+        "sub-023"
+      ],
+      "training_order": [
+        "sub-002",
+        "sub-012",
+        "sub-004",
+        "sub-017",
+        "sub-016",
+        "sub-013",
+        "sub-011",
+        "sub-008",
+        "sub-027",
+        "sub-021",
+        "sub-005",
+        "sub-029",
+        "sub-028",
+        "sub-007"
+      ],
+      "training_people_levels": {
+        "12": [
+          "sub-002",
+          "sub-012",
+          "sub-004",
+          "sub-017",
+          "sub-016",
+          "sub-013",
+          "sub-011",
+          "sub-008",
+          "sub-027",
+          "sub-021",
+          "sub-005",
+          "sub-029"
+        ],
+        "4": [
+          "sub-002",
+          "sub-012",
+          "sub-004",
+          "sub-017"
+        ]
+      },
+      "validation_people": [
+        "sub-019",
+        "sub-024",
+        "sub-018",
+        "sub-025"
+      ]
+    },
+    {
+      "fold": 1,
+      "test_people": [
+        "sub-019",
+        "sub-024",
+        "sub-018",
+        "sub-025",
+        "sub-002",
+        "sub-012",
+        "sub-004",
+        "sub-017",
+        "sub-016"
+      ],
+      "training_order": [
+        "sub-010",
+        "sub-006",
+        "sub-014",
+        "sub-009",
+        "sub-023",
+        "sub-013",
+        "sub-011",
+        "sub-008",
+        "sub-027",
+        "sub-021",
+        "sub-005",
+        "sub-029",
+        "sub-028",
+        "sub-007"
+      ],
+      "training_people_levels": {
+        "12": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009",
+          "sub-023",
+          "sub-013",
+          "sub-011",
+          "sub-008",
+          "sub-027",
+          "sub-021",
+          "sub-005",
+          "sub-029"
+        ],
+        "4": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009"
+        ]
+      },
+      "validation_people": [
+        "sub-020",
+        "sub-015",
+        "sub-022",
+        "sub-026"
+      ]
+    },
+    {
+      "fold": 2,
+      "test_people": [
+        "sub-013",
+        "sub-011",
+        "sub-008",
+        "sub-027",
+        "sub-021",
+        "sub-005",
+        "sub-029",
+        "sub-028",
+        "sub-007"
+      ],
+      "training_order": [
+        "sub-010",
+        "sub-006",
+        "sub-014",
+        "sub-009",
+        "sub-023",
+        "sub-019",
+        "sub-024",
+        "sub-018",
+        "sub-025",
+        "sub-002",
+        "sub-012",
+        "sub-004",
+        "sub-017",
+        "sub-016"
+      ],
+      "training_people_levels": {
+        "12": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009",
+          "sub-023",
+          "sub-019",
+          "sub-024",
+          "sub-018",
+          "sub-025",
+          "sub-002",
+          "sub-012",
+          "sub-004"
+        ],
+        "4": [
+          "sub-010",
+          "sub-006",
+          "sub-014",
+          "sub-009"
+        ]
+      },
+      "validation_people": [
+        "sub-020",
+        "sub-015",
+        "sub-022",
+        "sub-026"
+      ]
+    }
+  ],
+  "global_index": 64,
+  "gradient_clip": 5.0,
+  "input": "300 cached log-power values, flatten[group=5,band=5,lag=12]; tokenize N5,5,12 -> N12,25",
+  "intervals": "2000 paired person bootstrap resamples, seed 20261026; exploratory, no multiplicity correction; shared training sets not fully accounted for",
+  "learning_rate": 0.001,
+  "limitations": [
+    "previously explored development people and outcomes",
+    "one seed",
+    "engineered spectral features, not raw/STFT NeuroBOLT tokens",
+    "inherited retrospective cleaning/BOLD normalization and future-margin QC",
+    "global target only; no regional specificity, prospective, clinical or external claim"
+  ],
+  "limits": {
+    "cpu_hours_cap": 8,
+    "cpus": 4,
+    "gpu_allocations": 1,
+    "gpu_hours_cap": 2,
+    "memory_GB": 32,
+    "process_minutes": 80,
+    "wall_minutes": 90
+  },
+  "max_epochs": 60,
+  "mlp": "300 -> 32 GELU -> 1",
+  "models": [
+    "ridge",
+    "mlp32",
+    "transformer_mean",
+    "transformer_lag"
+  ],
+  "objective": "same scalar MSE on raw cached normalized BOLD for all models; no output z-score or calibration",
+  "optimizer": "AdamW",
+  "outer_access": "only after all 12 model-fold selections complete; no test-guided retries or scope change",
+  "parameter_counts": {
+    "mlp32": 9665,
+    "transformer_lag": 9442,
+    "transformer_mean": 9409
+  },
+  "patience": 10,
+  "primary": "equal-person mean raw predictive_R2, per-person denominator sum(y - that evaluation run mean)^2",
+  "profile_gate": "first fold all four fits use train/validation only; conservative 1.5x extrapolation of three-fold runtime + 120s must fit remaining 80min process budget; otherwise stop CAP_BLOCKED before any outer score",
+  "retained_target_seconds_per_person": 240,
+  "ridge_alphas": [
+    0.1,
+    1,
+    10,
+    100,
+    1000,
+    10000
+  ],
+  "ridge_parameters": 301,
+  "scope": "exploratory reused-development-data teaching prototype; NOT a NeuroBOLT modification or fresh confirmation",
+  "secondary": [
+    "Pearson_r",
+    "RMSE",
+    "SD_ratio",
+    "negative_R2_frequency",
+    "undefined_r_frequency",
+    "training_mean_R2"
+  ],
+  "seed": 41,
+  "selection": "minimum equal-person inner-validation scalar MSE; improvement tolerance 1e-7; no validation refit",
+  "source_sha256": {
+    "architecture_pilot.py": "a19d6d629d1641424b0137da700154e45a5d5e3c9ce1d9bbb698042ded6b5c65",
+    "architecture_pilot_m3.sbatch": "f8ceb9ec45870d811cff5d640173d5846f6c1100e966c17b62e761d216823e34",
+    "architecture_pilot_tests.py": "f5cad0b7448b86655b77379e468b4c6ed00199a7f9b90b73d6f772c8d6a04fe1",
+    "thesis_data.py": "94b7c979ebbce1bc7c6d02550de14d093de6d6941f0411527762dd87a6a49312",
+    "thesis_study.py": "b4dcd002ee57cbfb51b773d9802a7b09f911b9e1cda86e3e45d46768b9831447"
+  },
+  "study": "architecture_lag_token_ec_global_v1",
+  "target": "global signal clean",
+  "training_frame_selection": "first 120 retained EC frames/person, same thesis_study.stack helper; gaps retained",
+  "training_people": 12,
+  "transformer": {
+    "activation": "gelu",
+    "comparison": "separately trained from identical encoder/head initialization; not a frozen common encoder",
+    "dropout": 0.1,
+    "feedforward": 64,
+    "heads": 2,
+    "input_width": 25,
+    "layers": 1,
+    "learned_pool": "Linear(32,1) content logits -> softmax over lag -> weighted sum; zero logits at initialization",
+    "mean_pool": "uniform over lag tokens",
+    "norm_first": false,
+    "position": "fixed sinusoidal",
+    "tokens": 12,
+    "width": 32
+  },
+  "transforms": "training-only median imputation, feature mean/SD from selected frames; apply unchanged to validation/test",
+  "validation_test_selection": "all eligible EC rows for those original person sets; no EO",
+  "weight_decay": 0.01
+}
