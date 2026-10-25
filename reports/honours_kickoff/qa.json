@@ -1,0 +1,21 @@
+{
+  "referenceSha256": "b1b15cb0c23ad524f9832749ec31b775719bae2bdba897de9c9d8556ca00a44c",
+  "sourceUnchanged": true,
+  "sourceFramesChecked": 99,
+  "missingOriginalShapes": [],
+  "frameChanges": [],
+  "pdfPages": 12,
+  "pdfSizePoints": [
+    960.0,
+    540.0
+  ],
+  "pdfTextExtractable": true,
+  "pptxSha256": "fa4a9ae9ac475b230421189847c44ac893b6fc399c858b971129319f794a31e4",
+  "pptxUnchangedByPdfExport": true,
+  "pdfSha256": "86774abf81ebf2921de8d6d4e0557db05fc6558847e29a89cdee3eaa81ffc8da",
+  "pdfExporter": "Microsoft PowerPoint, read-only document opened without a visible window",
+  "templateFamilyGate": "The unmodified reference fails duplicate_placeholder_identity even when checked against itself. Original frames and all slide renders checked separately.",
+  "intentionalContentChange": "Checkerboard picture placeholder replaced with editable method diagram inside its original frame.",
+  "knownSourceGeometry": "Slide 8 timeline extends beyond the canvas in the reference and output, preserving the original crop.",
+  "scope": "Planning only. No new model runs, raw downloads or external contacts."
+}

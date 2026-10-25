@@ -1,5 +1,9 @@
 # EEG to fMRI thesis exploration
 
+For the introductory honours project and optional student-team version, start
+with the [Monash EEG project kickoff](../honours_kickoff/README.md). The evidence
+below remains background for the optional paired EEG-to-BOLD extension.
+
 The current poster and explanatory guide synthesize the reviewed literature and
 completed M3 experiments. Revision 3 develops the explanatory structure of the
 supplied examples: background, technique, evaluation and further research.

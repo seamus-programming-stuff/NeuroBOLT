@@ -8,6 +8,12 @@ scripts/build_poster_reading_guide.py text=auto eol=lf
 scripts/requirements_poster.txt text=auto eol=lf
 scripts/build_clinical_feasibility_pdf.py text=auto eol=lf
 scripts/build_research_poster.py text=auto eol=lf
+scripts/build_honours_kickoff.mjs text=auto eol=lf
+scripts/export_honours_kickoff_pdf.ps1 text=auto eol=lf
+"reports/Monash honours EEG project.md" text=auto eol=lf
+"research_notes/Monash honours EEG project/**" text=auto eol=lf
+reports/honours_kickoff/** text=auto eol=lf
+output/presentations/*.pptx binary
 "reports/Clinical EEG to fMRI feasibility.md" text=auto eol=lf
 "research_notes/Clinical EEG to fMRI feasibility/**" text=auto eol=lf
 reports/poster/*.md text=auto eol=lf

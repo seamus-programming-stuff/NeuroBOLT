@@ -1,0 +1,69 @@
+{
+  "status": "Planning proposal, not a record of new experiments",
+  "date": "2026-10-26",
+  "slides": [
+    {
+      "number": 1,
+      "text": ["EEG AI Honours\nProject Kickoff", "A project for one student, with room for a team", "26 October 2026"],
+      "notes": "Audience: an introductory computer science honours student and potential supervisor/team. This proposal replaces the earlier PhD-programme framing. The project is successful when the student can reproduce, explain and evaluate a controlled study. A transformer improvement is a hypothesis, not a promised deliverable. No new experiments were run for this kickoff."
+    },
+    {
+      "number": 2,
+      "text": ["Project kickoff"],
+      "table": [["01", "A clear question and a useful demo", "Student"], ["02", "Existing work we can reuse", "Student"], ["03", "Monash resources and dataset access", "Supervisor"], ["04", "One controlled model comparison", "Student"], ["05", "Milestones and optional team roles", "Team"], ["06", "Learning, risks and first decisions", "Together"]],
+      "notes": "Role labels are proposed responsibilities. No named supervisor or team member has agreed to participate. Confirm honours course requirements, available time and supervision before treating this as an assessment plan."
+    },
+    {
+      "number": 3,
+      "text": ["The core project", "A question we can answer\nCan EEG features predict reported sleep experience in unseen participants? Compare a simple spectral classifier with a tiny transformer.", "A result we can demonstrate\nBuild an EEG model-comparison viewer. Show the features, report labels, predictions and failure cases. Keep EEG-to-BOLD as a separate extension."],
+      "notes": "Recommended starter: the public Zhang and Wamsley 2019 subset in the Monash-associated DREAM collection. Labels are participant reports (0=no experience, 2=experience), not dream content or a definitive test of consciousness. First audit sleep-stage availability and label balance within stages. The diagram describes a proposed offline classification study, not a completed model or clinical device. If BOLD prediction is essential, the existing ds006040 compact feature cache is a faster continuity alternative, subject to reuse checks. Sources: https://figshare.com/articles/dataset/Zhang_Wamsley_2019_Final/22226692 ; https://api.figshare.com/v2/articles/22226692 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC12350935/ ."
+    },
+    {
+      "number": 4,
+      "text": ["One question, three concrete deliverables", "A reproducible baseline\nAudit one EEG subset. Fit a spectral logistic classifier with participant-grouped splits. Include majority and sleep-stage controls.", "An explanatory demo\nShow signals, scores and failures. Include a short report and a walkthrough the student can give without relying on AI-written explanations.", "One transformer study\nAfter the baseline works, compare mean pooling with learned time-bin weighting. Keep the same features and split. A clear negative result counts.", "BASELINE", "MODEL CHANGE", "DEMO"],
+      "notes": "The proposed pooling change is a bounded teaching experiment, not a claimed novel architecture or physiological explanation. Use identical window features, a tiny encoder and a shared evaluation. It is optional until ingestion, label balance and the baseline work. Include a stage-only control or a stage-matched analysis where the labels support it. If categories do not vary within stage/participant sufficiently, report the confounding limit rather than interpreting classification as an experience-specific marker. Original analysis to reproduce in part: https://zenodo.org/records/15234846 ."
+    },
+    {
+      "number": 5,
+      "text": ["Monash resources worth using", "M3 and eResearch\nReuse the working cluster connection. Confirm CI-led project access and limits. Use CPU baselines, a GPU pilot and HPC training or drop-ins.", "DREAM and Turner\nStart with a public DREAM subset. Seek a sleep/EEG adviser through a supervisor. A Monash-hosted collection is not automatically Monash-collected data.", "Biomedical Imaging\nMBI lists EEG and simultaneous EEG-fMRI support. Treat new recordings as optional, with facility training, ethics, bookings and a budget.", "IT and DeepNeuron\nThe IT EEG representation-learning project is a supervision lead. DeepNeuron offers a possible AI/HPC student community. Places and collaboration need confirmation."],
+      "notes": "Checked 26 October 2026. A read-only M3 squeue check succeeded and showed no current jobs for this account; this is not a new student's entitlement or unrestricted allocation. No jobs were submitted. M3 is not certified for sensitive data; establish classification and an approved platform before a controlled clinical extension. MAVERIC is a conditional specialised route, not required for the starter. Some MBI details were available only in indexed official text, not a live booking check. Sources: https://docs.erc.monash.edu/Compute/HPC/M3/ ; https://docs.erc.monash.edu/Compute/HPC/M3/GettingStarted/CreateM3Project/ ; https://docs.erc.monash.edu/Compute/HPC/M3/TermsOfUse/ ; https://docs.erc.monash.edu/Training/DropInSessions/ ; https://www.monash.edu/researchinfrastructure/mbi/facilities/human/eeg ; https://www.monash.edu/researchinfrastructure/mbi/forms-and-policies ; https://www.supervisorconnect.it.monash.edu/index.php/projects/research/learning-massive-amounts-eeg-data ."
+    },
+    {
+      "number": 6,
+      "text": ["One public subset, with a workable fallback", "DREAM is the starter\nPaired fMRI is an extension", "Zhang and Wamsley subset: 28 participants and 308 catalogued cases, under CC BY 4.0. The collection is Monash-associated; this cohort was collected at Furman University.\nAudit usable cases and sleep-stage confounding before training.", "Fallback: Sleep-EDF\nUse one EEG derivation and scored sleep stages. Keep both nights from each person in the same partition.", "Extension: ds006040\nReuse the paired EEG-fMRI pipeline if needed. It released 28 people; our earlier analysis retained 27."],
+      "notes": "DREAM counts are catalogue counts, not a completed raw-recording QC audit. The selected public package separately declares CC BY 4.0. Other DREAM packages can have different access conditions. EEG-only recordings have no measured BOLD target. Sleep-EDF has 197 recordings overall, not 197 people; the cassette cohort has 78 participant IDs across 153 recordings. ds006040 snapshot 1.0.2 is CC0. Sources: https://figshare.com/articles/dataset/Zhang_Wamsley_2019_Final/22226692 ; https://api.figshare.com/v2/articles/22226692 ; https://bridges.monash.edu/articles/dataset/The_DREAM_database/22133105/9 ; https://physionet.org/content/sleep-edfx/1.0.0/sleep-cassette/ ; https://mne.tools/stable/auto_tutorials/clinical/60_sleep.html ; https://openneuro.org/datasets/ds006040/versions/1.0.2 . Existing ds006040/VU tests were already explored; reusing them is an educational development benchmark, not fresh confirmation."
+    },
+    {
+      "number": 7,
+      "text": ["One student first, a team when useful", "A dataset card, fixed EEG windows, participant splits and a small quality-control report.", "Data and QC", "A spectral classifier and tiny transformer sharing the same inputs and prediction format.", "Models", "Scores with uncertainty over people, sleep-stage controls and a leakage audit.", "Evaluation", "A results viewer, failure examples, installation steps and the advisor presentation.", "Demo and guide", "One student owns the complete small pipeline. A team of three or four can divide these roles once the baseline works. Each person should explain the shared experiment and identify their own contribution."],
+      "notes": "Suggested integration contract: dataset_id, participant_id, run_id, time_s, fold, split, target_name, y_true, y_pred, model_id and seed in the prediction table. Use immutable split/config manifests, shared metric code and small synthetic fixtures. Never infer independent sample size from overlapping windows. The optional team size is a planning suggestion, not an approved Monash programme."
+    },
+    {
+      "number": 8,
+      "text": ["An example 12-week starting phase", "Weeks 1-4", "Weeks 5-8", "Weeks 9-12", "One controlled study\nRun a GPU pilot. Freeze the comparison. Test pooling and inspect errors before considering an extension.", "A baseline we understand\nConfirm labels and splits. Plot the EEG. Fit the spectral classifier and check sleep-stage controls.", "A result we can communicate\nPackage the demo and code. Write the report. Present the limitations and a justified next step."],
+      "notes": "This is a proposed first 12-week phase, not a statement of Monash honours duration or official deadlines. Confirm the unit calendar and expected thesis scope with the supervisor. The baseline and demo are the minimum deliverable. If access is delayed, use the public EEG fallback by week 2. If model training fails, report the baseline, diagnosed failure and a working demo."
+    },
+    {
+      "number": 9,
+      "text": ["A controlled study with a fixed budget", "Logistic classifier, tiny transformer and pooling variant.", "Proposed GPU-hour ceiling for the initial study. Review after one pilot fit.", "One pooling change after the baseline and data checks work.", "3", "1", "24 h", "Proposed starting limits\nBegin with CPU baselines and fewer than 20,000 transformer parameters. Include majority and sleep-stage controls. Select on validation; report balanced accuracy, macro F1 and uncertainty over people. Freeze a budget before evaluation. These are teaching choices."],
+      "notes": "Three study configurations plus majority and stage-only controls. The 24 GPU-hour cap is a proposed ceiling, not an entitlement or runtime estimate. Profile one validation-only fit before setting the actual cap. A possible tiny encoder has width 32, one layer, two heads and channel-averaged band features per time bin; confirm window duration from the recordings, then record the true parameter count. Compare mean pooling with learned time-bin weighting while keeping the encoder and inputs fixed. The subset is small, so overfitting is plausible and a transformer loss is informative. Evaluate with participant-grouped folds; define label support and undefined metrics, keep model selection in inner validation, and bootstrap people rather than windows. A new split does not erase any earlier test exposure. Attention or pooling weights do not prove mechanism. EEG-only metrics differ from the optional BOLD route, which requires r, raw predictive R2, error in target units and person-level comparisons."
+    },
+    {
+      "number": 10,
+      "text": ["Milestones and checkpoints", "Controlled model study", "Documentation and explain-back throughout", "Demo and final write-up", "Baseline and evaluation checks", "Data and feature pipeline", "Access and project scope"],
+      "table": [["Weeks 1-2", "Weeks 3-4", "Weeks 5-7", "Weeks 8-10", "Weeks 11-12"]],
+      "notes": "Indicative overlapping work packages for the first 12 weeks. Match bar spans and exact deadlines to the actual course timetable at kickoff. Gate 1: usable data and a justified split. Gate 2: reproducible baseline. Gate 3: a fixed small comparison within compute cap. Gate 4: demo and honest report. A transformer gain is not a completion criterion."
+    },
+    {
+      "number": 11,
+      "text": ["A four-week learning and review cycle", "Data and permissions", "Explain one window", "Baseline walkthrough", "Pooling experiment", "Failure-case review", "Supervisor demo"],
+      "table": [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], ["Week 1", "", "", "", ""], ["Week 2", "", "", "", ""], ["Week 3", "", "", "", ""], ["Week 4", "", "", "", ""]],
+      "notes": "The calendar is illustrative, not booked meetings or a claim that the full pipeline fits into four weeks. Teach-back questions: what is the report label, what is a participant/window, what does spectral power measure, how does regularisation work, how do attention and pooling differ, why might sleep stage explain the result, and which data choose settings? For BOLD extensions add haemodynamic timing and r versus predictive R2. AI can draft code, checks and captions. The student should trace a score to its source rows, make a small unaided code change and explain failures. Document AI assistance and follow the unit's actual assessment policy."
+    },
+    {
+      "number": 12,
+      "text": ["Start small\nExplain the result", "Next decision: dataset, supervisor and available time", "Honours project proposal"],
+      "notes": "First decisions: confirm supervisor and official course requirements; choose DREAM starter or existing paired-cache continuity route; confirm data reuse/ethics route and compute limits; agree the baseline/demo deliverables; identify a domain adviser and whether extra students add useful capacity. Candidate student applications are a sleep-EEG model-comparison viewer or a research BOLD-prediction replay. Report-label classification does not decode dreams. Independent endpoints and clinical validation would be needed for patient-facing use. Keep new recording and patient-data projects optional. Read the source-linked opportunity brief and the reusable AI working prompt in reports/honours_kickoff/."
+    }
+  ]
+}
