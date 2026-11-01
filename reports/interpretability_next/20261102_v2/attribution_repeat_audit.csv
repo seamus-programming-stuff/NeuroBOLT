@@ -1,0 +1,13 @@
+model,kind,min,max,nunique
+NeuroBOLT,band,0,1,2
+NeuroBOLT,channel,0,0,1
+NeuroBOLT,region,0,1,2
+NeuroBOLT,segment,0,1,2
+NeuroBOLT (published),band,0,1,2
+NeuroBOLT (published),channel,0,0,1
+NeuroBOLT (published),region,0,1,2
+NeuroBOLT (published),segment,0,1,2
+ridge,band,0,1,2
+ridge,channel,0,0,1
+ridge,region,0,1,2
+ridge,segment,0,1,2

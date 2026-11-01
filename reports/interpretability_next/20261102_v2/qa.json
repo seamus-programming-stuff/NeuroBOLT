@@ -1,0 +1,22 @@
+{
+  "PDF_sha256": "0d0d87521e352ebdafda476419d8f090b8e116a9b2ec0cb566eb958b0091e105",
+  "pages": 10,
+  "size_points": [
+    960,
+    540
+  ],
+  "speaker_notes": 10,
+  "scientific_figures": 11,
+  "source_formats": [
+    "SVG",
+    "PDF",
+    "PNG"
+  ],
+  "relative_document_links_exist": true,
+  "no_replacement_glyphs": true,
+  "visual_review": "All ten full-size slide renders reviewed. Layout changes re-rendered and checked; final captions checked on slide5.",
+  "known_incomplete_methods": "CKA/IG blocked by complete-CV provenance gate; no neural passes or new fits.",
+  "scientific_verification": "11223 raw-R2 rows and both primary person-level bootstrap/sign-flip contrasts independently reproduced; see verification.json.",
+  "renderer_sha256": "292e959c6aa03cbe6becf28a30b2848ec87a953742e9a61c067dff374c0e026d",
+  "protocol_sha256": "e36677989f3e7c456649ddbde194ff06ed8e78a6240f2a9103c3b8426994c8fd"
+}

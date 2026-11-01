@@ -1,0 +1,22 @@
+{
+  "state": "QUALIFIED",
+  "local_checkpoint": "checkpoints/Thalamus.pth",
+  "SHA256": "347627c36310492d180519ac88f16b478ad2658be865ed8cd430cc0bdad1833a",
+  "same_hash_remote_paths": [
+    "/projects/hz18/stay0060/NeuroBOLT/checkpoints/Thalamus.pth",
+    "/projects/hz18/stay0060/NeuroBOLT/checkpoints/published/Thalamus.pth"
+  ],
+  "metadata_inspection": "Read ZIP data.pkl using pickletools.genops only; did not unpickle objects, import Torch, build a model or perform a neural pass.",
+  "serialized_key_value": {
+    "train_test_mode": "same_sub_same_scan"
+  },
+  "observed_opcodes": [
+    ["BINUNICODE", "train_test_mode"],
+    ["LONG_BINPUT", 8579],
+    ["BINUNICODE", "same_sub_same_scan"],
+    ["LONG_BINPUT", 8580]
+  ],
+  "conclusion": "This file does not establish unseen-person performance. Do not infer the training modes of every other published checkpoint from this one file.",
+  "presentation_handling": "Omit the published-checkpoint curve from the historical perturbation figure, explicitly for provenance. Retain all original results and all123-model-part tests in the frozen outputs.",
+  "P2": "BLOCKED; no complete verified shared cross-person CV checkpoint set"
+}

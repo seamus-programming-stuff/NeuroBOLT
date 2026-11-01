@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="208.44pt" viewBox="0 0 628.2 208.44" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T02:05:23.530452</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 208.44 
+L 628.2 208.44 
+L 628.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 12.78 131.94 
+L 129.96 131.94 
+L 129.96 82.044 
+L 12.78 82.044 
+z
+" clip-path="url(#p50c2ab9f0d)" style="fill: #eaf4fa; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 180.18 76.5 
+L 353.16 76.5 
+L 353.16 21.06 
+L 180.18 21.06 
+z
+" clip-path="url(#p50c2ab9f0d)" style="fill: #eaf4fa; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 180.18 167.976 
+L 353.16 167.976 
+L 353.16 112.536 
+L 180.18 112.536 
+z
+" clip-path="url(#p50c2ab9f0d)" style="fill: #eaf4fa; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 414.54 131.94 
+L 604.26 131.94 
+L 604.26 82.044 
+L 414.54 82.044 
+z
+" clip-path="url(#p50c2ab9f0d)" style="fill: #fff0df; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 131.305616 105.506517 
+Q 155.070129 79.271857 177.633687 54.362984 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 172.21569 56.471373 
+L 177.633687 54.362984 
+L 176.0696 59.962415 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 131.624396 108.094438 
+Q 155.067945 123.622639 177.020123 138.163006 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 174.120634 133.123863 
+L 177.020123 138.163006 
+L 171.249115 137.459111 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 354.645423 52.893672 
+Q 383.848782 79.2709 411.724627 104.449082 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 409.608437 99.034127 
+L 411.724627 104.449082 
+L 406.122949 102.893061 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 354.917032 139.303802 
+Q 383.849674 123.624177 411.209568 108.796879 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 405.398953 108.9886 
+L 411.209568 108.796879 
+L 407.876576 113.560404 
+" clip-path="url(#p50c2ab9f0d)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="71.37" y="100.376931" transform="rotate(-0 71.37 100.376931)">EEG history</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(36.850234 112.192216)">26 electrodes</text>
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(34.295078 124.708573)">16 s at 200 Hz</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="266.67" y="41.056258" transform="rotate(-0 266.67 41.056258)">Temporal branch</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(204.67332 54.922696)">LaBraM tokens → mean</text>
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(234.705391 67.439053)">200 features</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="266.67" y="132.532258" transform="rotate(-0 266.67 132.532258)">Spectral branch</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(209.78543 146.398583)">Multiscale magnitudes</text>
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(215.212891 158.915165)">832 tokens → mean</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="509.4" y="100.377058" transform="rotate(-0 509.4 100.377058)">Add + GELU + linear</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11.5px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="509.4" y="118.453539" transform="rotate(-0 509.4 118.453539)">One value per BOLD target</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11px; font-family: 'Arial'; text-anchor: middle; fill: #6c7f8b" x="314.1" y="197.261859" transform="rotate(-0 314.1 197.261859)">At 24 seconds the spectral sequence has 1,248 tokens; dense time maps are learned indices.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p50c2ab9f0d">
+   <rect x="7.2" y="7.2" width="613.8" height="194.04"/>
+  </clipPath>
+ </defs>
+</svg>

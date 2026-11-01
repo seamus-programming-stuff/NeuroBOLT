@@ -1,0 +1,34 @@
+{
+  "raw7_63": {
+    "n_people": 22,
+    "mean_r": 0.3810763422436356,
+    "p": 0.0001,
+    "null_lo": -0.02180514665734078,
+    "null_hi": 0.021909438214505774,
+    "stationarity_assumed": true
+  },
+  "raw7_126": {
+    "n_people": 22,
+    "mean_r": 0.3810763422436356,
+    "p": 0.0001,
+    "null_lo": -0.02245488576282062,
+    "null_hi": 0.021983947038518824,
+    "stationarity_assumed": true
+  },
+  "gsr64_63": {
+    "n_people": 22,
+    "mean_r": 0.14383618741355017,
+    "p": 0.0001,
+    "null_lo": -0.010046396905395123,
+    "null_hi": 0.009346303715807611,
+    "stationarity_assumed": true
+  },
+  "gsr64_126": {
+    "n_people": 22,
+    "mean_r": 0.14383618741355017,
+    "p": 0.0001,
+    "null_lo": -0.009580199035534434,
+    "null_hi": 0.009556524112347663,
+    "stationarity_assumed": true
+  }
+}

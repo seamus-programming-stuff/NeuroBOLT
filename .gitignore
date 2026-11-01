@@ -26,6 +26,9 @@ reports/external/data/vu_model_*.npz
 /reports/thesis_exploration/data/predictions/
 /reports/architecture_briefing/pilot/**/*.pt
 /reports/architecture_briefing/pilot/**/*.npz
+/reports/interpretability_next/**/private/
+/reports/interpretability_next/**/*.npz
+/reports/interpretability_next/**/*.pth
 /reports/thesis_exploration/poster/reference/
 
 # Downloaded audit evidence; retain only the two curated reusable manifests.

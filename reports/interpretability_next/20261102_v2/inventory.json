@@ -1,0 +1,3217 @@
+{
+  "inputs": {
+    "features": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/learning_curve/features_fine_w24_sub12.npz",
+      "bytes": 897020482,
+      "sha256": "a6feec7207bce157374b008381c3132604af3da500f08df157d665ec07fbcad5",
+      "arrays": {
+        "x_sub01-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub02-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub03-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub04-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub05-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub06-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub07-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub07-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub08-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub08-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub09-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub09-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub10-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub11-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub12-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub12-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub13-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub13-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub14-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub14-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub15-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub16-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub17-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub18-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub19-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub20-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub20-scan02": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub21-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "x_sub22-scan01": {
+          "shape": [
+            563,
+            13728
+          ],
+          "dtype": "float32"
+        },
+        "y_sub01-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub02-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub03-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub04-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub05-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub06-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub07-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub07-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub08-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub08-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub09-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub09-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub10-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub11-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub12-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub12-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub13-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub13-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub14-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub14-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub15-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub16-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub17-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub18-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub19-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub20-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub20-scan02": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub21-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        },
+        "y_sub22-scan01": {
+          "shape": [
+            563,
+            7
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    "aux": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/interp_cache.npz",
+      "bytes": 50189466,
+      "sha256": "9ce69c7b34696e956026c15f4b9e025a5672cde529b8191577a974d8edb35b4d",
+      "arrays": {
+        "labels": {
+          "shape": [
+            65
+          ],
+          "dtype": "<U49"
+        },
+        "scans": {
+          "shape": [
+            29
+          ],
+          "dtype": "<U12"
+        },
+        "nuis_bands": {
+          "shape": [
+            7,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "y_all_sub01-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub01-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub01-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub01-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub01-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub01-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub01-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub02-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub02-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub02-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub02-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub02-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub02-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub02-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub03-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub03-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub03-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub03-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub03-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub03-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub03-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub04-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub04-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub04-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub04-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub04-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub04-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub04-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub05-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub05-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub05-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub05-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub05-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub05-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub05-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub06-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub06-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub06-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub06-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub06-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub06-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub06-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub07-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub07-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub07-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub07-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub07-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub07-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub07-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub07-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub07-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub07-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub07-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub07-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub07-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub07-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub08-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub08-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub08-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub08-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub08-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub08-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub08-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub08-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub08-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub08-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub08-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub08-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub08-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub08-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub09-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub09-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub09-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub09-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub09-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub09-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub09-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub09-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub09-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub09-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub09-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub09-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub09-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub09-scan02": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub09-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub09-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub10-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub10-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub10-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub10-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub10-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub10-scan02": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub10-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub10-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub11-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub11-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub11-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub11-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub11-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub11-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub11-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub11-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub12-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub12-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub12-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub12-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub12-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub12-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub12-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub12-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub12-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub12-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub12-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub12-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub12-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub12-scan02": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub12-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub12-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub13-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub13-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub13-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub13-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub13-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub13-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub13-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub13-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub13-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub13-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub13-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub13-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub13-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub13-scan02": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub13-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub13-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub14-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub14-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub14-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub14-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub14-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub14-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub14-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub14-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub14-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub14-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub14-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub14-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub14-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub14-scan02": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub14-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub14-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub15-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub15-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub15-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub15-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub15-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub15-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub15-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub15-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub16-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub16-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub16-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub16-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub16-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub16-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub16-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub16-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub17-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub17-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub17-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub17-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub17-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub17-scan02": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub17-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub17-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub18-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub18-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub18-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub18-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub18-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub18-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub18-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub18-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub19-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub19-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub19-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub19-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub19-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub19-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub19-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub20-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub20-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub20-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub20-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub20-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub20-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub20-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub20-scan02": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub20-scan02": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub20-scan02": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub20-scan02": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub20-scan02": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub20-scan02": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub20-scan02": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub21-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub21-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub21-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub21-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub21-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub21-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub21-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub21-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "y_all_sub22-scan01": {
+          "shape": [
+            563,
+            65
+          ],
+          "dtype": "float32"
+        },
+        "frame_sub22-scan01": {
+          "shape": [
+            563
+          ],
+          "dtype": "int32"
+        },
+        "eog_sub22-scan01": {
+          "shape": [
+            563,
+            168
+          ],
+          "dtype": "float32"
+        },
+        "emg_sub22-scan01": {
+          "shape": [
+            563,
+            252
+          ],
+          "dtype": "float32"
+        },
+        "ecg_sub22-scan01": {
+          "shape": [
+            563,
+            84
+          ],
+          "dtype": "float32"
+        },
+        "cwl_sub22-scan01": {
+          "shape": [
+            563,
+            336
+          ],
+          "dtype": "float32"
+        },
+        "hr_sub22-scan01": {
+          "shape": [
+            563,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "median_hr_sub22-scan01": {
+          "shape": [],
+          "dtype": "float32"
+        }
+      }
+    },
+    "eeg_full": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/cv_A/predictions_eeg_full.npz",
+      "bytes": 15693474,
+      "sha256": "8f86485703b827bbc67792859e69d2f239d5fdc22c5bb15944fa6e390530046f",
+      "arrays": {
+        "targets": {
+          "shape": [
+            129
+          ],
+          "dtype": "<U55"
+        },
+        "pred_sub07-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub07-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub11-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub16-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub18-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub21-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub06-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub13-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub13-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub15-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub22-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub01-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub02-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub03-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub04-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub05-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub08-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub08-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub09-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub09-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub10-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub12-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub12-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub14-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub14-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub17-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub19-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub20-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub20-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub07-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub07-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub11-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub16-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub18-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub21-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub06-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub13-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub13-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub15-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub22-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub01-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub02-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub03-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub04-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub05-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub08-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub08-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub09-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub09-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub10-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub12-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub12-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub14-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub14-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub17-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub19-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub20-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub20-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    "phys_specific": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/cv_D/predictions_phys_specific.npz",
+      "bytes": 15758944,
+      "sha256": "4959d09bb96f58c647e841d950675f40ef6c1c2b432d0e5f2058ef33e7aae478",
+      "arrays": {
+        "targets": {
+          "shape": [
+            129
+          ],
+          "dtype": "<U55"
+        },
+        "pred_sub07-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub07-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub11-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub16-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub18-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub21-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub06-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub13-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub13-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub15-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub22-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub01-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub02-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub03-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub04-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub05-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub08-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub08-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub09-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub09-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub10-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub12-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub12-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub14-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub14-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub17-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub19-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub20-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub20-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub07-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub07-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub11-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub16-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub18-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub21-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub06-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub13-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub13-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub15-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub22-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub01-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub02-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub03-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub04-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub05-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub08-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub08-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub09-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub09-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub10-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub12-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub12-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub14-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub14-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub17-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub19-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub20-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub20-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    "eeg+phys_specific": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/cv_D/predictions_eeg+phys_specific.npz",
+      "bytes": 15691963,
+      "sha256": "38b220e612f30eac60594de6e713fa36042246bde25f4155c8e06baa212e5442",
+      "arrays": {
+        "targets": {
+          "shape": [
+            129
+          ],
+          "dtype": "<U55"
+        },
+        "pred_sub07-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub07-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub11-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub16-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub18-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub21-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub06-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub13-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub13-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub15-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub22-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub01-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub02-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub03-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub04-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub05-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub08-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub08-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub09-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub09-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub10-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub12-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub12-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub14-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub14-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub17-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub19-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub20-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "pred_sub20-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub07-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub07-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub11-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub16-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub18-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub21-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub06-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub13-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub13-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub15-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub22-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub01-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub02-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub03-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub04-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub05-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub08-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub08-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub09-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub09-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub10-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub12-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub12-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub14-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub14-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub17-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub19-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub20-scan01": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        },
+        "true_sub20-scan02": {
+          "shape": [
+            563,
+            129
+          ],
+          "dtype": "float32"
+        }
+      }
+    }
+  },
+  "attribution_inputs": [
+    {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/attribution/permutation_a.csv",
+      "sha256": "1385ccb1bc4c8189a74426638f95199c94e7ff9a98e44fc4a3440bd88210048d"
+    },
+    {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/attribution/permutation_b.csv",
+      "sha256": "574648ffb9b8dedfb14ea8dcb775d75bf544e6fc1b60be610a57e40a26fb3ff3"
+    },
+    {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/attribution/permutation_c.csv",
+      "sha256": "d9d789867cd675d0273db4d766adcbefc5a19a4c98389f78e4e239c53e3129ca"
+    }
+  ],
+  "P2": {
+    "state": "BLOCKED",
+    "reason": "No verified shared cross-person checkpoints covering all five CV folds; no neural forward/backward passes authorized by the gate.",
+    "cv_directory": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/cv",
+    "cv_pth_count": 0,
+    "other_checkpoints_not_substitutes": [
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/Thalamus.pth",
+        "bytes": 96000071,
+        "sha256": "347627c36310492d180519ac88f16b478ad2658be865ed8cd430cc0bdad1833a"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Cuneus.pth",
+        "bytes": 96000071,
+        "sha256": "cc6e5a15fcbf74332f43a90c60cc9676ca6715aed9b853a980789efd4288b4db"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Heschl.pth",
+        "bytes": 96000071,
+        "sha256": "fb4554e2fd0f8f2dc9ce2df71d9368a80e303a7cecfeffa2999922862e471ad4"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Midfront.pth",
+        "bytes": 96000135,
+        "sha256": "586979e02383234789f5f1a502a212334dbc7cf709d119ea05877b0ba56c551f"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Precuneus.pth",
+        "bytes": 96000071,
+        "sha256": "d95bb4283249b3aa7765cfa660ed7fe2e156226fd8a4228692e51ec667e4c005"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Putamen.pth",
+        "bytes": 96000071,
+        "sha256": "7e7b7de18fae2731e1804ce8758ed05a79f3dce4b2e7001fff7fcb08c4cbc032"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Thalamus.pth",
+        "bytes": 96000071,
+        "sha256": "347627c36310492d180519ac88f16b478ad2658be865ed8cd430cc0bdad1833a"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/glb.pth",
+        "bytes": 96000071,
+        "sha256": "77a739b9e8b45f2489415a3933a4c7699ed10ab619d987edfa24101411b1cd55"
+      }
+    ]
+  },
+  "features": {
+    "source_keys": "x_<scan> only",
+    "shape": [
+      null,
+      26,
+      44,
+      12
+    ],
+    "channels": [
+      "FP1",
+      "FP2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2",
+      "F7",
+      "F8",
+      "T7",
+      "T8",
+      "P7",
+      "P8",
+      "FPZ",
+      "FZ",
+      "CZ",
+      "PZ",
+      "POZ",
+      "OZ",
+      "FT9",
+      "FT10",
+      "TP9",
+      "TP10"
+    ],
+    "proof_limit": "Schema and source audit cannot retroactively certify every historical execution; no target arrays enter this continuation feature function."
+  }
+}

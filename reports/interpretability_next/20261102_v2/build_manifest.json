@@ -1,0 +1,17 @@
+{
+  "run": "reports/interpretability_next/20261102_v2",
+  "PDF": "output/pdf/NeuroBOLT_interpretability_next.pdf",
+  "PDF_sha256": "0d0d87521e352ebdafda476419d8f090b8e116a9b2ec0cb566eb958b0091e105",
+  "slides": 10,
+  "figures": 11,
+  "renderer_sha256": "292e959c6aa03cbe6becf28a30b2848ec87a953742e9a61c067dff374c0e026d",
+  "protocol_sha256": "e36677989f3e7c456649ddbde194ff06ed8e78a6240f2a9103c3b8426994c8fd",
+  "figure_source_formats": [
+    "PNG",
+    "SVG",
+    "PDF"
+  ],
+  "new_fits": 0,
+  "P2": "BLOCKED",
+  "required_methodology_in_speaker_notes": true
+}

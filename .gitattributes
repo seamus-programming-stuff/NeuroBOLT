@@ -18,6 +18,13 @@ reports/architecture_briefing/** text=auto eol=lf
 reports/architecture_briefing/pilot/** -text -eol whitespace=cr-at-eol
 reports/architecture_briefing/pilot/**/README.md text=auto eol=lf
 "research_notes/NeuroBOLT architecture research briefing/**" text=auto eol=lf
+scripts/interp_next*.py text=auto eol=lf
+scripts/build_interp_next.py text=auto eol=lf
+# Frozen continuation evidence and archived legacy sources retain exact bytes.
+reports/interpretability_next/** -text -eol -whitespace
+reports/interpretability_next/**/*.pdf binary
+reports/interpretability_next/**/*.png binary
+reports/interpretability_next/**/*.svg -diff
 "reports/Monash honours EEG project.md" text=auto eol=lf
 "research_notes/Monash honours EEG project/**" text=auto eol=lf
 reports/honours_kickoff/** text=auto eol=lf

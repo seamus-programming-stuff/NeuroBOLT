@@ -1,0 +1,18 @@
+{
+  "job_id": "61757662",
+  "partition": "comp",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "allocated_CPUs": 4,
+  "SLURM_elapsed_seconds": 77,
+  "allocated_CPU_hours": 0.08555555555555555,
+  "allocated_GPUs": 0,
+  "allocated_GPU_hours": 0,
+  "max_RSS_KiB": 1440516,
+  "max_RSS_GiB": 1.3737831115722656,
+  "analysis_process_seconds": 15.644203925970942,
+  "CPU_hour_ceiling": 8,
+  "fits": 0,
+  "neural_passes": 0,
+  "note": "SLURM allocation includes environment/startup overhead. Local rendering and lightweight metadata audits are separate from this allocation."
+}

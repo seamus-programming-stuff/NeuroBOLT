@@ -1,0 +1,30 @@
+{
+  "state": "VERIFIED",
+  "independently_recomputed_model_scan_target_rows": 11223,
+  "max_absolute_R2_discrepancy": 4.99558727717897e-13,
+  "frozen_source_and_returned_file_hashes_match": true,
+  "primary_participant_aggregation_intervals_and_signflips_verified": [
+    {
+      "contrast": "eeg_full minus phys_specific",
+      "mean": 0.04971237739820253,
+      "CI": [
+        0.018473100261399256,
+        0.08281270778600947
+      ],
+      "p": 0.0063
+    },
+    {
+      "contrast": "eeg+phys_specific minus eeg_full",
+      "mean": -0.0011424592133464746,
+      "CI": [
+        -0.004009647178193161,
+        0.001128771343874092
+      ],
+      "p": 0.4611
+    }
+  ],
+  "P2": "BLOCKED; no CV PTH candidates, no neural passes",
+  "GSR_constant_baseline_note": "Training-mean GSR R2 is numerically zero (about -4e-17). Negative-sign counts at this precision are floating-point artifacts, not model failures. Raw records retained.",
+  "legacy_execution_proof_limit": "Current archived M3 source and feature schema are audited; hashes do not retrospectively certify every original training execution.",
+  "predictive_partition_not_causal": true
+}

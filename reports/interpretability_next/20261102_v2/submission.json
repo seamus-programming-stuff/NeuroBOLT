@@ -1,0 +1,21 @@
+{
+  "job_id": "61757662",
+  "partition": "comp",
+  "requested_cpus": 4,
+  "requested_memory_GB": 32,
+  "requested_wall_minutes": 90,
+  "requested_gpus": 0,
+  "maximum_allocation_CPU_hours": 6,
+  "continuation_total_CPU_hours_cap": 8,
+  "command": "CMD='scripts/interp_next_analysis.py run --out reports/interpretability_next/20261102_v2' sbatch --job-name=nb-interp-next --partition=comp --time=01:30:00 --cpus-per-task=4 --mem=32G scripts/interp_m3.sbatch",
+  "protocol_sha256": "e36677989f3e7c456649ddbde194ff06ed8e78a6240f2a9103c3b8426994c8fd",
+  "P2": "BLOCKED; no GPU or neural passes requested",
+  "audit_retry": {
+    "first_directory": "reports/interpretability_next/20261102_v1",
+    "stage": "metadata audit before protocol freeze, scoring or SLURM submission",
+    "failure": "Local-only interp_report.py was missing from the M3 provenance source set",
+    "repair": "Copied the unchanged report source for hashing, then used a new v2 audit directory",
+    "outer_outcomes_scored_before_retry": false,
+    "scientific_scope_or_source_changed": false
+  }
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="208.44pt" viewBox="0 0 628.2 208.44" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T02:05:25.441743</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 208.44 
+L 628.2 208.44 
+L 628.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 12.78 87.588 
+L 191.34 87.588 
+L 191.34 32.148 
+L 12.78 32.148 
+z
+" clip-path="url(#p21e3baa826)" style="fill: #eaf4fa; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 12.78 176.292 
+L 191.34 176.292 
+L 191.34 120.852 
+L 12.78 120.852 
+z
+" clip-path="url(#p21e3baa826)" style="fill: #fff0df; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 244.35 131.94 
+L 389.43 131.94 
+L 389.43 73.728 
+L 244.35 73.728 
+z
+" clip-path="url(#p21e3baa826)" style="fill: #eaf4fa; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 431.28 131.94 
+L 607.05 131.94 
+L 607.05 73.728 
+L 431.28 73.728 
+z
+" clip-path="url(#p21e3baa826)" style="fill: #eaf4fa; stroke: #c7d9e4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 192.896263 61.121254 
+Q 217.84272 81.210564 241.395925 100.177892 
+" clip-path="url(#p21e3baa826)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 238.976633 94.891397 
+L 241.395925 100.177892 
+L 235.715154 98.941429 
+" clip-path="url(#p21e3baa826)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 192.850966 147.26041 
+Q 217.844531 125.564807 241.487202 105.041845 
+" clip-path="url(#p21e3baa826)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 235.855936 106.48713 
+L 241.487202 105.041845 
+L 239.264671 110.414028 
+" clip-path="url(#p21e3baa826)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 429.279966 102.5568 
+Q 410.354638 102.5568 393.218163 102.5568 
+" clip-path="url(#p21e3baa826)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 398.418163 105.1568 
+L 393.218163 102.5568 
+L 398.418163 99.9568 
+" clip-path="url(#p21e3baa826)" style="fill: none; stroke: #007bb8; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="102.06" y="52.144131" transform="rotate(-0 102.06 52.144131)">Measured regional BOLD</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11.5px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="102.06" y="72.272019" transform="rotate(-0 102.06 72.272019)">Outcome used for scoring</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="102.06" y="140.848131" transform="rotate(-0 102.06 140.848131)">Measured global BOLD</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11.5px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="102.06" y="160.972762" transform="rotate(-0 102.06 160.972762)">Used to define residual target</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="316.89" y="94.555858" transform="rotate(-0 316.89 94.555858)">Residual BOLD</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11.5px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="316.89" y="115.706002" transform="rotate(-0 316.89 115.706002)">Region − fitted global term</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #153044" x="519.165" y="94.555731" transform="rotate(-0 519.165 94.555731)">EEG-only predictor</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(453.331094 109.447823)">Fitted to training residuals</text>
+    <text style="font-size: 11.5px; font-family: 'Arial'; fill: #153044" transform="translate(445.972891 121.964405)">Scored on held-out residuals</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11px; font-family: 'Arial'; text-anchor: middle; fill: #6c7f8b" x="314.1" y="197.261644" transform="rotate(-0 314.1 197.261644)">Measured test global BOLD is an outcome-definition input, never an EEG-model input.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p21e3baa826">
+   <rect x="7.2" y="7.2" width="613.8" height="194.04"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,65 @@
+{
+  "state": "COMPLETE",
+  "started_utc": "2026-11-01T14:48:07.554993+00:00",
+  "events": [
+    {
+      "utc": "2026-11-01T14:48:23.199070+00:00",
+      "event": "P0/P1 completed; P2 blocked by checkpoint gate; no fit/retry/scope search."
+    }
+  ],
+  "P2": {
+    "state": "BLOCKED",
+    "reason": "No verified shared cross-person checkpoints covering all five CV folds; no neural forward/backward passes authorized by the gate.",
+    "cv_directory": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/cv",
+    "cv_pth_count": 0,
+    "other_checkpoints_not_substitutes": [
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/Thalamus.pth",
+        "bytes": 96000071,
+        "sha256": "347627c36310492d180519ac88f16b478ad2658be865ed8cd430cc0bdad1833a"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Cuneus.pth",
+        "bytes": 96000071,
+        "sha256": "cc6e5a15fcbf74332f43a90c60cc9676ca6715aed9b853a980789efd4288b4db"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Heschl.pth",
+        "bytes": 96000071,
+        "sha256": "fb4554e2fd0f8f2dc9ce2df71d9368a80e303a7cecfeffa2999922862e471ad4"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Midfront.pth",
+        "bytes": 96000135,
+        "sha256": "586979e02383234789f5f1a502a212334dbc7cf709d119ea05877b0ba56c551f"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Precuneus.pth",
+        "bytes": 96000071,
+        "sha256": "d95bb4283249b3aa7765cfa660ed7fe2e156226fd8a4228692e51ec667e4c005"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Putamen.pth",
+        "bytes": 96000071,
+        "sha256": "7e7b7de18fae2731e1804ce8758ed05a79f3dce4b2e7001fff7fcb08c4cbc032"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Thalamus.pth",
+        "bytes": 96000071,
+        "sha256": "347627c36310492d180519ac88f16b478ad2658be865ed8cd430cc0bdad1833a"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/glb.pth",
+        "bytes": 96000071,
+        "sha256": "77a739b9e8b45f2489415a3933a4c7699ed10ab619d987edfa24101411b1cd55"
+      }
+    ]
+  },
+  "fit_count": 0,
+  "completed_utc": "2026-11-01T14:48:23.199049+00:00",
+  "elapsed_seconds": 15.644203925970942,
+  "n_people": 22,
+  "n_scans": 29,
+  "bootstrap_B": 10000,
+  "neural_passes": 0
+}

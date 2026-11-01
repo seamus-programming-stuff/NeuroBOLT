@@ -1,0 +1,19 @@
+{
+  "date_local": "2026-11-02",
+  "timezone": "Australia/Sydney",
+  "local_base_commit": "c962c07044198261c52e83d2cf3645445ac628b4",
+  "local_branch": "neurobolt",
+  "preexisting_local_untracked_directories_preserved": [".agents/", "tmp/"],
+  "remote_git_HEAD": "b51b966516a9b0c0a87e6ee6a7b997101a443394",
+  "remote_git_branch": "main",
+  "deployment": "Copied analysis/tests and the previously missing unchanged local report source; no git pull, checkout or upstream push on M3",
+  "source_identity": "Protocol hashes and archived provenance/scripts record the actual deployed sources rather than assuming the remote git HEAD identifies them",
+  "initial_queue": "Empty for this user",
+  "scratch_usage_snapshot": "98% used; no deletion or raw-data download",
+  "synthetic_tests": {
+    "local": {"passed": 9, "seconds_last_run": 0.241},
+    "M3": {"passed": 9, "seconds": 17.262},
+    "coverage": ["raw R2 versus r", "nonzero constant prediction", "feature schema", "FDR/missing values", "exact small-n sign flips", "participant bootstrap", "FFT versus direct circular shift", "censored-frame gap rejection", "actual participant split"]
+  },
+  "P2": "BLOCKED at metadata/provenance gate; no neural forward/backward passes or new model fits"
+}

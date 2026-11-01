@@ -1,0 +1,384 @@
+{
+  "created_utc": "2026-11-01T14:46:33.000697+00:00",
+  "scope": "Exploratory correction of already-inspected VU development outputs; no refitting or new models.",
+  "base_commit": "c962c07",
+  "source_sha256": {
+    "interp_next_analysis.py": "f056c8d567225e8509c29e8384736d1021917b09a8290e3fbd1a1bed8443cb46",
+    "interp_next_tests.py": "3b255153019dbcd195386e1f1308b50d044544a98b5ca27a7813cdc80a86d75a",
+    "interp_cv.py": "8bb6b57e4c4869cabfb6115b33b13b10a2be1f18d3d29da42a4f775a659d4d86",
+    "interp_maps.py": "59fe39ba67310b5fe4def00e9a11250f0d4040b01bb777f1937607e461eb97c5",
+    "interp_report.py": "fcc471b0430c8d25c14f5847b20933670c46084ff80058687357984551f4395a",
+    "interp_attribution.py": "6a03e2b4a49a910cdf0cc4f69b2e2806047ed46339399169d24fb698db21e709",
+    "interp_build_cache.py": "5de94ee70e085980428b93156ea6849b864ed803c820355ea4148907ec49558d",
+    "ridge_learning_curve.py": "50ef130b2f5f04624f57d626a2e8d3af8717bf0bdf94dac5b734a4162c1354b4",
+    "baseline_ridge.py": "495e0964ddf063ed550a3d1118434bb0738e6ca5e42043399a9dae6ae69a390f",
+    "eval_inter_per_scan.py": "44cf2dfd4121f899d99b2843fa667378f75bbd4e117131513ab8ed2f012d5940",
+    "m3_env.sh": "afb321fc598e4bd4a58f73a784f8ef3339e4f63d55cbd158ba53f8599f9bbed5",
+    "interp_m3.sbatch": "efb78491f3aa08fd2c7e886209080407eb3e75b15ae41b3af1211186c596e0a3"
+  },
+  "split_sha256": "dbee8ff6874b9684275aba13c8cdae935a75caecd61f5062a2358d0afc38de28",
+  "inventory_sha256": "92787fb8eab036da4d8885a0d7b99193f87870585656e56d7edf33d1a1be94f2",
+  "inputs": {
+    "features": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/learning_curve/features_fine_w24_sub12.npz",
+      "sha256": "a6feec7207bce157374b008381c3132604af3da500f08df157d665ec07fbcad5"
+    },
+    "aux": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/interp_cache.npz",
+      "sha256": "9ce69c7b34696e956026c15f4b9e025a5672cde529b8191577a974d8edb35b4d"
+    },
+    "eeg_full": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/cv_A/predictions_eeg_full.npz",
+      "sha256": "8f86485703b827bbc67792859e69d2f239d5fdc22c5bb15944fa6e390530046f"
+    },
+    "phys_specific": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/cv_D/predictions_phys_specific.npz",
+      "sha256": "4959d09bb96f58c647e841d950675f40ef6c1c2b432d0e5f2058ef33e7aae478"
+    },
+    "eeg+phys_specific": {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/cv_D/predictions_eeg+phys_specific.npz",
+      "sha256": "38b220e612f30eac60594de6e713fa36042246bde25f4155c8e06baa212e5442"
+    }
+  },
+  "attribution_inputs": [
+    {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/attribution/permutation_a.csv",
+      "sha256": "1385ccb1bc4c8189a74426638f95199c94e7ff9a98e44fc4a3440bd88210048d"
+    },
+    {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/attribution/permutation_b.csv",
+      "sha256": "574648ffb9b8dedfb14ea8dcb775d75bf544e6fc1b60be610a57e40a26fb3ff3"
+    },
+    {
+      "path": "/fs04/scratch2/hz18/stay0060/NeuroBOLT/checkpoints/interp/attribution/permutation_c.csv",
+      "sha256": "d9d789867cd675d0273db4d766adcbefc5a19a4c98389f78e4e239c53e3129ca"
+    }
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train": [
+        "sub01-scan01",
+        "sub02-scan01",
+        "sub03-scan02",
+        "sub04-scan01",
+        "sub05-scan01",
+        "sub08-scan01",
+        "sub08-scan02",
+        "sub09-scan01",
+        "sub09-scan02",
+        "sub10-scan02",
+        "sub12-scan01",
+        "sub12-scan02",
+        "sub14-scan01",
+        "sub14-scan02",
+        "sub17-scan02",
+        "sub19-scan02",
+        "sub20-scan01",
+        "sub20-scan02"
+      ],
+      "val": [
+        "sub06-scan01",
+        "sub13-scan01",
+        "sub13-scan02",
+        "sub15-scan01",
+        "sub22-scan01"
+      ],
+      "test": [
+        "sub07-scan01",
+        "sub07-scan02",
+        "sub11-scan01",
+        "sub16-scan01",
+        "sub18-scan01",
+        "sub21-scan01"
+      ]
+    },
+    {
+      "fold": 2,
+      "train": [
+        "sub05-scan01",
+        "sub07-scan01",
+        "sub07-scan02",
+        "sub08-scan01",
+        "sub08-scan02",
+        "sub09-scan01",
+        "sub09-scan02",
+        "sub10-scan02",
+        "sub11-scan01",
+        "sub12-scan01",
+        "sub12-scan02",
+        "sub14-scan01",
+        "sub14-scan02",
+        "sub16-scan01",
+        "sub17-scan02",
+        "sub18-scan01",
+        "sub19-scan02",
+        "sub20-scan01",
+        "sub20-scan02",
+        "sub21-scan01"
+      ],
+      "val": [
+        "sub01-scan01",
+        "sub02-scan01",
+        "sub03-scan02",
+        "sub04-scan01"
+      ],
+      "test": [
+        "sub06-scan01",
+        "sub13-scan01",
+        "sub13-scan02",
+        "sub15-scan01",
+        "sub22-scan01"
+      ]
+    },
+    {
+      "fold": 3,
+      "train": [
+        "sub06-scan01",
+        "sub07-scan01",
+        "sub07-scan02",
+        "sub11-scan01",
+        "sub12-scan01",
+        "sub12-scan02",
+        "sub13-scan01",
+        "sub13-scan02",
+        "sub14-scan01",
+        "sub14-scan02",
+        "sub15-scan01",
+        "sub16-scan01",
+        "sub17-scan02",
+        "sub18-scan01",
+        "sub19-scan02",
+        "sub20-scan01",
+        "sub20-scan02",
+        "sub21-scan01",
+        "sub22-scan01"
+      ],
+      "val": [
+        "sub05-scan01",
+        "sub08-scan01",
+        "sub08-scan02",
+        "sub09-scan01",
+        "sub09-scan02",
+        "sub10-scan02"
+      ],
+      "test": [
+        "sub01-scan01",
+        "sub02-scan01",
+        "sub03-scan02",
+        "sub04-scan01"
+      ]
+    },
+    {
+      "fold": 4,
+      "train": [
+        "sub01-scan01",
+        "sub02-scan01",
+        "sub03-scan02",
+        "sub04-scan01",
+        "sub06-scan01",
+        "sub07-scan01",
+        "sub07-scan02",
+        "sub11-scan01",
+        "sub13-scan01",
+        "sub13-scan02",
+        "sub15-scan01",
+        "sub16-scan01",
+        "sub18-scan01",
+        "sub21-scan01",
+        "sub22-scan01"
+      ],
+      "val": [
+        "sub12-scan01",
+        "sub12-scan02",
+        "sub14-scan01",
+        "sub14-scan02",
+        "sub17-scan02",
+        "sub19-scan02",
+        "sub20-scan01",
+        "sub20-scan02"
+      ],
+      "test": [
+        "sub05-scan01",
+        "sub08-scan01",
+        "sub08-scan02",
+        "sub09-scan01",
+        "sub09-scan02",
+        "sub10-scan02"
+      ]
+    },
+    {
+      "fold": 5,
+      "train": [
+        "sub01-scan01",
+        "sub02-scan01",
+        "sub03-scan02",
+        "sub04-scan01",
+        "sub05-scan01",
+        "sub06-scan01",
+        "sub08-scan01",
+        "sub08-scan02",
+        "sub09-scan01",
+        "sub09-scan02",
+        "sub10-scan02",
+        "sub13-scan01",
+        "sub13-scan02",
+        "sub15-scan01",
+        "sub22-scan01"
+      ],
+      "val": [
+        "sub07-scan01",
+        "sub07-scan02",
+        "sub11-scan01",
+        "sub16-scan01",
+        "sub18-scan01",
+        "sub21-scan01"
+      ],
+      "test": [
+        "sub12-scan01",
+        "sub12-scan02",
+        "sub14-scan01",
+        "sub14-scan02",
+        "sub17-scan02",
+        "sub19-scan02",
+        "sub20-scan01",
+        "sub20-scan02"
+      ]
+    }
+  ],
+  "channels": [
+    "FP1",
+    "FP2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2",
+    "F7",
+    "F8",
+    "T7",
+    "T8",
+    "P7",
+    "P8",
+    "FPZ",
+    "FZ",
+    "CZ",
+    "PZ",
+    "POZ",
+    "OZ",
+    "FT9",
+    "FT10",
+    "TP9",
+    "TP10"
+  ],
+  "primary": [
+    [
+      "eeg_full",
+      "phys_specific"
+    ],
+    [
+      "eeg+phys_specific",
+      "eeg_full"
+    ]
+  ],
+  "endpoint": "Mean raw predictive R2 over 64 regions, then scans within person; 22 equal-weight people.",
+  "families": {
+    "primary_raw_R2": 2,
+    "secondary_raw_R2_regional_contrasts": 128,
+    "secondary_gsr_R2_regional_contrasts": 128,
+    "coupling_alpha_beta_4targets_12lags": 96,
+    "prediction_association_alpha_beta_4targets_12lags": 96,
+    "raw7_circular_shift_scan_tests": 29,
+    "gsr64_circular_shift_scan_tests": 29,
+    "historical_attribution_all_models_parts": 123
+  },
+  "bootstrap_B": 10000,
+  "synthetic_profile_1000_seconds": 0.056955291889607906,
+  "signflip_B": 9999,
+  "seed": 20261102,
+  "FDR": "BH .05 plus BY sensitivity; missing tests remain missing; finite/tested counts reported.",
+  "lag_contrasts": [
+    "Thalamus positive alpha/beta peak minus mean Cuneus/Heschl negative peak; 2-second bins."
+  ],
+  "temporal_null": "Enumerated cyclic shifts >=63s within each complete consecutive run; gaps block the scan null rather than join censored segments. 63s is primary; 126s is a separately reported sensitivity, not selected for significance. Stationarity assumed.",
+  "acf": "Fold1 training-only alpha and global autocorrelation at 63/126s, descriptive warning if large; no test-tuned minimum shift.",
+  "attribution": "Reweight existing waveform perturbations over repeats/ROIs, scans, then five people; exact sign flips for small n. No new neural pass.",
+  "P2": {
+    "state": "BLOCKED",
+    "reason": "No verified shared cross-person checkpoints covering all five CV folds; no neural forward/backward passes authorized by the gate.",
+    "cv_directory": "/scratch/hz18/stay0060/NeuroBOLT/checkpoints/cv",
+    "cv_pth_count": 0,
+    "other_checkpoints_not_substitutes": [
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/Thalamus.pth",
+        "bytes": 96000071,
+        "sha256": "347627c36310492d180519ac88f16b478ad2658be865ed8cd430cc0bdad1833a"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Cuneus.pth",
+        "bytes": 96000071,
+        "sha256": "cc6e5a15fcbf74332f43a90c60cc9676ca6715aed9b853a980789efd4288b4db"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Heschl.pth",
+        "bytes": 96000071,
+        "sha256": "fb4554e2fd0f8f2dc9ce2df71d9368a80e303a7cecfeffa2999922862e471ad4"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Midfront.pth",
+        "bytes": 96000135,
+        "sha256": "586979e02383234789f5f1a502a212334dbc7cf709d119ea05877b0ba56c551f"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Precuneus.pth",
+        "bytes": 96000071,
+        "sha256": "d95bb4283249b3aa7765cfa660ed7fe2e156226fd8a4228692e51ec667e4c005"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Putamen.pth",
+        "bytes": 96000071,
+        "sha256": "7e7b7de18fae2731e1804ce8758ed05a79f3dce4b2e7001fff7fcb08c4cbc032"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/Thalamus.pth",
+        "bytes": 96000071,
+        "sha256": "347627c36310492d180519ac88f16b478ad2658be865ed8cd430cc0bdad1833a"
+      },
+      {
+        "path": "/fs04/hz18/stay0060/NeuroBOLT/checkpoints/published/glb.pth",
+        "bytes": 96000071,
+        "sha256": "77a739b9e8b45f2489415a3933a4c7699ed10ab619d987edfa24101411b1cd55"
+      }
+    ]
+  },
+  "limits": {
+    "GPU_allocations": 0,
+    "GPU_hours": 0,
+    "CPU_hours_total_cap": 8,
+    "job_CPUs": 4,
+    "job_memory_GB": 32,
+    "job_wall_minutes": 90
+  },
+  "inference_limits": [
+    "Repeatedly inspected data",
+    "Shared CV training sets",
+    "Sign symmetry/exchangeability assumptions",
+    "Spatially correlated features",
+    "Retrospective whole-run filtering/GSR"
+  ],
+  "outputs": [
+    "metrics_per_scan.csv",
+    "metrics_per_person.csv",
+    "contrasts.csv",
+    "partitions_per_person.csv",
+    "partitions_summary.csv",
+    "lag_profiles.csv",
+    "lag_peaks.csv",
+    "nulls.csv",
+    "attribution_person.csv",
+    "attribution_summary.csv"
+  ]
+}
