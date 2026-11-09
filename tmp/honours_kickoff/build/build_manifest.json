@@ -1,0 +1,8 @@
+{
+  "referenceSha256": "b1b15cb0c23ad524f9832749ec31b775719bae2bdba897de9c9d8556ca00a44c",
+  "contentSha256": "6d833cbeadbfe8643f290c27f4755cc4e06dcc0fe6602b87dff71cc8162d69e1",
+  "slides": 12,
+  "referenceUnchanged": true,
+  "buildTool": "@oai/artifact-tool",
+  "time": "2026-10-25T14:24:43.369Z"
+}

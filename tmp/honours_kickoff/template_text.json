@@ -1,0 +1,537 @@
+[
+  {
+    "slide": 1,
+    "shapes": [
+      {
+        "id": "4",
+        "name": "Title 3",
+        "text": "Team Project Kickoff Session"
+      },
+      {
+        "id": "6",
+        "name": "Subtitle 4",
+        "text": "Aligning on the vision, plan, and path to success"
+      },
+      {
+        "id": "3",
+        "name": "Rounded Rectangle 2",
+        "text": "2026 H2 Planning"
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "shapes": [
+      {
+        "id": "5",
+        "name": "Footer Placeholder 4",
+        "text": ""
+      },
+      {
+        "id": "2",
+        "name": "Slide Number Placeholder 1",
+        "text": "2"
+      },
+      {
+        "id": "3",
+        "name": "Title 2",
+        "text": "Today\u2019s Agenda"
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "shapes": [
+      {
+        "id": "5",
+        "name": "Footer Placeholder 4",
+        "text": ""
+      },
+      {
+        "id": "532",
+        "name": "Google Shape;532;p58",
+        "text": "3"
+      },
+      {
+        "id": "533",
+        "name": "Google Shape;533;p58",
+        "text": "Half text, half image slide"
+      },
+      {
+        "id": "2",
+        "name": "Google Shape;534;p58",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. Nullam pharetra mauris tortor. In hac habitasse platea."
+      },
+      {
+        "id": "3",
+        "name": "Google Shape;534;p58",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. Nullam pharetra mauris tortor. In hac habitasse platea."
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "shapes": [
+      {
+        "id": "4",
+        "name": "Footer Placeholder 3",
+        "text": ""
+      },
+      {
+        "id": "532",
+        "name": "Google Shape;532;p58",
+        "text": "4"
+      },
+      {
+        "id": "533",
+        "name": "Google Shape;533;p58",
+        "text": "Large message slides with three callouts. Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      },
+      {
+        "id": "534",
+        "name": "Google Shape;534;p58",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. Nullam pharetra mauris tortor. In hac habitasse platea dictumst. "
+      },
+      {
+        "id": "2",
+        "name": "Content Placeholder 1",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. Nullam pharetra mauris tortor. In hac habitasse platea dictumst. "
+      },
+      {
+        "id": "3",
+        "name": "Content Placeholder 2",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. Nullam pharetra mauris tortor. In hac habitasse platea dictumst. "
+      },
+      {
+        "id": "7",
+        "name": "Content Placeholder 15",
+        "text": "Supertitle"
+      },
+      {
+        "id": "8",
+        "name": "Content Placeholder 15",
+        "text": "Supertitle"
+      },
+      {
+        "id": "9",
+        "name": "Content Placeholder 15",
+        "text": "Supertitle"
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "shapes": [
+      {
+        "id": "6",
+        "name": "Footer Placeholder 5",
+        "text": ""
+      },
+      {
+        "id": "2",
+        "name": "Slide Number Placeholder 1",
+        "text": "5"
+      },
+      {
+        "id": "3",
+        "name": "Title 2",
+        "text": "Four points grid layout "
+      },
+      {
+        "id": "10",
+        "name": "Content Placeholder 9",
+        "text": "Title goes hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. "
+      },
+      {
+        "id": "11",
+        "name": "Content Placeholder 10",
+        "text": "Title goes hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. "
+      },
+      {
+        "id": "4",
+        "name": "Content Placeholder 9",
+        "text": "Title goes hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. "
+      },
+      {
+        "id": "5",
+        "name": "Content Placeholder 10",
+        "text": "Title goes hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. "
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "shapes": [
+      {
+        "id": "4",
+        "name": "Footer Placeholder 3",
+        "text": ""
+      },
+      {
+        "id": "532",
+        "name": "Google Shape;532;p58",
+        "text": "6"
+      },
+      {
+        "id": "533",
+        "name": "Google Shape;533;p58",
+        "text": "One column layout with checklist "
+      },
+      {
+        "id": "534",
+        "name": "Google Shape;534;p58",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit "
+      },
+      {
+        "id": "12",
+        "name": "TextBox 11",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. Nullam pharetra mauris tortor. In hac habitasse platea dictumst. Proin mattis nibh risus. Nulla tempor ut massa elementum dapibus. Nam non ante quis enim fringilla tempus nec in lectus. "
+      },
+      {
+        "id": "5",
+        "name": "Rounded Rectangle 4",
+        "text": ""
+      },
+      {
+        "id": "6",
+        "name": "Content Placeholder 10",
+        "text": "Title goes hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus. "
+      },
+      {
+        "id": "7",
+        "name": "Rounded Rectangle 6",
+        "text": ""
+      },
+      {
+        "id": "8",
+        "name": "Content Placeholder 10",
+        "text": "Title goes hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus. "
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "shapes": [
+      {
+        "id": "2",
+        "name": "Footer Placeholder 1",
+        "text": ""
+      },
+      {
+        "id": "532",
+        "name": "Google Shape;532;p58",
+        "text": "7"
+      },
+      {
+        "id": "533",
+        "name": "Google Shape;533;p58",
+        "text": "Intro with four topics"
+      },
+      {
+        "id": "12",
+        "name": "Content Placeholder 10",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus. "
+      },
+      {
+        "id": "15",
+        "name": "Content Placeholder 10",
+        "text": "Item or topic title goes here"
+      },
+      {
+        "id": "16",
+        "name": "Content Placeholder 10",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus. "
+      },
+      {
+        "id": "17",
+        "name": "Content Placeholder 10",
+        "text": "Item or topic title goes here"
+      },
+      {
+        "id": "18",
+        "name": "Content Placeholder 10",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus. "
+      },
+      {
+        "id": "19",
+        "name": "Content Placeholder 10",
+        "text": "Item or topic title goes here"
+      },
+      {
+        "id": "20",
+        "name": "Content Placeholder 10",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus. "
+      },
+      {
+        "id": "21",
+        "name": "Content Placeholder 10",
+        "text": "Item or topic title goes here"
+      },
+      {
+        "id": "3",
+        "name": "Google Shape;534;p58",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus."
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "shapes": [
+      {
+        "id": "12",
+        "name": "Rounded Rectangle 11",
+        "text": ""
+      },
+      {
+        "id": "7",
+        "name": "Footer Placeholder 6",
+        "text": ""
+      },
+      {
+        "id": "4",
+        "name": "Slide Number Placeholder 3",
+        "text": "8"
+      },
+      {
+        "id": "11",
+        "name": "Title 10",
+        "text": "Timeline with three text only milestones"
+      },
+      {
+        "id": "3",
+        "name": "Google Shape;2260;p159",
+        "text": ""
+      },
+      {
+        "id": "5",
+        "name": "Google Shape;2261;p159",
+        "text": ""
+      },
+      {
+        "id": "6",
+        "name": "Google Shape;2262;p159",
+        "text": ""
+      },
+      {
+        "id": "9",
+        "name": "Content Placeholder 15",
+        "text": "Date"
+      },
+      {
+        "id": "13",
+        "name": "Content Placeholder 15",
+        "text": "Date"
+      },
+      {
+        "id": "14",
+        "name": "Content Placeholder 15",
+        "text": "Date"
+      },
+      {
+        "id": "8",
+        "name": "Text Placeholder 16",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam."
+      },
+      {
+        "id": "15",
+        "name": "Text Placeholder 16",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam."
+      },
+      {
+        "id": "19",
+        "name": "Text Placeholder 16",
+        "text": "Title hereLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam."
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "shapes": [
+      {
+        "id": "6",
+        "name": "Rounded Rectangle 5",
+        "text": ""
+      },
+      {
+        "id": "7",
+        "name": "Rounded Rectangle 6",
+        "text": ""
+      },
+      {
+        "id": "8",
+        "name": "Rounded Rectangle 7",
+        "text": ""
+      },
+      {
+        "id": "2",
+        "name": "Slide Number Placeholder 1",
+        "text": "9"
+      },
+      {
+        "id": "3",
+        "name": "Title 2",
+        "text": "Topic description and three large stat cards layout"
+      },
+      {
+        "id": "10",
+        "name": "Content Placeholder 9",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "id": "11",
+        "name": "Content Placeholder 10",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "id": "12",
+        "name": "Content Placeholder 11",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "id": "13",
+        "name": "Content Placeholder 9",
+        "text": "12%"
+      },
+      {
+        "id": "4",
+        "name": "Content Placeholder 9",
+        "text": "34%"
+      },
+      {
+        "id": "5",
+        "name": "Content Placeholder 9",
+        "text": "56%"
+      },
+      {
+        "id": "14",
+        "name": "Content Placeholder 15",
+        "text": "TopicLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies quam ut massa luctus cursus. Nullam pharetra mauris tortor. In hac habitasse platea dictumst. Proin mattis nibh risus. Nulla tempor ut massa elementum dapibus. Nam non ante quis enim fringilla tempus nec in lectus. In hac habitasse platea dictumst. "
+      },
+      {
+        "id": "9",
+        "name": "Footer Placeholder 6",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "shapes": [
+      {
+        "id": "11",
+        "name": "Footer Placeholder 10",
+        "text": ""
+      },
+      {
+        "id": "532",
+        "name": "Google Shape;532;p58",
+        "text": "10"
+      },
+      {
+        "id": "533",
+        "name": "Google Shape;533;p58",
+        "text": "Gantt chart over time"
+      },
+      {
+        "id": "5",
+        "name": "Google Shape;955;p80",
+        "text": "Lorem ipsum"
+      },
+      {
+        "id": "6",
+        "name": "Google Shape;957;p80",
+        "text": "Lorem ipsum"
+      },
+      {
+        "id": "7",
+        "name": "Google Shape;960;p80",
+        "text": "Lorem ipsum"
+      },
+      {
+        "id": "8",
+        "name": "Google Shape;963;p80",
+        "text": "Lorem ipsum"
+      },
+      {
+        "id": "9",
+        "name": "Google Shape;966;p80",
+        "text": "Lorem ipsum"
+      },
+      {
+        "id": "10",
+        "name": "Google Shape;969;p80",
+        "text": "Lorem ipsum"
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "shapes": [
+      {
+        "id": "23",
+        "name": "Footer Placeholder 22",
+        "text": ""
+      },
+      {
+        "id": "532",
+        "name": "Google Shape;532;p58",
+        "text": "11"
+      },
+      {
+        "id": "533",
+        "name": "Google Shape;533;p58",
+        "text": "Calendar grid with milestones"
+      },
+      {
+        "id": "2",
+        "name": "Google Shape;969;p80",
+        "text": "Milestone"
+      },
+      {
+        "id": "5",
+        "name": "Google Shape;969;p80",
+        "text": "Milestone"
+      },
+      {
+        "id": "6",
+        "name": "Google Shape;969;p80",
+        "text": "Milestone"
+      },
+      {
+        "id": "9",
+        "name": "Google Shape;969;p80",
+        "text": "Milestone"
+      },
+      {
+        "id": "10",
+        "name": "Google Shape;969;p80",
+        "text": "Milestone"
+      },
+      {
+        "id": "14",
+        "name": "Google Shape;969;p80",
+        "text": "Milestone"
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "shapes": [
+      {
+        "id": "4",
+        "name": "Title 3",
+        "text": "Team Project Kickoff Session"
+      },
+      {
+        "id": "6",
+        "name": "Subtitle 4",
+        "text": "Thank you!"
+      },
+      {
+        "id": "3",
+        "name": "Rounded Rectangle 2",
+        "text": "2026 H2 Planning"
+      }
+    ]
+  }
+]
