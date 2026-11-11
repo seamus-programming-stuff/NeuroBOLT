@@ -31,7 +31,7 @@ class PatchFrequencyEmbedding(nn.Module):
         out: (batch, time, emb_size)
         """
         x = x.permute(0, 2, 1)
-        x = self.projection(x)
+        x = self.projection(x)  
         return x
 
 
